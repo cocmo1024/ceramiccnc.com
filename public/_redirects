@@ -1,6 +1,13 @@
+/FAQ/ /faq/ 301
+/FAQ /faq/ 301
 /Contact/ /contact/ 301
 /Contact /contact/ 301
-/applications/ / 301
-/applications / 301
-/capabilities/ / 301
-/capabilities / 301
+/Terms/ /terms/ 301
+/Terms /terms/ 301
+/category/EngineeringGuide/ /category/engineering-guide/ 301
+/category/EngineeringGuide /category/engineering-guide/ 301
+/sitemap.xml /sitemap-index.xml 301
+/copper-cold-plates/ /applications/#ceramic-sealing-faces-valve-seats 301
+/copper-cold-plates /applications/#ceramic-sealing-faces-valve-seats 301
+/copper-heat-sinks/ /applications/#thermal-barrier-heat-resistant-fixtures 301
+/copper-heat-sinks /applications/#thermal-barrier-heat-resistant-fixtures 301

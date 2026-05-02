@@ -5,8 +5,8 @@ import type { Post } from '~/types';
 import { APP_BLOG } from 'astrowind:config';
 import { cleanSlug, trimSlash, BLOG_BASE, POST_PERMALINK_PATTERN, CATEGORY_BASE, TAG_BASE } from './permalinks';
 
-const uppercaseTerms = new Set(['3d', 'ai', 'am', 'cnc', 'ct', 'dfam', 'edm', 'gd&t', 'lpbf', 'rf', 'rfq']);
-const DEFAULT_POST_AUTHOR = 'COPPER 3DP Engineering';
+const uppercaseTerms = new Set(['ai', 'al2o3', 'am', 'bn', 'cnc', 'ct', 'dfm', 'gd&t', 'macor', 'rf', 'rfq', 'sic']);
+const DEFAULT_POST_AUTHOR = 'CERAMIC CNC Engineering';
 
 const normalizeTaxonomyTitle = (value: string): string =>
   value
@@ -313,14 +313,14 @@ export async function getRelatedPosts(originalPost: Post, maxResults: number = 4
 const ignoredRelatedTokens = new Set(['and', 'are', 'for', 'from', 'guide', 'into', 'the', 'this', 'with', 'your']);
 
 const topicFamilies = [
-  ['cold', 'plate', 'plates', 'leak', 'ct', 'channel', 'microchannel', 'brazed', 'monolithic'],
-  ['heat', 'sink', 'sinks', 'thermal', 'interface', 'fin', 'fins', 'airflow'],
+  ['tolerance', 'tolerances', 'gdt', 'datum', 'datums', 'flatness', 'parallelism'],
+  ['surface', 'finish', 'ssd', 'subsurface', 'damage', 'lapping', 'polishing'],
+  ['dfm', 'feature', 'features', 'wall', 'slot', 'edge', 'chipping'],
+  ['green', 'hard', 'sinter', 'sintering', 'route', 'routes', 'grinding'],
+  ['micro', 'hole', 'holes', 'orifice', 'drilling', 'taper', 'breakout'],
+  ['material', 'materials', 'alumina', 'zirconia', 'nitride', 'sic', 'macor'],
   ['rfq', 'specification', 'checklist', 'quote', 'acceptance', 'criteria'],
-  ['electrode', 'electrodes', 'edm', 'voltage', 'wear', 'accuracy'],
-  ['busbar', 'busbars', 'induction', 'coil', 'coils', 'electrical', 'current'],
-  ['material', 'materials', 'copper', 'cucrzr', 'pure', 'lpbf'],
-  ['process', 'selection', 'cnc', 'brazing', 'skiving', 'manufacturing'],
-  ['test', 'inspection', 'failure', 'failures', 'porosity', 'density'],
+  ['inspection', 'metrology', 'cmm', 'ct', 'profile', 'roughness', 'density'],
 ];
 
 const getPostTokens = (post: Post): Set<string> => {

@@ -5,7 +5,12 @@ import Hero from '~/components/widgets/Hero.astro';
 import SplitShowcase from '~/components/widgets/SplitShowcase.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Layout from '~/layouts/PageLayout.astro';
-import { createBreadcrumbSchema, createItemListSchema } from '~/utils/structured-data';
+import { ceramicCapabilities, rfqEmailHref } from '~/data/ceramic';
+import {
+  createBreadcrumbSchema,
+  createCeramicApplicationServiceSchema,
+  createItemListSchema,
+} from '~/utils/structured-data';
 
 const sectionContainerClass = 'py-10 md:py-12 lg:py-14';
 
@@ -13,98 +18,93 @@ const capabilityShowcases = [
   {
     imagePosition: 'left' as const,
     image: {
-      src: '~/assets/images/copper/semiconductor-copper-parts.webp',
-      alt: 'Semiconductor copper hardware',
+      src: '~/assets/images/ceramic/application-7.webp',
+      alt: 'Ceramic slots pockets and thin-wall geometry for manufacturability review',
     },
-    title: 'Process fit before quotation',
+    title: 'Manufacturability before quotation',
     description:
-      'The practical route depends on geometry, material behavior, post-processing, and the function the part must prove.',
+      'Ceramic CNC feasibility depends on how the feature will be held, referenced, ground, protected, and inspected after sintering.',
     points: [
       {
-        title: 'LPBF copper builds',
+        title: 'Geometry review',
         description:
-          'Powder-bed builds are reviewed for compact parts with internal passages, complex flow paths, thin structures, or assembly consolidation goals.',
+          'Slots, pockets, thin walls, hole proximity, internal radii, and fragile edges are checked against material and tool access.',
       },
       {
-        title: 'DfAM feasibility',
-        description:
-          'Geometry review covers minimum channels, wall thickness, overhangs, support access, powder removal, and post-machining stock.',
+        title: 'Datum strategy',
+        description: 'Stable ground datums should be created before dependent features are finished or measured.',
       },
       {
-        title: 'Post-processing intent',
+        title: 'Route clarity',
         description:
-          'Machining, heat treatment, polishing, cleaning, plating, and sealing surfaces are defined before build strategy is finalized.',
+          'As-sintered, green-machined, ground, lapped, or polished surfaces are separated so the quote does not assume precision everywhere.',
       },
     ],
   },
   {
     imagePosition: 'right' as const,
     image: {
-      src: '~/assets/images/copper/copper-cold-plate-channels.webp',
-      alt: 'Copper cold plate channels for inspection review',
+      src: '~/assets/images/ceramic/application-6.webp',
+      alt: 'Precision ceramic flatness grinding and lapping capability',
     },
-    title: 'Inspection requirements',
+    title: 'Grinding, lapping, and surface finish planning',
     description:
-      'If the part has pressure, leak, CT, dimensional, or surface requirements, include them with the RFQ so they are considered during quotation.',
+      'Flatness, parallelism, sealing faces, and low Ra requirements are route decisions, not afterthoughts.',
     points: [
       {
-        title: 'Internal continuity',
+        title: 'Allowance planned upfront',
         description:
-          'CT scanning can check channel continuity, trapped powder risk, wall thickness around critical passages, and internal defect indications.',
+          'Grinding stock, lapping allowance, removal sequence, and edge protection should be part of the initial process plan.',
       },
       {
-        title: 'Pressure and leak targets',
+        title: 'Surface integrity',
         description:
-          'Cold plates, manifolds, vacuum hardware, and hydrogen components need working pressure, proof pressure, hold time, and leak threshold.',
+          'A low Ra value does not automatically prove low subsurface damage; high-risk applications may need process evidence.',
       },
       {
-        title: 'Dimensional checks',
+        title: 'Cost control',
         description:
-          'Datum faces, sealing lands, threaded interfaces, RF-critical surfaces, and electrical contact planes need inspection requirements stated.',
+          'Localizing precision to functional faces reduces unnecessary lapping, handling, and inspection cycles.',
       },
     ],
   },
   {
     imagePosition: 'left' as const,
     image: {
-      src: '~/assets/images/copper/rfq-review-workspace.webp',
-      alt: 'Copper AM RFQ review workspace',
+      src: '~/assets/images/ceramic/application-9.webp',
+      alt: 'Ceramic inspection and metrology fixture review',
     },
-    title: 'What helps us quote',
+    title: 'Inspection and acceptance evidence',
     description:
-      'A useful RFQ connects the part geometry to quantity, operating environment, and any required testing.',
+      'The acceptance gate should be defined before machining: what is measured, how it is measured, and which result decides pass/fail.',
     points: [
       {
-        title: 'Functional surfaces marked',
+        title: 'Dimensional evidence',
         description:
-          'Identify sealing faces, datum structures, contact planes, coolant ports, electrical interfaces, and keep-out regions.',
+          'CMM, optical measurement, profile, pin gages, and key-dimension reports can be matched to feature size and tolerance.',
       },
       {
-        title: 'Service load defined',
+        title: 'Surface evidence',
         description:
-          'Provide heat flux, coolant, pressure drop, current, duty cycle, RF band, vacuum exposure, or qualification constraints.',
+          'Flatness mapping, Ra readings, lapped-surface notes, microscopy, or visual edge criteria may be needed for functional faces.',
       },
       {
-        title: 'Testing requested',
+        title: 'Internal evidence',
         description:
-          'Specify whether CT, leak testing, pressure testing, flow validation, material certification, or surface inspection is required.',
-        callToAction: {
-          text: 'Send RFQ inputs',
-          href: 'mailto:info@szcomo.com',
-        },
+          'CT or section-based checks may be appropriate for internal geometry, micro-features, or high-risk blanks.',
       },
     ],
   },
 ];
 
 const metadata = {
-  title: 'Copper AM Capabilities | DfAM & Inspection',
+  title: 'Ceramic CNC Machining Capabilities',
   description:
-    'Copper AM capabilities for material review, LPBF DfAM, post-processing, thermal and electrical parts, CT, leak testing, and RF or vacuum requirements.',
+    'Precision ceramic CNC capabilities for post-sinter machining, diamond grinding, lapping, micro-drilling, edge quality, surface finish, CMM, profile, Ra, CT, and inspection planning.',
   openGraph: {
     images: [
       {
-        url: '~/assets/images/copper/hero-1.webp',
+        url: '~/assets/images/ceramic/application-6.webp',
         width: 1200,
         height: 628,
       },
@@ -116,20 +116,23 @@ const metadata = {
       { name: 'Home', item: '/' },
       { name: 'Capabilities', item: '/capabilities' },
     ]),
-    createItemListSchema('Copper AM capability areas', [
-      {
-        name: 'Material and process fit',
-        description:
-          'Pure copper, CuCrZr, and GRCop-42 review against function, temperature, and project requirements.',
-        url: '/capabilities#materials',
-      },
-      {
-        name: 'Inspection requirements',
-        description:
-          'CT, leak, pressure, dimensional, flow, and certification requirements for function-critical copper parts.',
-        url: '/capabilities#inspection',
-      },
-    ]),
+    createCeramicApplicationServiceSchema({
+      id: 'capabilities',
+      name: 'Ceramic CNC Machining, Diamond Grinding, and Inspection Capabilities',
+      serviceType: 'Precision ceramic CNC machining capability review',
+      description:
+        'Post-sinter ceramic machining, grinding, lapping, micro-drilling, edge quality, surface finish, and inspection planning for advanced ceramic components.',
+      url: '/capabilities',
+      audienceType: 'Engineering and procurement teams sourcing precision ceramic components',
+    }),
+    createItemListSchema(
+      'Ceramic CNC capability areas',
+      ceramicCapabilities.map((item) => ({
+        name: item.title,
+        description: item.description,
+        url: '/capabilities',
+      }))
+    ),
   ],
 };
 ---
@@ -140,71 +143,52 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Email info@szcomo.com',
-        href: 'mailto:info@szcomo.com',
+        text: 'Email technical RFQ',
+        href: rfqEmailHref,
         icon: 'tabler:mail',
       },
       { text: 'Review RFQ inputs', href: '/rfq' },
     ]}
     image={{
-      src: '~/assets/images/copper/hero-copper-parts-transparent.webp',
-      alt: 'Industrial copper additive manufacturing components',
+      src: '~/assets/images/ceramic/hero-ceramic-cnc.webp',
+      alt: 'Precision ceramic CNC machining capability parts',
       class: 'mx-auto w-full',
     }}
   >
     <Fragment slot="title">
-      Engineering support for <br />
-      <span class="text-accent dark:text-white">function-critical copper AM parts</span>
+      Ceramic CNC machining capability built around <br />
+      <span class="text-accent dark:text-white">datums, grinding, edge quality, and inspection</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      COPPER 3DP focuses on copper additive manufacturing. Send the drawing and requirements, and we assess material,
-      manufacturability, post-processing, and testing needs as the project requires.
+      CERAMIC CNC supports advanced ceramic parts by reviewing material behavior, feature feasibility, grinding
+      allowance, surface finish, edge-break control, and acceptance evidence before quotation.
     </Fragment>
   </Hero>
 
   <Stats
     title="Review areas"
     stats={[
-      { title: 'Copper alloy families', amount: '3' },
-      { title: 'Application hubs', amount: '15' },
-      { title: 'Inspection methods', amount: 'CT / leak / flow' },
-      { title: 'RFQ inputs', amount: '8+' },
+      { title: 'Ceramic material families', amount: '6+' },
+      { title: 'Application use cases', amount: '15' },
+      { title: 'Precision routes', amount: 'CNC / grind / lap' },
+      { title: 'Evidence options', amount: 'CMM / Ra / CT' },
     ]}
   />
 
   <Features3
-    id="materials"
-    title="Materials and process fit"
-    subtitle="The first decision is whether the material and process route can support the operating target and required post-processing."
+    id="process"
+    title="Core capabilities"
+    subtitle="Capability is feature-specific. The same ceramic grade can quote very differently depending on which faces must be finished and measured."
     columns={3}
     isBeforeContent={true}
-    items={[
-      {
-        title: 'Pure copper',
-        description:
-          'Reviewed when conductivity and heat-transfer path dominate the requirement, with post-processing planned around final performance.',
-        icon: 'tabler:hexagon-letter-c',
-      },
-      {
-        title: 'CuCrZr',
-        description:
-          'Considered when strength, thermal softening resistance, and service temperature matter alongside electrical or thermal conductivity.',
-        icon: 'tabler:atom',
-      },
-      {
-        title: 'GRCop-42',
-        description:
-          'Reviewed for aerospace and high-temperature programs where alloy behavior, heat treatment, and documentation may matter.',
-        icon: 'tabler:rocket',
-      },
-    ]}
+    items={ceramicCapabilities}
   />
 
   <SplitShowcase
     id="inspection"
     title="Capability review modules"
-    subtitle="The quote path is clearer when process fit, inspection, and acceptance needs are stated early."
+    subtitle="The quote path is clearer when process fit, finishing scope, and inspection evidence are stated early."
     tagline="Engineering review"
     items={capabilityShowcases}
     classes={{ container: sectionContainerClass }}
@@ -218,13 +202,13 @@ const metadata = {
       {
         title: 'Manufacturability review',
         description:
-          'Review for manufacturability limits, risk drivers, design options, and whether AM is suitable for the part.',
+          'We review feature geometry, material grade, datum strategy, edge risk, grinding access, and possible inspection paths.',
         icon: 'tabler:messages',
       },
       {
         title: 'Quotation support',
         description:
-          'Quotation support based on the drawing, quantity, material target, lead time, post-processing, and inspection requirements.',
+          'Quotation support is based on drawings, quantity, route assumptions, surface finish, tolerance map, and required evidence.',
         icon: 'tabler:headset',
       },
     ]}

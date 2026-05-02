@@ -5,26 +5,27 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import SplitShowcase from '~/components/widgets/SplitShowcase.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import { createBreadcrumbSchema, createItemListSchema } from '~/utils/structured-data';
+import { ceramicFaqItems, engineeringArticles, rfqEmail, rfqEmailHref } from '~/data/ceramic';
+import { createBreadcrumbSchema, createFAQPageSchema, createItemListSchema } from '~/utils/structured-data';
 
-const rfqEmail = 'info@szcomo.com';
-const rfqEmailHref = 'mailto:info@szcomo.com';
 const sectionContainerClass = 'py-10 md:py-12 lg:py-14';
-const rfqTemplate = `Subject: Copper 3D printing RFQ - [part name]
+const rfqTemplate = `Subject: Precision Ceramic CNC RFQ - [material/grade] - [quantity] - [target date]
 
-Hello COPPER 3DP,
+Hello CERAMIC CNC,
 
 Please review the attached CAD/drawings for quotation.
 
 Part/application:
+Ceramic material and grade:
 Attached files:
 Quantity:
-Material preference, if known:
 Target lead time:
-Critical dimensions or surfaces:
-Operating conditions:
-Inspection or test requirements:
-Post-processing expected:
+Critical dimensions, datums, and GD&T:
+Surface finish, flatness, or lapping requirements:
+Micro-holes, slots, thin walls, or edge-break requirements:
+Operating environment:
+Inspection and documentation required:
+Ship-to country/region:
 
 Notes:
 
@@ -34,64 +35,67 @@ const rfqShowcases = [
   {
     imagePosition: 'left' as const,
     image: {
-      src: '~/assets/images/copper/rfq-review-workspace.webp',
-      alt: 'Copper AM RFQ review workspace',
+      src: '~/assets/images/ceramic/application-9.webp',
+      alt: 'Ceramic RFQ metrology and datum review workspace',
     },
     title: 'How we handle different RFQs',
-    description: 'The response depends on the part and the information provided.',
+    description:
+      'The response depends on whether the drawing, material route, functional surfaces, and acceptance evidence are clear.',
     points: [
       {
         title: 'Simple drawing quote',
-        description: 'If geometry and quantity are clear, we can provide a basic quote with normal assumptions.',
+        description:
+          'If material, geometry, quantity, and normal tolerances are clear, we can provide a quote with standard route assumptions.',
       },
       {
         title: 'Clarification needed',
         description:
-          'If material, tolerance, pressure, current, thermal load, or inspection needs are unclear, we ask focused questions before quoting.',
+          'If datums, edge condition, surface finish, material grade, micro-features, or inspection needs are missing, we ask before quoting.',
       },
       {
         title: 'Complex project review',
         description:
-          'For demanding parts, we discuss process route, post-processing, inspection, and lead-time drivers as needed.',
+          'For sealing, vacuum, semiconductor, micro-hole, or high-flatness parts, feasibility notes and inspection scope are part of the quote path.',
       },
     ],
   },
   {
     imagePosition: 'right' as const,
     image: {
-      src: '~/assets/images/copper/high-current-busbars.webp',
-      alt: 'Copper AM RFQ review inputs',
+      src: '~/assets/images/ceramic/application-3.webp',
+      alt: 'Ceramic micro-drilling RFQ inputs',
     },
     title: 'Information that helps quotation',
-    description: 'Do not overprepare if the project is simple; send what you have and note what is critical.',
+    description:
+      'Send what you have and clearly mark what is function-critical. Leave unknown fields blank rather than guessing.',
     points: [
       {
         title: 'Geometry package',
         description:
-          'STEP, X_T, or native CAD files plus 2D drawings for critical dimensions, datum faces, sealing lands, contact surfaces, and threaded ports.',
+          'STEP, IGES, native CAD, and 2D drawings with revision, datums, GD&T, critical interfaces, and inspectable features.',
       },
       {
         title: 'Functional requirements',
         description:
-          'Heat load, coolant, flow rate, pressure drop, current, duty cycle, frequency band, vacuum exposure, and service temperature.',
+          'Temperature, media chemistry, wear/erosion, vacuum, dielectric, thermal cycling, flow, sealing, or assembly constraints.',
       },
       {
-        title: 'Special requirements',
+        title: 'Acceptance evidence',
         description:
-          'Material, quantity, lead time, CT scope, pressure or helium leak test, dimensional inspection, surface finish, and post-processing intent.',
+          'CMM, optical, profile, pin gage, CT, surface finish, flatness mapping, CoC, material certificate, or key-dimension report.',
       },
     ],
   },
 ];
 
 const metadata = {
-  title: 'Copper AM RFQ Checklist | Drawings',
+  title: 'Ceramic CNC RFQ Checklist | Drawings, Datums, Ra, Inspection',
   description:
-    'Copper AM RFQ checklist for CAD, drawings, quantity, material, lead time, heat load, current, RF band, CT, leak testing, and other requirements.',
+    'Precision ceramic CNC RFQ checklist for material grade, CAD, drawings, datums, GD&T, edge condition, micro-holes, surface finish Ra, flatness, CMM, CT, and inspection reports.',
   openGraph: {
     images: [
       {
-        url: '~/assets/images/copper/high-current-busbars.webp',
+        url: '~/assets/images/ceramic/application-9.webp',
         width: 1200,
         height: 628,
       },
@@ -103,25 +107,25 @@ const metadata = {
       { name: 'Home', item: '/' },
       { name: 'RFQ Inputs', item: '/rfq' },
     ]),
-    createItemListSchema('Copper AM RFQ checklist', [
+    createItemListSchema('Ceramic CNC RFQ checklist', [
       {
         name: 'Geometry package',
-        description: 'STEP, X_T, native CAD, and 2D drawings for critical faces, ports, threads, and dimensions.',
+        description: 'STEP, IGES, native CAD, and drawings for critical faces, datums, holes, slots, and dimensions.',
         url: '/rfq',
       },
       {
         name: 'Functional requirements',
-        description:
-          'Heat load, coolant, flow rate, pressure drop, current, frequency band, vacuum, or service temperature.',
+        description: 'Temperature, media, wear, vacuum, insulation, flow, sealing, and assembly constraints.',
         url: '/rfq',
       },
       {
-        name: 'Special requirements',
+        name: 'Inspection requirements',
         description:
-          'CT scope, pressure or helium leak test, dimensional inspection, thermal test, and cleaning requirement.',
+          'CMM, optical, profile, CT, surface finish, flatness, CoC, material cert, and key-dimension reports.',
         url: '/rfq',
       },
     ]),
+    createFAQPageSchema(ceramicFaqItems.slice(0, 10)),
   ],
 };
 ---
@@ -129,8 +133,8 @@ const metadata = {
 <Layout metadata={metadata}>
   <HeroText
     tagline="RFQ inputs"
-    title="Send enough information for a practical copper AM quote"
-    subtitle="A simple drawing and quantity can be enough for a first quote. For complex thermal, electrical, or fluid parts, include the requirements that affect material, post-processing, and testing."
+    title="Send enough information for a practical ceramic CNC quote"
+    subtitle="A simple drawing and quantity can be enough for a first quote. For precision ceramic parts, include the requirements that affect material route, grinding allowance, surface finish, edge quality, and inspection."
   />
 
   <section class="relative not-prose py-10 md:py-14">
@@ -143,7 +147,7 @@ const metadata = {
             <p class="text-sm font-semibold uppercase tracking-wide text-primary">Email format</p>
             <h2 class="mt-2 text-2xl font-bold tracking-tight dark:text-white">Use this structure if it helps.</h2>
             <p class="mt-3 max-w-3xl text-muted dark:text-slate-300">
-              Send the drawing and what you know. Leave unknown fields blank rather than guessing.
+              Send the drawing and what you know. Unknown fields can stay blank.
             </p>
           </div>
           <a
@@ -173,85 +177,31 @@ const metadata = {
   <SplitShowcase
     title="RFQ review flow"
     tagline="Practical inputs"
-    subtitle="Send the drawing first. Add the requirements that affect quotation and acceptance."
+    subtitle="Send the drawing first. Add the ceramic-specific requirements that affect quotation and acceptance."
     items={rfqShowcases}
     classes={{ container: sectionContainerClass }}
   />
 
   <FAQs
     title="RFQ FAQs"
-    subtitle="These questions usually determine whether a copper AM quote can move quickly."
+    subtitle="These questions usually determine whether a ceramic CNC quote can move quickly."
     columns={1}
-    items={[
-      {
-        title: 'Will every RFQ receive the same response?',
-        description:
-          'No. If the drawing and quantity are clear, the reply may be a basic quote. If key requirements are missing, we ask clarification questions first.',
-      },
-      {
-        title: 'Can I send an early concept?',
-        description:
-          'Yes. Early CAD is useful for a first review, but quotation usually needs material, quantity, lead time, and any critical requirements.',
-      },
-      {
-        title: 'Do you need a drawing if CAD is available?',
-        description:
-          'Drawings are recommended for critical dimensions, datum faces, flatness, sealing lands, thread notes, surface finish, and inspection scope.',
-      },
-      {
-        title: 'What if the material is not decided?',
-        description:
-          'Send the service temperature, conductivity target, mechanical load, and environment so pure copper, CuCrZr, or GRCop-42 can be reviewed.',
-      },
-      {
-        title: 'How are internal channels accepted?',
-        description:
-          'Internal passages should define CT scope, pressure or leak targets, flow rate, pressure drop, cleaning method, and allowable blockage risk.',
-      },
-      {
-        title: 'What affects lead time most?',
-        description:
-          'Geometry review, build orientation, post-machining, heat treatment, CT or leak testing, surface requirements, and material availability.',
-      },
-    ]}
+    items={ceramicFaqItems.slice(0, 12)}
   />
 
   <Features3
     title="Related RFQ guides"
     subtitle="Use these when the project needs more than a simple drawing-and-quantity quote."
     columns={3}
-    items={[
-      {
-        title: 'Copper 3D printing service',
-        description:
-          'A practical guide to CAD, drawings, quantity, materials, operating requirements, post-processing, and inspection scope.',
-        icon: 'tabler:file-description',
-        callToAction: {
-          text: 'Read service RFQ guide',
-          href: '/posts/EngineeringGuide/copper-3d-printing-service-rfq-guide/',
-        },
+    items={engineeringArticles.slice(0, 6).map((article) => ({
+      title: article.title,
+      description: article.description,
+      icon: 'tabler:file-description',
+      callToAction: {
+        text: 'Read guide',
+        href: article.href,
       },
-      {
-        title: 'Process route selection',
-        description:
-          'Compare LPBF copper AM, CNC, brazing, skiving, EDM, and conventional routes before locking the quote path.',
-        icon: 'tabler:route',
-        callToAction: {
-          text: 'Read process guide',
-          href: '/posts/EngineeringGuide/copper-am-process-selection-lpbf-cnc-brazing/',
-        },
-      },
-      {
-        title: 'Busbars and coils',
-        description:
-          'RFQ inputs for current path, duty cycle, contact faces, cooling, insulation, plating, and inspection.',
-        icon: 'tabler:bolt',
-        callToAction: {
-          text: 'Read electrical RFQ guide',
-          href: '/posts/EngineeringGuide/3d-printed-copper-busbars-induction-coils-rfq/',
-        },
-      },
-    ]}
+    }))}
   />
 
   <CallToAction
@@ -266,8 +216,8 @@ const metadata = {
     ]}
   >
     <Fragment slot="subtitle">
-      Email <a class="font-semibold underline underline-offset-4" href={rfqEmailHref}>{rfqEmail}</a> with CAD, drawings, quantity,
-      material if known, lead time, service conditions, and inspection requirements when they matter.
+      Email <a class="font-semibold underline underline-offset-4" href={rfqEmailHref}>{rfqEmail}</a> with CAD, drawings, material
+      grade, quantity, lead time, critical surfaces, edge requirements, and inspection expectations when they matter.
     </Fragment>
   </CallToAction>
 </Layout>

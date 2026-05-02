@@ -4,107 +4,31 @@ import Features2 from '~/components/widgets/Features2.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import SplitShowcase from '~/components/widgets/SplitShowcase.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import { ceramicApplications, rfqEmailHref } from '~/data/ceramic';
 import { createBreadcrumbSchema, createItemListSchema } from '~/utils/structured-data';
 
 const sectionContainerClass = 'py-10 md:py-12 lg:py-14';
 
-const applicationShowcases = [
-  {
-    imagePosition: 'left' as const,
-    image: {
-      src: '~/assets/images/copper/copper-heat-sinks.webp',
-      alt: '3D printed copper heat sinks',
-    },
-    title: 'Copper heat sinks',
-    description:
-      'Printed copper heat sinks only make sense when the thermal path, airflow, interface control, and geometry limits are reviewed together.',
-    points: [
-      {
-        title: 'Thermal path first',
-        description:
-          'Airflow, contact resistance, fin efficiency, base flatness, and heat load decide whether AM is useful.',
-        callToAction: { text: 'Heat sink RFQ page', href: '/copper-heat-sinks' },
-      },
-      {
-        title: 'Fin limits',
-        description:
-          'Minimum fin thickness, spacing, support strategy, surface finish, and post-machining determine feasibility.',
-      },
-      {
-        title: 'Validation plan',
-        description:
-          'Thermal testing, interface inspection, dimensional checks, and pressure drop targets should be stated when required.',
-      },
-    ],
+const applicationShowcases = ceramicApplications.map((item, index) => ({
+  id: item.id,
+  imagePosition: index % 2 === 0 ? ('left' as const) : ('right' as const),
+  image: {
+    src: item.image,
+    alt: item.alt,
   },
-  {
-    imagePosition: 'right' as const,
-    image: {
-      src: '~/assets/images/copper/induction-heating-coils.webp',
-      alt: '3D printed copper induction heating coils',
-    },
-    title: 'Electrical copper hardware',
-    description:
-      'Conductivity, interface resistance, insulation, cooling, and hot-spot control must be reviewed as one system.',
-    points: [
-      {
-        title: 'Induction coils',
-        description:
-          'Monolithic coil routing, internal cooling, turn spacing, electrical isolation, conductivity recovery, and burn-through risk.',
-        callToAction: {
-          text: 'Coil RFQ guide',
-          href: '/posts/EngineeringGuide/3d-printed-copper-busbars-induction-coils-rfq/',
-        },
-      },
-      {
-        title: 'High-current busbars',
-        description:
-          'Compact routing, joint resistance, current density, plating strategy, flat contact planes, and creepage or clearance constraints.',
-      },
-      {
-        title: 'High-voltage electrodes',
-        description:
-          'Edge radius, field concentration, surface finish, post-processing repeatability, and insulation interface requirements.',
-      },
-    ],
-  },
-  {
-    imagePosition: 'left' as const,
-    image: {
-      src: '~/assets/images/copper/rf-waveguide-copper-parts.webp',
-      alt: 'RF waveguide copper additive manufacturing parts',
-    },
-    title: 'RF, vacuum, and semiconductor hardware',
-    description:
-      'For these parts, tolerance, surface condition, sealing, and cleanliness usually matter more than the printed shape alone.',
-    points: [
-      {
-        title: 'RF / waveguide parts',
-        description:
-          'Dimensional accuracy, surface roughness, conductor loss, plating, and frequency response are the core feasibility constraints.',
-      },
-      {
-        title: 'Semiconductor copper parts',
-        description:
-          'Integrated cooling, compact manifolds, particle risk, vacuum sealing, internal surface condition, cleaning, and leak-rate targets.',
-      },
-      {
-        title: 'Vacuum and hydrogen components',
-        description:
-          'Trapped volume, leak targets, wall-thickness limits, cleaning, bakeout compatibility, and pressure evidence drive review.',
-      },
-    ],
-  },
-];
+  title: item.title,
+  description: item.description,
+  points: item.points,
+}));
 
 const metadata = {
-  title: 'Copper AM Applications | Cold Plates',
+  title: 'Advanced Ceramic CNC Machining Applications',
   description:
-    'LPBF copper 3D printing applications for cold plates, heat sinks, induction coils, busbars, RF waveguides, vacuum parts, and semiconductor hardware.',
+    'Application hubs for precision ceramic CNC machining: semiconductor ceramics, sealing faces, micro-drilling, insulators, wear parts, flats, thin walls, vacuum hardware, nozzles, bores, and edge quality.',
   openGraph: {
     images: [
       {
-        url: '~/assets/images/copper/copper-cold-plates.webp',
+        url: '~/assets/images/ceramic/application-1.webp',
         width: 1200,
         height: 628,
       },
@@ -116,29 +40,14 @@ const metadata = {
       { name: 'Home', item: '/' },
       { name: 'Applications', item: '/applications' },
     ]),
-    createItemListSchema('Copper AM applications', [
-      {
-        name: 'Copper cold plates',
-        description: 'Micro-channel cold plates, integrated manifolds, leak-test planning, and CT verification.',
-        url: '/copper-cold-plates',
-      },
-      {
-        name: 'Copper heat sinks',
-        description: 'Printed copper heat sinks reviewed for airflow, fin limits, interface flatness, and validation.',
-        url: '/copper-heat-sinks',
-      },
-      {
-        name: 'Induction coils and busbars',
-        description: 'Conductive copper AM components for high-current, internal cooling, and compact routing.',
-        url: '/applications#electrical',
-      },
-      {
-        name: 'RF, vacuum, and semiconductor hardware',
-        description:
-          'Copper AM waveguide, vacuum, and semiconductor parts requiring surface, sealing, and cleanliness review.',
-        url: '/applications#rf',
-      },
-    ]),
+    createItemListSchema(
+      'Advanced ceramic CNC machining applications',
+      ceramicApplications.map((item) => ({
+        name: item.title,
+        description: item.description,
+        url: `/applications#${item.id}`,
+      }))
+    ),
   ],
 };
 ---
@@ -146,115 +55,83 @@ const metadata = {
 <Layout metadata={metadata}>
   <Hero
     tagline="Applications"
-    title="Use copper AM where it changes performance or risk"
-    subtitle="Start from the application need, then send geometry, quantity, material if known, operating load, post-processing, and inspection requirements when they matter."
+    title="Use ceramic CNC where geometry, surface integrity, and inspection decide success"
+    subtitle="Start from the application need, then define material grade, datums, functional faces, edge condition, surface finish, and evidence required for acceptance."
     actions={[
       {
         variant: 'primary',
-        text: 'Email info@szcomo.com',
-        href: 'mailto:info@szcomo.com',
+        text: 'Email technical RFQ',
+        href: rfqEmailHref,
       },
+      { text: 'RFQ checklist', href: '/rfq' },
     ]}
     image={{
-      src: '~/assets/images/copper/hero-copper-parts-transparent.webp',
-      alt: 'Copper additive manufacturing application parts',
+      src: '~/assets/images/ceramic/hero-ceramic-cnc.webp',
+      alt: 'Advanced ceramic CNC machining application parts',
       class: 'mx-auto w-full',
     }}
   />
 
   <Features2
-    title="Thermal and fluid systems"
-    subtitle="Copper AM is strongest when internal flow paths, heat-transfer area, part consolidation, or leak-risk control change the engineering outcome."
+    title="Application families"
+    subtitle="These categories mirror the RFQ patterns most likely to need ceramic machining feasibility review before a reliable quote."
     columns={3}
-    items={[
-      {
-        title: 'Copper cold plates',
-        description:
-          'LPBF copper and CuCrZr cold plates with micro-channels, integrated manifolds, leak-test planning, CT verification, and machined sealing surfaces.',
-        icon: 'tabler:droplet',
-        callToAction: { text: 'Cold plate RFQ page', href: '/copper-cold-plates' },
-      },
-      {
-        title: 'Micro-channel heat exchangers',
-        description:
-          'Dense channel networks, integrated headers, pressure drop trade-offs, powder removal, internal surface condition, and fouling risk.',
-        icon: 'tabler:arrows-transfer-up',
-      },
-      {
-        title: 'Conformal cooling inserts',
-        description:
-          'Cooling channels closer to the heat source, wall-thickness limits, erosion and leakage risk, and cycle-time validation planning.',
-        icon: 'tabler:snowflake',
-      },
-      {
-        title: 'Welding, plasma, and laser nozzles',
-        description:
-          'Internal cooling, localized thickening, erosion zones, duty cycle, and geometry stability for high-heat consumable hardware.',
-        icon: 'tabler:flame',
-      },
-      {
-        title: 'Rocket chamber liners',
-        description:
-          'Regenerative cooling geometry, alloy selection, injector or manifold integration, and CT or leak testing when required.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Multi-functional copper structures',
-        description:
-          'Thermal, electrical, and structural functions combined into compact hardware with defined datums and requirements.',
-        icon: 'tabler:components',
-      },
-    ]}
+    items={ceramicApplications.map((item) => ({
+      title: item.title,
+      description: item.description,
+      icon: 'tabler:hexagon',
+      callToAction: { text: 'View details', href: `/applications#${item.id}` },
+    }))}
   />
 
   <SplitShowcase
     title="Application-specific review"
-    subtitle="Use the part function and failure mode to decide whether copper AM is worth quoting."
-    tagline="Where AM can help"
+    subtitle="Each case below is mapped to feature feasibility, failure modes, inspection logic, and RFQ inputs."
+    tagline="Use cases"
     items={applicationShowcases}
     classes={{ container: sectionContainerClass }}
   />
 
   <Features2
     title="Requirements that affect quotation"
-    subtitle="These details help decide whether the part can move toward AM quotation, needs clarification, or fits a conventional route better."
+    subtitle="Ceramic parts quote differently when precision is localized to functional interfaces instead of applied globally."
     columns={3}
     items={[
       {
-        title: 'Cold plates',
+        title: 'Functional surfaces',
         description:
-          'Cold plate quotes depend on leak target, proof pressure, channel cleaning path, and post-machined sealing lands when those requirements apply.',
-        icon: 'tabler:droplet',
+          'Seal faces, bearing fits, datum pads, bores, orifice edges, and alignment features should be marked on the drawing.',
+        icon: 'tabler:target',
       },
       {
-        title: 'Heat sinks',
+        title: 'Edge quality',
         description:
-          'The heat sink concept needs airflow data and interface flatness requirements; printed copper fins alone do not guarantee lower thermal resistance.',
-        icon: 'tabler:temperature',
+          'Define chamfer, radius, and allowable chip size by zone so handling edges do not become hidden crack origins.',
+        icon: 'tabler:corner-down-right',
       },
       {
-        title: 'Busbars and coils',
+        title: 'Surface finish',
         description:
-          'For the busbar, the quote depends on current density, joint surface machining, plating requirements, and creepage or clearance targets.',
-        icon: 'tabler:bolt',
+          'Ra, lapping, polishing, and surface integrity should be applied to faces that drive sealing, wear, cleanability, or friction.',
+        icon: 'tabler:ruler-measure',
       },
       {
-        title: 'RF hardware',
+        title: 'Micro-features',
         description:
-          'Waveguide and RF parts need frequency band, critical surfaces, plating expectations, and test method before quoting.',
-        icon: 'tabler:antenna-bars-5',
+          'Micro-holes, narrow slots, thin walls, and internal radii need diameter, depth, taper, edge condition, and inspection method.',
+        icon: 'tabler:focus-2',
       },
       {
-        title: 'Vacuum parts',
+        title: 'Material grade',
         description:
-          'Leak target, trapped-volume risk, cleaning path, bakeout conditions, and sealing surfaces should be known before route selection.',
+          'A generic material name is not enough for critical applications. Specify grade, density, purity, or performance targets.',
+        icon: 'tabler:atom',
+      },
+      {
+        title: 'Inspection packet',
+        description:
+          'CMM, profile, optical, CT, surface finish, flatness mapping, and key-dimension reports should match acceptance risk.',
         icon: 'tabler:clipboard-check',
-      },
-      {
-        title: 'When to avoid AM',
-        description:
-          'If the part is simple, requirements are undefined, or CNC can produce the function with lower risk, AM may not be the right route.',
-        icon: 'tabler:alert-triangle',
       },
     ]}
   />
@@ -265,10 +142,10 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Email info@szcomo.com',
-        href: 'mailto:info@szcomo.com',
+        href: rfqEmailHref,
       },
     ]}
-    title="Need a quote for a copper AM part?"
-    subtitle="Send CAD, material target if known, quantity, lead time, operating conditions, and critical requirements."
+    title="Need a quote for a precision ceramic part?"
+    subtitle="Send CAD, drawings, material grade, quantity, lead time, functional surfaces, edge requirements, and inspection expectations."
   />
 </Layout>

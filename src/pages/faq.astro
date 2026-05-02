@@ -1,24 +1,63 @@
 ---
-const target = '/rfq/';
-const title = 'RFQ Checklist | COPPER 3DP';
-const description = 'The former FAQ page has moved to the RFQ checklist for copper 3D printing inquiries.';
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import { ceramicFaqItems, rfqEmailHref } from '~/data/ceramic';
+import { createBreadcrumbSchema, createFAQPageSchema } from '~/utils/structured-data';
+
+const metadata = {
+  title: 'Ceramic CNC Machining FAQ | Tolerances, Ra, Micro-Holes, Grinding',
+  description:
+    'FAQ for precision ceramic CNC machining, diamond grinding, lapping, ceramic tolerances, surface finish Ra, micro-holes, material selection, inspection, CT, and RFQ inputs.',
+  openGraph: {
+    images: [
+      {
+        url: '~/assets/images/ceramic/hero-ceramic-cnc.webp',
+        width: 1200,
+        height: 628,
+      },
+    ],
+    type: 'website',
+  },
+  structuredData: [
+    createBreadcrumbSchema([
+      { name: 'Home', item: '/' },
+      { name: 'FAQ', item: '/faq' },
+    ]),
+    createFAQPageSchema(ceramicFaqItems),
+  ],
+};
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex, follow" />
-    <meta http-equiv="refresh" content={`0; url=${target}`} />
-    <link rel="canonical" href="https://copper3dp.com/rfq/" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
-  </head>
-  <body>
-    <main>
-      <h1>RFQ checklist</h1>
-      <p>The FAQ page has moved. Continue to the <a href={target}>RFQ checklist</a>.</p>
-    </main>
-  </body>
-</html>
+<Layout metadata={metadata}>
+  <HeroText
+    tagline="FAQ"
+    title="Precision ceramic CNC machining FAQ"
+    subtitle="Answers for ceramic RFQ preparation, material choice, green vs hard machining, tolerances, surface finish, micro-holes, inspection, and acceptance criteria."
+  />
+
+  <FAQs
+    title="RFQ and engineering questions"
+    subtitle="Use these answers to reduce ambiguity before sending a drawing for quotation."
+    columns={1}
+    items={ceramicFaqItems}
+  />
+
+  <CallToAction
+    title="Ready to start your project?"
+    subtitle="Send requirements, drawings, and target quantity. We respond with feasibility notes, lead time, and quotation details."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Email info@szcomo.com',
+        href: rfqEmailHref,
+        icon: 'tabler:mail',
+      },
+      {
+        text: 'RFQ checklist',
+        href: '/rfq',
+      },
+    ]}
+  />
+</Layout>

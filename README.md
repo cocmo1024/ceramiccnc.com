@@ -1,12 +1,12 @@
-# COPPER 3DP Website
+# CERAMIC CNC Website
 
-Static Astro site for COPPER 3DP, focused on copper 3D printing RFQs, application pages, and engineering guide articles.
+Static Astro site for CERAMIC CNC, focused on precision ceramic CNC machining RFQs, application pages, material guidance, and engineering guide articles.
 
 ## Project Scope
 
-- LPBF copper 3D printing service pages
-- RFQ preparation and email-based inquiry flow
-- Copper AM applications, materials, and capability pages
+- Precision ceramic CNC machining service pages
+- Diamond grinding, lapping, micro-drilling, edge quality, and inspection content
+- Advanced ceramic applications, materials, and capability pages
 - Engineering guide articles with tags, related posts, RSS, sitemap, and structured data
 
 ## Local Development
@@ -16,7 +16,7 @@ npm install
 npm run dev
 ```
 
-Local preview runs at `http://localhost:4321/`.
+Local preview runs at `http://localhost:4321/` unless the port is already in use.
 
 ## Quality Checks
 
@@ -35,11 +35,11 @@ The site builds as static output in `dist/`.
 npm run build
 ```
 
-Primary domain: `https://copper3dp.com`
+Primary domain: `https://www.ceramiccnc.com`
 
 ## Google Tracking
 
-RFQ email clicks are tracked as the primary lead-intent event. Configure the public build variables in the hosting environment:
+RFQ email clicks are tracked as the primary lead-intent event when public build variables are configured in the hosting environment:
 
 ```bash
 PUBLIC_GA_MEASUREMENT_ID=G-xxxx

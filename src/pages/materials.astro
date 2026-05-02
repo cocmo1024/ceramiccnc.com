@@ -4,6 +4,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import SplitShowcase from '~/components/widgets/SplitShowcase.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { ceramicMaterials, rfqEmailHref } from '~/data/ceramic';
 import { createBreadcrumbSchema, createItemListSchema } from '~/utils/structured-data';
 
 const sectionContainerClass = 'py-10 md:py-12 lg:py-14';
@@ -12,40 +13,67 @@ const materialShowcases = [
   {
     imagePosition: 'left' as const,
     image: {
-      src: '~/assets/images/copper/induction-heating-coils.webp',
-      alt: 'Copper induction coil material review',
+      src: '~/assets/images/ceramic/application-5.webp',
+      alt: 'SiC and Si3N4 ceramic wear parts material selection',
     },
-    title: 'Material decision inputs that speed review',
+    title: 'Select material by failure mode, not by name alone',
     description:
-      'The same alloy can behave differently depending on wall thickness, heat treatment, machining allowance, inspection scope, and operating environment.',
+      'A ceramic grade should be chosen against the real constraint: wear, chipping, thermal shock, dielectric performance, vacuum, chemical exposure, or machinability.',
     points: [
       {
-        title: 'Conductivity after processing',
+        title: 'Mechanical risk',
         description:
-          'Conductivity targets should be discussed after stress relief, heat treatment, machining, polishing, or plating requirements are known.',
+          'Impact, tensile stress, unsupported thin walls, and sharp transitions can make a high-hardness ceramic fail early.',
       },
       {
-        title: 'Strength and service temperature',
+        title: 'Thermal and chemical environment',
         description:
-          'Clamp loads, pressure loads, thermal cycling, and local wall thickness determine whether pure copper is enough.',
+          'Temperature profile, ramp rate, atmosphere, media chemistry, and erosion condition affect both material and design choices.',
       },
       {
-        title: 'Inspection and certification',
+        title: 'Finishability',
         description:
-          'State whether material certificates, density expectations, CT review, or leak-test requirements are needed.',
+          'A material that is excellent in service may be expensive to grind or polish to tight Ra and tolerance targets.',
+      },
+    ],
+  },
+  {
+    imagePosition: 'right' as const,
+    image: {
+      src: '~/assets/images/ceramic/application-4.webp',
+      alt: 'Alumina ceramic insulator material selection',
+    },
+    title: 'Lock grade and acceptance before production',
+    description:
+      'Two parts called alumina or zirconia can behave differently. Purity, density, grain size, sintering aids, and supplier grade can affect strength, wear, insulation, and finishing behavior.',
+    points: [
+      {
+        title: 'Grade definition',
+        description:
+          'Specify grade or minimum property targets when density, porosity, insulation, wear, or vacuum behavior is function-critical.',
+      },
+      {
+        title: 'Functional faces',
+        description:
+          'Tie tight tolerances and low Ra to the faces that actually seal, locate, insulate, guide, or wear.',
+      },
+      {
+        title: 'Evidence',
+        description:
+          'Request material certificate, CoC, density or porosity evidence, and dimensional reports when the application needs traceability.',
       },
     ],
   },
 ];
 
 const metadata = {
-  title: 'Copper AM Materials | Pure Copper & CuCrZr',
+  title: 'Advanced Ceramic Materials for CNC Machining',
   description:
-    'Material selection for LPBF copper AM: pure copper, CuCrZr, and GRCop-42 for thermal, electrical, aerospace, and high-temperature parts.',
+    'Material selection for precision ceramic CNC machining: alumina Al2O3, zirconia ZrO2, silicon nitride Si3N4, silicon carbide SiC, MACOR, AlN, BN, fused silica, density, hardness, dielectric, thermal, and wear considerations.',
   openGraph: {
     images: [
       {
-        url: '~/assets/images/copper/high-current-busbars.webp',
+        url: '~/assets/images/ceramic/application-5.webp',
         width: 1200,
         height: 628,
       },
@@ -57,24 +85,14 @@ const metadata = {
       { name: 'Home', item: '/' },
       { name: 'Materials', item: '/materials' },
     ]),
-    createItemListSchema('Copper AM material paths', [
-      {
-        name: 'Pure copper',
-        description: 'Reviewed when electrical or thermal conductivity is the dominant requirement.',
+    createItemListSchema(
+      'Advanced ceramic materials for CNC machining',
+      ceramicMaterials.map((item) => ({
+        name: item.title,
+        description: item.description,
         url: '/materials',
-      },
-      {
-        name: 'CuCrZr',
-        description: 'Reviewed when strength and softening resistance matter alongside conductivity.',
-        url: '/materials',
-      },
-      {
-        name: 'GRCop-42',
-        description:
-          'Reviewed for high-temperature aerospace and thermal hardware where qualification documentation matters.',
-        url: '/materials',
-      },
-    ]),
+      }))
+    ),
   ],
 };
 ---
@@ -82,60 +100,94 @@ const metadata = {
 <Layout metadata={metadata}>
   <Hero
     tagline="Materials"
-    title="Copper material options for 3D printing"
-    subtitle="If you know the material, send it. If not, send operating requirements so we can discuss pure copper, CuCrZr, or GRCop-42 as needed."
+    title="Advanced ceramic materials for precision machining"
+    subtitle="If you know the ceramic grade, send it. If not, send the operating environment, failure mode, tolerance targets, and inspection needs so a material route can be reviewed."
     actions={[
       {
         variant: 'primary',
         text: 'Email material review',
-        href: 'mailto:info@szcomo.com',
+        href: rfqEmailHref,
       },
       { text: 'RFQ inputs', href: '/rfq' },
     ]}
     image={{
-      src: '~/assets/images/copper/hero-copper-parts-transparent.webp',
-      alt: 'Copper additive manufacturing material review parts',
+      src: '~/assets/images/ceramic/hero-ceramic-cnc.webp',
+      alt: 'Advanced ceramic materials for CNC machining review',
       class: 'mx-auto w-full',
     }}
   />
 
   <Features2
     title="Common material paths"
-    subtitle="The right route is selected against the function of the part, not by material name alone."
+    subtitle="The right ceramic route is selected against the function of the part, not by material name alone."
     columns={3}
-    items={[
-      {
-        title: 'Pure copper',
-        description:
-          'Best reviewed when electrical or thermal conductivity is dominant, mechanical loads are controlled, and final conductivity is more important than strength.',
-        icon: 'tabler:hexagon-letter-c',
-      },
-      {
-        title: 'CuCrZr',
-        description:
-          'Useful when the part needs more strength, clamp-load stability, or softening resistance while retaining useful conductivity after heat treatment.',
-        icon: 'tabler:atom',
-      },
-      {
-        title: 'GRCop-42',
-        description:
-          'Reviewed for high-temperature thermal hardware where alloy behavior, heat treatment, and documentation may matter.',
-        icon: 'tabler:rocket',
-      },
-    ]}
+    items={ceramicMaterials}
   />
 
   <SplitShowcase items={materialShowcases} classes={{ container: sectionContainerClass }} />
 
+  <section class:list={['relative not-prose', sectionContainerClass]}>
+    <div class="mx-auto max-w-5xl px-4 sm:px-6">
+      <div
+        class="overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-900"
+      >
+        <div class="px-5 py-4 md:px-6">
+          <p class="text-sm font-semibold uppercase tracking-wide text-primary">Procurement note</p>
+          <h2 class="mt-2 text-2xl font-bold tracking-tight dark:text-white">
+            Generic material labels are not enough for critical ceramic parts.
+          </h2>
+          <p class="mt-3 text-muted dark:text-slate-300">
+            For sealing, vacuum, wear, high-voltage, thermal cycling, and semiconductor applications, specify grade,
+            density or porosity expectations, critical faces, edge condition, and required evidence before quoting.
+          </p>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="min-w-full divide-y divide-slate-200 text-sm dark:divide-slate-700">
+            <thead class="bg-slate-50 text-left text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+              <tr>
+                <th class="px-5 py-3 font-semibold">Material</th>
+                <th class="px-5 py-3 font-semibold">Common reason to choose</th>
+                <th class="px-5 py-3 font-semibold">RFQ caution</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200 dark:divide-slate-700">
+              <tr>
+                <td class="px-5 py-3 font-medium">Al2O3</td>
+                <td class="px-5 py-3">Insulation, wear resistance, chemical stability, cost efficiency.</td>
+                <td class="px-5 py-3">Specify purity, density, surface finish, and finished faces.</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 font-medium">ZrO2</td>
+                <td class="px-5 py-3">Higher toughness and reduced chipping risk for selected mechanical parts.</td>
+                <td class="px-5 py-3">Control thermal environment, dimensional stability, and mating faces.</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 font-medium">Si3N4</td>
+                <td class="px-5 py-3">Bearings, wear parts, and thermally shocked mechanical components.</td>
+                <td class="px-5 py-3">Define load mode, edge quality, roundness, and inspection method.</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 font-medium">SiC</td>
+                <td class="px-5 py-3">Extreme wear, chemical resistance, seals, nozzles, and harsh process hardware.</td
+                >
+                <td class="px-5 py-3">Very hard to finish; localize tight tolerances and low Ra.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <CallToAction
     classes={{ container: sectionContainerClass }}
-    title="Not sure which copper alloy fits the part?"
-    subtitle="Send the CAD package, quantity, operating conditions, and critical requirements so the material route can be reviewed as needed."
+    title="Not sure which ceramic material fits the part?"
+    subtitle="Send the CAD package, quantity, operating environment, failure mode, and critical requirements so the material route can be reviewed."
     actions={[
       {
         variant: 'primary',
         text: 'Email drawing for review',
-        href: 'mailto:info@szcomo.com',
+        href: rfqEmailHref,
       },
     ]}
   />

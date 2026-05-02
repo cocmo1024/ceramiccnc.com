@@ -1,34 +1,42 @@
 import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { rfqEmailHref } from './data/ceramic';
 
-const rfqEmailHref = 'mailto:info@szcomo.com';
 const currentYear = new Date().getFullYear();
 
 export const headerData = {
   links: [
     {
       text: 'Applications',
-      href: getPermalink('/#applications'),
+      href: getPermalink('/applications'),
+    },
+    {
+      text: 'Capabilities',
+      href: getPermalink('/capabilities'),
+    },
+    {
+      text: 'Materials',
+      href: getPermalink('/materials'),
     },
     {
       text: 'Engineering',
       links: [
         {
-          text: 'Materials',
-          href: getPermalink('/materials'),
+          text: 'Engineering Guide',
+          href: getBlogPermalink(),
         },
         {
-          text: 'Process selection',
-          href: getPermalink('/posts/EngineeringGuide/copper-am-process-selection-lpbf-cnc-brazing'),
+          text: 'Tolerance capability map',
+          href: getPermalink('/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process'),
+        },
+        {
+          text: 'DFM design rules',
+          href: getPermalink('/posts/design-rules-feature-dfam/ceramic-dfm-design-rules'),
         },
       ],
     },
     {
       text: 'RFQ',
       href: getPermalink('/rfq'),
-    },
-    {
-      text: 'Resources',
-      href: getBlogPermalink(),
     },
     {
       text: 'Contact',
@@ -43,26 +51,34 @@ export const footerData = {
     {
       title: 'Start',
       links: [
-        { text: 'Applications', href: getPermalink('/#applications') },
+        { text: 'Applications', href: getPermalink('/applications') },
+        { text: 'Capabilities', href: getPermalink('/capabilities') },
         { text: 'RFQ inputs', href: getPermalink('/rfq') },
-        { text: 'Engineering resources', href: getBlogPermalink() },
       ],
     },
     {
-      title: 'Engineering notes',
+      title: 'Engineering',
       links: [
         {
-          text: 'Copper service RFQ guide',
-          href: getPermalink('/posts/EngineeringGuide/copper-3d-printing-service-rfq-guide'),
+          text: 'Tolerance map',
+          href: getPermalink('/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process'),
         },
         {
-          text: 'Process selection',
-          href: getPermalink('/posts/EngineeringGuide/copper-am-process-selection-lpbf-cnc-brazing'),
+          text: 'Surface finish and SSD',
+          href: getPermalink('/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price'),
         },
         {
-          text: 'CT and leak criteria',
-          href: getPermalink('/posts/EngineeringGuide/ct-scan-leak-test-acceptance-criteria-copper-cold-plates'),
+          text: 'DFM design rules',
+          href: getPermalink('/posts/design-rules-feature-dfam/ceramic-dfm-design-rules'),
         },
+      ],
+    },
+    {
+      title: 'Resources',
+      links: [
+        { text: 'Materials', href: getPermalink('/materials') },
+        { text: 'FAQ', href: getPermalink('/faq') },
+        { text: 'Engineering Guide', href: getBlogPermalink() },
       ],
     },
     {
@@ -74,24 +90,16 @@ export const footerData = {
         { text: 'Terms', href: getPermalink('/terms') },
       ],
     },
-    {
-      title: 'Related sites',
-      links: [
-        { text: 'Como Precision', href: 'https://szcomo.com/' },
-        { text: 'Titanium Alloy AM', href: 'https://titanium3dp.com/' },
-        { text: 'Precision Ceramics', href: 'https://ceramiccnc.com/' },
-      ],
-    },
   ],
   secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'Email', icon: 'tabler:mail', href: 'mailto:info@szcomo.com' },
+    { ariaLabel: 'Email', icon: 'tabler:mail', href: rfqEmailHref },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
   ],
   footNote: `
-    © ${currentYear} COPPER 3DP - Suzhou Como Precision Materials Co., Ltd. - All rights reserved.
+    &copy; ${currentYear} CERAMIC CNC - Suzhou Como Precision Materials Co., Ltd. - All rights reserved.
   `,
 };

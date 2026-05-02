@@ -71,7 +71,7 @@ import { UI } from 'astrowind:config';
 
     function readStoredAttribution() {
       try {
-        return JSON.parse(sessionStorage.getItem('copper3dp_attribution') || '{}');
+        return JSON.parse(sessionStorage.getItem('ceramiccnc_attribution') || '{}');
       } catch {
         return {};
       }
@@ -95,7 +95,7 @@ import { UI } from 'astrowind:config';
         attribution.landing_page = attribution.landing_page || window.location.href;
         attribution.updated_at = new Date().toISOString();
         try {
-          sessionStorage.setItem('copper3dp_attribution', JSON.stringify(attribution));
+          sessionStorage.setItem('ceramiccnc_attribution', JSON.stringify(attribution));
         } catch {
           // Attribution improves reporting but should never block the page.
         }
@@ -125,7 +125,7 @@ import { UI } from 'astrowind:config';
       if (!key) return false;
 
       try {
-        const storageKey = `copper3dp_conversion_${key}`;
+        const storageKey = `ceramiccnc_conversion_${key}`;
         if (sessionStorage.getItem(storageKey) === 'true') {
           return true;
         }
@@ -153,8 +153,8 @@ import { UI } from 'astrowind:config';
       pixel.alt = '';
       pixel.referrerPolicy = 'no-referrer-when-downgrade';
       pixel.src = url.toString();
-      window.copper3dpAdsConversionPixels = window.copper3dpAdsConversionPixels || [];
-      window.copper3dpAdsConversionPixels.push(pixel);
+      window.ceramiccncAdsConversionPixels = window.ceramiccncAdsConversionPixels || [];
+      window.ceramiccncAdsConversionPixels.push(pixel);
     }
 
     function sendGoogleAdsConversionScript(sendTo) {
@@ -176,9 +176,9 @@ import { UI } from 'astrowind:config';
       document.body.appendChild(script);
     }
 
-    function trackCopperEvent(eventName, payload = {}, options = {}) {
+    function trackCeramicEvent(eventName, payload = {}, options = {}) {
       const isDuplicate = isDuplicateConversion(options.conversionKey);
-      const sendTo = window.COPPER3DP_TRACKING?.googleAdsRfqSendTo;
+      const sendTo = window.CERAMICCNC_TRACKING?.googleAdsRfqSendTo;
 
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event: eventName, ...payload });
@@ -341,7 +341,7 @@ import { UI } from 'astrowind:config';
             };
             const mailtoTimer = window.setTimeout(openMailto, 900);
 
-            trackCopperEvent(
+            trackCeramicEvent(
               'rfq_email_click',
               getTrackingPayload(elem, {
                 email,
@@ -364,7 +364,7 @@ import { UI } from 'astrowind:config';
               navigator.clipboard
                 .writeText(email)
                 .then(() => {
-                  trackCopperEvent(
+                  trackCeramicEvent(
                     'rfq_email_copy',
                     getTrackingPayload(elem, {
                       email,
@@ -390,7 +390,7 @@ import { UI } from 'astrowind:config';
           'click',
           function () {
             const channel = elem.getAttribute('data-aw-contact-channel') || 'instant_contact';
-            trackCopperEvent(
+            trackCeramicEvent(
               'instant_contact_click',
               getTrackingPayload(elem, {
                 method: channel,
@@ -423,7 +423,7 @@ import { UI } from 'astrowind:config';
             navigator.clipboard
               .writeText(template)
               .then(() => {
-                trackCopperEvent(
+                trackCeramicEvent(
                   'rfq_template_copy',
                   getTrackingPayload(elem, {
                     method: 'copy_template',
@@ -444,7 +444,7 @@ import { UI } from 'astrowind:config';
         elem.addEventListener(
           'click',
           function () {
-            trackCopperEvent('rfq_prepare_click', getTrackingPayload(elem, { event_category: 'engagement' }));
+            trackCeramicEvent('rfq_prepare_click', getTrackingPayload(elem, { event_category: 'engagement' }));
           },
           false
         );

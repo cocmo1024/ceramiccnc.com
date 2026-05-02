@@ -28,7 +28,7 @@ const currentPage = page.currentPage ?? 1;
 const metadata = {
   title: `Engineering Guide${currentPage > 1 ? ` | Page ${currentPage}` : ''}`,
   description:
-    'Engineering articles for copper additive manufacturing: cold plates, heat sinks, CT inspection, leak testing, DfAM, material selection, and RFQ preparation.',
+    'Engineering articles for precision ceramic CNC machining: tolerance capability, surface finish, DFM rules, green machining, diamond grinding, inspection, and RFQ preparation.',
   robots: {
     index: blogListRobots?.index && currentPage === 1,
     follow: blogListRobots?.follow,
@@ -56,7 +56,7 @@ const metadata = {
 <Layout metadata={metadata}>
   <section class="px-4 md:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-5xl">
     <Headline
-      subtitle="Engineering notes for copper cold plates, heat sinks, inspection planning, material selection, and RFQ preparation."
+      subtitle="Engineering notes for ceramic tolerances, surface finish, DFM rules, process routing, inspection planning, and RFQ preparation."
     >
       Engineering Guide
     </Headline>

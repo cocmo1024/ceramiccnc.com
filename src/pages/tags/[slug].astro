@@ -6,29 +6,37 @@ interface Props {
 
 export function getStaticPaths() {
   const legacyTags: Record<string, Props> = {
-    'multifunctional-copper-parts': {
-      target: '/applications/',
-      title: 'Copper Additive Manufacturing Applications',
+    'capability-map': {
+      target: '/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/',
+      title: 'Ceramic Tolerance Capability Map',
     },
-    'copper-busbars': {
-      target: '/posts/EngineeringGuide/3d-printed-copper-busbars-induction-coils-rfq/',
-      title: '3D Printed Copper Busbars and Induction Coils',
+    'tight-tolerances': {
+      target: '/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/',
+      title: 'Ceramic Tight Tolerances',
     },
-    'micro-channel-heat-exchangers': {
-      target: '/copper-cold-plates/',
-      title: '3D Printed Copper Cold Plates',
+    gdt: {
+      target: '/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/',
+      title: 'Ceramic GD&T',
     },
-    'conformal-cooling-inserts': {
-      target: '/applications/',
-      title: 'Copper Additive Manufacturing Applications',
+    'surface-finish': {
+      target: '/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/',
+      title: 'Ceramic Surface Finish',
     },
-    cucrzr: {
-      target: '/materials/',
-      title: 'Copper 3D Printing Materials',
+    'subsurface-damage': {
+      target: '/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/',
+      title: 'Ceramic Subsurface Damage',
     },
-    'high-voltage-electrodes': {
-      target: '/blog/tag/high-voltage-electrodes/',
-      title: 'High Voltage Copper Electrodes',
+    'design-rules': {
+      target: '/posts/design-rules-feature-dfam/ceramic-dfm-design-rules/',
+      title: 'Ceramic DFM Design Rules',
+    },
+    'green-machining': {
+      target: '/posts/process-routes-control/green-machining-vs-hard-machining/',
+      title: 'Green Machining vs Hard Machining',
+    },
+    'diamond-grinding': {
+      target: '/posts/feasibility-process-choice/ceramic-machining-guide/',
+      title: 'Ceramic Diamond Grinding',
     },
   };
 
@@ -39,7 +47,7 @@ export function getStaticPaths() {
 }
 
 const { target, title } = Astro.props;
-const canonical = new URL(target, 'https://copper3dp.com').toString();
+const canonical = new URL(target, 'https://www.ceramiccnc.com').toString();
 ---
 
 <!doctype html>
@@ -50,7 +58,7 @@ const canonical = new URL(target, 'https://copper3dp.com').toString();
     <meta name="robots" content="noindex, follow" />
     <meta http-equiv="refresh" content={`0; url=${target}`} />
     <link rel="canonical" href={canonical} />
-    <title>{title} | COPPER 3DP</title>
+    <title>{title} | CERAMIC CNC</title>
     <meta name="description" content={`This legacy tag page has moved to ${title}.`} />
   </head>
   <body>

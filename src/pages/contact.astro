@@ -1,8 +1,10 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import HeroText from '~/components/widgets/HeroText.astro';
+import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import SplitShowcase from '~/components/widgets/SplitShowcase.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import { rfqEmail, rfqEmailHref } from '~/data/ceramic';
 import { createBreadcrumbSchema } from '~/utils/structured-data';
 
 const sectionContainerClass = 'py-10 md:py-12 lg:py-14';
@@ -11,65 +13,64 @@ const contactShowcases = [
   {
     imagePosition: 'left' as const,
     image: {
-      src: '~/assets/images/copper/rfq-review-workspace.webp',
-      alt: 'Copper AM RFQ email review workspace',
+      src: '~/assets/images/ceramic/application-9.webp',
+      alt: 'Ceramic CNC RFQ email review workspace',
     },
     title: 'What to include',
     description:
-      'A short email is fine if the project is simple. Add only the details that affect quotation and acceptance.',
+      'A short email is fine for simple parts. Add details that affect quotation, grinding route, and acceptance.',
     points: [
       {
         title: 'Drawings and CAD',
-        description: 'Attach STEP, X_T, native CAD, or drawings with key dimensions and critical surfaces.',
+        description: 'Attach 2D drawing plus STEP, IGES, or native CAD files with revision and critical features.',
       },
       {
-        title: 'Quantity and timing',
-        description: 'State prototype quantity, batch quantity, target delivery date, and any purchasing constraints.',
+        title: 'Material and quantity',
+        description: 'State ceramic material grade, prototype quantity, production quantity, and target lead time.',
       },
       {
         title: 'Requirements',
         description:
-          'Include material, pressure, leak, thermal, electrical, surface finish, machining, CT, or cleaning needs when relevant.',
+          'Include datums, surface finish, flatness, micro-holes, thin walls, edge condition, operating environment, and inspection needs.',
       },
     ],
   },
   {
     imagePosition: 'right' as const,
     image: {
-      src: '~/assets/images/copper/hero-2.webp',
-      alt: 'Copper additive manufacturing parts for RFQ review',
+      src: '~/assets/images/ceramic/application-2.webp',
+      alt: 'Ceramic sealing face quotation and inspection review',
     },
     title: 'How we respond',
     description:
-      'The reply depends on the drawing and the requirements. We do not force every RFQ into the same deliverable.',
+      'The reply depends on the drawing and risk level. We avoid quoting undefined ceramic precision as if it were commodity machining.',
     points: [
       {
-        title: 'Simple quote',
+        title: 'Quote',
         description:
-          'If geometry, quantity, and basic requirements are clear, we can respond with a straightforward quotation.',
+          'If geometry, material, quantity, and normal acceptance are clear, we respond with a formal quotation path.',
       },
       {
-        title: 'Clarification questions',
+        title: 'Feasibility notes',
         description:
-          'If heat load, pressure, current, leak target, drawings, or inspection needs are unclear, we ask focused questions before quoting.',
+          'For brittle-material risk, we may call out edge chipping, grinding allowance, datum strategy, and inspection assumptions.',
       },
       {
-        title: 'Technical discussion when needed',
-        description:
-          'For complex parts, we may discuss material, manufacturability, post-processing, testing, and lead-time drivers as needed.',
+        title: 'Clarification',
+        description: 'If key requirements are missing, we ask focused questions before locking price or lead time.',
       },
     ],
   },
 ];
 
 const metadata = {
-  title: 'Copper AM RFQ Contact | Send CAD for Quote',
+  title: 'Contact CERAMIC CNC | Send Ceramic Machining RFQ',
   description:
-    'Email copper 3D printing RFQ details with drawings, quantity, material target, lead time, operating constraints, and inspection requirements.',
+    'Contact CERAMIC CNC for precision ceramic CNC machining, diamond grinding, micro-drilling, lapping, material review, DFM feasibility, and RFQ quotation support.',
   openGraph: {
     images: [
       {
-        url: '~/assets/images/copper/hero-1.webp',
+        url: '~/assets/images/ceramic/hero-ceramic-cnc.webp',
         width: 1200,
         height: 628,
       },
@@ -84,27 +85,72 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <HeroText
+  <Hero
     tagline="Project RFQ"
-    title="Email your drawing, quantity, and requirements"
-    subtitle="We quote copper 3D printing projects from the information you send. If the drawing and requirements are clear, we quote; if key details are unclear, we ask before quoting."
+    title="Contact CERAMIC CNC"
+    subtitle="Send drawings, CAD files, material grade, target quantity, lead time, and acceptance needs. We respond with feasibility notes, lead time, and quotation details based on the project information provided."
+    actions={[
+      {
+        variant: 'primary',
+        text: `Email ${rfqEmail}`,
+        href: rfqEmailHref,
+        icon: 'tabler:mail',
+      },
+      {
+        text: 'Review RFQ inputs',
+        href: '/rfq',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/ceramic/hero-ceramic-cnc.webp',
+      alt: 'Precision ceramic CNC machining contact and RFQ support',
+      class: 'mx-auto w-full',
+    }}
   />
 
   <CallToAction
     id="form"
     classes={{ container: sectionContainerClass }}
     title="Send the RFQ by email"
-    subtitle="Email STEP, X_T, native CAD, drawings, quantity, material if known, lead time, and the requirements that matter for the part."
+    subtitle="Official quotations, technical confirmations, and commercial terms are valid only when issued from info@szcomo.com."
     actions={[
       {
         variant: 'primary',
         text: 'Email info@szcomo.com',
-        href: 'mailto:info@szcomo.com',
+        href: rfqEmailHref,
         icon: 'tabler:mail',
       },
+    ]}
+  />
+
+  <Features2
+    title="What to contact us for"
+    subtitle="Use one email thread for project files, feasibility notes, quotation, and inspection discussion."
+    columns={2}
+    items={[
       {
-        text: 'Review RFQ inputs',
-        href: '/rfq',
+        title: 'Precision ceramic CNC machining',
+        description:
+          'Prototype and production support for plates, rings, spacers, nozzles, insulators, sealing faces, and complex ceramic components.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'DFM and manufacturability review',
+        description:
+          'Feature risk, datum strategy, minimum wall or slot limits, micro-hole feasibility, edge condition, and inspection access.',
+        icon: 'tabler:clipboard-check',
+      },
+      {
+        title: 'Material selection',
+        description:
+          'Al2O3, ZrO2, Si3N4, SiC, MACOR, fused silica, AlN, BN, and other technical ceramics reviewed against application risk.',
+        icon: 'tabler:atom',
+      },
+      {
+        title: 'Inspection and documentation',
+        description:
+          'Dimensional reports, CoC, material certificates, surface finish evidence, flatness mapping, and key-dimension reporting.',
+        icon: 'tabler:file-certificate',
       },
     ]}
   />

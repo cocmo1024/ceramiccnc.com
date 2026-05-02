@@ -25,11 +25,11 @@ export const createBreadcrumbSchema = (items: Array<{ name: string; item?: strin
   })),
 });
 
-export const createCopperServiceSchema = (): JsonLdNode => ({
+export const createCeramicServiceSchema = (): JsonLdNode => ({
   '@type': 'Service',
-  '@id': `${siteUrl}/#copper-additive-manufacturing-service`,
-  name: 'Copper 3D Printing Services',
-  serviceType: 'Copper additive manufacturing and LPBF copper 3D printing',
+  '@id': `${siteUrl}/#precision-ceramic-cnc-machining-service`,
+  name: 'Precision Ceramic CNC Machining Services',
+  serviceType: 'Advanced ceramic CNC machining, diamond grinding, lapping, micro-drilling, and inspection support',
   provider: { '@id': organizationId },
   areaServed: {
     '@type': 'Place',
@@ -37,14 +37,14 @@ export const createCopperServiceSchema = (): JsonLdNode => ({
   },
   audience: {
     '@type': 'Audience',
-    audienceType: 'Engineering, purchasing, thermal, electrical, RF, aerospace, and semiconductor teams',
+    audienceType: 'Engineering, procurement, semiconductor, vacuum, electrical, wear, and industrial OEM teams',
   },
   description:
-    'Industrial copper additive manufacturing support for custom cold plates, heat sinks, busbars, induction coils, RF waveguide parts, and function-critical copper components.',
+    'Precision machining support for advanced ceramic components in Al2O3, ZrO2, Si3N4, SiC, MACOR, and related technical ceramics, with feasibility review, grinding plans, edge quality control, and inspection evidence.',
   url: toAbsoluteUrl('/'),
 });
 
-export const createCopperApplicationServiceSchema = ({
+export const createCeramicApplicationServiceSchema = ({
   id,
   name,
   serviceType,
@@ -74,6 +74,20 @@ export const createCopperApplicationServiceSchema = ({
   },
   description,
   url: toAbsoluteUrl(url),
+});
+
+export const createFAQPageSchema = (items: Array<{ title: string; description?: string }>): JsonLdNode => ({
+  '@type': 'FAQPage',
+  mainEntity: items
+    .filter((item) => item.title && item.description)
+    .map((item) => ({
+      '@type': 'Question',
+      name: item.title,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.description,
+      },
+    })),
 });
 
 export const createItemListSchema = (

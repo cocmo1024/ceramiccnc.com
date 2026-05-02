@@ -1,31 +1,59 @@
 ---
-title: 'About COPPER 3DP'
-description: 'COPPER 3DP focuses on custom copper additive manufacturing RFQ review for thermal, electrical, RF, vacuum, and fluid-system components.'
+title: 'About CERAMIC CNC'
+description: 'CERAMIC CNC is an engineering-focused advanced ceramic machining platform operated by Suzhou Como Precision Materials Co., Ltd.'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-COPPER 3DP is focused on copper additive manufacturing for custom engineering components.
+CERAMIC CNC is a dedicated advanced ceramic machining and ceramic manufacturing platform operated by Suzhou Como Precision Materials Co., Ltd.
 
-The site is built for engineers and purchasing teams who need to understand whether a copper part is worth quoting through additive manufacturing. Typical inquiries involve thermal, electrical, RF, vacuum, fluid-system, or compact assembly requirements where geometry may be more important than simple stock removal.
+We focus on engineering-grade ceramic materials, precision machining guidance, and application-driven support for teams working with technical and advanced ceramics.
+
+Our mission is to help high-performance ceramic components move from drawing to repeatable production by aligning material grade, CNC route, diamond grinding, surface finish, edge quality, and inspection evidence before orders are released.
+
+We support ceramic systems including Al2O3 alumina, ZrO2 zirconia, Si3N4 silicon nitride, SiC silicon carbide, MACOR, fused silica, AlN, BN, and selected machinable ceramics for semiconductor equipment, vacuum systems, aerospace, energy, electronics, tooling, research, and industrial OEM applications.
 
 ## What We Do
 
-We review drawings, CAD files, quantities, material preferences, lead-time targets, and operating requirements for copper additive manufacturing projects.
+We provide engineering support centered on advanced ceramic machining, including:
 
-If the drawing and requirements are clear, we can quote from the information provided. If important details are missing, we ask focused clarification questions before quoting.
+- Ceramic material selection guidance and grade review.
+- Precision CNC machining of sintered ceramics and green ceramic routes.
+- Diamond grinding, lapping, polishing, edge conditioning, and micro-drilling review.
+- Machining feasibility and tolerance evaluation for brittle ceramic materials.
+- Surface-finish and dimensional-stability planning for critical interfaces.
+- Inspection planning for CMM, profile, Ra, flatness, optical checks, CT, and key-dimension reports.
 
-## What We Review
+All solutions are aligned to real engineering constraints: mechanical strength, thermal stability, dielectric performance, surface integrity, geometric complexity, chip risk, and acceptance requirements.
 
-Common review points include geometry limits, material route, post-processing scope, machining allowance, sealing or contact surfaces, thermal or electrical requirements, CT or leak testing needs, and final inspection expectations.
+## Application Areas
 
-The review depth depends on the part. A simple component may only need a drawing and quantity. A function-critical part may need operating conditions, acceptance criteria, and inspection requirements before a useful quote can be prepared.
+CERAMIC CNC supports high-reliability applications such as:
 
-## What We Do Not Claim
+- Semiconductor process equipment and vacuum-chamber ceramic components.
+- Electrical insulation, dielectric, and high-temperature structural parts.
+- Ceramic sealing faces, valve seats, rings, nozzles, plates, and wear parts.
+- Aerospace, energy, chemical-processing, and industrial process hardware.
+- Universities and research institutes working on advanced ceramic applications.
+- Industrial OEMs requiring tight-tolerance ceramic CNC machining.
 
-Copper additive manufacturing is not automatically the best route for every copper part.
+For each project, we help clarify material choice, machining strategy, tolerance expectations, risk drivers, and inspection evidence to reduce trial-and-error in ceramic manufacturing.
 
-Simple plates, bars, tubes, sheet parts, wire, decorative items, commodity copper stock, or parts with no clear functional requirement may be better made by conventional manufacturing.
+## Website Purpose
+
+CeramicCNC.com is built as an engineering-oriented knowledge base for precision ceramic machining and advanced ceramic components.
+
+We curate:
+
+- Technical ceramic material properties and application considerations.
+- CNC machining and grinding limitations for brittle ceramics.
+- Typical ceramic component geometries and use cases.
+- Practical guidance on tolerance control, edge quality, and surface finish.
+- Inspection, repeatability, and production-stability considerations.
+
+Through transparent engineering content, we support production-level implementation of advanced ceramics across industries.
 
 ## Contact
 
-RFQ files and project questions can be sent to info@szcomo.com.
+For project inquiries, cooperation, or technical support, contact:
+
+> info@szcomo.com

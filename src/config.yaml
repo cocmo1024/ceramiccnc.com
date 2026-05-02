@@ -1,6 +1,6 @@
 site:
-  name: COPPER 3DP
-  site: 'https://copper3dp.com'
+  name: CERAMIC CNC
+  site: 'https://www.ceramiccnc.com'
   base: '/'
   trailingSlash: true
 
@@ -8,16 +8,16 @@ site:
 
 metadata:
   title:
-    default: COPPER 3DP | Copper 3D Printing Services
-    template: '%s | COPPER 3DP'
-  description: 'Industrial LPBF copper 3D printing services for custom cold plates, heat sinks, busbars, induction coils, RF waveguide parts, and high-precision copper components.'
+    default: CERAMIC CNC | Precision Ceramic CNC Machining
+    template: '%s | CERAMIC CNC'
+  description: 'Precision ceramic CNC machining, diamond grinding, lapping, micro-drilling, and inspection support for Al2O3, ZrO2, Si3N4, SiC, MACOR, and advanced ceramic components.'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: COPPER 3DP
+    site_name: CERAMIC CNC
     images:
-      - url: '~/assets/images/copper/hero-2.webp'
+      - url: '~/assets/images/ceramic/hero-ceramic-cnc.webp'
         width: 1200
         height: 628
     type: website
@@ -35,13 +35,13 @@ apps:
 
     post:
       isEnabled: true
-      permalink: '/posts/EngineeringGuide/%slug%'
+      permalink: '/posts/%slug%'
       robots:
         index: true
 
     list:
       isEnabled: true
-      pathname: 'category/EngineeringGuide'
+      pathname: 'category/engineering-guide'
       robots:
         index: true
 
@@ -63,7 +63,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: 'G-6HD15CRLMQ'
+      id: false
 
 ui:
   theme: 'dark'

@@ -23,7 +23,7 @@ const currentPage = page.currentPage ?? 1;
 
 const metadata = {
   title: `${tag.title} resources${currentPage > 1 ? ` | Page ${currentPage}` : ''}`,
-  description: `Copper additive manufacturing resources tagged ${tag.title}, grouped for engineering research and RFQ preparation.`,
+  description: `Precision ceramic CNC machining resources tagged ${tag.title}, grouped for engineering research and RFQ preparation.`,
   robots: {
     index: blogTagRobots?.index,
     follow: blogTagRobots?.follow,
@@ -38,7 +38,7 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <section class="px-4 md:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-5xl">
-    <Headline subtitle="Copper AM notes filtered by tag.">Tag: {tag.title}</Headline>
+    <Headline subtitle="Ceramic machining notes filtered by tag.">Tag: {tag.title}</Headline>
     <BlogList posts={page.data} />
     <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
   </section>
