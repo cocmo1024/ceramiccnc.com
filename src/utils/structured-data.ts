@@ -42,6 +42,42 @@ export const createCeramicServiceSchema = (): JsonLdNode => ({
   description:
     'Precision machining support for advanced ceramic components in Al2O3, ZrO2, Si3N4, SiC, MACOR, and related technical ceramics, with feasibility review, grinding plans, edge quality control, and inspection evidence.',
   url: toAbsoluteUrl('/'),
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Precision ceramic machining service scope',
+    itemListElement: [
+      {
+        '@type': 'OfferCatalog',
+        name: 'Materials reviewed',
+        itemListElement: [
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Alumina Al2O3 machining' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Zirconia ZrO2 machining' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Silicon nitride Si3N4 machining' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Silicon carbide SiC grinding' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'MACOR and machinable ceramic parts' } },
+        ],
+      },
+      {
+        '@type': 'OfferCatalog',
+        name: 'Process capabilities',
+        itemListElement: [
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Post-sinter CNC machining' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Diamond grinding and lapping' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Micro-drilling and precision orifices' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Edge break and chip-control finishing' } },
+        ],
+      },
+      {
+        '@type': 'OfferCatalog',
+        name: 'Inspection and acceptance support',
+        itemListElement: [
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'CMM and optical inspection planning' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Surface finish and flatness reporting' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'CT and key-dimension report support' } },
+        ],
+      },
+    ],
+  },
 });
 
 export const createCeramicApplicationServiceSchema = ({
