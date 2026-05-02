@@ -10,16 +10,8 @@ import SplitShowcase from '~/components/widgets/SplitShowcase.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import {
-  ceramicApplications,
-  ceramicCapabilities,
-  ceramicFaqItems,
-  ceramicTestimonials,
-  rfqEmail,
-  rfqEmailHref,
-} from '~/data/ceramic';
+import { ceramicApplications, ceramicCapabilities, ceramicFaqItems, rfqEmail, rfqEmailHref } from '~/data/ceramic';
 import { createCeramicServiceSchema, createFAQPageSchema, createItemListSchema } from '~/utils/structured-data';
 
 const sectionContainerClass = 'py-10 md:py-12 lg:py-14';
@@ -42,6 +34,45 @@ const applicationShowcases = ceramicApplications.map((item, index) => ({
     },
   ],
 }));
+
+const requirementShowcases = [
+  {
+    imagePosition: 'left' as const,
+    image: {
+      src: '~/assets/images/ceramic/application-6.webp',
+      alt: 'Precision ceramic flatness, lapping, and inspection planning',
+    },
+    title: 'From drawing review to ceramic quotation',
+    description:
+      'Simple ceramic parts can move directly to a basic quote. Precision parts need a short review of material grade, datums, surface requirements, and inspection evidence first.',
+    points: [
+      {
+        title: 'Material and grade',
+        description:
+          'Al2O3, ZrO2, Si3N4, SiC, MACOR, AlN, BN, fused silica, and selected technical ceramics are reviewed against the operating requirement.',
+      },
+      {
+        title: 'Feature and finishing limits',
+        description:
+          'Thin walls, slots, micro-holes, ground faces, lapping allowance, edge condition, and surface finish targets affect feasibility and cost.',
+      },
+      {
+        title: 'Inspection needs',
+        description:
+          'CMM, optical checks, profile, flatness mapping, Ra, CT, material certificate, and key-dimension reports are considered when required.',
+      },
+      {
+        title: 'Clarification when needed',
+        description:
+          'If datums, grade, edge quality, or inspection expectations are unclear, we ask before quoting rather than assuming a risky ceramic route.',
+        callToAction: {
+          text: 'Ceramic RFQ checklist',
+          href: '/rfq',
+        },
+      },
+    ],
+  },
+];
 
 const metadata = {
   title: 'Precision Ceramic CNC Machining | Advanced Ceramic Grinding and Micro-Drilling',
@@ -115,38 +146,6 @@ const metadata = {
     description="Include material grade, drawing and STEP, datums, GD&T, quantity, target lead time, surface finish or flatness targets, critical edges, and required evidence such as CMM, profile, Ra, CT, or key-dimension reports."
   />
 
-  <Features3
-    title="Capabilities snapshot"
-    subtitle="The quote path is clearer when material, route, finishing, and acceptance evidence are connected from the start."
-    columns={3}
-    classes={{
-      container: sectionContainerClass,
-      items: {
-        container: 'gap-x-12',
-        panel: 'max-w-none',
-      },
-    }}
-    items={[
-      {
-        title: 'Materials',
-        description: 'Al2O3, ZrO2, Si3N4, SiC, MACOR, AlN, BN, fused silica, and selected technical ceramics.',
-        icon: 'tabler:atom',
-      },
-      {
-        title: 'Processes',
-        description:
-          'CNC contouring, diamond grinding, lapping, polishing, micro-drilling, slots, bores, and edge breaks.',
-        icon: 'tabler:settings',
-      },
-      {
-        title: 'Verification',
-        description:
-          'CMM, optical checks, profile, flatness mapping, surface finish evidence, CT, and key-dimension reports.',
-        icon: 'tabler:clipboard-check',
-      },
-    ]}
-  />
-
   <section class:list={['relative not-prose', sectionContainerClass]}>
     <div class="mx-auto max-w-5xl px-4 sm:px-6">
       <div class="grid gap-6 md:grid-cols-2">
@@ -182,12 +181,52 @@ const metadata = {
     </div>
   </section>
 
+  <Features3
+    title="What to send for review"
+    subtitle="A simple drawing may be enough for a basic quote. Complex ceramic parts need clearer material, feature, and inspection requirements."
+    columns={3}
+    classes={{
+      container: sectionContainerClass,
+      items: {
+        container: 'gap-x-12',
+        panel: 'max-w-none',
+      },
+    }}
+    items={[
+      {
+        title: 'Drawing package',
+        description:
+          'STEP, IGES, native CAD, or drawings with key dimensions, datum faces, bores, slots, holes, and critical surfaces.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Quantity and timing',
+        description:
+          'Prototype quantity, batch size, target delivery date, material grade, and any purchasing or project constraints.',
+        icon: 'tabler:file-description',
+      },
+      {
+        title: 'Special requirements',
+        description:
+          'Surface finish, flatness, lapping, edge condition, micro-features, CMM, CT, CoC, or material certificate when they matter.',
+        icon: 'tabler:clipboard-check',
+      },
+    ]}
+  />
+
   <SplitShowcase
     id="applications"
     tagline="Application hubs"
     title="15 engineering-critical ceramic machining use cases"
     subtitle="The strongest ceramic RFQs connect feature feasibility, failure modes, inspection method, and procurement acceptance before machining starts."
     items={applicationShowcases}
+    classes={{ container: sectionContainerClass }}
+  />
+
+  <SplitShowcase
+    tagline="Feasibility first"
+    title="Quote ceramic machining from the actual requirement"
+    items={requirementShowcases}
     classes={{ container: sectionContainerClass }}
   />
 
@@ -239,13 +278,6 @@ const metadata = {
     tagline="Engineering review"
     classes={{ container: sectionContainerClass }}
     items={ceramicCapabilities}
-  />
-
-  <Testimonials
-    title="What engineering teams say"
-    tagline="Program feedback"
-    testimonials={ceramicTestimonials}
-    classes={{ container: sectionContainerClass }}
   />
 
   <BlogLatestPosts

@@ -1,9 +1,8 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import Hero from '~/components/widgets/Hero.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import SplitShowcase from '~/components/widgets/SplitShowcase.astro';
-import Features2 from '~/components/widgets/Features2.astro';
 import { rfqEmail, rfqEmailHref } from '~/data/ceramic';
 import { createBreadcrumbSchema } from '~/utils/structured-data';
 
@@ -85,27 +84,10 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <Hero
+  <HeroText
     tagline="Project RFQ"
-    title="Contact CERAMIC CNC"
-    subtitle="Send drawings, CAD files, material grade, target quantity, lead time, and acceptance needs. We respond with feasibility notes, lead time, and quotation details based on the project information provided."
-    actions={[
-      {
-        variant: 'primary',
-        text: `Email ${rfqEmail}`,
-        href: rfqEmailHref,
-        icon: 'tabler:mail',
-      },
-      {
-        text: 'Review RFQ inputs',
-        href: '/rfq',
-      },
-    ]}
-    image={{
-      src: '~/assets/images/ceramic/hero-ceramic-cnc.webp',
-      alt: 'Precision ceramic CNC machining contact and RFQ support',
-      class: 'mx-auto w-full',
-    }}
+    title="Email your drawing, quantity, and requirements"
+    subtitle="We quote ceramic CNC machining projects from the information you send. If the drawing and requirements are clear, we quote; if key details are unclear, we ask before quoting."
   />
 
   <CallToAction
@@ -116,41 +98,13 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Email info@szcomo.com',
+        text: `Email ${rfqEmail}`,
         href: rfqEmailHref,
         icon: 'tabler:mail',
       },
-    ]}
-  />
-
-  <Features2
-    title="What to contact us for"
-    subtitle="Use one email thread for project files, feasibility notes, quotation, and inspection discussion."
-    columns={2}
-    items={[
       {
-        title: 'Precision ceramic CNC machining',
-        description:
-          'Prototype and production support for plates, rings, spacers, nozzles, insulators, sealing faces, and complex ceramic components.',
-        icon: 'tabler:settings',
-      },
-      {
-        title: 'DFM and manufacturability review',
-        description:
-          'Feature risk, datum strategy, minimum wall or slot limits, micro-hole feasibility, edge condition, and inspection access.',
-        icon: 'tabler:clipboard-check',
-      },
-      {
-        title: 'Material selection',
-        description:
-          'Al2O3, ZrO2, Si3N4, SiC, MACOR, fused silica, AlN, BN, and other technical ceramics reviewed against application risk.',
-        icon: 'tabler:atom',
-      },
-      {
-        title: 'Inspection and documentation',
-        description:
-          'Dimensional reports, CoC, material certificates, surface finish evidence, flatness mapping, and key-dimension reporting.',
-        icon: 'tabler:file-certificate',
+        text: 'Review RFQ inputs',
+        href: '/rfq',
       },
     ]}
   />

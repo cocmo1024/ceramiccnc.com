@@ -37,33 +37,6 @@ const materialShowcases = [
       },
     ],
   },
-  {
-    imagePosition: 'right' as const,
-    image: {
-      src: '~/assets/images/ceramic/application-4.webp',
-      alt: 'Alumina ceramic insulator material selection',
-    },
-    title: 'Lock grade and acceptance before production',
-    description:
-      'Two parts called alumina or zirconia can behave differently. Purity, density, grain size, sintering aids, and supplier grade can affect strength, wear, insulation, and finishing behavior.',
-    points: [
-      {
-        title: 'Grade definition',
-        description:
-          'Specify grade or minimum property targets when density, porosity, insulation, wear, or vacuum behavior is function-critical.',
-      },
-      {
-        title: 'Functional faces',
-        description:
-          'Tie tight tolerances and low Ra to the faces that actually seal, locate, insulate, guide, or wear.',
-      },
-      {
-        title: 'Evidence',
-        description:
-          'Request material certificate, CoC, density or porosity evidence, and dimensional reports when the application needs traceability.',
-      },
-    ],
-  },
 ];
 
 const metadata = {
@@ -125,59 +98,6 @@ const metadata = {
   />
 
   <SplitShowcase items={materialShowcases} classes={{ container: sectionContainerClass }} />
-
-  <section class:list={['relative not-prose', sectionContainerClass]}>
-    <div class="mx-auto max-w-5xl px-4 sm:px-6">
-      <div
-        class="overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-900"
-      >
-        <div class="px-5 py-4 md:px-6">
-          <p class="text-sm font-semibold uppercase tracking-wide text-primary">Procurement note</p>
-          <h2 class="mt-2 text-2xl font-bold tracking-tight dark:text-white">
-            Generic material labels are not enough for critical ceramic parts.
-          </h2>
-          <p class="mt-3 text-muted dark:text-slate-300">
-            For sealing, vacuum, wear, high-voltage, thermal cycling, and semiconductor applications, specify grade,
-            density or porosity expectations, critical faces, edge condition, and required evidence before quoting.
-          </p>
-        </div>
-        <div class="overflow-x-auto">
-          <table class="min-w-full divide-y divide-slate-200 text-sm dark:divide-slate-700">
-            <thead class="bg-slate-50 text-left text-slate-700 dark:bg-slate-800 dark:text-slate-200">
-              <tr>
-                <th class="px-5 py-3 font-semibold">Material</th>
-                <th class="px-5 py-3 font-semibold">Common reason to choose</th>
-                <th class="px-5 py-3 font-semibold">RFQ caution</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-200 dark:divide-slate-700">
-              <tr>
-                <td class="px-5 py-3 font-medium">Al2O3</td>
-                <td class="px-5 py-3">Insulation, wear resistance, chemical stability, cost efficiency.</td>
-                <td class="px-5 py-3">Specify purity, density, surface finish, and finished faces.</td>
-              </tr>
-              <tr>
-                <td class="px-5 py-3 font-medium">ZrO2</td>
-                <td class="px-5 py-3">Higher toughness and reduced chipping risk for selected mechanical parts.</td>
-                <td class="px-5 py-3">Control thermal environment, dimensional stability, and mating faces.</td>
-              </tr>
-              <tr>
-                <td class="px-5 py-3 font-medium">Si3N4</td>
-                <td class="px-5 py-3">Bearings, wear parts, and thermally shocked mechanical components.</td>
-                <td class="px-5 py-3">Define load mode, edge quality, roundness, and inspection method.</td>
-              </tr>
-              <tr>
-                <td class="px-5 py-3 font-medium">SiC</td>
-                <td class="px-5 py-3">Extreme wear, chemical resistance, seals, nozzles, and harsh process hardware.</td
-                >
-                <td class="px-5 py-3">Very hard to finish; localize tight tolerances and low Ra.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <CallToAction
     classes={{ container: sectionContainerClass }}
