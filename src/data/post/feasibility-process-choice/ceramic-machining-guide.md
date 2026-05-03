@@ -7,7 +7,7 @@ tags: ['advanced-ceramics', 'diamond-grinding', 'capability-map', 'cost-drivers'
 author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/744265b0487821dd43016f724d1e24cc-300-300-0.webp
 metadata:
-  title: 'Ceramic Machining and Diamond Grinding Guide for Buyers'
+  title: 'Ceramic Machining Buyer Guide'
   description: 'Buyer guide for ceramic CNC machining, diamond grinding, capability, cost, lead time, inspection, acceptance criteria, and RFQ preparation.'
 ---
 
