@@ -30,7 +30,7 @@ export const headerData = {
         },
         {
           text: 'DFM design rules',
-          href: getPermalink('/posts/design-rules-feature-dfam/ceramic-dfm-design-rules'),
+          href: getPermalink('/posts/design-rules-dfm/ceramic-dfm-design-rules'),
         },
       ],
     },
@@ -66,12 +66,12 @@ export const footerData = {
           href: getPermalink('/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process'),
         },
         {
-          text: 'Surface finish and SSD',
+          text: 'Surface finish and subsurface damage',
           href: getPermalink('/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price'),
         },
         {
           text: 'DFM design rules',
-          href: getPermalink('/posts/design-rules-feature-dfam/ceramic-dfm-design-rules'),
+          href: getPermalink('/posts/design-rules-dfm/ceramic-dfm-design-rules'),
         },
       ],
     },

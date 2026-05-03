@@ -4,9 +4,9 @@ description: 'CERAMIC CNC is an engineering-focused advanced ceramic machining p
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-CERAMIC CNC is a dedicated advanced ceramic machining and ceramic manufacturing platform operated by Suzhou Como Precision Materials Co., Ltd.
+CERAMIC CNC is a dedicated advanced ceramic CNC machining platform operated by Suzhou Como Precision Materials Co., Ltd.
 
-We focus on engineering-grade ceramic materials, precision machining guidance, and application-driven support for teams working with technical and advanced ceramics.
+We focus on engineering-grade ceramic materials, precision machining guidance, and application-driven support for teams working with technical ceramics.
 
 Our mission is to help high-performance ceramic components move from drawing to repeatable production by aligning material grade, CNC route, diamond grinding, surface finish, edge quality, and inspection evidence before orders are released.
 

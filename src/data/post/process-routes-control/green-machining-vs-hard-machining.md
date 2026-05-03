@@ -1,5 +1,5 @@
 ---
-title: 'Green Machining vs Hard Machining: The Biggest Cost and Risk Lever in Ceramics'
+title: 'Green Machining vs Hard Machining: Cost and Risk Control in Ceramics'
 publishDate: 2026-01-07
 excerpt: 'How to choose green machining, post-sinter hard machining, diamond grinding, and lapping routes for advanced ceramic parts.'
 category: Engineering Guide
@@ -11,7 +11,7 @@ metadata:
   description: 'Comparison of green machining and post-sinter hard machining for ceramic components, including cost, tolerance, shrinkage, warpage, grinding, and inspection.'
 ---
 
-> The biggest cost lever in ceramic machining is often not cycle time. It is whether geometry is created before sintering, after sintering, or in a hybrid route with selected post-sinter finishing.
+> A major cost lever in ceramic machining is often not cycle time. It is whether geometry is created before sintering, after sintering, or in a hybrid route with selected post-sinter finishing.
 
 ### What Green Machining Buys
 

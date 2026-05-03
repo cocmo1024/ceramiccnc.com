@@ -85,7 +85,8 @@ This gives the supplier a route and gives procurement a measurable acceptance ga
 
 ### FAQ
 
-**Can Ra 0.1 um be achieved?**  
+**Can Ra 0.1 micrometer be achieved?**
+
 It can be achieved on selected functional faces by controlled grinding, lapping, or polishing. It should not be specified globally without a functional reason.
 
 **Does polishing make a ceramic stronger?**  

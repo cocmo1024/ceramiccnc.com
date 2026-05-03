@@ -73,7 +73,7 @@ export const ceramicApplications = [
       {
         title: 'Measurable acceptance',
         description:
-          'Optical measurement, pin gages, CMM position evidence, or CT should be selected before the quote is finalized.',
+          'Optical measurement, pin gauges, CMM position evidence, or CT should be selected before the quote is finalized.',
       },
     ],
   },
@@ -106,7 +106,7 @@ export const ceramicApplications = [
     id: 'wear-parts-seals-bearings-pump-hardware',
     title: 'Wear Parts: Seals, Bearings, and Pump Hardware',
     image: '~/assets/images/ceramic/application-5.webp',
-    alt: 'SiC and Si3N4 wear parts for seals bearings and pump hardware',
+    alt: 'SiC and Si3N4 wear parts for seals, bearings, and pump hardware',
     description:
       'SiC, Si3N4, alumina, and zirconia wear parts need geometry and surface integrity that match the dominant wear mode: abrasion, erosion, impact, thermal cycling, or chemical attack.',
     points: [
@@ -550,7 +550,7 @@ export const ceramicFaqItems = [
   {
     title: 'What inspection methods are common?',
     description:
-      'CMM, optical measurement, microscopy, pin gages, profilometry, flatness mapping, density checks, leak checks, and CT may be used depending on feature size and risk.',
+      'CMM, optical measurement, microscopy, pin gauges, profilometry, flatness mapping, density checks, leak checks, and CT may be used depending on feature size and risk.',
   },
   {
     title: 'What can CT scanning prove?',
@@ -622,14 +622,14 @@ export const engineeringArticles = [
   },
   {
     title: 'Ceramic DFM Design Rules: A Go/No-Go Handbook for Machinable Features',
-    href: '/posts/design-rules-feature-dfam/ceramic-dfm-design-rules/',
+    href: '/posts/design-rules-dfm/ceramic-dfm-design-rules/',
     date: '2026-01-18',
     image: '~/assets/images/ceramic/posts/b6348580a5801370b727338ab283357b-300-300-0.webp',
     description:
       'Practical design rules for holes, slots, walls, edges, internal radii, datums, and inspection access.',
   },
   {
-    title: 'Green Machining vs Hard Machining: The Biggest Cost and Risk Lever in Ceramics',
+    title: 'Green Machining vs Hard Machining: Cost and Risk Control in Ceramics',
     href: '/posts/process-routes-control/green-machining-vs-hard-machining/',
     date: '2026-01-07',
     image: '~/assets/images/ceramic/posts/9d578d87f9f2bead1bfcff56df255185-300-300-0.webp',
@@ -637,12 +637,12 @@ export const engineeringArticles = [
       'When to machine before sintering, when to grind after firing, and how to plan datum and tolerance risk.',
   },
   {
-    title: 'Ceramic Additive Manufacturing Applications That Survived Real-World Loads (2026)',
+    title: 'Ceramic AM Preforms: When CNC Finishing Still Controls Acceptance',
     href: '/posts/engineering-guide/ceramic-additive-manufacturing-components-2026/',
     date: '2026-01-06',
     image: '~/assets/images/ceramic/hero-ceramic-cnc.webp',
     description:
-      'A practical view of ceramic AM where post-sinter finishing, inspection, and application fit decide success.',
+      'Where ceramic AM can create difficult preforms, and why sintering, CNC finishing, density evidence, and inspection still decide acceptance.',
   },
   {
     title: 'Ceramic Machining and Diamond Grinding Guide for Buyers',

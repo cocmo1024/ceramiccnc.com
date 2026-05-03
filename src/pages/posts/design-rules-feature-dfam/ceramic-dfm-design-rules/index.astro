@@ -1,0 +1,24 @@
+---
+const target = '/posts/design-rules-dfm/ceramic-dfm-design-rules/';
+const title = 'Ceramic DFM Design Rules';
+const canonical = new URL(target, 'https://www.ceramiccnc.com').toString();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, follow" />
+    <meta http-equiv="refresh" content={`0; url=${target}`} />
+    <link rel="canonical" href={canonical} />
+    <title>{title} | CERAMIC CNC</title>
+    <meta name="description" content="This ceramic DFM article has moved to the updated design-rules URL." />
+  </head>
+  <body>
+    <main>
+      <h1>{title}</h1>
+      <p>This article has moved. Continue to <a href={target}>{title}</a>.</p>
+    </main>
+  </body>
+</html>

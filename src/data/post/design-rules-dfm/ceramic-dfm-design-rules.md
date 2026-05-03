@@ -74,7 +74,7 @@ A ceramic feature that cannot be measured cannot be accepted cleanly. Before sen
 
 - Can CMM access the datum and dependent feature?
 - Is optical measurement better for micro-holes or edge chips?
-- Is a pin gage appropriate or too coarse?
+- Is a pin gauge appropriate or too coarse?
 - Does CT have enough resolution for the feature?
 - Are flatness and Ra measured on the correct face?
 
