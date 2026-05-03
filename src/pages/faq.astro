@@ -7,9 +7,9 @@ import { ceramicFaqItems, rfqEmailHref } from '~/data/ceramic';
 import { createBreadcrumbSchema, createFAQPageSchema } from '~/utils/structured-data';
 
 const metadata = {
-  title: 'Ceramic CNC Machining FAQ | Tolerances, Ra, Micro-Holes, Grinding',
+  title: 'Ceramic CNC Machining FAQ',
   description:
-    'FAQ for precision ceramic CNC machining, diamond grinding, lapping, ceramic tolerances, surface finish Ra, micro-holes, material selection, inspection, CT, and RFQ inputs.',
+    'FAQ for precision ceramic CNC machining, diamond grinding, lapping, tolerances, Ra, micro-holes, material selection, inspection, CT, and RFQ inputs.',
   openGraph: {
     images: [
       {
@@ -23,7 +23,7 @@ const metadata = {
   structuredData: [
     createBreadcrumbSchema([
       { name: 'Home', item: '/' },
-      { name: 'FAQ', item: '/faq' },
+      { name: 'FAQ', item: '/faq/' },
     ]),
     createFAQPageSchema(ceramicFaqItems),
   ],
@@ -56,7 +56,7 @@ const metadata = {
       },
       {
         text: 'RFQ checklist',
-        href: '/rfq',
+        href: '/rfq/',
       },
     ]}
   />

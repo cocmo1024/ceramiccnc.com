@@ -42,7 +42,7 @@ const materialShowcases = [
 const metadata = {
   title: 'Advanced Ceramic Materials for CNC Machining',
   description:
-    'Material selection for precision ceramic CNC machining: alumina Al2O3, zirconia ZrO2, silicon nitride Si3N4, silicon carbide SiC, MACOR, AlN, BN, fused silica, density, hardness, dielectric, thermal, and wear considerations.',
+    'CNC machining material guide for alumina, zirconia, silicon nitride, silicon carbide, MACOR, AlN, BN, fused silica, and advanced ceramic grades.',
   openGraph: {
     images: [
       {
@@ -56,14 +56,14 @@ const metadata = {
   structuredData: [
     createBreadcrumbSchema([
       { name: 'Home', item: '/' },
-      { name: 'Materials', item: '/materials' },
+      { name: 'Materials', item: '/materials/' },
     ]),
     createItemListSchema(
       'Advanced ceramic materials for CNC machining',
       ceramicMaterials.map((item) => ({
         name: item.title,
         description: item.description,
-        url: '/materials',
+        url: '/materials/',
       }))
     ),
   ],
@@ -81,7 +81,7 @@ const metadata = {
         text: 'Email material review',
         href: rfqEmailHref,
       },
-      { text: 'RFQ inputs', href: '/rfq' },
+      { text: 'RFQ inputs', href: '/rfq/' },
     ]}
     image={{
       src: '~/assets/images/ceramic/hero-ceramic-cnc.webp',

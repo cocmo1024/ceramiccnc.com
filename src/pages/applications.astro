@@ -27,21 +27,21 @@ const applicationFamilies = [
     description:
       'Wafer-handling hardware, insulating spacers, feedthrough-adjacent parts, and vacuum interfaces where cleanliness, flatness, edge radius, and datum evidence decide acceptance.',
     icon: 'tabler:device-analytics',
-    callToAction: { text: 'View semiconductor case', href: '/applications#semiconductor-ceramic-components' },
+    callToAction: { text: 'View semiconductor case', href: '/applications/#semiconductor-ceramic-components' },
   },
   {
     title: 'Sealing, wear, and chemical hardware',
     description:
       'Valve seats, sealing rings, bearings, pump parts, SiC flow components, and corrosive-service hardware where Ra, flatness, roundness, and edge integrity control life.',
     icon: 'tabler:shield-check',
-    callToAction: { text: 'View sealing case', href: '/applications#ceramic-sealing-faces-valve-seats' },
+    callToAction: { text: 'View sealing case', href: '/applications/#ceramic-sealing-faces-valve-seats' },
   },
   {
     title: 'Micro-holes, nozzles, and flow features',
     description:
       'Sub-millimeter holes, jets, orifices, and restrictors reviewed for breakout, taper, concentricity, hole-to-edge distance, and optical or pin-gage acceptance.',
     icon: 'tabler:focus-2',
-    callToAction: { text: 'View micro-drilling case', href: '/applications#micro-drilling-precision-orifices' },
+    callToAction: { text: 'View micro-drilling case', href: '/applications/#micro-drilling-precision-orifices' },
   },
   {
     title: 'Flats, bores, and reference geometry',
@@ -50,7 +50,7 @@ const applicationFamilies = [
     icon: 'tabler:ruler-measure',
     callToAction: {
       text: 'View precision flats case',
-      href: '/applications#precision-flats-parallels-lapped-surfaces',
+      href: '/applications/#precision-flats-parallels-lapped-surfaces',
     },
   },
   {
@@ -58,7 +58,7 @@ const applicationFamilies = [
     description:
       'Machinable features that need realistic wall thickness, internal radii, slot geometry, chamfer or radius control, and clear chip criteria before a quote is meaningful.',
     icon: 'tabler:corner-down-right',
-    callToAction: { text: 'View geometry case', href: '/applications#slots-pockets-thin-wall-geometry' },
+    callToAction: { text: 'View geometry case', href: '/applications/#slots-pockets-thin-wall-geometry' },
   },
   {
     title: 'Thermal fixtures and repeat programs',
@@ -67,7 +67,7 @@ const applicationFamilies = [
     icon: 'tabler:temperature',
     callToAction: {
       text: 'View production case',
-      href: '/applications#prototyping-small-batch-repeat-orders',
+      href: '/applications/#prototyping-small-batch-repeat-orders',
     },
   },
 ];
@@ -75,7 +75,7 @@ const applicationFamilies = [
 const metadata = {
   title: 'Advanced Ceramic CNC Machining Applications',
   description:
-    'Application hubs for precision ceramic CNC machining: semiconductor ceramics, sealing faces, micro-drilling, insulators, wear parts, flats, thin walls, vacuum hardware, nozzles, bores, and edge quality.',
+    'Precision ceramic CNC application cases for semiconductor, vacuum, sealing, wear, micro-hole, thin-wall, nozzle, bore, flatness, and edge-quality parts.',
   openGraph: {
     images: [
       {
@@ -89,14 +89,14 @@ const metadata = {
   structuredData: [
     createBreadcrumbSchema([
       { name: 'Home', item: '/' },
-      { name: 'Applications', item: '/applications' },
+      { name: 'Applications', item: '/applications/' },
     ]),
     createItemListSchema(
       'Advanced ceramic CNC machining applications',
       ceramicApplications.map((item) => ({
         name: item.title,
         description: item.description,
-        url: `/applications#${item.id}`,
+        url: `/applications/#${item.id}`,
       }))
     ),
   ],
@@ -114,7 +114,7 @@ const metadata = {
         text: 'Email technical RFQ',
         href: rfqEmailHref,
       },
-      { text: 'RFQ checklist', href: '/rfq' },
+      { text: 'RFQ checklist', href: '/rfq/' },
     ]}
     image={{
       src: '~/assets/images/ceramic/hero-ceramic-cnc.webp',

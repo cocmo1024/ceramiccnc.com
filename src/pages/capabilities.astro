@@ -100,7 +100,7 @@ const capabilityShowcases = [
 const metadata = {
   title: 'Ceramic CNC Machining Capabilities',
   description:
-    'Precision ceramic CNC capabilities for post-sinter machining, diamond grinding, lapping, micro-drilling, edge quality, surface finish, CMM, profile, Ra, CT, and inspection planning.',
+    'Precision ceramic CNC, diamond grinding, lapping, micro-drilling, edge control, Ra, CMM, profile, CT, and inspection planning for advanced ceramic parts.',
   openGraph: {
     images: [
       {
@@ -114,7 +114,7 @@ const metadata = {
   structuredData: [
     createBreadcrumbSchema([
       { name: 'Home', item: '/' },
-      { name: 'Capabilities', item: '/capabilities' },
+      { name: 'Capabilities', item: '/capabilities/' },
     ]),
     createCeramicApplicationServiceSchema({
       id: 'capabilities',
@@ -122,7 +122,7 @@ const metadata = {
       serviceType: 'Precision ceramic CNC machining capability review',
       description:
         'Post-sinter ceramic machining, grinding, lapping, micro-drilling, edge quality, surface finish, and inspection planning for advanced ceramic components.',
-      url: '/capabilities',
+      url: '/capabilities/',
       audienceType: 'Engineering and procurement teams sourcing precision ceramic components',
     }),
     createItemListSchema(
@@ -130,7 +130,7 @@ const metadata = {
       ceramicCapabilities.map((item) => ({
         name: item.title,
         description: item.description,
-        url: '/capabilities',
+        url: '/capabilities/',
       }))
     ),
   ],
@@ -147,7 +147,7 @@ const metadata = {
         href: rfqEmailHref,
         icon: 'tabler:mail',
       },
-      { text: 'Review RFQ inputs', href: '/rfq' },
+      { text: 'Review RFQ inputs', href: '/rfq/' },
     ]}
     image={{
       src: '~/assets/images/ceramic/hero-ceramic-cnc.webp',

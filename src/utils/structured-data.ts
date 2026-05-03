@@ -3,16 +3,32 @@ import type { ImageMetadata } from 'astro';
 import type { JsonLdNode, Post } from '~/types';
 
 const siteUrl = String(SITE.site).replace(/\/$/, '');
+const siteOrigin = new URL(siteUrl).origin;
 const organizationId = `${siteUrl}/#organization`;
 const websiteId = `${siteUrl}/#website`;
+const hasFileExtension = (pathname: string) => /\.[a-z0-9]+$/i.test(pathname.split('/').pop() || '');
+
+const normalizeInternalUrl = (url: URL): string => {
+  if (url.origin !== siteOrigin) return String(url);
+
+  if (SITE.trailingSlash && url.pathname !== '/' && !url.pathname.endsWith('/') && !hasFileExtension(url.pathname)) {
+    url.pathname = `${url.pathname}/`;
+  } else if (SITE.trailingSlash === false && url.pathname !== '/' && url.pathname.endsWith('/')) {
+    url.pathname = url.pathname.replace(/\/+$/, '');
+  }
+
+  return String(url);
+};
 
 export const toAbsoluteUrl = (url: string | URL | undefined): string | undefined => {
   if (!url) return undefined;
 
   const value = String(url);
-  if (value.startsWith('http://') || value.startsWith('https://')) return value;
+  if (value.startsWith('http://') || value.startsWith('https://')) {
+    return normalizeInternalUrl(new URL(value));
+  }
 
-  return String(new URL(value.startsWith('/') ? value : `/${value}`, `${siteUrl}/`));
+  return normalizeInternalUrl(new URL(value.startsWith('/') ? value : `/${value}`, `${siteUrl}/`));
 };
 
 export const createBreadcrumbSchema = (items: Array<{ name: string; item?: string | URL }>): JsonLdNode => ({
@@ -96,7 +112,7 @@ export const createCeramicApplicationServiceSchema = ({
   audienceType: string;
 }): JsonLdNode => ({
   '@type': 'Service',
-  '@id': `${siteUrl}/${id.replace(/^\/|\/$/g, '')}#service`,
+  '@id': toAbsoluteUrl(`/${id.replace(/^\/|\/$/g, '')}/#service`),
   name,
   serviceType,
   provider: { '@id': organizationId },

@@ -30,7 +30,7 @@ const applicationShowcases = ceramicApplications.map((item, index) => ({
       title: 'RFQ next step',
       description:
         'Send drawing, STEP file, material grade, quantity, critical datums, surface finish, and inspection needs.',
-      callToAction: { text: 'Open application details', href: `/applications#${item.id}` },
+      callToAction: { text: 'Open application details', href: `/applications/#${item.id}` },
     },
   ],
 }));
@@ -67,7 +67,7 @@ const requirementShowcases = [
           'If datums, grade, edge quality, or inspection expectations are unclear, we ask before quoting rather than assuming a risky ceramic route.',
         callToAction: {
           text: 'Ceramic RFQ checklist',
-          href: '/rfq',
+          href: '/rfq/',
         },
       },
     ],
@@ -75,10 +75,10 @@ const requirementShowcases = [
 ];
 
 const metadata = {
-  title: 'Precision Ceramic CNC Machining | Advanced Ceramic Grinding and Micro-Drilling',
+  title: 'Precision Ceramic CNC Machining | CERAMIC CNC',
   ignoreTitleTemplate: true,
   description:
-    'Precision ceramic CNC machining for Al2O3, ZrO2, Si3N4, SiC, MACOR, ceramic grinding, lapping, micro-drilling, edge chip control, CMM inspection, and RFQ feasibility review.',
+    'Precision ceramic CNC machining, diamond grinding, lapping, micro-drilling, edge control, CMM and CT inspection, and RFQ review for Al2O3, ZrO2, Si3N4, SiC, and MACOR.',
   openGraph: {
     images: [
       {
@@ -96,7 +96,7 @@ const metadata = {
       ceramicApplications.map((item) => ({
         name: item.title,
         description: item.description,
-        url: `/applications#${item.id}`,
+        url: `/applications/#${item.id}`,
       }))
     ),
     createFAQPageSchema(ceramicFaqItems.slice(0, 10)),
@@ -113,7 +113,7 @@ const metadata = {
         href: rfqEmailHref,
         icon: 'tabler:mail',
       },
-      { text: 'Browse Engineering Guide', href: '/category/engineering-guide' },
+      { text: 'Browse Engineering Guide', href: '/category/engineering-guide/' },
     ]}
     image={{
       src: '~/assets/images/ceramic/hero-ceramic-cnc.webp',
@@ -316,7 +316,7 @@ const metadata = {
       },
       {
         text: 'Prepare RFQ inputs',
-        href: '/rfq',
+        href: '/rfq/',
       },
     ]}
   >

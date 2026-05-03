@@ -89,9 +89,9 @@ const rfqShowcases = [
 ];
 
 const metadata = {
-  title: 'Ceramic CNC RFQ Checklist | Drawings, Datums, Ra, Inspection',
+  title: 'Ceramic CNC RFQ Checklist',
   description:
-    'Precision ceramic CNC RFQ checklist for material grade, CAD, drawings, datums, GD&T, edge condition, micro-holes, surface finish Ra, flatness, CMM, CT, and inspection reports.',
+    'Ceramic CNC RFQ checklist for material grade, CAD, drawings, datums, GD&T, edge condition, micro-holes, Ra, flatness, CMM, CT, and inspection reports.',
   openGraph: {
     images: [
       {
@@ -105,24 +105,24 @@ const metadata = {
   structuredData: [
     createBreadcrumbSchema([
       { name: 'Home', item: '/' },
-      { name: 'RFQ Inputs', item: '/rfq' },
+      { name: 'RFQ Inputs', item: '/rfq/' },
     ]),
     createItemListSchema('Ceramic CNC RFQ checklist', [
       {
         name: 'Geometry package',
         description: 'STEP, IGES, native CAD, and drawings for critical faces, datums, holes, slots, and dimensions.',
-        url: '/rfq',
+        url: '/rfq/',
       },
       {
         name: 'Functional requirements',
         description: 'Temperature, media, wear, vacuum, insulation, flow, sealing, and assembly constraints.',
-        url: '/rfq',
+        url: '/rfq/',
       },
       {
         name: 'Inspection requirements',
         description:
           'CMM, optical, profile, CT, surface finish, flatness, CoC, material cert, and key-dimension reports.',
-        url: '/rfq',
+        url: '/rfq/',
       },
     ]),
     createFAQPageSchema(ceramicFaqItems.slice(0, 12)),
