@@ -8,7 +8,7 @@ export const ceramicApplications = [
     image: '~/assets/images/ceramic/application-1.webp',
     alt: 'Precision ceramic CNC machining for semiconductor wafer handling parts',
     description:
-      'Semiconductor ceramic parts are judged by dimensional stability, particle control, flatness, edge quality, and repeatable interfaces. Common requests include wafer handling parts, insulating spacers, nozzles, focus-ring-adjacent hardware, and vacuum-side components in Al2O3 and SiC.',
+      'Semiconductor ceramic parts are judged by dimensional stability, particle-sensitive edge and finish requirements, flatness, edge quality, and repeatable interfaces. Common requests include wafer handling parts, insulating spacers, nozzles, focus-ring-adjacent hardware, and vacuum-side components in Al2O3 and SiC.',
     points: [
       {
         title: 'Risk drivers',
@@ -73,7 +73,7 @@ export const ceramicApplications = [
       {
         title: 'Measurable acceptance',
         description:
-          'Optical measurement, pin gauges, CMM position evidence, or CT should be selected before the quote is finalized.',
+          'Optical measurement, pin gauges, CMM position evidence, or CT review for internal risk can be considered before the quote is finalized.',
       },
     ],
   },
@@ -123,7 +123,7 @@ export const ceramicApplications = [
       {
         title: 'Evidence',
         description:
-          'Surface finish, roundness/profile checks, datum-based dimensions, and lot traceability help align wear-life expectations.',
+          'Surface finish, roundness/profile checks, datum-based dimensions, and lot traceability help align acceptance expectations.',
       },
     ],
   },
@@ -183,7 +183,7 @@ export const ceramicApplications = [
     image: '~/assets/images/ceramic/application-8.webp',
     alt: 'Chemical resistant ceramic hardware for corrosive service',
     description:
-      'Al2O3, SiC, and selected advanced ceramics can handle corrosive or abrasive media when sealing geometry, surface finish, and edge integrity are specified clearly.',
+      'Al2O3, SiC, and selected advanced ceramics are often considered for corrosive or abrasive media when sealing geometry, surface finish, and edge integrity are specified clearly.',
     points: [
       {
         title: 'Typical components',
@@ -233,7 +233,7 @@ export const ceramicApplications = [
     image: '~/assets/images/ceramic/application-10.webp',
     alt: 'Vacuum ceramic hardware for leak-critical interfaces',
     description:
-      'Vacuum ceramic parts need flatness, edge integrity, cleanliness, density/porosity control, and interface-critical reporting rather than generic dimensional pass/fail.',
+      'Vacuum ceramic parts need flatness, edge integrity, cleanliness requirements, blank density or porosity evidence when relevant, and interface-critical reporting rather than generic dimensional pass/fail.',
     points: [
       {
         title: 'Typical uses',
@@ -412,7 +412,7 @@ export const ceramicCapabilities = [
   {
     title: 'Inspection evidence',
     description:
-      'CMM, optical checks, profile, surface finish, key-dimension reports, CT, and acceptance packets selected by risk.',
+      'CMM, optical checks, profile, surface finish, key-dimension reports, and special inspection paths selected by risk.',
     icon: 'tabler:clipboard-check',
   },
 ];
@@ -451,7 +451,7 @@ export const ceramicMaterials = [
   {
     title: 'AlN, BN, fused silica, and others',
     description:
-      'Reviewed when thermal conductivity, dielectric behavior, vacuum compatibility, or optical/thermal properties drive the material choice.',
+      'Reviewed when thermal conductivity, dielectric behavior, vacuum compatibility, optical/thermal properties, stock form, and machinability drive the material choice.',
     icon: 'tabler:atom',
   },
 ];
@@ -460,7 +460,7 @@ export const ceramicFaqItems = [
   {
     title: 'What information should be included in a ceramic CNC RFQ?',
     description:
-      'Send material and grade, drawing revision, STEP or IGES files, functional datums, GD&T, critical faces, quantity, lead time, surface finish, inspection scope, and application constraints such as temperature, media, wear, vacuum, or insulation.',
+      'Send material and grade, blank or sourcing requirement, drawing revision, STEP or IGES files, functional datums, GD&T, critical faces, quantity, lead time, surface finish, inspection scope, and application constraints such as temperature, media, wear, vacuum, or insulation.',
   },
   {
     title: 'How can I reduce quote back-and-forth?',
@@ -475,7 +475,7 @@ export const ceramicFaqItems = [
   {
     title: 'When does green machining reduce cost or lead time?',
     description:
-      'Green machining can reduce shaping cost before sintering when geometry is complex and final tolerances are moderate. Tight seal faces, bearing fits, or datum faces usually still need post-sinter finishing.',
+      'Green machining may reduce shaping cost before sintering when a suitable preform route and shrinkage data are available. Tight seal faces, bearing fits, or datum faces usually still need post-sinter finishing.',
   },
   {
     title: 'When should a drawing use as-sintered dimensions?',
@@ -485,7 +485,7 @@ export const ceramicFaqItems = [
   {
     title: 'What lead time should be planned?',
     description:
-      'Lead time is estimated after review of blank sourcing, preform or sintering route, post-sinter grinding, lapping, polishing, micro-hole work, and metrology scope. Inspection often controls schedule for tight parts.',
+      'Lead time is estimated after review of blank sourcing, customer-supplied material status, preform route, post-sinter grinding, lapping, polishing, micro-hole work, and metrology scope. Inspection often controls schedule for tight parts.',
   },
   {
     title: 'How should quotes from different suppliers be compared?',
@@ -550,7 +550,7 @@ export const ceramicFaqItems = [
   {
     title: 'What inspection methods are common?',
     description:
-      'CMM, optical measurement, microscopy, pin gauges, profilometry, flatness mapping, density checks, leak checks, and CT may be used depending on feature size and risk.',
+      'CMM, optical measurement, microscopy, pin gauges, profilometry, flatness mapping, density checks, leak checks, or CT may be specified depending on feature size, risk, and available inspection route.',
   },
   {
     title: 'What can CT scanning prove?',

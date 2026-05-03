@@ -59,7 +59,7 @@ const requirementShowcases = [
       {
         title: 'Inspection needs',
         description:
-          'CMM, optical checks, profile, flatness mapping, Ra, CT, material certificate, and key-dimension reports are considered when required.',
+          'CMM, optical checks, profile, flatness mapping, Ra, material certificate availability, and key-dimension reports are considered when required.',
       },
       {
         title: 'Clarification when needed',
@@ -78,7 +78,7 @@ const metadata = {
   title: 'Precision Ceramic CNC Machining | CERAMIC CNC',
   ignoreTitleTemplate: true,
   description:
-    'Precision ceramic CNC machining, diamond grinding, lapping, micro-drilling, edge control, CMM and CT inspection, and RFQ review for Al2O3, ZrO2, Si3N4, SiC, and MACOR.',
+    'Precision ceramic CNC machining, diamond grinding, lapping, micro-drilling, edge control, inspection planning, and RFQ review for Al2O3, ZrO2, Si3N4, SiC, and MACOR.',
   openGraph: {
     images: [
       {
@@ -144,7 +144,7 @@ const metadata = {
 
   <Note
     title="RFQ checklist:"
-    description="Include material grade, drawing and STEP, datums, GD&T, quantity, target lead time, surface finish or flatness targets, critical edges, and required evidence such as CMM, profile, Ra, CT, or key-dimension reports."
+    description="Include material grade, blank or sourcing requirement, drawing and STEP, datums, GD&T, quantity, target lead time, surface finish or flatness targets, critical edges, and required evidence such as CMM, profile, Ra, optical checks, or key-dimension reports."
   />
 
   <section class:list={['relative not-prose', sectionContainerClass]}>
@@ -209,7 +209,7 @@ const metadata = {
       {
         title: 'Special requirements',
         description:
-          'Surface finish, flatness, lapping, edge condition, micro-features, CMM, CT, CoC, or material certificate when they matter.',
+          'Surface finish, flatness, lapping, edge condition, micro-features, CMM, optical or Ra evidence, CoC, or material certificate when they matter and are available.',
         icon: 'tabler:clipboard-check',
       },
     ]}
@@ -257,7 +257,7 @@ const metadata = {
       {
         title: 'Step 3: <span class="font-medium">Select inspection evidence</span>',
         description:
-          'State whether CMM, optical, profile, surface finish, flatness mapping, CT, or key-dimension reports are required.',
+          'State whether CMM, optical, profile, surface finish, flatness mapping, special inspection, or key-dimension reports are required.',
         icon: 'tabler:clipboard-check',
       },
       {
@@ -300,7 +300,7 @@ const metadata = {
     stats={[
       { title: 'Application use cases', amount: '15' },
       { title: 'Core ceramic families', amount: '6+' },
-      { title: 'Inspection methods', amount: 'CMM / Ra / CT' },
+      { title: 'Inspection methods', amount: 'CMM / optical / Ra' },
       { title: 'RFQ principle', amount: 'Review first' },
     ]}
   />
@@ -323,9 +323,9 @@ const metadata = {
     <Fragment slot="title">Send CAD for ceramic feasibility and quotation review.</Fragment>
 
     <Fragment slot="subtitle">
-      Include drawing + STEP + material grade + quantity + target lead time + critical dimensions, datums, surface
-      finish or flatness targets, and inspection evidence required for acceptance. We review these inputs before
-      confirming feasibility, price, or schedule.
+      Include drawing + STEP + material grade + blank or sourcing requirement + quantity + target lead time + critical
+      dimensions, datums, surface finish or flatness targets, and inspection evidence required for acceptance. We review
+      these inputs before confirming feasibility, price, or schedule.
     </Fragment>
   </CallToAction>
 </Layout>

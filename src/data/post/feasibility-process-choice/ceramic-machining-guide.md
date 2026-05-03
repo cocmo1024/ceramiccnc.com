@@ -18,6 +18,7 @@ metadata:
 A ceramic machining RFQ is not only a size and quantity request. It buys a route:
 
 - Material grade and blank state.
+- Customer-supplied or supplier-sourced blank assumptions.
 - Machining or green-route assumptions.
 - Diamond grinding and lapping scope.
 - Edge protection and chip criteria.
@@ -45,14 +46,14 @@ This means procurement should control:
 
 Capability depends on material, feature geometry, process route, and measurement method.
 
-| Requirement  | Practical buyer question                            |
-| ------------ | --------------------------------------------------- |
-| Tight size   | Is the feature post-sinter ground or as-sintered?   |
-| Flatness     | Is lapping needed and where is it measured?         |
-| Ra           | Which face and which measurement method?            |
-| Micro-hole   | Diameter, depth, taper, position, and breakout?     |
-| Edge quality | Which zone and what max chip size?                  |
-| Inspection   | CMM, optical, profile, CT, or key-dimension report? |
+| Requirement  | Practical buyer question                                            |
+| ------------ | ------------------------------------------------------------------- |
+| Tight size   | Is the feature post-sinter ground or as-sintered?                   |
+| Flatness     | Is lapping needed and where is it measured?                         |
+| Ra           | Which face and which measurement method?                            |
+| Micro-hole   | Diameter, depth, taper, position, and breakout?                     |
+| Edge quality | Which zone and what max chip size?                                  |
+| Inspection   | CMM, optical, profile, special inspection, or key-dimension report? |
 
 ### Cost Drivers
 
@@ -70,7 +71,7 @@ The dominant cost drivers are usually:
 
 ### Lead Time Drivers
 
-Lead time is affected by blank sourcing, preform or sintering work, grinding capacity, lapping capacity, CMM availability, surface finish measurement, cleaning, and documentation.
+Lead time is affected by blank sourcing, customer-supplied material readiness, preform route, grinding capacity, lapping capacity, CMM availability, surface finish measurement, cleaning, and documentation.
 
 Schedule review is clearer when:
 
@@ -102,7 +103,7 @@ Ask suppliers for evidence that matches your risk:
 
 | Criterion                       | How to verify                                     |
 | ------------------------------- | ------------------------------------------------- |
-| Experience in the ceramic grade | Similar features and material references          |
+| Experience in the ceramic grade | Similar features and material/blank references    |
 | Grinding route control          | Wheel, dressing, coolant, and handling discipline |
 | Metrology capability            | Sample CMM, profile, Ra, or microscopy reports    |
 | Edge damage control             | Chip criteria and packaging method                |
@@ -120,7 +121,7 @@ Define datums, finished faces, edge condition, Ra per functional face, and inspe
 Ra alone is not enough for high-risk surfaces. Pair it with flatness, edge criteria, method, and surface integrity expectations.
 
 **When do I need strength-related validation?**  
-When the ceramic is load-bearing, safety-relevant, or failure consequence is high. Consider proof testing, coupons, microscopy, or qualification lots.
+When the ceramic is load-bearing, safety-relevant, or failure consequence is high. Consider whether proof testing, coupons, microscopy, or qualification lots belong in the customer qualification plan.
 
 **What should I send first?**  
-Send drawing, STEP, material grade, quantity, lead time, CTQs, surface finish, edge condition, and documentation needs.
+Send drawing, STEP, material grade, blank or sourcing requirement, quantity, lead time, CTQs, surface finish, edge condition, and documentation needs.

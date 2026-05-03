@@ -35,7 +35,7 @@ Cookies or similar technologies may be used for essential site function, traffic
 We use collected information to:
 
 - Respond to inquiries and quotation requests.
-- Provide ceramic material recommendations or machining guidance.
+- Provide ceramic material review guidance or machining-route comments.
 - Support engineering evaluation of advanced ceramic components.
 - Review manufacturability, grinding route, surface finish, edge quality, and inspection requirements.
 - Improve website content, structure, and technical relevance.

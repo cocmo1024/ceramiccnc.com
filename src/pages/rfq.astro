@@ -16,7 +16,8 @@ Hello CERAMIC CNC,
 Please review the attached CAD/drawings for quotation.
 
 Part/application:
-Ceramic material and grade:
+Ceramic material, grade, and fired state:
+Customer-supplied blanks or sourcing requested:
 Attached files:
 Quantity:
 Target lead time:
@@ -24,7 +25,8 @@ Critical dimensions, datums, and GD&T:
 Surface finish, flatness, or lapping requirements:
 Micro-holes, slots, thin walls, or edge-break requirements:
 Operating environment:
-Inspection and documentation required:
+Inspection method, documentation, and certificate requirements:
+Acceptance criteria or sampling plan:
 Ship-to country/region:
 
 Notes:
@@ -82,7 +84,7 @@ const rfqShowcases = [
       {
         title: 'Acceptance evidence',
         description:
-          'CMM, optical, profile, pin gauge, CT, surface finish, flatness mapping, CoC, material certificate, or key-dimension report.',
+          'CMM, optical, profile, pin gauge, surface finish, flatness mapping, CoC, available material certificate, CT when justified, or key-dimension report.',
       },
     ],
   },
@@ -91,7 +93,7 @@ const rfqShowcases = [
 const metadata = {
   title: 'Ceramic CNC RFQ Checklist',
   description:
-    'Ceramic CNC RFQ checklist for material grade, CAD, drawings, datums, GD&T, edge condition, micro-holes, Ra, flatness, CMM, CT, and inspection reports.',
+    'Ceramic CNC RFQ checklist for material grade, blank source, CAD, drawings, datums, GD&T, edge condition, micro-holes, Ra, flatness, CMM, optical checks, and inspection reports.',
   openGraph: {
     images: [
       {
@@ -121,7 +123,7 @@ const metadata = {
       {
         name: 'Inspection requirements',
         description:
-          'CMM, optical, profile, CT, surface finish, flatness, CoC, material cert, and key-dimension reports.',
+          'CMM, optical, profile, surface finish, flatness, CoC, material cert availability, special inspection, and key-dimension reports.',
         url: '/rfq/',
       },
     ]),
@@ -134,7 +136,7 @@ const metadata = {
   <HeroText
     tagline="RFQ inputs"
     title="Send enough information for a practical ceramic CNC quote"
-    subtitle="A simple drawing and quantity may be enough to start review. For precision ceramic parts, include the requirements that affect material route, grinding allowance, surface finish, edge quality, and inspection."
+    subtitle="A simple drawing and quantity may be enough to start review. For precision ceramic parts, include the requirements that affect blank source, material route, grinding allowance, surface finish, edge quality, and inspection."
   />
 
   <section class="relative not-prose py-10 md:py-14">
@@ -217,8 +219,8 @@ const metadata = {
   >
     <Fragment slot="subtitle">
       Email <a class="font-semibold underline underline-offset-4" href={rfqEmailHref}>{rfqEmail}</a> with CAD, drawings, material
-      grade, quantity, target lead time, critical surfaces, edge requirements, and inspection expectations. We review the
-      information before confirming feasibility, price, or schedule.
+      grade, blank or sourcing requirement, quantity, target lead time, critical surfaces, edge requirements, and inspection
+      expectations. We review the information before confirming feasibility, price, or schedule.
     </Fragment>
   </CallToAction>
 </Layout>

@@ -76,7 +76,7 @@ For a ceramic plate with a sealing band, a first drawing may ask for tight thick
 
 Send these details when tolerance matters:
 
-- Material grade and fired state.
+- Material grade, fired state, and blank or sourcing requirement.
 - STEP file and drawing revision.
 - Functional datums and critical-to-quality features.
 - Which faces are ground, lapped, polished, or as-sintered.

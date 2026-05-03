@@ -68,7 +68,7 @@ Risk increases when:
 - Thin walls flex during finishing.
 - Acceptance ignores crack or chip criteria.
 
-When reliability matters, ask for process control, coupon evidence, microscopy, proof testing, or other validation rather than relying on Ra alone.
+When reliability matters, ask whether process control, coupon evidence, microscopy, proof testing, or other validation should be part of the agreed qualification route rather than relying on Ra alone.
 
 ### RFQ Language That Helps
 

@@ -11,16 +11,16 @@ metadata:
   description: 'Comparison of green machining and post-sinter hard machining for ceramic components, including cost, tolerance, shrinkage, warpage, grinding, and inspection.'
 ---
 
-> A major cost lever in ceramic machining is often not cycle time. It is whether geometry is created before sintering, after sintering, or in a hybrid route with selected post-sinter finishing.
+> A major cost lever in ceramic machining is often not cycle time. It is whether geometry is created before sintering, after sintering, or in a hybrid route with selected post-sinter finishing. For RFQs, this must be tied to the available blank or preform route rather than assumed.
 
 ### What Green Machining Buys
 
-Green machining means machining the ceramic body before final firing. The material is softer, removal is easier, and complex geometry can be shaped at lower tool cost.
+Green machining means machining the ceramic body before final firing. The material is softer, removal is easier, and complex geometry can be shaped at lower tool cost, but the route depends on blank supplier capability, shrinkage data, and post-sinter finishing allowances.
 
 It is usually reviewed when:
 
 - Geometry is complex but final tolerances are moderate.
-- Shrinkage compensation is understood.
+- Shrinkage compensation and fired-state allowance are understood.
 - Critical interfaces can still be finished after sintering.
 - The design tolerates some sinter distortion.
 
@@ -52,18 +52,18 @@ It is usually needed for:
 
 ### Hybrid Routes Are Often Practical
 
-Many successful ceramic programs use green machining for bulk geometry and post-sinter grinding only where function demands precision. That might mean:
+Many successful ceramic programs use a preform or green-machined route for bulk geometry and post-sinter grinding only where function demands precision. That might mean:
 
 - Green-machine pocket geometry, then grind datum pads.
 - Form a ring near-net, then grind bore and faces.
 - Sinter a nozzle blank, then finish the orifice and sealing face.
 - Create a complex insulator shape, then finish mating surfaces.
 
-This route prevents procurement from paying for hard grinding on every surface.
+This route prevents procurement from paying for hard grinding on every surface, but it should be quoted only after material source, fired state, and finishing scope are clear.
 
 ### Where Projects Go Wrong
 
-Projects fail when the RFQ does not specify route assumptions. The supplier may quote as-sintered surfaces while the drawing expects final grinding, or quote full hard machining when only a few interfaces require it.
+Projects fail when the RFQ does not specify route assumptions. A supplier may quote as-sintered surfaces while the drawing expects final grinding, or quote full hard machining when only a few interfaces require it.
 
 Common warning signs:
 
@@ -79,7 +79,7 @@ Common warning signs:
 
 Before asking for price, decide:
 
-1. Which geometry must be created before sintering?
+1. Which geometry must be created before sintering, and who controls that preform route?
 2. Which faces must be finished after sintering?
 3. Which datums are used for dependent features?
 4. Which measurements decide acceptance?
@@ -97,4 +97,4 @@ It can shape complex features efficiently, but final accuracy is limited by shri
 No. Hard machining everything can be unnecessarily expensive. Use it for functional surfaces and datums.
 
 **What should the RFQ say?**  
-State whether the expected route is as-sintered, green-machined, post-sinter ground, lapped, polished, or a hybrid route.
+State whether the expected route is as-sintered, green-machined/preform-based, post-sinter ground, lapped, polished, or hybrid, and whether blanks are customer-supplied or supplier-sourced.

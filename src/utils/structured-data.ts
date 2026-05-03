@@ -56,7 +56,7 @@ export const createCeramicServiceSchema = (): JsonLdNode => ({
     audienceType: 'Engineering, procurement, semiconductor, vacuum, electrical, wear, and industrial OEM teams',
   },
   description:
-    'Precision machining review for advanced ceramic components in Al2O3, ZrO2, Si3N4, SiC, MACOR, and related technical ceramics, with feasibility review, grinding-route assumptions, edge quality requirements, and inspection evidence planning.',
+    'Precision machining review for advanced ceramic components in Al2O3, ZrO2, Si3N4, SiC, MACOR, and related technical ceramics, with feasibility review, blank-source questions, grinding-route assumptions, edge quality requirements, and inspection evidence planning.',
   url: toAbsoluteUrl('/'),
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
@@ -89,7 +89,10 @@ export const createCeramicServiceSchema = (): JsonLdNode => ({
         itemListElement: [
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'CMM and optical inspection planning' } },
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Surface finish and flatness reporting' } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'CT and key-dimension report support' } },
+          {
+            '@type': 'Offer',
+            itemOffered: { '@type': 'Service', name: 'Special inspection and key-dimension report planning' },
+          },
         ],
       },
     ],

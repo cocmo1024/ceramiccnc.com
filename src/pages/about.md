@@ -6,22 +6,22 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 CERAMIC CNC is a dedicated advanced ceramic CNC machining platform operated by Suzhou Como Precision Materials Co., Ltd.
 
-We focus on engineering-grade ceramic materials, precision machining guidance, and application-driven support for teams working with technical ceramics.
+We focus on engineering-grade ceramic materials, precision machining guidance, and application-driven RFQ review for teams working with technical ceramics.
 
 Our role is to help teams review whether a ceramic drawing is practical to quote by clarifying material grade, CNC route, diamond grinding, surface finish, edge quality, and inspection evidence before orders are released.
 
-We support ceramic systems including Al2O3 alumina, ZrO2 zirconia, Si3N4 silicon nitride, SiC silicon carbide, MACOR, fused silica, AlN, BN, and selected machinable ceramics for semiconductor equipment, vacuum systems, aerospace, energy, electronics, tooling, research, and industrial OEM applications.
+RFQs may involve Al2O3 alumina, ZrO2 zirconia, Si3N4 silicon nitride, SiC silicon carbide, MACOR, fused silica, AlN, BN, and selected machinable ceramics. The review depends on exact grade, blank form, fired state, geometry, and acceptance requirements.
 
 ## What We Do
 
 We provide engineering support centered on advanced ceramic machining, including:
 
-- Ceramic material selection guidance and grade review.
-- Precision CNC machining of sintered ceramics and green ceramic routes.
+- Ceramic material, grade, fired-state, and blank-source review.
+- Precision CNC machining review for sintered ceramics and selected preform routes.
 - Diamond grinding, lapping, polishing, edge conditioning, and micro-drilling review.
 - Machining feasibility and tolerance evaluation for brittle ceramic materials.
 - Surface-finish and dimensional-stability planning for critical interfaces.
-- Inspection planning for CMM, profile, Ra, flatness, optical checks, CT, and key-dimension reports.
+- Inspection planning for CMM, profile, Ra, flatness, optical checks, key-dimension reports, and special inspection when required.
 
 Our review is aligned to real engineering constraints: mechanical strength, thermal stability, dielectric performance, surface integrity, geometric complexity, chip risk, and acceptance requirements.
 
@@ -32,7 +32,7 @@ CERAMIC CNC reviews RFQs for demanding applications such as:
 - Semiconductor process equipment and vacuum-chamber ceramic components.
 - Electrical insulation, dielectric, and high-temperature structural parts.
 - Ceramic sealing faces, valve seats, rings, nozzles, plates, and wear parts.
-- Aerospace, energy, chemical-processing, and industrial process hardware.
+- Energy, chemical-processing, research, tooling, and industrial process hardware.
 - Universities and research institutes working on advanced ceramic applications.
 - Industrial OEMs requiring tight-tolerance ceramic CNC machining.
 

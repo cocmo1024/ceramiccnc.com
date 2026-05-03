@@ -75,7 +75,7 @@ A ceramic feature that cannot be measured cannot be accepted cleanly. Before sen
 - Can CMM access the datum and dependent feature?
 - Is optical measurement better for micro-holes or edge chips?
 - Is a pin gauge appropriate or too coarse?
-- Does CT have enough resolution for the feature?
+- Is CT or section-based evidence needed, and does the chosen route have enough resolution for the feature?
 - Are flatness and Ra measured on the correct face?
 
 ![Ceramic DFM inspection readiness](../../../assets/images/ceramic/posts/ceramic-dfm-design-rules-3.webp)
@@ -90,4 +90,4 @@ A ceramic feature that cannot be measured cannot be accepted cleanly. Before sen
 
 ### RFQ Checklist
 
-Send material grade, CAD, drawing revision, functional surfaces, datums, edge condition, surface finish, critical tolerances, quantity, target lead time, and inspection expectations.
+Send material grade, blank or sourcing requirement, CAD, drawing revision, functional surfaces, datums, edge condition, surface finish, critical tolerances, quantity, target lead time, and inspection expectations.

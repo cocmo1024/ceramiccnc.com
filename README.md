@@ -8,8 +8,8 @@ This README is the project operating manual. Use it before editing copy, adding 
 
 CERAMIC CNC is not a generic ceramics brochure and not a promise-first quote machine. The site should communicate a rigorous RFQ review process:
 
-- The customer sends drawings, CAD files, material grade, quantity, target lead time, and acceptance requirements.
-- We review material, geometry, tolerances, surface finish, inspection method, and risk before confirming price or schedule.
+- The customer sends drawings, CAD files, material grade, blank or sourcing requirement, quantity, target lead time, and acceptance requirements.
+- We review material, blank state, geometry, tolerances, surface finish, inspection method, and risk before confirming price or schedule.
 - If important information is missing, we ask focused questions instead of pretending the project is already confirmed.
 - Capability language should be professional and practical, not exaggerated.
 
@@ -19,7 +19,7 @@ Core service themes:
 - Diamond grinding, lapping, polishing, and post-sinter finishing
 - Micro-holes, slots, thin walls, bores, datums, seal faces, and chip-sensitive edges
 - Al2O3, ZrO2, Si3N4, SiC, MACOR, and related technical ceramics
-- CMM, optical, surface finish, CT, and acceptance evidence planning
+- CMM, optical, surface finish, special inspection, and acceptance evidence planning
 
 Avoid making the site look like:
 
@@ -32,8 +32,8 @@ Avoid making the site look like:
 
 Use language that reflects professional evaluation:
 
-- Good: "Send drawing, material, quantity, lead time, and acceptance requirements for review."
-- Good: "Feasibility depends on material, fired state, datum strategy, wall thickness, and inspection method."
+- Good: "Send drawing, material, blank source, quantity, lead time, and acceptance requirements for review."
+- Good: "Feasibility depends on material, fired state, blank form, datum strategy, wall thickness, and inspection method."
 - Good: "If requirements are unclear, we clarify before confirming quotation or schedule."
 - Avoid: "Guaranteed +/-0.01 mm."
 - Avoid: "Fastest lead time."
