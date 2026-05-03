@@ -613,14 +613,6 @@ export const engineeringArticles = [
       'When to machine before sintering, when to grind after firing, and how to plan datum and tolerance risk.',
   },
   {
-    title: 'Ceramic AM Preforms: When CNC Finishing Still Controls Acceptance',
-    href: '/posts/engineering-guide/ceramic-additive-manufacturing-components-2026/',
-    date: '2026-01-06',
-    image: '~/assets/images/ceramic/hero-ceramic-cnc.webp',
-    description:
-      'Where ceramic AM can create difficult preforms, and why sintering, CNC finishing, density evidence, and inspection still decide acceptance.',
-  },
-  {
     title: 'Ceramic Machining and Diamond Grinding Guide for Buyers',
     href: '/posts/feasibility-process-choice/ceramic-machining-guide/',
     date: '2026-01-03',
