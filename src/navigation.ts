@@ -54,11 +54,13 @@ export const footerData = {
         { text: 'Applications', href: getPermalink('/applications') },
         { text: 'Capabilities', href: getPermalink('/capabilities') },
         { text: 'RFQ inputs', href: getPermalink('/rfq') },
+        { text: 'Materials', href: getPermalink('/materials') },
       ],
     },
     {
       title: 'Engineering',
       links: [
+        { text: 'Engineering Guide', href: getBlogPermalink() },
         {
           text: 'Tolerance map',
           href: getPermalink('/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process'),
@@ -74,20 +76,21 @@ export const footerData = {
       ],
     },
     {
-      title: 'Resources',
-      links: [
-        { text: 'Materials', href: getPermalink('/materials') },
-        { text: 'FAQ', href: getPermalink('/faq') },
-        { text: 'Engineering Guide', href: getBlogPermalink() },
-      ],
-    },
-    {
       title: 'Company',
       links: [
         { text: 'About', href: getPermalink('/about') },
         { text: 'Contact', href: getPermalink('/contact') },
+        { text: 'FAQ', href: getPermalink('/faq') },
         { text: 'Privacy', href: getPermalink('/privacy') },
         { text: 'Terms', href: getPermalink('/terms') },
+      ],
+    },
+    {
+      title: 'Related sites',
+      links: [
+        { text: 'Como Precision', href: 'https://szcomo.com/' },
+        { text: 'Copper 3D Printing', href: 'https://copper3dp.com/' },
+        { text: 'Titanium Alloy AM', href: 'https://titanium3dp.com/' },
       ],
     },
   ],
