@@ -44,8 +44,8 @@ export const createBreadcrumbSchema = (items: Array<{ name: string; item?: strin
 export const createCeramicServiceSchema = (): JsonLdNode => ({
   '@type': 'Service',
   '@id': `${siteUrl}/#precision-ceramic-cnc-machining-service`,
-  name: 'Precision Ceramic CNC Machining Services',
-  serviceType: 'Advanced ceramic CNC machining, diamond grinding, lapping, micro-drilling, and RFQ review',
+  name: 'Custom Precision Ceramic CNC Machining Services',
+  serviceType: 'Custom precision ceramic CNC machining, diamond grinding, lapping, micro-drilling, and RFQ review',
   provider: { '@id': organizationId },
   areaServed: {
     '@type': 'Place',
@@ -56,7 +56,7 @@ export const createCeramicServiceSchema = (): JsonLdNode => ({
     audienceType: 'Engineering, procurement, semiconductor, vacuum, electrical, wear, and industrial OEM teams',
   },
   description:
-    'Precision machining review for advanced ceramic components in Al2O3, ZrO2, Si3N4, SiC, MACOR, and related technical ceramics, with feasibility review, blank-source questions, grinding-route assumptions, edge quality requirements, and inspection evidence planning.',
+    'Custom precision machining review for advanced ceramic components in Al2O3, ZrO2, Si3N4, SiC, MACOR, and related technical ceramics, with feasibility review, blank-source questions, grinding-route assumptions, edge quality requirements, and inspection evidence planning.',
   url: toAbsoluteUrl('/'),
   hasOfferCatalog: {
     '@type': 'OfferCatalog',

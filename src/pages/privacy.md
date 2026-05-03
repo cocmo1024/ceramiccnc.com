@@ -2,6 +2,9 @@
 title: 'Privacy Policy'
 description: 'CERAMIC CNC privacy policy for RFQ inquiries, CAD files, drawings, ceramic material requirements, project notes, and contact information.'
 layout: '~/layouts/MarkdownLayout.astro'
+robots:
+  index: false
+  follow: true
 ---
 
 _Last updated_: December 9, 2025

@@ -2,6 +2,9 @@
 title: 'Terms and Conditions'
 description: 'CERAMIC CNC terms for website use, preliminary RFQ discussions, ceramic machining technical content, CAD file submission, quotation scope, and engineering guidance.'
 layout: '~/layouts/MarkdownLayout.astro'
+robots:
+  index: false
+  follow: true
 ---
 
 _Last updated_: December 9, 2025

@@ -613,10 +613,11 @@ export const engineeringArticles = [
       'When to machine before sintering, when to grind after firing, and how to plan datum and tolerance risk.',
   },
   {
-    title: 'Ceramic Machining and Diamond Grinding Guide for Buyers',
+    title: 'Ceramic CNC Machining Buyer Guide',
     href: '/posts/feasibility-process-choice/ceramic-machining-guide/',
     date: '2026-01-03',
     image: '~/assets/images/ceramic/posts/744265b0487821dd43016f724d1e24cc-300-300-0.webp',
-    description: 'How capability, cost, lead time, and acceptance are reviewed before quoting precision ceramic parts.',
+    description:
+      'How capability, cost, lead time, and acceptance are reviewed before quoting custom precision ceramic parts.',
   },
 ];

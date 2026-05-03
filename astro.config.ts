@@ -28,13 +28,15 @@ const shouldIndexSitemapPage = (page: string) => {
   const isPaginatedArchive = /^\/(?:blog|category\/engineering-guide)(?:\/category\/[^/]+)?\/\d+$/.test(pathname);
   const isStaticLegacyFallback = pathname.startsWith('/tags/');
   const isLegacyPostRedirect = pathname.startsWith('/posts/design-rules-feature-dfam/');
+  const isLowValueLegalPage = pathname === '/privacy' || pathname === '/terms';
 
   return (
     !pathname.startsWith('/blog/tag') &&
     !pathname.startsWith('/blog/category') &&
     !isPaginatedArchive &&
     !isStaticLegacyFallback &&
-    !isLegacyPostRedirect
+    !isLegacyPostRedirect &&
+    !isLowValueLegalPage
   );
 };
 

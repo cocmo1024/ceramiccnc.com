@@ -1,21 +1,21 @@
 ---
-title: 'Ceramic Machining and Diamond Grinding Guide for Buyers: Capability, Cost, Lead Time, Acceptance'
+title: 'Ceramic CNC Machining Buyer Guide for Diamond Grinding and RFQ Review'
 publishDate: 2026-01-03
-excerpt: 'Buyer-focused guide to ceramic CNC machining and diamond grinding capability, cost drivers, lead time, inspection, and acceptance gates.'
+excerpt: 'Buyer-focused guide to custom ceramic CNC machining, diamond grinding capability, cost drivers, lead time, inspection, and acceptance gates.'
 category: Engineering Guide
 tags: ['advanced-ceramics', 'diamond-grinding', 'capability-map', 'cost-drivers', 'rfq-checklist']
 author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/744265b0487821dd43016f724d1e24cc-300-300-0.webp
 metadata:
-  title: 'Ceramic Machining Buyer Guide'
-  description: 'Buyer guide for ceramic CNC machining, diamond grinding, capability, cost, lead time, inspection, acceptance criteria, and RFQ preparation.'
+  title: 'Ceramic CNC Machining Buyer Guide'
+  description: 'Buyer guide for custom ceramic CNC machining, diamond grinding, capability, cost, lead time, inspection, acceptance criteria, and RFQ preparation.'
 ---
 
 > Diamond grinding is often part of the route for tight tolerance and controlled surface finish on advanced ceramics. The procurement leverage comes from defining the acceptance gate before the supplier prices uncertainty.
 
 ### What Buyers Are Actually Buying
 
-A ceramic machining RFQ is not only a size and quantity request. It buys a route:
+A custom ceramic CNC machining RFQ is not only a size and quantity request. It buys a route:
 
 - Material grade and blank state.
 - Customer-supplied or supplier-sourced blank assumptions.
