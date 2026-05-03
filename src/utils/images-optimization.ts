@@ -327,9 +327,12 @@ export async function getImagesOptimized(
   let breakpoints = getBreakpoints({ width: width, breakpoints: widths, layout: layout });
   breakpoints = [...new Set(breakpoints)].sort((a, b) => a - b);
 
-  const srcset = (await transform(image, breakpoints, Number(width) || undefined, Number(height) || undefined, format))
-    .map(({ src, width }) => `${src} ${width}w`)
-    .join(', ');
+  const optimizedImages =
+    import.meta.env.DEV && typeof image !== 'string'
+      ? []
+      : await transform(image, breakpoints, Number(width) || undefined, Number(height) || undefined, format);
+
+  const srcset = optimizedImages.map(({ src, width }) => `${src} ${width}w`).join(', ');
 
   return {
     src: typeof image === 'string' ? image : image.src,
