@@ -581,6 +581,22 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Custom Ceramic CNC Machining RFQ Checklist',
+    href: '/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/',
+    date: '2026-05-03',
+    image: '~/assets/images/ceramic/posts/ceramic-machining-guide-4.webp',
+    description:
+      'How to prepare a ceramic CNC RFQ with drawings, material grade, quantity, tolerances, surface finish, micro-features, and inspection evidence.',
+  },
+  {
+    title: 'Ceramic Material Selection for CNC Machining',
+    href: '/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/',
+    date: '2026-05-03',
+    image: '~/assets/images/ceramic/application-5.webp',
+    description:
+      'How to select alumina, zirconia, silicon nitride, silicon carbide, MACOR, and other ceramics by failure mode, feature risk, and RFQ route.',
+  },
+  {
     title: 'Ceramic Tolerance Capability Map: Practical Tolerance Ranges by Feature and Process',
     href: '/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/',
     date: '2026-02-01',
