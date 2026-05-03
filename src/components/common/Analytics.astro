@@ -6,17 +6,25 @@ const configuredAnalyticsId = ANALYTICS?.vendors?.googleAnalytics?.id
   : '';
 const defaultGoogleAdsConversionId = '';
 const defaultGoogleAdsRfqConversionLabel = '';
+const defaultGoogleAdsConversionValue = '1.0';
+const defaultGoogleAdsConversionCurrency = 'CNY';
 const googleTagManagerId = import.meta.env.PUBLIC_GOOGLE_TAG_MANAGER_ID || import.meta.env.PUBLIC_GTM_ID || '';
 const rawGoogleAnalyticsId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID || configuredAnalyticsId;
 const googleAnalyticsId = rawGoogleAnalyticsId || '';
 const googleAdsConversionId = import.meta.env.PUBLIC_GOOGLE_ADS_CONVERSION_ID || defaultGoogleAdsConversionId;
 const googleTagId = import.meta.env.PUBLIC_GOOGLE_TAG_ID || googleAdsConversionId || googleAnalyticsId;
-const googleAdsRfqConversionLabel =
+const googleAdsLeadConversionLabel =
+  import.meta.env.PUBLIC_GOOGLE_ADS_LEAD_CONVERSION_LABEL ||
   import.meta.env.PUBLIC_GOOGLE_ADS_RFQ_CONVERSION_LABEL ||
   import.meta.env.PUBLIC_GOOGLE_ADS_CONVERSION_LABEL ||
   defaultGoogleAdsRfqConversionLabel;
-const googleAdsRfqSendTo =
-  googleAdsConversionId && googleAdsRfqConversionLabel ? `${googleAdsConversionId}/${googleAdsRfqConversionLabel}` : '';
+const googleAdsLeadSendTo =
+  googleAdsConversionId && googleAdsLeadConversionLabel
+    ? `${googleAdsConversionId}/${googleAdsLeadConversionLabel}`
+    : '';
+const googleAdsConversionValue = import.meta.env.PUBLIC_GOOGLE_ADS_CONVERSION_VALUE || defaultGoogleAdsConversionValue;
+const googleAdsConversionCurrency =
+  import.meta.env.PUBLIC_GOOGLE_ADS_CONVERSION_CURRENCY || defaultGoogleAdsConversionCurrency;
 const tagIds = Array.from(new Set([googleTagId, googleAnalyticsId, googleAdsConversionId].filter(Boolean)));
 const primaryTagId = tagIds[0];
 const googleTagSrc = primaryTagId ? `https://www.googletagmanager.com/gtag/js?id=${primaryTagId}` : '';
@@ -27,7 +35,10 @@ const googleTagManagerSrc = googleTagManagerId
 
 <script
   is:inline
-  data-google-ads-rfq-send-to={googleAdsRfqSendTo}
+  data-google-ads-lead-send-to={googleAdsLeadSendTo}
+  data-google-ads-rfq-send-to={googleAdsLeadSendTo}
+  data-google-ads-conversion-value={googleAdsConversionValue}
+  data-google-ads-conversion-currency={googleAdsConversionCurrency}
   data-google-analytics-id={googleAnalyticsId}
   data-google-ads-conversion-id={googleAdsConversionId}
   data-google-tag-manager-id={googleTagManagerId}
@@ -37,7 +48,10 @@ const googleTagManagerSrc = googleTagManagerId
   window.CERAMICCNC_TRACKING = {
     googleAnalyticsId: trackingConfig.googleAnalyticsId || '',
     googleAdsConversionId: trackingConfig.googleAdsConversionId || '',
-    googleAdsRfqSendTo: trackingConfig.googleAdsRfqSendTo || '',
+    googleAdsLeadSendTo: trackingConfig.googleAdsLeadSendTo || trackingConfig.googleAdsRfqSendTo || '',
+    googleAdsRfqSendTo: trackingConfig.googleAdsRfqSendTo || trackingConfig.googleAdsLeadSendTo || '',
+    googleAdsConversionValue: Number(trackingConfig.googleAdsConversionValue || '1') || 1,
+    googleAdsConversionCurrency: trackingConfig.googleAdsConversionCurrency || 'CNY',
     googleTagManagerId: trackingConfig.googleTagManagerId || '',
   };
 </script>

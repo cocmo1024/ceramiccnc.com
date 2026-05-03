@@ -114,9 +114,32 @@ import { UI } from 'astrowind:config';
       return {
         page_location: window.location.href,
         page_path: window.location.pathname,
+        page_title: document.title,
         link_url: elem?.getAttribute?.('href') || '',
         link_text: elem?.textContent?.trim().replace(/\s+/g, ' ') || '',
         ...attribution,
+        ...extra,
+      };
+    }
+
+    function getPageType() {
+      const path = window.location.pathname;
+      if (path === '/') return 'home';
+      if (path.startsWith('/posts/')) return 'article';
+      if (path.startsWith('/category/') || path.startsWith('/tags/') || path.startsWith('/blog/tag/')) {
+        return 'resource_index';
+      }
+
+      return path.split('/').filter(Boolean)[0] || 'page';
+    }
+
+    function getPageTrackingPayload(extra = {}) {
+      return {
+        page_location: window.location.href,
+        page_path: window.location.pathname,
+        page_title: document.title,
+        page_type: getPageType(),
+        ...getAttributionFields(),
         ...extra,
       };
     }
@@ -141,10 +164,13 @@ import { UI } from 'astrowind:config';
       const match = /^AW-(\d+)\/([^/?#]+)$/.exec(sendTo || '');
       if (!match) return;
 
+      const tracking = window.CERAMICCNC_TRACKING || {};
+      const conversionValue = Number(tracking.googleAdsConversionValue || 1.0) || 1.0;
+      const conversionCurrency = tracking.googleAdsConversionCurrency || 'CNY';
       const url = new URL(`https://www.googleadservices.com/pagead/conversion/${match[1]}/`);
       url.searchParams.set('label', match[2]);
-      url.searchParams.set('value', '1.0');
-      url.searchParams.set('currency_code', 'CNY');
+      url.searchParams.set('value', String(conversionValue));
+      url.searchParams.set('currency_code', conversionCurrency);
       url.searchParams.set('guid', 'ON');
       url.searchParams.set('script', '0');
       url.searchParams.set('random', String(Date.now()));
@@ -161,10 +187,13 @@ import { UI } from 'astrowind:config';
       const match = /^AW-(\d+)\/([^/?#]+)$/.exec(sendTo || '');
       if (!match) return;
 
+      const tracking = window.CERAMICCNC_TRACKING || {};
+      const conversionValue = Number(tracking.googleAdsConversionValue || 1.0) || 1.0;
+      const conversionCurrency = tracking.googleAdsConversionCurrency || 'CNY';
       window.google_conversion_id = Number(match[1]);
       window.google_conversion_label = match[2];
-      window.google_conversion_value = 1.0;
-      window.google_conversion_currency = 'CNY';
+      window.google_conversion_value = conversionValue;
+      window.google_conversion_currency = conversionCurrency;
       window.google_remarketing_only = false;
 
       const script = document.createElement('script');
@@ -178,7 +207,11 @@ import { UI } from 'astrowind:config';
 
     function trackCeramicEvent(eventName, payload = {}, options = {}) {
       const isDuplicate = isDuplicateConversion(options.conversionKey);
-      const sendTo = window.CERAMICCNC_TRACKING?.googleAdsRfqSendTo;
+      const tracking = window.CERAMICCNC_TRACKING || {};
+      const sendTo = tracking.googleAdsLeadSendTo || tracking.googleAdsRfqSendTo;
+      const conversionValue = Number(tracking.googleAdsConversionValue || 1.0) || 1.0;
+      const conversionCurrency = tracking.googleAdsConversionCurrency || 'CNY';
+      const leadMethod = payload.method || options.method || 'rfq';
 
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event: eventName, ...payload });
@@ -191,14 +224,14 @@ import { UI } from 'astrowind:config';
         window.gtag('event', eventName, { transport_type: 'beacon', ...payload });
 
         if (options.generateLead && !isDuplicate) {
-          window.gtag('event', 'generate_lead', { method: 'email', transport_type: 'beacon', ...payload });
+          window.gtag('event', 'generate_lead', { method: leadMethod, transport_type: 'beacon', ...payload });
         }
 
         if (options.adsConversion && sendTo && !isDuplicate) {
           const conversionPayload = {
             send_to: sendTo,
-            value: 1.0,
-            currency: 'CNY',
+            value: conversionValue,
+            currency: conversionCurrency,
             transport_type: 'beacon',
             event_category: 'lead',
             event_label: payload.link_text || 'RFQ email',
@@ -216,6 +249,19 @@ import { UI } from 'astrowind:config';
       if (options.adsConversion && sendTo && !isDuplicate) {
         sendGoogleAdsConversionScript(sendTo);
       }
+    }
+
+    function trackPageViewContext() {
+      const currentUrl = window.location.href;
+      if (window.CERAMICCNC_LAST_TRACKED_PAGE_VIEW === currentUrl) return;
+
+      window.CERAMICCNC_LAST_TRACKED_PAGE_VIEW = currentUrl;
+      trackCeramicEvent(
+        'ceramic_page_view',
+        getPageTrackingPayload({
+          event_category: 'page',
+        })
+      );
     }
 
     function showEmailToast(message) {
@@ -252,6 +298,7 @@ import { UI } from 'astrowind:config';
 
     const onLoad = function () {
       captureAttribution();
+      trackPageViewContext();
 
       let lastKnownScrollPosition = window.scrollY;
       let ticking = true;
@@ -445,6 +492,32 @@ import { UI } from 'astrowind:config';
           'click',
           function () {
             trackCeramicEvent('rfq_prepare_click', getTrackingPayload(elem, { event_category: 'engagement' }));
+          },
+          false
+        );
+      });
+
+      document.querySelectorAll('a[href^="http"]').forEach((elem) => {
+        let linkUrl;
+        try {
+          linkUrl = new URL(elem.href, window.location.href);
+        } catch {
+          return;
+        }
+
+        if (linkUrl.origin === window.location.origin || elem.dataset.awOutboundTrack === 'true') return;
+
+        elem.dataset.awOutboundTrack = 'true';
+        elem.addEventListener(
+          'click',
+          function () {
+            trackCeramicEvent(
+              'outbound_link_click',
+              getTrackingPayload(elem, {
+                event_category: 'engagement',
+                outbound_domain: linkUrl.hostname,
+              })
+            );
           },
           false
         );

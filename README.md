@@ -39,17 +39,22 @@ Primary domain: `https://www.ceramiccnc.com`
 
 ## Google Tracking
 
-RFQ email clicks are tracked as the primary lead-intent event when public build variables are configured in the hosting environment:
+Google Ads, GA4, and GTM are pre-wired with blank public build variables. Fill the real IDs in the hosting environment when the ads account is ready; no code change is required.
 
 ```bash
-PUBLIC_GA_MEASUREMENT_ID=G-xxxx
-PUBLIC_GOOGLE_TAG_MANAGER_ID=GTM-xxxx
-PUBLIC_GOOGLE_ADS_CONVERSION_ID=AW-xxxx
-PUBLIC_GOOGLE_ADS_RFQ_CONVERSION_LABEL=xxxx
-PUBLIC_GOOGLE_SITE_VERIFICATION_ID=xxxx
+PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+PUBLIC_GOOGLE_TAG_ID=AW-XXXXXXXXXX
+PUBLIC_GOOGLE_TAG_MANAGER_ID=GTM-XXXXXXX
+PUBLIC_GOOGLE_ADS_CONVERSION_ID=AW-XXXXXXXXXX
+PUBLIC_GOOGLE_ADS_LEAD_CONVERSION_LABEL=xxxxxxxxxxxxxxxxxxx
+PUBLIC_GOOGLE_ADS_CONVERSION_VALUE=1.0
+PUBLIC_GOOGLE_ADS_CONVERSION_CURRENCY=CNY
+PUBLIC_GOOGLE_SITE_VERIFICATION_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-`rfq_email_click` records every email CTA click. `generate_lead` and the Google Ads conversion event are deduplicated once per browser session.
+Primary lead actions are `rfq_email_click` and `instant_contact_click`. They push DataLayer events, GA4 `generate_lead`, and a Google Ads conversion when the Ads conversion ID and label are configured. Attribution fields include `gclid`, `gbraid`, `wbraid`, UTM parameters, landing page, and current page context.
+
+Detailed setup notes: [docs/ads-tracking.md](docs/ads-tracking.md)
 
 ## RFQ Contact
 
