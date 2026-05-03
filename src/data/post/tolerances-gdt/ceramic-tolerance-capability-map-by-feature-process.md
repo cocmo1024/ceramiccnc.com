@@ -87,10 +87,10 @@ Send these details when tolerance matters:
 ### FAQ
 
 **Can ceramic parts hold tight tolerances?**  
-Yes, on accessible, stable, finished features with a proper datum and inspection plan. Applying tight tolerance everywhere is what drives cost and yield risk.
+It depends on material, geometry, datum strategy, finishing access, and inspection method. Applying tight tolerance everywhere is what drives cost and yield risk.
 
 **Is +/-0.01 mm realistic?**  
-It can be realistic on selected ground features. It is not a safe blanket tolerance for all surfaces, thin walls, slots, or as-sintered features.
+It may be realistic on selected ground features after review. It is not a safe blanket tolerance for all surfaces, thin walls, slots, or as-sintered features.
 
 **What should procurement ask first?**  
 Ask which features are functional, how they will be finished, and how they will be measured.

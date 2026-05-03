@@ -45,7 +45,7 @@ const rfqShowcases = [
       {
         title: 'Simple drawing quote',
         description:
-          'If material, geometry, quantity, and standard tolerances are clear, we can provide a quote with route assumptions.',
+          'If material, geometry, quantity, and standard tolerances are clear, we can review the project for quotation with route assumptions.',
       },
       {
         title: 'Clarification needed',
@@ -134,7 +134,7 @@ const metadata = {
   <HeroText
     tagline="RFQ inputs"
     title="Send enough information for a practical ceramic CNC quote"
-    subtitle="A simple drawing and quantity can be enough for a first quote. For precision ceramic parts, include the requirements that affect material route, grinding allowance, surface finish, edge quality, and inspection."
+    subtitle="A simple drawing and quantity may be enough to start review. For precision ceramic parts, include the requirements that affect material route, grinding allowance, surface finish, edge quality, and inspection."
   />
 
   <section class="relative not-prose py-10 md:py-14">
@@ -184,7 +184,7 @@ const metadata = {
 
   <FAQs
     title="RFQ FAQs"
-    subtitle="These questions usually determine whether a ceramic CNC quote can move quickly."
+    subtitle="These questions usually determine whether a ceramic CNC RFQ can be reviewed without avoidable back-and-forth."
     columns={1}
     items={ceramicFaqItems.slice(0, 12)}
   />
@@ -217,7 +217,8 @@ const metadata = {
   >
     <Fragment slot="subtitle">
       Email <a class="font-semibold underline underline-offset-4" href={rfqEmailHref}>{rfqEmail}</a> with CAD, drawings, material
-      grade, quantity, lead time, critical surfaces, edge requirements, and inspection expectations when they matter.
+      grade, quantity, target lead time, critical surfaces, edge requirements, and inspection expectations. We review the
+      information before confirming feasibility, price, or schedule.
     </Fragment>
   </CallToAction>
 </Layout>

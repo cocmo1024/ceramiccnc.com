@@ -8,7 +8,7 @@ CERAMIC CNC is a dedicated advanced ceramic CNC machining platform operated by S
 
 We focus on engineering-grade ceramic materials, precision machining guidance, and application-driven support for teams working with technical ceramics.
 
-Our mission is to help high-performance ceramic components move from drawing to repeatable production by aligning material grade, CNC route, diamond grinding, surface finish, edge quality, and inspection evidence before orders are released.
+Our role is to help teams review whether a ceramic drawing is practical to quote by clarifying material grade, CNC route, diamond grinding, surface finish, edge quality, and inspection evidence before orders are released.
 
 We support ceramic systems including Al2O3 alumina, ZrO2 zirconia, Si3N4 silicon nitride, SiC silicon carbide, MACOR, fused silica, AlN, BN, and selected machinable ceramics for semiconductor equipment, vacuum systems, aerospace, energy, electronics, tooling, research, and industrial OEM applications.
 
@@ -23,11 +23,11 @@ We provide engineering support centered on advanced ceramic machining, including
 - Surface-finish and dimensional-stability planning for critical interfaces.
 - Inspection planning for CMM, profile, Ra, flatness, optical checks, CT, and key-dimension reports.
 
-All solutions are aligned to real engineering constraints: mechanical strength, thermal stability, dielectric performance, surface integrity, geometric complexity, chip risk, and acceptance requirements.
+Our review is aligned to real engineering constraints: mechanical strength, thermal stability, dielectric performance, surface integrity, geometric complexity, chip risk, and acceptance requirements.
 
 ## Application Areas
 
-CERAMIC CNC supports high-reliability applications such as:
+CERAMIC CNC reviews RFQs for demanding applications such as:
 
 - Semiconductor process equipment and vacuum-chamber ceramic components.
 - Electrical insulation, dielectric, and high-temperature structural parts.
@@ -36,7 +36,7 @@ CERAMIC CNC supports high-reliability applications such as:
 - Universities and research institutes working on advanced ceramic applications.
 - Industrial OEMs requiring tight-tolerance ceramic CNC machining.
 
-For each project, we help clarify material choice, machining strategy, tolerance expectations, risk drivers, and inspection evidence to reduce trial-and-error in ceramic manufacturing.
+For each project, we help clarify material choice, machining strategy, tolerance expectations, risk drivers, and inspection evidence before feasibility, price, or schedule are confirmed.
 
 ## Website Purpose
 
@@ -50,7 +50,7 @@ We curate:
 - Practical guidance on tolerance control, edge quality, and surface finish.
 - Inspection, repeatability, and production-stability considerations.
 
-Through transparent engineering content, we support production-level implementation of advanced ceramics across industries.
+Through transparent engineering content, we help teams prepare better ceramic RFQs and reduce ambiguity before production decisions are made.
 
 ## Contact
 

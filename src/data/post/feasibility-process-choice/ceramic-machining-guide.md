@@ -11,7 +11,7 @@ metadata:
   description: 'Buyer guide for ceramic CNC machining, diamond grinding, capability, cost, lead time, inspection, acceptance criteria, and RFQ preparation.'
 ---
 
-> Diamond grinding is the scalable path to tight tolerance and controlled surface finish on most advanced ceramics. The procurement leverage comes from defining the acceptance gate before the supplier prices uncertainty.
+> Diamond grinding is often part of the route for tight tolerance and controlled surface finish on advanced ceramics. The procurement leverage comes from defining the acceptance gate before the supplier prices uncertainty.
 
 ### What Buyers Are Actually Buying
 
@@ -72,7 +72,7 @@ The dominant cost drivers are usually:
 
 Lead time is affected by blank sourcing, preform or sintering work, grinding capacity, lapping capacity, CMM availability, surface finish measurement, cleaning, and documentation.
 
-Expediting works best when:
+Schedule review is clearer when:
 
 - Drawing revision is frozen.
 - Critical features are limited to what matters.
@@ -112,7 +112,8 @@ Ask suppliers for evidence that matches your risk:
 
 ### FAQ
 
-**What is the fastest way to reduce quote variance?**  
+**How can I reduce quote variance?**
+
 Define datums, finished faces, edge condition, Ra per functional face, and inspection method.
 
 **Can I use Ra alone for acceptance?**  

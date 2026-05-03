@@ -17,7 +17,7 @@ metadata:
 
 Green machining means machining the ceramic body before final firing. The material is softer, removal is easier, and complex geometry can be shaped at lower tool cost.
 
-It works best when:
+It is usually reviewed when:
 
 - Geometry is complex but final tolerances are moderate.
 - Shrinkage compensation is understood.
@@ -41,16 +41,16 @@ It is usually needed for:
 
 ### Route Comparison
 
-| Route                   | Strength                                    | Weakness                                   |
-| ----------------------- | ------------------------------------------- | ------------------------------------------ |
-| Green machining         | Lower shaping cost, easier complex geometry | Sinter shrinkage and warpage remain        |
-| Hard machining          | Final dimensions after firing               | Slow removal and higher chip risk          |
-| Hybrid route            | Complex shape plus finished interfaces      | Requires planning and clear datum strategy |
-| Lapping/polishing route | Best flatness or low Ra on selected faces   | Costly and handling-sensitive              |
+| Route                   | Strength                                       | Weakness                                   |
+| ----------------------- | ---------------------------------------------- | ------------------------------------------ |
+| Green machining         | Lower shaping cost, easier complex geometry    | Sinter shrinkage and warpage remain        |
+| Hard machining          | Final dimensions after firing                  | Slow removal and higher chip risk          |
+| Hybrid route            | Complex shape plus finished interfaces         | Requires planning and clear datum strategy |
+| Lapping/polishing route | Lower flatness or Ra targets on selected faces | Costly and handling-sensitive              |
 
 ![Ceramic process route tradeoffs](../../../assets/images/ceramic/posts/green-machining-vs-hard-machining-2.webp)
 
-### Hybrid Routes Are Often Best
+### Hybrid Routes Are Often Practical
 
 Many successful ceramic programs use green machining for bulk geometry and post-sinter grinding only where function demands precision. That might mean:
 
@@ -92,7 +92,8 @@ Before asking for price, decide:
 **Is green machining less accurate?**  
 It can shape complex features efficiently, but final accuracy is limited by shrinkage and warpage unless selected features are finished after sintering.
 
-**Is hard machining always better?**  
+**Is hard machining always the right route?**
+
 No. Hard machining everything can be unnecessarily expensive. Use it for functional surfaces and datums.
 
 **What should the RFQ say?**  

@@ -85,9 +85,9 @@ This gives the supplier a route and gives procurement a measurable acceptance ga
 
 ### FAQ
 
-**Can Ra 0.1 micrometer be achieved?**
+**Can Ra 0.1 micrometer be quoted?**
 
-It can be achieved on selected functional faces by controlled grinding, lapping, or polishing. It should not be specified globally without a functional reason.
+It may be feasible on selected functional faces by controlled grinding, lapping, or polishing after material, geometry, and inspection method are reviewed. It should not be specified globally without a functional reason.
 
 **Does polishing make a ceramic stronger?**  
 Not automatically. Polishing can reduce surface flaws, but poor grinding before polishing can leave subsurface damage.

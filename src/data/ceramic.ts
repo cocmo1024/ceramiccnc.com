@@ -33,7 +33,7 @@ export const ceramicApplications = [
     image: '~/assets/images/ceramic/application-2.webp',
     alt: 'Ceramic sealing faces and valve seats with flatness and Ra control',
     description:
-      'ZrO2 and Al2O3 valve seats, sealing rings, and mating faces succeed only when flatness, parallelism, and Ra are controlled by a grind-first process plan.',
+      'ZrO2 and Al2O3 valve seats, sealing rings, and mating faces are usually reviewed around flatness, parallelism, Ra, edge condition, and the grinding route.',
     points: [
       {
         title: 'Functional surfaces',
@@ -136,7 +136,7 @@ export const ceramicApplications = [
       'Flatness and parallelism in ceramics require stable datums, controlled removal, and grinding or lapping sequences that avoid warpage and subsurface damage.',
     points: [
       {
-        title: 'Best-fit parts',
+        title: 'Typical parts',
         description:
           'Sealing plates, vacuum interfaces, optical-adjacent fixtures, metrology references, and spacer stacks.',
       },
@@ -223,7 +223,7 @@ export const ceramicApplications = [
       {
         title: 'Delivery package',
         description:
-          'CMM reports, profile checks, flatness mapping, and protected packaging preserve sign-off evidence.',
+          'CMM reports, profile checks, flatness mapping, and protected packaging can document the agreed sign-off evidence.',
       },
     ],
   },
@@ -258,7 +258,7 @@ export const ceramicApplications = [
     image: '~/assets/images/ceramic/application-11.webp',
     alt: 'Ceramic nozzles jets and flow orifices',
     description:
-      'Ceramic nozzles succeed when erosion resistance and stable orifice geometry meet flow requirements across batches.',
+      'Ceramic nozzles are reviewed by erosion resistance, orifice geometry, edge condition, and the flow or inspection evidence required by the application.',
     points: [
       {
         title: 'Feature controls',
@@ -317,7 +317,7 @@ export const ceramicApplications = [
       {
         title: 'Constraints',
         description:
-          'Minimum bore size, wall thickness around bores, fixturing stability, and re-chucking strategy control achievable tolerance.',
+          'Minimum bore size, wall thickness around bores, fixturing stability, and re-chucking strategy determine what tolerance can be reviewed.',
       },
       {
         title: 'Inspection',
@@ -357,7 +357,7 @@ export const ceramicApplications = [
     image: '~/assets/images/ceramic/application-15.webp',
     alt: 'Advanced ceramic prototyping and small batch production',
     description:
-      'Ceramic machining programs scale when the first article locks material grade, datum scheme, finishing route, measurable acceptance, and protected handling.',
+      'Ceramic prototype and repeat-order programs are easier to evaluate when material grade, datum scheme, finishing route, measurable acceptance, and protected handling are defined early.',
     points: [
       {
         title: 'Prototype value',
@@ -463,7 +463,7 @@ export const ceramicFaqItems = [
       'Send material and grade, drawing revision, STEP or IGES files, functional datums, GD&T, critical faces, quantity, lead time, surface finish, inspection scope, and application constraints such as temperature, media, wear, vacuum, or insulation.',
   },
   {
-    title: 'What is the fastest way to reduce quote back-and-forth?',
+    title: 'How can I reduce quote back-and-forth?',
     description:
       'Mark the functional faces and datums, define surface finish per face, list micro-holes or thin-wall features, state edge condition, and specify how each critical requirement will be inspected.',
   },
@@ -485,7 +485,7 @@ export const ceramicFaqItems = [
   {
     title: 'What lead time should be planned?',
     description:
-      'Lead time depends on blank sourcing, preform or sintering route, post-sinter grinding, lapping, polishing, micro-hole work, and metrology capacity. Inspection often controls schedule for tight parts.',
+      'Lead time is estimated after review of blank sourcing, preform or sintering route, post-sinter grinding, lapping, polishing, micro-hole work, and metrology scope. Inspection often controls schedule for tight parts.',
   },
   {
     title: 'How should quotes from different suppliers be compared?',
@@ -525,12 +525,12 @@ export const ceramicFaqItems = [
   {
     title: 'What tolerances are realistic?',
     description:
-      'Capability depends on material, size, geometry, and process route. Tight values are achievable on accessible, finished faces, but price rises sharply when multiple faces require precision without stable datums.',
+      'Tolerance feasibility depends on material, size, geometry, and process route. Tight values may be feasible on accessible, finished faces, but price and risk rise sharply when multiple faces require precision without stable datums.',
   },
   {
-    title: 'What surface finish can be achieved?',
+    title: 'How should surface finish be specified?',
     description:
-      'Ground surfaces fit many wear and datum needs; lapping improves flatness and Ra; polishing is used for very low Ra or sensitive surfaces. Specify finish per functional face.',
+      'Surface finish should be reviewed per functional face. Ground surfaces fit many wear and datum needs; lapping can improve flatness and Ra; polishing is used only where very low Ra or sensitive surfaces justify it.',
   },
   {
     title: 'How should datums be defined?',
@@ -540,7 +540,7 @@ export const ceramicFaqItems = [
   {
     title: 'Can ceramics be threaded?',
     description:
-      'Threads are possible, including small internal threads, but they are fragile and expensive. For load-bearing joints, consider inserts, brazing, metallization, or compression-dominant clamping.',
+      'Threads may be feasible after review of material, size, wall thickness, and load direction, but they are fragile and expensive. For load-bearing joints, consider inserts, brazing, metallization, or compression-dominant clamping.',
   },
   {
     title: 'Can sharp internal corners be machined?',
@@ -576,30 +576,6 @@ export const ceramicFaqItems = [
     title: 'How do I avoid over-specification?',
     description:
       'Apply tight tolerance, Ra, and geometric controls only on functional interfaces such as seal lands, bearing fits, datum faces, alignment features, and inspected bores.',
-  },
-];
-
-export const ceramicTestimonials = [
-  {
-    title: 'Semiconductor program',
-    testimonial:
-      'Our decision depended on edge integrity and measurable flatness on sealing faces. The feasibility notes made chipping risks explicit before we released the drawing.',
-    name: 'Confidential Program',
-    job: 'Semiconductor Equipment - Advanced Ceramics',
-  },
-  {
-    title: 'Vacuum hardware program',
-    testimonial:
-      'We needed a grinding plan and a datum strategy we could inspect. Knowing upfront what could be measured streamlined internal approval.',
-    name: 'Confidential Program',
-    job: 'Vacuum Interfaces - Leak-Critical Hardware',
-  },
-  {
-    title: 'Flow hardware program',
-    testimonial:
-      'Approval hinged on inspection evidence and measurable acceptance. The key-dimension report scope reduced back-and-forth during sign-off.',
-    name: 'Confidential Program',
-    job: 'Flow Components - Industrial Systems',
   },
 ];
 
@@ -649,7 +625,6 @@ export const engineeringArticles = [
     href: '/posts/feasibility-process-choice/ceramic-machining-guide/',
     date: '2026-01-03',
     image: '~/assets/images/ceramic/posts/744265b0487821dd43016f724d1e24cc-300-300-0.webp',
-    description:
-      'Capability, cost, lead time, and acceptance guidance for procurement teams buying precision ceramic parts.',
+    description: 'How capability, cost, lead time, and acceptance are reviewed before quoting precision ceramic parts.',
   },
 ];

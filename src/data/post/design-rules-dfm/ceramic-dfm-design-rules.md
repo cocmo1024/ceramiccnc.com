@@ -82,9 +82,9 @@ A ceramic feature that cannot be measured cannot be accepted cleanly. Before sen
 
 ### Go/No-Go Summary
 
-**Clearly feasible:** accessible faces, controlled radii, finished datums, localized precision, and measurable acceptance.
+**Lower-risk for review:** accessible faces, controlled radii, finished datums, localized precision, and measurable acceptance.
 
-**Conditionally feasible:** micro-holes, tight bores, thin walls, seal faces, or low Ra requirements with defined route and inspection.
+**Needs focused review:** micro-holes, tight bores, thin walls, seal faces, or low Ra requirements with defined route and inspection.
 
 **High risk:** sharp internal corners, unsupported thin walls, tight tolerance everywhere, uninspectable features, or missing edge criteria.
 

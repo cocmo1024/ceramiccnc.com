@@ -44,7 +44,7 @@ const requirementShowcases = [
     },
     title: 'From drawing review to ceramic quotation',
     description:
-      'Simple ceramic parts can move directly to a basic quote. Precision parts need a short review of material grade, datums, surface requirements, and inspection evidence first.',
+      'Simple ceramic parts may need only a basic review before quotation. Precision parts need material grade, datums, surface requirements, and inspection evidence checked first.',
     points: [
       {
         title: 'Material and grade',
@@ -124,14 +124,14 @@ const metadata = {
   >
     <Fragment slot="title">
       Precision ceramic CNC machining for <span class="text-accent dark:text-white"
-        >tolerances, surfaces, and risk-controlled delivery</span
+        >tolerances, surfaces, and feasibility-reviewed RFQs</span
       >
     </Fragment>
 
     <Fragment slot="subtitle">
       Built for engineering and procurement teams sourcing advanced ceramic parts. We convert brittle-material
       constraints such as diamond tool wear, edge chipping, datum stability, and subsurface damage into practical
-      process planning, RFQ inputs, and inspection-ready deliverables.
+      process planning, RFQ inputs, and inspection requirements before quotation.
     </Fragment>
 
     <Fragment slot="content">
@@ -153,7 +153,7 @@ const metadata = {
         <div class="rounded-md border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900">
           <p class="text-sm font-semibold uppercase tracking-wide text-primary">Good fit</p>
           <h2 class="mt-2 text-2xl font-bold tracking-tight dark:text-white">
-            Ceramic CNC is worth quoting when interfaces and acceptance are measurable.
+            Ceramic CNC is worth reviewing when interfaces and acceptance are measurable.
           </h2>
           <ul class="mt-4 space-y-2 text-muted dark:text-slate-300">
             <li>Seal faces, bores, datum pads, flatness, parallelism, edge quality, or Ra drive performance.</li>
@@ -184,7 +184,7 @@ const metadata = {
 
   <Features3
     title="What to send for review"
-    subtitle="A simple drawing may be enough for a basic quote. Complex ceramic parts need clearer material, feature, and inspection requirements."
+    subtitle="A simple drawing may be enough to start review. Complex ceramic parts need clearer material, feature, and inspection requirements before price or schedule are confirmed."
     columns={3}
     classes={{
       container: sectionContainerClass,
@@ -226,14 +226,14 @@ const metadata = {
 
   <SplitShowcase
     tagline="Feasibility first"
-    title="Quote ceramic machining from the actual requirement"
+    title="Review ceramic machining from the actual requirement"
     items={requirementShowcases}
     classes={{ container: sectionContainerClass }}
   />
 
   <Steps
     title="Simple RFQ flow"
-    subtitle="A ceramic quote becomes reliable when the drawing, process route, and acceptance gate are aligned early."
+    subtitle="A ceramic RFQ can be evaluated properly when the drawing, material route, and acceptance gate are clear."
     isReversed={true}
     classes={{
       container: sectionContainerClass,
@@ -263,7 +263,7 @@ const metadata = {
       {
         title: 'Step 4: <span class="font-medium">Quote or clarify</span>',
         description:
-          'We respond with feasibility notes, route assumptions, lead time, quotation, or focused clarification questions.',
+          'After review, we respond with feasibility notes, route assumptions, quotation details, or focused clarification questions.',
         icon: 'tabler:check',
       },
     ]}
@@ -301,7 +301,7 @@ const metadata = {
       { title: 'Application use cases', amount: '15' },
       { title: 'Core ceramic families', amount: '6+' },
       { title: 'Inspection methods', amount: 'CMM / Ra / CT' },
-      { title: 'RFQ reply target', amount: '24h' },
+      { title: 'RFQ principle', amount: 'Review first' },
     ]}
   />
 
@@ -320,11 +320,12 @@ const metadata = {
       },
     ]}
   >
-    <Fragment slot="title">Send CAD and receive a quote with ceramic feasibility notes.</Fragment>
+    <Fragment slot="title">Send CAD for ceramic feasibility and quotation review.</Fragment>
 
     <Fragment slot="subtitle">
       Include drawing + STEP + material grade + quantity + target lead time + critical dimensions, datums, surface
-      finish or flatness targets, and inspection evidence required for acceptance.
+      finish or flatness targets, and inspection evidence required for acceptance. We review these inputs before
+      confirming feasibility, price, or schedule.
     </Fragment>
   </CallToAction>
 </Layout>
