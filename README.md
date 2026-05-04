@@ -1,6 +1,6 @@
 # CERAMIC CNC Website
 
-Static Astro site for [ceramiccnc.com](https://www.ceramiccnc.com), focused on precision ceramic CNC machining, diamond grinding, micro-drilling, lapping, inspection-aware RFQ review, and engineering guidance for technical ceramic parts.
+Static Astro site for [ceramiccnc.com](https://ceramiccnc.com), focused on precision ceramic CNC machining, diamond grinding, micro-drilling, lapping, inspection-aware RFQ review, and engineering guidance for technical ceramic parts.
 
 This README is the project operating manual. Use it before editing copy, adding pages, changing SEO, replacing images, or preparing the site for ads.
 
@@ -287,7 +287,7 @@ npm run build
 Primary domain:
 
 ```text
-https://www.ceramiccnc.com
+https://ceramiccnc.com
 ```
 
 Before switching production traffic or pushing important SEO changes:

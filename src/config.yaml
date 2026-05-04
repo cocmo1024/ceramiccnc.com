@@ -1,6 +1,6 @@
 site:
   name: CERAMIC CNC
-  site: 'https://www.ceramiccnc.com'
+  site: 'https://ceramiccnc.com'
   base: '/'
   trailingSlash: true
 
