@@ -16,7 +16,8 @@ import { createCeramicServiceSchema, createFAQPageSchema, createItemListSchema }
 
 const sectionContainerClass = 'py-10 md:py-12 lg:py-14';
 
-const applicationShowcases = ceramicApplications.map((item, index) => ({
+const featuredApplications = ceramicApplications.slice(0, 6);
+const applicationShowcases = featuredApplications.map((item, index) => ({
   imagePosition: index % 2 === 0 ? ('left' as const) : ('right' as const),
   image: {
     src: item.image,
@@ -92,8 +93,8 @@ const metadata = {
   structuredData: [
     createCeramicServiceSchema(),
     createItemListSchema(
-      'Engineering-critical ceramic machining application cases',
-      ceramicApplications.map((item) => ({
+      'Selected engineering-critical ceramic machining application cases',
+      featuredApplications.map((item) => ({
         name: item.title,
         description: item.description,
         url: `/applications/#${item.id}`,
@@ -217,8 +218,8 @@ const metadata = {
   <SplitShowcase
     id="applications"
     tagline="Application hubs"
-    title="15 engineering-critical ceramic machining use cases"
-    subtitle="The strongest ceramic RFQs connect feature feasibility, failure modes, inspection method, and procurement acceptance before machining starts."
+    title="Selected engineering-critical ceramic machining use cases"
+    subtitle="A focused set of common RFQ patterns. The full applications page keeps the deeper review list for buyers who need more detail."
     items={applicationShowcases}
     classes={{ container: sectionContainerClass }}
   />

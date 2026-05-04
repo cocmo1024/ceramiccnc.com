@@ -1,59 +1,28 @@
 ---
 title: 'About Precision Ceramic CNC Machining Review'
-description: 'About CERAMIC CNC: custom precision ceramic CNC machining review, diamond grinding, micro-drilling, lapping, and RFQ evaluation by Suzhou Como.'
+description: 'About CERAMIC CNC: precision ceramic CNC machining, grinding, lapping, micro-drilling, material review, and RFQ evaluation by Suzhou Como.'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-CERAMIC CNC is a dedicated custom precision ceramic CNC machining platform operated by Suzhou Como Precision Materials Co., Ltd.
+CERAMIC CNC is a precision ceramic machining RFQ platform operated by Suzhou Como Precision Materials Co., Ltd.
 
-We focus on engineering-grade ceramic materials, precision machining guidance, and application-driven RFQ review for teams working with technical ceramics.
+We review custom ceramic drawings before quotation. The review looks at material grade, blank state, geometry, datums, grinding or lapping route, edge condition, surface finish, and inspection evidence.
 
-Our role is to help teams review whether a ceramic drawing is practical to quote by clarifying material grade, CNC route, diamond grinding, surface finish, edge quality, and inspection evidence before orders are released.
+RFQs may involve alumina Al2O3, zirconia ZrO2, silicon nitride Si3N4, silicon carbide SiC, MACOR, fused silica, AlN, BN, and selected machinable ceramics. Feasibility, price, and lead time depend on the exact grade, blank form, fired state, feature risk, quantity, and acceptance requirements.
 
-RFQs may involve Al2O3 alumina, ZrO2 zirconia, Si3N4 silicon nitride, SiC silicon carbide, MACOR, fused silica, AlN, BN, and selected machinable ceramics. The review depends on exact grade, blank form, fired state, geometry, and acceptance requirements.
+## What We Review
 
-## What We Do
+- Ceramic material grade, fired state, and blank source.
+- CNC machining, diamond grinding, lapping, polishing, edge conditioning, and micro-drilling needs.
+- Critical datums, seal faces, bores, holes, slots, thin walls, and edge-chip risk.
+- Surface finish, flatness, parallelism, profile, CMM, optical checks, Ra, key-dimension reports, and other acceptance evidence.
 
-We provide engineering support centered on advanced ceramic machining, including:
+## Application Fit
 
-- Ceramic material, grade, fired-state, and blank-source review.
-- Precision CNC machining review for sintered ceramics and selected preform routes.
-- Diamond grinding, lapping, polishing, edge conditioning, and micro-drilling review.
-- Machining feasibility and tolerance evaluation for brittle ceramic materials.
-- Surface-finish and dimensional-stability planning for critical interfaces.
-- Inspection planning for CMM, profile, Ra, flatness, optical checks, key-dimension reports, and special inspection when required.
+We commonly review parts for semiconductor and vacuum equipment, electrical insulation, sealing and valve hardware, wear components, nozzles, precision plates, research fixtures, and industrial OEM assemblies.
 
-Our review is aligned to real engineering constraints: mechanical strength, thermal stability, dielectric performance, surface integrity, geometric complexity, chip risk, and acceptance requirements.
+## Send an RFQ
 
-## Application Areas
-
-CERAMIC CNC reviews RFQs for demanding applications such as:
-
-- Semiconductor process equipment and vacuum-chamber ceramic components.
-- Electrical insulation, dielectric, and high-temperature structural parts.
-- Ceramic sealing faces, valve seats, rings, nozzles, plates, and wear parts.
-- Energy, chemical-processing, research, tooling, and industrial process hardware.
-- Universities and research institutes working on advanced ceramic applications.
-- Industrial OEMs requiring tight-tolerance ceramic CNC machining.
-
-For each project, we help clarify material choice, machining strategy, tolerance expectations, risk drivers, and inspection evidence before feasibility, price, or schedule are confirmed.
-
-## Website Purpose
-
-CeramicCNC.com is built as an engineering-oriented knowledge base for precision ceramic machining and advanced ceramic components.
-
-We curate:
-
-- Technical ceramic material properties and application considerations.
-- CNC machining and grinding limitations for brittle ceramics.
-- Typical ceramic component geometries and use cases.
-- Practical guidance on tolerance control, edge quality, and surface finish.
-- Inspection, repeatability, and production-stability considerations.
-
-Through transparent engineering content, we help teams prepare better ceramic RFQs and reduce ambiguity before production decisions are made.
-
-## Contact
-
-For project inquiries, cooperation, or technical support, contact:
+Send drawings, CAD files, material or grade target, blank or sourcing requirement, quantity, target lead time, critical surfaces, edge requirements, and inspection expectations to:
 
 > info@szcomo.com
