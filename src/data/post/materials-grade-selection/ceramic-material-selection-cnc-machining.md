@@ -5,7 +5,7 @@ excerpt: 'How to select ceramic materials for CNC machining by failure mode, fin
 category: Engineering Guide
 tags: ['material-selection', 'alumina', 'zirconia', 'silicon-nitride', 'silicon-carbide', 'machinable-ceramics']
 author: 'CERAMIC CNC Engineering'
-image: ~/assets/images/ceramic/application-5.webp
+image: ~/assets/images/ceramic/posts/ceramic-material-selection-cnc-machining.webp
 metadata:
   title: 'Ceramic Material Selection for CNC Machining'
   description: 'Ceramic material selection for CNC machining: alumina, zirconia, silicon nitride, SiC, MACOR, AlN, BN, fused silica, tolerance risk, and RFQ review.'
@@ -32,8 +32,6 @@ Start by naming the problem the ceramic part must solve.
 | Prototype machinability          | MACOR and selected machinable ceramics                                      |
 
 The correct material depends on geometry and acceptance. A thin-wall SiC part with sharp slots is a different RFQ from a simple SiC ring. A zirconia seal ring is different from a zirconia threaded part with high clamping load.
-
-![SiC and Si3N4 wear parts for seals bearings and pump hardware](../../../assets/images/ceramic/application-5.webp)
 
 ### Material Families and RFQ Risk
 
@@ -81,8 +79,6 @@ Material selection cannot be separated from features.
 | Precision bores   | Roundness, coaxiality, datum stability, and measurement method     |
 
 A material may be correct for the environment but difficult for the geometry. That is why ceramic material review and DFM review should happen together. Use the [ceramic DFM design rules](/posts/design-rules-dfm/ceramic-dfm-design-rules/) before locking a material around sharp corners, thin walls, or dense micro-features.
-
-![Ceramic DFM edge and corner design](../../../assets/images/ceramic/posts/ceramic-dfm-design-rules-1.webp)
 
 ### Surface Finish and Tolerance Should Influence Material Choice
 

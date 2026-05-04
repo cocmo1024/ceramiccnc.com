@@ -5,7 +5,7 @@ excerpt: 'How to prepare a custom ceramic CNC machining RFQ with drawings, mater
 category: Engineering Guide
 tags: ['custom-ceramic-machining', 'rfq-checklist', 'drawing-review', 'inspection', 'tight-tolerances']
 author: 'CERAMIC CNC Engineering'
-image: ~/assets/images/ceramic/posts/ceramic-machining-guide-4.webp
+image: ~/assets/images/ceramic/posts/custom-ceramic-cnc-rfq-checklist.webp
 metadata:
   title: 'Custom Ceramic CNC Machining RFQ Checklist'
   description: 'RFQ checklist for custom ceramic CNC machining: drawings, CAD, material grade, quantity, tolerances, surface finish, micro-features, and inspection evidence.'
@@ -31,8 +31,6 @@ Before tolerance review, clarify why the part uses ceramic instead of metal or p
 | Micro-flow control      | Hole diameter, taper, breakout, depth, and optical or flow inspection              |
 
 If the application driver is missing, the supplier has to guess which dimensions are critical. That creates quote variance and late clarification.
-
-![Ceramic RFQ inspection and acceptance packet](../../../assets/images/ceramic/posts/ceramic-machining-guide-4.webp)
 
 ### Minimum RFQ Package
 
@@ -112,8 +110,6 @@ Include:
 - Whether flow, optical, pin gauge, CT, or other inspection is required.
 
 If micro-hole performance controls flow, dosing, vacuum, or spray behavior, state whether dimensional inspection alone is sufficient or whether functional testing is part of customer acceptance.
-
-![Ceramic micro-hole DFM map](../../../assets/images/ceramic/posts/ceramic-dfm-design-rules-2.webp)
 
 ### Inspection Evidence Should Match Risk
 

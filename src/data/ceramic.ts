@@ -581,10 +581,26 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'AI Semiconductor Equipment Ceramic Parts',
+    href: '/posts/semiconductor-equipment/ai-semiconductor-equipment-ceramic-parts/',
+    date: '2026-05-04',
+    image: '~/assets/images/ceramic/posts/semiconductor-equipment-ceramic-components.webp',
+    description:
+      'RFQ guidance for wafer handling parts, vacuum chucks, micro-hole gas plates, SiC rings, semiconductor ceramic tolerances, and inspection evidence.',
+  },
+  {
+    title: 'AI Data Center Power Ceramic Parts',
+    href: '/posts/power-electronics/ai-data-center-power-electronics-ceramic-machining/',
+    date: '2026-05-04',
+    image: '~/assets/images/ceramic/posts/ai-data-center-power-ceramic-components.webp',
+    description:
+      'How to review precision ceramic parts for AI data center power electronics, SiC module fixtures, high-voltage insulation, and thermal cycling risk.',
+  },
+  {
     title: 'Custom Ceramic CNC Machining RFQ Checklist',
     href: '/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/',
     date: '2026-05-03',
-    image: '~/assets/images/ceramic/posts/ceramic-machining-guide-4.webp',
+    image: '~/assets/images/ceramic/posts/custom-ceramic-cnc-rfq-checklist.webp',
     description:
       'How to prepare a ceramic CNC RFQ with drawings, material grade, quantity, tolerances, surface finish, micro-features, and inspection evidence.',
   },
@@ -592,7 +608,7 @@ export const engineeringArticles = [
     title: 'Ceramic Material Selection for CNC Machining',
     href: '/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/',
     date: '2026-05-03',
-    image: '~/assets/images/ceramic/application-5.webp',
+    image: '~/assets/images/ceramic/posts/ceramic-material-selection-cnc-machining.webp',
     description:
       'How to select alumina, zirconia, silicon nitride, silicon carbide, MACOR, and other ceramics by failure mode, feature risk, and RFQ route.',
   },
