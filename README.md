@@ -67,6 +67,7 @@ Primary pages:
 
 Current engineering articles:
 
+- `/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/`
 - `/posts/semiconductor-equipment/ai-semiconductor-equipment-ceramic-parts/`
 - `/posts/power-electronics/ai-data-center-power-electronics-ceramic-machining/`
 - `/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/`

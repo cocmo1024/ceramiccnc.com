@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Ceramic Micro-Hole Machining RFQ Guide',
+    href: '/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/',
+    date: '2026-05-07',
+    image: '~/assets/images/ceramic/posts/ceramic-micro-hole-machining-rfq.webp',
+    description:
+      'RFQ guidance for ceramic micro-holes, gas distribution plates, vacuum chucks, nozzles, hole taper, breakout, cleaning, and inspection evidence.',
+  },
+  {
     title: 'AI Semiconductor Equipment Ceramic Parts',
     href: '/posts/semiconductor-equipment/ai-semiconductor-equipment-ceramic-parts/',
     date: '2026-05-04',
