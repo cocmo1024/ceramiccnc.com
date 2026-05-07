@@ -67,6 +67,9 @@ Primary pages:
 
 Current engineering articles:
 
+- `/posts/high-voltage-insulation/ceramic-high-voltage-insulators-rfq/`
+- `/posts/lapped-seal-faces/ceramic-lapped-seal-faces-rfq/`
+- `/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/`
 - `/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/`
 - `/posts/semiconductor-equipment/ai-semiconductor-equipment-ceramic-parts/`
 - `/posts/power-electronics/ai-data-center-power-electronics-ceramic-machining/`
