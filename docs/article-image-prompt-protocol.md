@@ -1,0 +1,324 @@
+# Article Image Prompt Protocol
+
+This document adapts the visual-manifest logic from `TITAN-INDUSTRIAL-SEO v8.3` for CERAMIC CNC. Use it whenever adding or refreshing an engineering article image.
+
+The goal is not to make decorative pictures. The image must support the article's RFQ intent: what the buyer is trying to source, which ceramic features are difficult, what must be inspected, and why drawings must be reviewed before feasibility, price, or timing are confirmed.
+
+## Required Output
+
+Every new article should have a fresh 16:9 hero image unless there is a clear editorial reason not to. Inline figures are optional and should only be added when they explain something the text cannot handle efficiently.
+
+Default project output:
+
+- File format: WebP
+- Target size: `1536x864`
+- Save path: `src/assets/images/ceramic/posts/<article-slug>.webp`
+- Frontmatter image path: `~/assets/images/ceramic/posts/<article-slug>.webp`
+- Live article rule: do not publish prompt blocks or `VISUAL MANIFEST` text inside the article body.
+
+## Step 1: Inventory Existing Visuals
+
+Before writing a prompt, check the recent article inventory:
+
+- What images already exist?
+- Which materials and part forms are already overused?
+- Which visual structure was used recently: close-up, product cluster, top-down inspection, comparison, cross-section, or diagram?
+- Which topic gap is the new article filling?
+
+Avoid repeating the same visual rhythm across consecutive posts. If the last article used a product cluster, consider a macro inspection scene, cross-section, top-down chuck plate, or process-window view when the new topic allows it.
+
+## Step 2: Identify The Article Constraint
+
+Every prompt starts from the article's primary constraint. Choose one dominant constraint:
+
+- Precision or tolerance control
+- Inspection and acceptance gate
+- Failure risk
+- Cost driver
+- Process route
+- Material choice
+- Timing or RFQ readiness
+
+The image should visualize that constraint, not just the noun in the title.
+
+Examples:
+
+- Micro-hole machining: hole quality, taper, breakout, pitch, cleaning, and inspection evidence.
+- Surface finish: lapped seal lands, Ra zones, subsurface damage risk, and face-specific finishing.
+- Power electronics ceramics: insulation, thermal interfaces, SiC module fixtures, creep distance, and thermal cycling.
+
+## Step 3: Select The Narrative Skeleton
+
+Use the article's natural flow to decide the visual style.
+
+| Narrative skeleton | Use when                                                         | Visual emphasis                                                            |
+| ------------------ | ---------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Problem-first      | The buyer has a common sourcing failure or hidden risk           | Evidence visuals: failed interface, risky feature, inspected defect zone   |
+| Gate-first         | The article is about RFQ readiness, acceptance, or qualification | Inspection points, checklist logic, acceptance evidence, measurement setup |
+| Cost-ledger        | Budget, lead time, yield, or quote variance is the main issue    | Cost drivers, comparative feature complexity, organized parts by risk      |
+| Process-window     | The article explains an optimized process route                  | Process limits, tolerances, feature windows, route sequence                |
+| Comparison-ladder  | The buyer must choose between materials or routes                | Side-by-side parts, material contrast, decision matrix style               |
+| Myth-buster        | The article corrects a common misconception                      | Visual contrast between false assumption and engineering reality           |
+
+Mixing rule: one secondary skeleton may influence up to 30 percent of the image. Example: a gate-first RFQ article may include a small process-window cue such as a cutaway channel or inspection feature.
+
+## Step 4: Choose Visual Roles
+
+Choose one or more roles only when they add value:
+
+1. Evidence visual  
+   Shows physical proof: chip edge, micro-hole entry, lapped face, vacuum hole field, seal land, datum face, or high-risk geometry.
+
+2. Explanation visual  
+   Clarifies mechanism: cross-section, internal channel, hole depth, flow path, datum stack, or process route.
+
+3. Data visual  
+   Shows comparison or quantitative structure: material families, tolerance zones, cost drivers, acceptance gates, or inspection options.
+
+For this website, the article hero usually combines evidence and explanation in one photorealistic product composition. Data visuals should normally be HTML tables, not image text, unless a dedicated infographic is intentionally needed.
+
+## Step 5: Decide Figure Count
+
+The TITAN protocol uses dynamic figure density. Adapt it to this site:
+
+- Short article under 1200 words: 1 hero image, optional 1 inline figure.
+- Medium article 1200 to 2500 words: 1 hero image, optional 1 to 3 inline figures.
+- Long article over 2500 words: 1 hero image, optional 2 to 4 inline figures.
+
+Do not place figures at identical percentage points across articles. Place each figure immediately after the concept it proves or explains.
+
+## Step 6: Build The Visual Manifest
+
+Generate a visual manifest internally for each hero or inline figure. Use this structure:
+
+```text
+--- VISUAL MANIFEST (INTERNAL ONLY) ---
+
+[Figure X / Hero]
+Visual role: Evidence / Explanation / Data
+Article constraint: <precision / inspection / failure risk / cost / process / material / timing>
+Subject: <engineering scene or product composition>
+Prompt:
+[Subject/Action]: A photorealistic <view type> of <subject>...
+[Camera/Lens]: <selected camera and lens>. Aperture f/8 unless a different depth requirement is justified.
+[Composition]: <selected composition>.
+[Lighting]: <industrial clean room / engineering studio lighting>.
+[Material Physics]: <specific ceramic surfaces, finishes, texture, edge behavior>.
+[Text Rendering]: <default no in-image text for CERAMIC CNC unless explicitly needed for a data visual>.
+[Render Style]: Ultra-realistic product photography / KeyShot / Octane / V-Ray quality, high detail, technical B2B style.
+Aspect Ratio: 16:9 for article hero, 3:2 only for detail-heavy inline images.
+Negative Prompt: <specific avoid list>.
+Alt Text: <SEO-readable, factual, not stuffed>.
+Caption: <engineering caption if the figure is published inline>.
+```
+
+## Step 7: Select Camera And View
+
+Choose the camera from the visual purpose:
+
+- 100mm macro: micro-holes, edge chips, surface finish, thread section, lapped seal land, inspection detail.
+- 50-70mm product lens: hero product clusters, engineering parts, balanced site visuals.
+- 24mm tilt-shift: equipment context, cleanroom bench, larger fixture or process overview.
+- Isometric: exploded view, route comparison, inspection workflow, decision diagram.
+- Top-down inspection view: hole arrays, flatness plates, vacuum chucks, datum maps.
+- Cross-section view: internal channels, blind holes, threaded inserts, nozzle bores, thick-wall or thin-wall explanation.
+
+Default for post heroes: 50-70mm product lens feel, three-quarter view, deep focus.
+
+## Step 8: Select Composition
+
+Choose composition by purpose:
+
+- Rule of thirds: professional editorial scene with one dominant subject.
+- Knolling: organized component display or material comparison.
+- Symmetry: vacuum chucks, gas plates, rings, wafer support parts, balanced technical comparisons.
+- Cross-section: internal holes, blind bores, channels, threads, or flow path explanation.
+- Triangular cluster: strong B2B hero product composition with one central anchor and supporting parts.
+- Top-down field: micro-hole arrays, surface flatness, datum layout, inspection mapping.
+
+Avoid chaotic piles. Use hierarchy: one dominant part, two or three supporting parts, and readable material contrast.
+
+## Step 9: CERAMIC CNC Material Physics
+
+All visuals must communicate real precision technical ceramics, not plastic, pottery, or generic white shapes.
+
+Use these material cues:
+
+- Alumina Al2O3: matte to satin white, ivory, or pale technical ceramic; subtle grinding marks; crisp chamfers.
+- Zirconia ZrO2: denser satin white, slightly warmer surface; tough precision wear or nozzle parts.
+- Silicon nitride Si3N4: dark gray to black satin surface; precision bores and wear geometry.
+- Silicon carbide SiC: dark graphite-black ceramic, fine granular technical surface, wear or semiconductor process-side parts.
+- AlN: pale gray or off-white ceramic with thermal-interface context.
+- MACOR or machinable ceramics: prototype fixture or insulating trial context only, not overrepresented as production substitute.
+
+Show difficult features:
+
+- Micro-hole plates and gas distribution plates
+- Vacuum chucks and suction fields
+- Lapped seal faces
+- Precision bores and datum pads
+- Ceramic threads and sectioned threaded inserts
+- Thin-wall sleeves
+- Slots and internal radii
+- Edge-break details and chip-sensitive zones
+- Nozzles and orifice inserts
+- SiC or Si3N4 wear parts
+
+Avoid ordinary blocks unless they support a more difficult feature.
+
+## Step 10: Lighting And Background
+
+Default:
+
+- Clean engineering studio or cleanroom-inspired environment.
+- Cool white 6000K lighting.
+- Softbox highlights.
+- Crisp edge separation.
+- Deep focus.
+- Controlled contrast so white ceramic parts remain visible in both light and dark site themes.
+
+Avoid:
+
+- Warm lifestyle lighting.
+- Factory clutter.
+- Humans or hands.
+- Smoke, sparks, dramatic haze, cinematic lens flare.
+- Dark subject lost on dark background.
+- White ceramic disappearing into a white background.
+
+## Step 11: Text Rendering Rule
+
+The original TITAN visual manifest allows legible in-image labels for data points. For CERAMIC CNC, the default is stricter:
+
+- Hero images: no text, no typography, no labels, no numbers, no logo.
+- Product or process figures: no text unless the article explicitly needs a diagram.
+- Data visuals: prefer HTML tables in the article body instead of embedding text inside images.
+- If in-image labels are approved, keep labels minimal and verify legibility manually.
+
+Alt text and captions carry the SEO meaning. The image should carry physical credibility.
+
+## Step 12: Negative Prompt Requirements
+
+Every prompt must include a negative prompt customized to the article. Start from this base:
+
+```text
+text, typography, numbers, labels, logo, watermark, people, hands, pottery, dinnerware, decorative ceramics, ordinary simple blocks only, generic catalog layout, metal parts dominating, plastic, cartoon, sci-fi glow, dirty parts, broken parts, impossible holes, random holes, warped geometry, duplicate holes, melted edges, blurry, bokeh, low resolution, exaggerated CGI, fantasy machinery
+```
+
+Add topic-specific exclusions:
+
+- Micro-hole article: clogged holes, random hole spacing, impossible thin webs, chipped-out hole fields.
+- Semiconductor article: full wafer fab scene, robotic arms dominating, brand marks, wafer text.
+- Power electronics article: copper busbars dominating, LEDs, circuit-board clutter, consumer electronics look.
+- Surface finish article: mirror-polished plastic look, scratches everywhere, dirty slurry, cosmetic jewelry finish.
+
+## Step 13: Alt Text And Caption
+
+Alt text should be factual and useful:
+
+- Good: `Precision alumina ceramic micro-hole gas plate with vacuum chuck and nozzle components`
+- Bad: `Best ceramic CNC machining micro holes precision advanced ceramics supplier`
+
+Caption, if used, should explain engineering value:
+
+- Good: `Micro-hole RFQs should define diameter, depth, pitch, taper, edge condition, and inspection method before quotation.`
+
+Do not keyword-stuff.
+
+## Step 14: Save And Validate
+
+After generating the image:
+
+1. Inspect visually: subject, material, difficult features, no text, no logos, no obvious artifacts.
+2. Convert/crop to `1536x864` WebP unless the generator already produced an acceptable file.
+3. Save under `src/assets/images/ceramic/posts/`.
+4. Update article frontmatter `image`.
+5. Run:
+
+```bash
+npm run check
+npm run build
+```
+
+6. Confirm:
+   - New article generated.
+   - New article appears in `dist/sitemap-0.xml`.
+   - New article appears in `dist/rss.xml`.
+   - No missing image alt in generated HTML.
+   - Title, description, canonical, and JSON-LD are valid.
+
+## Demonstration: Previous Article
+
+Previous article:
+
+```text
+Ceramic Micro-Hole Machining RFQ Guide: Gas Plates, Vacuum Chucks, Nozzles
+```
+
+Inventory finding:
+
+- Existing articles already covered broad semiconductor ceramics, power electronics ceramics, material selection, DFM, tolerances, surface finish, RFQ checklist, process route, and buyer guide.
+- The real visual/content gap was feature-specific micro-hole RFQ review.
+
+Primary constraint:
+
+```text
+Micro-hole RFQs are not defined by diameter alone. They are defined by material, depth, aspect ratio, edge condition, pitch, datum strategy, cleaning needs, and inspection method.
+```
+
+Narrative skeleton:
+
+```text
+Gate-first, with explanation visual support.
+```
+
+Visual role:
+
+```text
+Evidence + Explanation hero image.
+```
+
+Generated visual manifest:
+
+```text
+--- VISUAL MANIFEST (INTERNAL ONLY) ---
+
+[Figure 1 / Hero]
+Visual role: Evidence + Explanation
+Article constraint: Inspection and acceptance gate for ceramic micro-hole machining
+Subject: Precision ceramic micro-hole gas distribution plate, ceramic vacuum chuck segment, nozzles, and a micro-channel manifold.
+Prompt:
+[Subject/Action]: Create a photorealistic engineering product composition for an article about precision ceramic micro-hole machining, micro-drilling, gas distribution plates, vacuum chuck holes, and ceramic nozzles.
+[Camera/Lens]: 50-70mm product lens feel, three-quarter product photography, deep focus, aperture f/8.
+[Composition]: Wide 16:9 triangular product cluster. A satin white alumina rectangular micro-hole gas distribution plate is the dominant central anchor. A circular porous ceramic vacuum chuck segment with concentric grooves sits behind it. Add a small zirconia or alumina ceramic nozzle/orifice insert with a visible micro-bore, a partial cutaway ceramic micro-channel manifold showing realistic internal channels, and one dark SiC ring or fixture element for material contrast. Parts occupy most of the frame, visually dense but organized, no chaotic pile.
+[Lighting]: Clean semiconductor and vacuum-equipment engineering studio, cool white 6000K, large softbox highlights, crisp edge separation, controlled contrast so white ceramic parts remain readable.
+[Material Physics]: True advanced ceramics only: matte-to-satin alumina, zirconia, Si3N4, and SiC; fine grinding marks, lapped low-Ra faces, subtle crystalline texture, crisp chamfers, micro-hole entry edges, edge-break details, no plastic gloss, no metal dominance.
+[Text Rendering]: No text, no labels, no numbers, no logos.
+[Render Style]: Ultra-realistic product photography / KeyShot / Octane quality, 8k inspection-grade detail, premium B2B engineering visual.
+Aspect Ratio: 16:9.
+Negative Prompt: text, typography, numbers, labels, logo, watermark, people, hands, pottery, dinnerware, ordinary simple ceramic blocks only, decorative ceramics, metal parts dominating, plastic, cartoon, sci-fi glow, dirty parts, broken parts, impossible holes, random hole spacing, warped geometry, clogged holes, blurry, bokeh, low resolution.
+Alt Text: Precision ceramic micro-hole gas plate with vacuum chuck, nozzle, and micro-channel ceramic components.
+Caption: Micro-hole ceramic RFQs should define diameter, depth, pitch, taper, edge condition, cleaning, and inspection method before quotation.
+```
+
+Final project prompt used for generation:
+
+```text
+Use case: ads-marketing
+Asset type: 16:9 article hero image for a high-end industrial precision ceramic CNC machining website.
+Primary request: Create a photorealistic engineering product composition for an article about precision ceramic micro-hole machining, micro-drilling, gas distribution plates, vacuum chuck holes, and ceramic nozzles.
+Scene/backdrop: Clean semiconductor and vacuum-equipment engineering studio, cool neutral light, subtle graphite-blue work surface, no text, no labels, no logos, no people.
+Subject: A cohesive group of difficult precision technical ceramic components only: a dominant satin white alumina rectangular micro-hole gas distribution plate with hundreds of perfectly aligned tiny holes; a circular porous ceramic vacuum chuck segment with concentric groove pattern and dense suction-hole fields; a small zirconia or alumina ceramic nozzle/orifice insert with a visible micro-bore; a partial cutaway ceramic micro-channel manifold showing realistic internal channels; one dark SiC ring or fixture element for material contrast. Include crisp chamfers, ground datum faces, lapped seal lands, micro-hole entry edges, thin walls, precision bores, edge-break details, and inspection-relevant geometry.
+Composition: Wide 16:9, three-quarter product photography, parts occupy most of the frame, strong first-second impact, visually dense but organized, deep focus, no bokeh blur.
+Lighting: Industrial clean room / engineering studio, cool white 6000K, large softbox reflections, crisp edge separation, controlled contrast so white ceramic parts are readable against the background.
+Material physics: True advanced ceramics only: matte-to-satin alumina, zirconia, Si3N4, SiC; fine grinding marks, lapped low-Ra faces, subtle crystalline texture, zero plastic gloss, zero metal dominance.
+Render style: Ultra-realistic product photography / KeyShot / Octane quality, 8k inspection-grade detail, premium B2B engineering visual.
+Negative prompt: text, typography, numbers, labels, logo, watermark, people, hands, pottery, dinnerware, ordinary simple ceramic blocks only, decorative ceramics, metal parts dominating, plastic, cartoon, sci-fi glow, dirty parts, broken parts, impossible holes, random holes, warped geometry, blurry, bokeh, low resolution.
+Aspect ratio: 16:9.
+```
+
+Saved asset:
+
+```text
+src/assets/images/ceramic/posts/ceramic-micro-hole-machining-rfq.webp
+```

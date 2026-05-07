@@ -166,29 +166,14 @@ For image changes:
 
 Article image generation protocol:
 
+- Full prompt-generation logic lives in [docs/article-image-prompt-protocol.md](docs/article-image-prompt-protocol.md). Use that document before generating any new post hero image or inline figure.
 - Prefer a fresh generated image for every new article. Do not reuse an existing site image unless the article is being intentionally refreshed from the same visual system.
 - Use 16:9 images for post heroes. Current target asset size is `1536x864` WebP.
 - Show difficult precision ceramic parts, not ordinary shapes: micro-hole plates, porous or vacuum chucks, wafer handling parts, lapped seal faces, ceramic threads, thin-wall sleeves, precision bores, SiC/Si3N4 wear parts, AlN/Al2O3 insulators, slots, datum pads, and edge-break details.
 - The image must support the article's RFQ intent. Semiconductor articles should show wafer handling, vacuum, micro-hole, or process-side ceramic parts. Power electronics articles should show AlN/Si3N4/alumina/SiC insulation, thermal, fixture, and high-voltage geometry.
 - Avoid text, logos, annotations, human hands, factory clutter, pottery, dinnerware, decorative ceramics, generic blocks, impossible holes, broken parts, and plastic-looking surfaces.
 - Show real ceramic material physics: matte to satin alumina, zirconia, Si3N4, SiC, AlN, MACOR, lapped faces, fine grinding marks, crisp chamfers, and controlled clean-room or engineering-lab lighting.
-- Keep prompts specific enough to define material, geometry, camera, lighting, composition, aspect ratio, and negative constraints.
-
-Reusable article image prompt skeleton:
-
-```text
-Use case: ads-marketing
-Asset type: 16:9 article hero image for a high-end industrial precision ceramic CNC machining website.
-Primary request: Create a photorealistic engineering product composition for an article about [specific RFQ topic].
-Scene/backdrop: Clean [semiconductor / power electronics / inspection / vacuum] engineering environment, cool neutral light, no text, no labels, no logos, no people.
-Subject: A cohesive group of difficult precision technical ceramic components: [material + part list tied to article intent]. Include realistic chamfers, ground datum faces, lapped faces, bores, slots, micro-holes, threads, thin walls, edge-break details, and inspection-relevant geometry.
-Composition: Wide 16:9, three-quarter product photography, parts occupy most of the frame, strong first-second impact, visually dense but organized, deep focus.
-Lighting: Industrial clean room or engineering studio, cool white 6000K, softbox highlights, crisp edge separation, controlled contrast for white ceramics.
-Material physics: True advanced ceramics only: matte/satin alumina, zirconia, Si3N4, SiC, AlN, MACOR as appropriate; fine grinding marks, lapped low-Ra faces, subtle crystalline texture, no plastic gloss.
-Render style: Ultra-realistic product photography / KeyShot / Octane quality, 8k inspection-grade detail, premium B2B engineering visual.
-Negative prompt: text, typography, numbers, labels, logo, watermark, people, hands, pottery, dinnerware, generic simple blocks only, metal parts dominating, plastic, cartoon, sci-fi glow, dirty parts, broken parts, impossible holes, blurry, bokeh, low resolution.
-Aspect ratio: 16:9.
-```
+- Keep prompts specific enough to define article constraint, visual role, subject, material, geometry, camera, composition, lighting, aspect ratio, alt text, and negative constraints.
 
 ## SEO Rules
 
