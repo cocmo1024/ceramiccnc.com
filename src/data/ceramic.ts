@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Ceramic Thin-Wall Sleeve Machining RFQ Guide',
+    href: '/posts/thin-wall-sleeves/ceramic-thin-wall-sleeve-bore-concentricity-rfq/',
+    date: '2026-05-12',
+    image: '~/assets/images/ceramic/posts/ceramic-thin-wall-sleeve-bore-concentricity-rfq.webp',
+    description:
+      'RFQ guidance for thin-wall ceramic sleeves, precision bores, OD/ID concentricity, wall thickness, roundness, edge quality, and inspection evidence.',
+  },
+  {
     title: 'Ceramic Micro-Hole Machining RFQ Guide',
     href: '/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/',
     date: '2026-05-07',
