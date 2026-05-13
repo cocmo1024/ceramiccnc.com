@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Precision Ceramic Machining for Industrial Components',
+    href: '/posts/industrial-ceramic-machining/precision-ceramic-machining-high-performance-industrial-components/',
+    date: '2026-05-14',
+    image: '~/assets/images/ceramic/posts/precision-ceramic-machining-high-performance-industrial-components.webp',
+    description:
+      'Engineering guide for precision ceramic machining, material selection, diamond grinding, tolerances, surface finish, inspection, and RFQ readiness.',
+  },
+  {
     title: 'Ceramic Thin-Wall Sleeve Machining RFQ Guide',
     href: '/posts/thin-wall-sleeves/ceramic-thin-wall-sleeve-bore-concentricity-rfq/',
     date: '2026-05-12',
