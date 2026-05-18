@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Ceramic CNC Machining Design Rules',
+    href: '/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/',
+    date: '2026-05-18',
+    image: '~/assets/images/ceramic/posts/ceramic-cnc-machining-design-rules-advanced-ceramic-parts.webp',
+    description:
+      'Design rules for advanced ceramic CNC machined parts, including radii, holes, thin walls, datums, surface finish, inspection, and RFQ readiness.',
+  },
+  {
     title: 'Precision Ceramic Machining for Industrial Components',
     href: '/posts/industrial-ceramic-machining/precision-ceramic-machining-high-performance-industrial-components/',
     date: '2026-05-14',
