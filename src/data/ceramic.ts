@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Industrial Ceramic Machining for Wear-Resistant Components',
+    href: '/posts/industrial-ceramic-machining/industrial-ceramic-machining-wear-resistant-components/',
+    date: '2026-05-20',
+    image: '~/assets/images/ceramic/posts/industrial-ceramic-machining-wear-resistant-components.webp',
+    description:
+      'Engineering guide for wear-resistant ceramic bushings, liners, guide rails, seal faces, pins, rollers, valve parts, machining features, inspection, and RFQ readiness.',
+  },
+  {
     title: 'Ceramic CNC Machining Design Rules',
     href: '/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/',
     date: '2026-05-18',
