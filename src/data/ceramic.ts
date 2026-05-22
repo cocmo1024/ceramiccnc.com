@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Precision Machined Alumina Ceramic Parts',
+    href: '/posts/industrial-ceramic-machining/precision-machined-alumina-ceramic-parts-industrial-applications/',
+    date: '2026-05-22',
+    image: '~/assets/images/ceramic/posts/precision-machined-alumina-ceramic-parts-industrial-applications.webp',
+    description:
+      'Engineering guide for machined alumina ceramic insulators, bushings, plates, spacers, sleeves, fixtures, grade selection, tolerance scope, surface finish, and RFQ review.',
+  },
+  {
     title: 'Industrial Ceramic Machining for Wear-Resistant Components',
     href: '/posts/industrial-ceramic-machining/industrial-ceramic-machining-wear-resistant-components/',
     date: '2026-05-20',
