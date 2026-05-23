@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Boron Nitride Ceramic Machining for High-Temperature Insulation',
+    href: '/posts/industrial-ceramic-machining/boron-nitride-ceramic-machining-high-temperature-insulation-parts/',
+    date: '2026-05-23',
+    image: '~/assets/images/ceramic/posts/boron-nitride-ceramic-machining-high-temperature-insulation-parts.webp',
+    description:
+      'Engineering guide for boron nitride ceramic insulators, furnace fixtures, molten-metal nozzles, tubes, spacers, high-temperature atmosphere review, and RFQ inputs.',
+  },
+  {
     title: 'Macor Machinable Glass Ceramic Parts Design Guide',
     href: '/posts/industrial-ceramic-machining/macor-machinable-glass-ceramic-parts-applications-design-guide/',
     date: '2026-05-23',
