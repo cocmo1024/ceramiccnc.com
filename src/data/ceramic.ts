@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Silicon Nitride Ceramic Machining for Wear Parts',
+    href: '/posts/industrial-ceramic-machining/silicon-nitride-ceramic-machining-structural-wear-parts/',
+    date: '2026-05-23',
+    image: '~/assets/images/ceramic/posts/silicon-nitride-ceramic-machining-structural-wear-parts.webp',
+    description:
+      'Engineering guide for silicon nitride ceramic rollers, shafts, sleeves, bushings, guide components, structural supports, tolerances, surface finish, and RFQ review.',
+  },
+  {
     title: 'Zirconia Ceramic Machining for Precision Components',
     href: '/posts/industrial-ceramic-machining/zirconia-ceramic-machining-high-strength-precision-components/',
     date: '2026-05-23',
