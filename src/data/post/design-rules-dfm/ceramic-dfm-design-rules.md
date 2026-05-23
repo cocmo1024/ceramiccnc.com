@@ -91,3 +91,10 @@ A ceramic feature that cannot be measured cannot be accepted cleanly. Before sen
 ### RFQ Checklist
 
 Send material grade, blank or sourcing requirement, CAD, drawing revision, functional surfaces, datums, edge condition, surface finish, critical tolerances, quantity, target lead time, and inspection expectations.
+
+### Related Guides
+
+- Use the [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) for the expanded design-rule guide covering fired machining, diamond grinding, datums, and RFQ review.
+- Use the [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) when the grade is not fixed before DFM review.
+- Use the [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) when a feature needs tight flatness, position, bore quality, or GD&T evidence.
+- Use the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) to prepare a complete drawing package for review.

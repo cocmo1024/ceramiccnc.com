@@ -39,6 +39,99 @@ const materialShowcases = [
   },
 ];
 
+const materialGuideLinks = [
+  {
+    title: 'Material selection hub',
+    description:
+      'Compare ceramic families by failure mode, blank state, feature risk, finishability, and RFQ evidence.',
+    icon: 'tabler:route',
+    callToAction: {
+      text: 'Read selection guide',
+      href: '/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/',
+    },
+  },
+  {
+    title: 'Alumina ceramic machining',
+    description:
+      'Review alumina insulators, bushings, plates, spacers, sleeves, fixtures, purity notes, and finished faces.',
+    icon: 'tabler:hexagon-letter-a',
+    callToAction: {
+      text: 'Read alumina guide',
+      href: '/posts/industrial-ceramic-machining/precision-machined-alumina-ceramic-parts-industrial-applications/',
+    },
+  },
+  {
+    title: 'Zirconia ceramic machining',
+    description:
+      'Review zirconia pins, plungers, bushings, sleeves, wear parts, toughness limits, tolerances, and surface finish.',
+    icon: 'tabler:hexagon-letter-z',
+    callToAction: {
+      text: 'Read zirconia guide',
+      href: '/posts/industrial-ceramic-machining/zirconia-ceramic-machining-high-strength-precision-components/',
+    },
+  },
+  {
+    title: 'Silicon nitride ceramic machining',
+    description:
+      'Review Si3N4 rollers, shafts, sleeves, guide parts, thermal shock exposure, roundness, and inspection needs.',
+    icon: 'tabler:hexagon-letter-s',
+    callToAction: {
+      text: 'Read Si3N4 guide',
+      href: '/posts/industrial-ceramic-machining/silicon-nitride-ceramic-machining-structural-wear-parts/',
+    },
+  },
+  {
+    title: 'Silicon carbide ceramic machining',
+    description:
+      'Review SiC seal faces, valve seats, pump sleeves, nozzles, wear plates, semiconductor parts, and lapped faces.',
+    icon: 'tabler:shield-check',
+    callToAction: {
+      text: 'Read SiC guide',
+      href: '/posts/industrial-ceramic-machining/silicon-carbide-ceramic-machining-harsh-environment-applications/',
+    },
+  },
+  {
+    title: 'Aluminum nitride ceramic machining',
+    description:
+      'Review AlN heat spreaders, insulating plates, thermal-interface flatness, cleanliness, and power electronics use.',
+    icon: 'tabler:temperature',
+    callToAction: {
+      text: 'Read AlN guide',
+      href: '/posts/industrial-ceramic-machining/aluminum-nitride-ceramic-machining-thermal-management-components/',
+    },
+  },
+  {
+    title: 'Macor machinable ceramic parts',
+    description:
+      'Review Macor prototype parts, lab fixtures, insulating hardware, threads, fast iteration, and production limits.',
+    icon: 'tabler:tool',
+    callToAction: {
+      text: 'Read Macor guide',
+      href: '/posts/industrial-ceramic-machining/macor-machinable-glass-ceramic-parts-applications-design-guide/',
+    },
+  },
+  {
+    title: 'Boron nitride ceramic machining',
+    description:
+      'Review BN high-temperature insulation parts, furnace fixtures, molten-metal-adjacent nozzles, spacers, and tubes.',
+    icon: 'tabler:flame',
+    callToAction: {
+      text: 'Read BN guide',
+      href: '/posts/industrial-ceramic-machining/boron-nitride-ceramic-machining-high-temperature-insulation-parts/',
+    },
+  },
+  {
+    title: 'Precision ceramic machining overview',
+    description:
+      'Use the process overview when material choice, grinding route, tolerances, surface finish, and inspection overlap.',
+    icon: 'tabler:settings',
+    callToAction: {
+      text: 'Read overview',
+      href: '/posts/industrial-ceramic-machining/precision-ceramic-machining-high-performance-industrial-components/',
+    },
+  },
+];
+
 const metadata = {
   title: 'Advanced Ceramic Materials for CNC Machining',
   description:
@@ -98,6 +191,14 @@ const metadata = {
   />
 
   <SplitShowcase items={materialShowcases} classes={{ container: sectionContainerClass }} />
+
+  <Features2
+    title="Material machining guides"
+    subtitle="Use these pages as the internal route from material name to machining risk, application fit, tolerance scope, surface finish, and RFQ inputs."
+    columns={3}
+    items={materialGuideLinks}
+    classes={{ container: sectionContainerClass }}
+  />
 
   <CallToAction
     classes={{ container: sectionContainerClass }}

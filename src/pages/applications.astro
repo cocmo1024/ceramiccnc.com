@@ -72,6 +72,99 @@ const applicationFamilies = [
   },
 ];
 
+const applicationGuideLinks = [
+  {
+    title: 'Semiconductor ceramic components',
+    description:
+      'Wafer handling, vacuum, etch, deposition, inspection, SiC rings, end effectors, and particle-sensitive edge review.',
+    icon: 'tabler:device-analytics',
+    callToAction: {
+      text: 'Read semiconductor guide',
+      href: '/posts/semiconductor-equipment/ai-semiconductor-equipment-ceramic-parts/',
+    },
+  },
+  {
+    title: 'Ceramic vacuum chucks',
+    description:
+      'Flatness, hole fields, porous surfaces, grooves, datum strategy, vacuum behavior, cleaning, and inspection evidence.',
+    icon: 'tabler:circle-dot',
+    callToAction: {
+      text: 'Read vacuum chuck guide',
+      href: '/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/',
+    },
+  },
+  {
+    title: 'Micro-holes and orifices',
+    description:
+      'Gas plates, nozzles, vacuum features, hole depth, taper, entry and exit breakout, cleaning, and measurement method.',
+    icon: 'tabler:focus-2',
+    callToAction: {
+      text: 'Read micro-hole guide',
+      href: '/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/',
+    },
+  },
+  {
+    title: 'Lapped seal faces',
+    description:
+      'Seal bands, valve seats, lapping scope, flatness, Ra, edge quality, paired faces, and acceptance reporting.',
+    icon: 'tabler:circles-relation',
+    callToAction: {
+      text: 'Read seal face guide',
+      href: '/posts/lapped-seal-faces/ceramic-lapped-seal-faces-rfq/',
+    },
+  },
+  {
+    title: 'Wear-resistant ceramic parts',
+    description:
+      'Bushings, liners, guide rails, seal faces, pins, rollers, valve parts, contact surfaces, and replacement geometry.',
+    icon: 'tabler:shield-check',
+    callToAction: {
+      text: 'Read wear guide',
+      href: '/posts/industrial-ceramic-machining/industrial-ceramic-machining-wear-resistant-components/',
+    },
+  },
+  {
+    title: 'High-voltage ceramic insulators',
+    description:
+      'Insulating spacers, sleeves, feedthrough-adjacent parts, creepage paths, edge condition, and assembly stress.',
+    icon: 'tabler:bolt',
+    callToAction: {
+      text: 'Read insulation guide',
+      href: '/posts/high-voltage-insulation/ceramic-high-voltage-insulators-rfq/',
+    },
+  },
+  {
+    title: 'Thermal management ceramics',
+    description:
+      'AlN plates, heat spreaders, power electronics fixtures, thermal-interface flatness, Ra, and cleanliness review.',
+    icon: 'tabler:temperature',
+    callToAction: {
+      text: 'Read AlN guide',
+      href: '/posts/industrial-ceramic-machining/aluminum-nitride-ceramic-machining-thermal-management-components/',
+    },
+  },
+  {
+    title: 'Harsh environment SiC parts',
+    description:
+      'Chemical, abrasive, high-temperature, semiconductor, pump, valve, nozzle, and seal applications where SiC fits.',
+    icon: 'tabler:flask',
+    callToAction: {
+      text: 'Read SiC guide',
+      href: '/posts/industrial-ceramic-machining/silicon-carbide-ceramic-machining-harsh-environment-applications/',
+    },
+  },
+  {
+    title: 'High-temperature BN parts',
+    description:
+      'BN insulators, furnace fixtures, tubes, spacers, molten-metal-adjacent nozzles, atmosphere limits, and RFQ inputs.',
+    icon: 'tabler:flame',
+    callToAction: {
+      text: 'Read BN guide',
+      href: '/posts/industrial-ceramic-machining/boron-nitride-ceramic-machining-high-temperature-insulation-parts/',
+    },
+  },
+];
+
 const metadata = {
   title: 'Advanced Ceramic CNC Machining Applications',
   description:
@@ -180,6 +273,14 @@ const metadata = {
         icon: 'tabler:clipboard-check',
       },
     ]}
+  />
+
+  <Features2
+    title="Application engineering guides"
+    subtitle="These internal guides connect application intent to material choice, precision features, surface requirements, and RFQ evidence."
+    columns={3}
+    items={applicationGuideLinks}
+    classes={{ container: sectionContainerClass }}
   />
 
   <CallToAction

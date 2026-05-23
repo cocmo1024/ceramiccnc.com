@@ -40,6 +40,8 @@ The highest-value RFQs usually involve interfaces where ceramic properties and m
 
 The material name alone is never enough. "Alumina end effector" or "SiC ring" still leaves open the grade, blank state, datum faces, fired condition, final finish, and acceptance route.
 
+For chuck-specific projects, use the [ceramic vacuum chuck RFQ guide](/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/) to separate flatness, hole field, porous surface, groove, cleaning, and vacuum-test requirements before quotation.
+
 ### The Semiconductor Features That Change the Quote
 
 The quote usually becomes difficult when one of these features is present:

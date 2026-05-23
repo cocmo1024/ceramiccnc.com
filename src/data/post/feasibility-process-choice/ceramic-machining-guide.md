@@ -111,6 +111,13 @@ Ask suppliers for evidence that matches your risk:
 
 ![Ceramic supplier selection and inspection workflow](../../../assets/images/ceramic/posts/ceramic-machining-guide-5.webp)
 
+### Related Guides
+
+- Start with the [precision ceramic machining overview](/posts/industrial-ceramic-machining/precision-ceramic-machining-high-performance-industrial-components/) for the full material, process, tolerance, finish, and inspection path.
+- Use the [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) when alumina, zirconia, Si3N4, SiC, AlN, Macor, BN, or fused silica are still being compared.
+- Use the [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) before sending drawings with holes, slots, thin walls, pockets, or sharp internal corners.
+- Use the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) when the project is ready for supplier review.
+
 ### FAQ
 
 **How can I reduce quote variance?**

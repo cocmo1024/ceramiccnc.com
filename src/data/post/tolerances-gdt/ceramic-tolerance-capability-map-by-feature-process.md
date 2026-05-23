@@ -84,6 +84,13 @@ Send these details when tolerance matters:
 - Edge break or chip criteria by zone.
 - Inspection method and report expectations.
 
+### Related Guides
+
+- Use the [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) before locking tolerances around sharp corners, holes, slots, thin walls, and edge-sensitive geometry.
+- Use the [surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/) when Ra, lapping, polishing, or seal-face integrity drives acceptance.
+- Use the [green machining vs hard machining guide](/posts/process-routes-control/green-machining-vs-hard-machining/) when the tolerance depends on pre-sinter shaping versus post-sinter grinding.
+- Use the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) to turn the tolerance map into a quote-ready drawing package.
+
 ### FAQ
 
 **Can ceramic parts hold tight tolerances?**  

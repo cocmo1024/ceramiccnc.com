@@ -83,6 +83,13 @@ This gives the supplier a route and gives procurement a measurable acceptance ga
 
 ![Ceramic lapping and surface integrity inspection](../../../assets/images/ceramic/posts/ceramic-ssd-surface-finish-specify-control-price-3.webp)
 
+### Related Guides
+
+- Use the [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) when Ra, flatness, parallelism, or bore quality must be tied to a measurable feature.
+- Use the [lapped ceramic seal face RFQ guide](/posts/lapped-seal-faces/ceramic-lapped-seal-faces-rfq/) when the surface is a seal band, valve seat, pump face, or paired flat.
+- Use the [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) when low-Ra surfaces sit near holes, slots, thin walls, or fragile edges.
+- Use the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) to state finish, edge, and inspection requirements before quotation.
+
 ### FAQ
 
 **Can Ra 0.1 micrometer be quoted?**

@@ -97,6 +97,99 @@ const capabilityShowcases = [
   },
 ];
 
+const capabilityGuideLinks = [
+  {
+    title: 'Precision machining overview',
+    description:
+      'Start here when material choice, diamond grinding, tolerances, surface finish, inspection, and RFQ readiness overlap.',
+    icon: 'tabler:settings',
+    callToAction: {
+      text: 'Read overview',
+      href: '/posts/industrial-ceramic-machining/precision-ceramic-machining-high-performance-industrial-components/',
+    },
+  },
+  {
+    title: 'Ceramic CNC design rules',
+    description:
+      'Design rules for radii, holes, thin walls, slots, datums, tolerances, surface finish, inspection, and RFQ inputs.',
+    icon: 'tabler:dimensions',
+    callToAction: {
+      text: 'Read design rules',
+      href: '/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/',
+    },
+  },
+  {
+    title: 'DFM go/no-go guide',
+    description:
+      'Use this older DFM handbook for ceramic feature feasibility, sharpness, wall thickness, edge quality, and access limits.',
+    icon: 'tabler:checks',
+    callToAction: {
+      text: 'Read DFM guide',
+      href: '/posts/design-rules-dfm/ceramic-dfm-design-rules/',
+    },
+  },
+  {
+    title: 'Tolerance capability map',
+    description:
+      'Map feature type to as-sintered, green-machined, ground, and lapped ceramic routes before over-tightening drawings.',
+    icon: 'tabler:ruler-measure',
+    callToAction: {
+      text: 'Read tolerance guide',
+      href: '/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/',
+    },
+  },
+  {
+    title: 'Surface finish and SSD',
+    description:
+      'Specify Ra, lapping, polishing, microscopy, and surface integrity by functional face instead of globally.',
+    icon: 'tabler:wave-sine',
+    callToAction: {
+      text: 'Read finish guide',
+      href: '/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/',
+    },
+  },
+  {
+    title: 'Green vs hard machining',
+    description:
+      'Compare machining before sintering with post-sinter grinding when blank route, shrinkage, and final datums matter.',
+    icon: 'tabler:route',
+    callToAction: {
+      text: 'Read route guide',
+      href: '/posts/process-routes-control/green-machining-vs-hard-machining/',
+    },
+  },
+  {
+    title: 'Ceramic buyer guide',
+    description:
+      'Buyer-focused guidance for capability, cost drivers, lead time, acceptance gates, inspection, and supplier review.',
+    icon: 'tabler:clipboard-list',
+    callToAction: {
+      text: 'Read buyer guide',
+      href: '/posts/feasibility-process-choice/ceramic-machining-guide/',
+    },
+  },
+  {
+    title: 'Material selection guide',
+    description:
+      'Choose alumina, zirconia, Si3N4, SiC, AlN, Macor, BN, and other ceramics by failure mode and machining risk.',
+    icon: 'tabler:atom',
+    callToAction: {
+      text: 'Read material guide',
+      href: '/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/',
+    },
+  },
+  {
+    title: 'RFQ preparation checklist',
+    description:
+      'Prepare drawings, CAD, material notes, functional surfaces, tolerances, surface finish, and inspection evidence.',
+    icon: 'tabler:file-description',
+    callToAction: {
+      text: 'Read RFQ checklist',
+      href: '/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/',
+    },
+  },
+];
+
 const metadata = {
   title: 'Ceramic CNC Machining Capabilities',
   description:
@@ -191,6 +284,14 @@ const metadata = {
     subtitle="The quote path is clearer when process fit, finishing scope, and inspection evidence are stated early."
     tagline="Engineering review"
     items={capabilityShowcases}
+    classes={{ container: sectionContainerClass }}
+  />
+
+  <Features2
+    title="Capability engineering guides"
+    subtitle="Use these internal guides to move from a capability claim to a specific design, process, tolerance, surface, and inspection decision."
+    columns={3}
+    items={capabilityGuideLinks}
     classes={{ container: sectionContainerClass }}
   />
 

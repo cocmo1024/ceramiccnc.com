@@ -90,7 +90,7 @@ Many weak RFQs specify a hole diameter but do not define the defects that matter
 5. **Surface condition**: is the internal wall functional, or only the opening?
 6. **Cleanliness**: are loose particles, residues, or blocked holes part of acceptance?
 
-For a ceramic gas plate, a hole field with consistent flow may matter more than reporting every individual diameter. For a ceramic aperture, diameter and edge quality may matter more than total hole count. For a vacuum chuck, flatness and suction distribution may decide whether the micro-hole pattern is useful.
+For a ceramic gas plate, a hole field with consistent flow may matter more than reporting every individual diameter. For a ceramic aperture, diameter and edge quality may matter more than total hole count. For a vacuum chuck, flatness and suction distribution may decide whether the micro-hole pattern is useful; use the [ceramic vacuum chuck RFQ guide](/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/) when the chuck surface, grooves, porous regions, or vacuum test are the acceptance gate.
 
 ### Material Review for Micro-Hole Parts
 

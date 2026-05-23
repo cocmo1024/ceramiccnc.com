@@ -87,6 +87,13 @@ Before asking for price, decide:
 
 ![Ceramic grinding route readiness](../../../assets/images/ceramic/posts/green-machining-vs-hard-machining-4.webp)
 
+### Related Guides
+
+- Use the [precision ceramic machining overview](/posts/industrial-ceramic-machining/precision-ceramic-machining-high-performance-industrial-components/) when route choice affects material, grinding, lapping, and inspection together.
+- Use the [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) when grade, blank state, or substitution options are still open.
+- Use the [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) when final datums, flatness, position, or bore relationships decide the process route.
+- Use the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) before sending a route-dependent quote request.
+
 ### FAQ
 
 **Is green machining less accurate?**  

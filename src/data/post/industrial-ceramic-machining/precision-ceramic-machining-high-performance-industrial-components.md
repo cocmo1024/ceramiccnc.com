@@ -41,15 +41,15 @@ Most high-performance ceramics cannot be treated like ordinary metal parts. Fire
 
 The ceramic grade is not a minor purchasing detail. Material choice affects machinability, strength, chipping risk, finishability, cost, delivery timing, and inspection.
 
-| Material                           | Common precision-machined use                                                                | RFQ note                                                                                    |
-| ---------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| Alumina Al2O3                      | Insulators, spacers, wear plates, sensor parts, high-vacuum hardware                         | Specify purity, density, fired state, functional faces, and edge criteria                   |
-| Zirconia ZrO2                      | Pins, plungers, bushings, wear components, guide features                                    | Review toughness advantage, temperature limit, fit condition, and surface finish            |
-| Silicon nitride Si3N4              | Wear parts, rollers, guide sleeves, bearing-adjacent parts, thermal shock applications       | Define load, contact mode, roundness, bore quality, and inspection evidence                 |
-| Silicon carbide SiC                | Seal faces, wear rings, semiconductor-adjacent parts, chemical and high-temperature hardware | Apply tight tolerances only where function needs them; finishing cost can rise quickly      |
-| Aluminum nitride AlN               | Thermal management parts, electrical insulation, power electronics fixtures                  | Protect thermal-interface faces and define flatness, Ra, and cleaning requirements          |
-| MACOR and machinable glass ceramic | Prototypes, lab fixtures, electrical test hardware, low-volume precision parts               | Useful for speed and machinability, but validate whether it fits the production environment |
-| Boron nitride BN                   | High-temperature insulation, nozzles, molten-metal-adjacent and thermal process parts        | Define grade, atmosphere, temperature, and mechanical load before machining assumptions     |
+| Material                                                                                                                                  | Common precision-machined use                                                                | RFQ note                                                                                    |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| [Alumina Al2O3](/posts/industrial-ceramic-machining/precision-machined-alumina-ceramic-parts-industrial-applications/)                    | Insulators, spacers, wear plates, sensor parts, high-vacuum hardware                         | Specify purity, density, fired state, functional faces, and edge criteria                   |
+| [Zirconia ZrO2](/posts/industrial-ceramic-machining/zirconia-ceramic-machining-high-strength-precision-components/)                       | Pins, plungers, bushings, wear components, guide features                                    | Review toughness advantage, temperature limit, fit condition, and surface finish            |
+| [Silicon nitride Si3N4](/posts/industrial-ceramic-machining/silicon-nitride-ceramic-machining-structural-wear-parts/)                     | Wear parts, rollers, guide sleeves, bearing-adjacent parts, thermal shock applications       | Define load, contact mode, roundness, bore quality, and inspection evidence                 |
+| [Silicon carbide SiC](/posts/industrial-ceramic-machining/silicon-carbide-ceramic-machining-harsh-environment-applications/)              | Seal faces, wear rings, semiconductor-adjacent parts, chemical and high-temperature hardware | Apply tight tolerances only where function needs them; finishing cost can rise quickly      |
+| [Aluminum nitride AlN](/posts/industrial-ceramic-machining/aluminum-nitride-ceramic-machining-thermal-management-components/)             | Thermal management parts, electrical insulation, power electronics fixtures                  | Protect thermal-interface faces and define flatness, Ra, and cleaning requirements          |
+| [MACOR and machinable glass ceramic](/posts/industrial-ceramic-machining/macor-machinable-glass-ceramic-parts-applications-design-guide/) | Prototypes, lab fixtures, electrical test hardware, low-volume precision parts               | Useful for speed and machinability, but validate whether it fits the production environment |
+| [Boron nitride BN](/posts/industrial-ceramic-machining/boron-nitride-ceramic-machining-high-temperature-insulation-parts/)                | High-temperature insulation, nozzles, molten-metal-adjacent and thermal process parts        | Define grade, atmosphere, temperature, and mechanical load before machining assumptions     |
 
 If the exact grade is not fixed, send the failure mode and environment: temperature, wear, load, voltage, vacuum, media chemistry, thermal cycling, cleanliness, and inspection needs. The material decision should be reviewed against the part's job, not only a catalog property.
 
@@ -180,6 +180,8 @@ A good ceramic machining review should answer:
 - Which surfaces must be protected during cleaning and packaging?
 - Which measurement method proves acceptance?
 - Which assumptions affect price and lead time?
+
+For procurement teams comparing suppliers, the [ceramic CNC machining buyer guide](/posts/feasibility-process-choice/ceramic-machining-guide/) gives a narrower view of capability evidence, cost drivers, lead time, inspection packets, and acceptance gates.
 
 If those questions are not answered, the RFQ may still produce a number, but the number will include hidden assumptions.
 

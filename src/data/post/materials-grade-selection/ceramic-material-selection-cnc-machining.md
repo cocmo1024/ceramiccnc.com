@@ -15,7 +15,7 @@ metadata:
 
 Advanced ceramics are selected for insulation, wear resistance, thermal stability, corrosion resistance, low particle risk, or dimensional stability. But the material that performs well in service is not always the easiest material to machine, grind, lap, inspect, or source.
 
-This guide helps engineering and procurement teams prepare better RFQs for ceramic CNC machining and diamond grinding.
+This guide helps engineering and procurement teams prepare better RFQs for ceramic CNC machining and diamond grinding. For the broader process context, pair it with the [precision ceramic machining overview](/posts/industrial-ceramic-machining/precision-ceramic-machining-high-performance-industrial-components/).
 
 ### Select by Failure Mode First
 
@@ -37,16 +37,16 @@ The correct material depends on geometry and acceptance. A thin-wall SiC part wi
 
 Use this as a starting map, not as a final material decision.
 
-| Material family                     | Common reasons to consider it                                             | Machining and RFQ notes                                                             |
-| ----------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| Alumina Al2O3                       | Insulation, wear, cost efficiency, chemical stability                     | Specify purity, density, fired state, functional faces, and edge expectations       |
-| Zirconia ZrO2                       | Toughness, reduced chipping risk, wear and sealing applications           | Review phase/grade, wall thickness, thermal exposure, and grinding heat sensitivity |
-| Silicon Nitride Si3N4               | Bearing, wear, thermal shock, mechanical reliability                      | Strong candidate for demanding mechanical parts, but grade and route matter         |
-| Silicon Carbide SiC                 | Extreme wear, corrosion, high temperature, seal faces                     | Very hard to finish; tight Ra and tolerance should be limited to functional faces   |
-| MACOR and machinable glass ceramics | Prototypes, lab hardware, insulation, low-volume precision parts          | Easier to machine but not a substitute for high-strength structural ceramics        |
-| AlN                                 | Thermal conductivity and electrical insulation                            | Moisture, handling, finish, and application environment need review                 |
-| BN                                  | High-temperature insulation, release behavior, thermal shock in some uses | Soft and machinable relative to many ceramics, but mechanical strength is limited   |
-| Fused silica                        | Thermal shock, optical/thermal stability, insulation                      | Edge quality, surface condition, and handling are important                         |
+| Material family                                                                                                                            | Common reasons to consider it                                             | Machining and RFQ notes                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| [Alumina Al2O3](/posts/industrial-ceramic-machining/precision-machined-alumina-ceramic-parts-industrial-applications/)                     | Insulation, wear, cost efficiency, chemical stability                     | Specify purity, density, fired state, functional faces, and edge expectations       |
+| [Zirconia ZrO2](/posts/industrial-ceramic-machining/zirconia-ceramic-machining-high-strength-precision-components/)                        | Toughness, reduced chipping risk, wear and sealing applications           | Review phase/grade, wall thickness, thermal exposure, and grinding heat sensitivity |
+| [Silicon Nitride Si3N4](/posts/industrial-ceramic-machining/silicon-nitride-ceramic-machining-structural-wear-parts/)                      | Bearing, wear, thermal shock, mechanical reliability                      | Strong candidate for demanding mechanical parts, but grade and route matter         |
+| [Silicon Carbide SiC](/posts/industrial-ceramic-machining/silicon-carbide-ceramic-machining-harsh-environment-applications/)               | Extreme wear, corrosion, high temperature, seal faces                     | Very hard to finish; tight Ra and tolerance should be limited to functional faces   |
+| [MACOR and machinable glass ceramics](/posts/industrial-ceramic-machining/macor-machinable-glass-ceramic-parts-applications-design-guide/) | Prototypes, lab hardware, insulation, low-volume precision parts          | Easier to machine but not a substitute for high-strength structural ceramics        |
+| [AlN](/posts/industrial-ceramic-machining/aluminum-nitride-ceramic-machining-thermal-management-components/)                               | Thermal conductivity and electrical insulation                            | Moisture, handling, finish, and application environment need review                 |
+| [BN](/posts/industrial-ceramic-machining/boron-nitride-ceramic-machining-high-temperature-insulation-parts/)                               | High-temperature insulation, release behavior, thermal shock in some uses | Soft and machinable relative to many ceramics, but mechanical strength is limited   |
+| Fused silica                                                                                                                               | Thermal shock, optical/thermal stability, insulation                      | Edge quality, surface condition, and handling are important                         |
 
 If the RFQ only says "ceramic," the quote cannot be precise. If it says "99.5% alumina, fired plate, finished faces A and B, Ra requirement on face A only," review becomes much clearer.
 

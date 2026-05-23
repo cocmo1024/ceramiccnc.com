@@ -17,6 +17,8 @@ Custom ceramic CNC machining is different from quoting metal parts. Alumina, zir
 
 This checklist is written for engineering and procurement teams preparing RFQs for precision ceramic components.
 
+For procurement-level cost, lead time, supplier review, and acceptance-gate context, pair it with the [ceramic CNC machining buyer guide](/posts/feasibility-process-choice/ceramic-machining-guide/).
+
 ### Start With the Job the Part Must Do
 
 Before tolerance review, clarify why the part uses ceramic instead of metal or plastic. The reason usually controls the machining route.
@@ -38,7 +40,7 @@ A practical ceramic CNC RFQ should include:
 
 - 2D drawing with revision, units, material note, and critical dimensions.
 - STEP, IGES, or native CAD file for geometry review.
-- Material family and grade, such as Al2O3 96%, Al2O3 99.5%, Y-TZP zirconia, Si3N4, SiC, MACOR, AlN, BN, or fused silica.
+- Material family and grade, such as [Al2O3 96% or 99.5% alumina](/posts/industrial-ceramic-machining/precision-machined-alumina-ceramic-parts-industrial-applications/), [Y-TZP zirconia](/posts/industrial-ceramic-machining/zirconia-ceramic-machining-high-strength-precision-components/), [Si3N4](/posts/industrial-ceramic-machining/silicon-nitride-ceramic-machining-structural-wear-parts/), [SiC](/posts/industrial-ceramic-machining/silicon-carbide-ceramic-machining-harsh-environment-applications/), [MACOR](/posts/industrial-ceramic-machining/macor-machinable-glass-ceramic-parts-applications-design-guide/), [AlN](/posts/industrial-ceramic-machining/aluminum-nitride-ceramic-machining-thermal-management-components/), [BN](/posts/industrial-ceramic-machining/boron-nitride-ceramic-machining-high-temperature-insulation-parts/), or fused silica.
 - Blank assumption: customer-supplied blank, supplier-sourced blank, fired blank, green preform, tube, rod, plate, or near-net shape.
 - Quantity for prototype and expected repeat demand.
 - Target lead time or project timing.
@@ -80,6 +82,8 @@ For RFQ review, send what you know:
 - Whether the finished part must match previous samples or an existing supplier route.
 
 If the exact ceramic grade is unknown, send the operating environment instead: temperature, media, wear mode, insulation need, load direction, assembly method, and failure consequence. Material choice can then be reviewed against function rather than name alone.
+
+Use the [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) when the grade, blank state, or substitution options are still open.
 
 ### Specify Surface Finish by Face
 
