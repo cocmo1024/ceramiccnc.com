@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Silicon Carbide Ceramic Machining for Harsh Environments',
+    href: '/posts/industrial-ceramic-machining/silicon-carbide-ceramic-machining-harsh-environment-applications/',
+    date: '2026-05-23',
+    image: '~/assets/images/ceramic/posts/silicon-carbide-ceramic-machining-harsh-environment-applications.webp',
+    description:
+      'Engineering guide for silicon carbide ceramic seal faces, valve seats, pump sleeves, nozzles, wear plates, semiconductor components, surface finish, and RFQ review.',
+  },
+  {
     title: 'Silicon Nitride Ceramic Machining for Wear Parts',
     href: '/posts/industrial-ceramic-machining/silicon-nitride-ceramic-machining-structural-wear-parts/',
     date: '2026-05-23',
