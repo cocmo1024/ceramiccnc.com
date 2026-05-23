@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Zirconia Ceramic Machining for Precision Components',
+    href: '/posts/industrial-ceramic-machining/zirconia-ceramic-machining-high-strength-precision-components/',
+    date: '2026-05-23',
+    image: '~/assets/images/ceramic/posts/zirconia-ceramic-machining-high-strength-precision-components.webp',
+    description:
+      'Engineering guide for zirconia ceramic pins, plungers, bushings, sleeves, valve parts, wear components, material selection, tolerances, surface finish, and RFQ review.',
+  },
+  {
     title: 'Precision Machined Alumina Ceramic Parts',
     href: '/posts/industrial-ceramic-machining/precision-machined-alumina-ceramic-parts-industrial-applications/',
     date: '2026-05-22',
