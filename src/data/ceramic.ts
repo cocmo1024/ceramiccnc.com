@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Aluminum Nitride Ceramic Machining for Thermal Management',
+    href: '/posts/industrial-ceramic-machining/aluminum-nitride-ceramic-machining-thermal-management-components/',
+    date: '2026-05-23',
+    image: '~/assets/images/ceramic/posts/aluminum-nitride-ceramic-machining-thermal-management-components.webp',
+    description:
+      'Engineering guide for aluminum nitride ceramic heat spreaders, insulating plates, substrates, spacers, carriers, power electronics fixtures, flatness, surface finish, and RFQ review.',
+  },
+  {
     title: 'Silicon Carbide Ceramic Machining for Harsh Environments',
     href: '/posts/industrial-ceramic-machining/silicon-carbide-ceramic-machining-harsh-environment-applications/',
     date: '2026-05-23',
