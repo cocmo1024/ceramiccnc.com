@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Macor Machinable Glass Ceramic Parts Design Guide',
+    href: '/posts/industrial-ceramic-machining/macor-machinable-glass-ceramic-parts-applications-design-guide/',
+    date: '2026-05-23',
+    image: '~/assets/images/ceramic/posts/macor-machinable-glass-ceramic-parts-applications-design-guide.webp',
+    description:
+      'Engineering guide for Macor machinable glass ceramic prototype parts, lab fixtures, insulators, vacuum components, threads, tolerances, material transition, and RFQ review.',
+  },
+  {
     title: 'Aluminum Nitride Ceramic Machining for Thermal Management',
     href: '/posts/industrial-ceramic-machining/aluminum-nitride-ceramic-machining-thermal-management-components/',
     date: '2026-05-23',
