@@ -4,8 +4,8 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "ceramiccnc.com" }],
-      "destination": "https://www.ceramiccnc.com/:path*",
+      "has": [{ "type": "host", "value": "www.ceramiccnc.com" }],
+      "destination": "https://ceramiccnc.com/:path*",
       "permanent": true
     },
     { "source": "/FAQ/", "destination": "/faq/", "permanent": true },

@@ -18,8 +18,8 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[redirects]]
-  from = "https://ceramiccnc.com/*"
-  to = "https://www.ceramiccnc.com/:splat"
+  from = "https://www.ceramiccnc.com/*"
+  to = "https://ceramiccnc.com/:splat"
   status = 301
   force = true
 
