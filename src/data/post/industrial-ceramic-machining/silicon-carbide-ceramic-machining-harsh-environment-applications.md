@@ -181,7 +181,7 @@ For these projects, the RFQ should separate normal industrial requirements from 
 - Lot traceability or documentation requirements.
 - Whether the part is process-side, fixture-side, or only used during maintenance.
 
-The [semiconductor equipment ceramic parts guide](/posts/semiconductor-equipment/ai-semiconductor-equipment-ceramic-parts/) provides more context for wafer handling, vacuum chucks, micro-hole gas plates, SiC rings, and process-side ceramic hardware. In semiconductor projects, a small chip or uncontrolled edge condition can create a bigger acceptance problem than it would in a general machinery part.
+The [precision ceramic components for semiconductor equipment guide](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/) provides more context for wafer handling, vacuum chucks, micro-hole gas plates, SiC rings, AlN plates, and process-side ceramic hardware. In semiconductor projects, a small chip or uncontrolled edge condition can create a bigger acceptance problem than it would in a general machinery part.
 
 ### Design Rules That Reduce SiC Machining Risk
 

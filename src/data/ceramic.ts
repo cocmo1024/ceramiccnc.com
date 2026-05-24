@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Precision Ceramic Components for Semiconductor Equipment',
+    href: '/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/',
+    date: '2026-05-24',
+    image: '~/assets/images/ceramic/posts/precision-ceramic-components-semiconductor-equipment.webp',
+    description:
+      'Engineering guide for semiconductor ceramic components, including wafer handling parts, vacuum chucks, SiC rings, AlN plates, alumina insulators, micro-holes, tolerances, surface finish, inspection, and RFQ inputs.',
+  },
+  {
     title: 'Boron Nitride Ceramic Machining for High-Temperature Insulation',
     href: '/posts/industrial-ceramic-machining/boron-nitride-ceramic-machining-high-temperature-insulation-parts/',
     date: '2026-05-23',

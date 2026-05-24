@@ -17,6 +17,8 @@ Semiconductor ceramic components are not purchased like ordinary ceramic plates.
 
 This article is written for engineering and sourcing teams preparing RFQs for ceramic CNC machining, diamond grinding, micro-drilling, and lapping work around semiconductor equipment components. It is not a promise that every semiconductor ceramic drawing can be quoted directly. It is a way to make the review package useful before price and schedule are confirmed.
 
+For a component-by-component sourcing view, use the newer [precision ceramic components for semiconductor equipment guide](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/).
+
 ### Why This Industry Is the Right SEO Target Now
 
 The demand signal is real. [SEMI reported in April 2026](https://www.semi.org/en/semi-press-release/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027) that worldwide 300mm fab equipment spending is expected to increase 18% to 133 billion USD in 2026 and another 14% to 151 billion USD in 2027, with AI chip demand named as a major driver. [KPMG's 2026 semiconductor outlook](https://kpmg.com/us/en/articles/2026/global-semiconductor-industry-outlook-2026.html) also reported AI as the leading revenue driver among surveyed semiconductor executives, followed by cloud and data centers.
