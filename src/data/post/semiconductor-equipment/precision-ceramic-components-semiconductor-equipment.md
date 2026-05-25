@@ -99,6 +99,8 @@ Useful RFQ details include:
 
 If the wafer-facing surface is critical, mark it directly on the drawing. If only small pads touch the wafer, do not apply tight flatness to the entire body unless that is truly needed. This reduces grinding, lapping, and inspection cost while keeping the functional contact under control.
 
+For SiC-specific blades, lift pins, support pads, and edge-contact parts, use the focused [silicon carbide wafer handling components guide](/posts/semiconductor-equipment/silicon-carbide-wafer-handling-components-semiconductor-manufacturing/) before defining contact zones, chip criteria, cleaning, and packaging.
+
 ### Vacuum Chucks And Suction Plates
 
 Vacuum chucks and suction plates are among the highest-value semiconductor ceramic RFQs because they combine flatness, vacuum behavior, hole or pore geometry, cleaning, and inspection. Dense ceramic chucks with drilled holes are not reviewed the same way as porous ceramic chucks or hybrid chuck assemblies.

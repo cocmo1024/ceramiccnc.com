@@ -183,6 +183,8 @@ For these projects, the RFQ should separate normal industrial requirements from 
 
 The [precision ceramic components for semiconductor equipment guide](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/) provides more context for wafer handling, vacuum chucks, micro-hole gas plates, SiC rings, AlN plates, and process-side ceramic hardware. In semiconductor projects, a small chip or uncontrolled edge condition can create a bigger acceptance problem than it would in a general machinery part.
 
+For SiC end effectors, lift pins, support pads, and wafer-contact geometry, use the dedicated [silicon carbide wafer handling components guide](/posts/semiconductor-equipment/silicon-carbide-wafer-handling-components-semiconductor-manufacturing/) to define contact zones, edge chip criteria, cleaning, packaging, and inspection evidence.
+
 ### Design Rules That Reduce SiC Machining Risk
 
 SiC can support demanding harsh-environment designs, but it rewards disciplined ceramic design. The most common drawing problems come from treating SiC like a metal that can be cut freely after hardening.

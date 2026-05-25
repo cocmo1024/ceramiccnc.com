@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Silicon Carbide Wafer Handling Components',
+    href: '/posts/semiconductor-equipment/silicon-carbide-wafer-handling-components-semiconductor-manufacturing/',
+    date: '2026-05-25',
+    image: '~/assets/images/ceramic/posts/silicon-carbide-wafer-handling-components-semiconductor-manufacturing.webp',
+    description:
+      'Engineering guide for SiC wafer handling components, including end effectors, lift pins, support pads, edge quality, flatness, cleaning, inspection, and RFQ inputs.',
+  },
+  {
     title: 'Precision Ceramic Components for Semiconductor Equipment',
     href: '/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/',
     date: '2026-05-24',
