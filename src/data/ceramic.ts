@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Ceramic End Effectors for Wafer Handling and Automation',
+    href: '/posts/semiconductor-equipment/ceramic-end-effectors-wafer-handling-automation/',
+    date: '2026-05-27',
+    image: '~/assets/images/ceramic/posts/ceramic-end-effectors-wafer-handling-automation.webp',
+    description:
+      'Engineering guide for ceramic wafer handling end effectors, including material selection, contact pads, fork geometry, edge quality, vacuum features, mounting datums, inspection, and RFQ inputs.',
+  },
+  {
     title: 'Silicon Carbide Wafer Handling Components',
     href: '/posts/semiconductor-equipment/silicon-carbide-wafer-handling-components-semiconductor-manufacturing/',
     date: '2026-05-25',

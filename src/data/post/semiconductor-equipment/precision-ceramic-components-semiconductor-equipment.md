@@ -99,7 +99,7 @@ Useful RFQ details include:
 
 If the wafer-facing surface is critical, mark it directly on the drawing. If only small pads touch the wafer, do not apply tight flatness to the entire body unless that is truly needed. This reduces grinding, lapping, and inspection cost while keeping the functional contact under control.
 
-For SiC-specific blades, lift pins, support pads, and edge-contact parts, use the focused [silicon carbide wafer handling components guide](/posts/semiconductor-equipment/silicon-carbide-wafer-handling-components-semiconductor-manufacturing/) before defining contact zones, chip criteria, cleaning, and packaging.
+For SiC-specific blades, lift pins, support pads, and edge-contact parts, use the focused [silicon carbide wafer handling components guide](/posts/semiconductor-equipment/silicon-carbide-wafer-handling-components-semiconductor-manufacturing/) before defining contact zones, chip criteria, cleaning, and packaging. For material-neutral end effector geometry across alumina, SiC, silicon nitride, zirconia, and prototype ceramics, use the [ceramic end effectors for wafer handling guide](/posts/semiconductor-equipment/ceramic-end-effectors-wafer-handling-automation/).
 
 ### Vacuum Chucks And Suction Plates
 
