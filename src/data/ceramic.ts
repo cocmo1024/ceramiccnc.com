@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Precision Ceramic Rings for Process Chambers',
+    href: '/posts/semiconductor-equipment/precision-ceramic-rings-semiconductor-process-chambers/',
+    date: '2026-05-29',
+    image: '~/assets/images/ceramic/posts/precision-ceramic-rings-semiconductor-process-chambers.webp',
+    description:
+      'Engineering guide for precision ceramic rings in semiconductor process chambers, including SiC and alumina rings, lapped bands, ID/OD control, grooves, edge quality, cleaning, inspection, and RFQ inputs.',
+  },
+  {
     title: 'Machined Ceramic Vacuum Chuck Components',
     href: '/posts/semiconductor-equipment/machined-ceramic-vacuum-chuck-components-semiconductor-tools/',
     date: '2026-05-29',

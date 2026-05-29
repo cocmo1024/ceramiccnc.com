@@ -27,7 +27,7 @@ Semiconductor equipment uses technical ceramics because metals and polymers ofte
 
 A wafer support pin, ceramic end effector, vacuum chuck segment, SiC process ring, AlN heat spreader, alumina insulator, micro-hole gas plate, nozzle, spacer, or metrology fixture may look simple in CAD. In production, the risk usually sits in the interfaces: the wafer-facing surface, vacuum groove, lapped band, bore relationship, hole field, datum pad, chip-sensitive edge, thermal contact face, or plasma-exposed surface.
 
-This guide is written for engineering and sourcing teams preparing RFQs for custom precision ceramic components used in semiconductor equipment. It complements the broader [AI semiconductor equipment ceramic parts guide](/posts/semiconductor-equipment/ai-semiconductor-equipment-ceramic-parts/) by focusing on component families, material routes, machining risks, and inspection requirements.
+This guide is written for engineering and sourcing teams preparing RFQs for custom precision ceramic components used in semiconductor equipment. It complements the broader [AI semiconductor equipment ceramic parts guide](/posts/semiconductor-equipment/ai-semiconductor-equipment-ceramic-parts/) by focusing on component families, material routes, machining risks, and inspection requirements. For SiC and alumina process chamber rings, lapped annular bands, ID/OD control, groove edges, cleaning, and ring inspection evidence, use the [precision ceramic rings for semiconductor process chambers guide](/posts/semiconductor-equipment/precision-ceramic-rings-semiconductor-process-chambers/).
 
 ### Where Precision Ceramic Components Fit In Semiconductor Equipment
 

@@ -25,7 +25,7 @@ metadata:
 
 A vacuum chuck component may be a dense alumina suction plate, a porous ceramic insert, a silicon carbide chuck ring, a grooved support table, a vacuum manifold block, a chuck segment, or a metrology support component. In CAD, these parts can look clean and simple. In production, the risk sits in the working face, support condition, vacuum path, hole field, pore structure, lapped surfaces, and the way the finished ceramic part is protected after inspection.
 
-This article focuses on semiconductor tool RFQs for machined ceramic vacuum chuck components. For a broader chuck preparation checklist, use the [ceramic vacuum chuck RFQ guide](/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/). For the larger semiconductor component map, use the [precision ceramic components for semiconductor equipment guide](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/).
+This article focuses on semiconductor tool RFQs for machined ceramic vacuum chuck components. For a broader chuck preparation checklist, use the [ceramic vacuum chuck RFQ guide](/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/). For the larger semiconductor component map, use the [precision ceramic components for semiconductor equipment guide](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/). If the ring is a process chamber ring rather than a vacuum support or chuck component, use the [precision ceramic rings for semiconductor process chambers guide](/posts/semiconductor-equipment/precision-ceramic-rings-semiconductor-process-chambers/).
 
 ### What Counts As A Ceramic Vacuum Chuck Component
 
