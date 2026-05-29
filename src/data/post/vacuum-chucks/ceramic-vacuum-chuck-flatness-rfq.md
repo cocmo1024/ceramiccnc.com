@@ -15,7 +15,7 @@ metadata:
 
 Vacuum chucks and suction plates appear in wafer handling, inspection fixtures, precision positioning, electronics assembly, and clean manufacturing equipment. The ceramic material may be alumina, silicon carbide, porous ceramic, MACOR for prototypes, or another technical ceramic, but the material name alone does not define the quote.
 
-For the broader semiconductor component context around wafer handling parts, chucks, SiC rings, AlN plates, gas parts, and inspection evidence, see the [precision ceramic components for semiconductor equipment guide](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/).
+For the broader semiconductor component context around wafer handling parts, chucks, SiC rings, AlN plates, gas parts, and inspection evidence, see the [precision ceramic components for semiconductor equipment guide](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/). For semiconductor tool chuck plates, porous inserts, SiC rings, manifold blocks, and component-level RFQs, use the [machined ceramic vacuum chuck components guide](/posts/semiconductor-equipment/machined-ceramic-vacuum-chuck-components-semiconductor-tools/).
 
 The useful first question is:
 

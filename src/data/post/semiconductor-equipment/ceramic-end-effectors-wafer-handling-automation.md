@@ -159,7 +159,7 @@ For vacuum-related end effectors, specify:
 - Cleaning method and blockage inspection expectation.
 - Whether the suction face must be lapped after holes are made.
 
-If the design behaves like a chuck or suction plate, use the [ceramic vacuum chuck RFQ guide](/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/). For small holes, vent paths, and gas or vacuum features, use the [ceramic micro-hole machining RFQ guide](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/).
+If the design behaves like a chuck or suction plate, use the [ceramic vacuum chuck RFQ guide](/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/). For semiconductor tool chuck plates, porous inserts, and SiC support components, use the [machined ceramic vacuum chuck components guide](/posts/semiconductor-equipment/machined-ceramic-vacuum-chuck-components-semiconductor-tools/). For small holes, vent paths, and gas or vacuum features, use the [ceramic micro-hole machining RFQ guide](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/).
 
 ### Inspection, Cleaning, And Protected Packaging
 

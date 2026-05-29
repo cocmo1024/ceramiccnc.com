@@ -23,6 +23,8 @@ For SiC wafer handling blades, lift pins, support pads, and edge-contact parts, 
 
 For ceramic fork blades, grippers, vacuum picks, support fingers, and robot mounting datums across multiple ceramic materials, use the [ceramic end effectors for wafer handling guide](/posts/semiconductor-equipment/ceramic-end-effectors-wafer-handling-automation/).
 
+For dense and porous ceramic vacuum chuck plates, SiC chuck rings, hole fields, grooves, flatness maps, and vacuum evidence, use the [machined ceramic vacuum chuck components guide](/posts/semiconductor-equipment/machined-ceramic-vacuum-chuck-components-semiconductor-tools/).
+
 ### Why This Industry Is the Right SEO Target Now
 
 The demand signal is real. [SEMI reported in April 2026](https://www.semi.org/en/semi-press-release/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027) that worldwide 300mm fab equipment spending is expected to increase 18% to 133 billion USD in 2026 and another 14% to 151 billion USD in 2027, with AI chip demand named as a major driver. [KPMG's 2026 semiconductor outlook](https://kpmg.com/us/en/articles/2026/global-semiconductor-industry-outlook-2026.html) also reported AI as the leading revenue driver among surveyed semiconductor executives, followed by cloud and data centers.

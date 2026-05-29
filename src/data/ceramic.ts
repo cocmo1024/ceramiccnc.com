@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Machined Ceramic Vacuum Chuck Components',
+    href: '/posts/semiconductor-equipment/machined-ceramic-vacuum-chuck-components-semiconductor-tools/',
+    date: '2026-05-29',
+    image: '~/assets/images/ceramic/posts/machined-ceramic-vacuum-chuck-components-semiconductor-tools.webp',
+    description:
+      'Engineering guide for machined ceramic vacuum chuck components in semiconductor tools, including dense and porous chuck parts, flatness, hole fields, grooves, cleaning, inspection, and RFQ inputs.',
+  },
+  {
     title: 'Ceramic End Effectors for Wafer Handling and Automation',
     href: '/posts/semiconductor-equipment/ceramic-end-effectors-wafer-handling-automation/',
     date: '2026-05-27',

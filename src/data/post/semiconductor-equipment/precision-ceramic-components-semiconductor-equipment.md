@@ -105,7 +105,7 @@ For SiC-specific blades, lift pins, support pads, and edge-contact parts, use th
 
 Vacuum chucks and suction plates are among the highest-value semiconductor ceramic RFQs because they combine flatness, vacuum behavior, hole or pore geometry, cleaning, and inspection. Dense ceramic chucks with drilled holes are not reviewed the same way as porous ceramic chucks or hybrid chuck assemblies.
 
-For chuck-specific projects, use the dedicated [ceramic vacuum chuck RFQ guide](/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/). At minimum, the RFQ should define:
+For chuck-specific projects, use the dedicated [ceramic vacuum chuck RFQ guide](/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/). For semiconductor tool chuck plates, porous inserts, SiC chuck rings, support tables, and manifold blocks, use the [machined ceramic vacuum chuck components guide](/posts/semiconductor-equipment/machined-ceramic-vacuum-chuck-components-semiconductor-tools/). At minimum, the RFQ should define:
 
 - Dense ceramic, porous ceramic, grooved suction plate, or hybrid design.
 - Working surface and support condition.

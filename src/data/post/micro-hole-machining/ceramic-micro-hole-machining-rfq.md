@@ -18,7 +18,7 @@ Micro-holes appear in precision ceramic parts when flow, vacuum, dispensing, par
 
 This guide is written for engineers and sourcing teams preparing RFQs for alumina, zirconia, silicon carbide, silicon nitride, fused silica, MACOR, and other technical ceramic parts with micro-holes or small orifices. It is not a capability promise. It explains what to send so feasibility, price, timing, and inspection can be reviewed before confirmation.
 
-For semiconductor projects where micro-holes appear together with wafer handling, vacuum chucks, SiC rings, AlN thermal plates, and clean inspection requirements, use the [precision ceramic components for semiconductor equipment guide](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/) as the parent context.
+For semiconductor projects where micro-holes appear together with wafer handling, vacuum chucks, SiC rings, AlN thermal plates, and clean inspection requirements, use the [precision ceramic components for semiconductor equipment guide](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/) as the parent context. When the holes sit on a flatness-critical chuck surface, also use the [machined ceramic vacuum chuck components guide](/posts/semiconductor-equipment/machined-ceramic-vacuum-chuck-components-semiconductor-tools/).
 
 ### Why This Topic Deserves a Dedicated Article
 

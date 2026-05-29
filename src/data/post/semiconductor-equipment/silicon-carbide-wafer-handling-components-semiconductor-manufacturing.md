@@ -145,7 +145,7 @@ For holes and slots, specify:
 - Whether the hole sits near a wafer-contact surface.
 - Whether cleaning, blockage review, or flow testing is needed.
 
-If the part includes small gas or vacuum holes, the [ceramic micro-hole machining RFQ guide](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/) gives a more focused checklist. If the design is a chuck, suction plate, or vacuum support surface, use the [ceramic vacuum chuck RFQ guide](/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/) before treating the part as a simple plate.
+If the part includes small gas or vacuum holes, the [ceramic micro-hole machining RFQ guide](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/) gives a more focused checklist. If the design is a chuck, suction plate, or vacuum support surface, use the [ceramic vacuum chuck RFQ guide](/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/) and the [machined ceramic vacuum chuck components guide](/posts/semiconductor-equipment/machined-ceramic-vacuum-chuck-components-semiconductor-tools/) before treating the part as a simple plate.
 
 ### Edge Quality And Particle-Sensitive Zones
 
