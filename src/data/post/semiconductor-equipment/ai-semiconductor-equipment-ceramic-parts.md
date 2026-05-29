@@ -27,6 +27,8 @@ For dense and porous ceramic vacuum chuck plates, SiC chuck rings, hole fields, 
 
 For process chamber ceramic rings, SiC and alumina ring components, lapped annular bands, ID/OD control, groove edges, cleaning, and inspection evidence, use the [precision ceramic rings for semiconductor process chambers guide](/posts/semiconductor-equipment/precision-ceramic-rings-semiconductor-process-chambers/).
 
+For alumina insulating rings, AlN thermal insulators, feedthrough-adjacent sleeves, electrode spacers, creepage paths, plasma-adjacent edge quality, and deposition-tool cleaning requirements, use the [ceramic insulators for plasma etching and deposition equipment guide](/posts/semiconductor-equipment/ceramic-insulators-plasma-etching-deposition-equipment/).
+
 ### Why This Industry Is the Right SEO Target Now
 
 The demand signal is real. [SEMI reported in April 2026](https://www.semi.org/en/semi-press-release/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027) that worldwide 300mm fab equipment spending is expected to increase 18% to 133 billion USD in 2026 and another 14% to 151 billion USD in 2027, with AI chip demand named as a major driver. [KPMG's 2026 semiconductor outlook](https://kpmg.com/us/en/articles/2026/global-semiconductor-industry-outlook-2026.html) also reported AI as the leading revenue driver among surveyed semiconductor executives, followed by cloud and data centers.

@@ -28,7 +28,7 @@ Ceramic rings appear around process chambers, wafer support areas, plasma-adjace
 
 The search term is simple. The RFQ is not. A ring can be rejected because a lapped band is not flat enough under the agreed support condition, because the ID and OD are not concentric to the right datum, because a groove edge chips, because a mounting hole breaks out near a particle-sensitive face, or because cleaning and packaging do not protect the finished surface.
 
-This guide focuses on custom machined ceramic rings for semiconductor process chambers. For the wider equipment context, use the [precision ceramic components for semiconductor equipment guide](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/). For SiC material and hard-finishing risk, use the [silicon carbide ceramic machining guide](/posts/industrial-ceramic-machining/silicon-carbide-ceramic-machining-harsh-environment-applications/).
+This guide focuses on custom machined ceramic rings for semiconductor process chambers. For the wider equipment context, use the [precision ceramic components for semiconductor equipment guide](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/). When the ring functions as an electrical isolation part, heater-adjacent spacer, or plasma etch/deposition insulator, use the [ceramic insulators for plasma etching and deposition equipment guide](/posts/semiconductor-equipment/ceramic-insulators-plasma-etching-deposition-equipment/) alongside the ring drawing. For SiC material and hard-finishing risk, use the [silicon carbide ceramic machining guide](/posts/industrial-ceramic-machining/silicon-carbide-ceramic-machining-harsh-environment-applications/).
 
 ### What Counts As A Semiconductor Ceramic Ring
 

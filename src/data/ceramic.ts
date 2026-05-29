@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Ceramic Insulators for Plasma Etch and Deposition',
+    href: '/posts/semiconductor-equipment/ceramic-insulators-plasma-etching-deposition-equipment/',
+    date: '2026-05-29',
+    image: '~/assets/images/ceramic/posts/ceramic-insulators-plasma-etching-deposition-equipment.webp',
+    description:
+      'Engineering guide for ceramic insulators in plasma etching and deposition equipment, including alumina rings, AlN plates, sleeves, spacers, creepage paths, edge quality, cleaning, inspection, and RFQ inputs.',
+  },
+  {
     title: 'Precision Ceramic Rings for Process Chambers',
     href: '/posts/semiconductor-equipment/precision-ceramic-rings-semiconductor-process-chambers/',
     date: '2026-05-29',

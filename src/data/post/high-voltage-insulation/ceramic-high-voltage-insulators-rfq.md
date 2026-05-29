@@ -13,7 +13,7 @@ metadata:
 
 > A high-voltage ceramic insulator RFQ is controlled by electrical function, geometry, edge quality, surface condition, assembly load, and environment. Send voltage, creepage and clearance needs, material target, drawing, mating hardware, and inspection expectations before treating the material name as enough.
 
-High-voltage ceramic parts appear around power electronics, test fixtures, converters, vacuum hardware, plasma equipment, pulsed-power systems, sensors, and thermal assemblies. They may be alumina spacers, AlN plates, silicon nitride supports, zirconia sleeves, MACOR prototype fixtures, or SiC hardware where wear and temperature also matter.
+High-voltage ceramic parts appear around power electronics, test fixtures, converters, vacuum hardware, plasma equipment, pulsed-power systems, sensors, and thermal assemblies. They may be alumina spacers, AlN plates, silicon nitride supports, zirconia sleeves, MACOR prototype fixtures, or SiC hardware where wear and temperature also matter. For semiconductor plasma etch or deposition tools specifically, also use the [ceramic insulators for plasma etching and deposition equipment guide](/posts/semiconductor-equipment/ceramic-insulators-plasma-etching-deposition-equipment/) to connect insulation paths with chamber-adjacent cleaning, edge quality, thermal cycling, and inspection evidence.
 
 The useful first question is:
 
