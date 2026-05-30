@@ -65,6 +65,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
       'design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts',
       'tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process',
       'surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price',
+      'pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control',
       'micro-hole-machining/ceramic-micro-hole-machining-rfq',
       'semiconductor-equipment/precision-ceramic-nozzles-semiconductor-vacuum-equipment',
       'thin-wall-sleeves/ceramic-thin-wall-sleeve-bore-concentricity-rfq',
@@ -80,6 +81,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
       'Application-focused RFQ paths for wear parts, power electronics, vacuum hardware, sealing faces, high-voltage insulation, and repeatable industrial ceramic procurement.',
     postIds: [
       'industrial-ceramic-machining/industrial-ceramic-machining-wear-resistant-components',
+      'pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control',
       'power-electronics/ai-data-center-power-electronics-ceramic-machining',
       'lapped-seal-faces/ceramic-lapped-seal-faces-rfq',
       'vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq',
