@@ -29,6 +29,8 @@ For process chamber ceramic rings, SiC and alumina ring components, lapped annul
 
 For alumina insulating rings, AlN thermal insulators, feedthrough-adjacent sleeves, electrode spacers, creepage paths, plasma-adjacent edge quality, and deposition-tool cleaning requirements, use the [ceramic insulators for plasma etching and deposition equipment guide](/posts/semiconductor-equipment/ceramic-insulators-plasma-etching-deposition-equipment/).
 
+For AlN heat spreaders, heater-adjacent plates, insulating thermal spacers, ceramic carriers, clean packaging, and thermal-interface inspection evidence, use the [AlN ceramic parts for semiconductor thermal management guide](/posts/semiconductor-equipment/aluminum-nitride-ceramic-parts-semiconductor-thermal-management/).
+
 ### Why This Industry Is the Right SEO Target Now
 
 The demand signal is real. [SEMI reported in April 2026](https://www.semi.org/en/semi-press-release/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027) that worldwide 300mm fab equipment spending is expected to increase 18% to 133 billion USD in 2026 and another 14% to 151 billion USD in 2027, with AI chip demand named as a major driver. [KPMG's 2026 semiconductor outlook](https://kpmg.com/us/en/articles/2026/global-semiconductor-industry-outlook-2026.html) also reported AI as the leading revenue driver among surveyed semiconductor executives, followed by cloud and data centers.

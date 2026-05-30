@@ -581,6 +581,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'AlN Ceramic Parts for Semiconductor Thermal Management',
+    href: '/posts/semiconductor-equipment/aluminum-nitride-ceramic-parts-semiconductor-thermal-management/',
+    date: '2026-05-30',
+    image: '~/assets/images/ceramic/posts/aluminum-nitride-ceramic-parts-semiconductor-thermal-management.webp',
+    description:
+      'Precision machining case guide for AlN semiconductor thermal-management parts, including heat spreaders, heater-adjacent plates, insulating spacers, flatness, Ra, cleaning, packaging, inspection, and RFQ inputs.',
+  },
+  {
     title: 'Ceramic Insulators for Plasma Etch and Deposition',
     href: '/posts/semiconductor-equipment/ceramic-insulators-plasma-etching-deposition-equipment/',
     date: '2026-05-29',
