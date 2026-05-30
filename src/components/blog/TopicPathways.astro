@@ -1,0 +1,71 @@
+---
+import { articleTopicHubs, getArticleTopicHubsForPost } from '~/data/article-topic-hubs';
+import { findPostsByIds } from '~/utils/blog';
+import { getPermalink } from '~/utils/permalinks';
+
+export interface Props {
+  currentPostId?: string;
+  mode?: 'index' | 'post';
+}
+
+const { currentPostId = '', mode = 'post' } = Astro.props;
+const isIndexMode = mode === 'index';
+const maxLinksPerHub = isIndexMode ? 8 : 6;
+
+const selectedHubs = isIndexMode ? articleTopicHubs : getArticleTopicHubsForPost(currentPostId);
+const hubsWithPosts = (
+  await Promise.all(
+    selectedHubs.map(async (hub) => {
+      const postIds = hub.postIds.filter((postId) => postId !== currentPostId).slice(0, maxLinksPerHub);
+      const posts = await findPostsByIds(postIds);
+
+      return {
+        ...hub,
+        posts,
+      };
+    })
+  )
+).filter((hub) => hub.posts.length > 0);
+---
+
+{
+  hubsWithPosts.length > 0 ? (
+    <div class="not-prose my-10">
+      <div class="mb-6 max-w-3xl">
+        <p class="text-xs font-semibold uppercase tracking-[0.12em] text-secondary">Engineering pathways</p>
+        <h2 class="mt-2 text-2xl font-semibold tracking-tight text-slate-900 dark:text-white">
+          {isIndexMode ? 'Browse by RFQ intent and ceramic part family' : 'Continue through the relevant topic path'}
+        </h2>
+        <p class="mt-3 text-sm leading-6 text-muted dark:text-slate-400">
+          {isIndexMode
+            ? 'These article paths connect broad guides, material pages, application cases, and inspection-heavy RFQ topics with descriptive internal links.'
+            : 'Use these linked guides to move from this article into adjacent material, process, application, and RFQ preparation decisions.'}
+        </p>
+      </div>
+
+      <div class:list={['grid gap-4', isIndexMode ? 'lg:grid-cols-2' : 'md:grid-cols-2']}>
+        {hubsWithPosts.map((hub) => (
+          <article class="surface-panel p-5">
+            <h3 class="text-lg font-semibold leading-6 text-slate-900 dark:text-slate-100">{hub.title}</h3>
+            <p class="mt-2 text-sm leading-6 text-muted dark:text-slate-400">{hub.description}</p>
+            <ul class="mt-4 space-y-3">
+              {hub.posts.map((post) => (
+                <li>
+                  <a
+                    class="font-medium leading-6 text-primary underline-offset-4 transition duration-200 hover:underline dark:text-secondary"
+                    href={getPermalink(post.permalink, 'post')}
+                  >
+                    {post.title}
+                  </a>
+                  {isIndexMode && post.excerpt ? (
+                    <p class="mt-1 text-sm leading-6 text-muted dark:text-slate-400">{post.excerpt}</p>
+                  ) : null}
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </div>
+  ) : null
+}

@@ -321,6 +321,11 @@ const topicFamilies = [
   ['material', 'materials', 'alumina', 'zirconia', 'nitride', 'sic', 'macor'],
   ['rfq', 'specification', 'checklist', 'quote', 'acceptance', 'criteria'],
   ['inspection', 'metrology', 'cmm', 'ct', 'profile', 'roughness', 'density'],
+  ['semiconductor', 'wafer', 'chuck', 'plasma', 'deposition', 'cleanroom', 'process'],
+  ['thermal', 'aln', 'aluminum', 'nitride', 'heater', 'insulation', 'spreader'],
+  ['vacuum', 'porous', 'suction', 'groove', 'holes', 'flatness', 'cleaning'],
+  ['wear', 'seal', 'sealing', 'bearing', 'bushing', 'roller', 'valve'],
+  ['electrical', 'voltage', 'insulator', 'insulators', 'creepage', 'clearance'],
 ];
 
 const getPostTokens = (post: Post): Set<string> => {
