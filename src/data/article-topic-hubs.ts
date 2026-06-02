@@ -37,6 +37,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
       'semiconductor-equipment/precision-ceramic-rings-semiconductor-process-chambers',
       'semiconductor-equipment/ceramic-insulators-plasma-etching-deposition-equipment',
       'semiconductor-equipment/aluminum-nitride-ceramic-parts-semiconductor-thermal-management',
+      'high-purity-cleanroom/precision-ceramic-components-cleanroom-high-purity-manufacturing-systems',
     ],
   },
   {
@@ -65,7 +66,9 @@ export const articleTopicHubs: ArticleTopicHub[] = [
       'design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts',
       'tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process',
       'surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price',
+      'sensor-measurement-devices/precision-ceramic-components-sensors-measurement-devices',
       'pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control',
+      'high-purity-cleanroom/precision-ceramic-components-cleanroom-high-purity-manufacturing-systems',
       'micro-hole-machining/ceramic-micro-hole-machining-rfq',
       'semiconductor-equipment/precision-ceramic-nozzles-semiconductor-vacuum-equipment',
       'thin-wall-sleeves/ceramic-thin-wall-sleeve-bore-concentricity-rfq',
@@ -81,7 +84,9 @@ export const articleTopicHubs: ArticleTopicHub[] = [
       'Application-focused RFQ paths for wear parts, power electronics, vacuum hardware, sealing faces, high-voltage insulation, and repeatable industrial ceramic procurement.',
     postIds: [
       'industrial-ceramic-machining/industrial-ceramic-machining-wear-resistant-components',
+      'sensor-measurement-devices/precision-ceramic-components-sensors-measurement-devices',
       'pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control',
+      'high-purity-cleanroom/precision-ceramic-components-cleanroom-high-purity-manufacturing-systems',
       'power-electronics/ai-data-center-power-electronics-ceramic-machining',
       'lapped-seal-faces/ceramic-lapped-seal-faces-rfq',
       'vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq',

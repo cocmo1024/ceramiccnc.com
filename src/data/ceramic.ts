@@ -128,6 +128,31 @@ export const ceramicApplications = [
     ],
   },
   {
+    id: 'pump-valve-dispensing-ceramic-components',
+    title: 'Pump, Valve, and Dispensing Ceramic Components',
+    image: '~/assets/images/ceramic/application-11.webp',
+    alt: 'Ceramic plungers valve seats sleeves and dispensing inserts for fluid control',
+    description:
+      'Alumina and zirconia plungers, sleeves, valve seats, metering inserts, and dispensing-valve components are reviewed by cylindrical fit, sealing behavior, media compatibility, and inspection evidence.',
+    points: [
+      {
+        title: 'Cylindrical interfaces',
+        description:
+          'Plunger OD, sleeve ID, coaxiality, straightness, roundness, and sliding surface finish usually decide fit and leakage risk.',
+      },
+      {
+        title: 'Fluid-control details',
+        description:
+          'Media chemistry, abrasive particles, viscosity, pressure, cleaning method, and contamination limits affect material, finish, and packaging.',
+      },
+      {
+        title: 'RFQ evidence',
+        description:
+          'Surface roughness, roundness/profile checks, lapped seat notes, visual edge criteria, and protected packaging should match the functional risk.',
+      },
+    ],
+  },
+  {
     id: 'precision-flats-parallels-lapped-surfaces',
     title: 'Precision Flats, Parallels, and Lapped Surfaces',
     image: '~/assets/images/ceramic/application-6.webp',
@@ -258,7 +283,7 @@ export const ceramicApplications = [
     image: '~/assets/images/ceramic/application-11.webp',
     alt: 'Ceramic nozzles jets and flow orifices',
     description:
-      'Ceramic nozzles are reviewed by erosion resistance, orifice geometry, edge condition, and the flow or inspection evidence required by the application.',
+      'Ceramic nozzles, dispensing-valve inserts, and flow restrictors are reviewed by erosion resistance, orifice geometry, edge condition, and the flow or inspection evidence required by the application.',
     points: [
       {
         title: 'Feature controls',
@@ -380,6 +405,12 @@ export const ceramicApplications = [
 
 export const ceramicCapabilities = [
   {
+    title: 'Blank and preform route review',
+    description:
+      'Customer-supplied blanks, supplier-sourced stock, pressed preforms, molded shapes, and fired-state assumptions reviewed before final machining scope is quoted.',
+    icon: 'tabler:box',
+  },
+  {
     title: 'Post-sinter CNC machining',
     description:
       'Contour machining, slotting, pocketing, and datum preparation on fired ceramics where accessible features can be controlled.',
@@ -390,6 +421,12 @@ export const ceramicCapabilities = [
     description:
       'Flatness, parallelism, sealing faces, bores, and precision interfaces planned with allowance and controlled removal.',
     icon: 'tabler:diamond',
+  },
+  {
+    title: 'Precision bores and cylindrical interfaces',
+    description:
+      'Sleeves, plungers, valve parts, rods, pins, and coaxial fits reviewed for ID/OD grinding, honing, roundness, surface finish, and datum evidence.',
+    icon: 'tabler:cylinder',
   },
   {
     title: 'Micro-drilling and orifices',
@@ -488,6 +525,11 @@ export const ceramicFaqItems = [
       'Lead time is estimated after review of blank sourcing, customer-supplied material status, preform route, post-sinter grinding, lapping, polishing, micro-hole work, and metrology scope. Inspection often controls schedule for tight parts.',
   },
   {
+    title: 'What should be specified for ceramic plungers, sleeves, and pump parts?',
+    description:
+      'State the media, pressure or flow role, mating seal or sleeve, OD/ID fit, roundness, straightness, Ra, chamfer, cleaning, packaging, and inspection evidence. For dispensing or injection-pump parts, do not quote only by outside dimensions.',
+  },
+  {
     title: 'How should quotes from different suppliers be compared?',
     description:
       'Normalize material grade, route, datum scheme, tolerance map, Ra per functional face, inspection method, documentation, and packaging requirements. Low quotes often exclude finishing or evidence.',
@@ -580,6 +622,31 @@ export const ceramicFaqItems = [
 ];
 
 export const engineeringArticles = [
+  {
+    title: 'Ceramic Components for Sensors and Measurement',
+    href: '/posts/sensor-measurement-devices/precision-ceramic-components-sensors-measurement-devices/',
+    date: '2026-06-02',
+    image: '~/assets/images/ceramic/posts/precision-ceramic-components-sensors-measurement-devices.webp',
+    description:
+      'Precision machining case guide for ceramic sensor and measurement-device parts, including alumina diaphragms, zirconia sleeves, AlN spacers, Si3N4 pins, micro-flow cells, insulation, cleaning, inspection, and RFQ review.',
+  },
+  {
+    title: 'Cleanroom and High-Purity Ceramic Components',
+    href: '/posts/high-purity-cleanroom/precision-ceramic-components-cleanroom-high-purity-manufacturing-systems/',
+    date: '2026-05-31',
+    image:
+      '~/assets/images/ceramic/posts/precision-ceramic-components-cleanroom-high-purity-manufacturing-systems.webp',
+    description:
+      'Precision machining case guide for cleanroom and high-purity ceramic components, including alumina, zirconia, SiC, AlN, nozzles, sleeves, spacers, cleaning, packaging, inspection, and RFQ review.',
+  },
+  {
+    title: 'Precision Ceramic Pump and Valve Components',
+    href: '/posts/pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control/',
+    date: '2026-05-31',
+    image: '~/assets/images/ceramic/posts/precision-ceramic-pump-valve-components-corrosive-fluid-control.webp',
+    description:
+      'Engineering guide for ceramic plungers, sleeves, valve seats, seal faces, metering inserts, corrosive fluids, Ra, roundness, cleaning, inspection, and RFQ review.',
+  },
   {
     title: 'AlN Ceramic Parts for Semiconductor Thermal Management',
     href: '/posts/semiconductor-equipment/aluminum-nitride-ceramic-parts-semiconductor-thermal-management/',

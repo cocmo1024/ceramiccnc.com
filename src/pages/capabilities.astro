@@ -95,6 +95,33 @@ const capabilityShowcases = [
       },
     ],
   },
+  {
+    imagePosition: 'right' as const,
+    image: {
+      src: '~/assets/images/ceramic/application-13.webp',
+      alt: 'Precision ceramic cylindrical grinding and honing review for sleeves plungers and bores',
+    },
+    title: 'Cylindrical grinding, honing, and paired fits',
+    description:
+      'Round ceramic parts such as plungers, sleeves, rods, pins, bushings, and valve inserts need a process route that protects fit, leakage risk, sliding behavior, and inspection repeatability.',
+    points: [
+      {
+        title: 'Fit surfaces',
+        description:
+          'OD, ID, coaxiality, roundness, straightness, lead-in chamfers, and sliding faces should be separated from non-functional surfaces.',
+      },
+      {
+        title: 'Finish sequence',
+        description:
+          'Cylindrical grinding, honing, lapping, polishing, and edge conditioning must be sequenced around wall thickness and datum stability.',
+      },
+      {
+        title: 'Acceptance evidence',
+        description:
+          'Surface finish, profile or roundness checks, CMM datum dimensions, and protected packaging reduce fit and handling disputes.',
+      },
+    ],
+  },
 ];
 
 const capabilityGuideLinks = [
@@ -188,12 +215,32 @@ const capabilityGuideLinks = [
       href: '/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/',
     },
   },
+  {
+    title: 'Pump and valve component review',
+    description:
+      'Use this for ceramic plungers, sleeves, valve seats, seal faces, dosing parts, dispensing components, corrosion resistance, Ra, roundness, and leakage risk.',
+    icon: 'tabler:circles-relation',
+    callToAction: {
+      text: 'Read pump and valve guide',
+      href: '/posts/pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control/',
+    },
+  },
+  {
+    title: 'Thin-wall sleeve and bore review',
+    description:
+      'Use this for sleeve wall stability, ID/OD concentricity, cylindrical grinding, bore finish, edge quality, and inspection evidence.',
+    icon: 'tabler:cylinder',
+    callToAction: {
+      text: 'Read sleeve guide',
+      href: '/posts/thin-wall-sleeves/ceramic-thin-wall-sleeve-bore-concentricity-rfq/',
+    },
+  },
 ];
 
 const metadata = {
-  title: 'Ceramic CNC Machining Capabilities',
+  title: 'Ceramic CNC Machining Capabilities for Precision Ceramic Parts',
   description:
-    'Precision ceramic CNC, diamond grinding, lapping, micro-drilling, edge control, Ra, CMM, optical, profile, and inspection planning for advanced ceramic parts.',
+    'Ceramic CNC machining capabilities for precision ceramic parts: blank route review, diamond grinding, lapping, cylindrical grinding, honing, micro-drilling, edge control, Ra, CMM, optical, profile, and inspection planning.',
   openGraph: {
     images: [
       {
@@ -214,7 +261,7 @@ const metadata = {
       name: 'Ceramic CNC Machining, Diamond Grinding, and Inspection Capabilities',
       serviceType: 'Precision ceramic CNC machining capability review',
       description:
-        'Post-sinter ceramic machining, grinding, lapping, micro-drilling, edge quality, surface finish, and inspection planning for advanced ceramic components.',
+        'Post-sinter ceramic machining, blank route review, grinding, lapping, cylindrical interfaces, micro-drilling, edge quality, surface finish, and inspection planning for advanced ceramic components.',
       url: '/capabilities/',
       audienceType: 'Engineering and procurement teams sourcing precision ceramic components',
     }),
@@ -263,8 +310,8 @@ const metadata = {
     title="Review areas"
     stats={[
       { title: 'Ceramic material families', amount: '6+' },
-      { title: 'Application use cases', amount: '15' },
-      { title: 'Precision routes', amount: 'CNC / grind / lap' },
+      { title: 'Application use cases', amount: '16' },
+      { title: 'Precision routes', amount: 'CNC / grind / hone' },
       { title: 'Evidence options', amount: 'CMM / optical / Ra' },
     ]}
   />

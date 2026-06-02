@@ -1,6 +1,6 @@
 ---
-title: 'About Precision Ceramic CNC Machining Review'
-description: 'About CERAMIC CNC: precision ceramic CNC machining, grinding, lapping, micro-drilling, material review, and RFQ evaluation by Suzhou Como.'
+title: 'About CERAMIC CNC | Custom Ceramic CNC Machining RFQ Review'
+description: 'About CERAMIC CNC: custom ceramic CNC machining service, precision ceramic machining, grinding, lapping, micro-drilling, material review, and RFQ evaluation by Suzhou Como.'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
@@ -19,7 +19,7 @@ RFQs may involve alumina Al2O3, zirconia ZrO2, silicon nitride Si3N4, silicon ca
 
 ## Application Fit
 
-We commonly review parts for semiconductor and vacuum equipment, electrical insulation, sealing and valve hardware, wear components, nozzles, precision plates, research fixtures, and industrial OEM assemblies.
+We commonly review parts for semiconductor and vacuum equipment, electrical insulation, pump and dispensing hardware, sealing and valve components, wear components, nozzles, precision sleeves, ceramic plungers, precision plates, research fixtures, and industrial OEM assemblies.
 
 ## Send an RFQ
 

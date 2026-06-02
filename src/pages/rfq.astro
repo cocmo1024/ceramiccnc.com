@@ -23,8 +23,11 @@ Quantity:
 Target lead time:
 Critical dimensions, datums, and GD&T:
 Surface finish, flatness, or lapping requirements:
+Cylindrical fits, plungers, sleeves, or seal interfaces:
 Micro-holes, slots, thin walls, or edge-break requirements:
 Operating environment:
+Fluid, gas, slurry, dispensing media, or cleaning method:
+Cleanliness, packaging, or contamination limits:
 Inspection method, documentation, and certificate requirements:
 Acceptance criteria or sampling plan:
 Ship-to country/region:
@@ -79,7 +82,7 @@ const rfqShowcases = [
       {
         title: 'Functional requirements',
         description:
-          'Temperature, media chemistry, wear/erosion, vacuum, dielectric, thermal cycling, flow, sealing, or assembly constraints.',
+          'Temperature, media chemistry, wear/erosion, vacuum, dielectric, thermal cycling, flow, dispensing, sealing, or assembly constraints.',
       },
       {
         title: 'Acceptance evidence',
@@ -172,6 +175,16 @@ const rfqGuideLinks = [
     },
   },
   {
+    title: 'Pump and Valve Component RFQ Guide',
+    description:
+      'Use this for ceramic plungers, sleeves, valve seats, seal faces, metering inserts, dispensing parts, corrosive fluids, Ra, roundness, and leakage risk.',
+    icon: 'tabler:circles-relation',
+    callToAction: {
+      text: 'Read pump and valve guide',
+      href: '/posts/pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control/',
+    },
+  },
+  {
     title: 'Ceramic CNC Machining Buyer Guide',
     description:
       'Use this for procurement-level review of capability, cost drivers, lead time, inspection packets, and acceptance gates.',
@@ -186,7 +199,7 @@ const rfqGuideLinks = [
 const metadata = {
   title: 'Ceramic CNC RFQ Checklist',
   description:
-    'Ceramic CNC RFQ checklist for drawings, CAD, material grade, blank source, quantity, tolerances, micro-holes, surface finish, and inspection reports.',
+    'Ceramic CNC RFQ checklist for drawings, CAD, material grade, blank source, quantity, tolerances, pump and valve parts, plungers, sleeves, micro-holes, surface finish, and inspection reports.',
   openGraph: {
     images: [
       {
@@ -210,7 +223,8 @@ const metadata = {
       },
       {
         name: 'Functional requirements',
-        description: 'Temperature, media, wear, vacuum, insulation, flow, sealing, and assembly constraints.',
+        description:
+          'Temperature, media, wear, vacuum, insulation, flow, dispensing, sealing, and assembly constraints.',
         url: '/rfq/',
       },
       {
