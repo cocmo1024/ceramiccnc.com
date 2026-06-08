@@ -623,6 +623,23 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Alumina Ceramic Fixtures for SiC Power Modules',
+    href: '/posts/power-electronics/alumina-ceramic-inspection-fixtures-sic-power-module-assembly-case-study/',
+    date: '2026-06-06',
+    image:
+      '~/assets/images/ceramic/posts/alumina-ceramic-inspection-fixtures-sic-power-module-assembly-case-study.webp',
+    description:
+      'Precision machining case guide for alumina ceramic inspection fixtures used around SiC power module assembly, including datum pads, locating bores, support lands, insulation, clean packaging, and inspection evidence.',
+  },
+  {
+    title: 'Precision Ceramic Fixture Plate Case Study',
+    href: '/posts/automation-fixtures/precision-ceramic-fixture-plate-locating-pins-case-study/',
+    date: '2026-06-06',
+    image: '~/assets/images/ceramic/posts/precision-ceramic-fixture-plate-locating-pins-case-study.webp',
+    description:
+      'Precision machining case guide for alumina ceramic fixture plates, zirconia and Si3N4 locating pins, datum pads, bore position, edge quality, clean packaging, and inspection evidence.',
+  },
+  {
     title: 'Ceramic Components for Sensors and Measurement',
     href: '/posts/sensor-measurement-devices/precision-ceramic-components-sensors-measurement-devices/',
     date: '2026-06-02',
@@ -650,18 +667,18 @@ export const engineeringArticles = [
   {
     title: 'AlN Ceramic Parts for Semiconductor Thermal Management',
     href: '/posts/semiconductor-equipment/aluminum-nitride-ceramic-parts-semiconductor-thermal-management/',
-    date: '2026-05-30',
-    image: '~/assets/images/ceramic/posts/aluminum-nitride-ceramic-parts-semiconductor-thermal-management.webp',
+    date: '2026-06-08',
+    image: '~/assets/images/ceramic/posts/aluminum-nitride-ceramic-parts-semiconductor-thermal-management-2026.webp',
     description:
-      'Precision machining case guide for AlN semiconductor thermal-management parts, including heat spreaders, heater-adjacent plates, insulating spacers, flatness, Ra, cleaning, packaging, inspection, and RFQ inputs.',
+      'Engineering guide for AlN semiconductor thermal-management parts, including heat spreaders, heater-adjacent plates, flatness, Ra, cleaning, packaging, inspection evidence, and RFQ review.',
   },
   {
     title: 'Ceramic Insulators for Plasma Etch and Deposition',
     href: '/posts/semiconductor-equipment/ceramic-insulators-plasma-etching-deposition-equipment/',
-    date: '2026-05-29',
-    image: '~/assets/images/ceramic/posts/ceramic-insulators-plasma-etching-deposition-equipment.webp',
+    date: '2026-06-06',
+    image: '~/assets/images/ceramic/posts/ceramic-insulators-plasma-etching-deposition-equipment-2026.webp',
     description:
-      'Engineering guide for ceramic insulators in plasma etching and deposition equipment, including alumina rings, AlN plates, sleeves, spacers, creepage paths, edge quality, cleaning, inspection, and RFQ inputs.',
+      'SEO engineering guide for ceramic insulators in plasma etching and deposition equipment, including alumina rings, AlN plates, feedthrough sleeves, spacers, creepage paths, edge quality, cleaning, inspection, and RFQ inputs.',
   },
   {
     title: 'Precision Ceramic Rings for Process Chambers',
