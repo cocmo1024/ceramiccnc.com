@@ -650,11 +650,10 @@ export const engineeringArticles = [
   {
     title: 'Cleanroom and High-Purity Ceramic Components',
     href: '/posts/high-purity-cleanroom/precision-ceramic-components-cleanroom-high-purity-manufacturing-systems/',
-    date: '2026-05-31',
-    image:
-      '~/assets/images/ceramic/posts/precision-ceramic-components-cleanroom-high-purity-manufacturing-systems.webp',
+    date: '2026-06-17',
+    image: '~/assets/images/ceramic/posts/cleanroom-high-purity-ceramic-components-2026.webp',
     description:
-      'Precision machining case guide for cleanroom and high-purity ceramic components, including alumina, zirconia, SiC, AlN, nozzles, sleeves, spacers, cleaning, packaging, inspection, and RFQ review.',
+      'RFQ-ready guide for cleanroom and high-purity ceramic components, including alumina spacers, zirconia sleeves, SiC rings, AlN plates, nozzles, cleaning, packaging, inspection evidence, and qualification boundaries.',
   },
   {
     title: 'Precision Ceramic Pump and Valve Components',
