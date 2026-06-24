@@ -30,6 +30,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
     postIds: [
       'semiconductor-equipment/ai-semiconductor-equipment-ceramic-parts',
       'semiconductor-equipment/precision-ceramic-components-semiconductor-equipment',
+      'semiconductor-equipment/alumina-ceramic-parts-semiconductor-processing-equipment',
       'semiconductor-equipment/silicon-carbide-wafer-handling-components-semiconductor-manufacturing',
       'semiconductor-equipment/ceramic-end-effectors-wafer-handling-automation',
       'semiconductor-equipment/machined-ceramic-vacuum-chuck-components-semiconductor-tools',
@@ -48,6 +49,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
     postIds: [
       'materials-grade-selection/ceramic-material-selection-cnc-machining',
       'industrial-ceramic-machining/precision-machined-alumina-ceramic-parts-industrial-applications',
+      'semiconductor-equipment/alumina-ceramic-parts-semiconductor-processing-equipment',
       'industrial-ceramic-machining/zirconia-ceramic-machining-high-strength-precision-components',
       'industrial-ceramic-machining/silicon-nitride-ceramic-machining-structural-wear-parts',
       'industrial-ceramic-machining/silicon-carbide-ceramic-machining-harsh-environment-applications',
@@ -69,6 +71,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
       'automation-fixtures/precision-ceramic-fixture-plate-locating-pins-case-study',
       'power-electronics/alumina-ceramic-inspection-fixtures-sic-power-module-assembly-case-study',
       'semiconductor-equipment/ceramic-insulators-plasma-etching-deposition-equipment',
+      'semiconductor-equipment/alumina-ceramic-parts-semiconductor-processing-equipment',
       'semiconductor-equipment/aluminum-nitride-ceramic-parts-semiconductor-thermal-management',
       'sensor-measurement-devices/precision-ceramic-components-sensors-measurement-devices',
       'pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control',
