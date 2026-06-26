@@ -626,9 +626,9 @@ export const engineeringArticles = [
     title: 'Alumina Ceramic Parts for Semiconductor Equipment',
     href: '/posts/semiconductor-equipment/alumina-ceramic-parts-semiconductor-processing-equipment/',
     date: '2026-06-24',
-    image: '~/assets/images/ceramic/posts/alumina-ceramic-parts-semiconductor-processing-equipment-2026.webp',
+    image: '~/assets/images/ceramic/posts/alumina-semiconductor-equipment-machined-parts-rfq-20260626.webp',
     description:
-      'RFQ-ready guide for precision machined alumina ceramic parts in semiconductor processing equipment, including insulating rings, feedthrough sleeves, nozzles, gas plates, lapped faces, cleaning, packaging, and inspection evidence.',
+      'RFQ-ready guide for precision machined alumina ceramic parts in semiconductor processing equipment, including insulating rings, feedthrough sleeves, nozzles, gas plates, lapped faces, cleaning, packaging, supplier capability, and inspection evidence.',
   },
   {
     title: 'Alumina Ceramic Fixtures for SiC Power Modules',
