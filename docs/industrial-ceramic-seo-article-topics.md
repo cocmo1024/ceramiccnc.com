@@ -6,7 +6,13 @@ Facts: Core materials should cover Alumina, Zirconia, Silicon Nitride, Silicon C
 
 Inference: The website should not rely on generic terms such as "ceramic part." The stronger SEO structure is built around material pages, high-value equipment applications, precision features, inspection evidence, and purchase-intent component terms.
 
-Decision: Topics 1-5 are already published and remain locked. Topics 6-100 below are reordered by practical SEO value, RFQ value, and internal-link value. Future article requests should use this new sequence.
+Decision: Topics 1-20 are already published and remain locked as the foundation, material, and semiconductor equipment launch set. Topics 21-100 below remain valid as the numbered backlog, but broad long-term planning should also use `docs/industrial-ceramic-long-term-seo-roadmap.md` to avoid over-publishing one cluster and to expand into electrical, thermal, wear, fluid, automation, optical, laboratory, and medical-adjacent inquiry fields.
+
+Current status as of 2026-06-30:
+
+- Published and locked: 1-20.
+- Next numbered backlog if the user asks by sequence: 21-40.
+- Next cross-industry priority if the user asks for "next high-value article" without a number: follow `docs/industrial-ceramic-long-term-seo-roadmap.md`.
 
 ## Priority Article List
 
@@ -215,8 +221,8 @@ Decision: Topics 1-5 are already published and remain locked. Topics 6-100 below
 | New range | Cluster                                | Purpose                                                                              |
 | --------- | -------------------------------------- | ------------------------------------------------------------------------------------ |
 | 1-5       | Published foundation                   | Already published; keep sequence fixed                                               |
-| 6-10      | Core material pages                    | Complete the main material foundation for internal links                             |
-| 11-20     | Semiconductor equipment                | Highest-value industrial RFQ direction                                               |
+| 6-10      | Published core material pages          | Main material foundation for internal links                                          |
+| 11-20     | Published semiconductor equipment      | Strongest current industrial RFQ direction; avoid broad duplicate pages              |
 | 21-29     | Material choice and comparison         | Buyer decision pages with strong internal-link value                                 |
 | 30-40     | Process, tolerance, cost, RFQ          | Conversion support and engineering credibility                                       |
 | 41-50     | Electronics, insulation, thermal       | Strong Alumina / AlN / RF / sensor purchase intent                                   |
@@ -226,4 +232,6 @@ Decision: Topics 1-5 are already published and remain locked. Topics 6-100 below
 | 81-90     | Aerospace, vacuum, optical, scientific | High-precision small-batch inquiry coverage                                          |
 | 91-100    | Medical and laboratory                 | Useful but lower priority because claims and qualification wording need more caution |
 
-Recommended next action: publish topics 6-10 first, then 11-20, then 21-40.
+Recommended next numbered action: publish topics 21-40 when the user explicitly asks to continue by this numbered list.
+
+Recommended strategic action: if the user asks for high-value daily updates without a number, prioritize the cross-industry queue in `docs/industrial-ceramic-long-term-seo-roadmap.md` so the site can capture electrical insulation, power electronics, wear machinery, pump/valve, automation fixture, optical, laboratory, and medical-adjacent RFQs instead of becoming too semiconductor-heavy.
