@@ -20,6 +20,146 @@
     { "source": "/termst", "destination": "/terms/", "permanent": true },
     { "source": "/category/EngineeringGuide/", "destination": "/category/engineering-guide/", "permanent": true },
     { "source": "/category/EngineeringGuide", "destination": "/category/engineering-guide/", "permanent": true },
+    {
+      "source": "/category/materials-grade-selection/",
+      "destination": "/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/",
+      "permanent": true
+    },
+    {
+      "source": "/category/materials-grade-selection",
+      "destination": "/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/",
+      "permanent": true
+    },
+    {
+      "source": "/category/tolerances-gdt/",
+      "destination": "/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/",
+      "permanent": true
+    },
+    {
+      "source": "/category/tolerances-gdt",
+      "destination": "/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/",
+      "permanent": true
+    },
+    {
+      "source": "/category/surface-finish-functional/",
+      "destination": "/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/",
+      "permanent": true
+    },
+    {
+      "source": "/category/surface-finish-functional",
+      "destination": "/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/",
+      "permanent": true
+    },
+    {
+      "source": "/category/design-rules-dfm/",
+      "destination": "/posts/design-rules-dfm/ceramic-dfm-design-rules/",
+      "permanent": true
+    },
+    {
+      "source": "/category/design-rules-dfm",
+      "destination": "/posts/design-rules-dfm/ceramic-dfm-design-rules/",
+      "permanent": true
+    },
+    {
+      "source": "/category/process-routes-control/",
+      "destination": "/posts/process-routes-control/green-machining-vs-hard-machining/",
+      "permanent": true
+    },
+    {
+      "source": "/category/process-routes-control",
+      "destination": "/posts/process-routes-control/green-machining-vs-hard-machining/",
+      "permanent": true
+    },
+    {
+      "source": "/category/rfq-preparation/",
+      "destination": "/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/category/rfq-preparation",
+      "destination": "/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/tags/capability-map/",
+      "destination": "/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/",
+      "permanent": true
+    },
+    {
+      "source": "/tags/capability-map",
+      "destination": "/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/",
+      "permanent": true
+    },
+    {
+      "source": "/tags/tight-tolerances/",
+      "destination": "/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/",
+      "permanent": true
+    },
+    {
+      "source": "/tags/tight-tolerances",
+      "destination": "/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/",
+      "permanent": true
+    },
+    {
+      "source": "/tags/gdt/",
+      "destination": "/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/",
+      "permanent": true
+    },
+    {
+      "source": "/tags/gdt",
+      "destination": "/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/",
+      "permanent": true
+    },
+    {
+      "source": "/tags/surface-finish/",
+      "destination": "/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/",
+      "permanent": true
+    },
+    {
+      "source": "/tags/surface-finish",
+      "destination": "/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/",
+      "permanent": true
+    },
+    {
+      "source": "/tags/subsurface-damage/",
+      "destination": "/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/",
+      "permanent": true
+    },
+    {
+      "source": "/tags/subsurface-damage",
+      "destination": "/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/",
+      "permanent": true
+    },
+    {
+      "source": "/tags/design-rules/",
+      "destination": "/posts/design-rules-dfm/ceramic-dfm-design-rules/",
+      "permanent": true
+    },
+    {
+      "source": "/tags/design-rules",
+      "destination": "/posts/design-rules-dfm/ceramic-dfm-design-rules/",
+      "permanent": true
+    },
+    {
+      "source": "/tags/green-machining/",
+      "destination": "/posts/process-routes-control/green-machining-vs-hard-machining/",
+      "permanent": true
+    },
+    {
+      "source": "/tags/green-machining",
+      "destination": "/posts/process-routes-control/green-machining-vs-hard-machining/",
+      "permanent": true
+    },
+    {
+      "source": "/tags/diamond-grinding/",
+      "destination": "/posts/feasibility-process-choice/ceramic-machining-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/tags/diamond-grinding",
+      "destination": "/posts/feasibility-process-choice/ceramic-machining-guide/",
+      "permanent": true
+    },
     { "source": "/sitemap.xml", "destination": "/sitemap-index.xml", "permanent": true },
     {
       "source": "/copper-cold-plates/",

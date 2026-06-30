@@ -65,21 +65,12 @@ Primary pages:
 - `/terms/`
 - `/category/engineering-guide/`
 
-Current engineering articles:
+Current engineering article inventory:
 
-- `/posts/high-voltage-insulation/ceramic-high-voltage-insulators-rfq/`
-- `/posts/lapped-seal-faces/ceramic-lapped-seal-faces-rfq/`
-- `/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/`
-- `/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/`
-- `/posts/semiconductor-equipment/ai-semiconductor-equipment-ceramic-parts/`
-- `/posts/power-electronics/ai-data-center-power-electronics-ceramic-machining/`
-- `/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/`
-- `/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/`
-- `/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/`
-- `/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/`
-- `/posts/design-rules-dfm/ceramic-dfm-design-rules/`
-- `/posts/process-routes-control/green-machining-vs-hard-machining/`
-- `/posts/feasibility-process-choice/ceramic-machining-guide/`
+- The site has 38 engineering articles as of 2026-06-30.
+- Full article sources live under `src/data/post/`.
+- The live index is `/category/engineering-guide/`.
+- Long-term topic planning, duplicate-avoidance rules, Search Console baseline, and internal-link architecture live in `docs/industrial-ceramic-long-term-seo-roadmap.md`.
 
 ## Repository Map
 

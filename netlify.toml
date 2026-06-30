@@ -52,3 +52,143 @@
   from = "/category/EngineeringGuide/*"
   to = "/category/engineering-guide/"
   status = 301
+
+[[redirects]]
+  from = "/category/materials-grade-selection"
+  to = "/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/"
+  status = 301
+
+[[redirects]]
+  from = "/category/materials-grade-selection/*"
+  to = "/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/"
+  status = 301
+
+[[redirects]]
+  from = "/category/tolerances-gdt"
+  to = "/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/"
+  status = 301
+
+[[redirects]]
+  from = "/category/tolerances-gdt/*"
+  to = "/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/"
+  status = 301
+
+[[redirects]]
+  from = "/category/surface-finish-functional"
+  to = "/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/"
+  status = 301
+
+[[redirects]]
+  from = "/category/surface-finish-functional/*"
+  to = "/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/"
+  status = 301
+
+[[redirects]]
+  from = "/category/design-rules-dfm"
+  to = "/posts/design-rules-dfm/ceramic-dfm-design-rules/"
+  status = 301
+
+[[redirects]]
+  from = "/category/design-rules-dfm/*"
+  to = "/posts/design-rules-dfm/ceramic-dfm-design-rules/"
+  status = 301
+
+[[redirects]]
+  from = "/category/process-routes-control"
+  to = "/posts/process-routes-control/green-machining-vs-hard-machining/"
+  status = 301
+
+[[redirects]]
+  from = "/category/process-routes-control/*"
+  to = "/posts/process-routes-control/green-machining-vs-hard-machining/"
+  status = 301
+
+[[redirects]]
+  from = "/category/rfq-preparation"
+  to = "/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/"
+  status = 301
+
+[[redirects]]
+  from = "/category/rfq-preparation/*"
+  to = "/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/"
+  status = 301
+
+[[redirects]]
+  from = "/tags/capability-map"
+  to = "/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/"
+  status = 301
+
+[[redirects]]
+  from = "/tags/capability-map/*"
+  to = "/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/"
+  status = 301
+
+[[redirects]]
+  from = "/tags/tight-tolerances"
+  to = "/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/"
+  status = 301
+
+[[redirects]]
+  from = "/tags/tight-tolerances/*"
+  to = "/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/"
+  status = 301
+
+[[redirects]]
+  from = "/tags/gdt"
+  to = "/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/"
+  status = 301
+
+[[redirects]]
+  from = "/tags/gdt/*"
+  to = "/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/"
+  status = 301
+
+[[redirects]]
+  from = "/tags/surface-finish"
+  to = "/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/"
+  status = 301
+
+[[redirects]]
+  from = "/tags/surface-finish/*"
+  to = "/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/"
+  status = 301
+
+[[redirects]]
+  from = "/tags/subsurface-damage"
+  to = "/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/"
+  status = 301
+
+[[redirects]]
+  from = "/tags/subsurface-damage/*"
+  to = "/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/"
+  status = 301
+
+[[redirects]]
+  from = "/tags/design-rules"
+  to = "/posts/design-rules-dfm/ceramic-dfm-design-rules/"
+  status = 301
+
+[[redirects]]
+  from = "/tags/design-rules/*"
+  to = "/posts/design-rules-dfm/ceramic-dfm-design-rules/"
+  status = 301
+
+[[redirects]]
+  from = "/tags/green-machining"
+  to = "/posts/process-routes-control/green-machining-vs-hard-machining/"
+  status = 301
+
+[[redirects]]
+  from = "/tags/green-machining/*"
+  to = "/posts/process-routes-control/green-machining-vs-hard-machining/"
+  status = 301
+
+[[redirects]]
+  from = "/tags/diamond-grinding"
+  to = "/posts/feasibility-process-choice/ceramic-machining-guide/"
+  status = 301
+
+[[redirects]]
+  from = "/tags/diamond-grinding/*"
+  to = "/posts/feasibility-process-choice/ceramic-machining-guide/"
+  status = 301

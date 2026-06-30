@@ -125,6 +125,10 @@ npm run fix
 - After each new article batch, confirm generated output, sitemap, RSS, canonical URLs, title/description, image alt, and structured data.
 - Optional future work: deeper Search Console-based content planning after enough impressions and queries accumulate.
 - Optional future work: add reliable `lastmod` only if update dates are maintained truthfully.
+- Current long-term SEO operating plan:
+  - `docs/industrial-ceramic-long-term-seo-roadmap.md`
+  - Use it before selecting new articles when the user asks for long-term daily updates, broad keyword expansion, or cross-industry RFQ coverage.
+  - Keep tag/category archive pages disabled unless they become hand-built, high-value hub pages.
 
 ## Design Style
 

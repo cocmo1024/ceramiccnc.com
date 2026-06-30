@@ -10,7 +10,7 @@ export interface Props {
 
 const { currentPostId = '', mode = 'post' } = Astro.props;
 const isIndexMode = mode === 'index';
-const maxLinksPerHub = isIndexMode ? 8 : 6;
+const maxLinksPerHub = 6;
 
 const selectedHubs = isIndexMode ? articleTopicHubs : getArticleTopicHubsForPost(currentPostId);
 const hubsWithPosts = (

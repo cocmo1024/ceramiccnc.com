@@ -107,6 +107,74 @@ export const articleTopicHubs: ArticleTopicHub[] = [
       'rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist',
     ],
   },
+  {
+    id: 'power-electrical-thermal',
+    title: 'Power electronics, electrical insulation, and thermal parts',
+    description:
+      'Use this path for AlN, alumina, Si3N4, SiC, creepage, clearance, heat-spreader, fixture, and high-voltage ceramic RFQs driven by electrical or thermal constraints.',
+    postIds: [
+      'power-electronics/ai-data-center-power-electronics-ceramic-machining',
+      'power-electronics/alumina-ceramic-inspection-fixtures-sic-power-module-assembly-case-study',
+      'semiconductor-equipment/aluminum-nitride-ceramic-parts-semiconductor-thermal-management',
+      'industrial-ceramic-machining/aluminum-nitride-ceramic-machining-thermal-management-components',
+      'high-voltage-insulation/ceramic-high-voltage-insulators-rfq',
+      'industrial-ceramic-machining/precision-machined-alumina-ceramic-parts-industrial-applications',
+      'industrial-ceramic-machining/silicon-nitride-ceramic-machining-structural-wear-parts',
+      'materials-grade-selection/ceramic-material-selection-cnc-machining',
+      'rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist',
+    ],
+  },
+  {
+    id: 'wear-fluid-chemical',
+    title: 'Wear, pump, valve, fluid, and chemical ceramic parts',
+    description:
+      'Component searches for bushings, seal faces, nozzles, sleeves, valve parts, pump hardware, abrasive media, and corrosive-fluid ceramic machining decisions.',
+    postIds: [
+      'industrial-ceramic-machining/industrial-ceramic-machining-wear-resistant-components',
+      'pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control',
+      'lapped-seal-faces/ceramic-lapped-seal-faces-rfq',
+      'industrial-ceramic-machining/silicon-carbide-ceramic-machining-harsh-environment-applications',
+      'industrial-ceramic-machining/silicon-nitride-ceramic-machining-structural-wear-parts',
+      'industrial-ceramic-machining/zirconia-ceramic-machining-high-strength-precision-components',
+      'micro-hole-machining/ceramic-micro-hole-machining-rfq',
+      'semiconductor-equipment/precision-ceramic-nozzles-semiconductor-vacuum-equipment',
+      'surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price',
+    ],
+  },
+  {
+    id: 'automation-fixtures-metrology',
+    title: 'Automation, fixtures, locating features, and metrology',
+    description:
+      'Precision fixture plates, locating pins, inspection nests, sensor holders, robotic handling parts, datum surfaces, and repeatable production tooling RFQs.',
+    postIds: [
+      'automation-fixtures/precision-ceramic-fixture-plate-locating-pins-case-study',
+      'power-electronics/alumina-ceramic-inspection-fixtures-sic-power-module-assembly-case-study',
+      'sensor-measurement-devices/precision-ceramic-components-sensors-measurement-devices',
+      'semiconductor-equipment/ceramic-end-effectors-wafer-handling-automation',
+      'tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process',
+      'design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts',
+      'thin-wall-sleeves/ceramic-thin-wall-sleeve-bore-concentricity-rfq',
+      'surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price',
+      'rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist',
+    ],
+  },
+  {
+    id: 'vacuum-optical-lab',
+    title: 'Vacuum, optical, cleanroom, sensor, and laboratory paths',
+    description:
+      'High-purity and small-batch precision ceramic RFQs where vacuum compatibility, clean packaging, lapped faces, bores, sensor geometry, or optical-adjacent mounting surfaces matter.',
+    postIds: [
+      'high-purity-cleanroom/precision-ceramic-components-cleanroom-high-purity-manufacturing-systems',
+      'vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq',
+      'high-voltage-insulation/ceramic-high-voltage-insulators-rfq',
+      'sensor-measurement-devices/precision-ceramic-components-sensors-measurement-devices',
+      'industrial-ceramic-machining/macor-machinable-glass-ceramic-parts-applications-design-guide',
+      'industrial-ceramic-machining/boron-nitride-ceramic-machining-high-temperature-insulation-parts',
+      'lapped-seal-faces/ceramic-lapped-seal-faces-rfq',
+      'micro-hole-machining/ceramic-micro-hole-machining-rfq',
+      'materials-grade-selection/ceramic-material-selection-cnc-machining',
+    ],
+  },
 ];
 
 export const getArticleTopicHubsForPost = (postId: string, maxHubs = 2): ArticleTopicHub[] => {

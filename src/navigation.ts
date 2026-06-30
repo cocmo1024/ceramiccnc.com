@@ -32,6 +32,14 @@ export const headerData = {
           text: 'DFM design rules',
           href: getPermalink('/posts/design-rules-dfm/ceramic-dfm-design-rules'),
         },
+        {
+          text: 'Material selection',
+          href: getPermalink('/posts/materials-grade-selection/ceramic-material-selection-cnc-machining'),
+        },
+        {
+          text: 'RFQ checklist',
+          href: getPermalink('/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist'),
+        },
       ],
     },
     {
@@ -72,6 +80,14 @@ export const footerData = {
         {
           text: 'DFM design rules',
           href: getPermalink('/posts/design-rules-dfm/ceramic-dfm-design-rules'),
+        },
+        {
+          text: 'Material selection guide',
+          href: getPermalink('/posts/materials-grade-selection/ceramic-material-selection-cnc-machining'),
+        },
+        {
+          text: 'RFQ checklist',
+          href: getPermalink('/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist'),
         },
       ],
     },

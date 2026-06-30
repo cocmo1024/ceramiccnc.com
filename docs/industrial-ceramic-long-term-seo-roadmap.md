@@ -56,6 +56,25 @@ New content should add one of these:
 - A new material-vs-application decision.
 - A new RFQ conversion path.
 
+## Search Console Baseline
+
+Source file reviewed locally: `C:\Users\79211\Downloads\ceramiccnc.com-Performance-on-Search-2026-05-31.xlsx`.
+
+The export covers the previous three months ending 2026-05-31. It is still early-stage data, but it gives useful direction:
+
+- Query sheet: 16 visible query rows, 132 visible impressions, 0 visible clicks. Page sheet shows 2 clicks, which likely reflects Google Search Console query anonymization or privacy filtering.
+- Main query exposure is already aligned with the site positioning: `ceramic cnc machining`, `cnc ceramic machining`, `precision ceramic machining`, `ceramic cnc`, `ceramic machining`, `advanced ceramic machining`, and `custom ceramic machining`.
+- The buyer guide already has strong early quality signal: `/posts/feasibility-process-choice/ceramic-machining-guide/` appeared with 58 impressions and average position 6.95 in the page report.
+- The SiC wafer-handling article also has a strong early signal: `/posts/semiconductor-equipment/silicon-carbide-wafer-handling-components-semiconductor-manufacturing/` appeared with 15 impressions and average position 7.87.
+- Weakness: material-specific, component-specific, and application-specific long-tail query exposure is still thin. Only isolated signals appeared for `silicon carbide wafer` and `zirconia ceramic machining`.
+- Risk: `/about/`, `/privacy/`, historical `/category/.../`, and `/tags/.../` URLs have appeared in Search Console. The strategy should keep low-value archives disabled and route old thin URLs toward authoritative articles.
+
+Decision from this baseline:
+
+- Keep the core positioning because Google is already recognizing the site as a ceramic CNC machining property.
+- Build more long-tail pages around materials, components, application fields, tolerances, surface quality, cleaning, packaging, and RFQ evidence.
+- Do not re-enable broad tag or category archive pages just to create more indexable URLs. Indexable growth should come from high-quality articles and topic-pathway links.
+
 ## External Demand Signals
 
 Use these as relevance signals, not filler. Every trend reference must lead back to ceramic machining, drawings, inspection, and RFQ inputs.
@@ -63,7 +82,8 @@ Use these as relevance signals, not filler. Every trend reference must lead back
 - Semiconductor equipment remains the strongest near-term commercial lane. SEMI reported that global 300mm fab equipment spending is expected to rise 18% to $133 billion in 2026 and 14% to $151 billion in 2027, with AI chip demand and regional capacity investment as drivers: <https://www.semi.org/en/semi-press-release/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027>
 - Memory, HBM, advanced-node, and regional capacity investments are long-term support signals. SEMI also projects strong 2027-2029 logic/micro and memory investment, including DRAM and 3D NAND spending, with HBM tied to AI training and inference demand: <https://www.semi.org/en/semi-press-release/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027>
 - Advanced packaging, HBM, test, and assembly equipment create adjacent demand for precision fixtures, ceramic insulators, vacuum parts, clean handling parts, and metrology components. SEMI reported $135.1 billion in 2025 global semiconductor equipment sales, with test equipment billings up 55% year over year and assembly/packaging equipment sales up 21%: <https://www.semi.org/en/SEMI-Reports-Global-Semiconductor-Equipment-Billings-Reached-135-Billion-in-2025>
-- Power SiC and GaN remain relevant for EVs, chargers, AI data centers, and power conversion. Yole's 2026 power SiC/GaN monitor points toward long-term device market growth: <https://www.yolegroup.com/product/quarterly-monitor/power-sicgan-compound-semiconductor-market-monitor/>
+- Power SiC and GaN remain relevant for EVs, chargers, AI data centers, and power conversion. Yole's Q1-2026 power SiC/GaN monitor projects power SiC and GaN device markets reaching $11 billion and $3.4 billion by 2031: <https://www.yolegroup.com/product/quarterly-monitor/power-sicgan-compound-semiconductor-market-monitor/>
+- Factory automation and industrial robot deployment support long-tail demand for ceramic grippers, locating pins, guide rails, wear strips, inspection fixtures, and metrology nests. IFR's World Robotics 2025 statistics reported 542,000 industrial robots installed in 2024, with annual installations above 500,000 for the fourth straight year: <https://ifr.org/>
 - Aerospace and extreme-environment ceramics should be treated carefully. NASA materials work shows continued relevance of high-temperature materials, ceramic matrix composites, and extreme-environment applications, but CERAMIC CNC articles should focus on machinable fixtures, mounts, insulators, sensor holders, and vacuum hardware rather than claiming CMC manufacturing capability: <https://techport.nasa.gov/projects/156339>
 - Medical and dental ceramics are useful but require cautious wording. FDA-recognized standards and device controls show that medical ceramic topics must avoid implying device approval or clinical performance; content should focus on non-implant machining considerations, supplier inputs, documentation, and customer qualification boundaries: <https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfstandards/detail.cfm?standard__identification_no=35632>
 - Hydrogen, fuel-cell, electrochemical, corrosive-fluid, and high-purity gas systems can support chemical-resistant ceramic component topics. Keep the angle on machined insulators, sleeves, seal faces, spacers, flow components, and inspection evidence, not broad energy-market commentary.
@@ -87,6 +107,72 @@ Lower-priority or risky gaps:
 - Pure material encyclopedia pages with no RFQ route.
 - Medical implant performance claims.
 - Aerospace CMC manufacturing claims outside the site's machining scope.
+
+## Mass Keyword Expansion System
+
+The site should become a large keyword-capture property by multiplying useful RFQ decisions, not by publishing thin variants.
+
+Each new article should be built from this four-part formula:
+
+```text
+material or material family + component family + application field + acceptance / inspection problem
+```
+
+Examples:
+
+- Alumina + insulating sleeve / spacer / standoff + high-voltage electronics + creepage, clearance, bore fit, edge radius.
+- Aluminum nitride + heat spreader / substrate / spacer + SiC or GaN power module + flatness, thickness, Ra, handling, cleaning.
+- Silicon carbide + wear plate / seal ring / nozzle + slurry, pump, wafer handling, abrasive fluid + lapping, edge chips, roundness, hole quality.
+- Zirconia + plunger / pin / sleeve + metering pump, precision mechanism, medical-adjacent device + OD finish, concentricity, wear surface, inspection.
+- Silicon nitride + roller / bushing / shaft + automation, high-speed mechanism + roundness, surface finish, counterface, thermal shock.
+- Macor + prototype fixture / insulator / optical mount + laboratory or aerospace prototype + ordinary machining limits, transition to production ceramic.
+- Boron nitride + nozzle / insulator / spacer + high-temperature or molten-metal equipment + machinability, fragility, thermal exposure, drawing review.
+
+Long-tail keyword dimensions to rotate:
+
+| Dimension   | Examples to use in titles and H2s                                                                                 |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- |
+| Material    | alumina, zirconia, silicon nitride, silicon carbide, aluminum nitride, Macor, boron nitride                       |
+| Component   | insulator, bushing, sleeve, shaft, roller, seal face, valve seat, nozzle, manifold, guide rail, locating pin      |
+| Application | semiconductor, power electronics, RF, vacuum, chemical processing, automation, packaging machinery, laboratory    |
+| Feature     | micro-holes, thin walls, lapped faces, flatness, bores, slots, datum pads, edge chips, creepage, clearance        |
+| Evidence    | CMM report, optical inspection, Ra, flatness report, cleaning requirement, packaging requirement, functional face |
+
+Do not create pages for every possible combination. Publish only when the combination produces a real buyer decision and at least five natural internal links.
+
+## On-Site Internal-Link Architecture
+
+The internal-link system should use three layers:
+
+1. Global anchors:
+   - Homepage.
+   - Applications.
+   - Capabilities.
+   - Materials.
+   - RFQ.
+   - Engineering Guide.
+
+2. Authority anchors:
+   - Buyer guide.
+   - RFQ checklist.
+   - Material selection.
+   - DFM.
+   - Tolerance map.
+   - Surface finish / subsurface damage.
+
+3. Cluster anchors:
+   - Semiconductor equipment.
+   - Power electronics / electrical / thermal.
+   - Wear / pump / valve / fluid / chemical.
+   - Automation / fixtures / metrology.
+   - Vacuum / optical / cleanroom / laboratory.
+
+Implementation notes:
+
+- `src/data/article-topic-hubs.ts` is the controlled map for cross-article topic pathways.
+- `src/utils/blog.ts` controls related-post scoring. Keep adding precise topic families when new clusters are published.
+- Keep tag and broad category archive pages disabled unless they become hand-built hub pages with strong original copy.
+- Redirect historical thin category/tag URLs to the closest authoritative article instead of letting them dilute crawl quality.
 
 ## Next Incremental Article Priorities
 

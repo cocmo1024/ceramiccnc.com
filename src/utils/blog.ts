@@ -335,7 +335,20 @@ const topicFamilies = [
   ['rfq', 'specification', 'checklist', 'quote', 'acceptance', 'criteria'],
   ['inspection', 'metrology', 'cmm', 'ct', 'profile', 'roughness', 'density'],
   ['semiconductor', 'wafer', 'chuck', 'plasma', 'deposition', 'cleanroom', 'process'],
-  ['thermal', 'aln', 'aluminum', 'nitride', 'heater', 'insulation', 'spreader'],
+  [
+    'thermal',
+    'aln',
+    'aluminum',
+    'nitride',
+    'heater',
+    'insulation',
+    'spreader',
+    'heat',
+    'power',
+    'module',
+    'modules',
+    'electronics',
+  ],
   ['vacuum', 'porous', 'suction', 'flow', 'dispensing', 'groove', 'holes', 'flatness', 'cleaning'],
   [
     'wear',
@@ -358,7 +371,11 @@ const topicFamilies = [
     'roller',
   ],
   ['fluid', 'fluids', 'chemical', 'corrosive', 'abrasive', 'slurry', 'media', 'flow'],
-  ['electrical', 'voltage', 'insulator', 'insulators', 'creepage', 'clearance'],
+  ['electrical', 'voltage', 'insulator', 'insulators', 'creepage', 'clearance', 'feedthrough', 'feedthroughs', 'rf'],
+  ['fixture', 'fixtures', 'locating', 'pin', 'pins', 'datum', 'datums', 'metrology', 'automation', 'gripper'],
+  ['optical', 'laser', 'laboratory', 'analytical', 'sensor', 'sensors', 'measurement', 'mount', 'mounts'],
+  ['cleanroom', 'purity', 'packaging', 'contamination', 'cleaning', 'vacuum'],
+  ['medical', 'device', 'devices', 'dental', 'qualification', 'documentation'],
 ];
 
 const getPostTokens = (post: Post): Set<string> => {
