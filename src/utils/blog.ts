@@ -5,7 +5,22 @@ import type { Post } from '~/types';
 import { APP_BLOG } from 'astrowind:config';
 import { cleanSlug, trimSlash, BLOG_BASE, POST_PERMALINK_PATTERN, CATEGORY_BASE, TAG_BASE } from './permalinks';
 
-const uppercaseTerms = new Set(['ai', 'al2o3', 'am', 'bn', 'cnc', 'ct', 'dfm', 'gd&t', 'macor', 'rf', 'rfq', 'sic']);
+const uppercaseTerms = new Set([
+  'ai',
+  'al2o3',
+  'aln',
+  'am',
+  'bn',
+  'cnc',
+  'ct',
+  'dfm',
+  'gan',
+  'gd&t',
+  'macor',
+  'rf',
+  'rfq',
+  'sic',
+]);
 const DEFAULT_POST_AUTHOR = 'CERAMIC CNC Engineering';
 
 const normalizeTaxonomyTitle = (value: string): string =>
@@ -343,11 +358,18 @@ const topicFamilies = [
     'heater',
     'insulation',
     'spreader',
+    'spreaders',
     'heat',
+    'heatsink',
+    'heatsinks',
+    'interface',
+    'interfaces',
     'power',
     'module',
     'modules',
     'electronics',
+    'gan',
+    'sic',
   ],
   ['vacuum', 'porous', 'suction', 'flow', 'dispensing', 'groove', 'holes', 'flatness', 'cleaning'],
   [
