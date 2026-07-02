@@ -11,6 +11,7 @@ Decision: Topics 1-20 are already published and remain locked as the foundation,
 Current status as of 2026-06-30:
 
 - Published and locked: 1-20.
+- Strategic cross-industry articles already published outside the old numbered sequence: 41.
 - Next numbered backlog if the user asks by sequence: 21-40.
 - Next cross-industry priority if the user asks for "next high-value article" without a number: follow `docs/industrial-ceramic-long-term-seo-roadmap.md`.
 
@@ -96,7 +97,7 @@ Current status as of 2026-06-30:
 
 40. Industrial Ceramic Machining Applications: From Semiconductors to Automation
 
-41. Alumina Ceramic Insulators for Electrical and Electronic Applications
+41. Published: Alumina Ceramic Insulators for Electrical and Electronic Applications
 
 42. Aluminum Nitride Heat Spreaders for Power Electronics
 

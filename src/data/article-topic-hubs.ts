@@ -49,6 +49,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
     postIds: [
       'materials-grade-selection/ceramic-material-selection-cnc-machining',
       'industrial-ceramic-machining/precision-machined-alumina-ceramic-parts-industrial-applications',
+      'electrical-insulation/alumina-ceramic-insulators-electrical-electronic-applications',
       'semiconductor-equipment/alumina-ceramic-parts-semiconductor-processing-equipment',
       'industrial-ceramic-machining/zirconia-ceramic-machining-high-strength-precision-components',
       'industrial-ceramic-machining/silicon-nitride-ceramic-machining-structural-wear-parts',
@@ -71,6 +72,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
       'automation-fixtures/precision-ceramic-fixture-plate-locating-pins-case-study',
       'power-electronics/alumina-ceramic-inspection-fixtures-sic-power-module-assembly-case-study',
       'semiconductor-equipment/ceramic-insulators-plasma-etching-deposition-equipment',
+      'electrical-insulation/alumina-ceramic-insulators-electrical-electronic-applications',
       'semiconductor-equipment/alumina-ceramic-parts-semiconductor-processing-equipment',
       'semiconductor-equipment/aluminum-nitride-ceramic-parts-semiconductor-thermal-management',
       'sensor-measurement-devices/precision-ceramic-components-sensors-measurement-devices',
@@ -98,6 +100,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
       'high-purity-cleanroom/precision-ceramic-components-cleanroom-high-purity-manufacturing-systems',
       'power-electronics/ai-data-center-power-electronics-ceramic-machining',
       'semiconductor-equipment/ceramic-insulators-plasma-etching-deposition-equipment',
+      'electrical-insulation/alumina-ceramic-insulators-electrical-electronic-applications',
       'semiconductor-equipment/aluminum-nitride-ceramic-parts-semiconductor-thermal-management',
       'lapped-seal-faces/ceramic-lapped-seal-faces-rfq',
       'vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq',
@@ -115,6 +118,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
     postIds: [
       'power-electronics/ai-data-center-power-electronics-ceramic-machining',
       'power-electronics/alumina-ceramic-inspection-fixtures-sic-power-module-assembly-case-study',
+      'electrical-insulation/alumina-ceramic-insulators-electrical-electronic-applications',
       'semiconductor-equipment/aluminum-nitride-ceramic-parts-semiconductor-thermal-management',
       'industrial-ceramic-machining/aluminum-nitride-ceramic-machining-thermal-management-components',
       'high-voltage-insulation/ceramic-high-voltage-insulators-rfq',

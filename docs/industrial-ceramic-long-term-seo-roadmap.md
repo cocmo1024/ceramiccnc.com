@@ -1,6 +1,6 @@
 # Industrial Ceramic Long-Term SEO Roadmap
 
-Updated: 2026-06-30
+Updated: 2026-07-02
 
 ## Business Positioning
 
@@ -18,7 +18,7 @@ The site should not drift into broad material science, pottery, ceramic AM, gene
 
 ## Current Inventory
 
-As of this update, the site has 38 engineering articles.
+As of this update, the site has 39 engineering articles.
 
 Inventory by content folder:
 
@@ -28,6 +28,7 @@ Inventory by content folder:
 | `industrial-ceramic-machining` |             9 | Core material and machining foundation                                                             |
 | `power-electronics`            |             2 | Started, but still underbuilt for AI data center, SiC/GaN, thermal interface searches              |
 | `design-rules-dfm`             |             2 | Strong foundation; use as internal link support                                                    |
+| `electrical-insulation`        |             1 | Started with alumina electrical and electronic insulator RFQ coverage                              |
 | Feature-specific folders       |             8 | Micro-holes, thin walls, lapped faces, vacuum chuck, high voltage, tolerances, surface finish, RFQ |
 | Application-specific folders   |             7 | Automation fixtures, pump/valve, sensors, cleanroom, materials, process route, buyer guide         |
 
@@ -66,7 +67,7 @@ The export covers the previous three months ending 2026-05-31. It is still early
 - Main query exposure is already aligned with the site positioning: `ceramic cnc machining`, `cnc ceramic machining`, `precision ceramic machining`, `ceramic cnc`, `ceramic machining`, `advanced ceramic machining`, and `custom ceramic machining`.
 - The buyer guide already has strong early quality signal: `/posts/feasibility-process-choice/ceramic-machining-guide/` appeared with 58 impressions and average position 6.95 in the page report.
 - The SiC wafer-handling article also has a strong early signal: `/posts/semiconductor-equipment/silicon-carbide-wafer-handling-components-semiconductor-manufacturing/` appeared with 15 impressions and average position 7.87.
-- Weakness: material-specific, component-specific, and application-specific long-tail query exposure is still thin. Only isolated signals appeared for `silicon carbide wafer` and `zirconia ceramic machining`.
+- Weakness: material-specific, component-specific, and application-specific long-tail query exposure is still thin. Only isolated signals appeared for `silicon carbide wafer` and `zirconia ceramic machining`. The 2026-07-02 alumina electrical insulator article starts the electrical-insulation long-tail cluster.
 - Risk: `/about/`, `/privacy/`, historical `/category/.../`, and `/tags/.../` URLs have appeared in Search Console. The strategy should keep low-value archives disabled and route old thin URLs toward authoritative articles.
 
 Decision from this baseline:
@@ -178,28 +179,28 @@ Implementation notes:
 
 These are the strongest next topics because they add missing application coverage and connect naturally to existing internal links.
 
-| Priority | Proposed article title                                                   | Primary RFQ intent                                                                   | Must link to                                                       |
-| -------: | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------ |
-|        1 | Alumina Ceramic Insulators for Electrical and Electronic Applications    | Electrical insulation parts, standoffs, sleeves, spacers, feedthrough-adjacent parts | Alumina page, high-voltage guide, RFQ checklist                    |
-|        2 | Aluminum Nitride Heat Spreaders for Power Electronics                    | AI data center, SiC module, thermal interface, flatness, Ra                          | AlN machining page, AlN semiconductor page, power electronics case |
-|        3 | Ceramic Feedthrough Insulators for Vacuum and Electrical Systems         | Vacuum, high voltage, bore fit, sealing interface, creepage                          | Vacuum chuck guide, high-voltage guide, thin-wall sleeve guide     |
-|        4 | Machined Ceramic Plates for RF and Microwave Applications                | RF windows, insulating plates, flatness, dielectric spacing, surface finish          | Material selection, tolerance map, surface finish                  |
-|        5 | Wear-Resistant Ceramic Bushings for Industrial Machinery                 | Direct component search, wear, ID/OD, roundness, Ra                                  | Wear overview, thin-wall sleeve guide, tolerance map               |
-|        6 | Ceramic Bearings and Rollers for Harsh Operating Conditions              | Rolling/sliding wear, Si3N4/ZrO2, roundness, finish                                  | Silicon nitride page, zirconia page, surface finish                |
-|        7 | Precision Ceramic Seal Faces for Pumps and Rotating Equipment            | Lapped faces, SiC/alumina/ZrO2, leakage risk                                         | Lapped seal faces, pump/valve guide, SiC page                      |
-|        8 | Ceramic Valve Components for Corrosive and Abrasive Fluids               | Valve seats, sleeves, plungers, corrosive media, inspection                          | Pump/valve guide, SiC page, zirconia page                          |
-|        9 | Silicon Carbide Wear Plates for Industrial Equipment                     | Abrasion, flatness, edge chips, mounting holes                                       | SiC page, wear overview, DFM                                       |
-|       10 | Ceramic Guide Rails for High-Friction Production Lines                   | Automation, wear strips, rails, mounting slots, edge quality                         | Wear overview, automation fixture case, edge quality sections      |
-|       11 | Ceramic Flow Control Components for Industrial Fluid Systems             | Nozzles, restrictors, manifolds, micro-holes, cleaning                               | Micro-hole guide, nozzle guide, pump/valve guide                   |
-|       12 | Ceramic Manifold Components for Chemical and Laboratory Equipment        | Chemical resistance, small channels, sealing faces, cleaning                         | Pump/valve guide, micro-hole guide, high-purity guide              |
-|       13 | Boron Nitride Nozzles for Molten Metal and High-Temperature Applications | BN high-temp, thermal shock, nozzle geometry                                         | BN page, nozzle guide, DFM                                         |
-|       14 | Ceramic Components for Industrial Automation Equipment                   | Grippers, locating pins, guides, fixtures, repeatability                             | Automation fixture case, RFQ checklist, tolerance map              |
-|       15 | Precision Ceramic Grippers for Robotic Handling Systems                  | Robotic contact pads, wafer/clean handling, wear, edge condition                     | End effector guide, automation fixture case, material selection    |
-|       16 | Ceramic Locating Pins for Precision Manufacturing Fixtures               | Datum pins, CMM/assembly nests, roundness, chip control                              | Fixture case, tolerance map, thin-wall/bore guide                  |
-|       17 | Machined Ceramic Components for Optical and Laser Equipment              | Mounts, spacers, low thermal expansion concerns, clean handling                      | Material selection, lapped faces, high-purity guide                |
-|       18 | Alumina Ceramic Parts for High-Vacuum Systems                            | Vacuum spacers, rings, sleeves, feedthroughs, cleaning                               | Vacuum chuck guide, high-voltage guide, alumina semiconductor page |
-|       19 | High-Purity Ceramic Components for Analytical Instruments                | Lab instruments, flow cells, holders, insulators, cleaning                           | Sensor guide, high-purity guide, micro-hole guide                  |
-|       20 | Ceramic Medical Device Components: Machining and RFQ Considerations      | Non-claim machining page for sleeves, insulators, guides, pump parts                 | RFQ checklist, material selection, pump/valve guide                |
+| Priority | Proposed article title                                                           | Primary RFQ intent                                                                   | Must link to                                                       |
+| -------: | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------ |
+|        1 | Published: Alumina Ceramic Insulators for Electrical and Electronic Applications | Electrical insulation parts, standoffs, sleeves, spacers, feedthrough-adjacent parts | Alumina page, high-voltage guide, RFQ checklist                    |
+|        2 | Aluminum Nitride Heat Spreaders for Power Electronics                            | AI data center, SiC module, thermal interface, flatness, Ra                          | AlN machining page, AlN semiconductor page, power electronics case |
+|        3 | Ceramic Feedthrough Insulators for Vacuum and Electrical Systems                 | Vacuum, high voltage, bore fit, sealing interface, creepage                          | Vacuum chuck guide, high-voltage guide, thin-wall sleeve guide     |
+|        4 | Machined Ceramic Plates for RF and Microwave Applications                        | RF windows, insulating plates, flatness, dielectric spacing, surface finish          | Material selection, tolerance map, surface finish                  |
+|        5 | Wear-Resistant Ceramic Bushings for Industrial Machinery                         | Direct component search, wear, ID/OD, roundness, Ra                                  | Wear overview, thin-wall sleeve guide, tolerance map               |
+|        6 | Ceramic Bearings and Rollers for Harsh Operating Conditions                      | Rolling/sliding wear, Si3N4/ZrO2, roundness, finish                                  | Silicon nitride page, zirconia page, surface finish                |
+|        7 | Precision Ceramic Seal Faces for Pumps and Rotating Equipment                    | Lapped faces, SiC/alumina/ZrO2, leakage risk                                         | Lapped seal faces, pump/valve guide, SiC page                      |
+|        8 | Ceramic Valve Components for Corrosive and Abrasive Fluids                       | Valve seats, sleeves, plungers, corrosive media, inspection                          | Pump/valve guide, SiC page, zirconia page                          |
+|        9 | Silicon Carbide Wear Plates for Industrial Equipment                             | Abrasion, flatness, edge chips, mounting holes                                       | SiC page, wear overview, DFM                                       |
+|       10 | Ceramic Guide Rails for High-Friction Production Lines                           | Automation, wear strips, rails, mounting slots, edge quality                         | Wear overview, automation fixture case, edge quality sections      |
+|       11 | Ceramic Flow Control Components for Industrial Fluid Systems                     | Nozzles, restrictors, manifolds, micro-holes, cleaning                               | Micro-hole guide, nozzle guide, pump/valve guide                   |
+|       12 | Ceramic Manifold Components for Chemical and Laboratory Equipment                | Chemical resistance, small channels, sealing faces, cleaning                         | Pump/valve guide, micro-hole guide, high-purity guide              |
+|       13 | Boron Nitride Nozzles for Molten Metal and High-Temperature Applications         | BN high-temp, thermal shock, nozzle geometry                                         | BN page, nozzle guide, DFM                                         |
+|       14 | Ceramic Components for Industrial Automation Equipment                           | Grippers, locating pins, guides, fixtures, repeatability                             | Automation fixture case, RFQ checklist, tolerance map              |
+|       15 | Precision Ceramic Grippers for Robotic Handling Systems                          | Robotic contact pads, wafer/clean handling, wear, edge condition                     | End effector guide, automation fixture case, material selection    |
+|       16 | Ceramic Locating Pins for Precision Manufacturing Fixtures                       | Datum pins, CMM/assembly nests, roundness, chip control                              | Fixture case, tolerance map, thin-wall/bore guide                  |
+|       17 | Machined Ceramic Components for Optical and Laser Equipment                      | Mounts, spacers, low thermal expansion concerns, clean handling                      | Material selection, lapped faces, high-purity guide                |
+|       18 | Alumina Ceramic Parts for High-Vacuum Systems                                    | Vacuum spacers, rings, sleeves, feedthroughs, cleaning                               | Vacuum chuck guide, high-voltage guide, alumina semiconductor page |
+|       19 | High-Purity Ceramic Components for Analytical Instruments                        | Lab instruments, flow cells, holders, insulators, cleaning                           | Sensor guide, high-purity guide, micro-hole guide                  |
+|       20 | Ceramic Medical Device Components: Machining and RFQ Considerations              | Non-claim machining page for sleeves, insulators, guides, pump parts                 | RFQ checklist, material selection, pump/valve guide                |
 
 ## Cross-Industry Publishing Queue
 
@@ -207,20 +208,20 @@ Do not keep publishing only semiconductor pages. The semiconductor cluster is al
 
 Use this 12-article queue when the user asks for long-term daily updates without specifying an exact old topic number:
 
-| Queue | Article                                                               | Cluster                  | Why it should come soon                                                                  |
-| ----: | --------------------------------------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------- |
-|     1 | Alumina Ceramic Insulators for Electrical and Electronic Applications | Electrical / insulation  | Direct RFQ intent for sleeves, standoffs, spacers, and feedthrough-adjacent parts        |
-|     2 | Aluminum Nitride Heat Spreaders for Power Electronics                 | Power / thermal          | Connects AI data center, SiC/GaN modules, flatness, Ra, and thermal-interface inspection |
-|     3 | Ceramic Feedthrough Insulators for Vacuum and Electrical Systems      | Vacuum / high voltage    | Bridges vacuum, insulation, bore fit, creepage, and sealing interfaces                   |
-|     4 | Wear-Resistant Ceramic Bushings for Industrial Machinery              | Wear machinery           | High-intent component keyword with clear ID/OD, roundness, Ra, and material choices      |
-|     5 | Precision Ceramic Seal Faces for Pumps and Rotating Equipment         | Pump / seal              | Strong direct purchase intent; links naturally to lapped faces and SiC/alumina choices   |
-|     6 | Ceramic Valve Components for Corrosive and Abrasive Fluids            | Fluid / chemical         | Expands pump-valve coverage into valve seats, plungers, sleeves, and media compatibility |
-|     7 | Ceramic Guide Rails for High-Friction Production Lines                | Automation / wear        | Captures packaging machinery, conveyor, guide, and wear-strip inquiries                  |
-|     8 | Ceramic Locating Pins for Precision Manufacturing Fixtures            | Automation / metrology   | Builds on existing fixture case and supports repeatable inspection fixture RFQs          |
-|     9 | Machined Ceramic Components for Optical and Laser Equipment           | Optical / scientific     | Adds high-precision small-batch demand without medical or aerospace overclaiming         |
-|    10 | High-Purity Ceramic Components for Analytical Instruments             | Laboratory / high purity | Connects sensors, micro-flow, clean packaging, and non-medical lab instrument RFQs       |
-|    11 | Alumina Ceramic Parts for High-Vacuum Systems                         | Vacuum / insulation      | Extends high-vacuum and feedthrough-related searches beyond semiconductor tooling        |
-|    12 | Ceramic Medical Device Components: Machining and RFQ Considerations   | Medical / laboratory     | Useful only with strict qualification-boundary wording and no clinical claims            |
+| Queue | Article                                                                          | Cluster                  | Why it should come soon                                                                  |
+| ----: | -------------------------------------------------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------- |
+|     1 | Published: Alumina Ceramic Insulators for Electrical and Electronic Applications | Electrical / insulation  | Direct RFQ intent for sleeves, standoffs, spacers, and feedthrough-adjacent parts        |
+|     2 | Aluminum Nitride Heat Spreaders for Power Electronics                            | Power / thermal          | Connects AI data center, SiC/GaN modules, flatness, Ra, and thermal-interface inspection |
+|     3 | Ceramic Feedthrough Insulators for Vacuum and Electrical Systems                 | Vacuum / high voltage    | Bridges vacuum, insulation, bore fit, creepage, and sealing interfaces                   |
+|     4 | Wear-Resistant Ceramic Bushings for Industrial Machinery                         | Wear machinery           | High-intent component keyword with clear ID/OD, roundness, Ra, and material choices      |
+|     5 | Precision Ceramic Seal Faces for Pumps and Rotating Equipment                    | Pump / seal              | Strong direct purchase intent; links naturally to lapped faces and SiC/alumina choices   |
+|     6 | Ceramic Valve Components for Corrosive and Abrasive Fluids                       | Fluid / chemical         | Expands pump-valve coverage into valve seats, plungers, sleeves, and media compatibility |
+|     7 | Ceramic Guide Rails for High-Friction Production Lines                           | Automation / wear        | Captures packaging machinery, conveyor, guide, and wear-strip inquiries                  |
+|     8 | Ceramic Locating Pins for Precision Manufacturing Fixtures                       | Automation / metrology   | Builds on existing fixture case and supports repeatable inspection fixture RFQs          |
+|     9 | Machined Ceramic Components for Optical and Laser Equipment                      | Optical / scientific     | Adds high-precision small-batch demand without medical or aerospace overclaiming         |
+|    10 | High-Purity Ceramic Components for Analytical Instruments                        | Laboratory / high purity | Connects sensors, micro-flow, clean packaging, and non-medical lab instrument RFQs       |
+|    11 | Alumina Ceramic Parts for High-Vacuum Systems                                    | Vacuum / insulation      | Extends high-vacuum and feedthrough-related searches beyond semiconductor tooling        |
+|    12 | Ceramic Medical Device Components: Machining and RFQ Considerations              | Medical / laboratory     | Useful only with strict qualification-boundary wording and no clinical claims            |
 
 ## Long-Term Cluster Strategy
 
@@ -396,7 +397,7 @@ This keeps the site from looking like a thin semiconductor-only blog and gradual
 
 Recommended next five articles after the current audit:
 
-1. Alumina Ceramic Insulators for Electrical and Electronic Applications.
+1. Published: Alumina Ceramic Insulators for Electrical and Electronic Applications.
 2. Aluminum Nitride Heat Spreaders for Power Electronics.
 3. Ceramic Feedthrough Insulators for Vacuum and Electrical Systems.
 4. Wear-Resistant Ceramic Bushings for Industrial Machinery.
