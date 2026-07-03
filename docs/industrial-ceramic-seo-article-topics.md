@@ -11,7 +11,7 @@ Decision: Topics 1-20 are already published and remain locked as the foundation,
 Current status as of 2026-07-03:
 
 - Published and locked: 1-20.
-- Strategic cross-industry articles already published outside the old numbered sequence: 41-42 and 45.
+- Strategic cross-industry articles already published outside the old numbered sequence: 41-42, 45, and 51.
 - Next numbered backlog if the user asks by sequence: 21-40.
 - Next cross-industry priority if the user asks for "next high-value article" without a number: follow `docs/industrial-ceramic-long-term-seo-roadmap.md`.
 
@@ -117,7 +117,7 @@ Current status as of 2026-07-03:
 
 50. Ceramic Components for Sensors and Measurement Devices
 
-51. Wear-Resistant Ceramic Bushings for Industrial Machinery
+51. Published: Wear-Resistant Ceramic Bushings for Industrial Machinery
 
 52. Precision Ceramic Shafts for High-Wear Mechanical Systems
 

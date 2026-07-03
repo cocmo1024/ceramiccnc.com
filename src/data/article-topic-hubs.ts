@@ -97,6 +97,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
       'Application-focused RFQ paths for wear parts, power electronics, vacuum hardware, sealing faces, high-voltage insulation, and repeatable industrial ceramic procurement.',
     postIds: [
       'industrial-ceramic-machining/industrial-ceramic-machining-wear-resistant-components',
+      'wear-components/wear-resistant-ceramic-bushings-industrial-machinery',
       'automation-fixtures/precision-ceramic-fixture-plate-locating-pins-case-study',
       'power-electronics/alumina-ceramic-inspection-fixtures-sic-power-module-assembly-case-study',
       'sensor-measurement-devices/precision-ceramic-components-sensors-measurement-devices',
@@ -143,6 +144,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
       'Component searches for bushings, seal faces, nozzles, sleeves, valve parts, pump hardware, abrasive media, and corrosive-fluid ceramic machining decisions.',
     postIds: [
       'industrial-ceramic-machining/industrial-ceramic-machining-wear-resistant-components',
+      'wear-components/wear-resistant-ceramic-bushings-industrial-machinery',
       'pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control',
       'lapped-seal-faces/ceramic-lapped-seal-faces-rfq',
       'industrial-ceramic-machining/silicon-carbide-ceramic-machining-harsh-environment-applications',
@@ -160,6 +162,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
       'Precision fixture plates, locating pins, inspection nests, sensor holders, robotic handling parts, datum surfaces, and repeatable production tooling RFQs.',
     postIds: [
       'automation-fixtures/precision-ceramic-fixture-plate-locating-pins-case-study',
+      'wear-components/wear-resistant-ceramic-bushings-industrial-machinery',
       'power-electronics/alumina-ceramic-inspection-fixtures-sic-power-module-assembly-case-study',
       'sensor-measurement-devices/precision-ceramic-components-sensors-measurement-devices',
       'semiconductor-equipment/ceramic-end-effectors-wafer-handling-automation',

@@ -623,6 +623,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Wear-Resistant Ceramic Bushings for Industrial Machinery',
+    href: '/posts/wear-components/wear-resistant-ceramic-bushings-industrial-machinery/',
+    date: '2026-07-03',
+    image: '~/assets/images/ceramic/posts/wear-resistant-ceramic-bushings-industrial-machinery.webp',
+    description:
+      'RFQ-ready guide for wear-resistant ceramic bushings and sleeves, including alumina, zirconia, Si3N4, SiC, ID/OD fit, roundness, Ra, counterface review, inspection, and packaging.',
+  },
+  {
     title: 'Ceramic Feedthrough Insulators for Vacuum and Electrical Systems',
     href: '/posts/vacuum-electrical-systems/ceramic-feedthrough-insulators-vacuum-electrical-systems/',
     date: '2026-07-03',
