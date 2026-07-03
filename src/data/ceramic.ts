@@ -623,6 +623,30 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Ceramic Feedthrough Insulators for Vacuum and Electrical Systems',
+    href: '/posts/vacuum-electrical-systems/ceramic-feedthrough-insulators-vacuum-electrical-systems/',
+    date: '2026-07-03',
+    image: '~/assets/images/ceramic/posts/ceramic-feedthrough-insulators-vacuum-electrical-systems.webp',
+    description:
+      'RFQ-ready guide for ceramic feedthrough insulators used in vacuum and electrical systems, including alumina sleeves, bore fit, sealing lands, creepage paths, cleaning, packaging, and inspection evidence.',
+  },
+  {
+    title: 'Aluminum Nitride Heat Spreaders for Power Electronics',
+    href: '/posts/power-electronics/aluminum-nitride-heat-spreaders-power-electronics/',
+    date: '2026-07-02',
+    image: '~/assets/images/ceramic/posts/aluminum-nitride-heat-spreaders-power-electronics.webp',
+    description:
+      'RFQ-ready guide for AlN heat spreaders in power electronics, including thermal-interface flatness, thickness, Ra, SiC/GaN module context, cleaning, packaging, and inspection evidence.',
+  },
+  {
+    title: 'Alumina Ceramic Insulators for Electrical Applications',
+    href: '/posts/electrical-insulation/alumina-ceramic-insulators-electrical-electronic-applications/',
+    date: '2026-07-02',
+    image: '~/assets/images/ceramic/posts/alumina-ceramic-insulators-electrical-electronic-applications.webp',
+    description:
+      'RFQ-ready guide for precision machined alumina ceramic insulators, including standoffs, spacers, sleeves, plates, housings, creepage paths, edge quality, cleaning, and inspection.',
+  },
+  {
     title: 'Alumina Ceramic Parts for Semiconductor Equipment',
     href: '/posts/semiconductor-equipment/alumina-ceramic-parts-semiconductor-processing-equipment/',
     date: '2026-06-24',

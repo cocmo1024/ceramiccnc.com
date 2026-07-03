@@ -1,6 +1,6 @@
 # Industrial Ceramic Long-Term SEO Roadmap
 
-Updated: 2026-07-02
+Updated: 2026-07-03
 
 ## Business Positioning
 
@@ -18,19 +18,19 @@ The site should not drift into broad material science, pottery, ceramic AM, gene
 
 ## Current Inventory
 
-As of this update, the site has 40 engineering articles.
+As of this update, the site has 41 engineering articles.
 
 Inventory by content folder:
 
-| Folder                         | Article count | Current role                                                                                       |
-| ------------------------------ | ------------: | -------------------------------------------------------------------------------------------------- |
-| `semiconductor-equipment`      |            10 | Strongest cluster; avoid broad duplicate semiconductor pages                                       |
-| `industrial-ceramic-machining` |             9 | Core material and machining foundation                                                             |
-| `power-electronics`            |             3 | Growing cluster for AI data center, SiC/GaN module, AlN heat spreader, fixture, and thermal RFQs   |
-| `design-rules-dfm`             |             2 | Strong foundation; use as internal link support                                                    |
-| `electrical-insulation`        |             1 | Started with alumina electrical and electronic insulator RFQ coverage                              |
-| Feature-specific folders       |             8 | Micro-holes, thin walls, lapped faces, vacuum chuck, high voltage, tolerances, surface finish, RFQ |
-| Application-specific folders   |             7 | Automation fixtures, pump/valve, sensors, cleanroom, materials, process route, buyer guide         |
+| Folder                         | Article count | Current role                                                                                                          |
+| ------------------------------ | ------------: | --------------------------------------------------------------------------------------------------------------------- |
+| `semiconductor-equipment`      |            10 | Strongest cluster; avoid broad duplicate semiconductor pages                                                          |
+| `industrial-ceramic-machining` |             9 | Core material and machining foundation                                                                                |
+| `power-electronics`            |             3 | Growing cluster for AI data center, SiC/GaN module, AlN heat spreader, fixture, and thermal RFQs                      |
+| `design-rules-dfm`             |             2 | Strong foundation; use as internal link support                                                                       |
+| `electrical-insulation`        |             1 | Started with alumina electrical and electronic insulator RFQ coverage                                                 |
+| Feature-specific folders       |             8 | Micro-holes, thin walls, lapped faces, vacuum chuck, high voltage, tolerances, surface finish, RFQ                    |
+| Application-specific folders   |             8 | Automation fixtures, pump/valve, sensors, cleanroom, vacuum/electrical systems, materials, process route, buyer guide |
 
 Strong existing coverage:
 
@@ -38,7 +38,7 @@ Strong existing coverage:
 - Core material pages: alumina, zirconia, silicon nitride, silicon carbide, aluminum nitride, Macor, boron nitride.
 - Semiconductor equipment: broad semiconductor ceramic components, SiC wafer handling, ceramic end effectors, vacuum chucks, process chamber rings, plasma insulators, AlN thermal management, alumina semiconductor parts, nozzles, high-purity cleanroom parts.
 - Precision feature pages: micro-holes, thin-wall sleeves, lapped seal faces, vacuum chuck flatness, high-voltage insulation.
-- Application case pages: automation fixture plates, SiC power module inspection fixtures, AlN heat spreaders for power electronics, sensor and measurement devices, pump and valve components.
+- Application case pages: automation fixture plates, SiC power module inspection fixtures, AlN heat spreaders for power electronics, ceramic feedthrough insulators for vacuum/electrical systems, sensor and measurement devices, pump and valve components.
 
 Avoid duplicating these search intents:
 
@@ -67,7 +67,7 @@ The export covers the previous three months ending 2026-05-31. It is still early
 - Main query exposure is already aligned with the site positioning: `ceramic cnc machining`, `cnc ceramic machining`, `precision ceramic machining`, `ceramic cnc`, `ceramic machining`, `advanced ceramic machining`, and `custom ceramic machining`.
 - The buyer guide already has strong early quality signal: `/posts/feasibility-process-choice/ceramic-machining-guide/` appeared with 58 impressions and average position 6.95 in the page report.
 - The SiC wafer-handling article also has a strong early signal: `/posts/semiconductor-equipment/silicon-carbide-wafer-handling-components-semiconductor-manufacturing/` appeared with 15 impressions and average position 7.87.
-- Weakness: material-specific, component-specific, and application-specific long-tail query exposure is still thin. Only isolated signals appeared for `silicon carbide wafer` and `zirconia ceramic machining`. The 2026-07-02 alumina electrical insulator article starts the electrical-insulation long-tail cluster, and the 2026-07-02 AlN heat spreader article expands the power-electronics thermal-interface cluster.
+- Weakness: material-specific, component-specific, and application-specific long-tail query exposure is still thin. Only isolated signals appeared for `silicon carbide wafer` and `zirconia ceramic machining`. The 2026-07-02 alumina electrical insulator article starts the electrical-insulation long-tail cluster, the 2026-07-02 AlN heat spreader article expands the power-electronics thermal-interface cluster, and the 2026-07-03 ceramic feedthrough insulator article starts the vacuum/electrical interface cluster.
 - Risk: `/about/`, `/privacy/`, historical `/category/.../`, and `/tags/.../` URLs have appeared in Search Console. The strategy should keep low-value archives disabled and route old thin URLs toward authoritative articles.
 
 Decision from this baseline:
@@ -183,7 +183,7 @@ These are the strongest next topics because they add missing application coverag
 | -------: | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------ |
 |        1 | Published: Alumina Ceramic Insulators for Electrical and Electronic Applications | Electrical insulation parts, standoffs, sleeves, spacers, feedthrough-adjacent parts | Alumina page, high-voltage guide, RFQ checklist                    |
 |        2 | Published: Aluminum Nitride Heat Spreaders for Power Electronics                 | AI data center, SiC module, thermal interface, flatness, Ra                          | AlN machining page, AlN semiconductor page, power electronics case |
-|        3 | Ceramic Feedthrough Insulators for Vacuum and Electrical Systems                 | Vacuum, high voltage, bore fit, sealing interface, creepage                          | Vacuum chuck guide, high-voltage guide, thin-wall sleeve guide     |
+|        3 | Published: Ceramic Feedthrough Insulators for Vacuum and Electrical Systems      | Vacuum, high voltage, bore fit, sealing interface, creepage                          | Vacuum chuck guide, high-voltage guide, thin-wall sleeve guide     |
 |        4 | Machined Ceramic Plates for RF and Microwave Applications                        | RF windows, insulating plates, flatness, dielectric spacing, surface finish          | Material selection, tolerance map, surface finish                  |
 |        5 | Wear-Resistant Ceramic Bushings for Industrial Machinery                         | Direct component search, wear, ID/OD, roundness, Ra                                  | Wear overview, thin-wall sleeve guide, tolerance map               |
 |        6 | Ceramic Bearings and Rollers for Harsh Operating Conditions                      | Rolling/sliding wear, Si3N4/ZrO2, roundness, finish                                  | Silicon nitride page, zirconia page, surface finish                |
@@ -212,7 +212,7 @@ Use this 12-article queue when the user asks for long-term daily updates without
 | ----: | -------------------------------------------------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------- |
 |     1 | Published: Alumina Ceramic Insulators for Electrical and Electronic Applications | Electrical / insulation  | Direct RFQ intent for sleeves, standoffs, spacers, and feedthrough-adjacent parts        |
 |     2 | Published: Aluminum Nitride Heat Spreaders for Power Electronics                 | Power / thermal          | Connects AI data center, SiC/GaN modules, flatness, Ra, and thermal-interface inspection |
-|     3 | Ceramic Feedthrough Insulators for Vacuum and Electrical Systems                 | Vacuum / high voltage    | Bridges vacuum, insulation, bore fit, creepage, and sealing interfaces                   |
+|     3 | Published: Ceramic Feedthrough Insulators for Vacuum and Electrical Systems      | Vacuum / high voltage    | Bridges vacuum, insulation, bore fit, creepage, and sealing interfaces                   |
 |     4 | Wear-Resistant Ceramic Bushings for Industrial Machinery                         | Wear machinery           | High-intent component keyword with clear ID/OD, roundness, Ra, and material choices      |
 |     5 | Precision Ceramic Seal Faces for Pumps and Rotating Equipment                    | Pump / seal              | Strong direct purchase intent; links naturally to lapped faces and SiC/alumina choices   |
 |     6 | Ceramic Valve Components for Corrosive and Abrasive Fluids                       | Fluid / chemical         | Expands pump-valve coverage into valve seats, plungers, sleeves, and media compatibility |
@@ -271,12 +271,12 @@ Current anchors:
 - AlN thermal management.
 - SiC power module inspection fixtures.
 - High-voltage ceramic insulators.
-
-Future additions:
-
 - Alumina ceramic insulators for electrical and electronic applications.
 - AlN heat spreaders for power electronics.
 - Ceramic feedthrough insulators for vacuum and electrical systems.
+
+Future additions:
+
 - Machined ceramic plates for RF and microwave applications.
 - Precision ceramic spacers for electronic assembly.
 
@@ -399,7 +399,7 @@ Recommended next five articles after the current audit:
 
 1. Published: Alumina Ceramic Insulators for Electrical and Electronic Applications.
 2. Published: Aluminum Nitride Heat Spreaders for Power Electronics.
-3. Ceramic Feedthrough Insulators for Vacuum and Electrical Systems.
+3. Published: Ceramic Feedthrough Insulators for Vacuum and Electrical Systems.
 4. Wear-Resistant Ceramic Bushings for Industrial Machinery.
 5. Precision Ceramic Seal Faces for Pumps and Rotating Equipment.
 
