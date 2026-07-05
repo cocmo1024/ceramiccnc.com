@@ -67,7 +67,7 @@ Primary pages:
 
 Current engineering article inventory:
 
-- The site has 42 engineering articles as of 2026-07-03.
+- The site has 43 engineering articles as of 2026-07-05.
 - Full article sources live under `src/data/post/`.
 - The live index is `/category/engineering-guide/`.
 - Long-term topic planning, duplicate-avoidance rules, Search Console baseline, and internal-link architecture live in `docs/industrial-ceramic-long-term-seo-roadmap.md`.

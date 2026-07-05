@@ -98,6 +98,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
     postIds: [
       'industrial-ceramic-machining/industrial-ceramic-machining-wear-resistant-components',
       'wear-components/wear-resistant-ceramic-bushings-industrial-machinery',
+      'wear-components/ceramic-guide-rails-high-friction-production-lines',
       'automation-fixtures/precision-ceramic-fixture-plate-locating-pins-case-study',
       'power-electronics/alumina-ceramic-inspection-fixtures-sic-power-module-assembly-case-study',
       'sensor-measurement-devices/precision-ceramic-components-sensors-measurement-devices',
@@ -145,6 +146,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
     postIds: [
       'industrial-ceramic-machining/industrial-ceramic-machining-wear-resistant-components',
       'wear-components/wear-resistant-ceramic-bushings-industrial-machinery',
+      'wear-components/ceramic-guide-rails-high-friction-production-lines',
       'pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control',
       'lapped-seal-faces/ceramic-lapped-seal-faces-rfq',
       'industrial-ceramic-machining/silicon-carbide-ceramic-machining-harsh-environment-applications',
@@ -163,6 +165,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
     postIds: [
       'automation-fixtures/precision-ceramic-fixture-plate-locating-pins-case-study',
       'wear-components/wear-resistant-ceramic-bushings-industrial-machinery',
+      'wear-components/ceramic-guide-rails-high-friction-production-lines',
       'power-electronics/alumina-ceramic-inspection-fixtures-sic-power-module-assembly-case-study',
       'sensor-measurement-devices/precision-ceramic-components-sensors-measurement-devices',
       'semiconductor-equipment/ceramic-end-effectors-wafer-handling-automation',

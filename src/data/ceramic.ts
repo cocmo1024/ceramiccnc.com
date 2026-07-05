@@ -623,6 +623,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Ceramic Guide Rails for High-Friction Production Lines',
+    href: '/posts/wear-components/ceramic-guide-rails-high-friction-production-lines/',
+    date: '2026-07-05',
+    image: '~/assets/images/ceramic/posts/ceramic-guide-rails-high-friction-production-lines.webp',
+    description:
+      'RFQ-ready guide for ceramic guide rails, wear strips, and guide blocks, including alumina, zirconia, Si3N4, SiC, straightness, flatness, slots, holes, Ra, edge quality, inspection, and packaging.',
+  },
+  {
     title: 'Wear-Resistant Ceramic Bushings for Industrial Machinery',
     href: '/posts/wear-components/wear-resistant-ceramic-bushings-industrial-machinery/',
     date: '2026-07-03',
