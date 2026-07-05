@@ -623,6 +623,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Precision Ceramic Seal Faces for Pumps and Rotating Equipment',
+    href: '/posts/pump-valve-components/precision-ceramic-seal-faces-pumps-rotating-equipment/',
+    date: '2026-07-05',
+    image: '~/assets/images/ceramic/posts/precision-ceramic-seal-faces-pumps-rotating-equipment.webp',
+    description:
+      'RFQ-ready guide for ceramic mechanical seal faces, SiC seal rings, alumina and zirconia mating rings, lapped bands, flatness, Ra, edge chips, inspection, and protected packaging.',
+  },
+  {
     title: 'Ceramic Guide Rails for High-Friction Production Lines',
     href: '/posts/wear-components/ceramic-guide-rails-high-friction-production-lines/',
     date: '2026-07-05',

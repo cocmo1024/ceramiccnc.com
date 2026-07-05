@@ -11,7 +11,7 @@ Decision: Topics 1-20 are already published and remain locked as the foundation,
 Current status as of 2026-07-05:
 
 - Published and locked: 1-20.
-- Strategic cross-industry articles already published outside the old numbered sequence: 41-42, 45, 51, and 59.
+- Strategic cross-industry articles already published outside the old numbered sequence: 41-42, 45, 51, 55, and 59.
 - Next numbered backlog if the user asks by sequence: 21-40.
 - Next cross-industry priority if the user asks for "next high-value article" without a number: follow `docs/industrial-ceramic-long-term-seo-roadmap.md`.
 
@@ -125,7 +125,7 @@ Current status as of 2026-07-05:
 
 54. Ceramic Bearings and Rollers for Harsh Operating Conditions
 
-55. Precision Ceramic Seal Faces for Pumps and Rotating Equipment
+55. Published: Precision Ceramic Seal Faces for Pumps and Rotating Equipment
 
 56. Ceramic Valve Components for Corrosive and Abrasive Fluids
 
