@@ -623,6 +623,14 @@ export const ceramicFaqItems = [
 
 export const engineeringArticles = [
   {
+    title: 'Ceramic Valve Components for Corrosive and Abrasive Fluids',
+    href: '/posts/pump-valve-components/ceramic-valve-components-corrosive-abrasive-fluids/',
+    date: '2026-07-08',
+    image: '~/assets/images/ceramic/posts/ceramic-valve-components-corrosive-abrasive-fluids.webp',
+    description:
+      'RFQ-ready guide for ceramic valve seats, zirconia valve balls, SiC trim rings, plugs, sleeves, liners, plungers, flow ports, lapped contact lands, cleaning, packaging, and inspection evidence.',
+  },
+  {
     title: 'Precision Ceramic Seal Faces for Pumps and Rotating Equipment',
     href: '/posts/pump-valve-components/precision-ceramic-seal-faces-pumps-rotating-equipment/',
     date: '2026-07-05',
