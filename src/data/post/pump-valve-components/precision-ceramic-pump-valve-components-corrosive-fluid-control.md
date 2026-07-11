@@ -56,8 +56,6 @@ Pump and valve RFQs often mix material, wear, sealing, sliding, and dimensional 
 
 Two drawings can both be called "ceramic valve components" but need different production plans. A lapped SiC seal face, a zirconia ball, an alumina check valve disc, and a silicon nitride guide sleeve do not share the same inspection logic.
 
-![Precision SiC seal faces, zirconia valve balls, alumina seats, pump plungers, and ceramic sleeves for corrosive fluid control](../../../assets/images/ceramic/posts/precision-ceramic-pump-valve-components-corrosive-fluid-control.webp)
-
 The useful RFQ question is:
 
 **Which surface creates the seal, which geometry guides motion, which material touches the fluid, and what inspection evidence proves the component can enter the pump or valve assembly?**

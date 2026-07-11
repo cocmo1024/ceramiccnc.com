@@ -46,8 +46,6 @@ In a drawing, a ceramic bushing may look like a tube. In service, it may control
 
 For a broader overview of wear part families, start with the [industrial ceramic machining guide for wear-resistant components](/posts/industrial-ceramic-machining/industrial-ceramic-machining-wear-resistant-components/). This page is more specific: it focuses on bushing and sleeve geometry where the bore, outside diameter, finish, and mating parts decide whether the ceramic component can function.
 
-![Precision ceramic bushings, sleeves, guide rings, and wear rings for industrial machinery](../../../assets/images/ceramic/posts/wear-resistant-ceramic-bushings-industrial-machinery.webp)
-
 ## Start With The Wear Mode, Not The Material Name
 
 "Ceramic is wear resistant" is not enough for a purchase decision. Wear is a system result, not a single material property.

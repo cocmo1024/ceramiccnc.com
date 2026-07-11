@@ -41,8 +41,6 @@ The semiconductor equipment backdrop is also expanding. [SEMI reported on April 
 
 Ceramics are already central to power module packaging. [Rogers curamik ceramic substrate data](https://www.rogerscorp.com/advanced-electronics-solutions/curamik-ceramic-substrates) shows common power-electronics ceramic routes including Al2O3, ZTA/HPS alumina, AlN, and Si3N4, with value tied to insulation voltage, heat spreading, thermal conductivity, and coefficient of thermal expansion. The adjacent machining problem is different from the substrate itself: alumina fixtures, spacers, supports, masks, and inspection nests used to assemble, inspect, or test those power modules.
 
-![Alumina ceramic inspection fixture plate for SiC power module assembly with precision bores, support pads, and ceramic spacers](../../../assets/images/ceramic/posts/alumina-ceramic-inspection-fixtures-sic-power-module-assembly-case-study.webp)
-
 ## The Representative Starting RFQ
 
 The initial request in this case pattern usually looks like this:

@@ -56,8 +56,6 @@ In procurement language, several part names can point to a nozzle-style ceramic 
 
 Two parts can both be called ceramic nozzles but require different manufacturing logic. A zirconia suction tip, a SiC gas nozzle, a boron nitride high-temperature nozzle, an alumina purge insert, and a Macor prototype nozzle should not be quoted with the same assumptions.
 
-![Precision alumina, silicon carbide, and boron nitride ceramic nozzles for semiconductor and vacuum equipment](../../../assets/images/ceramic/posts/precision-ceramic-nozzles-semiconductor-vacuum-equipment.webp)
-
 The practical RFQ question is:
 
 **Which feature controls function: bore diameter, flow path, contact face, exit edge, chemical exposure, temperature, insulation path, wear surface, or cleaning requirement?**

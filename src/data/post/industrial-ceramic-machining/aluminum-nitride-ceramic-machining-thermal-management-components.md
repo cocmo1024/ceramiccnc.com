@@ -1,6 +1,7 @@
 ---
 title: 'Aluminum Nitride Ceramic Machining for Thermal Management Components'
 publishDate: 2026-05-23
+updateDate: 2026-07-11
 excerpt: 'How engineers should specify aluminum nitride ceramic machining for heat spreaders, insulating plates, substrates, spacers, carriers, power electronics fixtures, and thermal-interface components.'
 category: Engineering Guide
 tags:
@@ -20,7 +21,7 @@ metadata:
 
 > Aluminum nitride ceramic machining is usually considered when a component must combine thermal management with electrical insulation, dimensional stability, and clean ceramic surfaces. AlN can be valuable in power electronics, semiconductor equipment, test fixtures, and thermal-interface hardware, but the final part depends on grade, blank condition, flatness, thickness control, surface finish, edge quality, and inspection evidence.
 
-Aluminum nitride ceramic parts appear in power electronics assemblies, semiconductor thermal management, high-voltage test fixtures, RF and microwave hardware, laser and optical equipment, sensor assemblies, vacuum systems, and custom industrial devices where heat must be moved while electrical isolation is maintained. Typical RFQs include AlN heat spreaders, insulating plates, substrates, carriers, spacers, standoffs, pressure pads, fixture plates, thermal interface blocks, sensor mounts, and custom machined ceramic components.
+Aluminum nitride ceramic parts appear in power electronics assemblies, semiconductor thermal management, high-voltage test fixtures, RF and microwave hardware, laser and optical equipment, sensor assemblies, vacuum systems, and custom industrial devices where heat must be moved while electrical isolation is maintained. Typical RFQs include AlN heat spreaders, insulating plates, substrates, carriers, spacers, standoffs, pressure pads, fixture plates, thermal interface blocks, sensor mounts, and custom machined ceramic components. When an AlN plate is controlled by dielectric spacing, metallization, or a high-frequency assembly, use the [RF and microwave ceramic plate RFQ guide](/posts/rf-microwave/machined-ceramic-plates-rf-microwave-applications/) to separate electrical-design ownership from machining acceptance.
 
 The practical sourcing question is not simply "Can aluminum nitride be machined?"
 

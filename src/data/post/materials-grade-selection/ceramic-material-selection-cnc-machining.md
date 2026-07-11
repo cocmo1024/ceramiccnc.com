@@ -1,6 +1,7 @@
 ---
 title: 'Ceramic Material Selection for CNC Machining: Alumina, Zirconia, Si3N4, SiC, MACOR'
 publishDate: 2026-05-03
+updateDate: 2026-07-11
 excerpt: 'How to select ceramic materials for CNC machining by failure mode, finishability, blank state, tolerance risk, and inspection requirements.'
 category: Engineering Guide
 tags: ['material-selection', 'alumina', 'zirconia', 'silicon-nitride', 'silicon-carbide', 'machinable-ceramics']
@@ -142,7 +143,7 @@ Inspection or certificate requirements:
 Previous sample or existing supplier route:
 ```
 
-For complete RFQ preparation, combine this with the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) and the [materials overview](/materials/).
+For complete RFQ preparation, combine this with the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) and the [materials overview](/materials/). When material selection is controlled by dielectric and high-frequency performance, continue with the [RF and microwave ceramic plate guide](/posts/rf-microwave/machined-ceramic-plates-rf-microwave-applications/) and keep electrical validation separate from machining acceptance.
 
 ### FAQ
 

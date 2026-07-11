@@ -1,6 +1,7 @@
 ---
 title: 'Aluminum Nitride Ceramic Parts for Semiconductor Thermal Management'
 publishDate: 2026-06-08
+updateDate: 2026-07-11
 excerpt: 'Engineering guide to aluminum nitride ceramic parts for semiconductor thermal management, including AlN heat spreaders, heater-adjacent plates, flatness, Ra, cleaning, packaging, inspection evidence, and RFQ review.'
 category: Engineering Guide
 tags:
@@ -227,7 +228,7 @@ Send the following before expecting a reliable quotation:
 
 For a standard RFQ package, use the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/). For early-stage material comparison, use the [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/).
 
-## Internal Decision Path For Related Semiconductor Ceramic Parts
+## Choose the Guide That Matches the Dominant Function
 
 Use this page when the part is specifically an AlN thermal-management component. Use related pages when the dominant function changes:
 
@@ -240,7 +241,7 @@ Use this page when the part is specifically an AlN thermal-management component.
 | Gas flow, dispensing, vacuum, or micro-orifice geometry                  | [Precision ceramic nozzles for semiconductor and vacuum equipment](/posts/semiconductor-equipment/precision-ceramic-nozzles-semiconductor-vacuum-equipment/) |
 | General semiconductor ceramic part family selection                      | [Precision ceramic components for semiconductor equipment](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/)             |
 
-This internal-link structure keeps the page focused. AlN thermal management should not absorb every semiconductor ceramic topic. It should answer the thermal-interface sourcing problem well and connect the buyer to the correct next page.
+Use the AlN thermal-management route only when heat transfer and electrical isolation are the dominant functions. A wafer-contact, vacuum, plasma, gas-flow, or chamber-ring problem needs a different machining and acceptance review.
 
 ## Practical Takeaway
 

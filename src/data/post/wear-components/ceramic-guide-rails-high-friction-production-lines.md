@@ -53,8 +53,6 @@ A ceramic rail may look simple in a CAD model, but the part can have several fun
 
 For a wider map of industrial wear part families, use the [industrial ceramic machining guide for wear-resistant components](/posts/industrial-ceramic-machining/industrial-ceramic-machining-wear-resistant-components/). For cylindrical guide parts, use the [wear-resistant ceramic bushing guide](/posts/wear-components/wear-resistant-ceramic-bushings-industrial-machinery/). This page focuses on rail-style components: long bars, strips, blocks, slots, holes, datum faces, and exposed sliding edges.
 
-![Precision ceramic guide rails, wear strips, and guide blocks for high-friction automated production lines](../../../assets/images/ceramic/posts/ceramic-guide-rails-high-friction-production-lines.webp)
-
 ## Typical Ceramic Rail And Wear Strip RFQs
 
 Most guide rail RFQs fall into a few practical groups:

@@ -8,10 +8,10 @@ Inference: The website should not rely on generic terms such as "ceramic part." 
 
 Decision: Topics 1-20 are already published and remain locked as the foundation, material, and semiconductor equipment launch set. Topics 21-100 below remain valid as the numbered backlog, but broad long-term planning should also use `docs/industrial-ceramic-long-term-seo-roadmap.md` to avoid over-publishing one cluster and to expand into electrical, thermal, wear, fluid, automation, optical, laboratory, and medical-adjacent inquiry fields.
 
-Current status as of 2026-07-08:
+Current status as of 2026-07-11:
 
 - Published and locked: 1-20.
-- Strategic cross-industry articles already published outside the old numbered sequence: 41-42, 45, 51, 55-56, and 59.
+- Strategic cross-industry articles already published outside the old numbered sequence: 41-42, 45-46, 51, 55-56, and 59.
 - Next numbered backlog if the user asks by sequence: 21-40.
 - Next cross-industry priority if the user asks for "next high-value article" without a number: follow `docs/industrial-ceramic-long-term-seo-roadmap.md`.
 
@@ -107,7 +107,7 @@ Current status as of 2026-07-08:
 
 45. Published: Ceramic Feedthrough Insulators for Vacuum and Electrical Systems
 
-46. Machined Ceramic Plates for RF and Microwave Applications
+46. Published: Machined Ceramic Plates for RF and Microwave Assemblies
 
 47. Precision Ceramic Spacers for Electronic Assembly
 

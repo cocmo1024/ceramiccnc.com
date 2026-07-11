@@ -30,8 +30,6 @@ Precision ceramic seal faces are used in centrifugal pumps, metering pumps, mixe
 
 This article is narrower than the general [ceramic lapped seal faces RFQ guide](/posts/lapped-seal-faces/ceramic-lapped-seal-faces-rfq/) and more specific than the broader [ceramic pump and valve components guide](/posts/pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control/). It focuses on ceramic seal faces and mechanical seal rings for rotating equipment, where the buyer usually needs a part drawing, mating-face information, operating context, and acceptance evidence before a useful quotation is possible.
 
-![Precision ceramic mechanical seal faces, silicon carbide rings, alumina mating rings, zirconia seal seats, lapped bands, bores, slots, and chamfered sealing edges](../../../assets/images/ceramic/posts/precision-ceramic-seal-faces-pumps-rotating-equipment.webp)
-
 ### Why Ceramic Seal Faces Are A High-Value Industrial RFQ Topic
 
 Pumping systems are a long-term industrial reliability and energy topic, not a short-lived trend. The U.S. Department of Energy maintains [pump systems resources](https://www.energy.gov/cmei/ito/pump-systems) and links to the industry sourcebook for improving pumping system performance. Mechanical seals are also treated as a specialized pump engineering subject: the Hydraulic Institute lists a 2024 second edition of [Mechanical Seals for the Pump Industry](https://www.pumps.org/product/mechanical-seals-for-the-pump-industry-selection-installation-maintenance-and-troubleshooting/), covering selection, installation, maintenance, and troubleshooting for rotary and rotodynamic pumps.

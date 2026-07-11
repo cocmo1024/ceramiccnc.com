@@ -18,19 +18,19 @@ The site should not drift into broad material science, pottery, ceramic AM, gene
 
 ## Current Inventory
 
-As of this update, the site has 45 engineering articles.
+As of this update, the site has 46 engineering articles.
 
 Inventory by content folder:
 
-| Folder                         | Article count | Current role                                                                                                                           |
-| ------------------------------ | ------------: | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `semiconductor-equipment`      |            10 | Strongest cluster; avoid broad duplicate semiconductor pages                                                                           |
-| `industrial-ceramic-machining` |             9 | Core material and machining foundation                                                                                                 |
-| `power-electronics`            |             3 | Growing cluster for AI data center, SiC/GaN module, AlN heat spreader, fixture, and thermal RFQs                                       |
-| `design-rules-dfm`             |             2 | Strong foundation; use as internal link support                                                                                        |
-| `electrical-insulation`        |             1 | Started with alumina electrical and electronic insulator RFQ coverage                                                                  |
-| Feature-specific folders       |             8 | Micro-holes, thin walls, lapped faces, vacuum chuck, high voltage, tolerances, surface finish, RFQ                                     |
-| Application-specific folders   |            12 | Automation fixtures, wear components, pump/valve, sensors, cleanroom, vacuum/electrical systems, materials, process route, buyer guide |
+| Folder                         | Article count | Current role                                                                                                                              |
+| ------------------------------ | ------------: | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| `semiconductor-equipment`      |            10 | Strongest cluster; avoid broad duplicate semiconductor pages                                                                              |
+| `industrial-ceramic-machining` |             9 | Core material and machining foundation                                                                                                    |
+| `power-electronics`            |             3 | Growing cluster for AI data center, SiC/GaN module, AlN heat spreader, fixture, and thermal RFQs                                          |
+| `design-rules-dfm`             |             2 | Strong foundation; use as internal link support                                                                                           |
+| `electrical-insulation`        |             1 | Started with alumina electrical and electronic insulator RFQ coverage                                                                     |
+| Feature-specific folders       |             8 | Micro-holes, thin walls, lapped faces, vacuum chuck, high voltage, tolerances, surface finish, RFQ                                        |
+| Application-specific folders   |            13 | Automation fixtures, wear components, pump/valve, sensors, cleanroom, vacuum/electrical systems, RF/microwave, process route, buyer guide |
 
 Strong existing coverage:
 
@@ -40,6 +40,32 @@ Strong existing coverage:
 - Precision feature pages: micro-holes, thin-wall sleeves, lapped seal faces, vacuum chuck flatness, high-voltage insulation.
 - Application case pages: automation fixture plates, SiC power module inspection fixtures, AlN heat spreaders for power electronics, wear-resistant ceramic bushings for industrial machinery, ceramic guide rails for high-friction production lines, precision ceramic seal faces for pumps and rotating equipment, ceramic valve components for corrosive and abrasive fluids, ceramic feedthrough insulators for vacuum/electrical systems, sensor and measurement devices, pump and valve components.
 - Hand-built application hubs: semiconductor ceramic components, electrical and thermal ceramic components, wear and fluid-control ceramic components, and automation/vacuum/instrument ceramic components.
+
+Current content-performance diagnosis:
+
+- The buyer guide and SiC wafer-handling page earned early page-one exposure but little or no click-through in the reviewed Search Console export.
+- The inventory audit found multiple article pairs with heavy language and topic overlap, especially within wafer handling, semiconductor equipment, broad material guides, and adjacent component pages.
+- The priority is therefore to improve result promise, primary intent, original decision value, and page differentiation before increasing publishing volume.
+- Existing URLs with impressions should be rewritten in place rather than replaced with new URLs.
+
+Google quality principles applied to this roadmap:
+
+- People-first content should serve the site's actual industrial audience, demonstrate depth, and let the reader complete a task: <https://developers.google.com/search/docs/fundamentals/creating-helpful-content>
+- Google explicitly recommends original, non-commodity content and warns against separate pages for every query variation: <https://developers.google.com/search/docs/fundamentals/ai-optimization-guide>
+- Search snippets are built primarily from visible page content, with unique meta descriptions used when they describe the page well: <https://developers.google.com/search/docs/appearance/snippet>
+- Titles, H1s, prominent text, and link anchors should describe the same clear page topic: <https://developers.google.com/search/docs/appearance/title-link>
+
+Existing-content consolidation queue after the 2026-07-11 overlap audit:
+
+| Priority | Pages to differentiate                                                | Primary-intent decision                                                                                                        |
+| -------: | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+|        1 | SiC harsh-environment guide vs Si3N4 structural/wear guide            | SiC: chemical, thermal, seal, and hard-wear interfaces. Si3N4: structural load, shock, rollers, and moving mechanisms.         |
+|        2 | Broad pump/valve guide vs ceramic valve-component guide               | Broad page becomes the component-family selector; valve page owns seat, ball, plug, trim, shutoff, and throttling procurement. |
+|        3 | AlN power-electronics heat spreader vs semiconductor AlN thermal page | Power page owns module thermal interfaces; semiconductor page owns heater/process-tool cleanliness and qualification.          |
+|        4 | Alumina machining guide vs zirconia machining guide                   | Replace shared material-template language with distinct failure modes, feature limits, and application decisions.              |
+|        5 | Vacuum-chuck page vs semiconductor process-ring page                  | Chuck page owns suction surface and flow acceptance; ring page owns annular bands, ID/OD, chamber edges, and concentricity.    |
+
+Rewrite these in place when their Search Console impressions justify the work. Merge or redirect only when two URLs cannot be given distinct buyer tasks.
 
 Avoid duplicating these search intents:
 
@@ -110,9 +136,20 @@ Lower-priority or risky gaps:
 - Medical implant performance claims.
 - Aerospace CMC manufacturing claims outside the site's machining scope.
 
-## Mass Keyword Expansion System
+## Search-Intent Expansion System
 
-The site should become a large keyword-capture property by multiplying useful RFQ decisions, not by publishing thin variants.
+The site should earn broad query coverage by resolving useful RFQ decisions, not by publishing a separate page for every keyword variation.
+
+Each indexable article gets one primary intent:
+
+1. Service selection: Is precision ceramic machining the right process and supplier route?
+2. Feasibility / DFM: Can this feature, tolerance, or surface be made and measured?
+3. Material decision: Which exact material direction fits the service environment?
+4. Component procurement: What must be specified for this bushing, plate, ring, nozzle, insulator, fixture, or end effector?
+5. Application qualification: What changes when the part enters semiconductor, RF, vacuum, power, wear, chemical, optical, or laboratory equipment?
+6. Acceptance: Which evidence proves the functional surface, feature, cleanliness, or matched-set requirement?
+
+Pages may support secondary questions, but two URLs should not promise the same primary task. If an existing page already satisfies the task, improve that URL instead of adding another.
 
 Each new article should be built from this four-part formula:
 
@@ -186,7 +223,7 @@ These are the strongest next topics because they add missing application coverag
 |        1 | Published: Alumina Ceramic Insulators for Electrical and Electronic Applications | Electrical insulation parts, standoffs, sleeves, spacers, feedthrough-adjacent parts | Alumina page, high-voltage guide, RFQ checklist                    |
 |        2 | Published: Aluminum Nitride Heat Spreaders for Power Electronics                 | AI data center, SiC module, thermal interface, flatness, Ra                          | AlN machining page, AlN semiconductor page, power electronics case |
 |        3 | Published: Ceramic Feedthrough Insulators for Vacuum and Electrical Systems      | Vacuum, high voltage, bore fit, sealing interface, creepage                          | Vacuum chuck guide, high-voltage guide, thin-wall sleeve guide     |
-|        4 | Machined Ceramic Plates for RF and Microwave Applications                        | RF windows, insulating plates, flatness, dielectric spacing, surface finish          | Material selection, tolerance map, surface finish                  |
+|        4 | Published: Machined Ceramic Plates for RF and Microwave Assemblies               | RF substrates, insulating plates, flatness, dielectric spacing, surface finish       | Material selection, tolerance map, surface finish                  |
 |        5 | Published: Wear-Resistant Ceramic Bushings for Industrial Machinery              | Direct component search, wear, ID/OD, roundness, Ra                                  | Wear overview, thin-wall sleeve guide, tolerance map               |
 |        6 | Ceramic Bearings and Rollers for Harsh Operating Conditions                      | Rolling/sliding wear, Si3N4/ZrO2, roundness, finish                                  | Silicon nitride page, zirconia page, surface finish                |
 |        7 | Published: Precision Ceramic Seal Faces for Pumps and Rotating Equipment         | Lapped faces, SiC/alumina/ZrO2, leakage risk                                         | Lapped seal faces, pump/valve guide, SiC page                      |
@@ -377,12 +414,18 @@ Avoid:
 To avoid low-value content:
 
 - Start with one concrete sourcing problem.
+- Assign one primary search intent and make the first paragraph answer it directly.
 - Define one material decision, one component family, and one acceptance risk.
 - Include tables only when they help engineering selection or RFQ preparation.
 - Avoid trend-only articles. A trend signal must translate to components, surfaces, tolerances, cleaning, packaging, or inspection.
 - Avoid generic intros such as "ceramics are widely used."
+- Add a useful decision, boundary, checklist, or evidence model that is not a paraphrase of competing pages.
+- Cite primary material, equipment, standards, or market sources for claims that need external support.
+- State capability and qualification boundaries instead of implying that machining inspection proves final equipment performance.
+- Do not write to a target word count. Stop when the buyer can complete the task without returning to search for the missing step.
 - Do not promise guaranteed tolerances, lead time, price, feasibility, cleanliness, medical approval, or final equipment performance.
-- Use images only when they reinforce the component family or inspection risk.
+- Default to one relevant hero image. Add an inline image only when it explains geometry, a functional zone, or an inspection method that prose and a table cannot explain as clearly.
+- Do not generate decorative images to meet an image count, and do not repeat the hero inside the article body.
 
 ## Recommended Publishing Cadence
 
@@ -408,6 +451,7 @@ Recommended current batch status after the latest audit:
 5. Published: Precision Ceramic Seal Faces for Pumps and Rotating Equipment.
 6. Published: Ceramic Guide Rails for High-Friction Production Lines.
 7. Published: Ceramic Valve Components for Corrosive and Abrasive Fluids.
+8. Published: Machined Ceramic Plates for RF and Microwave Assemblies.
 
 Reasoning:
 
@@ -429,5 +473,5 @@ Before writing each new article:
 2. Confirm the article adds a new RFQ decision.
 3. Select one component family, one material decision, and one inspection risk.
 4. Plan at least five internal links before drafting.
-5. Generate fresh images using the project image protocol.
+5. Select one accurate hero image; create an additional explanatory image only when it adds information.
 6. Run `npm run check` and `npm run build`.

@@ -52,8 +52,6 @@ In a simple drawing, a feedthrough insulator may look like a tube with a flange.
 
 For broad insulation context, use the [alumina ceramic insulator guide](/posts/electrical-insulation/alumina-ceramic-insulators-electrical-electronic-applications/). For voltage-driven geometry, use the [high-voltage ceramic insulator RFQ guide](/posts/high-voltage-insulation/ceramic-high-voltage-insulators-rfq/). This page is narrower: it focuses on feedthrough-adjacent ceramic insulators where vacuum, bore fit, sealing lands, and electrical spacing meet.
 
-![Precision alumina ceramic feedthrough insulator sleeves and vacuum electrical interface components](../../../assets/images/ceramic/posts/ceramic-feedthrough-insulators-vacuum-electrical-systems.webp)
-
 ## Start By Separating The Ceramic Scope From The Assembly Scope
 
 The most important RFQ question is:

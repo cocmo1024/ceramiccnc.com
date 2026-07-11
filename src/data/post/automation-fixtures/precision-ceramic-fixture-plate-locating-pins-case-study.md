@@ -46,8 +46,6 @@ Automation is also a durable trend, not only a one-year news cycle. The [Interna
 
 Ceramic suppliers already position fine ceramics in semiconductor and inspection equipment. [Kyocera's semiconductor processing overview](https://global.kyocera.com/prdct/fc/wp/catalog/semiconductor/index.html) lists high-precision ceramic uses around inspection equipment, probers, wafer transfer arms, end effectors, vacuum chucks, nozzles, and related tool components. The engineering task is to translate that demand into RFQ-ready machining decisions.
 
-![Precision alumina ceramic fixture plate with locating pins, bushings, datum pads, and CMM inspection setup](../../../assets/images/ceramic/posts/precision-ceramic-fixture-plate-locating-pins-case-study.webp)
-
 ## The Starting Requirement
 
 The starting RFQ in this case pattern was a fixture set for a clean inspection or assembly cell:

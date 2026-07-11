@@ -30,8 +30,6 @@ Ceramic valve components appear in chemical processing, slurry handling, dosing 
 
 This page is narrower than the broad [precision ceramic pump and valve components guide](/posts/pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control/) and different from the [ceramic seal faces for pumps and rotating equipment guide](/posts/pump-valve-components/precision-ceramic-seal-faces-pumps-rotating-equipment/). It focuses on valve-side ceramic components where shutoff, throttling, chemical exposure, abrasive particles, sliding fit, edge quality, and inspection evidence decide whether a machined part can move from drawing to qualification.
 
-![Precision ceramic valve seats, zirconia valve balls, silicon carbide trim rings, ceramic plugs, sleeves, and check valve discs for corrosive and abrasive fluids](../../../assets/images/ceramic/posts/ceramic-valve-components-corrosive-abrasive-fluids.webp)
-
 ### Why Valve Function Must Be Defined Before Material
 
 Valve problems usually appear as wear, leakage, sticking, contamination, erosion, or corrosion. The component name helps define the first review boundary:

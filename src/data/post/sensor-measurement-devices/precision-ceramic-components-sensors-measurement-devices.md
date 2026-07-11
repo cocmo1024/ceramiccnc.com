@@ -58,8 +58,6 @@ Common families include:
 
 The same part may be easy in a general fixture and difficult in a measurement device. The difference is the measurement consequence. A small burr-like edge chip, an uncontrolled bore taper, or a stressed thin section can change repeatability even if the drawing's general profile dimensions pass.
 
-![Precision alumina, zirconia, AlN, and silicon nitride ceramic components for sensors and measurement devices](../../../assets/images/ceramic/posts/precision-ceramic-components-sensors-measurement-devices.webp)
-
 ### Case Pattern: Ceramic Parts Around A Measurement Module
 
 A practical RFQ case is a small ceramic component set for a pressure, flow, analytical, or industrial measurement module:

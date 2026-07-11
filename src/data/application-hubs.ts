@@ -294,6 +294,7 @@ export const applicationHubs: ApplicationHub[] = [
     ],
     guidePostIds: [
       'electrical-insulation/alumina-ceramic-insulators-electrical-electronic-applications',
+      'rf-microwave/machined-ceramic-plates-rf-microwave-applications',
       'power-electronics/aluminum-nitride-heat-spreaders-power-electronics',
       'vacuum-electrical-systems/ceramic-feedthrough-insulators-vacuum-electrical-systems',
       'high-voltage-insulation/ceramic-high-voltage-insulators-rfq',
