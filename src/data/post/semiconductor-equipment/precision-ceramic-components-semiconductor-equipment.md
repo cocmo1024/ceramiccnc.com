@@ -18,7 +18,7 @@ author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/precision-ceramic-components-semiconductor-equipment.webp
 metadata:
   title: 'Precision Ceramic Components for Semiconductor Equipment'
-  description: 'Guide to precision ceramic components for semiconductor equipment: wafer handling, vacuum chucks, SiC rings, AlN plates, alumina insulators, micro-holes, tolerances, surface finish, inspection, and RFQ inputs.'
+  description: 'Guide to semiconductor ceramic components: wafer handling, vacuum chucks, SiC rings, AlN plates, alumina insulators, micro-holes, finish, inspection, and RFQ inputs.'
 ---
 
 > Precision ceramic components for semiconductor equipment are not purchased as generic ceramic parts. They are functional interfaces inside wafer handling, vacuum, etch, deposition, inspection, thermal management, and clean automation systems. The RFQ should define material grade, finished faces, edge condition, flatness, surface finish, micro-features, cleaning, and inspection evidence before price or lead time is treated as reliable.

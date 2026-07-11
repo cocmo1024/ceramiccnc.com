@@ -9,7 +9,7 @@ site:
 metadata:
   title:
     default: CERAMIC CNC | Custom Precision Ceramic CNC Machining
-    template: '%s | CERAMIC CNC'
+    template: '%s'
   description: 'Custom precision ceramic CNC machining, diamond grinding, lapping, micro-drilling, and RFQ review for Al2O3, ZrO2, Si3N4, SiC, MACOR, and technical ceramics.'
   robots:
     index: true

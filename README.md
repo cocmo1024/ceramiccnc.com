@@ -55,6 +55,10 @@ Primary pages:
 
 - `/` homepage
 - `/applications/`
+- `/applications/semiconductor-ceramic-components/`
+- `/applications/electrical-thermal-ceramic-components/`
+- `/applications/wear-fluid-control-ceramic-components/`
+- `/applications/automation-vacuum-ceramic-components/`
 - `/capabilities/`
 - `/materials/`
 - `/rfq/`
@@ -135,6 +139,7 @@ Topic selection:
 - Favor high-value RFQ intent over broad traffic. Strong topics usually include semiconductor equipment, AI data center power electronics, vacuum hardware, SiC power modules, micro-hole flow control, high-voltage insulation, lapped sealing faces, precision fixtures, and inspection-heavy ceramic parts.
 - Do not write a trend article unless it can naturally lead to drawings, material grade, quantity, timing, and acceptance requirements.
 - Remove or rewrite articles that drift into generic material science, ceramic AM, pottery, broad manufacturing news, or claims the site cannot support.
+- Keep SEO planning language out of live copy. Public articles should not discuss keywords, rankings, search intent, search value, content clusters, or why a topic was selected. Convert that reasoning into application context, component decisions, failure risks, inspection, and RFQ requirements.
 
 Article structure:
 

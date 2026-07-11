@@ -15,7 +15,7 @@ author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/silicon-nitride-ceramic-machining-structural-wear-parts.webp
 metadata:
   title: 'Silicon Nitride Ceramic Machining for Wear Parts'
-  description: 'Guide to silicon nitride ceramic machining for structural and wear parts: rollers, shafts, sleeves, bushings, guide components, tolerances, surface finish, inspection, and RFQ inputs.'
+  description: 'Guide to Si3N4 machining for rollers, shafts, sleeves, bushings, and guides, including roundness, tolerances, surface finish, inspection, and RFQ inputs.'
 ---
 
 > Silicon nitride ceramic machining is usually considered when a structural or wear component needs a combination of mechanical reliability, thermal shock resistance, low density, hardness, and stable performance under repeated contact. The material can be valuable, but the machined result depends on grade, blank condition, functional surfaces, tolerance scope, surface finish, edge quality, and inspection evidence.

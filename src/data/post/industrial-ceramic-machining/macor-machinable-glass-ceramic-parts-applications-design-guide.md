@@ -15,7 +15,7 @@ author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/macor-machinable-glass-ceramic-parts-applications-design-guide.webp
 metadata:
   title: 'Macor Machinable Glass Ceramic Parts Design Guide'
-  description: 'Guide to Macor machinable glass ceramic parts for prototypes, lab fixtures, vacuum components, insulators, design rules, machining limits, material transition, inspection, and RFQ inputs.'
+  description: 'Guide to Macor prototypes, lab fixtures, vacuum hardware, and insulators, including design rules, machining limits, material transition, inspection, and RFQ inputs.'
 ---
 
 > Macor machinable glass ceramic is usually considered when an engineer needs a ceramic-like prototype, insulating fixture, vacuum-compatible trial part, or laboratory component without waiting for a full sintered ceramic production route. It can be a practical material, but it should be selected with clear service limits, ceramic-friendly design rules, and a plan for whether the final part will stay in Macor or transition to alumina, zirconia, silicon nitride, silicon carbide, aluminum nitride, or another technical ceramic.

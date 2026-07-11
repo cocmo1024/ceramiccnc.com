@@ -18,7 +18,7 @@ author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/machined-ceramic-vacuum-chuck-components-semiconductor-tools.webp
 metadata:
   title: 'Machined Ceramic Vacuum Chuck Components for Semiconductor Tools'
-  description: 'Guide to machined ceramic vacuum chuck components for semiconductor tools: dense and porous chucks, flatness, micro-holes, grooves, datum strategy, cleaning, inspection, and RFQ inputs.'
+  description: 'Guide to ceramic vacuum chuck components: dense and porous plates, flatness, micro-holes, grooves, datums, cleaning, functional evidence, and RFQ inputs.'
 ---
 
 > Machined ceramic vacuum chuck components for semiconductor tools are not just round ceramic plates with holes. They are wafer-support interfaces where flatness, suction distribution, hole quality, groove edges, datum control, surface finish, cleaning, packaging, and inspection evidence decide whether the part can be accepted.

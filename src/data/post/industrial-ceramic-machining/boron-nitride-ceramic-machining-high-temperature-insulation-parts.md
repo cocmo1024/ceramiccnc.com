@@ -15,7 +15,7 @@ author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/boron-nitride-ceramic-machining-high-temperature-insulation-parts.webp
 metadata:
   title: 'Boron Nitride Ceramic Machining for High-Temperature Insulation'
-  description: 'Guide to boron nitride ceramic machining for high-temperature insulation parts: BN grades, furnace fixtures, electrical insulators, molten metal nozzles, tolerances, surface finish, and RFQ inputs.'
+  description: 'Guide to boron nitride machining for furnace fixtures, electrical insulators, molten-metal nozzles, high-temperature parts, tolerances, finish, and RFQ inputs.'
 ---
 
 > Boron nitride ceramic machining is usually considered when a custom part must combine high-temperature stability, electrical insulation, thermal shock resistance, machinability, and non-wetting behavior in furnace, vacuum, molten-metal, semiconductor, laboratory, or high-temperature process equipment. BN can be a strong engineering choice, but the final part depends on grade, atmosphere, temperature, contact load, geometry, surface condition, and inspection requirements.

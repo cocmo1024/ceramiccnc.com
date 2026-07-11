@@ -1,6 +1,6 @@
 ---
-title: 'About CERAMIC CNC | Custom Ceramic CNC Machining RFQ Review'
-description: 'About CERAMIC CNC: custom ceramic CNC machining service, precision ceramic machining, grinding, lapping, micro-drilling, material review, and RFQ evaluation by Suzhou Como.'
+title: 'About CERAMIC CNC and Our RFQ Review Process'
+description: 'CERAMIC CNC is operated by Suzhou Como Precision Materials and reviews custom ceramic machining drawings, materials, finishing, inspection, and sourcing requirements.'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 

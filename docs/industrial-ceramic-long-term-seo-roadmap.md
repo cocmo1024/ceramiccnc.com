@@ -1,6 +1,6 @@
 # Industrial Ceramic Long-Term SEO Roadmap
 
-Updated: 2026-07-05
+Updated: 2026-07-11
 
 ## Business Positioning
 
@@ -39,6 +39,7 @@ Strong existing coverage:
 - Semiconductor equipment: broad semiconductor ceramic components, SiC wafer handling, ceramic end effectors, vacuum chucks, process chamber rings, plasma insulators, AlN thermal management, alumina semiconductor parts, nozzles, high-purity cleanroom parts.
 - Precision feature pages: micro-holes, thin-wall sleeves, lapped seal faces, vacuum chuck flatness, high-voltage insulation.
 - Application case pages: automation fixture plates, SiC power module inspection fixtures, AlN heat spreaders for power electronics, wear-resistant ceramic bushings for industrial machinery, ceramic guide rails for high-friction production lines, precision ceramic seal faces for pumps and rotating equipment, ceramic valve components for corrosive and abrasive fluids, ceramic feedthrough insulators for vacuum/electrical systems, sensor and measurement devices, pump and valve components.
+- Hand-built application hubs: semiconductor ceramic components, electrical and thermal ceramic components, wear and fluid-control ceramic components, and automation/vacuum/instrument ceramic components.
 
 Avoid duplicating these search intents:
 
@@ -162,18 +163,19 @@ The internal-link system should use three layers:
    - Surface finish / subsurface damage.
 
 3. Cluster anchors:
-   - Semiconductor equipment.
-   - Power electronics / electrical / thermal.
-   - Wear / pump / valve / fluid / chemical.
-   - Automation / fixtures / metrology.
-   - Vacuum / optical / cleanroom / laboratory.
+   - `/applications/semiconductor-ceramic-components/`.
+   - `/applications/electrical-thermal-ceramic-components/`.
+   - `/applications/wear-fluid-control-ceramic-components/`.
+   - `/applications/automation-vacuum-ceramic-components/`.
 
 Implementation notes:
 
 - `src/data/article-topic-hubs.ts` is the controlled map for cross-article topic pathways.
+- `src/data/application-hubs.ts` is the content source for the four indexable application hubs.
 - `src/utils/blog.ts` controls related-post scoring. Keep adding precise topic families when new clusters are published.
 - Keep tag and broad category archive pages disabled unless they become hand-built hub pages with strong original copy.
 - Redirect historical thin category/tag URLs to the closest authoritative article instead of letting them dilute crawl quality.
+- Do not publish SEO editorial language in customer-facing copy. Terms such as keyword, search intent, search value, ranking, SEO target, internal-link opportunity, or content cluster belong in this roadmap, not in articles.
 
 ## Next Incremental Article Priorities
 

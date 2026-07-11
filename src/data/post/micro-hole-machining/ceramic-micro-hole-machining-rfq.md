@@ -20,9 +20,9 @@ This guide is written for engineers and sourcing teams preparing RFQs for alumin
 
 For semiconductor projects where micro-holes appear together with wafer handling, vacuum chucks, SiC rings, AlN thermal plates, and clean inspection requirements, use the [precision ceramic components for semiconductor equipment guide](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/) as the parent context. When the holes sit on a flatness-critical chuck surface, also use the [machined ceramic vacuum chuck components guide](/posts/semiconductor-equipment/machined-ceramic-vacuum-chuck-components-semiconductor-tools/).
 
-### Why This Topic Deserves a Dedicated Article
+### Why Micro-Holes Need Their Own RFQ Logic
 
-The existing ceramic machining guides cover material selection, DFM, tolerances, surface finish, and semiconductor equipment at a broad level. Micro-holes need their own RFQ logic because the risk is concentrated in a very small feature:
+Micro-holes need a dedicated RFQ logic because the risk is concentrated in a very small feature:
 
 - The hole may control flow or vacuum uniformity.
 - The entry and exit edges can create particle, crack, or clogging risk.
@@ -44,7 +44,7 @@ Micro-hole ceramic components usually appear in applications where ceramic prope
 | Inspection and beam control                        | Apertures, collimator plates, ceramic masks                           | Roundness, edge burr or chip condition, optical measurement, positional accuracy |
 | Vacuum fixtures and porous chuck interfaces        | Vacuum suction cups, chuck segments, support pads                     | Flatness, groove pattern, hole field uniformity, pore or channel behavior        |
 
-[Kyocera describes ceramic dispenser nozzles](https://global.kyocera.com/prdct/semicon/search_application/detail/d_nozzle.html) for controlled liquid dispensing in microelectronic assembly, where tip quality affects dispensing stability. [Ceratec describes ceramic vacuum wafer chucks](https://ceratec.nl/en/products/structural-parts/vacuum-wafer-chuck/) for semiconductor wafer positioning, with ceramic flatness as a key performance factor. These are useful signals: the search intent is often not "ceramic material" in the abstract, but a specific functional interface that must be machined, cleaned, and inspected.
+[Kyocera describes ceramic dispenser nozzles](https://global.kyocera.com/prdct/semicon/search_application/detail/d_nozzle.html) for controlled liquid dispensing in microelectronic assembly, where tip quality affects dispensing stability. [Ceratec describes ceramic vacuum wafer chucks](https://ceratec.nl/en/products/structural-parts/vacuum-wafer-chuck/) for semiconductor wafer positioning, with ceramic flatness as a key performance factor. Both examples show why the RFQ must describe a specific functional interface that can be machined, cleaned, and inspected, rather than only naming a ceramic material.
 
 ### What Counts as a Micro-Hole in an RFQ
 

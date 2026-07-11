@@ -15,7 +15,7 @@ author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/aluminum-nitride-ceramic-machining-thermal-management-components.webp
 metadata:
   title: 'Aluminum Nitride Ceramic Machining for Thermal Management'
-  description: 'Guide to aluminum nitride ceramic machining for thermal management components: heat spreaders, insulating plates, substrates, spacers, carriers, flatness, surface finish, and RFQ inputs.'
+  description: 'Guide to AlN ceramic machining for heat spreaders, insulating plates, substrates, spacers, thermal-interface flatness, surface finish, and RFQ inputs.'
 ---
 
 > Aluminum nitride ceramic machining is usually considered when a component must combine thermal management with electrical insulation, dimensional stability, and clean ceramic surfaces. AlN can be valuable in power electronics, semiconductor equipment, test fixtures, and thermal-interface hardware, but the final part depends on grade, blank condition, flatness, thickness control, surface finish, edge quality, and inspection evidence.

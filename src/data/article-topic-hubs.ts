@@ -1,5 +1,6 @@
 export interface ArticleTopicHub {
   id: string;
+  href: string;
   title: string;
   description: string;
   postIds: string[];
@@ -8,6 +9,7 @@ export interface ArticleTopicHub {
 export const articleTopicHubs: ArticleTopicHub[] = [
   {
     id: 'rfq-foundation',
+    href: '/rfq/',
     title: 'RFQ and ceramic machining fundamentals',
     description:
       'Start here when a buyer needs to turn a ceramic drawing into a quote-ready package with material, tolerance, surface, process, and inspection assumptions clear.',
@@ -24,6 +26,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
   },
   {
     id: 'semiconductor-equipment',
+    href: '/applications/semiconductor-ceramic-components/',
     title: 'Semiconductor equipment ceramic components',
     description:
       'Wafer handling, vacuum, process chamber, plasma, and AlN thermal-management ceramic RFQs where cleanliness, flatness, edge quality, and inspection evidence matter.',
@@ -43,6 +46,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
   },
   {
     id: 'material-selection',
+    href: '/materials/',
     title: 'Material-specific ceramic machining guides',
     description:
       'Compare common RFQ routes for alumina, zirconia, silicon nitride, silicon carbide, AlN, Macor, and boron nitride before locking a drawing.',
@@ -63,6 +67,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
   },
   {
     id: 'precision-features-inspection',
+    href: '/capabilities/',
     title: 'Precision features, surfaces, and inspection evidence',
     description:
       'Use this path for drawings controlled by micro-holes, thin walls, lapped faces, flatness, edge chips, vacuum features, creepage paths, or measurable acceptance gates.',
@@ -94,6 +99,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
   },
   {
     id: 'industrial-applications',
+    href: '/applications/',
     title: 'Industrial application and procurement paths',
     description:
       'Application-focused RFQ paths for wear parts, power electronics, vacuum hardware, sealing faces, high-voltage insulation, and repeatable industrial ceramic procurement.',
@@ -124,6 +130,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
   },
   {
     id: 'power-electrical-thermal',
+    href: '/applications/electrical-thermal-ceramic-components/',
     title: 'Power electronics, electrical insulation, and thermal parts',
     description:
       'Use this path for AlN, alumina, Si3N4, SiC, creepage, clearance, heat-spreader, fixture, and high-voltage ceramic RFQs driven by electrical or thermal constraints.',
@@ -144,6 +151,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
   },
   {
     id: 'wear-fluid-chemical',
+    href: '/applications/wear-fluid-control-ceramic-components/',
     title: 'Wear, pump, valve, fluid, and chemical ceramic parts',
     description:
       'Component searches for bushings, seal faces, nozzles, sleeves, valve parts, pump hardware, abrasive media, and corrosive-fluid ceramic machining decisions.',
@@ -165,6 +173,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
   },
   {
     id: 'automation-fixtures-metrology',
+    href: '/applications/automation-vacuum-ceramic-components/',
     title: 'Automation, fixtures, locating features, and metrology',
     description:
       'Precision fixture plates, locating pins, inspection nests, sensor holders, robotic handling parts, datum surfaces, and repeatable production tooling RFQs.',
@@ -184,6 +193,7 @@ export const articleTopicHubs: ArticleTopicHub[] = [
   },
   {
     id: 'vacuum-optical-lab',
+    href: '/applications/automation-vacuum-ceramic-components/',
     title: 'Vacuum, optical, cleanroom, sensor, and laboratory paths',
     description:
       'High-purity and small-batch precision ceramic RFQs where vacuum compatibility, clean packaging, lapped faces, bores, sensor geometry, or optical-adjacent mounting surfaces matter.',
@@ -203,7 +213,19 @@ export const articleTopicHubs: ArticleTopicHub[] = [
 ];
 
 export const getArticleTopicHubsForPost = (postId: string, maxHubs = 2): ArticleTopicHub[] => {
-  const matchingHubs = articleTopicHubs.filter((hub) => hub.postIds.includes(postId));
+  const priority = [
+    'semiconductor-equipment',
+    'power-electrical-thermal',
+    'wear-fluid-chemical',
+    'automation-fixtures-metrology',
+    'vacuum-optical-lab',
+    'material-selection',
+    'precision-features-inspection',
+    'industrial-applications',
+  ];
+  const matchingHubs = articleTopicHubs
+    .filter((hub) => hub.postIds.includes(postId))
+    .sort((a, b) => priority.indexOf(a.id) - priority.indexOf(b.id));
   const coreHub = articleTopicHubs.find((hub) => hub.id === 'rfq-foundation');
   const orderedHubs = [...matchingHubs.filter((hub) => hub.id !== 'rfq-foundation'), ...(coreHub ? [coreHub] : [])];
 

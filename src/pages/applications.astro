@@ -23,27 +23,43 @@ const applicationShowcases = ceramicApplications.map((item, index) => ({
 
 const applicationFamilies = [
   {
-    title: 'Semiconductor, vacuum, and high-voltage ceramics',
+    title: 'Semiconductor equipment ceramics',
     description:
-      'Wafer-handling hardware, insulating spacers, feedthrough-adjacent parts, and vacuum interfaces where cleanliness, flatness, edge radius, and datum evidence decide acceptance.',
+      'Wafer-handling parts, vacuum chucks, process rings, plasma insulators, nozzles, and thermal components organized by functional and inspection risk.',
     icon: 'tabler:device-analytics',
-    callToAction: { text: 'View semiconductor case', href: '/applications/#semiconductor-ceramic-components' },
+    callToAction: {
+      text: 'Open semiconductor hub',
+      href: '/applications/semiconductor-ceramic-components/',
+    },
   },
   {
-    title: 'Sealing, wear, and chemical hardware',
+    title: 'Electrical and thermal ceramics',
     description:
-      'Valve seats, sealing rings, bearings, pump parts, SiC flow components, and corrosive-service hardware where Ra, flatness, roundness, and edge integrity control life.',
-    icon: 'tabler:shield-check',
-    callToAction: { text: 'View sealing case', href: '/applications/#ceramic-sealing-faces-valve-seats' },
+      'Alumina insulators, AlN heat spreaders, feedthrough sleeves, high-voltage spacers, and power-module fixtures reviewed by interface.',
+    icon: 'tabler:bolt',
+    callToAction: {
+      text: 'Open electrical hub',
+      href: '/applications/electrical-thermal-ceramic-components/',
+    },
   },
   {
-    title: 'Pump, valve, and dispensing ceramics',
+    title: 'Wear and fluid-control ceramics',
     description:
-      'Ceramic plungers, sleeves, valve seats, metering inserts, injection-pump parts, and dispensing-valve components where roundness, Ra, leakage risk, media compatibility, and clean packaging matter.',
+      'Bushings, seal faces, valve seats, balls, plungers, sleeves, guide rails, and nozzles mapped to wear, media, fit, and leakage risks.',
     icon: 'tabler:cylinder',
     callToAction: {
-      text: 'View fluid-control case',
-      href: '/applications/#pump-valve-dispensing-ceramic-components',
+      text: 'Open wear and fluid hub',
+      href: '/applications/wear-fluid-control-ceramic-components/',
+    },
+  },
+  {
+    title: 'Automation, vacuum, and instruments',
+    description:
+      'Fixture plates, locating pins, metrology references, sensor parts, vacuum insulators, cleanroom hardware, and Macor prototypes.',
+    icon: 'tabler:assembly',
+    callToAction: {
+      text: 'Open automation hub',
+      href: '/applications/automation-vacuum-ceramic-components/',
     },
   },
   {
@@ -248,7 +264,7 @@ const applicationGuideLinks = [
 const metadata = {
   title: 'Advanced Ceramic CNC Machining Applications',
   description:
-    'Precision ceramic CNC application cases for semiconductor, vacuum, pump, valve, dispensing, sealing, wear, micro-hole, thin-wall, nozzle, bore, flatness, and edge-quality parts.',
+    'Precision ceramic CNC applications for semiconductor, electrical, thermal, vacuum, wear, fluid-control, automation, micro-hole, sealing, and fixture parts.',
   openGraph: {
     images: [
       {

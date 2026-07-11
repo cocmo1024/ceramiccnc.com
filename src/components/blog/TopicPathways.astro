@@ -46,7 +46,14 @@ const hubsWithPosts = (
       <div class:list={['grid gap-4', isIndexMode ? 'lg:grid-cols-2' : 'md:grid-cols-2']}>
         {hubsWithPosts.map((hub) => (
           <article class="surface-panel p-5">
-            <h3 class="text-lg font-semibold leading-6 text-slate-900 dark:text-slate-100">{hub.title}</h3>
+            <h3 class="text-lg font-semibold leading-6">
+              <a
+                class="text-slate-900 underline-offset-4 hover:text-primary hover:underline dark:text-slate-100 dark:hover:text-secondary"
+                href={hub.href}
+              >
+                {hub.title}
+              </a>
+            </h3>
             <p class="mt-2 text-sm leading-6 text-muted dark:text-slate-400">{hub.description}</p>
             <ul class="mt-4 space-y-3">
               {hub.posts.map((post) => (
@@ -63,6 +70,12 @@ const hubsWithPosts = (
                 </li>
               ))}
             </ul>
+            <a
+              class="mt-5 inline-flex font-semibold text-primary underline-offset-4 hover:underline dark:text-secondary"
+              href={hub.href}
+            >
+              View the complete topic hub
+            </a>
           </article>
         ))}
       </div>

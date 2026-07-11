@@ -19,7 +19,7 @@ author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/precision-ceramic-rings-semiconductor-process-chambers.webp
 metadata:
   title: 'Precision Ceramic Rings for Semiconductor Process Chambers'
-  description: 'Guide to precision ceramic rings for semiconductor process chambers: SiC and alumina rings, lapped bands, ID/OD control, grooves, edge quality, cleaning, inspection, and RFQ inputs.'
+  description: 'Guide to SiC and alumina process-chamber rings: lapped bands, ID/OD control, grooves, edge quality, cleaning, packaging, inspection, and RFQ inputs.'
 ---
 
 > Precision ceramic rings for semiconductor process chambers are not just circular ceramic parts. They are chamber interfaces where material grade, ID/OD geometry, flatness, lapped annular bands, groove details, edge quality, cleaning, packaging, and inspection evidence decide whether the ring can be accepted.

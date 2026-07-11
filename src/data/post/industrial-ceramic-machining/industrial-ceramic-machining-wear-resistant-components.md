@@ -8,7 +8,7 @@ author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/industrial-ceramic-machining-wear-resistant-components.webp
 metadata:
   title: 'Industrial Ceramic Machining for Wear-Resistant Parts'
-  description: 'Guide to industrial ceramic machining for wear-resistant components: alumina, zirconia, silicon nitride, silicon carbide, bushings, liners, seal faces, tolerances, finish, and RFQ review.'
+  description: 'Guide to machining wear-resistant ceramic bushings, liners, seal faces, and guides in alumina, zirconia, Si3N4, and SiC, with finish and RFQ review.'
 ---
 
 > Industrial ceramic machining is valuable when a wear component must keep its shape, clearance, surface condition, or sealing face after metals, polymers, or coatings lose stability. The material helps, but the machined geometry, contact surface, edge condition, and inspection plan decide whether the ceramic part can work in the real assembly.

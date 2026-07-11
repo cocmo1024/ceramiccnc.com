@@ -36,7 +36,7 @@ This article is narrower than the general [ceramic lapped seal faces RFQ guide](
 
 Pumping systems are a long-term industrial reliability and energy topic, not a short-lived trend. The U.S. Department of Energy maintains [pump systems resources](https://www.energy.gov/cmei/ito/pump-systems) and links to the industry sourcebook for improving pumping system performance. Mechanical seals are also treated as a specialized pump engineering subject: the Hydraulic Institute lists a 2024 second edition of [Mechanical Seals for the Pump Industry](https://www.pumps.org/product/mechanical-seals-for-the-pump-industry-selection-installation-maintenance-and-troubleshooting/), covering selection, installation, maintenance, and troubleshooting for rotary and rotodynamic pumps.
 
-For a precision ceramic machining website, the commercial value is direct. Buyers do not search only for "ceramic part." They search for:
+Seal-face RFQs usually use a specific component and material name:
 
 - silicon carbide mechanical seal face
 - ceramic pump seal ring
@@ -224,7 +224,7 @@ Use the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/cust
 
 ### How This Page Fits The Internal Selection Path
 
-Use this page when the search intent is a ceramic mechanical seal face, hard-face seal ring, stationary seat, rotating seal component, or pump seal face. Use related pages when the dominant issue changes:
+Use this page for a ceramic mechanical seal face, hard-face seal ring, stationary seat, rotating seal component, or pump seal face. Use related pages when the dominant engineering issue changes:
 
 - For general lapped-face specification, use the [ceramic lapped seal faces RFQ guide](/posts/lapped-seal-faces/ceramic-lapped-seal-faces-rfq/).
 - For full pump and valve assemblies with balls, seats, plungers, sleeves, and ports, use the [ceramic pump and valve components guide](/posts/pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control/).

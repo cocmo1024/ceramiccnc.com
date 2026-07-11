@@ -18,7 +18,7 @@ author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/ceramic-end-effectors-wafer-handling-automation.webp
 metadata:
   title: 'Ceramic End Effectors for Wafer Handling and Automation'
-  description: 'Guide to ceramic end effectors for wafer handling automation: materials, contact pads, fork geometry, edge quality, vacuum features, mounting datums, inspection, packaging, and RFQ inputs.'
+  description: 'Guide to ceramic wafer-handling end effectors: contact pads, fork geometry, edge quality, vacuum features, mounting datums, inspection, packaging, and RFQ inputs.'
 ---
 
 > Ceramic end effectors for wafer handling are not ordinary robot fingers. They are precision ceramic contact interfaces that must support, transfer, locate, or pick a fragile wafer while controlling flatness, edge quality, particle risk, stiffness, mounting alignment, cleaning, packaging, and inspection evidence.

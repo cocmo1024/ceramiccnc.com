@@ -7,7 +7,28 @@ export const headerData = {
   links: [
     {
       text: 'Applications',
-      href: getPermalink('/applications'),
+      links: [
+        {
+          text: 'Applications overview',
+          href: getPermalink('/applications'),
+        },
+        {
+          text: 'Semiconductor ceramics',
+          href: getPermalink('/applications/semiconductor-ceramic-components'),
+        },
+        {
+          text: 'Electrical and thermal ceramics',
+          href: getPermalink('/applications/electrical-thermal-ceramic-components'),
+        },
+        {
+          text: 'Wear and fluid-control ceramics',
+          href: getPermalink('/applications/wear-fluid-control-ceramic-components'),
+        },
+        {
+          text: 'Automation and vacuum ceramics',
+          href: getPermalink('/applications/automation-vacuum-ceramic-components'),
+        },
+      ],
     },
     {
       text: 'Capabilities',
@@ -57,17 +78,32 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Start',
+      title: 'Applications',
       links: [
-        { text: 'Applications', href: getPermalink('/applications') },
-        { text: 'Capabilities', href: getPermalink('/capabilities') },
-        { text: 'RFQ inputs', href: getPermalink('/rfq') },
-        { text: 'Materials', href: getPermalink('/materials') },
+        { text: 'Applications overview', href: getPermalink('/applications') },
+        {
+          text: 'Semiconductor ceramics',
+          href: getPermalink('/applications/semiconductor-ceramic-components'),
+        },
+        {
+          text: 'Electrical and thermal ceramics',
+          href: getPermalink('/applications/electrical-thermal-ceramic-components'),
+        },
+        {
+          text: 'Wear and fluid-control ceramics',
+          href: getPermalink('/applications/wear-fluid-control-ceramic-components'),
+        },
+        {
+          text: 'Automation and vacuum ceramics',
+          href: getPermalink('/applications/automation-vacuum-ceramic-components'),
+        },
       ],
     },
     {
       title: 'Engineering',
       links: [
+        { text: 'Capabilities', href: getPermalink('/capabilities') },
+        { text: 'Materials', href: getPermalink('/materials') },
         { text: 'Engineering Guide', href: getBlogPermalink() },
         {
           text: 'Tolerance map',

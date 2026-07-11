@@ -8,7 +8,7 @@ author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/precision-ceramic-machining-high-performance-industrial-components.webp
 metadata:
   title: 'Precision Ceramic Machining for Industrial Components'
-  description: 'Engineering guide to precision ceramic machining for high-performance industrial components: materials, CNC and diamond grinding routes, tolerances, surface finish, inspection, and RFQ inputs.'
+  description: 'Engineering guide to precision ceramic machining: materials, CNC and diamond grinding routes, tolerances, surface finish, inspection, cost drivers, and RFQ inputs.'
 ---
 
 > Precision ceramic machining is useful when a component must keep its geometry, insulation, wear resistance, thermal behavior, or chemical stability in conditions where metals or plastics create risk. The quote cannot be reduced to material name and quantity. It depends on drawing review, ceramic grade, blank state, functional surfaces, tolerance map, edge criteria, surface finish, and inspection method.

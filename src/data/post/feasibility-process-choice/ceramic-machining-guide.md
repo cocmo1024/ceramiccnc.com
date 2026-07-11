@@ -8,7 +8,7 @@ author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/744265b0487821dd43016f724d1e24cc-300-300-0.webp
 metadata:
   title: 'Ceramic CNC Machining Buyer Guide | Cost, Tolerances, RFQ'
-  description: 'Buyer guide for custom ceramic CNC machining service and precision ceramic machining: diamond grinding, tolerances, cost drivers, lead time, inspection, acceptance criteria, and RFQ preparation.'
+  description: 'Buyer guide to custom ceramic CNC machining, diamond grinding, tolerances, cost drivers, lead time, inspection, acceptance criteria, and quote-ready RFQ preparation.'
 ---
 
 > Diamond grinding is often part of the route for tight tolerance and controlled surface finish on advanced ceramics. The procurement leverage comes from defining the acceptance gate before the supplier prices uncertainty.

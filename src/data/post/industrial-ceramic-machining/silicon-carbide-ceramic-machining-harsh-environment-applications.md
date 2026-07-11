@@ -15,7 +15,7 @@ author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/silicon-carbide-ceramic-machining-harsh-environment-applications.webp
 metadata:
   title: 'Silicon Carbide Ceramic Machining for Harsh Environments'
-  description: 'Guide to silicon carbide ceramic machining for harsh environment parts: seal faces, valve seats, pump sleeves, nozzles, wear plates, semiconductor components, tolerances, surface finish, and RFQ inputs.'
+  description: 'Guide to SiC machining for seal faces, valve seats, pump sleeves, nozzles, wear plates, and semiconductor parts, including tolerances, finish, and RFQ inputs.'
 ---
 
 > Silicon carbide ceramic machining is usually considered when a component must work in abrasive, corrosive, high-temperature, high-stiffness, or high-cleanliness environments where ordinary metals, polymers, or lower-duty ceramics may not survive. SiC can be an excellent material, but the final part is defined by grade, blank state, diamond grinding route, lapped surfaces, edge quality, tolerance scope, and inspection evidence.

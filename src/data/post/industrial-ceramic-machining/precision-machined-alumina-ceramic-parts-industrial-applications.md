@@ -15,7 +15,7 @@ author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/precision-machined-alumina-ceramic-parts-industrial-applications.webp
 metadata:
   title: 'Precision Machined Alumina Ceramic Parts'
-  description: 'Engineering guide to precision machined alumina ceramic parts: applications, grade selection, CNC and diamond grinding features, tolerances, surface finish, inspection, and RFQ inputs.'
+  description: 'Guide to precision machined alumina parts: grade selection, CNC and diamond grinding features, tolerances, surface finish, inspection, and RFQ inputs.'
 ---
 
 > Alumina is one of the most widely specified technical ceramics because it can combine electrical insulation, wear resistance, thermal stability, chemical resistance, and practical availability. The machining challenge is that those advantages only become useful when the grade, blank state, functional surfaces, tolerance map, edge quality, and inspection plan are reviewed together.

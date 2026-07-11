@@ -17,8 +17,8 @@ tags:
 author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/silicon-carbide-wafer-handling-components-semiconductor-manufacturing.webp
 metadata:
-  title: 'Silicon Carbide Wafer Handling Components for Semiconductor Manufacturing'
-  description: 'Guide to SiC wafer handling components for semiconductor manufacturing: end effectors, lift pins, support pads, edge quality, flatness, cleaning, inspection, and RFQ inputs.'
+  title: 'SiC Wafer Handling Components for Semiconductor Tools'
+  description: 'Guide to SiC wafer handling components: end effectors, lift pins, support pads, contact geometry, edge quality, flatness, cleaning, inspection, and RFQ inputs.'
 ---
 
 > Silicon carbide wafer handling components are not just dark ceramic shapes inside semiconductor tools. They are wafer-contact interfaces. Their value depends on SiC grade, contact geometry, flatness, edge quality, surface finish, cleaning, protected packaging, and inspection evidence that matches the way the component will touch, support, transfer, or locate a wafer.

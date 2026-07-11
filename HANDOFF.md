@@ -90,6 +90,9 @@ npm run fix
 - Added Google Ads / GA4 / GTM-ready tracking hooks with blank public build variables only.
 - Added RFQ email/copy tracking, instant-contact tracking, attribution capture, and conversion-event scaffolding.
 - Added strict content posture: review first, no fake tolerance/price/lead-time promises before drawing review.
+- Added four hand-built application hubs for semiconductor, electrical/thermal, wear/fluid-control, and automation/vacuum ceramic component RFQs.
+- Connected article topic pathways, navigation, applications, and footer links to those hubs so long-tail articles support commercial application pages.
+- Removed public-facing SEO editorial language from existing articles and shortened search titles/descriptions for clearer result snippets.
 - Refined visual design toward precision ceramic: restrained, clean, technical, cool neutral palette, high contrast, light/dark mode support.
 - Replaced hero imagery with ceramic CNC product imagery.
 - Added and documented project image-generation protocol based on the TITAN industrial SEO visual-manifest logic:
@@ -170,6 +173,7 @@ docs/article-image-prompt-protocol.md
 - Do not add fake `lastmod` dates.
 - Do not expose sensitive keys in the repo. Tracking IDs and ad conversion IDs are configured through environment variables only.
 - Keep generated prompts and visual manifests out of live articles. They belong in docs or internal workflow, not published content.
+- Keep SEO planning language out of public articles. Do not discuss keywords, ranking, search value, search intent, content clusters, or why a topic was selected; translate that reasoning into buyer decisions, failure modes, inspection, and RFQ inputs.
 - New article hero images should be fresh, relevant, and saved under:
 
 ```text
