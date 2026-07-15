@@ -20,6 +20,7 @@ export interface ImageProps extends Omit<HTMLAttributes<'img'>, 'src'> {
 
   layout?: Layout;
   widths?: number[] | null;
+  fallbackWidth?: number | null;
   aspectRatio?: string | number | null;
   objectPosition?: string;
 
@@ -282,6 +283,7 @@ export async function getImagesOptimized(
     aspectRatio,
     objectPosition,
     widths,
+    fallbackWidth,
     layout = 'constrained',
     style = '',
     format,
@@ -333,9 +335,10 @@ export async function getImagesOptimized(
       : await transform(image, breakpoints, Number(width) || undefined, Number(height) || undefined, format);
 
   const srcset = optimizedImages.map(({ src, width }) => `${src} ${width}w`).join(', ');
+  const fallbackImage = fallbackWidth ? optimizedImages.find(({ width }) => width === fallbackWidth) : undefined;
 
   return {
-    src: typeof image === 'string' ? image : image.src,
+    src: typeof image === 'string' ? image : (fallbackImage?.src ?? image.src),
     attributes: {
       width: width,
       height: height,
