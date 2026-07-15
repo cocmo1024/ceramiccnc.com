@@ -2,6 +2,8 @@
 
 Static Astro site for [ceramiccnc.com](https://ceramiccnc.com), focused on precision ceramic CNC machining, diamond grinding, micro-drilling, lapping, inspection-aware RFQ review, and engineering guidance for technical ceramic parts.
 
+> 新增或更新任何公开内容前，请先阅读 [CONTENT_UPDATE_GUIDE.md](./CONTENT_UPDATE_GUIDE.md)。
+
 This README is the project operating manual. Use it before editing copy, adding pages, changing SEO, replacing images, or preparing the site for ads.
 
 ## Positioning
@@ -71,8 +73,7 @@ Primary pages:
 
 Current engineering article inventory:
 
-- The site has 45 engineering articles as of 2026-07-08.
-- Full article sources live under `src/data/post/`.
+- Full article sources live under `src/data/post/`; derive the current count from that directory instead of copying a hard-coded inventory number into future plans.
 - The live index is `/category/engineering-guide/`.
 - Long-term topic planning, duplicate-avoidance rules, Search Console baseline, and internal-link architecture live in `docs/industrial-ceramic-long-term-seo-roadmap.md`.
 
