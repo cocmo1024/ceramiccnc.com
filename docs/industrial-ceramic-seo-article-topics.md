@@ -8,12 +8,12 @@ Inference: The website should not rely on generic terms such as "ceramic part." 
 
 Decision: Topics 1-20 are already published and remain locked as the foundation, material, and semiconductor equipment launch set. Topics 21-100 below remain valid as the numbered backlog, but broad long-term planning should also use `docs/industrial-ceramic-long-term-seo-roadmap.md` to avoid over-publishing one cluster and to expand into electrical, thermal, wear, fluid, automation, optical, laboratory, and medical-adjacent inquiry fields.
 
-Current status as of 2026-07-11:
+Current status as of 2026-07-16:
 
 - Published and locked: 1-20.
-- Strategic cross-industry articles already published outside the old numbered sequence: 41-42, 45-46, 51, 55-56, and 59.
+- Strategic cross-industry articles already published outside the old numbered sequence: 41-42, 45-46, 51, 55-56, 59, 73, and 84.
 - Next numbered backlog if the user asks by sequence: 21-40.
-- Next cross-industry priority if the user asks for "next high-value article" without a number: follow `docs/industrial-ceramic-long-term-seo-roadmap.md`.
+- Next cross-industry priority if the user asks for "next high-value article" without a number: High-Purity Ceramic Components for Analytical Instruments, then follow `docs/industrial-ceramic-long-term-seo-roadmap.md`.
 
 ## Priority Article List
 
@@ -161,7 +161,7 @@ Current status as of 2026-07-11:
 
 72. Precision Ceramic Grippers for Robotic Handling Systems
 
-73. Ceramic Locating Pins for Precision Manufacturing Fixtures
+73. Published by consolidating the existing fixture URL: Ceramic Locating Pins for Precision Manufacturing Fixtures
 
 74. Alumina Ceramic Fixtures for Assembly and Inspection
 
@@ -183,7 +183,7 @@ Current status as of 2026-07-11:
 
 83. Alumina Ceramic Parts for High-Vacuum Systems
 
-84. Machined Ceramic Components for Optical and Laser Equipment
+84. Published: Machined Ceramic Components for Optical and Laser Equipment
 
 85. Ceramic Mounts for Precision Optical Assemblies
 

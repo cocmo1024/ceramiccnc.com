@@ -215,6 +215,8 @@ If the design is high-voltage sensitive, the [ceramic high-voltage insulators RF
 
 Macor is also used in vacuum, analytical, optical-adjacent, and laboratory equipment. The advantage is the combination of machinable ceramic geometry and non-metallic behavior in custom trial parts. The risk is that vacuum and lab hardware often has cleanliness, sealing, and thermal requirements that are not obvious from a simple drawing.
 
+For lens mounts, laser spacers, aperture supports, optical-bench fixtures, and alignment hardware, use the [machined ceramic components for optical and laser equipment guide](/posts/optical-laser-equipment/machined-ceramic-components-optical-laser-equipment/) to separate structural machining acceptance from final optical-system qualification.
+
 For these projects, the RFQ should clarify:
 
 - Vacuum level or general vacuum class if known.

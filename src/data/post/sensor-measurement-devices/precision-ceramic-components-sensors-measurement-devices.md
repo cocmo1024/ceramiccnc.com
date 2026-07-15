@@ -58,6 +58,8 @@ Common families include:
 
 The same part may be easy in a general fixture and difficult in a measurement device. The difference is the measurement consequence. A small burr-like edge chip, an uncontrolled bore taper, or a stressed thin section can change repeatability even if the drawing's general profile dimensions pass.
 
+When the part locates a lens barrel, aperture, fiber, detector, or laser subassembly, use the [machined ceramic components for optical and laser equipment guide](/posts/optical-laser-equipment/machined-ceramic-components-optical-laser-equipment/) to define the optical-axis reference, mounting boundary, clean handling, and customer-owned optical qualification.
+
 ### Case Pattern: Ceramic Parts Around A Measurement Module
 
 A practical RFQ case is a small ceramic component set for a pressure, flow, analytical, or industrial measurement module:

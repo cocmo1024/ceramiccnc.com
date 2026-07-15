@@ -31,6 +31,8 @@ The RFQ problem is not familiar. A ceramic valve ball may fail because the matin
 
 This article is a precision industrial ceramic machining case guide for pump and valve components. It builds on the broader [industrial ceramic machining for wear-resistant components guide](/posts/industrial-ceramic-machining/industrial-ceramic-machining-wear-resistant-components/), but focuses specifically on fluid-control parts where lapped seal faces, valve seats, balls, plungers, sleeves, and clean inspection evidence decide acceptance.
 
+For a valve-only RFQ involving seats, balls, plugs, trim, shutoff, or throttling interfaces, use the narrower [ceramic valve components for corrosive and abrasive fluids guide](/posts/pump-valve-components/ceramic-valve-components-corrosive-abrasive-fluids/). This page remains the component-family selector for mixed pump, seal, sleeve, plunger, and valve packages.
+
 ### Why Pump And Valve Components Need Function-Specific Review
 
 Ceramic valve seats, balls, silicon carbide seal rings, zirconia plungers, alumina pump sleeves, and other fluid-control parts are usually sourced because a real assembly is wearing, corroding, leaking, sticking, or contaminating the fluid path.

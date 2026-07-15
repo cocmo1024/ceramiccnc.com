@@ -109,7 +109,7 @@ Discuss these points before the quote is finalized:
 
 ![Clean packaging layout for high-purity alumina, zirconia, silicon carbide, and aluminum nitride ceramic components](../../../assets/images/ceramic/posts/cleanroom-high-purity-ceramic-components-clean-packaging-2026.webp)
 
-For clean fluid control, pair this guide with the [precision ceramic pump and valve components guide](/posts/pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control/). For clean automation and repeatable locating hardware, see the [precision ceramic fixture plate and locating pin case study](/posts/automation-fixtures/precision-ceramic-fixture-plate-locating-pins-case-study/). For sensor-adjacent parts, see the [precision ceramic components for sensors and measurement devices guide](/posts/sensor-measurement-devices/precision-ceramic-components-sensors-measurement-devices/).
+For clean fluid control, pair this guide with the [precision ceramic pump and valve components guide](/posts/pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control/). For clean automation and repeatable locating hardware, see the [ceramic locating pin and fixture plate guide](/posts/automation-fixtures/precision-ceramic-fixture-plate-locating-pins-case-study/). For sensor-adjacent parts, see the [precision ceramic components for sensors and measurement devices guide](/posts/sensor-measurement-devices/precision-ceramic-components-sensors-measurement-devices/). For mounts, apertures, and optical-axis interfaces, use the [optical and laser equipment ceramic guide](/posts/optical-laser-equipment/machined-ceramic-components-optical-laser-equipment/).
 
 ### Inspection Evidence Should Match The Failure Mode
 

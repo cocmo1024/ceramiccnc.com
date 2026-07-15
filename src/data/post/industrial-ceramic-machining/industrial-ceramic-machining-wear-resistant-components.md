@@ -15,6 +15,8 @@ metadata:
 
 Wear-resistant ceramic components are used in pumps, valves, packaging equipment, textile machinery, abrasive material handling, chemical processing, semiconductor-adjacent equipment, industrial automation, metering systems, and high-speed guide mechanisms. Common RFQs include ceramic bushings, sleeves, shafts, rollers, pins, plungers, seal faces, valve seats, liners, wear plates, guide rails, nozzles, and custom sliding fixtures.
 
+For long bars, strips, blocks, slots, and exposed sliding edges in conveyors or production machinery, use the focused [ceramic guide rails for high-friction production lines guide](/posts/wear-components/ceramic-guide-rails-high-friction-production-lines/). This page remains the broader material and component selector for wear applications.
+
 The important sourcing question is not simply "Which ceramic is hardest?"
 
 The better question is:

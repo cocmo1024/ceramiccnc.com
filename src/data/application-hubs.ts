@@ -472,20 +472,20 @@ export const applicationHubs: ApplicationHub[] = [
   {
     slug: 'automation-vacuum-ceramic-components',
     navTitle: 'Automation and vacuum ceramics',
-    title: 'Precision ceramic components for automation, vacuum, and instruments',
-    metaTitle: 'Automation and Vacuum Ceramic Components: RFQ Guide',
+    title: 'Precision ceramic components for automation, optics, and vacuum',
+    metaTitle: 'Automation, Optical & Vacuum Ceramic Components: RFQ',
     description:
-      'RFQ hub for ceramic fixtures, locating pins, sensor parts, metrology references, vacuum insulators, cleanroom hardware, Macor prototypes, bores, datums, and inspection.',
-    tagline: 'Automation, vacuum, and instruments',
+      'RFQ hub for ceramic fixtures, locating pins, optical mounts, sensor parts, metrology references, vacuum insulators, Macor prototypes, datums, and inspection.',
+    tagline: 'Automation, optics, vacuum, and instruments',
     summary:
-      'Organize repeatability, datum, vacuum, sensor, clean assembly, and small-batch prototype requirements into a measurable ceramic RFQ.',
+      'Organize repeatability, optical references, vacuum, sensor, clean assembly, and small-batch prototype requirements into a measurable ceramic RFQ.',
     image: '~/assets/images/ceramic/application-9.webp',
     imageAlt:
       'Precision ceramic fixture plates, locating pins, sensor supports, and vacuum instrument components on an inspection surface',
     overview: [
-      'Automation, vacuum, and instrument ceramic parts are often low-volume but highly interface-driven. A fixture plate may control repeatable location; a sensor sleeve may control a bore and electrical isolation; a vacuum component may combine sealing, cleanliness, and high-voltage spacing; a Macor prototype may be used to validate geometry before a production ceramic is selected.',
+      'Automation, optical, vacuum, and instrument ceramic parts are often low-volume but highly interface-driven. A fixture plate may control repeatable location; an optical mount may connect a mechanical datum to an optical axis; a sensor sleeve may control a bore and electrical isolation; a vacuum component may combine sealing, cleanliness, and high-voltage spacing; a Macor prototype may validate geometry before a production ceramic is selected.',
       'The machining review should start from the functional coordinate system. Datums, locating features, contact pads, bores, sealing faces, sensor axes, and protected edges need a clear relationship to the assembly. Precision without an inspection plan is difficult to quote and difficult to accept.',
-      'This hub connects fixture, metrology, sensor, vacuum, cleanroom, and prototype guides without treating these parts as a generic miscellaneous category.',
+      'This hub connects fixture, metrology, optical, sensor, vacuum, cleanroom, and prototype guides without treating these parts as a generic miscellaneous category.',
     ],
     componentFamilies: [
       {
@@ -519,9 +519,9 @@ export const applicationHubs: ApplicationHub[] = [
         icon: 'tabler:sparkles',
       },
       {
-        title: 'Macor and prototype hardware',
+        title: 'Optical, laser, and prototype hardware',
         description:
-          'Threaded mounts, insulating fixtures, optical-adjacent supports, and laboratory parts where rapid conventional machining supports design learning and low-volume builds.',
+          'Mounts, spacers, apertures, alignment fixtures, threaded Macor supports, and laboratory parts controlled by optical references, clean handling, and low-distortion assembly.',
         icon: 'tabler:tool',
       },
     ],
@@ -587,6 +587,7 @@ export const applicationHubs: ApplicationHub[] = [
     ],
     guidePostIds: [
       'automation-fixtures/precision-ceramic-fixture-plate-locating-pins-case-study',
+      'optical-laser-equipment/machined-ceramic-components-optical-laser-equipment',
       'sensor-measurement-devices/precision-ceramic-components-sensors-measurement-devices',
       'vacuum-electrical-systems/ceramic-feedthrough-insulators-vacuum-electrical-systems',
       'high-purity-cleanroom/precision-ceramic-components-cleanroom-high-purity-manufacturing-systems',
