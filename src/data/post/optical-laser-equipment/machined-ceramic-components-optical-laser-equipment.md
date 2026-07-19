@@ -184,7 +184,7 @@ Separate surfaces into zones:
 | Bonding or thermal pad     | Grade-specific finish and cleanliness                      | Approved bag or tray material and no contact on the functional pad |
 | Exterior handling surface  | Practical visual and edge criteria                         | Normal separated packaging may be sufficient                       |
 
-For particle-sensitive equipment, use the [cleanroom and high-purity ceramic components guide](/posts/high-purity-cleanroom/precision-ceramic-components-cleanroom-high-purity-manufacturing-systems/). For face-specific finish decisions, use the [surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/).
+For particle-sensitive equipment, use the [cleanroom and high-purity ceramic components guide](/posts/high-purity-cleanroom/precision-ceramic-components-cleanroom-high-purity-manufacturing-systems/). When optical mounts, rings, insulating supports, or sensor hardware enter a high- or ultra-high-vacuum chamber, use the [machined alumina components for high- and ultra-high-vacuum systems guide](/posts/high-vacuum-systems/machined-alumina-components-high-ultra-high-vacuum-systems/) to define sealing interfaces, trapped volumes, cleaning, bake context, packaging, and the customer's final vacuum test. For face-specific finish decisions, use the [surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/).
 
 ## Inspection Boundary: Machined Part Versus Optical System
 

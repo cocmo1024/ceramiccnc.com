@@ -200,16 +200,18 @@ export const articleTopicHubs: ArticleTopicHub[] = [
   {
     id: 'vacuum-optical-lab',
     href: '/applications/automation-vacuum-ceramic-components/',
-    title: 'Vacuum, optical, cleanroom, sensor, and laboratory paths',
+    title: 'Vacuum, analytical, optical, cleanroom, sensor, and laboratory paths',
     description:
-      'High-purity and small-batch precision ceramic RFQs where vacuum compatibility, clean packaging, lapped faces, bores, sensor geometry, or optical-adjacent mounting surfaces matter.',
+      'High-purity and small-batch precision ceramic RFQs where analytical fluid paths, vacuum compatibility, clean packaging, lapped faces, bores, sensor geometry, or optical-adjacent mounting surfaces matter.',
     postIds: [
       'high-purity-cleanroom/precision-ceramic-components-cleanroom-high-purity-manufacturing-systems',
-      'vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq',
+      'analytical-instruments/ceramic-fluid-path-components-analytical-instruments',
+      'high-vacuum-systems/machined-alumina-components-high-ultra-high-vacuum-systems',
       'vacuum-electrical-systems/ceramic-feedthrough-insulators-vacuum-electrical-systems',
-      'high-voltage-insulation/ceramic-high-voltage-insulators-rfq',
       'sensor-measurement-devices/precision-ceramic-components-sensors-measurement-devices',
       'optical-laser-equipment/machined-ceramic-components-optical-laser-equipment',
+      'vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq',
+      'high-voltage-insulation/ceramic-high-voltage-insulators-rfq',
       'industrial-ceramic-machining/macor-machinable-glass-ceramic-parts-applications-design-guide',
       'industrial-ceramic-machining/boron-nitride-ceramic-machining-high-temperature-insulation-parts',
       'lapped-seal-faces/ceramic-lapped-seal-faces-rfq',

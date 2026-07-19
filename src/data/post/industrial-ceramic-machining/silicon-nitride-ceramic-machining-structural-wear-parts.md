@@ -1,7 +1,8 @@
 ---
-title: 'Silicon Nitride Ceramic Machining for Structural and Wear Parts'
+title: 'Silicon Nitride Ceramic Machining for Rollers and Wear Parts'
 publishDate: 2026-05-23
-excerpt: 'How engineers should specify silicon nitride ceramic machining for rollers, shafts, sleeves, bushings, guide components, structural supports, and wear-critical ceramic parts.'
+updateDate: 2026-07-19
+excerpt: 'How engineers should specify custom silicon nitride rollers, shafts, bearing-adjacent parts, sleeves, bushings, guides, and structural wear components.'
 category: Engineering Guide
 tags:
   [
@@ -14,13 +15,15 @@ tags:
 author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/silicon-nitride-ceramic-machining-structural-wear-parts.webp
 metadata:
-  title: 'Silicon Nitride Ceramic Machining for Wear Parts'
-  description: 'Guide to Si3N4 machining for rollers, shafts, sleeves, bushings, and guides, including roundness, tolerances, surface finish, inspection, and RFQ inputs.'
+  title: 'Silicon Nitride Rollers & Wear Parts: Machining RFQ'
+  description: 'RFQ guide for custom Si3N4 rollers, shafts, bearing-adjacent parts, sleeves, bushings, and guides: grade, contact, finish, inspection, and limits.'
 ---
 
 > Silicon nitride ceramic machining is usually considered when a structural or wear component needs a combination of mechanical reliability, thermal shock resistance, low density, hardness, and stable performance under repeated contact. The material can be valuable, but the machined result depends on grade, blank condition, functional surfaces, tolerance scope, surface finish, edge quality, and inspection evidence.
 
 Silicon nitride ceramic parts are used in industrial automation, bearing-adjacent assemblies, high-speed motion systems, pump and valve hardware, welding and forming fixtures, thermal cycling equipment, metrology fixtures, laboratory instruments, and demanding wear mechanisms. Typical RFQs include silicon nitride rollers, shafts, sleeves, bushings, guide pins, locating components, wear pads, support blocks, bearing-related parts, and custom structural ceramic components.
+
+This page covers the manufacturability and acceptance of **custom machined ceramic components**. It does not claim the supply of complete bearings, standard replacement bearings, certified bearing-grade balls, or a finished rolling-bearing life rating. Those products require a specialized material, rolling-element, raceway, assembly, lubrication, and endurance-qualification system beyond a dimensional ceramic machining report.
 
 The practical sourcing question is not simply "Can silicon nitride be machined?"
 
@@ -125,6 +128,33 @@ For these components, the drawing should define:
 - Quantity and whether parts must be matched as a set.
 
 The [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) is useful when deciding which dimensions need tight control and which dimensions can remain standard-ground or non-critical. Applying precision everywhere can increase cost without improving machine performance.
+
+#### Separate A Custom Roller From A Bearing-Grade Rolling Element
+
+The word "roller" can describe very different sourcing problems. A custom guide roller, transport roller, follower, insulating roller, or bearing-adjacent shaft may be quoted from a customer drawing with application-specific geometry and inspection. A rolling element for a qualified hybrid or all-ceramic bearing belongs to a more controlled product system.
+
+[ISO 26602:2017](https://www.iso.org/standard/65456.html) covers preprocessed silicon nitride materials for rolling bearing balls and rollers. [ISO 3290-2:2014](https://www.iso.org/standard/60133.html) covers finished silicon nitride bearing balls. [ISO 3643:2024](https://www.iso.org/standard/79645.html) standardizes surface-defect terms and photographic examples for finished silicon nitride balls and rollers, but it does not set universal acceptance limits. The buyer and qualified bearing supply chain still have to define the defect limits appropriate to the application.
+
+These standards create a useful RFQ boundary:
+
+- If the requirement is a custom industrial roller or shaft, state the material grade, drawing features, contact surfaces, operating conditions, and dimensional evidence needed for that part.
+- If the requirement is a bearing rolling element, state the applicable material and finished-product standards, size or grade class, defect criteria, lot controls, nondestructive evaluation, and bearing-manufacturer qualification route.
+- If the requirement is a complete hybrid or all-ceramic bearing, procure and qualify the assembly as a bearing system rather than asking a ceramic machining quote to imply raceway, cage, lubrication, fatigue-life, and assembly performance.
+
+Silicon nitride should not be described as automatically producing a longer-lived bearing. SKF's discussion of its [generalized bearing life model for hybrid bearings](https://evolution.skf.com/the-skf-generalized-bearing-life-model-for-hybrid-bearings/) shows why operating conditions matter: rolling-contact pressure, load, lubrication, contamination, material fatigue, and raceway behavior interact. The engineering decision is conditional, not a generic material ranking.
+
+For a custom rolling-contact part, add these inputs before quotation:
+
+- Radial and axial load direction, load spectrum, shock, and expected failure mode.
+- Rotational or linear speed, acceleration, starts and stops, and any short-stroke oscillation.
+- Lubrication type, starvation risk, process contamination, moisture, vacuum, or corrosive exposure.
+- Operating and transient temperature, thermal gradients, and mating-material expansion.
+- Counterface or raceway material, hardness, geometry, finish, and replacement strategy.
+- Electrical-current or insulation requirement, if it is one reason for considering a ceramic.
+- Roundness, cylindricity, runout, diameter sorting or matched-set logic, and surface-defect limits.
+- Material lot evidence, surface-integrity inspection, nondestructive evaluation, and customer endurance-test responsibility where the risk justifies them.
+
+Dimensional conformance alone cannot prove rolling-contact fatigue life. The drawing and purchase specification should identify which acceptance evidence belongs to the ceramic component supplier and which qualification belongs to the bearing, machine, or system owner.
 
 ### Silicon Nitride Sleeves, Bushings, And Guide Components
 

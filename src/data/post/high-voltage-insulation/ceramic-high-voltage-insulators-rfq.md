@@ -38,6 +38,8 @@ Include:
 
 This does not mean the machining supplier becomes the electrical designer. It means the quote can respect the surfaces and features that electrical performance depends on.
 
+When the ceramic also surrounds a conductor or forms part of a vacuum boundary, use the [ceramic feedthrough insulator guide](/posts/vacuum-electrical-systems/ceramic-feedthrough-insulators-vacuum-electrical-systems/) to separate the machined ceramic body from metallization, brazing, hermetic sealing, leak testing, and final electrical qualification.
+
 ### Ceramic Part Types
 
 | Part type                  | RFQ focus                                                                    |

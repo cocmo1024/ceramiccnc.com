@@ -156,7 +156,7 @@ Good RFQ details include:
 - Whether edge chips affect flow, seal, particles, or only appearance.
 - Inspection method: optical, pin gauge, CMM, microscope, air flow, or customer functional test.
 
-For very small holes, use the [ceramic micro-hole machining RFQ guide](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/). For nozzle-like flow-control inserts, the [precision ceramic nozzles for semiconductor and vacuum equipment guide](/posts/semiconductor-equipment/precision-ceramic-nozzles-semiconductor-vacuum-equipment/) is a useful companion page.
+For very small holes, use the [ceramic micro-hole machining RFQ guide](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/). For nozzle-like flow-control inserts, the [precision ceramic nozzles for semiconductor and vacuum equipment guide](/posts/semiconductor-equipment/precision-ceramic-nozzles-semiconductor-vacuum-equipment/) is a useful companion page. If the restrictor, sampling block, or flow cell sits inside an analyzer rather than a pump or valve assembly, use the [ceramic fluid-path components for analytical instruments guide](/posts/analytical-instruments/ceramic-fluid-path-components-analytical-instruments/) to separate machined-geometry acceptance from calibrated flow or instrument performance.
 
 ### Cleaning, Media, And Packaging
 

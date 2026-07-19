@@ -55,6 +55,8 @@ High-purity ceramic components are defined by the risk they create in the system
 
 If the RFQ only says "ceramic parts for cleanroom equipment," the supplier has to guess which surfaces matter. A better RFQ separates functional surfaces from non-critical surfaces and explains what would cause failure: particles, leakage, fit, wear, thermal resistance, electrical breakdown, vacuum instability, or poor assembly repeatability.
 
+For sample-wetted flow cells, restrictors, purge inserts, and small-channel parts inside analyzers, use the [ceramic fluid-path components for analytical instruments guide](/posts/analytical-instruments/ceramic-fluid-path-components-analytical-instruments/) to define media contact, cleanability, blockage evidence, and the boundary between dimensional acceptance and instrument calibration.
+
 ### Material Selection For High-Purity Ceramic Systems
 
 Material selection should begin with environment and failure mode, not with the broad word "ceramic." The internal [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) is the best starting hub, but cleanroom projects usually narrow the choice around the surface and contamination risk.
@@ -95,7 +97,7 @@ For hole arrays and very small ports, use the [ceramic micro-hole machining RFQ 
 
 Cleaning and packaging are not clerical notes for high-purity ceramic components. They are part of the acceptance plan.
 
-The RFQ should state whether the part is used in a vacuum-side zone, fluid path, wafer-adjacent area, high-voltage assembly, optical or sensor area, thermal fixture, laboratory instrument, or general clean manufacturing enclosure. Each environment changes how surfaces and cavities should be protected.
+The RFQ should state whether the part is used in a vacuum-side zone, fluid path, wafer-adjacent area, high-voltage assembly, optical or sensor area, thermal fixture, laboratory instrument, or general clean manufacturing enclosure. Each environment changes how surfaces and cavities should be protected. For alumina rings, sleeves, spacers, insulating supports, and seal-adjacent parts entering high- or ultra-high-vacuum service, use the [machined alumina components for high- and ultra-high-vacuum systems guide](/posts/high-vacuum-systems/machined-alumina-components-high-ultra-high-vacuum-systems/) to define purity, trapped-volume review, cleaning, bake context, packaging, and customer-owned vacuum qualification.
 
 Discuss these points before the quote is finalized:
 

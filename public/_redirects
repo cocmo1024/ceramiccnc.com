@@ -1,5 +1,7 @@
 /FAQ/ /faq/ 301
 /FAQ /faq/ 301
+/Privacy/ /privacy/ 301
+/Privacy /privacy/ 301
 /Contact/ /contact/ 301
 /Contact /contact/ 301
 /Terms/ /terms/ 301
@@ -38,7 +40,11 @@
 /tags/green-machining /posts/process-routes-control/green-machining-vs-hard-machining/ 301
 /tags/diamond-grinding/ /posts/feasibility-process-choice/ceramic-machining-guide/ 301
 /tags/diamond-grinding /posts/feasibility-process-choice/ceramic-machining-guide/ 301
+/posts/ /category/engineering-guide/ 301
+/posts /category/engineering-guide/ 301
 /sitemap.xml /sitemap-index.xml 301
+/sitemap-article.xml /sitemap-index.xml 301
+/sitemap-page.xml /sitemap-index.xml 301
 /copper-cold-plates/ /applications/#ceramic-sealing-faces-valve-seats 301
 /copper-cold-plates /applications/#ceramic-sealing-faces-valve-seats 301
 /copper-heat-sinks/ /applications/#thermal-barrier-heat-resistant-fixtures 301

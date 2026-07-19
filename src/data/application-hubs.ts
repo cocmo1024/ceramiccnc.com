@@ -471,21 +471,21 @@ export const applicationHubs: ApplicationHub[] = [
   },
   {
     slug: 'automation-vacuum-ceramic-components',
-    navTitle: 'Automation and vacuum ceramics',
-    title: 'Precision ceramic components for automation, optics, and vacuum',
-    metaTitle: 'Automation, Optical & Vacuum Ceramic Components: RFQ',
+    navTitle: 'Automation, vacuum, and instrument ceramics',
+    title: 'Precision ceramic components for automation, optics, vacuum, and instruments',
+    metaTitle: 'Automation, Vacuum & Instrument Ceramic Components: RFQ',
     description:
-      'RFQ hub for ceramic fixtures, locating pins, optical mounts, sensor parts, metrology references, vacuum insulators, Macor prototypes, datums, and inspection.',
+      'RFQ hub for ceramic fixtures, locating pins, optical mounts, analytical fluid-path parts, sensor hardware, high-vacuum alumina components, Macor prototypes, datums, cleaning, and inspection.',
     tagline: 'Automation, optics, vacuum, and instruments',
     summary:
-      'Organize repeatability, optical references, vacuum, sensor, clean assembly, and small-batch prototype requirements into a measurable ceramic RFQ.',
+      'Organize repeatability, optical references, analytical fluid paths, high-vacuum interfaces, sensor, clean assembly, and small-batch prototype requirements into a measurable ceramic RFQ.',
     image: '~/assets/images/ceramic/application-9.webp',
     imageAlt:
       'Precision ceramic fixture plates, locating pins, sensor supports, and vacuum instrument components on an inspection surface',
     overview: [
-      'Automation, optical, vacuum, and instrument ceramic parts are often low-volume but highly interface-driven. A fixture plate may control repeatable location; an optical mount may connect a mechanical datum to an optical axis; a sensor sleeve may control a bore and electrical isolation; a vacuum component may combine sealing, cleanliness, and high-voltage spacing; a Macor prototype may validate geometry before a production ceramic is selected.',
+      'Automation, optical, vacuum, and instrument ceramic parts are often low-volume but highly interface-driven. A fixture plate may control repeatable location; an optical mount may connect a mechanical datum to an optical axis; an analytical flow cell may combine a small sample path with cleaning and blockage controls; a high-vacuum alumina component may combine sealing, trapped-volume, bake, and packaging requirements; a Macor prototype may validate geometry before a production ceramic is selected.',
       'The machining review should start from the functional coordinate system. Datums, locating features, contact pads, bores, sealing faces, sensor axes, and protected edges need a clear relationship to the assembly. Precision without an inspection plan is difficult to quote and difficult to accept.',
-      'This hub connects fixture, metrology, optical, sensor, vacuum, cleanroom, and prototype guides without treating these parts as a generic miscellaneous category.',
+      'This hub connects fixture, metrology, optical, analytical, sensor, high-vacuum, cleanroom, and prototype guides without treating these parts as a generic miscellaneous category.',
     ],
     componentFamilies: [
       {
@@ -501,15 +501,15 @@ export const applicationHubs: ApplicationHub[] = [
         icon: 'tabler:ruler-measure',
       },
       {
-        title: 'Sensor and measurement parts',
+        title: 'Sensor, analytical, and measurement parts',
         description:
-          'Sleeves, diaphragms, spacers, pins, flow cells, insulating bodies, and holders controlled by bore alignment, thin features, clean surfaces, and assembly fit.',
+          'Sleeves, diaphragms, spacers, pins, flow cells, sample-path inserts, insulating bodies, and holders controlled by bore alignment, dead-volume boundaries, clean surfaces, and assembly fit.',
         icon: 'tabler:gauge',
       },
       {
-        title: 'Vacuum and feedthrough hardware',
+        title: 'High-vacuum, UHV, and feedthrough hardware',
         description:
-          'Insulating sleeves, sealing interfaces, spacers, and feedthrough-adjacent parts where bore fit, creepage, flatness, cleaning, and leak boundaries interact.',
+          'Alumina rings, sleeves, spacers, sealing interfaces, and feedthrough-adjacent parts where bore fit, creepage, trapped volumes, flatness, cleaning, bake context, and leak boundaries interact.',
         icon: 'tabler:vacuum-cleaner',
       },
       {
@@ -541,11 +541,11 @@ export const applicationHubs: ApplicationHub[] = [
           'Provide mating materials, support areas, clamping or torque context, fit intent, and allowed edge relief.',
       },
       {
-        requirement: 'Vacuum and cleanliness boundary',
+        requirement: 'Fluid-path, vacuum, and cleanliness boundary',
         whyItMatters:
-          'Sealing faces, surface condition, trapped volumes, residue, and packaging can control vacuum or clean assembly performance.',
+          'Small passages, sealing faces, surface condition, trapped volumes, residue, and packaging can control analytical, vacuum, or clean assembly performance.',
         rfqEvidence:
-          'Mark sealing surfaces, leak boundary, cleaning or bake context, particle requirement, bagging, and functional test scope.',
+          'Mark sample or gas paths, sealing surfaces, leak boundary, cleaning or bake context, particle requirement, bagging, and functional test scope.',
       },
       {
         requirement: 'Inspection and repeat orders',
@@ -559,7 +559,7 @@ export const applicationHubs: ApplicationHub[] = [
       {
         title: 'Alumina (Al2O3)',
         description:
-          'Common for stable fixtures, insulation, vacuum-adjacent hardware, sensor bodies, spacers, and clean components. Grade and finished interfaces need definition.',
+          'Common for stable fixtures, insulation, analytical flow hardware, high-vacuum rings and spacers, sensor bodies, and clean components. Grade, purity, blank state, and finished interfaces need definition.',
       },
       {
         title: 'Zirconia (ZrO2)',
@@ -578,9 +578,9 @@ export const applicationHubs: ApplicationHub[] = [
       },
     ],
     rfqInputs: [
-      'Drawing and CAD with datums, locating features, sensor axes, contact pads, and sealing faces marked',
+      'Drawing and CAD with datums, locating features, sensor axes, sample or gas paths, contact pads, and sealing faces marked',
       'Material grade, blank source, operating environment, and prototype-to-production intent',
-      'Mating parts, fit, clamp, preload, thermal cycle, vacuum, electrical, and cleanliness context',
+      'Mating parts, fit, clamp, preload, thermal cycle, media, vacuum level, bake, electrical, and cleanliness context',
       'Critical position, flatness, bore, coaxiality, thickness, Ra, edge, and thin-feature requirements',
       'Inspection method, first-article report, repeat-order controls, traceability, and qualification boundary',
       'Quantity, target timing, cleaning, individual protection, bagging, labeling, and shipping orientation',
@@ -589,7 +589,9 @@ export const applicationHubs: ApplicationHub[] = [
       'automation-fixtures/precision-ceramic-fixture-plate-locating-pins-case-study',
       'optical-laser-equipment/machined-ceramic-components-optical-laser-equipment',
       'sensor-measurement-devices/precision-ceramic-components-sensors-measurement-devices',
+      'analytical-instruments/ceramic-fluid-path-components-analytical-instruments',
       'vacuum-electrical-systems/ceramic-feedthrough-insulators-vacuum-electrical-systems',
+      'high-vacuum-systems/machined-alumina-components-high-ultra-high-vacuum-systems',
       'high-purity-cleanroom/precision-ceramic-components-cleanroom-high-purity-manufacturing-systems',
       'thin-wall-sleeves/ceramic-thin-wall-sleeve-bore-concentricity-rfq',
       'vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq',

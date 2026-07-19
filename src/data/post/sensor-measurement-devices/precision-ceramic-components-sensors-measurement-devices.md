@@ -110,7 +110,7 @@ The phrase "tight tolerance" is not enough. A strong RFQ says, for example, whic
 
 ### Micro-Bores And Flow Paths Need Their Own Acceptance Logic
 
-Ceramic flow cells, orifice inserts, sampling blocks, and purge components can overlap with [ceramic micro-hole machining](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/) and [precision ceramic nozzles](/posts/semiconductor-equipment/precision-ceramic-nozzles-semiconductor-vacuum-equipment/). The sensor version adds a different question: does the feature support stable measurement, not just flow?
+Ceramic flow cells, orifice inserts, sampling blocks, and purge components can overlap with [ceramic micro-hole machining](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/) and [precision ceramic nozzles](/posts/semiconductor-equipment/precision-ceramic-nozzles-semiconductor-vacuum-equipment/). The sensor version adds a different question: does the feature support stable measurement, not just flow? When the component is a sample-wetted flow cell, restrictor, or insert for an analyzer, use the [ceramic fluid-path components for analytical instruments guide](/posts/analytical-instruments/ceramic-fluid-path-components-analytical-instruments/) to define media exposure, dead-volume boundaries, cleaning, blockage evidence, and customer-owned method performance.
 
 Useful RFQ inputs include:
 

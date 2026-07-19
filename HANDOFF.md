@@ -66,6 +66,9 @@ Full validation:
 
 ```bash
 npm run check
+npm run build
+npx wrangler@4.111.0 deploy --dry-run
+git diff --check
 ```
 
 Preview built site:
@@ -79,6 +82,23 @@ Format and lint fixes:
 ```bash
 npm run fix
 ```
+
+## Current Operating Snapshot
+
+Updated: 2026-07-19
+
+- Business position: precision ceramic CNC machining, diamond grinding, lapping, feature-specific inspection, and drawing-led RFQ review for custom industrial ceramic components.
+- Public content inventory after the current batch: 49 engineering articles connected to four hand-built application hubs.
+- Latest live Search Console review, 2026-06-20 through 2026-07-17: 7 clicks, 898 impressions, 0.8% CTR, and 22.8 average position.
+- Previous equal-length window: 1 click, 336 impressions, 0.3% CTR, and 37.9 average position.
+- Indexing report at review time: 29 indexed and 28 not indexed. The current binding constraint is index coverage and query-to-page clarity, not raw page count.
+- Sitemap: `https://ceramiccnc.com/sitemap-index.xml`, successful in Search Console, with 59 discovered pages at review time.
+- No main-domain robots block, manual action, or security issue was found. The reported critical robots/5xx item belongs to `ads.ceramiccnc.com`, not the main content site.
+- Current content batch:
+  - New analytical-instrument article limited to ceramic sample/wetted-path parts.
+  - New high/UHV article limited to non-chuck machined alumina bodies and explicit assembly/test boundaries.
+  - Existing Si3N4 URL refreshed for custom rollers and bearing-adjacent parts; no duplicate bearing article created.
+  - Legacy `/posts/`, old sitemap endpoints, and uppercase `/Privacy/` are redirected to current canonical destinations.
 
 ## Completed Work
 
@@ -115,19 +135,22 @@ npm run fix
 - Kept legacy noindex redirect/fallback pages for old URLs where needed.
 - Verified recent builds with `npm run check` and `npm run build`.
 - Recent commits:
-  - `d3a303b Add ceramic engineering guide updates`
-  - `5610e7f Document article image prompt protocol`
-  - `d2b94fd Add ceramic micro-hole machining RFQ guide`
-  - `ac7b2d0 Streamline SEO and RFQ content`
-  - `a7932f5 Refine ceramic visual system`
+  - `50fc957 Expand SEO into optical ceramic applications`
+  - `c844a3b Document content update workflow`
+  - `cbfa5c9 Optimize hero delivery and security policy`
+  - `8f4126e fix: remove duplicate sitemap output`
+  - `1af2773 Rework SEO content around buyer intent`
+  - `3e6b414 Build ceramic application SEO hubs`
 
 ## Current Unfinished Tasks
 
-- No known uncommitted code changes at the time of this handoff.
-- Continue adding high-value engineering articles when there is a clear RFQ/search-intent gap.
-- After each new article batch, confirm generated output, sitemap, RSS, canonical URLs, title/description, image alt, and structured data.
-- Optional future work: deeper Search Console-based content planning after enough impressions and queries accumulate.
-- Optional future work: add reliable `lastmod` only if update dates are maintained truthfully.
+- Do not accelerate page count until the 49-page batch has been crawled and index coverage is reviewed again.
+- Refresh the existing tolerance-capability, surface-finish/SSD, and green-vs-hard-machining URLs with stronger technical sourcing and acceptance logic; do not create replacements.
+- Use Search Console `query + page` evidence before merging or redirecting the overlapping DFM, AI-semiconductor, and pump/valve pairs.
+- The next net-new application candidate is precision ceramic grippers and contact fingers for industrial robotic handling, provided the existing wafer end-effector page can be kept distinct.
+- Two substantive articles were reported as crawled but not indexed: the ceramic valve article and ceramic machining buyer guide. The valve article had only recently been crawled, while the buyer guide was materially refreshed after Google's recorded crawl; reassess after recrawl before rewriting again.
+- After each article batch, confirm generated output, sitemap, RSS, canonical URLs, titles/descriptions, image alt, structured data, internal links, and production rendering.
+- Add reliable sitemap `lastmod` only if `updateDate` continues to be maintained truthfully.
 - Current long-term SEO operating plan:
   - `docs/industrial-ceramic-long-term-seo-roadmap.md`
   - Use it before selecting new articles when the user asks for long-term daily updates, broad keyword expansion, or cross-industry RFQ coverage.
@@ -194,28 +217,27 @@ src/assets/images/ceramic/posts/
 
 ## Next Step Suggestions
 
-1. Add another small batch of high-value RFQ-intent articles only after checking current inventory.
-2. Strong next article themes:
-   - Ceramic thin-wall sleeve machining and bore concentricity RFQ
-   - SiC / silicon nitride wear ring grinding and roundness RFQ
-   - Alumina or AlN high-voltage creepage/clearance ceramic insulation design for RFQ
-   - Ceramic nozzle/orifice inspection and flow acceptance
-   - Semiconductor ceramic edge-chip criteria and packaging requirements
-3. For every new article:
+1. Recheck Search Console index coverage and query/page performance after this batch is crawled.
+2. Refresh the three high-link foundation URLs in place: tolerance capability, surface finish/SSD, and green versus hard machining.
+3. Resolve duplicate-intent decisions with current evidence before redirecting anything.
+4. If the next net-new page is justified, publish one industrial robotic gripper/contact-finger guide and review its indexing before another addition.
+5. For every new article:
    - use `docs/article-image-prompt-protocol.md`
    - generate a fresh 16:9 image
    - add frontmatter title/excerpt/metadata/image/tags
-   - update `src/data/ceramic.ts` if the article should appear in RFQ-related guides
+   - connect it to `src/data/article-topic-hubs.ts` and the appropriate `src/data/application-hubs.ts` entry
    - run `npm run check`
    - run `npm run build`
    - verify sitemap and RSS contain the article
-4. If working from live SEO data, use Google Search Console exports to prioritize topics by impression growth, query relevance, and RFQ intent.
+6. If working from live SEO data, use query-and-page evidence to prioritize topics by impression growth, relevance, index state, and RFQ intent.
 
 ## Validation Checklist Before Pushing
 
 ```bash
 npm run check
 npm run build
+npx wrangler@4.111.0 deploy --dry-run
+git diff --check
 git status --short
 ```
 
