@@ -13,7 +13,7 @@ metadata:
 
 > A ceramic tolerance capability map is useful only when it is tied to feature type, datum strategy, process route, and measurement method. The expensive mistake is not asking for precision; it is asking for precision everywhere.
 
-### Why Ceramic Tolerances Behave Differently
+## Why Ceramic Tolerances Behave Differently
 
 Ceramics are formed, fired, and often finished after densification. Shrinkage, warpage, grain structure, porosity, and brittleness all affect the route. A metal-style block tolerance can unintentionally force every surface into post-sinter grinding, even when only one seal band or bore is functional.
 
@@ -24,7 +24,7 @@ Two questions should be answered before quotation:
 
 ![Ceramic tolerance capability map by process route](../../../assets/images/ceramic/posts/ceramic-tolerance-capability-map-by-feature-process-1.webp)
 
-### Process Route Ladder
+## Process Route Ladder
 
 Ceramic tolerance capability usually follows a route ladder:
 
@@ -39,7 +39,7 @@ Moving down this ladder is not a small price increment. It changes fixturing, cy
 
 ![Ceramic tolerance route matrix](../../../assets/images/ceramic/posts/ceramic-tolerance-capability-map-by-feature-process-2.webp)
 
-### Practical Tolerance Mapping
+## Practical Tolerance Mapping
 
 Use this as a procurement planning map, not as a guaranteed capability promise:
 
@@ -54,7 +54,7 @@ Use this as a procurement planning map, not as a guaranteed capability promise:
 
 If the drawing requires tight size, tight position, tight flatness, and low Ra on the same fragile feature, expect a route escalation.
 
-### How to Avoid Over-Specification
+## How to Avoid Over-Specification
 
 A cost-aware drawing separates requirements into functional and non-functional zones:
 
@@ -66,13 +66,13 @@ A cost-aware drawing separates requirements into functional and non-functional z
 
 This lets the supplier quote the actual function rather than worst-case precision across the entire part.
 
-### Execution Pattern
+## Execution Pattern
 
 For a ceramic plate with a sealing band, a first drawing may ask for tight thickness and low Ra everywhere. A better drawing usually defines one ground datum face, one lapped seal band, controlled parallelism only between functional faces, and visual chip criteria on edges. The result can preserve performance while reducing unnecessary lapping and scrap exposure.
 
 ![Flatness inspection on ceramic seal band](../../../assets/images/ceramic/posts/ceramic-tolerance-capability-map-by-feature-process-3.webp)
 
-### RFQ Readiness Checklist
+## RFQ Readiness Checklist
 
 Send these details when tolerance matters:
 
@@ -84,14 +84,14 @@ Send these details when tolerance matters:
 - Edge break or chip criteria by zone.
 - Inspection method and report expectations.
 
-### Related Guides
+## Related Guides
 
 - Use the [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) before locking tolerances around sharp corners, holes, slots, thin walls, and edge-sensitive geometry.
 - Use the [surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/) when Ra, lapping, polishing, or seal-face integrity drives acceptance.
 - Use the [green machining vs hard machining guide](/posts/process-routes-control/green-machining-vs-hard-machining/) when the tolerance depends on pre-sinter shaping versus post-sinter grinding.
 - Use the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) to turn the tolerance map into a quote-ready drawing package.
 
-### FAQ
+## FAQ
 
 **Can ceramic parts hold tight tolerances?**  
 It depends on material, geometry, datum strategy, finishing access, and inspection method. Applying tight tolerance everywhere is what drives cost and yield risk.

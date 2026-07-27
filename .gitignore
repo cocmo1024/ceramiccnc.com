@@ -5,6 +5,12 @@ dist/
 # dependencies
 node_modules/
 
+# local Codex session artifacts
+会话_*/
+
+# Wrangler local build cache
+.wrangler/
+
 # logs
 npm-debug.log*
 yarn-debug.log*

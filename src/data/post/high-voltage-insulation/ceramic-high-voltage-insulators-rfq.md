@@ -21,7 +21,7 @@ The useful first question is:
 
 The answer may be breakdown, tracking, arcing, leakage, partial discharge concern, thermal stress, mechanical cracking, or contamination on the surface.
 
-### Why The RFQ Must Include The Electrical Context
+## Why The RFQ Must Include The Electrical Context
 
 Ceramic machining suppliers can review geometry, material, tolerance, and finish. They cannot responsibly infer the electrical design from a drawing alone.
 
@@ -40,7 +40,7 @@ This does not mean the machining supplier becomes the electrical designer. It me
 
 When the ceramic also surrounds a conductor or forms part of a vacuum boundary, use the [ceramic feedthrough insulator guide](/posts/vacuum-electrical-systems/ceramic-feedthrough-insulators-vacuum-electrical-systems/) to separate the machined ceramic body from metallization, brazing, hermetic sealing, leak testing, and final electrical qualification.
 
-### Ceramic Part Types
+## Ceramic Part Types
 
 | Part type                  | RFQ focus                                                                    |
 | -------------------------- | ---------------------------------------------------------------------------- |
@@ -53,7 +53,7 @@ When the ceramic also surrounds a conductor or forms part of a vacuum boundary, 
 
 Do not assume every prototype material can become the final material without redesign. MACOR can be useful for fast fixtures, but alumina, AlN, Si3N4, or other fired ceramics may require different feature rules.
 
-### Creepage And Clearance Are Geometry Requirements
+## Creepage And Clearance Are Geometry Requirements
 
 Creepage and clearance are often treated as electrical design terms, but they become machining requirements when slots, ribs, grooves, holes, steps, and edge breaks define the path.
 
@@ -69,7 +69,7 @@ Clarify:
 
 If a creepage path depends on a very sharp rib or thin wall, the DFM review should happen before price.
 
-### Surface Finish And Edge Quality
+## Surface Finish And Edge Quality
 
 For high-voltage ceramic parts, surface quality is not only cosmetic. Chips, cracks, grinding damage, contamination, and sharp edges can affect assembly and electrical reliability.
 
@@ -84,7 +84,7 @@ Specify:
 
 Avoid a blanket "polish all" requirement unless it is justified. It may increase cost while failing to define the edge or cleanliness issue that matters.
 
-### Material Selection Should Follow Function
+## Material Selection Should Follow Function
 
 Material choice depends on electrical, thermal, mechanical, and machining needs.
 
@@ -99,7 +99,7 @@ Material choice depends on electrical, thermal, mechanical, and machining needs.
 
 Use the [material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) if the material is still open.
 
-### Inspection Evidence
+## Inspection Evidence
 
 Inspection should prove the feature that controls acceptance:
 
@@ -115,7 +115,7 @@ Inspection should prove the feature that controls acceptance:
 
 If the final electrical test is performed by the customer, state that. The machining RFQ can then focus on the geometry and surface evidence needed before that test.
 
-### Common RFQ Mistakes
+## Common RFQ Mistakes
 
 Avoid:
 
@@ -128,7 +128,7 @@ Avoid:
 - Omitting cleaning and packaging for high-voltage surfaces.
 - Not saying whether metallization, coatings, or attached copper parts will change spacing.
 
-### Practical RFQ Checklist
+## Practical RFQ Checklist
 
 Send:
 

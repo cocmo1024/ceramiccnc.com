@@ -33,7 +33,7 @@ The better question is:
 
 That question should be reviewed before feasibility, price, lead time, or production route is confirmed.
 
-### Why Silicon Nitride Is Used For Structural And Wear Components
+## Why Silicon Nitride Is Used For Structural And Wear Components
 
 Silicon nitride, often written as Si3N4, is chosen for applications where a ceramic part must handle mechanical contact, thermal cycling, sliding or rolling wear, and repeated assembly load more reliably than many conventional brittle ceramic options. Compared with general-purpose alumina, silicon nitride may offer better toughness, thermal shock behavior, and performance in high-speed or impact-sensitive wear situations.
 
@@ -50,7 +50,7 @@ Silicon nitride is most useful when the design takes advantage of these strength
 
 The [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) gives a broader framework for comparing silicon nitride with alumina, zirconia, silicon carbide, aluminum nitride, MACOR, and boron nitride.
 
-### Silicon Nitride Compared With Alumina, Zirconia, And Silicon Carbide
+## Silicon Nitride Compared With Alumina, Zirconia, And Silicon Carbide
 
 Silicon nitride is often considered alongside alumina, zirconia, and silicon carbide because all four materials appear in precision industrial ceramic RFQs. The correct choice depends on function, not on a generic material ranking.
 
@@ -66,7 +66,7 @@ Silicon nitride is often considered alongside alumina, zirconia, and silicon car
 
 For a general wear bushing, [precision machined alumina ceramic](/posts/industrial-ceramic-machining/precision-machined-alumina-ceramic-parts-industrial-applications/) may be more economical. For a compact plunger with high edge risk, [zirconia ceramic machining](/posts/industrial-ceramic-machining/zirconia-ceramic-machining-high-strength-precision-components/) may be reviewed first. For an aggressive fluid seal face, silicon carbide may be a stronger candidate. Silicon nitride becomes especially interesting when the part sees a combination of structural load, wear, thermal cycling, and geometry-driven reliability risk.
 
-### Common Silicon Nitride Machined Parts
+## Common Silicon Nitride Machined Parts
 
 Most silicon nitride machining projects become clearer when the part is described by its role in the machine.
 
@@ -82,7 +82,7 @@ Most silicon nitride machining projects become clearer when the part is describe
 
 Two silicon nitride parts with similar outside dimensions may require very different machining routes. A simple spacer, a high-speed roller, a thin-wall sleeve, and a precision bearing-adjacent component should not be quoted as if they carry the same risk.
 
-### Grade And Blank Condition Must Be Defined
+## Grade And Blank Condition Must Be Defined
 
 "Silicon nitride" is not a complete material specification. The grade, forming route, sintering route, density, additives, intended performance class, and supplier data can affect machining behavior and final use. Some projects require a customer-specified grade. Other projects start from the operating environment and then select a workable material option after review.
 
@@ -96,7 +96,7 @@ The RFQ should make clear whether the buyer needs:
 
 Blank state also matters. Silicon nitride can be shaped before final firing in some manufacturing routes, but many precision features in fired silicon nitride require diamond grinding, abrasive machining, lapping, or polishing. The final route depends on geometry, tolerance, finish, quantity, and how much material must be removed after sintering.
 
-### Machining Route: Why Fired Silicon Nitride Is Not Treated Like Metal
+## Machining Route: Why Fired Silicon Nitride Is Not Treated Like Metal
 
 In metal CNC machining, a sharp cutter can remove material predictably across many feature types. Fired silicon nitride is different. It is hard, wear resistant, and brittle compared with metals, so precision features are usually produced with diamond abrasive processes rather than ordinary cutting tools.
 
@@ -113,7 +113,7 @@ A typical review may consider:
 
 This route is one reason the [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) are important. Features that are easy in aluminum or stainless steel may become high-cost or high-risk in fired silicon nitride if the drawing has sharp internal corners, deep narrow pockets, thin unsupported walls, or tight tolerances applied to every surface.
 
-### Silicon Nitride Rollers, Shafts, And Bearing-Adjacent Parts
+## Silicon Nitride Rollers, Shafts, And Bearing-Adjacent Parts
 
 Rollers, shafts, and bearing-adjacent silicon nitride components are often judged by geometry quality rather than by nominal size alone. A roller that meets outside diameter but fails roundness, runout, bore alignment, or edge quality can still create vibration, uneven wear, or assembly problems.
 
@@ -129,7 +129,7 @@ For these components, the drawing should define:
 
 The [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) is useful when deciding which dimensions need tight control and which dimensions can remain standard-ground or non-critical. Applying precision everywhere can increase cost without improving machine performance.
 
-#### Separate A Custom Roller From A Bearing-Grade Rolling Element
+### Separate A Custom Roller From A Bearing-Grade Rolling Element
 
 The word "roller" can describe very different sourcing problems. A custom guide roller, transport roller, follower, insulating roller, or bearing-adjacent shaft may be quoted from a customer drawing with application-specific geometry and inspection. A rolling element for a qualified hybrid or all-ceramic bearing belongs to a more controlled product system.
 
@@ -156,7 +156,7 @@ For a custom rolling-contact part, add these inputs before quotation:
 
 Dimensional conformance alone cannot prove rolling-contact fatigue life. The drawing and purchase specification should identify which acceptance evidence belongs to the ceramic component supplier and which qualification belongs to the bearing, machine, or system owner.
 
-### Silicon Nitride Sleeves, Bushings, And Guide Components
+## Silicon Nitride Sleeves, Bushings, And Guide Components
 
 Sleeves and bushings look simple until the RFQ includes a tight bore, thin wall, high concentricity requirement, long length, and chip-sensitive entry edge. In silicon nitride, those details define the project.
 
@@ -174,7 +174,7 @@ The [thin-wall ceramic sleeve RFQ guide](/posts/thin-wall-sleeves/ceramic-thin-w
 
 Guide blocks and locating components add another layer. Mounting holes, slots, pockets, and datum faces should be separated into functional and non-functional zones. A guide surface may need a controlled finish and flatness, while a clearance hole or non-contact face may not need the same cost level.
 
-### Silicon Nitride Structural Supports And Thermal Cycling Parts
+## Silicon Nitride Structural Supports And Thermal Cycling Parts
 
 Silicon nitride is also used for structural ceramic components where the part must resist wear, heat, thermal cycling, or repeated contact while keeping mass lower than many metallic alternatives. Examples include fixture supports, hot-work contact pads, welding-adjacent components, sensor supports, metrology fixtures, forming guides, and custom mechanical supports.
 
@@ -191,7 +191,7 @@ Thermal cycling also changes the review. If the part repeatedly moves between ho
 
 For electrical or high-power assemblies, silicon nitride may be reviewed alongside alumina and aluminum nitride. In some [power electronics ceramic machining](/posts/power-electronics/ai-data-center-power-electronics-ceramic-machining/) projects, thermal interface flatness, insulation path, and mechanical support all matter together, so the material choice should be reviewed against the full assembly instead of isolated property lists.
 
-### Design Rules That Reduce Silicon Nitride Machining Risk
+## Design Rules That Reduce Silicon Nitride Machining Risk
 
 Silicon nitride can support demanding designs, but the drawing should not copy metal-machining habits without review. Good ceramic design reduces avoidable cost and late-stage breakage risk.
 
@@ -210,7 +210,7 @@ Practical design rules include:
 
 These rules are not only about manufacturability. They also protect the function of the final part. A brittle component with a technically achievable but poorly supported feature may pass inspection and still fail in service if the load path is wrong.
 
-### Cost Drivers In Silicon Nitride Ceramic Machining
+## Cost Drivers In Silicon Nitride Ceramic Machining
 
 Silicon nitride parts are often more cost-sensitive to geometry than to raw outside dimensions. A small part can be expensive if it requires multiple precision setups, fine lapping, deep ID grinding, or matched-set inspection.
 
@@ -229,7 +229,7 @@ Common cost drivers include:
 
 The [surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/) explains why finish requirements should be tied to functional surfaces. A blanket roughness callout on every face can raise cost without improving performance.
 
-### Inspection Evidence For Silicon Nitride Components
+## Inspection Evidence For Silicon Nitride Components
 
 The inspection plan should match the failure mode. A wear roller, guide sleeve, and structural support do not need the same evidence package.
 
@@ -245,7 +245,7 @@ The inspection plan should match the failure mode. A wear roller, guide sleeve, 
 
 For high-risk parts, acceptance criteria should be agreed before production. "No chips" is usually not precise enough. A better note defines edge break, allowed cosmetic marks, functional zones, magnification, and whether any chip is forbidden on sealing, rolling, or locating surfaces.
 
-### When Silicon Nitride May Not Be The Best Choice
+## When Silicon Nitride May Not Be The Best Choice
 
 Silicon nitride is valuable, but it is not automatically the best ceramic for every structural or wear part. A different material may be more practical when:
 
@@ -258,7 +258,7 @@ Silicon nitride is valuable, but it is not automatically the best ceramic for ev
 
 The goal is not to force every RFQ into silicon nitride. The goal is to match the material, machining route, tolerance scope, and inspection evidence to the application.
 
-### RFQ Inputs For Silicon Nitride Ceramic Machining
+## RFQ Inputs For Silicon Nitride Ceramic Machining
 
 A useful silicon nitride RFQ should include more than a 3D model. The best starting package includes:
 
@@ -276,7 +276,7 @@ A useful silicon nitride RFQ should include more than a 3D model. The best start
 
 The [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) can be used before sending a drawing package. It helps separate must-have functional requirements from assumptions that should be reviewed during quoting.
 
-### Practical Takeaway
+## Practical Takeaway
 
 Silicon nitride ceramic machining is a strong option for structural and wear parts when the application involves rolling or sliding contact, repeated load, thermal cycling, precision bores, shafts, sleeves, bushings, guide surfaces, or bearing-adjacent hardware. The material choice is only one part of the decision. The success of the part also depends on grade selection, ceramic-friendly geometry, diamond grinding access, controlled edges, realistic tolerance placement, surface finish where it matters, and inspection evidence aligned with the assembly.
 

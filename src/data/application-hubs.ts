@@ -475,7 +475,7 @@ export const applicationHubs: ApplicationHub[] = [
     title: 'Precision ceramic components for automation, optics, vacuum, and instruments',
     metaTitle: 'Automation, Vacuum & Instrument Ceramic Components: RFQ',
     description:
-      'RFQ hub for ceramic fixtures, locating pins, optical mounts, analytical fluid-path parts, sensor hardware, high-vacuum alumina components, Macor prototypes, datums, cleaning, and inspection.',
+      'RFQ hub for ceramic fixtures, locating pins, optical mounts, analytical fluid-path parts, sensors, high-vacuum components, Macor prototypes, cleaning, and inspection.',
     tagline: 'Automation, optics, vacuum, and instruments',
     summary:
       'Organize repeatability, optical references, analytical fluid paths, high-vacuum interfaces, sensor, clean assembly, and small-batch prototype requirements into a measurable ceramic RFQ.',

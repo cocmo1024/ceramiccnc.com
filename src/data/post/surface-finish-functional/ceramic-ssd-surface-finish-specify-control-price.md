@@ -13,7 +13,7 @@ metadata:
 
 > Surface finish on ceramics is not just a number. Ra, flatness, waviness, edge condition, and subsurface damage all affect whether a part seals, wears, insulates, or survives handling.
 
-### Why Ra Alone Is Not Enough
+## Why Ra Alone Is Not Enough
 
 Ra can describe texture on a measured trace, but it does not prove that the surface is free from micro-cracks, pull-out, edge chips, embedded debris, or grinding damage below the surface.
 
@@ -27,7 +27,7 @@ This matters for:
 
 ![Ceramic surface finish and damage control](../../../assets/images/ceramic/posts/ceramic-ssd-surface-finish-specify-control-price-1.webp)
 
-### Specify Finish by Function
+## Specify Finish by Function
 
 Do not specify polishing globally unless every surface is functional. A practical RFQ assigns finish by surface role:
 
@@ -41,7 +41,7 @@ Do not specify polishing globally unless every surface is functional. A practica
 
 This prevents a quote from pricing the entire component as a lapped or polished part.
 
-### What Drives Price
+## What Drives Price
 
 Surface-finish pricing is usually driven by:
 
@@ -55,7 +55,7 @@ Surface-finish pricing is usually driven by:
 
 ![Ceramic surface finish pricing drivers](../../../assets/images/ceramic/posts/ceramic-ssd-surface-finish-specify-control-price-2.webp)
 
-### Subsurface Damage Risk
+## Subsurface Damage Risk
 
 Aggressive grinding can leave damage below an apparently smooth surface. The part may pass size and Ra but fail later under load, heat, vibration, or sealing stress.
 
@@ -70,7 +70,7 @@ Risk increases when:
 
 When reliability matters, ask whether process control, coupon evidence, microscopy, proof testing, or other validation should be part of the agreed qualification route rather than relying on Ra alone.
 
-### RFQ Language That Helps
+## RFQ Language That Helps
 
 Use precise but localized language:
 
@@ -83,14 +83,14 @@ This gives the supplier a route and gives procurement a measurable acceptance ga
 
 ![Ceramic lapping and surface integrity inspection](../../../assets/images/ceramic/posts/ceramic-ssd-surface-finish-specify-control-price-3.webp)
 
-### Related Guides
+## Related Guides
 
 - Use the [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) when Ra, flatness, parallelism, or bore quality must be tied to a measurable feature.
 - Use the [lapped ceramic seal face RFQ guide](/posts/lapped-seal-faces/ceramic-lapped-seal-faces-rfq/) when the surface is a seal band, valve seat, pump face, or paired flat.
 - Use the [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) when low-Ra surfaces sit near holes, slots, thin walls, or fragile edges.
 - Use the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) to state finish, edge, and inspection requirements before quotation.
 
-### FAQ
+## FAQ
 
 **Can Ra 0.1 micrometer be quoted?**
 

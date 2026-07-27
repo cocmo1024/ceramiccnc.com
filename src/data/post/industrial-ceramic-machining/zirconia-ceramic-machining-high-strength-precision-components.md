@@ -30,7 +30,7 @@ The better question is:
 
 That question should be reviewed before feasibility, price, lead time, or production route is confirmed.
 
-### Why Zirconia Is Used For Precision Ceramic Components
+## Why Zirconia Is Used For Precision Ceramic Components
 
 Zirconia, or zirconium oxide ZrO2, is used because it can offer a useful combination of high strength, fracture toughness, wear resistance, hardness, smooth finish potential, and dimensional stability. In many mechanical contact applications, zirconia is considered when alumina is too brittle for the edge risk or impact exposure, but a metal or polymer cannot provide the required wear, insulation, or chemical behavior.
 
@@ -47,7 +47,7 @@ Zirconia is most useful when the design takes advantage of its strengths:
 
 The [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) gives a broader framework for comparing zirconia with alumina, silicon nitride, silicon carbide, aluminum nitride, MACOR, and boron nitride.
 
-### Zirconia Compared With Alumina And Other Ceramics
+## Zirconia Compared With Alumina And Other Ceramics
 
 Zirconia is often compared with alumina because both are widely used white technical ceramics. Alumina is usually a strong default for electrical insulation, wear, vacuum hardware, fixtures, and cost-sensitive industrial parts. Zirconia is often reviewed when the design needs higher toughness, stronger edge behavior, a smoother wear surface, or a compact mechanical part with higher stress concentration risk.
 
@@ -64,7 +64,7 @@ Material choice still depends on the environment.
 
 Zirconia is a strong candidate for many precision wear and motion parts, but it should not be selected only because the word "high-strength" appears in the requirement. Temperature, chemistry, electrical function, thermal conductivity, counterface, load path, and feature geometry all affect the final material decision.
 
-### Common Zirconia Machined Parts
+## Common Zirconia Machined Parts
 
 Zirconia machining RFQs usually become clearer when the part is described by function rather than by shape alone.
 
@@ -79,7 +79,7 @@ Zirconia machining RFQs usually become clearer when the part is described by fun
 
 Two zirconia components with similar outside dimensions may require very different machining routes. A simple spacer, a lapped valve seat, a precision plunger, and a thin-wall sleeve should not be quoted as if they carry the same risk.
 
-### Grade And Blank State Matter
+## Grade And Blank State Matter
 
 "Zirconia" is not a complete material callout. The exact grade, stabilization system, microstructure, color, density, and supplier source can affect machining response and service behavior. Y-TZP zirconia is common for high-strength precision components, but some applications use other stabilized zirconia grades or customer-qualified material specifications.
 
@@ -95,7 +95,7 @@ If the grade is not fixed, describe the operating environment instead. A useful 
 
 Blank state also affects the route. Zirconia parts may be made from rod, tube, plate, pressed blank, near-net preform, or customer-supplied blank. Green machining can help create some geometry before firing, but fired zirconia precision features often require diamond grinding, lapping, or other abrasive finishing. Shrinkage, machining allowance, datum strategy, and inspection access should be reviewed before route confirmation.
 
-### Machining Route For Zirconia Ceramic Parts
+## Machining Route For Zirconia Ceramic Parts
 
 Fired zirconia is hard and abrasive. Precision zirconia ceramic machining is usually not ordinary metal-style CNC milling. Depending on the feature, route options may include green machining, fired blank shaping, diamond grinding, OD grinding, ID grinding, surface grinding, lapping, polishing, edge break, cleaning, and inspection.
 
@@ -110,7 +110,7 @@ Typical route logic:
 
 The right route is drawing-specific. A zirconia pin with one tight OD may be straightforward compared with a guide block with multiple intersecting bores, small internal radii, thin walls, and low-Ra surfaces. The [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) page explains how holes, slots, radii, datums, and edge conditions should be reviewed before quoting advanced ceramic parts.
 
-### Features That Drive Zirconia Machining Cost
+## Features That Drive Zirconia Machining Cost
 
 Zirconia machining cost is usually driven by functional features, not by the material name alone. The highest-cost features are the ones that require difficult access, slow abrasive removal, tight inspection, or extra handling protection.
 
@@ -129,7 +129,7 @@ Common cost drivers include:
 
 This is why zirconia drawings should separate critical surfaces from non-critical geometry. Applying tight tolerance and low roughness to every surface usually raises cost without improving function. The [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) and [surface finish guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/) cover this specification problem in more detail.
 
-### Zirconia Pins, Plungers, And Precision Shafts
+## Zirconia Pins, Plungers, And Precision Shafts
 
 Pins and plungers are among the most common zirconia machining requests. They may be used in metering systems, pump mechanisms, textile or packaging machinery, laboratory instruments, locating assemblies, wear fixtures, and compact precision mechanisms.
 
@@ -146,7 +146,7 @@ Important RFQ inputs include:
 
 Avoid designing zirconia plungers with knife edges, unsupported small projections, or point-loaded shoulders unless those features are unavoidable and reviewed. High strength does not remove the need for ceramic-friendly geometry.
 
-### Zirconia Sleeves And Bushings
+## Zirconia Sleeves And Bushings
 
 Zirconia sleeves and bushings are used where a bore must maintain fit, wear behavior, insulation, or dimensional stability. The main RFQ risk is often the ID/OD relationship rather than the outside shape.
 
@@ -162,7 +162,7 @@ Review these details:
 
 Thin-wall sleeves need early review because grinding, fixturing, and assembly can create fracture risk. If the sleeve is very thin, define which surfaces carry function and which surfaces can remain moderate. The related [thin-wall ceramic sleeve RFQ guide](/posts/thin-wall-sleeves/ceramic-thin-wall-sleeve-bore-concentricity-rfq/) explains bore, wall thickness, and concentricity review in more detail.
 
-### Zirconia Valve And Fluid-Control Components
+## Zirconia Valve And Fluid-Control Components
 
 Zirconia may be used for valve seats, metering pistons, plungers, pump parts, or small fluid-control components. These parts are usually sensitive to surface finish, edge quality, fluid chemistry, and contact geometry.
 
@@ -178,7 +178,7 @@ For valve and metering components, specify:
 
 If the dominant issue is harsh chemical corrosion, high temperature, or lapped mechanical seal service, silicon carbide or alumina may also need review. Zirconia can be strong in precision motion, but the media and temperature conditions still matter. The [wear-resistant ceramic machining guide](/posts/industrial-ceramic-machining/industrial-ceramic-machining-wear-resistant-components/) covers material review across wear modes.
 
-### Design Rules For High-Strength Zirconia Parts
+## Design Rules For High-Strength Zirconia Parts
 
 Zirconia gives engineers more toughness margin than many ceramics, but it is not a license to use metal-style details without review.
 
@@ -197,7 +197,7 @@ Useful design rules include:
 
 The goal is not to make every zirconia component bulky. The goal is to protect functional precision by avoiding avoidable stress concentration, chip initiation, and inspection ambiguity.
 
-### Inspection Evidence For Zirconia Machining RFQs
+## Inspection Evidence For Zirconia Machining RFQs
 
 Inspection should match the function of the part. A zirconia component may need CMM inspection, optical measurement, roundness measurement, bore gauging, surface finish measurement, flatness evidence, or visual chip review.
 
@@ -214,7 +214,7 @@ Inspection should match the function of the part. A zirconia component may need 
 
 If inspection documentation is required, include it in the RFQ before quotation. Measuring and documenting a small zirconia part can be a meaningful part of the project, especially when bores, runout, lapped faces, or matched sets are involved.
 
-### When Zirconia May Not Be The Best Choice
+## When Zirconia May Not Be The Best Choice
 
 Zirconia should be reviewed carefully when:
 
@@ -229,7 +229,7 @@ Zirconia should be reviewed carefully when:
 
 These are not automatic rejection rules. They are reasons to review the application before committing to zirconia as the default solution.
 
-### RFQ Inputs For Zirconia Ceramic Machining
+## RFQ Inputs For Zirconia Ceramic Machining
 
 For a useful zirconia ceramic machining review, send:
 
@@ -249,7 +249,7 @@ For a useful zirconia ceramic machining review, send:
 
 The [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) provides a broader format for preparing material notes, drawings, quantities, and acceptance requirements.
 
-### Practical Takeaway
+## Practical Takeaway
 
 Zirconia ceramic machining is valuable when high-strength precision components need wear resistance, edge stability, smooth functional surfaces, and reliable fit in compact mechanical assemblies. It is especially relevant for pins, plungers, sleeves, bushings, valve parts, guide components, and precision wear mechanisms.
 

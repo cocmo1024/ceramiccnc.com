@@ -20,7 +20,7 @@ This guide is written for engineers and sourcing teams preparing RFQs for alumin
 
 For semiconductor projects where micro-holes appear together with wafer handling, vacuum chucks, SiC rings, AlN thermal plates, and clean inspection requirements, use the [precision ceramic components for semiconductor equipment guide](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/) as the parent context. When the holes sit on a flatness-critical chuck surface, also use the [machined ceramic vacuum chuck components guide](/posts/semiconductor-equipment/machined-ceramic-vacuum-chuck-components-semiconductor-tools/).
 
-### Why Micro-Holes Need Their Own RFQ Logic
+## Why Micro-Holes Need Their Own RFQ Logic
 
 Micro-holes need a dedicated RFQ logic because the risk is concentrated in a very small feature:
 
@@ -32,7 +32,7 @@ Micro-holes need a dedicated RFQ logic because the risk is concentrated in a ver
 
 This is why a micro-hole part should not be quoted only from a note such as "0.3 mm holes, typical." The RFQ should define the function and acceptance gate.
 
-### Where Precision Ceramic Micro-Holes Show Up
+## Where Precision Ceramic Micro-Holes Show Up
 
 Micro-hole ceramic components usually appear in applications where ceramic properties and feature quality meet.
 
@@ -46,7 +46,7 @@ Micro-hole ceramic components usually appear in applications where ceramic prope
 
 [Kyocera describes ceramic dispenser nozzles](https://global.kyocera.com/prdct/semicon/search_application/detail/d_nozzle.html) for controlled liquid dispensing in microelectronic assembly, where tip quality affects dispensing stability. [Ceratec describes ceramic vacuum wafer chucks](https://ceratec.nl/en/products/structural-parts/vacuum-wafer-chuck/) for semiconductor wafer positioning, with ceramic flatness as a key performance factor. Both examples show why the RFQ must describe a specific functional interface that can be machined, cleaned, and inspected, rather than only naming a ceramic material.
 
-### What Counts as a Micro-Hole in an RFQ
+## What Counts as a Micro-Hole in an RFQ
 
 For sourcing, "micro-hole" should be treated as a review category rather than a fixed universal size. A hole becomes a micro-hole RFQ problem when the diameter, depth, edge condition, or inspection method is difficult enough to affect feasibility.
 
@@ -62,7 +62,7 @@ Useful RFQ boundaries:
 
 [Ladd Research defines microholes as generally 10 to 350 microns](https://www.laddresearch.com/microholes) in its aperture context and notes that aspect ratio affects how holes are produced. That definition is not a universal ceramic CNC promise, but it shows why diameter alone is not enough for an RFQ.
 
-### The RFQ Data That Matters Most
+## The RFQ Data That Matters Most
 
 Send these details before expecting a meaningful quote:
 
@@ -81,7 +81,7 @@ Send these details before expecting a meaningful quote:
 
 If flow or vacuum performance is the true acceptance gate, state that clearly. Dimensional inspection and functional flow testing are different quotations.
 
-### Hole Quality Is More Than Diameter
+## Hole Quality Is More Than Diameter
 
 Many weak RFQs specify a hole diameter but do not define the defects that matter. For brittle ceramics, a useful drawing separates at least six quality questions:
 
@@ -94,7 +94,7 @@ Many weak RFQs specify a hole diameter but do not define the defects that matter
 
 For a ceramic gas plate, a hole field with consistent flow may matter more than reporting every individual diameter. For a ceramic aperture, diameter and edge quality may matter more than total hole count. For a vacuum chuck, flatness and suction distribution may decide whether the micro-hole pattern is useful; use the [ceramic vacuum chuck RFQ guide](/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/) when the chuck surface, grooves, porous regions, or vacuum test are the acceptance gate.
 
-### Material Review for Micro-Hole Parts
+## Material Review for Micro-Hole Parts
 
 Material choice should follow the environment and hole function.
 
@@ -109,7 +109,7 @@ Material choice should follow the environment and hole function.
 
 Use the [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) if the material is not fixed yet. If the material is fixed by an existing tool or drawing, state whether equivalent grade review is allowed.
 
-### Process Route Questions Before Quoting
+## Process Route Questions Before Quoting
 
 The final route may involve CNC machining, diamond grinding, micro-drilling, lapping, green machining before firing, laser processing, ultrasonic assistance, or a mixed process. The supplier cannot choose the route responsibly without understanding the application.
 
@@ -125,7 +125,7 @@ The review usually asks:
 
 For route comparison, use the [green machining versus hard machining guide](/posts/process-routes-control/green-machining-vs-hard-machining/) when the part may be made from a pre-sintered or fired blank.
 
-### Inspection Options for Ceramic Micro-Holes
+## Inspection Options for Ceramic Micro-Holes
 
 Inspection should match the failure mode. Asking for every method on every hole is often unnecessary and expensive. Asking for the wrong method can be worse.
 
@@ -140,7 +140,7 @@ Inspection should match the failure mode. Asking for every method on every hole 
 
 For general inspection planning, use the [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) and the [ceramic surface finish and SSD guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/).
 
-### Cost Drivers Buyers Should Expect
+## Cost Drivers Buyers Should Expect
 
 The expensive part of a micro-hole RFQ is often not the outer profile. The real cost drivers are:
 
@@ -157,7 +157,7 @@ The expensive part of a micro-hole RFQ is often not the outer profile. The real 
 
 This is why two drawings with the same outside size and material can price very differently. A 50-hole vent pattern and a 1,000-hole functional gas plate are not the same machining problem.
 
-### Red Flags in Micro-Hole Drawings
+## Red Flags in Micro-Hole Drawings
 
 Review the drawing before sending it if you see:
 
@@ -174,7 +174,7 @@ Review the drawing before sending it if you see:
 
 Use the [ceramic DFM design rules](/posts/design-rules-dfm/ceramic-dfm-design-rules/) to catch these issues before the RFQ becomes a price-only comparison.
 
-### Practical RFQ Template for Micro-Hole Ceramic Parts
+## Practical RFQ Template for Micro-Hole Ceramic Parts
 
 Use this structure when sending the project:
 
@@ -201,7 +201,7 @@ Previous supplier route or sample requirement:
 
 You can also start from the [RFQ checklist page](/rfq/) and add the micro-hole details above.
 
-### FAQ
+## FAQ
 
 **Can ceramic micro-holes be quoted from a STEP file only?**  
 A STEP file can start geometry review, but a useful quote normally needs material, hole tolerance, depth, entry and exit edge condition, quantity, and inspection requirements.

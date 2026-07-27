@@ -26,7 +26,7 @@ metadata:
 
 This page is for equipment engineers and buyers who already have a silicon carbide direction and need machined end effectors, lift pins, support pads, carrier segments, support rings, or related semiconductor-tool parts. If the material is still open, compare the material-neutral [ceramic wafer end-effector guide](/posts/semiconductor-equipment/ceramic-end-effectors-wafer-handling-automation/) first.
 
-### What Counts as a SiC Wafer-Handling Part?
+## What Counts as a SiC Wafer-Handling Part?
 
 | Part family                     | Function                                     | Features that usually control the quote                                |
 | ------------------------------- | -------------------------------------------- | ---------------------------------------------------------------------- |
@@ -39,7 +39,7 @@ This page is for equipment engineers and buyers who already have a silicon carbi
 
 This article concerns **equipment components made from SiC**. It is not about manufacturing SiC semiconductor wafers themselves.
 
-### Why SiC Is Considered for Wafer Handling
+## Why SiC Is Considered for Wafer Handling
 
 Silicon carbide may be selected where a handling component needs a useful combination of stiffness, wear resistance, thermal stability, chemical stability, and clean process-side behavior. Saint-Gobain lists wafer grinding and polishing plates, vacuum-chuck discs, wafer clamps, and wafer carriers among semiconductor applications for a sintered SiC grade. CoorsTek also shows ceramic end effectors and SiC lift pins in wafer-handling applications.
 
@@ -54,9 +54,9 @@ Those examples establish that SiC is used in this equipment class; they do not m
 
 If the material is not locked by a qualified tool design, provide the operating requirements rather than asking for unspecified "high-purity SiC."
 
-### Four Control Zones on the Drawing
+## Four Control Zones on the Drawing
 
-#### 1. Wafer-contact zone
+### 1. Wafer-contact zone
 
 Identify every pad, tip, band, or edge that can touch the wafer. For each zone, define the contact mode and the geometry that matters:
 
@@ -69,39 +69,39 @@ Identify every pad, tip, band, or edge that can touch the wafer. For each zone, 
 
 A blanket polish note can add cost to nonfunctional faces while leaving the real contact zone unclear.
 
-#### 2. Robot or tool-interface zone
+### 2. Robot or tool-interface zone
 
 The part must return to the same coordinate system after installation. Mark the primary mounting face, bores, slots, dowel locations, shoulders, and other features that establish position. State whether the part is clamped, fastened, bonded, or assembled into a metal holder and provide preload or torque context when known.
 
-#### 3. Particle-sensitive edge zone
+### 3. Particle-sensitive edge zone
 
 "No chips" is not an inspectable acceptance criterion. Separate wafer-facing tips, slot edges, hole rims, mounting edges, and nonfunctional outside edges. Define a practical visual standard for each critical zone, including magnification and maximum allowable chip size when needed.
 
-#### 4. Cleaning and packaging zone
+### 4. Cleaning and packaging zone
 
 Finished SiC surfaces can pass dimensional inspection and still be damaged or contaminated afterward. Define final cleaning, handling, bagging, separators, trays, labeling, lot control, and protection for tips or lapped pads.
 
-### Design Review by Component Type
+## Design Review by Component Type
 
-#### SiC end effectors and blades
+### SiC end effectors and blades
 
 Long arms and narrow forks combine stiffness requirements with machining and handling risk. Review unsupported length, blade thickness, fork width, slot radius, arm-to-body transition, hole-to-edge distance, contact-pad location, moving mass, and mounting relationship. Sharp internal corners and thin metal-style webs should be challenged before the drawing is frozen.
 
 Use the [ceramic DFM rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) for slots, pockets, counterbores, thin sections, and edge relief. The separate [ceramic end-effector guide](/posts/semiconductor-equipment/ceramic-end-effectors-wafer-handling-automation/) compares SiC with alumina, zirconia, silicon nitride, and machinable-ceramic options when material selection is still open.
 
-#### SiC lift pins and support pins
+### SiC lift pins and support pins
 
 For a pin set, the top contact geometry and height relationship may matter more than nominal diameter. Specify tip shape, tip finish, shoulder, length, straightness or runout, set matching, and whether an individual pin can be replaced independently. Packaging should prevent tip-to-tip contact.
 
-#### SiC support rings and carrier parts
+### SiC support rings and carrier parts
 
 For circular support parts, identify the actual support band rather than applying the tightest finish to the full face. Review support-band flatness, ID/OD relationship, concentricity, groove and hole position, lapped zones, and free-state versus supported inspection. The [semiconductor process-ring guide](/posts/semiconductor-equipment/precision-ceramic-rings-semiconductor-process-chambers/) covers ring-specific datum and inspection choices.
 
-#### Vacuum or flow features
+### Vacuum or flow features
 
 Small holes, grooves, and passages can dominate the route because diameter, depth, taper, breakout, debris, and blockage all matter. State whether dimensional inspection is sufficient or whether flow, leakage, or functional vacuum evidence is required. Use the [ceramic micro-hole RFQ guide](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/) and the [ceramic vacuum-chuck guide](/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/) when those features drive the design.
 
-### Tolerance and Inspection Plan
+## Tolerance and Inspection Plan
 
 Avoid assigning one tolerance class to the complete component. Build an acceptance table around functional features.
 
@@ -118,7 +118,7 @@ Avoid assigning one tolerance class to the complete component. Build an acceptan
 
 The [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) helps connect each callout to a machining and measurement method. Final values still require grade, size, geometry, and blank review.
 
-### What Usually Drives Cost and Lead Time?
+## What Usually Drives Cost and Lead Time?
 
 For SiC wafer-handling parts, price is rarely proportional to outside size alone. Major drivers include:
 
@@ -135,7 +135,7 @@ For SiC wafer-handling parts, price is rarely proportional to outside size alone
 
 The most productive cost review is to tighten the wafer-contact and alignment features while using standard finish and edge acceptance on true clearance areas.
 
-### Quote-Ready SiC Wafer-Handling RFQ
+## Quote-Ready SiC Wafer-Handling RFQ
 
 Send the following in one package:
 
@@ -151,7 +151,7 @@ Send the following in one package:
 
 If a requirement is unknown, label it as open. A supplier can then return a focused clarification instead of silently pricing an assumption. The [general ceramic RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) provides a reusable submission structure, and the [RFQ page](/rfq/) is the conversion point for a drawing review.
 
-### Common Questions
+## Common Questions
 
 **Why use SiC instead of alumina for a wafer-handling part?**
 SiC may be selected for stiffness, wear, thermal stability, chemical stability, or a qualified clean process route. Alumina may be more practical where electrical insulation, availability, or cost dominates. Compare exact grades and functions rather than material names alone.
@@ -165,7 +165,7 @@ No. Apply lapping or controlled finish to contact, sealing, sliding, or datum su
 **What is the most important drawing note?**
 There is no single note. The highest-value information is a marked relationship among wafer-contact zones, mounting datums, particle-sensitive edges, and the method used to inspect them.
 
-### Technical References
+## Technical References
 
 - [Saint-Gobain: silicon carbide components for wafer handling and inspection](https://www.ceramicsrefractories.saint-gobain.com/news-articles/using-silicon-carbide-components-wafer-handling-inspection)
 - [CoorsTek: processing and wafer-handling ceramic components](https://www2.coorstek.com/en/industries/semiconductor/general-applications-wafer-handling/)

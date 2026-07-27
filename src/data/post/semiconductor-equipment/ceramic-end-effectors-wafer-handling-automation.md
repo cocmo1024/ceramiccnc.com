@@ -26,7 +26,7 @@ metadata:
 
 This guide serves engineers comparing materials and geometries for fork blades, paddles, edge grippers, vacuum picks, support fingers, and hybrid robot interfaces. If the design is already locked to silicon carbide, use the dedicated [SiC wafer-handling parts guide](/posts/semiconductor-equipment/silicon-carbide-wafer-handling-components-semiconductor-manufacturing/) for contact-zone, grade, cleaning, and inspection details.
 
-### Start With the Handling Method
+## Start With the Handling Method
 
 | End-effector type             | Handling method                                                    | Design question that comes first                                                  |
 | ----------------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
@@ -39,7 +39,7 @@ This guide serves engineers comparing materials and geometries for fork blades, 
 
 Also state whether the part handles a bare wafer, glass substrate, ceramic substrate, carrier, ring, or another fragile workpiece. The same fork outline can require a different surface and edge strategy for each contact.
 
-### Material Selection for Ceramic End Effectors
+## Material Selection for Ceramic End Effectors
 
 No ceramic is the default for every handling system. Compare the exact grade and qualification status, not only the material family.
 
@@ -54,7 +54,7 @@ No ceramic is the default for every handling system. Compare the exact grade and
 
 Material properties alone do not decide the end effector. A lower-density material may reduce moving inertia, but the required arm thickness can change. A high-stiffness material may help deflection, but a narrow slot or sharp transition can reduce manufacturing yield. The [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) provides the broader comparison.
 
-### Contact Geometry Is the Functional Core
+## Contact Geometry Is the Functional Core
 
 Mark the contact surfaces explicitly on the drawing. For each contact, state:
 
@@ -69,7 +69,7 @@ Mark the contact surfaces explicitly on the drawing. For each contact, state:
 
 Do not apply a low-Ra requirement to the entire blade unless the full blade is functional. Localizing the requirement makes the quotation clearer and directs lapping and inspection to the interface that matters.
 
-### Fork Geometry and Deflection Risk
+## Fork Geometry and Deflection Risk
 
 Thin ceramic arms need a load-path review as well as a machining review. Include the wafer mass, acceleration, arm length, support pattern, and any emergency or maintenance load the design owner considers relevant. The ceramic machining supplier can review manufacturability, but the equipment owner remains responsible for system-level stress and motion validation.
 
@@ -85,7 +85,7 @@ Features that commonly need revision include:
 
 Use the [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) before releasing a metal-derived fork design for ceramic quotation.
 
-### Robot Mounting Interface
+## Robot Mounting Interface
 
 Handling accuracy is lost if the ceramic contact zone cannot be related to the robot interface. Define:
 
@@ -99,7 +99,7 @@ Handling accuracy is lost if the ceramic contact zone cannot be related to the r
 
 Avoid a tolerance scheme that references an unground as-fired face when a finished, inspectable datum is available. The [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) explains how datum access and measurement method influence feasibility.
 
-### Vacuum Picks and Suction Features
+## Vacuum Picks and Suction Features
 
 Vacuum end effectors introduce a separate fluid path. Define hole diameter, depth, taper, pitch, entry and exit condition, groove geometry, port connection, suction land, and cleaning method. Decide whether acceptance is dimensional, functional, or both.
 
@@ -113,7 +113,7 @@ Questions that should be answered before quotation:
 
 Use the [vacuum-chuck flatness guide](/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/) for larger suction surfaces and the [micro-hole guide](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/) when small passages dominate the route.
 
-### Edge Quality, Cleaning, and Packaging
+## Edge Quality, Cleaning, and Packaging
 
 For wafer handling, edge control is functional rather than cosmetic. Divide the drawing into:
 
@@ -124,7 +124,7 @@ For wafer handling, edge control is functional rather than cosmetic. Divide the 
 
 Assign radius, chamfer, chip limit, and visual method only where needed. Then specify cleaning and packaging that preserve the accepted condition. Fork tips, contact pads, and matched support fingers should not touch each other during shipment.
 
-### Inspection Plan for a Ceramic End Effector
+## Inspection Plan for a Ceramic End Effector
 
 | Functional requirement          | Evidence to agree                                                          |
 | ------------------------------- | -------------------------------------------------------------------------- |
@@ -138,7 +138,7 @@ Assign radius, chamfer, chip limit, and visual method only where needed. Then sp
 
 The inspection method should be agreed before the tolerance is priced. A nominal callout that cannot be accessed or repeated by the chosen method creates avoidable disagreement.
 
-### RFQ Checklist
+## RFQ Checklist
 
 Provide:
 
@@ -154,7 +154,7 @@ Provide:
 
 The [custom ceramic machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) can be used to normalize supplier quotes. Submit a ready drawing package through the [technical RFQ page](/rfq/).
 
-### Common Questions
+## Common Questions
 
 **Which ceramic is best for a wafer end effector?**
 There is no universal best material. SiC, alumina, silicon nitride, zirconia, AlN, and machinable ceramics fit different contact, stiffness, thermal, electrical, qualification, cost, and prototype needs.
@@ -168,7 +168,7 @@ No. SiC is established in demanding wafer-handling hardware, but grade qualifica
 **What should be inspected first?**
 Prioritize the relationship among wafer-contact surfaces, robot mounting datums, particle-sensitive edges, and any vacuum features. These interfaces usually matter more than cosmetic outside dimensions.
 
-### Technical References
+## Technical References
 
 - [CoorsTek: ceramic components for wafer processing and handling](https://www2.coorstek.com/en/industries/semiconductor/general-applications-wafer-handling/)
 - [Precision Ceramics: technical ceramic material property comparison](https://precision-ceramics.com/eu/materials/properties/table/)

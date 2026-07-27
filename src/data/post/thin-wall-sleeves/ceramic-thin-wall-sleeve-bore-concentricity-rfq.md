@@ -21,7 +21,7 @@ The useful first question is:
 
 If the answer is unclear, the supplier may quote a sleeve that meets nominal dimensions but fails assembly because the bore is not concentric to the OD, the wall is too thin to support finishing, the end face is not square enough, or the edge chips during handling.
 
-### Why Thin-Wall Sleeves Need A Dedicated RFQ
+## Why Thin-Wall Sleeves Need A Dedicated RFQ
 
 Metal sleeve drawings often assume turning, boring, and grinding logic that does not transfer directly to fired technical ceramics. Ceramics do not yield under tool pressure. They chip, crack, wear tools quickly, and often require diamond grinding, lapping, honing, or route-specific fixturing.
 
@@ -37,7 +37,7 @@ Thin-wall sleeves combine several risks:
 
 That is why a thin-wall ceramic sleeve should not be priced from a STEP file alone when the bore or wall section is functional.
 
-### Typical RFQ Scenario
+## Typical RFQ Scenario
 
 A common sourcing case is a ceramic insulating sleeve with a precision inner bore, a controlled outside diameter, and a thin wall used between a shaft, pin, electrode, probe, or housing. The buyer may ask for "tight concentricity" but not define the datum or measurement setup.
 
@@ -52,7 +52,7 @@ Before quote review, the supplier needs to know:
 
 Without that information, the same drawing can require very different machining and inspection routes.
 
-### RFQ Inputs That Matter
+## RFQ Inputs That Matter
 
 | RFQ input                          | Why it matters                                                                                                        |
 | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
@@ -68,7 +68,7 @@ Without that information, the same drawing can require very different machining 
 
 If the sleeve is part of a stack, include mating parts or a section view. If it is an electrical insulator, include voltage class, clearance, creepage intent, and contamination constraints. If it is a wear sleeve, include speed, media, load, and mating material.
 
-### Decide The Functional Relationship First
+## Decide The Functional Relationship First
 
 Thin-wall sleeves are often over-specified because every dimension receives tight tolerance. A better drawing identifies the relationships that matter.
 
@@ -82,7 +82,7 @@ For a seal-adjacent sleeve, end-face flatness, perpendicularity, and surface fin
 
 Use tight controls only where they protect function. Otherwise, the RFQ becomes expensive without improving the part.
 
-### Bore, OD, And Wall-Thickness Controls
+## Bore, OD, And Wall-Thickness Controls
 
 The most common tolerance conflict is asking for a tight bore, tight OD, thin wall, and tight concentricity without defining which surface is created first and how the part is supported during finishing.
 
@@ -99,7 +99,7 @@ Clarify:
 
 For very thin sections, the supplier may need to review whether the part can survive internal grinding, external grinding, honing, lapping, or handling. Feasibility depends on material, size, wall length, blank route, and inspection method.
 
-### Process Route Review
+## Process Route Review
 
 A practical route may combine rough forming, green machining, sintering, and post-sinter finishing. For a high-precision fired ceramic sleeve, the final functional surfaces usually need diamond finishing after firing.
 
@@ -116,7 +116,7 @@ Route questions include:
 
 The right answer is drawing-specific. A quote should not assume one universal sleeve route for all alumina, zirconia, Si3N4, or SiC parts.
 
-### Material Choice Changes The Risk
+## Material Choice Changes The Risk
 
 Alumina is common for insulation and cost-sensitive precision sleeves, but purity, density, and blank quality still matter.
 
@@ -130,7 +130,7 @@ MACOR and machinable glass ceramics can support prototypes or lab fixtures, but 
 
 Material selection should begin with failure mode, not only with a catalog property table. Use the [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) when the grade is not fixed.
 
-### Edge Quality And Bore Entry
+## Edge Quality And Bore Entry
 
 Most sleeve failures begin at edges. A brittle ceramic bore with a sharp edge can chip during assembly, while an oversized chamfer can reduce bearing length, sealing width, or insulation distance.
 
@@ -145,7 +145,7 @@ Specify:
 
 "No chips" is not a measurable production rule unless the inspection magnification, zone, and acceptance size are defined. A better RFQ separates functional bore edges, handling edges, and non-critical edges.
 
-### Inspection And Acceptance
+## Inspection And Acceptance
 
 Match inspection to the functional risk:
 
@@ -162,7 +162,7 @@ Match inspection to the functional risk:
 
 Do not specify a tolerance that cannot be measured repeatably. If the sleeve is small, long, thin, or opaque, some internal features may need a different acceptance method than the one used for metal parts.
 
-### Common RFQ Mistakes
+## Common RFQ Mistakes
 
 Avoid:
 
@@ -175,7 +175,7 @@ Avoid:
 - Quoting from CAD only when the 2D drawing contains the actual acceptance criteria.
 - Requiring full inspection but not defining which dimensions need recorded evidence.
 
-### Practical RFQ Checklist
+## Practical RFQ Checklist
 
 Send:
 

@@ -17,7 +17,7 @@ Precision ceramics enter power electronics because they combine electrical insul
 
 This guide explains how to prepare RFQs for precision ceramic CNC machining and diamond grinding in AI data center power electronics, SiC module development, high-voltage test hardware, and power-module support components.
 
-### Why This Topic Is Hot in 2026
+## Why This Topic Is Hot in 2026
 
 AI data centers are changing the power envelope. [Infineon describes AI data center power supply designs](https://www.infineon.com/technology/ai/we-power-ai/psu) moving toward 12 kW class systems, with silicon, SiC, and GaN used to increase efficiency and power density. That does not mean every ceramic part is inside the semiconductor package, but it does mean power conversion hardware is becoming denser, hotter, and more sensitive to insulation and thermal cycling.
 
@@ -25,7 +25,7 @@ Power module suppliers also point to technical ceramics directly. [Rogers descri
 
 The machining requirement usually comes from an engineer or buyer who needs custom insulating plates, ceramic spacers, machined AlN or alumina parts, Si3N4 or SiC support hardware, test fixtures, or prototype ceramic components around the module.
 
-### Ceramic Parts That Appear Around AI Power Hardware
+## Ceramic Parts That Appear Around AI Power Hardware
 
 The ceramic machining RFQ usually belongs to one of these groups:
 
@@ -40,7 +40,7 @@ The ceramic machining RFQ usually belongs to one of these groups:
 
 Do not assume that a ceramic material used in a substrate data sheet is automatically the right material for a machined fixture or insulator. Geometry, load, and inspection change the decision.
 
-### What Makes These Parts Difficult to Machine
+## What Makes These Parts Difficult to Machine
 
 AI data center power electronics parts often combine thin ceramic sections with demanding interfaces. The trouble usually appears in details:
 
@@ -54,7 +54,7 @@ AI data center power electronics parts often combine thin ceramic sections with 
 
 One common cost trap is applying the same tight tolerance to every surface. In a power module fixture, one lapped face and two datum bores may matter; the back side, outside profile, or non-contact pocket may not need the same precision.
 
-### Match Ceramic Material to Failure Mode
+## Match Ceramic Material to Failure Mode
 
 Start with the failure mode, then review machining feasibility.
 
@@ -69,7 +69,7 @@ Start with the failure mode, then review machining feasibility.
 
 The [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) explains this decision path in more detail.
 
-### RFQ Inputs for Power Electronics Ceramic Parts
+## RFQ Inputs for Power Electronics Ceramic Parts
 
 Send more than a 3D model. For power electronics and high-voltage work, the supplier needs the context that controls risk.
 
@@ -87,7 +87,7 @@ Send more than a 3D model. For power electronics and high-voltage work, the supp
 
 If the project is still at prototype stage, say so. A prototype ceramic fixture can be optimized for learning, while a repeat production part must be reviewed for yield, inspection time, and packaging.
 
-### Acceptance Evidence Should Match the Failure Consequence
+## Acceptance Evidence Should Match the Failure Consequence
 
 Power electronics ceramic parts often fail outside the dimension that looked most important. A part can pass outside size but still create risk through a chipped edge, a bowed plate, a rough contact band, or an unmeasurable slot.
 
@@ -102,7 +102,7 @@ Power electronics ceramic parts often fail outside the dimension that looked mos
 
 For surface-specific risks, use the [surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/).
 
-### Design Rules That Reduce Quote Friction
+## Design Rules That Reduce Quote Friction
 
 Before sending a drawing, review these rules:
 
@@ -117,7 +117,7 @@ Before sending a drawing, review these rules:
 
 The [ceramic DFM guide](/posts/design-rules-dfm/ceramic-dfm-design-rules/) is the right next read for slots, thin walls, threads, and chip-sensitive edges.
 
-### Practical Verdict
+## Practical Verdict
 
 AI data center power electronics brings three engineering constraints together: SiC power density, high-voltage insulation, and thermal reliability. The machining RFQ still needs to stay grounded in the actual ceramic interface.
 
@@ -125,7 +125,7 @@ We should not claim a generic ceramic part will improve data center efficiency. 
 
 For a useful RFQ, send the drawing, material target, voltage and thermal environment, quantity, timing, functional faces, and inspection requirements through the [RFQ page](/rfq/).
 
-### FAQ
+## FAQ
 
 **Do you make complete SiC power modules?**  
 No. This site is focused on precision ceramic machining and related ceramic component review, not complete semiconductor module assembly.

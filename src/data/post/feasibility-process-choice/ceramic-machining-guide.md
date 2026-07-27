@@ -16,7 +16,7 @@ metadata:
 
 This guide is for engineers and buyers who need custom precision ceramic parts and are deciding whether a supplier can make, inspect, and repeat the drawing. It focuses on the questions that change feasibility, price, lead time, and acceptance rather than offering a universal tolerance claim.
 
-### Is Ceramic CNC Machining the Right Route?
+## Is Ceramic CNC Machining the Right Route?
 
 Precision machining is usually worth reviewing when a ceramic component has functional surfaces that cannot be accepted as-formed or as-fired.
 
@@ -31,15 +31,15 @@ Precision machining is usually worth reviewing when a ceramic component has func
 
 The term "CNC" describes machine control, not the cutting mechanism. A CNC grinder and a CNC mill may both follow programmed toolpaths, but their tooling, removal rates, edge behavior, coolant, and achievable surfaces are different. That distinction is central to comparing quotes.
 
-### The Four Decisions Behind a Reliable Quote
+## The Four Decisions Behind a Reliable Quote
 
-#### 1. Material grade and blank state
+### 1. Material grade and blank state
 
 "Alumina" or "silicon carbide" is not a complete specification. Purity, additives, forming route, density, grain structure, certification, and blank availability can affect machining and qualification. State the exact grade if it is approved. If it is open, provide the operating environment and the property that is driving the choice.
 
 Also identify whether the supplier will source the blank, manufacture a near-net preform, or machine a customer-supplied fired blank. Responsibility for hidden defects, machining allowance, and replacement material should be agreed before work begins.
 
-#### 2. Process route by feature
+### 2. Process route by feature
 
 Do not ask whether the supplier can "hold the drawing" as one undivided requirement. Break the part into features:
 
@@ -52,17 +52,17 @@ Do not ask whether the supplier can "hold the drawing" as one undivided requirem
 
 Each feature may need a different operation, fixture, sequence, and measurement method. The [ceramic CNC design guide](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) explains the geometry risks that should be reviewed before a drawing is released.
 
-#### 3. Functional acceptance criteria
+### 3. Functional acceptance criteria
 
 A tolerance has value only when it is tied to function and can be measured. A flatness callout should identify the face and measurement condition. An Ra requirement should identify the surface and method. An edge note should define the critical zone and allowable chip size rather than saying only "no chips."
 
-#### 4. Evidence and repeatability
+### 4. Evidence and repeatability
 
 Decide what evidence is required for the first article and later lots. Possibilities include a key-dimension report, CMM results, optical inspection, roundness or profile data, flatness mapping, surface roughness results, visual edge criteria, material certification, cleaning records, and protected-packaging confirmation.
 
 The evidence should match the failure mode. More paperwork is not automatically better; the right evidence is what proves the functional surfaces.
 
-### Ceramic Machining Route by Material Family
+## Ceramic Machining Route by Material Family
 
 | Material family  | Typical machining implication                                                                | Buyer question                                                                 |
 | ---------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
@@ -76,7 +76,7 @@ The evidence should match the failure mode. More paperwork is not automatically 
 
 Use the [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) when the material is not yet fixed. Precision Ceramics also distinguishes conventionally machinable grades from fired materials that require diamond grinding, while CoorsTek describes grinding, lapping, and polishing as finishing routes for tight-tolerance ceramic features. These references support the process distinction, but final feasibility still belongs to the actual drawing and grade.
 
-### Tolerances: Ask by Feature, Not by Material Name
+## Tolerances: Ask by Feature, Not by Material Name
 
 There is no responsible universal answer to "What tolerance can ceramic CNC machining hold?" The answer changes with part size, feature type, aspect ratio, wall support, blank allowance, material grade, grinding access, datum stability, and inspection setup.
 
@@ -91,7 +91,7 @@ There is no responsible universal answer to "What tolerance can ceramic CNC mach
 
 The [feature-by-process tolerance map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) is a better starting point than copying a single tolerance across the drawing.
 
-### What Drives Ceramic Machining Cost?
+## What Drives Ceramic Machining Cost?
 
 Price is usually driven by uncertainty and process time more than by raw outside volume.
 
@@ -105,7 +105,7 @@ Price is usually driven by uncertainty and process time more than by raw outside
 
 Cost reduction should start by identifying the true critical-to-quality features. Relaxing nonfunctional surfaces is usually more useful than weakening the one bore, seal face, or datum that makes the component work.
 
-### How to Compare Ceramic Machining Suppliers
+## How to Compare Ceramic Machining Suppliers
 
 Ask for evidence related to your part, not a list of machine brands.
 
@@ -120,7 +120,7 @@ Ask for evidence related to your part, not a list of machine brands.
 
 A strong supplier review may still conclude that a feature should change. That is more valuable than an immediate promise unsupported by a route or measurement plan.
 
-### Quote-Ready Ceramic Machining RFQ
+## Quote-Ready Ceramic Machining RFQ
 
 Send these items together:
 
@@ -137,7 +137,7 @@ Send these items together:
 
 Use the [custom ceramic machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) for a drawing-by-drawing review. When the package is ready, submit it through the [technical RFQ page](/rfq/).
 
-### Common Buyer Questions
+## Common Buyer Questions
 
 **Can fired ceramic be CNC machined?**
 Yes, but fired high-performance ceramics are commonly finished with diamond grinding, lapping, polishing, or other specialist abrasive processes rather than ordinary metal-cutting methods. The route depends on material and feature.
@@ -154,7 +154,7 @@ No. Tight control should follow function. Blanket tolerances increase grinding, 
 **What should I send for an initial feasibility review?**
 Send the drawing, CAD, material or service environment, quantity, critical features, surface and edge requirements, and the evidence needed for acceptance. Open items can be identified explicitly rather than hidden in the quote.
 
-### Technical References
+## Technical References
 
 - [Precision Ceramics: choosing machinable and diamond-ground ceramic materials](https://precision-ceramics.com/eu/choosing-the-right-advanced-ceramic-material/)
 - [CoorsTek: ceramic component finishing methods](https://www2.coorstek.com/en/coorstek-manufacturing-capabilities-overview/coorstek-manufacturing-processes-and-capabilities/coorstek-ceramic-component-finishing-and-coating-methods/)

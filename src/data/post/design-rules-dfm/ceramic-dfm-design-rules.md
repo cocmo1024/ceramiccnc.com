@@ -7,13 +7,13 @@ tags: ['design-rules', 'dfm', 'micro-holes', 'thin-walls', 'edge-quality']
 author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/b6348580a5801370b727338ab283357b-300-300-0.webp
 metadata:
-  title: 'Ceramic DFM Design Rules'
+  title: 'Ceramic CNC DFM Design Rules'
   description: 'Go/no-go ceramic DFM rules for machinable ceramic features, micro-holes, slots, thin walls, edges, datums, and inspection access.'
 ---
 
 > Ceramic DFM starts with fracture mechanics, not toolpath optimism. A feature is quote-ready only when it can be supported, machined, finished, and inspected without making edge chips and micro-cracks the hidden acceptance gate.
 
-### Design Rule 1: Avoid Metal-Style Sharpness
+## Design Rule 1: Avoid Metal-Style Sharpness
 
 Sharp internal corners, knife edges, and abrupt thickness changes create stress concentrations. In ceramics, they also chip during machining and handling.
 
@@ -26,7 +26,7 @@ Use:
 
 ![Ceramic DFM edge and corner design](../../../assets/images/ceramic/posts/ceramic-dfm-design-rules-1.webp)
 
-### Design Rule 2: Separate Functional and Non-Functional Precision
+## Design Rule 2: Separate Functional and Non-Functional Precision
 
 Do not apply tight tolerance to every face. Instead:
 
@@ -37,7 +37,7 @@ Do not apply tight tolerance to every face. Instead:
 
 This improves quote accuracy and reduces unnecessary finishing.
 
-### Design Rule 3: Treat Holes as Edge Features
+## Design Rule 3: Treat Holes as Edge Features
 
 Ceramic holes fail at entry, exit, and nearby edges. A micro-hole requirement should include:
 
@@ -52,7 +52,7 @@ Ceramic holes fail at entry, exit, and nearby edges. A micro-hole requirement sh
 
 ![Ceramic micro-hole DFM map](../../../assets/images/ceramic/posts/ceramic-dfm-design-rules-2.webp)
 
-### Design Rule 4: Thin Walls Need Support and Purpose
+## Design Rule 4: Thin Walls Need Support and Purpose
 
 Thin unsupported ceramic walls can fracture during grinding, inspection, packaging, or assembly. If thin walls are required, define:
 
@@ -62,13 +62,13 @@ Thin unsupported ceramic walls can fracture during grinding, inspection, packagi
 - Handling and packaging expectations.
 - Which faces need final finishing.
 
-### Design Rule 5: Slots and Pockets Need Radius and Access
+## Design Rule 5: Slots and Pockets Need Radius and Access
 
 Narrow grooves, long slots, deep pockets, and high aspect ratio cavities increase tool wear and chip risk. A manufacturable design normally uses generous internal radii, controlled step-down, and clear exit paths for tooling and debris.
 
 If a slot is functional, specify width, radius, bottom condition, edge break, and measurement method.
 
-### Design Rule 6: Design for Inspection
+## Design Rule 6: Design for Inspection
 
 A ceramic feature that cannot be measured cannot be accepted cleanly. Before sending an RFQ, ask:
 
@@ -80,7 +80,7 @@ A ceramic feature that cannot be measured cannot be accepted cleanly. Before sen
 
 ![Ceramic DFM inspection readiness](../../../assets/images/ceramic/posts/ceramic-dfm-design-rules-3.webp)
 
-### Go/No-Go Summary
+## Go/No-Go Summary
 
 **Lower-risk for review:** accessible faces, controlled radii, finished datums, localized precision, and measurable acceptance.
 
@@ -88,11 +88,11 @@ A ceramic feature that cannot be measured cannot be accepted cleanly. Before sen
 
 **High risk:** sharp internal corners, unsupported thin walls, tight tolerance everywhere, uninspectable features, or missing edge criteria.
 
-### RFQ Checklist
+## RFQ Checklist
 
 Send material grade, blank or sourcing requirement, CAD, drawing revision, functional surfaces, datums, edge condition, surface finish, critical tolerances, quantity, target lead time, and inspection expectations.
 
-### Related Guides
+## Related Guides
 
 - Use the [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) for the expanded design-rule guide covering fired machining, diamond grinding, datums, and RFQ review.
 - Use the [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) when the grade is not fixed before DFM review.

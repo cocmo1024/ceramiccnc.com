@@ -29,7 +29,7 @@ Cleanroom and high-purity manufacturing systems use technical ceramics because m
 
 This page is written for engineers and sourcing teams preparing RFQs for precision machined ceramic parts used in cleanroom and high-purity manufacturing systems. It builds on the broader [semiconductor equipment ceramic components guide](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/) and connects to deeper pages for [ceramic nozzles](/posts/semiconductor-equipment/precision-ceramic-nozzles-semiconductor-vacuum-equipment/), [vacuum chuck components](/posts/semiconductor-equipment/machined-ceramic-vacuum-chuck-components-semiconductor-tools/), [AlN thermal management parts](/posts/semiconductor-equipment/aluminum-nitride-ceramic-parts-semiconductor-thermal-management/), [ceramic pump and valve parts](/posts/pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control/), and the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/).
 
-### Why Cleanroom Ceramic Components Deserve Their Own RFQ Logic
+## Why Cleanroom Ceramic Components Deserve Their Own RFQ Logic
 
 A cleanroom classification is not a ceramic part specification. [ISO 14644-1:2015](https://www.iso.org/standard/53394.html) classifies cleanrooms and clean zones by airborne particle concentration, but the ceramic component still needs a part-level specification for geometry, surfaces, residues, packaging, and acceptance evidence. A part can pass dimensional inspection and still create incoming risk if it sheds particles, traps grinding residue in a blind port, arrives with lapped faces touching each other, or has undefined chips on an airflow or fluid-exposed edge.
 
@@ -37,7 +37,7 @@ The commercial reason to treat this as a priority application is also current. [
 
 Major ceramic suppliers already show why this application family matters. [Kyocera lists fine ceramic products for semiconductor processing](https://global.kyocera.com/prdct/fc/industries/products/008.html), including vacuum chucks, stage parts, plasma-resistant parts, polishing plates, handling arms, and other high-precision components. [CoorsTek positions technical ceramics for semiconductor processing and wafer handling applications](https://www.coorstek.com/jp/eng/products/detail/detail_04.html). The useful RFQ work is to translate those application families into details a buyer can send: material, drawing controls, machining route, surface finish, cleaning, packaging, inspection, and qualification boundary.
 
-### Common Component Families
+## Common Component Families
 
 High-purity ceramic components are defined by the risk they create in the system. The same alumina spacer may be a low-risk factory fixture in one project and a critical clean assembly part in another.
 
@@ -57,7 +57,7 @@ If the RFQ only says "ceramic parts for cleanroom equipment," the supplier has t
 
 For sample-wetted flow cells, restrictors, purge inserts, and small-channel parts inside analyzers, use the [ceramic fluid-path components for analytical instruments guide](/posts/analytical-instruments/ceramic-fluid-path-components-analytical-instruments/) to define media contact, cleanability, blockage evidence, and the boundary between dimensional acceptance and instrument calibration.
 
-### Material Selection For High-Purity Ceramic Systems
+## Material Selection For High-Purity Ceramic Systems
 
 Material selection should begin with environment and failure mode, not with the broad word "ceramic." The internal [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) is the best starting hub, but cleanroom projects usually narrow the choice around the surface and contamination risk.
 
@@ -73,7 +73,7 @@ Material selection should begin with environment and failure mode, not with the 
 
 For production high-purity hardware, avoid treating Macor or boron nitride as quick substitutes for alumina, SiC, AlN, zirconia, or silicon nitride. They can be excellent in the right setting, but the operating environment, load, cleaning route, and contamination boundary must be reviewed before substitution.
 
-### Feature Controls That Usually Decide Acceptance
+## Feature Controls That Usually Decide Acceptance
 
 Clean manufacturing RFQs fail when buyers specify tight overall dimensions but leave the sensitive features undefined. The supplier can machine a rectangle accurately and still miss the acceptance gate if the lapped seal band, micro-hole edge, sleeve bore, or thermal-interface face is not controlled.
 
@@ -93,7 +93,7 @@ Define these zones early:
 
 For hole arrays and very small ports, use the [ceramic micro-hole machining RFQ guide](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/). For thin sleeves or long bores, use the [thin-wall ceramic sleeve machining guide](/posts/thin-wall-sleeves/ceramic-thin-wall-sleeve-bore-concentricity-rfq/). For seal lands, use the [ceramic lapped seal faces guide](/posts/lapped-seal-faces/ceramic-lapped-seal-faces-rfq/). For tolerance strategy across feature types, use the [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/).
 
-### Cleaning And Packaging Are Engineering Requirements
+## Cleaning And Packaging Are Engineering Requirements
 
 Cleaning and packaging are not clerical notes for high-purity ceramic components. They are part of the acceptance plan.
 
@@ -113,7 +113,7 @@ Discuss these points before the quote is finalized:
 
 For clean fluid control, pair this guide with the [precision ceramic pump and valve components guide](/posts/pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control/). For clean automation and repeatable locating hardware, see the [ceramic locating pin and fixture plate guide](/posts/automation-fixtures/precision-ceramic-fixture-plate-locating-pins-case-study/). For sensor-adjacent parts, see the [precision ceramic components for sensors and measurement devices guide](/posts/sensor-measurement-devices/precision-ceramic-components-sensors-measurement-devices/). For mounts, apertures, and optical-axis interfaces, use the [optical and laser equipment ceramic guide](/posts/optical-laser-equipment/machined-ceramic-components-optical-laser-equipment/).
 
-### Inspection Evidence Should Match The Failure Mode
+## Inspection Evidence Should Match The Failure Mode
 
 An inspection report should prove the surfaces that matter. A long report covering non-critical outside dimensions does not replace evidence on a seal band, bore, hole field, flat thermal face, or particle-sensitive edge.
 
@@ -130,7 +130,7 @@ An inspection report should prove the surfaces that matter. A long report coveri
 
 The drawing does not need to over-specify every surface. It needs to identify which features are acceptance-critical. That is the difference between a quote that prices every face as high-risk and a quote that applies precision where it protects function.
 
-### Example RFQ Pattern: Mixed Cleanroom Ceramic Component Set
+## Example RFQ Pattern: Mixed Cleanroom Ceramic Component Set
 
 A typical clean manufacturing package may include:
 
@@ -154,7 +154,7 @@ The risk is not the outside envelope of the set. The risk is the acceptance gate
 
 When the RFQ presents the package this way, the supplier can separate standard grinding, precision grinding, lapping, polishing, inspection, cleaning, and packaging into a realistic process plan.
 
-### Cost Drivers In Cleanroom Ceramic Machining Projects
+## Cost Drivers In Cleanroom Ceramic Machining Projects
 
 The expensive part of a cleanroom ceramic project is usually not the word "cleanroom." It is the combination of fired ceramic hardness, difficult features, surface acceptance, and documentation.
 
@@ -173,7 +173,7 @@ Common cost drivers include:
 
 Good cost control does not mean lowering every requirement. It means assigning precision only where it protects function: seal surfaces, thermal faces, ID/OD fits, datums, micro-holes, fluid ports, high-voltage paths, sliding interfaces, and particle-sensitive edges. The [ceramic surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/) is useful when deciding which faces need special finishing and which can stay standard-ground.
 
-### RFQ Checklist For High-Purity Ceramic Components
+## RFQ Checklist For High-Purity Ceramic Components
 
 Send the following before expecting a reliable quote:
 
@@ -189,13 +189,13 @@ Send the following before expecting a reliable quote:
 
 For first-time projects, start with the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/). If the part is not yet manufacturable, use the [ceramic CNC machining design rules guide](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) before locking the drawing.
 
-### Practical Takeaway
+## Practical Takeaway
 
 Cleanroom and high-purity ceramic components create value when the material, machining route, functional surfaces, cleaning, packaging, and inspection evidence match the real contamination-sensitive function. A spacer, sleeve, nozzle, SiC ring, AlN plate, vacuum fixture, pump seat, or ceramic holder should not be quoted only by outside dimensions.
 
 The best RFQ defines the environment, material grade, fired state, critical surfaces, edge quality, cleaning scope, packaging expectation, inspection evidence, and customer qualification boundary. That allows the supplier to review the part as a precision high-purity manufacturing component instead of a generic ceramic machined part.
 
-### FAQ
+## FAQ
 
 **Which ceramic is best for cleanroom and high-purity manufacturing components?**  
 There is no universal best material. Alumina is common for insulation and general clean hardware, zirconia for precision sleeves and wear features, SiC for harsh or lapped wear surfaces, AlN for thermal-interface insulation, and silicon nitride for stronger wear or structural parts. The environment and acceptance gate decide.

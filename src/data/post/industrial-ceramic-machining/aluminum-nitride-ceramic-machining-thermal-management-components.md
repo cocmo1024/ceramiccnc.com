@@ -31,7 +31,7 @@ The better question is:
 
 That question should be reviewed before feasibility, price, lead time, or production route is confirmed.
 
-### Why Aluminum Nitride Is Used For Thermal Management
+## Why Aluminum Nitride Is Used For Thermal Management
 
 Aluminum nitride, often written as AlN, is selected because it can offer a useful combination of thermal conductivity and electrical insulation. That combination makes it attractive where a metal heat spreader would create an electrical path, where a polymer insulator cannot handle the thermal load, or where alumina does not provide enough thermal performance for the design.
 
@@ -49,7 +49,7 @@ Aluminum nitride is most useful when the design takes advantage of these strengt
 
 The broader [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) can help compare aluminum nitride with alumina, zirconia, silicon nitride, silicon carbide, MACOR, and boron nitride.
 
-### Aluminum Nitride Compared With Other Engineering Ceramics
+## Aluminum Nitride Compared With Other Engineering Ceramics
 
 AlN is often compared with alumina because both are electrical insulation ceramics. It is also reviewed alongside silicon nitride and silicon carbide when the part must survive mechanical or thermal stress. The right choice depends on the failure mode, not on a single material property.
 
@@ -65,7 +65,7 @@ AlN is often compared with alumina because both are electrical insulation cerami
 
 For low-cost electrical insulation, [precision machined alumina ceramic parts](/posts/industrial-ceramic-machining/precision-machined-alumina-ceramic-parts-industrial-applications/) may be sufficient. For structural wear or thermal shock, [silicon nitride ceramic machining](/posts/industrial-ceramic-machining/silicon-nitride-ceramic-machining-structural-wear-parts/) may deserve review. For harsh chemical process-side hardware, [silicon carbide ceramic machining](/posts/industrial-ceramic-machining/silicon-carbide-ceramic-machining-harsh-environment-applications/) may fit better. AlN becomes especially valuable when thermal transfer and electrical isolation must be solved together.
 
-### Common Aluminum Nitride Machined Parts
+## Common Aluminum Nitride Machined Parts
 
 Most AlN machining projects become clearer when the part is described by thermal and electrical function rather than by shape alone.
 
@@ -81,7 +81,7 @@ Most AlN machining projects become clearer when the part is described by thermal
 
 A simple AlN plate, a thin insulating substrate, a lapped thermal pad, and a pocketed fixture frame should not be quoted as if they carry the same machining risk. The thermal-interface surfaces and inspection requirements usually decide the route.
 
-### Grade, Blank Condition, And Handling Must Be Defined
+## Grade, Blank Condition, And Handling Must Be Defined
 
 "Aluminum nitride" is not a complete material specification. AlN grades can vary in thermal behavior, density, purity, color, surface condition, grain structure, additive system, and response to machining or cleaning. Some projects require a customer-specified grade. Others start from the operating environment and then review an appropriate material option.
 
@@ -98,7 +98,7 @@ Blank condition also matters. Some AlN parts can start from plate, sheet, rod, o
 
 Handling should be included in the review. AlN parts may have thin edges, polished or lapped surfaces, and surfaces that must remain clean for bonding or thermal contact. Packaging, cleaning, and non-contact handling can matter as much as the nominal dimension when the part is used in a precision assembly.
 
-### Machining Route For AlN Thermal Components
+## Machining Route For AlN Thermal Components
 
 AlN machining is usually planned around functional surfaces. The most expensive part of a drawing may not be the outside profile; it may be a flat thermal contact face, a thin plate that must remain stable, or a small hole pattern close to an edge.
 
@@ -114,7 +114,7 @@ A typical review may consider:
 
 The [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) are useful for AlN because many RFQs arrive with metal-style features. Sharp internal corners, deep narrow pockets, thin unsupported tabs, hole patterns too close to edges, and blanket tight tolerances can make an otherwise reasonable thermal component difficult or expensive.
 
-### Flatness, Thickness, And Thermal Contact
+## Flatness, Thickness, And Thermal Contact
 
 Thermal management parts often fail because the interface is not controlled, not because the base material is wrong. A heat spreader with high theoretical thermal conductivity still performs poorly if it contacts the mating surface only at high spots or if assembly pressure creates local stress.
 
@@ -131,7 +131,7 @@ For AlN heat spreaders, thermal plates, and pressure pads, the drawing should de
 
 The [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) can help decide where tight flatness, thickness, or hole-position requirements belong. A tight tolerance on every face can raise cost without improving heat transfer.
 
-### Surface Finish And Subsurface Damage
+## Surface Finish And Subsurface Damage
 
 Surface finish in AlN should be connected to the function of the face. A thermal-interface face, bonding face, metallization surface, or optical-adjacent mount may need different control than a clearance edge or non-contact side wall.
 
@@ -145,7 +145,7 @@ For surface finish RFQs, specify:
 
 The [surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/) explains why finish requirements should be face-specific. A fine Ra applied everywhere can turn a practical AlN component into an unnecessarily expensive machining project.
 
-### Holes, Pockets, Slots, And Thin Plates
+## Holes, Pockets, Slots, And Thin Plates
 
 AlN thermal components often include mounting holes, sensor holes, slots, pockets, reliefs, or cutouts. These features help the assembly, but they also introduce machining risk.
 
@@ -162,7 +162,7 @@ Useful drawing inputs include:
 
 Avoid sharp inside corners when possible. Use realistic radii and practical chamfers. For thin plates, give the supplier context about how the part is clamped, bonded, stacked, or handled. Thin ceramic plates may need a different blank route, support strategy, and inspection method than thick fixture blocks.
 
-### Aluminum Nitride In Power Electronics And Test Fixtures
+## Aluminum Nitride In Power Electronics And Test Fixtures
 
 Power electronics is one of the strongest application areas for machined AlN components. Buyers may need custom insulating thermal plates, device carriers, pressure pads, ceramic fixtures, sensor supports, and prototype thermal-interface parts around power modules, high-voltage systems, SiC or GaN devices, and dense power conversion hardware.
 
@@ -178,7 +178,7 @@ These RFQs should not be treated as generic ceramic plates. The review should in
 
 The [power electronics ceramic machining guide](/posts/power-electronics/ai-data-center-power-electronics-ceramic-machining/) explains related RFQ concerns for high-voltage insulation, thermal interfaces, SiC module fixtures, and power hardware. For AlN specifically, thermal contact and electrical isolation should be reviewed together, not as separate requirements.
 
-### Aluminum Nitride In Semiconductor Thermal Management
+## Aluminum Nitride In Semiconductor Thermal Management
 
 AlN can also be reviewed for semiconductor equipment and clean manufacturing systems where thermal stability, electrical insulation, and cleanliness matter. Components may include thermal plates, ceramic carriers, sensor supports, precision spacers, heater-adjacent parts, vacuum-side fixtures, or chamber-adjacent hardware depending on the equipment.
 
@@ -195,7 +195,7 @@ For these projects, the RFQ should include:
 
 The [semiconductor equipment ceramic parts guide](/posts/semiconductor-equipment/ai-semiconductor-equipment-ceramic-parts/) gives more context for process equipment ceramics. For a focused RFQ path around AlN heat spreaders, heater-adjacent plates, insulating thermal spacers, clean packaging, and semiconductor inspection evidence, use the [AlN ceramic parts for semiconductor thermal management guide](/posts/semiconductor-equipment/aluminum-nitride-ceramic-parts-semiconductor-thermal-management/). When the AlN part is a heater-adjacent plate, thermal insulating spacer, electrode-adjacent component, or plasma etch/deposition insulator, the [ceramic insulators for plasma etching and deposition equipment guide](/posts/semiconductor-equipment/ceramic-insulators-plasma-etching-deposition-equipment/) helps connect thermal-interface flatness with dielectric paths, cleaning, edge quality, and inspection evidence. In semiconductor-adjacent parts, the difference between a normal industrial edge and a particle-sensitive edge should be defined before production.
 
-### Cost Drivers In Aluminum Nitride Ceramic Machining
+## Cost Drivers In Aluminum Nitride Ceramic Machining
 
 AlN machining cost is usually driven by surface control, thin geometry, hole complexity, and inspection rather than by outside size alone.
 
@@ -212,7 +212,7 @@ AlN machining cost is usually driven by surface control, thin geometry, hole com
 
 The goal is not to remove precision from the drawing. The goal is to place precision where it supports heat transfer, insulation, assembly, and inspection.
 
-### Inspection Evidence For AlN Components
+## Inspection Evidence For AlN Components
 
 Inspection should match the functional risk. A heat spreader, thin substrate, standoff, and fixture frame need different evidence packages.
 
@@ -228,7 +228,7 @@ Inspection should match the functional risk. A heat spreader, thin substrate, st
 
 For critical parts, acceptance notes should be agreed before production. "Flat," "smooth," and "no chips" are not controlled manufacturing requirements. Better notes define the face, the measurement method, the allowed edge break, the magnification, the reporting expectation, and the zones where cosmetic marks are acceptable.
 
-### When Aluminum Nitride May Not Be The Best Choice
+## When Aluminum Nitride May Not Be The Best Choice
 
 Aluminum nitride is valuable when thermal conductivity and electrical insulation are both required, but it is not always the best ceramic.
 
@@ -243,7 +243,7 @@ A different material may fit better when:
 
 Material choice should be reviewed against the full assembly: heat path, voltage path, mechanical load, cleaning, bonding, and inspection.
 
-### RFQ Inputs For Aluminum Nitride Ceramic Machining
+## RFQ Inputs For Aluminum Nitride Ceramic Machining
 
 A useful AlN RFQ should include both drawing details and application context. The best starting package includes:
 
@@ -261,7 +261,7 @@ A useful AlN RFQ should include both drawing details and application context. Th
 
 The [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) can help prepare a drawing package before quoting. It separates must-have functional requirements from assumptions that should be reviewed during engineering review.
 
-### Practical Takeaway
+## Practical Takeaway
 
 Aluminum nitride ceramic machining is a strong option for thermal management components when a part must combine heat transfer, electrical insulation, stable dimensions, clean surfaces, and precision interfaces. The material choice is only part of the result. The successful part also depends on ceramic-friendly geometry, grade selection, flatness and thickness control, surface finish where it matters, controlled edges, proper cleaning, and inspection evidence that matches the assembly.
 

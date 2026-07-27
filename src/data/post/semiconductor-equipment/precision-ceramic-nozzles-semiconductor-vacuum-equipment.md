@@ -31,7 +31,7 @@ This article is a precision ceramic machining case guide for nozzle-style compon
 
 For the closest supporting pages, use the [ceramic micro-hole machining RFQ guide](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/), the [precision ceramic components for semiconductor equipment guide](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/), and the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/). If the nozzle sits near a vacuum surface or wafer support module, also review the [machined ceramic vacuum chuck components guide](/posts/semiconductor-equipment/machined-ceramic-vacuum-chuck-components-semiconductor-tools/).
 
-### Why Precision Nozzle Demand Extends Across Tool Systems
+## Why Precision Nozzle Demand Extends Across Tool Systems
 
 Semiconductor equipment investment, AI-driven fab expansion, advanced packaging, vacuum processing, high-precision dispensing, metrology, and clean automation all create demand for small ceramic components that control gas, liquid, suction, wear, temperature, or electrical isolation.
 
@@ -39,7 +39,7 @@ Semiconductor equipment investment, AI-driven fab expansion, advanced packaging,
 
 [Kyocera describes high precision ceramic nozzles with micro holes](https://global.kyocera.com/prdct/fc/technologies/008.html), including internal diameters starting from 0.1 mm in its reference example. The useful RFQ problem is more specific than the part name: which material, bore geometry, surface finish, edge quality, inspection method, and cleaning requirement make the nozzle acceptable.
 
-### What Counts As A Precision Ceramic Nozzle
+## What Counts As A Precision Ceramic Nozzle
 
 In procurement language, several part names can point to a nozzle-style ceramic component:
 
@@ -60,7 +60,7 @@ The practical RFQ question is:
 
 **Which feature controls function: bore diameter, flow path, contact face, exit edge, chemical exposure, temperature, insulation path, wear surface, or cleaning requirement?**
 
-### Case Pattern: A Clean Gas Or Vacuum Ceramic Nozzle
+## Case Pattern: A Clean Gas Or Vacuum Ceramic Nozzle
 
 A typical high-value case is a small ceramic nozzle used in a semiconductor-adjacent gas, vacuum, inspection, or dispensing module. The customer may send a STEP file showing a tapered nozzle body, a central bore, a mounting shoulder, and one lapped face. The first quote risk is not the outside cone. It is the bore and the acceptance gate.
 
@@ -76,7 +76,7 @@ Important review questions include:
 
 If these points are missing, the supplier can machine a dimensionally plausible ceramic part and still miss the real function.
 
-### Material Selection For Ceramic Nozzles
+## Material Selection For Ceramic Nozzles
 
 Material should be selected by function and environment, not by a generic ranking table. The same bore geometry may point to different materials depending on wear, temperature, chemical exposure, dielectric need, and whether a prototype must be machined quickly.
 
@@ -92,7 +92,7 @@ Material should be selected by function and environment, not by a generic rankin
 
 If the part must match an already qualified tool, send the exact material grade. If the material is open, send the environment, media, temperature, pressure or vacuum condition, wear condition, and cleaning requirement. The [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) is the correct starting point when the failure mode is known but the material is not fixed.
 
-### Bore Geometry, Orifice Size, And Exit Edge Quality
+## Bore Geometry, Orifice Size, And Exit Edge Quality
 
 The bore is usually the value of the nozzle. In ceramics, it is also where many quote failures begin.
 
@@ -113,7 +113,7 @@ For small bores, do not assume that a metal-style hole note is enough. A "0.20 m
 
 If the design includes dense holes, very small orifices, or flow plates, use the [ceramic micro-hole machining guide](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/) before releasing the drawing. That page covers diameter, depth, taper, breakout, cleaning, and inspection method in more detail.
 
-### Sealing Faces, Mounting Shoulders, And Datum Strategy
+## Sealing Faces, Mounting Shoulders, And Datum Strategy
 
 Many ceramic nozzles do more than create a flow path. They also seal, locate, insulate, or contact another surface. A nozzle body may include a shoulder, flange, OD fit, lapped face, ceramic-to-metal interface, O-ring seat, or threaded-adjacent feature.
 
@@ -129,7 +129,7 @@ Clarify these surfaces before quotation:
 
 For nozzles that seal against a flat surface, the [lapped ceramic seal faces RFQ guide](/posts/lapped-seal-faces/ceramic-lapped-seal-faces-rfq/) is useful. For nozzles that act as pickup or suction components, the [ceramic vacuum chuck RFQ guide](/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/) helps define face flatness, hole fields, porous surfaces, and cleanliness expectations.
 
-### Machining Route For Precision Ceramic Nozzles
+## Machining Route For Precision Ceramic Nozzles
 
 The route depends on material, blank state, bore size, wall thickness, and finished surfaces. A practical review often follows this order:
 
@@ -143,7 +143,7 @@ The route depends on material, blank state, bore size, wall thickness, and finis
 
 The [green machining vs hard machining guide](/posts/process-routes-control/green-machining-vs-hard-machining/) explains why process route affects risk and cost. The [ceramic CNC machining design rules guide](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) helps avoid sharp internal corners, thin unsupported walls, unrealistic hole-to-edge distances, and unnecessary blanket tolerances.
 
-### Cleaning, Residue, And Particle Risk
+## Cleaning, Residue, And Particle Risk
 
 Nozzle parts can pass dimensional inspection and still fail if the bore is blocked, contaminated, chipped, or hard to clean. This is especially important for semiconductor, vacuum, analytical, chemical, and clean automation applications.
 
@@ -158,7 +158,7 @@ Discuss:
 
 If the final flow, spray pattern, dispense result, vacuum pickup, or chemical performance is validated by the customer, say so in the RFQ. The machining supplier can then focus on geometry, bore condition, edge quality, cleaning, packaging, and inspection evidence.
 
-### Inspection Evidence For Ceramic Nozzle RFQs
+## Inspection Evidence For Ceramic Nozzle RFQs
 
 Inspection should prove the nozzle function, not create reports for every non-critical outside surface.
 
@@ -176,7 +176,7 @@ Inspection should prove the nozzle function, not create reports for every non-cr
 
 For tolerance planning, use the [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/). For surface quality, use the [surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/).
 
-### Cost Drivers In Precision Ceramic Nozzles
+## Cost Drivers In Precision Ceramic Nozzles
 
 Ceramic nozzles are often small, but that does not make them cheap. Cost usually comes from feature risk, inspection, cleaning, and yield.
 
@@ -195,7 +195,7 @@ Common cost drivers include:
 
 The most effective cost control is not to remove all precision. It is to assign precision where function needs it. Mark the bore, exit edge, sealing face, mounting datum, particle-sensitive zones, and non-critical clearance surfaces separately.
 
-### RFQ Checklist For Precision Ceramic Nozzles
+## RFQ Checklist For Precision Ceramic Nozzles
 
 Send the following before expecting a reliable quote:
 
@@ -213,13 +213,13 @@ Send the following before expecting a reliable quote:
 
 For the general submission format, use the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/). For a broader procurement path across materials and applications, use the [precision ceramic machining guide](/posts/industrial-ceramic-machining/precision-ceramic-machining-high-performance-industrial-components/).
 
-### Practical Takeaway
+## Practical Takeaway
 
 A precision ceramic nozzle is not just a small ceramic part with a hole. It is a controlled interface where material, bore geometry, exit edge quality, sealing face, cleaning, packaging, and inspection evidence decide acceptance. The search term may be simple, but the RFQ should be specific.
 
 For a serious ceramic nozzle quote, do not send only a STEP file and ask for a unit price. Send the drawing, material or environment, media, functional bore, edge criteria, sealing or mounting surfaces, inspection method, cleaning expectation, quantity, and qualification stage. That gives the machining route a chance to be reviewed as a precision ceramic nozzle instead of a generic ceramic shape.
 
-### FAQ
+## FAQ
 
 **What is the best ceramic material for precision nozzles?**
 There is no universal best material. Alumina, zirconia, SiC, Si3N4, BN, AlN, and Macor each fit different temperature, wear, chemical, electrical, prototype, and machining conditions. The drawing and environment decide.

@@ -29,7 +29,7 @@ A wafer support pin, ceramic end effector, vacuum chuck segment, SiC process rin
 
 This guide is written for engineering and sourcing teams preparing RFQs for custom precision ceramic components used in semiconductor equipment. It complements the broader [AI semiconductor equipment ceramic parts guide](/posts/semiconductor-equipment/ai-semiconductor-equipment-ceramic-parts/) by focusing on component families, material routes, machining risks, and inspection requirements. For alumina insulating rings, feedthrough sleeves, nozzles, gas plates, spacers, and clean packaging in semiconductor processing equipment, use the [alumina ceramic parts for semiconductor processing equipment guide](/posts/semiconductor-equipment/alumina-ceramic-parts-semiconductor-processing-equipment/). For AlN heat spreaders, heater-adjacent plates, insulating thermal spacers, clean packaging, and thermal-interface inspection evidence, use the [AlN ceramic parts for semiconductor thermal management guide](/posts/semiconductor-equipment/aluminum-nitride-ceramic-parts-semiconductor-thermal-management/). For SiC and alumina process chamber rings, lapped annular bands, ID/OD control, groove edges, cleaning, and ring inspection evidence, use the [precision ceramic rings for semiconductor process chambers guide](/posts/semiconductor-equipment/precision-ceramic-rings-semiconductor-process-chambers/). For alumina insulating rings, AlN thermal insulators, sleeves, spacers, feedthrough-adjacent parts, creepage paths, and plasma-adjacent edge control, use the [ceramic insulators for plasma etching and deposition equipment guide](/posts/semiconductor-equipment/ceramic-insulators-plasma-etching-deposition-equipment/).
 
-### Where Precision Ceramic Components Fit In Semiconductor Equipment
+## Where Precision Ceramic Components Fit In Semiconductor Equipment
 
 Semiconductor ceramic components are used where a part must remain stable, clean, insulating, wear-resistant, or chemically compatible while supporting tight geometry. The same machine may use several ceramic families for different reasons.
 
@@ -48,7 +48,7 @@ The important point is that "semiconductor ceramic component" is not a manufactu
 
 Precision semiconductor ceramic RFQs should separate part function, material family, finished surfaces, edge requirements, cleaning needs, and inspection evidence.
 
-### Common Materials For Semiconductor Ceramic Components
+## Common Materials For Semiconductor Ceramic Components
 
 Material choice should follow tool environment and feature risk. A part that touches a wafer, supports a plasma-facing assembly, transfers heat, insulates a high-voltage area, or distributes gas should not be selected by material name alone.
 
@@ -65,7 +65,7 @@ Material choice should follow tool environment and feature risk. A part that tou
 
 For a broad decision path, use the [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) before locking the RFQ. If the part is already tied to an approved material or tool qualification, say whether equivalent grade review is allowed or prohibited.
 
-### Component Geometry That Changes Feasibility
+## Component Geometry That Changes Feasibility
 
 Semiconductor components often fail quotation review because the drawing defines geometry but not function. The supplier can see the model, but cannot know which surface touches the wafer, which edge is particle-sensitive, which bore is only clearance, or which face must be lapped unless the RFQ says so.
 
@@ -82,7 +82,7 @@ High-impact geometry includes:
 
 The [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) explain why metal-style features often need radius, edge-break, support, and inspection review before machining. For legacy DFM context, the [ceramic DFM design rules](/posts/design-rules-dfm/ceramic-dfm-design-rules/) are still useful for holes, slots, thin walls, and measurable acceptance.
 
-### Wafer Handling Parts: Edges, Flatness, And Weight
+## Wafer Handling Parts: Edges, Flatness, And Weight
 
 Ceramic wafer handling components include end effectors, blades, lift pins, support pins, spacer pads, grippers, carriers, and fixture parts. The usual goal is not simply strength. The goal is stable contact, low particle risk, controlled edge condition, and repeatable positioning.
 
@@ -101,7 +101,7 @@ If the wafer-facing surface is critical, mark it directly on the drawing. If onl
 
 For SiC-specific blades, lift pins, support pads, and edge-contact parts, use the focused [silicon carbide wafer handling components guide](/posts/semiconductor-equipment/silicon-carbide-wafer-handling-components-semiconductor-manufacturing/) before defining contact zones, chip criteria, cleaning, and packaging. For material-neutral end effector geometry across alumina, SiC, silicon nitride, zirconia, and prototype ceramics, use the [ceramic end effectors for wafer handling guide](/posts/semiconductor-equipment/ceramic-end-effectors-wafer-handling-automation/).
 
-### Vacuum Chucks And Suction Plates
+## Vacuum Chucks And Suction Plates
 
 Vacuum chucks and suction plates are among the highest-value semiconductor ceramic RFQs because they combine flatness, vacuum behavior, hole or pore geometry, cleaning, and inspection. Dense ceramic chucks with drilled holes are not reviewed the same way as porous ceramic chucks or hybrid chuck assemblies.
 
@@ -119,7 +119,7 @@ For chuck-specific projects, use the dedicated [ceramic vacuum chuck RFQ guide](
 
 One common mistake is quoting a vacuum chuck as a plate with holes. That misses the real acceptance gate: flatness under the right support condition, suction uniformity, hole quality, groove edge condition, cleanability, and whether the buyer needs dimensional evidence, flow evidence, or both.
 
-### Gas Plates, Nozzles, And Micro-Hole Ceramic Parts
+## Gas Plates, Nozzles, And Micro-Hole Ceramic Parts
 
 Gas distribution plates, shower plates, nozzles, restrictors, orifice inserts, and ceramic manifolds can be difficult because small holes concentrate both machining and inspection risk. Diameter alone is not enough.
 
@@ -136,7 +136,7 @@ Define:
 
 The [ceramic micro-hole machining RFQ guide](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/) gives a focused checklist for this type of part. For semiconductor equipment, the hole field may be less about one perfect diameter and more about repeatable gas or vacuum behavior across a functional surface.
 
-### SiC Rings, Chamber-Adjacent Parts, And Process Hardware
+## SiC Rings, Chamber-Adjacent Parts, And Process Hardware
 
 Silicon carbide ceramic components are often considered when the tool environment includes plasma exposure, chemical attack, abrasive wear, high temperature, or a need for high stiffness and clean surface behavior. Typical parts include SiC rings, support hardware, seal-related components, process-side plates, nozzles, sleeves, and wear surfaces.
 
@@ -152,7 +152,7 @@ SiC RFQs should state:
 
 The [silicon carbide ceramic machining guide](/posts/industrial-ceramic-machining/silicon-carbide-ceramic-machining-harsh-environment-applications/) covers SiC material and finishing risk in more detail. In semiconductor projects, SiC cost often comes from the combination of hard material, low-defect surfaces, lapped bands, edge protection, and inspection evidence.
 
-### AlN Thermal Plates And Electrically Insulating Heat Spreaders
+## AlN Thermal Plates And Electrically Insulating Heat Spreaders
 
 Aluminum nitride is reviewed when thermal conductivity and electrical insulation must work together. Semiconductor equipment may use AlN or related ceramics in heater-adjacent parts, thermal plates, power module fixtures, carriers, spacers, and insulating heat spreaders.
 
@@ -169,7 +169,7 @@ AlN components are not just flat ceramic plates. The RFQ should separate:
 
 Use the [aluminum nitride ceramic machining guide](/posts/industrial-ceramic-machining/aluminum-nitride-ceramic-machining-thermal-management-components/) for material-specific guidance, and use the [AlN semiconductor thermal-management guide](/posts/semiconductor-equipment/aluminum-nitride-ceramic-parts-semiconductor-thermal-management/) when the part is a wafer-tool thermal plate, heater-adjacent spacer, clean carrier, or semiconductor fixture with flatness, Ra, packaging, and inspection requirements. A blanket fine finish on every face is usually not the best path. The functional thermal-contact faces should receive the strongest control.
 
-### Tolerances, Surface Finish, And Inspection Evidence
+## Tolerances, Surface Finish, And Inspection Evidence
 
 Tight tolerances are not automatically wrong in semiconductor ceramic components. The problem is tight tolerance without a feature hierarchy.
 
@@ -199,7 +199,7 @@ Inspection should prove the functional requirement, not create paperwork for eve
 | Datum and position        | CMM report, fixture gauge, key-dimension report                              | Datums must be measurable and stable                               |
 | Cleanliness or blockage   | Cleaning record, optical review, air-flow check, packaging requirement       | Define incoming acceptance before production                       |
 
-### Cost Drivers In Semiconductor Ceramic Components
+## Cost Drivers In Semiconductor Ceramic Components
 
 Cost is often driven less by outside size and more by the precision logic around the part.
 
@@ -218,7 +218,7 @@ Important cost drivers include:
 
 The goal is not to make the drawing loose. The goal is to place precision where it creates tool performance. A well-prepared RFQ lets the supplier quote the functional surfaces accurately and avoid pricing uncertainty across the whole part.
 
-### RFQ Checklist For Precision Semiconductor Ceramic Components
+## RFQ Checklist For Precision Semiconductor Ceramic Components
 
 Send the following before expecting a reliable quotation:
 
@@ -237,7 +237,7 @@ Send the following before expecting a reliable quotation:
 
 Use the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) to organize the drawing package. For broad feasibility review, start with the [precision ceramic machining overview](/posts/industrial-ceramic-machining/precision-ceramic-machining-high-performance-industrial-components/).
 
-### Practical Takeaway
+## Practical Takeaway
 
 Precision ceramic components for semiconductor equipment should be reviewed as engineered interfaces, not generic ceramic shapes. The important questions are specific: which surface touches a wafer, which face controls vacuum, which ring sees plasma, which plate transfers heat, which hole controls flow, which datum controls assembly, which edge is particle-sensitive, and which inspection method proves acceptance.
 
@@ -245,7 +245,7 @@ Good semiconductor ceramic RFQs identify the material route, functional surfaces
 
 For a direct project review, use the [RFQ input page](/rfq/) and include the drawing, CAD file, material requirement, quantity, target timing, functional surfaces, and acceptance evidence.
 
-### FAQ
+## FAQ
 
 **What are the most common ceramic components in semiconductor equipment?**  
 Common examples include wafer handling blades, end effectors, lift pins, vacuum chucks, porous suction plates, SiC rings, alumina insulators, AlN thermal plates, micro-hole gas plates, nozzles, spacers, and precision fixtures.

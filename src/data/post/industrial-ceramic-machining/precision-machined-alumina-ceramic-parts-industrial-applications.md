@@ -30,7 +30,7 @@ The better question is:
 
 That question should be answered before feasibility, price, lead time, or final machining route are confirmed.
 
-### Why Alumina Is Used For Industrial Ceramic Parts
+## Why Alumina Is Used For Industrial Ceramic Parts
 
 Alumina, or aluminum oxide Al2O3, is often selected when an industrial part needs a combination of mechanical and electrical performance. Compared with many metals and polymers, alumina can provide useful hardness, dielectric behavior, corrosion resistance, dimensional stability, and resistance to many wear environments.
 
@@ -38,7 +38,7 @@ Its strength is not that it solves every ceramic application. Its strength is ba
 
 However, alumina is still a hard and brittle ceramic. Sharp corners, thin walls, unsupported sections, point loading, and over-tight global tolerances can create cost and fracture risk. Fired alumina parts with precision features usually require diamond grinding, lapping, or other abrasive finishing rather than ordinary metal-style cutting.
 
-### Common Applications For Precision Machined Alumina Parts
+## Common Applications For Precision Machined Alumina Parts
 
 Alumina appears across many industrial assemblies because it can support several functions at once.
 
@@ -55,7 +55,7 @@ This spread of applications is why alumina ceramic machining should not be treat
 
 For high- and ultra-high-vacuum chambers outside the narrower semiconductor process-ring scope, the [machined alumina components for high- and ultra-high-vacuum systems guide](/posts/high-vacuum-systems/machined-alumina-components-high-ultra-high-vacuum-systems/) covers structural rings, spacers, sleeves, insulating supports, sealing interfaces, trapped-volume review, cleaning, bake context, and customer-owned vacuum testing.
 
-### Alumina Grade Selection Matters
+## Alumina Grade Selection Matters
 
 The word "alumina" is not enough for a reliable quotation. Different alumina grades can vary in purity, density, grain structure, strength, finishability, color, and cost. A drawing that only says "ceramic" or "alumina" leaves too many assumptions open.
 
@@ -71,7 +71,7 @@ If the exact grade is already controlled, include the material specification, su
 
 The [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) gives a broader framework for comparing alumina with zirconia, silicon nitride, silicon carbide, aluminum nitride, MACOR, and boron nitride.
 
-### Blank State And Machining Route
+## Blank State And Machining Route
 
 Alumina parts may start from pressed blanks, tubes, rods, plates, near-net shapes, or customer-supplied blanks. The blank route affects machining allowance, datum strategy, surface condition, yield, and quote risk.
 
@@ -86,7 +86,7 @@ For precision machined alumina ceramic parts, the route may include:
 
 The route should be chosen after reviewing the drawing. A part with a simple outside profile but one tight bore may need a different process from a flat plate with many holes, countersinks, and flatness requirements. Green machining can reduce shaping effort in some cases, but post-sinter finishing is often needed for final accuracy and functional surfaces.
 
-### Features That Drive Alumina Machining Cost
+## Features That Drive Alumina Machining Cost
 
 Alumina is hard, abrasive, and brittle after firing. Cost is often driven less by the part outline and more by the features that must be finished, measured, and protected.
 
@@ -104,7 +104,7 @@ High-impact features include:
 
 This is why drawings should separate critical features from non-critical geometry. Applying tight tolerance and low surface roughness to every surface usually increases cost without improving function.
 
-### Alumina Insulators, Spacers, And Standoffs
+## Alumina Insulators, Spacers, And Standoffs
 
 Electrical insulation is one of the most common reasons engineers specify alumina. Alumina spacers, sleeves, standoffs, feedthrough supports, and insulating plates can be used where polymer insulation cannot handle temperature, vacuum, wear, or dimensional stability requirements.
 
@@ -120,7 +120,7 @@ For these parts, the RFQ should define:
 
 Do not treat every white ceramic spacer as equivalent. A simple length spacer, a high-voltage standoff, and a vacuum feedthrough insulator may need different grade, finish, cleaning, and inspection controls. The [high-voltage ceramic insulator RFQ guide](/posts/high-voltage-insulation/ceramic-high-voltage-insulators-rfq/) covers this requirement in more detail.
 
-### Alumina Bushings, Sleeves, And Wear Parts
+## Alumina Bushings, Sleeves, And Wear Parts
 
 Alumina is also used for bushings, sleeves, liners, guide blocks, wear plates, and valve-adjacent parts. Its hardness and wear resistance can be useful, but wear performance depends on the complete contact system.
 
@@ -136,7 +136,7 @@ Important review items include:
 
 If impact toughness or thermal shock is the dominant concern, zirconia or silicon nitride may need review. If chemical wear and lapped sealing are dominant, silicon carbide may be a better candidate. Alumina is often a strong option, but it should not be selected by hardness alone. The related [wear-resistant ceramic machining guide](/posts/industrial-ceramic-machining/industrial-ceramic-machining-wear-resistant-components/) explains wear-mode review across several ceramic materials.
 
-### Alumina Plates, Substrates, And Fixture Components
+## Alumina Plates, Substrates, And Fixture Components
 
 Machined alumina plates and substrates may be used as insulating fixtures, sensor bases, laboratory hardware, automation tooling, or high-temperature support parts. These parts often appear simple, but flatness, holes, datum faces, and edge quality can dominate the quotation.
 
@@ -152,7 +152,7 @@ Review these drawing details:
 
 For fixture plates, avoid point loading where possible. Use broad support, practical edge breaks, and stable datum surfaces. Alumina can be precise, but it does not behave like a ductile metal plate under concentrated clamping loads.
 
-### Tolerances And Surface Finish Should Be Local
+## Tolerances And Surface Finish Should Be Local
 
 The best alumina drawings usually identify functional zones instead of assigning maximum precision everywhere.
 
@@ -167,7 +167,7 @@ Use local notes for surface finish, flatness, and lapped faces. Avoid global not
 
 For deeper specification guidance, see the [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) and the [surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/).
 
-### Design Rules For Machined Alumina Parts
+## Design Rules For Machined Alumina Parts
 
 Alumina design should reduce edge chips, stress concentration, and inspection ambiguity.
 
@@ -186,7 +186,7 @@ Useful rules include:
 
 The [ceramic CNC machining design rules guide](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) covers feature-level design review for holes, slots, thin walls, datums, and edges.
 
-### Inspection Evidence For Alumina Ceramic RFQs
+## Inspection Evidence For Alumina Ceramic RFQs
 
 Inspection should match the function of the alumina part. A drawing may call for CMM inspection, optical measurement, pin gauges, bore gauges, roundness measurement, flatness measurement, surface finish measurement, or visual chip criteria.
 
@@ -203,7 +203,7 @@ Inspection should match the function of the alumina part. A drawing may call for
 
 If inspection documentation is required, include it in the RFQ before quotation. Measuring and documenting a ceramic component can be a meaningful part of the project effort, especially when parts are small, thin, lapped, or chip-sensitive.
 
-### When Alumina May Not Be The Best Choice
+## When Alumina May Not Be The Best Choice
 
 Alumina is useful, but it is not always the best ceramic.
 
@@ -218,7 +218,7 @@ Review alternatives when:
 
 These are not reasons to reject alumina automatically. They are reasons to review the application rather than treating alumina as the default answer for every white ceramic part.
 
-### RFQ Inputs For Precision Machined Alumina Ceramic Parts
+## RFQ Inputs For Precision Machined Alumina Ceramic Parts
 
 For a useful alumina ceramic machining review, send:
 
@@ -237,7 +237,7 @@ For a useful alumina ceramic machining review, send:
 
 The [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) provides a broader format for preparing drawings, material notes, quantities, and acceptance requirements.
 
-### Practical Takeaway
+## Practical Takeaway
 
 Precision machined alumina ceramic parts are valuable because alumina can combine insulation, wear resistance, chemical stability, temperature capability, and practical manufacturability for many industrial applications.
 

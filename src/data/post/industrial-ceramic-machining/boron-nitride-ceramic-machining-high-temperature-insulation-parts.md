@@ -30,7 +30,7 @@ The better question is:
 
 That question should be reviewed before feasibility, price, lead time, tolerance scope, or production route is confirmed.
 
-### Why Boron Nitride Is Used In High-Temperature Insulation
+## Why Boron Nitride Is Used In High-Temperature Insulation
 
 Boron nitride, often written as BN, is selected because it can provide a useful combination of thermal stability, electrical insulation, thermal shock resistance, machinability, lubricity, and resistance to wetting by many molten metals. In solid form, hot-pressed BN is often used where graphite would be electrically conductive, where alumina would be harder to machine into complex shapes, or where a high-temperature fixture needs a clean non-metallic interface.
 
@@ -48,7 +48,7 @@ BN is often useful when the design needs:
 
 The broader [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) can help compare BN with alumina, zirconia, silicon nitride, silicon carbide, aluminum nitride, and Macor. BN is often the right answer when the part needs high-temperature electrical insulation and machinable custom geometry, but the service environment still controls the decision.
 
-### BN Compared With Other Technical Ceramics
+## BN Compared With Other Technical Ceramics
 
 BN should not be treated as a direct substitute for every high-temperature ceramic. Its strength, wear behavior, oxidation behavior, and grade sensitivity must be reviewed. It is often selected for insulation, release, thermal shock, and machinability, while other ceramics may be better for structural wear, mechanical strength, thermal management, or chemical duty.
 
@@ -64,7 +64,7 @@ BN should not be treated as a direct substitute for every high-temperature ceram
 
 For cost-sensitive production insulation, [precision machined alumina ceramic parts](/posts/industrial-ceramic-machining/precision-machined-alumina-ceramic-parts-industrial-applications/) may be more practical. For thermal management, [aluminum nitride ceramic machining](/posts/industrial-ceramic-machining/aluminum-nitride-ceramic-machining-thermal-management-components/) may fit better. For harsh wear or chemical service, [silicon carbide ceramic machining](/posts/industrial-ceramic-machining/silicon-carbide-ceramic-machining-harsh-environment-applications/) may be the stronger review path. BN becomes especially valuable when insulation, thermal shock, high-temperature release, and machinable complexity matter together.
 
-### Common Boron Nitride Machined Parts
+## Common Boron Nitride Machined Parts
 
 Most BN machining projects become clearer when the part is described by service function rather than by shape alone. A washer, sleeve, nozzle, and furnace plate may all be BN components, but the RFQ risk can be very different.
 
@@ -82,7 +82,7 @@ Most BN machining projects become clearer when the part is described by service 
 
 BN machining RFQs should separate insulation-critical surfaces, support surfaces, bore geometry, and non-critical clearance features before quotation.
 
-### Grade Selection Is The First Gate
+## Grade Selection Is The First Gate
 
 "Boron nitride" is not a complete material specification. Solid BN materials can differ by purity, binder system, density, grain structure, moisture behavior, maximum service environment, thermal conductivity, dielectric performance, and machinability. Some grades are hot-pressed hBN. Some are composite BN grades designed for higher strength, better moisture resistance, or molten metal handling. Some applications require very high purity or very low contamination risk.
 
@@ -97,7 +97,7 @@ The RFQ should clarify whether the project needs:
 
 If the grade is open, the service environment becomes essential. Temperature, atmosphere, vacuum level, oxygen exposure, molten metal chemistry, flux or salt contact, electrical voltage, contact load, and cleaning method can all change the correct BN grade. A supplier should not select BN grade from a shape alone.
 
-### Atmosphere, Temperature, And Oxidation Risk
+## Atmosphere, Temperature, And Oxidation Risk
 
 High-temperature capability in BN depends heavily on atmosphere and grade. A BN part used in vacuum or inert atmosphere may behave differently from one exposed to air, oxygen, steam, combustion gas, molten metal, flux, or reactive process chemistry. This is why "maximum temperature" should not be copied into a drawing without service context.
 
@@ -113,7 +113,7 @@ For high-temperature RFQs, define:
 
 BN is often strong in applications where thermal shock and electrical insulation matter. It is less suitable when the design ignores oxidation, mechanical load, or grade-specific limitations. If the temperature and atmosphere are not clear, the supplier cannot responsibly confirm material fit.
 
-### Electrical Insulation At High Temperature
+## Electrical Insulation At High Temperature
 
 BN is commonly reviewed for high-temperature electrical insulation because it can remain electrically insulating while providing useful thermal behavior and machinability. Typical applications include heater supports, electrode insulation, furnace spacers, source fixtures, bushings, tubes, sleeves, and custom insulator bodies.
 
@@ -130,7 +130,7 @@ Electrical insulation RFQs should include:
 
 The [ceramic high-voltage insulators RFQ guide](/posts/high-voltage-insulation/ceramic-high-voltage-insulators-rfq/) explains why dielectric material data is not enough by itself. Edge chips, contamination, sharp transitions, narrow creepage paths, and assembly stress can all affect incoming acceptance.
 
-### BN For Furnace Fixtures And Thermal Process Hardware
+## BN For Furnace Fixtures And Thermal Process Hardware
 
 Vacuum furnaces, inert-atmosphere furnaces, sintering furnaces, heat treatment fixtures, deposition equipment, and laboratory thermal systems often need non-metallic parts that can handle heat, electrical isolation, and thermal cycling. BN may fit support pads, setters, spacers, sleeves, electrode insulators, fixture plates, and thermocouple-related hardware.
 
@@ -147,7 +147,7 @@ Useful drawing and process details include:
 
 BN can reduce sticking or wetting in some high-temperature processes, but the contact material and atmosphere should be reviewed. A fixture pad that supports light lab samples is not the same RFQ as a structural support part carrying high load at temperature.
 
-### BN Nozzles, Tubes, And Molten-Metal-Contact Components
+## BN Nozzles, Tubes, And Molten-Metal-Contact Components
 
 BN is often considered for nozzles, orifice inserts, pouring hardware, atomization components, transfer components, and molten-metal-adjacent fixtures because selected BN grades can provide non-wetting behavior and thermal shock resistance. These parts need careful review because the smallest bore or edge can become the highest-risk feature.
 
@@ -168,7 +168,7 @@ If the bore is very small or deep, the [ceramic micro-hole machining RFQ guide](
 
 BN material review should connect the machined geometry to atmosphere, temperature, electrical insulation, molten-metal contact, and inspection evidence.
 
-### Machining Route And Design Rules
+## Machining Route And Design Rules
 
 Many solid BN grades are known for excellent machinability compared with hard-fired ceramics. That can make BN attractive for custom shapes, complex grooves, threaded or stepped forms, plates, spacers, sleeves, and nozzles. However, machinability does not remove ceramic design rules. BN can still chip, crack, shed edges, or fail under local assembly stress if the drawing is too aggressive.
 
@@ -187,7 +187,7 @@ Practical BN design rules include:
 
 The [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) are still useful for BN, even when the material is easier to machine than alumina or silicon carbide. Complex features should be reviewed around function, not only whether a tool can cut them.
 
-### Thin Walls, Slots, Threads, And Fragile Edges
+## Thin Walls, Slots, Threads, And Fragile Edges
 
 BN parts often include thin sleeves, insulating tubes, rings, washers, slots, grooves, and small notches. These features are useful in high-temperature systems, but they can become fragile during machining, inspection, handling, shipping, and assembly.
 
@@ -217,7 +217,7 @@ For threads, provide:
 
 Threads in BN can be useful in prototypes and low-stress fixtures, but they should not be assumed to behave like metal threads. The safest RFQ tells the supplier how the part will be assembled.
 
-### Tolerance And Surface Finish For BN Parts
+## Tolerance And Surface Finish For BN Parts
 
 BN machining tolerance should be tied to function. A heater spacer height, precision bore, nozzle orifice, flat support pad, and non-critical outside profile do not need the same tolerance strategy.
 
@@ -243,7 +243,7 @@ Surface finish should be specified by function:
 | Sleeve ID or guide bore       | Fit and alignment can determine assembly success                                | Define ID, roundness, length, and mating part                         |
 | Non-critical outside profile  | Usually does not need tight tolerance or fine finish                            | Mark as clearance or non-functional where possible                    |
 
-### When BN May Not Be The Right Material
+## When BN May Not Be The Right Material
 
 BN has important advantages, but it is not a universal high-temperature ceramic. It should be reviewed carefully when the part needs high structural strength, heavy mechanical load, impact resistance, severe abrasion resistance, aggressive oxidation exposure, or tight structural preload.
 
@@ -259,7 +259,7 @@ BN may be the wrong choice if:
 
 For structural wear, [silicon nitride ceramic machining](/posts/industrial-ceramic-machining/silicon-nitride-ceramic-machining-structural-wear-parts/) may fit better. For harsh chemical wear or seal faces, [silicon carbide ceramic machining](/posts/industrial-ceramic-machining/silicon-carbide-ceramic-machining-harsh-environment-applications/) may be a stronger route. For fast low-temperature prototypes, [Macor machinable glass ceramic parts](/posts/industrial-ceramic-machining/macor-machinable-glass-ceramic-parts-applications-design-guide/) may be more practical.
 
-### Cost Drivers In BN Ceramic Machining
+## Cost Drivers In BN Ceramic Machining
 
 BN machining cost is usually driven by grade, material size, feature complexity, fragile geometry, bore quality, and inspection requirements rather than outside dimensions alone.
 
@@ -274,7 +274,7 @@ BN machining cost is usually driven by grade, material size, feature complexity,
 
 The goal is not to avoid precision. The goal is to place precision where it supports insulation, thermal process stability, flow, assembly, and measurable acceptance.
 
-### Inspection Evidence For BN Components
+## Inspection Evidence For BN Components
 
 Inspection should match the part's function. A simple spacer, a high-voltage insulator, a nozzle, and a vacuum furnace support need different evidence packages.
 
@@ -289,7 +289,7 @@ Inspection should match the part's function. A simple spacer, a high-voltage ins
 
 Do not assume a generic dimensional report is enough. If the incoming inspection team needs a CMM report, bore measurement, flatness check, visual edge criterion, cleaning note, or packaging requirement, include it in the RFQ.
 
-### RFQ Inputs For Boron Nitride Ceramic Machined Parts
+## RFQ Inputs For Boron Nitride Ceramic Machined Parts
 
 The best BN RFQ includes both the drawing and the service environment. Without service context, the supplier can machine the shape but may not be able to confirm material fit.
 
@@ -310,7 +310,7 @@ Include:
 
 The [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) can be used to organize drawings, material notes, quantity, timing, tolerances, surface finish, and acceptance evidence.
 
-### Practical Takeaway
+## Practical Takeaway
 
 Boron nitride ceramic machining is valuable when a custom part must combine high-temperature electrical insulation, thermal shock resistance, machinable geometry, and non-wetting or release behavior in furnace, vacuum, molten-metal, laboratory, semiconductor, or thermal process equipment. It is especially useful for insulators, spacers, sleeves, tubes, nozzles, washers, setter-related parts, and custom high-temperature fixtures.
 

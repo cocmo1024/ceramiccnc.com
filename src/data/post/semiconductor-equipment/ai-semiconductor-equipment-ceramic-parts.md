@@ -31,7 +31,7 @@ For alumina insulating rings, AlN thermal insulators, feedthrough-adjacent sleev
 
 For AlN heat spreaders, heater-adjacent plates, insulating thermal spacers, ceramic carriers, clean packaging, and thermal-interface inspection evidence, use the [AlN ceramic parts for semiconductor thermal management guide](/posts/semiconductor-equipment/aluminum-nitride-ceramic-parts-semiconductor-thermal-management/).
 
-### Why Semiconductor Equipment Demand Matters Now
+## Why Semiconductor Equipment Demand Matters Now
 
 The demand signal is real. [SEMI reported in April 2026](https://www.semi.org/en/semi-press-release/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027) that worldwide 300mm fab equipment spending is expected to increase 18% to 133 billion USD in 2026 and another 14% to 151 billion USD in 2027, with AI chip demand named as a major driver. [KPMG's 2026 semiconductor outlook](https://kpmg.com/us/en/articles/2026/global-semiconductor-industry-outlook-2026.html) also reported AI as the leading revenue driver among surveyed semiconductor executives, followed by cloud and data centers.
 
@@ -39,7 +39,7 @@ Precision ceramics sit inside that equipment stack. [Kyocera lists electrostatic
 
 The resulting machining inquiry usually concerns a concrete part, drawing, or equipment problem rather than advanced ceramics in the abstract.
 
-### Where Ceramic Parts Show Up in Semiconductor Equipment
+## Where Ceramic Parts Show Up in Semiconductor Equipment
 
 The highest-value RFQs usually involve interfaces where ceramic properties and machining risk meet.
 
@@ -56,7 +56,7 @@ The material name alone is never enough. "Alumina end effector" or "SiC ring" st
 
 For chuck-specific projects, use the [ceramic vacuum chuck RFQ guide](/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/) to separate flatness, hole field, porous surface, groove, cleaning, and vacuum-test requirements before quotation.
 
-### The Semiconductor Features That Change the Quote
+## The Semiconductor Features That Change the Quote
 
 The quote usually becomes difficult when one of these features is present:
 
@@ -71,7 +71,7 @@ The quote usually becomes difficult when one of these features is present:
 
 One hidden cost is inspection. A 0.01 mm dimensional tolerance may be practical on an accessible finished feature, but a dense micro-hole array can require optical review, fixture-specific gauging, or sampling logic before the number means anything.
 
-### Material Direction Should Follow the Tool Environment
+## Material Direction Should Follow the Tool Environment
 
 Use the operating environment to narrow the ceramic family before discussing tolerance.
 
@@ -86,7 +86,7 @@ Use the operating environment to narrow the ceramic family before discussing tol
 
 For general material trade-offs, use the [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) before sending the RFQ.
 
-### RFQ Checklist for Semiconductor Ceramic Components
+## RFQ Checklist for Semiconductor Ceramic Components
 
 A strong RFQ package should include:
 
@@ -103,7 +103,7 @@ A strong RFQ package should include:
 
 If the drawing includes dense holes, mark whether flow performance or dimensional evidence is the acceptance basis. These are not the same RFQ.
 
-### What We Review Before Replying With a Quote
+## What We Review Before Replying With a Quote
 
 We review the drawing in this order:
 
@@ -116,7 +116,7 @@ We review the drawing in this order:
 
 This review may lead to a quote, a request for missing information, or a recommendation to relax non-functional tolerances. That is a professional filter, not a delay tactic. Semiconductor ceramic parts fail most often when the quote treats a brittle, inspection-sensitive part like a normal machined metal component.
 
-### Red Flags in Semiconductor Ceramic Drawings
+## Red Flags in Semiconductor Ceramic Drawings
 
 Watch for these before releasing a drawing to suppliers:
 
@@ -131,7 +131,7 @@ Watch for these before releasing a drawing to suppliers:
 
 Use the [ceramic DFM design rules](/posts/design-rules-dfm/ceramic-dfm-design-rules/) to catch geometry issues before the RFQ becomes a quote comparison.
 
-### Practical Verdict
+## Practical Verdict
 
 AI semiconductor equipment is a high-value market for precision ceramic machining because the parts are specific, inspection-heavy, and difficult to replace with ordinary materials. The best RFQ angle is not "we make semiconductor ceramics." It is more concrete:
 
@@ -142,7 +142,7 @@ AI semiconductor equipment is a high-value market for precision ceramic machinin
 
 For a direct project review, use the [RFQ checklist](/rfq/) and include the application environment with the drawing package.
 
-### FAQ
+## FAQ
 
 **Can ceramic wafer handling parts be quoted from CAD only?**  
 CAD is useful for first review, but a formal RFQ normally needs material, quantity, functional surfaces, edge criteria, and inspection requirements.

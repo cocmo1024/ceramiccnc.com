@@ -30,7 +30,7 @@ The search term is simple. The RFQ is not. A ring can be rejected because a lapp
 
 This guide focuses on custom machined ceramic rings for semiconductor process chambers. For the wider equipment context, use the [precision ceramic components for semiconductor equipment guide](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/). When the ring functions as an electrical isolation part, heater-adjacent spacer, or plasma etch/deposition insulator, use the [ceramic insulators for plasma etching and deposition equipment guide](/posts/semiconductor-equipment/ceramic-insulators-plasma-etching-deposition-equipment/) alongside the ring drawing. For SiC material and hard-finishing risk, use the [silicon carbide ceramic machining guide](/posts/industrial-ceramic-machining/silicon-carbide-ceramic-machining-harsh-environment-applications/).
 
-### What Counts As A Semiconductor Ceramic Ring
+## What Counts As A Semiconductor Ceramic Ring
 
 The word "ring" can describe several different ceramic components. Before quotation, the RFQ should identify what the ring does inside the tool and which surfaces are functional.
 
@@ -46,7 +46,7 @@ The word "ring" can describe several different ceramic components. Before quotat
 
 Two rings with similar outside diameter can have very different manufacturing risk. A simple insulating spacer, a lapped SiC ring, a grooved purge ring, and a segmented chamber ring should not be reviewed with the same quotation assumptions.
 
-### Why Process Chamber Rings Need A Separate RFQ Review
+## Why Process Chamber Rings Need A Separate RFQ Review
 
 Process chamber ceramic rings combine circular precision with ceramic material risk. The difficult areas are not always obvious from the outside profile.
 
@@ -64,7 +64,7 @@ Common review triggers include:
 
 A STEP model shows nominal ring geometry. It does not tell the supplier which band seals, which face is plasma-exposed, which edge is particle-sensitive, whether the ring is measured free-state or supported, or whether the part must be supplied in matched sets.
 
-### Material Choices For Ceramic Chamber Rings
+## Material Choices For Ceramic Chamber Rings
 
 Material choice should follow process environment, approved tool specification, and machining risk. "Ceramic ring" is not a material specification.
 
@@ -79,7 +79,7 @@ Material choice should follow process environment, approved tool specification, 
 
 If the part is tied to an existing tool qualification, provide the exact material grade and state whether equivalent grade review is allowed. If the material is open, send the tool environment, temperature, chemistry, vacuum condition, plasma exposure, load path, and inspection expectations. The [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) is the better starting point when the failure mode is known but the material is not.
 
-### Ring Geometry That Drives Machining Risk
+## Ring Geometry That Drives Machining Risk
 
 The expensive features in a ceramic ring usually sit in functional annular zones, not in the fact that the part is circular. A useful RFQ separates ring geometry into inspection-ready features.
 
@@ -100,7 +100,7 @@ If a drawing applies the same tolerance to every face, the quote becomes less pr
 
 Process chamber ring RFQs should identify the functional annular bands, grooves, ID/OD datums, mounting features, edge criteria, cleaning requirement, and inspection method before quotation.
 
-### Flatness, Parallelism, And Support Condition
+## Flatness, Parallelism, And Support Condition
 
 Flatness on a ring is not the same as flatness on a small rectangular part. The measurement can change with support condition, ring diameter, thickness, fixture method, and whether the ring has grooves, holes, or segmented geometry.
 
@@ -115,7 +115,7 @@ Clarify these points:
 
 For large rings, a single tight flatness number without measurement context can create quoting disagreement. Use the [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) when deciding which features need grinding, lapping, CMM evidence, or a fixture-specific method.
 
-### ID/OD Concentricity, Roundness, And Runout
+## ID/OD Concentricity, Roundness, And Runout
 
 Ceramic rings often need a stable relationship between ID, OD, bolt circle, seal band, and mounting face. These requirements should be tied to datums that can actually be held and inspected.
 
@@ -130,7 +130,7 @@ Useful RFQ details include:
 
 Avoid assigning ultra-tight concentricity to rough as-sintered surfaces unless they will be finished and used as stable datums. The [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) explain why ceramic-friendly datum selection matters before post-sinter grinding begins.
 
-### Grooves, Holes, And Particle-Sensitive Edges
+## Grooves, Holes, And Particle-Sensitive Edges
 
 Many semiconductor process chamber rings include grooves, holes, ports, counterbores, stepped faces, or relief pockets. These features can dominate quote risk because ceramic edges are chip-sensitive.
 
@@ -146,7 +146,7 @@ Define:
 
 For small gas, purge, or vacuum holes, use the [ceramic micro-hole machining RFQ guide](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/) to define diameter, depth, taper, breakout, cleaning, and inspection method. For rings that behave as part of a vacuum support or chuck system, also review the [machined ceramic vacuum chuck components guide](/posts/semiconductor-equipment/machined-ceramic-vacuum-chuck-components-semiconductor-tools/).
 
-### Surface Finish And Lapped Bands
+## Surface Finish And Lapped Bands
 
 Surface finish should be assigned by face and by function. A process chamber ceramic ring may need a lapped annular band, a controlled seal land, a clean plasma-facing surface, or a precise mounting face. It usually does not need the same finish everywhere.
 
@@ -160,7 +160,7 @@ Surface finish should be assigned by face and by function. A process chamber cer
 
 The [surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/) is useful when Ra, lapping, polishing, microscopy, or surface integrity affects the acceptance gate. A vague drawing note such as "polish all surfaces" often increases cost without improving chamber performance.
 
-### Segmented Ceramic Rings And Matched Sets
+## Segmented Ceramic Rings And Matched Sets
 
 Some chamber ring designs use segments instead of one full ring. Segments may reduce assembly constraints or fit replacement strategies, but they introduce additional RFQ questions.
 
@@ -176,7 +176,7 @@ Clarify:
 
 If a segmented ring is treated as independent pieces with no matched-set logic, assembly gaps and height mismatch can become late problems. State the acceptance basis before production starts.
 
-### Cleaning, Packaging, And Inspection Evidence
+## Cleaning, Packaging, And Inspection Evidence
 
 For semiconductor chamber rings, the machining route is not finished when size passes. Clean handling, edge protection, and inspection evidence are part of the deliverable.
 
@@ -196,7 +196,7 @@ Inspection should prove the functional requirement, not simply produce paperwork
 
 The [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) can help organize drawing, CAD, material, quantity, timing, and acceptance requirements.
 
-### Cost Drivers In Process Chamber Ceramic Rings
+## Cost Drivers In Process Chamber Ceramic Rings
 
 The cost of a ceramic chamber ring is usually driven by material route, finished surface area, feature risk, and inspection scope.
 
@@ -215,7 +215,7 @@ Common cost drivers include:
 
 The best cost control is not to remove all precision. It is to put tight tolerance, lapping, and documentation on the surfaces that control chamber function, then allow practical finish and tolerance on clearance geometry.
 
-### RFQ Checklist For Precision Ceramic Process Chamber Rings
+## RFQ Checklist For Precision Ceramic Process Chamber Rings
 
 Before expecting a reliable quotation, send:
 
@@ -235,7 +235,7 @@ Before expecting a reliable quotation, send:
 
 If the drawing is still under development, identify which requirements are open. A supplier can review risk, but a quote built on unknown material grade, unknown support condition, or unknown particle-sensitive edges should not be treated as final.
 
-### Practical Takeaway
+## Practical Takeaway
 
 Precision ceramic rings for semiconductor process chambers should be sourced as chamber interfaces, not generic circular parts. The important questions are specific: which surface seals, which band is lapped, which diameter controls assembly, which edge is particle-sensitive, which groove or hole must be cleaned, whether the ring is measured free-state or supported, and what inspection evidence proves acceptance.
 
@@ -243,7 +243,7 @@ Good RFQs separate material grade, ring function, functional annular bands, ID/O
 
 For a direct project review, use the [RFQ input page](/rfq/) and include the drawing, CAD file, material requirement, quantity, target timing, functional surfaces, chamber environment, and acceptance evidence.
 
-### FAQ
+## FAQ
 
 **What ceramic materials are used for semiconductor process chamber rings?**  
 Common directions include silicon carbide, alumina, aluminum nitride, silicon nitride, zirconia, boron nitride, and other qualified ceramics. The final choice depends on tool specification, chamber environment, material qualification, and feature risk.

@@ -33,7 +33,7 @@ This article is a precision industrial ceramic machining case guide for pump and
 
 For a valve-only RFQ involving seats, balls, plugs, trim, shutoff, or throttling interfaces, use the narrower [ceramic valve components for corrosive and abrasive fluids guide](/posts/pump-valve-components/ceramic-valve-components-corrosive-abrasive-fluids/). This page remains the component-family selector for mixed pump, seal, sleeve, plunger, and valve packages.
 
-### Why Pump And Valve Components Need Function-Specific Review
+## Why Pump And Valve Components Need Function-Specific Review
 
 Ceramic valve seats, balls, silicon carbide seal rings, zirconia plungers, alumina pump sleeves, and other fluid-control parts are usually sourced because a real assembly is wearing, corroding, leaking, sticking, or contaminating the fluid path.
 
@@ -41,7 +41,7 @@ There is also a current industrial signal. Semiconductor and advanced manufactur
 
 The technical ceramic industry already treats this as a defined application family. [CeramTec presents advanced ceramics for pumps, valves, and seals](https://www.ceramtec-industrial.com/en/products-applications/pumps-valves-and-seals), and its application pages discuss ceramic pump components and valve components for fluid-handling systems. The useful RFQ translation is specific: which part surface seals, which feature guides motion, which material sees the media, and how the acceptance gate will be proven.
 
-### What Counts As A Ceramic Pump Or Valve Component
+## What Counts As A Ceramic Pump Or Valve Component
 
 Pump and valve RFQs often mix material, wear, sealing, sliding, and dimensional requirements in one small part. Start by naming the function before naming the ceramic.
 
@@ -62,7 +62,7 @@ The useful RFQ question is:
 
 **Which surface creates the seal, which geometry guides motion, which material touches the fluid, and what inspection evidence proves the component can enter the pump or valve assembly?**
 
-### Case Pattern: A Ceramic Valve Seat, Ball, And Pump Plunger Set
+## Case Pattern: A Ceramic Valve Seat, Ball, And Pump Plunger Set
 
 A practical high-value case is a small set of ceramic fluid-control components for a dosing pump, check valve, or chemical handling assembly:
 
@@ -76,7 +76,7 @@ At first glance, the RFQ may look like a simple list of small round parts. In pr
 
 This is why the [lapped ceramic seal faces RFQ guide](/posts/lapped-seal-faces/ceramic-lapped-seal-faces-rfq/) and the [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) are natural supporting pages for pump and valve ceramic work.
 
-### Material Selection For Ceramic Pump And Valve Parts
+## Material Selection For Ceramic Pump And Valve Parts
 
 Material choice should follow media, wear mode, temperature, impact, contact stress, and cleaning requirement. Do not select only from a hardness number.
 
@@ -91,7 +91,7 @@ Material choice should follow media, wear mode, temperature, impact, contact str
 
 If the part is tied to an approved pump or valve design, send the exact material grade. If the material is open, send the fluid chemistry, solids content, pressure, temperature, cycling, sliding or impact condition, counterface material, and acceptance method. The [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) should be used before locking the drawing.
 
-### Functional Geometry That Controls The Quote
+## Functional Geometry That Controls The Quote
 
 Ceramic pump and valve parts are usually controlled by a few functional zones, not by every outside surface.
 
@@ -110,7 +110,7 @@ Define:
 
 Avoid applying the same tight tolerance or low Ra to every surface. A practical drawing separates sealing lands, sliding surfaces, clearance faces, handling edges, and non-functional relief geometry. The [surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/) explains why lapping, polishing, and roughness requirements should be assigned by face and function.
 
-### Lapped Seal Faces And Valve Seat Contact
+## Lapped Seal Faces And Valve Seat Contact
 
 Leakage risk often lives in the contact band. For SiC seal rings, alumina valve seats, check valve discs, and ceramic shutoff surfaces, the RFQ should state whether the contact is flat, conical, spherical, annular, line contact, or customer-lapped after assembly.
 
@@ -126,7 +126,7 @@ Clarify:
 
 For many RFQs, the machining supplier can prove geometry, surface finish, flatness, and edge condition. The customer may still own final leak, flow, pressure, or life-cycle testing in the assembled pump or valve. State that boundary before quotation.
 
-### Sliding Fits: Plungers, Pistons, Sleeves, And Guide Bushings
+## Sliding Fits: Plungers, Pistons, Sleeves, And Guide Bushings
 
 Pump plungers, metering pistons, and guide sleeves should be reviewed as matched motion components. The ceramic may resist wear, but sliding reliability depends on fit, finish, counterface, media, and alignment.
 
@@ -142,7 +142,7 @@ Review:
 
 For thin sleeves or long bores, the [thin-wall ceramic sleeve machining guide](/posts/thin-wall-sleeves/ceramic-thin-wall-sleeve-bore-concentricity-rfq/) helps define bore concentricity, roundness, wall stability, and inspection method. For high-strength zirconia sliding parts, use the [zirconia ceramic machining guide](/posts/industrial-ceramic-machining/zirconia-ceramic-machining-high-strength-precision-components/) alongside the drawing.
 
-### Ports, Orifices, And Flow Edges
+## Ports, Orifices, And Flow Edges
 
 Pump and valve parts often include small holes, side ports, slots, grooves, counterbores, or flow restrictors. These features may control flow, cleaning, pressure drop, or erosion.
 
@@ -158,7 +158,7 @@ Good RFQ details include:
 
 For very small holes, use the [ceramic micro-hole machining RFQ guide](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/). For nozzle-like flow-control inserts, the [precision ceramic nozzles for semiconductor and vacuum equipment guide](/posts/semiconductor-equipment/precision-ceramic-nozzles-semiconductor-vacuum-equipment/) is a useful companion page. If the restrictor, sampling block, or flow cell sits inside an analyzer rather than a pump or valve assembly, use the [ceramic fluid-path components for analytical instruments guide](/posts/analytical-instruments/ceramic-fluid-path-components-analytical-instruments/) to separate machined-geometry acceptance from calibrated flow or instrument performance.
 
-### Cleaning, Media, And Packaging
+## Cleaning, Media, And Packaging
 
 Fluid-control ceramic components can fail incoming inspection because of residue, contact marks, damaged lapped faces, edge chips, or particles trapped in ports. Cleaning and packaging belong in the RFQ, not only in shipping notes.
 
@@ -171,7 +171,7 @@ Discuss:
 - Whether balls, seats, plungers, and sleeves are matched or interchangeable.
 - Whether material certificate, traceability, certificate of conformity, or inspection report is required.
 
-### Inspection Evidence For Ceramic Pump And Valve Components
+## Inspection Evidence For Ceramic Pump And Valve Components
 
 Inspection should prove the fluid-control function, not create a long report for irrelevant surfaces.
 
@@ -191,7 +191,7 @@ Inspection should prove the fluid-control function, not create a long report for
 
 When the buyer performs final pressure, leak, flow, chemical compatibility, or life-cycle testing, the RFQ should say so. The machining quote can then focus on geometry, surface condition, cleaning, packaging, and dimensional evidence.
 
-### Cost Drivers In Ceramic Pump And Valve RFQs
+## Cost Drivers In Ceramic Pump And Valve RFQs
 
 Ceramic pump and valve components often become expensive for specific reasons:
 
@@ -208,7 +208,7 @@ Ceramic pump and valve components often become expensive for specific reasons:
 
 The best cost control is not to loosen every tolerance. It is to rank the surfaces. Put tight control on the seal band, valve seat, ball, plunger OD, sleeve ID, and fluid-facing edges. Allow practical machining tolerance and finish on relief surfaces that do not affect fit, seal, motion, or flow.
 
-### RFQ Checklist For Ceramic Pump And Valve Components
+## RFQ Checklist For Ceramic Pump And Valve Components
 
 Send the following before expecting a reliable quotation:
 
@@ -225,13 +225,13 @@ Send the following before expecting a reliable quotation:
 
 For a standard package structure, use the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/). For first-pass manufacturability, use the [ceramic CNC machining design rules guide](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/).
 
-### Practical Takeaway
+## Practical Takeaway
 
 Ceramic pump and valve components create value when the material and machining route match the real fluid-control function. A ceramic ball, valve seat, SiC seal ring, plunger, sleeve, or check valve disc should not be quoted only by outside dimensions. The RFQ should define the media, sealing or sliding interface, lapped faces, edge quality, cleaning, packaging, and inspection evidence.
 
 For a serious ceramic pump or valve RFQ, send the drawing, CAD model, material or environment, fluid condition, functional surfaces, mating parts, tolerance and finish requirements, inspection expectations, cleaning and packaging needs, quantity, and qualification stage. That allows the part to be reviewed as a precision fluid-control component instead of a generic ceramic wear part.
 
-### FAQ
+## FAQ
 
 **Which ceramic is best for pump and valve components?**
 There is no universal best material. SiC is often reviewed for harsh seal and chemical wear parts, zirconia for balls and plungers, alumina for seats and sleeves, and silicon nitride for selected wear or guide components. The media, contact stress, temperature, and inspection method decide.

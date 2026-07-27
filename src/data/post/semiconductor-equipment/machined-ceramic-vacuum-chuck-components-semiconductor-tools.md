@@ -27,7 +27,7 @@ A vacuum chuck component may be a dense alumina suction plate, a porous ceramic 
 
 This article focuses on semiconductor tool RFQs for machined ceramic vacuum chuck components. For a broader chuck preparation checklist, use the [ceramic vacuum chuck RFQ guide](/posts/vacuum-chucks/ceramic-vacuum-chuck-flatness-rfq/). For the larger semiconductor component map, use the [precision ceramic components for semiconductor equipment guide](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/). If the ring is a process chamber ring rather than a vacuum support or chuck component, use the [precision ceramic rings for semiconductor process chambers guide](/posts/semiconductor-equipment/precision-ceramic-rings-semiconductor-process-chambers/).
 
-### What Counts As A Ceramic Vacuum Chuck Component
+## What Counts As A Ceramic Vacuum Chuck Component
 
 The word "vacuum chuck" can describe a complete assembly or one machined ceramic component inside the assembly. Before quoting, the RFQ should make clear which part is being sourced and what the part must prove in use.
 
@@ -42,7 +42,7 @@ The word "vacuum chuck" can describe a complete assembly or one machined ceramic
 
 The supplier should know whether the component touches a bare wafer, a carrier, a substrate, a protective film, or another fixture. The working surface, not the outside profile, usually drives the quotation.
 
-### Why Semiconductor Tool Vacuum Chucks Need A Separate Review
+## Why Semiconductor Tool Vacuum Chucks Need A Separate Review
 
 Vacuum chuck components in semiconductor tools combine several high-risk requirements in one ceramic part. A typical RFQ may include flatness, hole fields, grooves, low particle risk, clean packaging, and documentation at the same time. That combination cannot be reviewed as a general ceramic plate.
 
@@ -59,7 +59,7 @@ Common review triggers include:
 
 A STEP model can show hole positions and outer shape, but it does not explain the acceptance logic. The RFQ should define whether the part is judged by flatness, vacuum holding, flow, leakage, hole size, surface finish, edge quality, or a combination of these.
 
-### Material Options For Machined Vacuum Chuck Components
+## Material Options For Machined Vacuum Chuck Components
 
 Material choice depends on the tool environment, suction method, contact surface, cleaning route, and whether the ceramic is dense or porous.
 
@@ -75,7 +75,7 @@ If a tool specification locks the material grade, state the exact grade and whet
 
 For material comparison across ceramic families, use the [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/).
 
-### Flatness Must Be Tied To Support Condition
+## Flatness Must Be Tied To Support Condition
 
 Flatness is often the most expensive and most misunderstood requirement on ceramic vacuum chuck components. A number such as 0.005 mm or 0.010 mm does not mean much unless the drawing also defines how the part is supported and measured.
 
@@ -92,7 +92,7 @@ A large ceramic chuck can pass one measurement setup and fail another. Supported
 
 Use the [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) when deciding which surfaces need grinding, lapping, CMM evidence, or a fixture-specific method.
 
-### Hole Fields, Grooves, And Working Surface Details
+## Hole Fields, Grooves, And Working Surface Details
 
 Vacuum chuck components are often dominated by the working surface. Dense ceramic chucks may use drilled holes, micro-holes, radial or concentric grooves, backside channels, vacuum ports, or a mixed design. Porous ceramic chucks add pore behavior to the same flatness and cleaning problem.
 
@@ -113,7 +113,7 @@ If the hole field is small, dense, deep, or close to a lapped face, use the [cer
 
 Semiconductor vacuum chuck RFQs should identify the working face, hole field, groove geometry, flatness support condition, cleaning method, and acceptance evidence before quotation.
 
-### Dense Ceramic Chucks Versus Porous Ceramic Inserts
+## Dense Ceramic Chucks Versus Porous Ceramic Inserts
 
 Dense and porous ceramic chuck components should not be quoted with the same assumptions.
 
@@ -130,7 +130,7 @@ Porous ceramic inserts add different questions:
 
 If the RFQ only says "porous ceramic chuck" without test conditions, the supplier cannot know whether dimensional inspection alone is enough. A porous chuck component normally needs a functional acceptance discussion.
 
-### Datum Strategy And Mounting Interface
+## Datum Strategy And Mounting Interface
 
 The vacuum chuck component must interface with the tool, not only with the wafer. Mounting bores, counterbores, backside faces, dowel holes, seal grooves, vacuum ports, and alignment features decide how the chuck sits inside the tool.
 
@@ -146,7 +146,7 @@ Useful RFQ details include:
 
 The [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) explain why internal radii, hole-to-edge distance, thin sections, and metal-style CAD corners should be reviewed before committing to a ceramic route.
 
-### Surface Finish, Edge Quality, And Particle Risk
+## Surface Finish, Edge Quality, And Particle Risk
 
 Surface finish should be assigned by face. A vacuum chuck may need a controlled working face, but not every clearance surface should receive the same lapping or Ra requirement.
 
@@ -164,7 +164,7 @@ Use the [surface finish and subsurface damage guide](/posts/surface-finish-funct
 
 A vague note such as "no chips" is not enough. Define the chip-sensitive zones and the maximum allowable chip size or visual criterion. The edge at a vacuum hole on the working face should not be treated the same as a non-contact outside corner.
 
-### Cleaning, Vacuum Testing, And Inspection Evidence
+## Cleaning, Vacuum Testing, And Inspection Evidence
 
 Semiconductor vacuum chuck components often need both dimensional evidence and functional evidence. The correct evidence depends on how the part will be accepted by the buyer or tool owner.
 
@@ -184,7 +184,7 @@ Inspection planning should connect each functional requirement to a measurement 
 
 The [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) is a useful base for organizing drawing, CAD, material, quantity, timing, and acceptance requirements.
 
-### Cost Drivers In Semiconductor Vacuum Chuck Components
+## Cost Drivers In Semiconductor Vacuum Chuck Components
 
 The cost of a ceramic vacuum chuck component is rarely driven by outside diameter alone. The expensive parts of the RFQ are usually concentrated in surface control, holes, grooves, cleaning, and inspection.
 
@@ -203,7 +203,7 @@ Common cost drivers include:
 
 The best cost control is not to remove all precision. It is to define which surfaces control wafer support and vacuum performance, then allow standard finish and practical tolerance where the geometry is only clearance or handling.
 
-### RFQ Checklist For Machined Ceramic Vacuum Chuck Components
+## RFQ Checklist For Machined Ceramic Vacuum Chuck Components
 
 Before expecting a reliable quotation, send:
 
@@ -223,7 +223,7 @@ Before expecting a reliable quotation, send:
 
 If the project is still being designed, state which requirements are open. A supplier can still review risk, but a quote built on unknown flatness support condition or unknown vacuum acceptance should not be treated as final.
 
-### Practical Takeaway
+## Practical Takeaway
 
 Machined ceramic vacuum chuck components for semiconductor tools should be sourced as precision support and vacuum interfaces. The important questions are specific: which face supports the wafer, how flatness is measured, how suction is distributed, which hole and groove edges are particle-sensitive, whether the porous region must be functionally tested, how the part mounts into the tool, and what inspection evidence proves acceptance.
 
@@ -231,7 +231,7 @@ Good RFQs separate material route, dense or porous construction, working face fl
 
 For a direct project review, use the [RFQ input page](/rfq/) and include the drawing, CAD file, material requirement, quantity, target timing, working face definition, vacuum function, and acceptance evidence.
 
-### FAQ
+## FAQ
 
 **What ceramic materials are used for semiconductor vacuum chuck components?**  
 Common directions include alumina, porous ceramic, silicon carbide, and selected application-specific ceramics. The final route depends on wafer contact, flatness, vacuum behavior, cleaning, temperature, qualification, and inspection requirements.

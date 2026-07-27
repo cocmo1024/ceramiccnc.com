@@ -30,7 +30,7 @@ Precision ceramic seal faces are used in centrifugal pumps, metering pumps, mixe
 
 This article is narrower than the general [ceramic lapped seal faces RFQ guide](/posts/lapped-seal-faces/ceramic-lapped-seal-faces-rfq/) and more specific than the broader [ceramic pump and valve components guide](/posts/pump-valve-components/precision-ceramic-pump-valve-components-corrosive-fluid-control/). It focuses on ceramic seal faces and mechanical seal rings for rotating equipment, where the buyer usually needs a part drawing, mating-face information, operating context, and acceptance evidence before a useful quotation is possible.
 
-### Why Ceramic Seal Faces Are A High-Value Industrial RFQ Topic
+## Why Ceramic Seal Faces Are A High-Value Industrial RFQ Topic
 
 Pumping systems are a long-term industrial reliability and energy topic, not a short-lived trend. The U.S. Department of Energy maintains [pump systems resources](https://www.energy.gov/cmei/ito/pump-systems) and links to the industry sourcebook for improving pumping system performance. Mechanical seals are also treated as a specialized pump engineering subject: the Hydraulic Institute lists a 2024 second edition of [Mechanical Seals for the Pump Industry](https://www.pumps.org/product/mechanical-seals-for-the-pump-industry-selection-installation-maintenance-and-troubleshooting/), covering selection, installation, maintenance, and troubleshooting for rotary and rotodynamic pumps.
 
@@ -47,7 +47,7 @@ Seal-face RFQs usually use a specific component and material name:
 
 Technical ceramic manufacturers also treat this as a defined application family. CoorsTek publishes application pages for [ceramic hard face seal components](https://www.coorstek.com/en/products-applications/hard-face-seal-components/) and [silicon carbide mechanical seals](https://www.coorstek.com/en/products-applications/silicon-carbide-mechanical-seals/). The RFQ opportunity is not to make a broad claim that ceramics are hard. It is to help buyers define the seal face, mating pair, material grade, lapped surface, edge condition, and inspection plan.
 
-### What Counts As A Ceramic Seal Face
+## What Counts As A Ceramic Seal Face
 
 Ceramic seal RFQs often arrive as simple round parts, but the function can be different from one drawing to the next.
 
@@ -67,7 +67,7 @@ The useful sourcing question is:
 
 Without that answer, a supplier can quote the outside diameter but miss the real risk.
 
-### Material Choice: SiC, Alumina, Zirconia, And Other Ceramic Options
+## Material Choice: SiC, Alumina, Zirconia, And Other Ceramic Options
 
 Material choice should follow the seal system, not a single hardness number.
 
@@ -83,7 +83,7 @@ Counterface matters as much as the ceramic. A silicon carbide ring running again
 
 Use the broader [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) before substituting one ceramic for another. A material change may affect machining cost, edge behavior, thermal response, and final qualification.
 
-### Seal Face Geometry That Should Be Marked On The Drawing
+## Seal Face Geometry That Should Be Marked On The Drawing
 
 A ceramic seal ring is often controlled by a few functional zones, not by every surface.
 
@@ -103,7 +103,7 @@ Mark these features clearly:
 
 The [ceramic CNC machining design rules guide](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) is useful before adding sharp notches, deep grooves, close holes, thin sections, or aggressive press fits around the seal ring. Fired ceramics do not behave like metal after heat treatment. Tool access, grinding force, chipping risk, and edge support all matter.
 
-### Flatness, Ra, And Lapped Bands
+## Flatness, Ra, And Lapped Bands
 
 Seal face RFQs are often over-specified and under-defined at the same time. A drawing may call for "polish all over" but fail to say where the seal land is. That can raise cost without protecting the leak path.
 
@@ -118,7 +118,7 @@ Define:
 
 The [surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/) explains why finish requirements should be assigned by surface and function. The [lapped ceramic seal faces guide](/posts/lapped-seal-faces/ceramic-lapped-seal-faces-rfq/) goes deeper into flatness, Ra, leak risk, and edge conditions for sealing interfaces.
 
-### Operating Inputs That Change The RFQ
+## Operating Inputs That Change The RFQ
 
 The machining supplier may not own the complete seal design, but it still needs enough context to avoid quoting the wrong risk.
 
@@ -136,7 +136,7 @@ Send what you know:
 
 This information does not turn the machining supplier into the seal designer. It helps the supplier review material, geometry, edge condition, lapping route, packaging, and evidence. Final equipment performance still depends on the complete seal assembly and customer qualification.
 
-### Common Failure Modes That Start At The Drawing
+## Common Failure Modes That Start At The Drawing
 
 Many ceramic seal face problems are created before production starts.
 
@@ -150,7 +150,7 @@ Many ceramic seal face problems are created before production starts.
 | Lapped face touches packaging        | Contact marks or particles can ruin the accepted surface                | Specify separated trays, face protection, and clean handling                              |
 | Customer leak test not stated        | Supplier may quote only dimensions while buyer expects functional proof | Clarify whether machining evidence or customer assembly testing controls final acceptance |
 
-### Inspection Evidence For Ceramic Seal Faces
+## Inspection Evidence For Ceramic Seal Faces
 
 Inspection should prove the seal-ring function, not create a long report on irrelevant features.
 
@@ -167,7 +167,7 @@ Inspection should prove the seal-ring function, not create a long report on irre
 
 If the buyer will perform final leak, pressure, vibration, or life testing in the assembled seal, state that boundary. The ceramic machining package can then focus on dimensions, flatness, finish, edge condition, cleaning, packaging, and traceability.
 
-### Packaging Is Part Of Seal Face Quality
+## Packaging Is Part Of Seal Face Quality
 
 Lapped ceramic seal faces can be damaged after inspection. Contact marks, grit, edge knocks, or parts rubbing together can create incoming quality failures.
 
@@ -184,7 +184,7 @@ For seal faces, packaging should define:
 
 This is especially important for silicon carbide hard-face components and high-purity fluid systems. The part may pass lapping and inspection, then fail incoming review because the sealing face was marked during shipping.
 
-### Cost Drivers In Ceramic Seal Face Machining
+## Cost Drivers In Ceramic Seal Face Machining
 
 The main cost drivers are usually specific and controllable:
 
@@ -201,7 +201,7 @@ The main cost drivers are usually specific and controllable:
 
 The best cost control is not to remove all precision. It is to put precision where it controls the seal. Mark the contact band, fit diameters, datum face, critical edges, and required report. Let non-functional relief surfaces use practical ceramic machining tolerance and finish.
 
-### RFQ Checklist For Ceramic Seal Faces
+## RFQ Checklist For Ceramic Seal Faces
 
 Send the following for a serious review:
 
@@ -220,7 +220,7 @@ Send the following for a serious review:
 
 Use the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) to prepare the full package. If the drawing includes narrow grooves, small holes, or thin features, also review the [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) and the [DFM design rules guide](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/).
 
-### How This Page Fits The Internal Selection Path
+## How This Page Fits The Internal Selection Path
 
 Use this page for a ceramic mechanical seal face, hard-face seal ring, stationary seat, rotating seal component, or pump seal face. Use related pages when the dominant engineering issue changes:
 
@@ -230,13 +230,13 @@ Use this page for a ceramic mechanical seal face, hard-face seal ring, stationar
 - For broader wear families, use the [industrial ceramic machining for wear-resistant components guide](/posts/industrial-ceramic-machining/industrial-ceramic-machining-wear-resistant-components/).
 - For surface finish, lapping, and subsurface-damage language, use the [surface finish and SSD guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/).
 
-### Practical Takeaway
+## Practical Takeaway
 
 Precision ceramic seal faces for pumps and rotating equipment should be sourced as sealing interfaces, not as simple ceramic rings. The drawing should identify the lapped band, mating material, functional edges, fit diameters, grooves or notches, flatness, Ra, chip criteria, packaging, and inspection evidence. The RFQ should also explain the operating context enough for material and machining review: media, temperature, pressure, speed, lubrication, abrasive condition, and final test boundary.
 
 Send drawings, CAD, ceramic grade, mating face information, functional surface requirements, inspection needs, packaging expectations, quantity, and qualification stage before expecting price, lead time, tolerance, or feasibility confirmation.
 
-### FAQ
+## FAQ
 
 **Which ceramic is best for mechanical seal faces?**
 There is no universal best ceramic. Silicon carbide is often reviewed for harsh mechanical seal service, alumina for many industrial ceramic seats and faces, and zirconia for selected precision mating components. Media, counterface, speed, pressure, temperature, and inspection requirements decide the review.

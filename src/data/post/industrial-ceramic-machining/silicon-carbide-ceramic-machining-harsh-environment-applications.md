@@ -30,7 +30,7 @@ The better question is:
 
 That question should be reviewed before feasibility, price, lead time, or production route is confirmed.
 
-### Why Silicon Carbide Is Used In Harsh Environments
+## Why Silicon Carbide Is Used In Harsh Environments
 
 Silicon carbide, often written as SiC, is selected because it can combine high hardness, wear resistance, chemical stability, stiffness, thermal capability, and strong performance in demanding process environments. It is frequently reviewed when a part must resist abrasive particles, corrosive fluids, high-temperature exposure, or particle-sensitive clean equipment conditions.
 
@@ -48,7 +48,7 @@ SiC is most useful when the design takes advantage of these strengths:
 
 The broader [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) is useful when comparing silicon carbide with alumina, zirconia, silicon nitride, aluminum nitride, MACOR, and boron nitride.
 
-### Silicon Carbide Compared With Other Engineering Ceramics
+## Silicon Carbide Compared With Other Engineering Ceramics
 
 Silicon carbide often enters the same discussion as alumina, zirconia, and silicon nitride. The best choice depends on the environment, not on a single material property.
 
@@ -64,7 +64,7 @@ Silicon carbide often enters the same discussion as alumina, zirconia, and silic
 
 For high-speed rolling contact or thermal shock plus structural wear, [silicon nitride ceramic machining](/posts/industrial-ceramic-machining/silicon-nitride-ceramic-machining-structural-wear-parts/) may deserve review. For cost-sensitive insulation or general fixtures, [precision machined alumina ceramic parts](/posts/industrial-ceramic-machining/precision-machined-alumina-ceramic-parts-industrial-applications/) may be more practical. For compact precision plungers or higher edge toughness, [zirconia ceramic machining](/posts/industrial-ceramic-machining/zirconia-ceramic-machining-high-strength-precision-components/) may fit better. SiC becomes especially valuable when wear, corrosion, high stiffness, surface integrity, and process-side stability are the main constraints.
 
-### Common Silicon Carbide Machined Parts
+## Common Silicon Carbide Machined Parts
 
 Most SiC machining projects become clearer when the part is described by function rather than by shape alone.
 
@@ -80,7 +80,7 @@ Most SiC machining projects become clearer when the part is described by functio
 
 Two SiC parts with similar outside dimensions may have very different manufacturing risk. A simple wear plate, a lapped seal face, a thin sleeve, a micro-orifice nozzle, and a semiconductor support component should not be quoted as if they are the same type of ceramic part.
 
-### Grade And Material Form Matter
+## Grade And Material Form Matter
 
 "Silicon carbide" is not a complete specification. Different SiC grades and production routes can create different performance, density, purity, free silicon content, grain structure, machinability, and chemical compatibility. Some applications require a customer-specified grade. Others begin with the environment and then review material options.
 
@@ -95,7 +95,7 @@ An RFQ should clarify whether the project needs:
 
 If the grade is open, the operating conditions become essential. Chemical media, temperature, abrasive particles, pressure, vacuum condition, plasma exposure, cleaning method, counterface material, and duty cycle can all affect whether SiC is the correct material and which grade should be reviewed.
 
-### Machining Route: Why Fired SiC Requires A Different Cost Mindset
+## Machining Route: Why Fired SiC Requires A Different Cost Mindset
 
 Fired silicon carbide is extremely hard. Precision features are usually produced with diamond grinding, abrasive machining, lapping, polishing, or related finishing processes. It should not be approached like aluminum or stainless steel CNC machining.
 
@@ -112,7 +112,7 @@ A typical SiC machining review may consider:
 
 The [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) are especially important for SiC. Sharp internal corners, deep narrow slots, thin unsupported walls, long blind bores, and blanket tight tolerances can create high cost or high failure risk. The drawing should identify functional surfaces so precision effort is applied where it improves the part.
 
-### Silicon Carbide Seal Faces And Lapped Surfaces
+## Silicon Carbide Seal Faces And Lapped Surfaces
 
 Mechanical seal faces are one of the most common high-value SiC applications. The part may look simple, but performance depends on flatness, parallelism, lapped surface quality, edge condition, and how the ceramic mates with the counterface.
 
@@ -130,7 +130,7 @@ For SiC seal faces, the drawing should define:
 
 The [ceramic lapped seal faces RFQ guide](/posts/lapped-seal-faces/ceramic-lapped-seal-faces-rfq/) explains why flatness, Ra, waviness, and chip control should be reviewed together. A seal face can pass nominal size and still fail if the functional band is not controlled.
 
-### Silicon Carbide Pump, Valve, And Fluid Control Components
+## Silicon Carbide Pump, Valve, And Fluid Control Components
 
 Pumps, valves, and fluid systems often use SiC when abrasive particles, corrosive media, erosion, or high-duty sliding contact are expected. Typical components include pump sleeves, bushings, liners, valve seats, valve balls, pistons, nozzles, and flow-control inserts.
 
@@ -148,7 +148,7 @@ For these parts, the key review points are:
 
 The [industrial ceramic machining for wear-resistant components](/posts/industrial-ceramic-machining/industrial-ceramic-machining-wear-resistant-components/) article gives a wider framework for wear mode review. In SiC, the dominant wear mode should be identified early: abrasion, erosion, sliding wear, chemical attack, thermal cycling, or a combination of several mechanisms.
 
-### Silicon Carbide Nozzles, Orifices, And Hole Features
+## Silicon Carbide Nozzles, Orifices, And Hole Features
 
 Nozzles and orifice inserts are common SiC RFQs because erosion resistance can matter more than easy machining. The difficult features are usually bore diameter, bore straightness, taper, entry condition, exit breakout, and edge chipping.
 
@@ -166,7 +166,7 @@ Useful drawing inputs include:
 
 The [ceramic micro-hole machining RFQ guide](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/) is relevant when the SiC part includes small or deep holes. Tiny holes in hard ceramics are not only a dimension problem. They are also a tool access, edge integrity, taper, cleaning, and inspection problem.
 
-### Silicon Carbide In Semiconductor And High-Cleanliness Equipment
+## Silicon Carbide In Semiconductor And High-Cleanliness Equipment
 
 SiC is also used in semiconductor and high-cleanliness equipment because process-side parts may need chemical stability, high stiffness, high temperature capability, low wear, and clean surface behavior. Examples can include wafer handling supports, process chamber hardware, rings, plates, gas or vacuum-related components, and fixtures used near harsh process environments.
 
@@ -185,7 +185,7 @@ The [precision ceramic components for semiconductor equipment guide](/posts/semi
 
 For SiC end effectors, lift pins, support pads, and wafer-contact geometry, use the dedicated [silicon carbide wafer handling components guide](/posts/semiconductor-equipment/silicon-carbide-wafer-handling-components-semiconductor-manufacturing/) to define contact zones, edge chip criteria, cleaning, packaging, and inspection evidence.
 
-### Design Rules That Reduce SiC Machining Risk
+## Design Rules That Reduce SiC Machining Risk
 
 SiC can support demanding harsh-environment designs, but it rewards disciplined ceramic design. The most common drawing problems come from treating SiC like a metal that can be cut freely after hardening.
 
@@ -204,7 +204,7 @@ Practical design rules include:
 
 For flat plates, rings, seal faces, and process-side supports, a good drawing often marks functional faces, non-contact faces, allowable edge break, and inspection zones. That information helps avoid spending precision machining time on surfaces that do not control the application.
 
-### Cost Drivers In Silicon Carbide Ceramic Machining
+## Cost Drivers In Silicon Carbide Ceramic Machining
 
 SiC cost is strongly influenced by geometry, finishing, and inspection requirements. The raw material is only part of the issue.
 
@@ -221,7 +221,7 @@ SiC cost is strongly influenced by geometry, finishing, and inspection requireme
 
 The [surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/) explains why finish requirements should be tied to function. A blanket fine Ra on every face can raise cost without improving reliability.
 
-### Inspection Evidence For Silicon Carbide Components
+## Inspection Evidence For Silicon Carbide Components
 
 Inspection should match the real risk. A lapped seal face, pump sleeve, nozzle insert, and wafer support plate need different evidence.
 
@@ -238,7 +238,7 @@ Inspection should match the real risk. A lapped seal face, pump sleeve, nozzle i
 
 For critical SiC parts, acceptance criteria should be discussed before production. "No chips" and "smooth finish" are not enough for a controlled RFQ. Better notes define the functional zone, allowed edge break, magnification, Ra or flatness target, and whether cosmetic marks on non-functional surfaces are acceptable.
 
-### When Silicon Carbide May Not Be The Best Choice
+## When Silicon Carbide May Not Be The Best Choice
 
 Silicon carbide is strong in harsh environments, but it is not always the best material. A different ceramic may fit better when:
 
@@ -251,7 +251,7 @@ Silicon carbide is strong in harsh environments, but it is not always the best m
 
 The material decision should be based on the failure mode, not on a generic statement that one ceramic is "better" than another.
 
-### RFQ Inputs For Silicon Carbide Ceramic Machining
+## RFQ Inputs For Silicon Carbide Ceramic Machining
 
 A strong SiC RFQ should include both geometry and service information. The best starting package includes:
 
@@ -269,7 +269,7 @@ A strong SiC RFQ should include both geometry and service information. The best 
 
 The [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) can be used before sending drawings. It helps separate true functional requirements from assumptions that should be reviewed during quoting.
 
-### Practical Takeaway
+## Practical Takeaway
 
 Silicon carbide ceramic machining is a high-value option for harsh environment applications when a part needs wear resistance, chemical stability, high stiffness, lapped flatness, erosion resistance, high-temperature capability, or clean process-side behavior. The material alone does not guarantee performance. The final result depends on grade selection, ceramic-friendly design, diamond grinding access, lapped surface control, edge quality, realistic tolerance placement, and inspection evidence that matches the application.
 

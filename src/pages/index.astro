@@ -764,7 +764,7 @@ const applicationExamples = [
           </p>
         </div>
 
-        <dl class="mt-8 grid border-y border-page-border sm:grid-cols-2 lg:grid-cols-5">
+        <div class="mt-8 grid border-y border-page-border sm:grid-cols-2 lg:grid-cols-5">
           {
             productionEnvelopes.map((item) => (
               <div class="border-b border-page-border py-5 text-center sm:px-5 sm:even:border-l lg:border-b-0 lg:border-l lg:px-5 lg:first:border-l-0">
@@ -782,12 +782,12 @@ const applicationExamples = [
                     decoding="async"
                   />
                 </div>
-                <dt class="text-xs font-semibold uppercase tracking-[0.12em] text-muted">{item.label}</dt>
-                <dd class="mt-2 text-sm font-semibold leading-6 text-heading">{item.value}</dd>
+                <p class="text-xs font-semibold uppercase tracking-[0.12em] text-muted">{item.label}</p>
+                <p class="mt-2 text-sm font-semibold leading-6 text-heading">{item.value}</p>
               </div>
             ))
           }
-        </dl>
+        </div>
       </div>
     </div>
   </section>

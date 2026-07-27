@@ -19,7 +19,7 @@ This checklist is written for engineering and procurement teams preparing RFQs f
 
 For procurement-level cost, lead time, supplier review, and acceptance-gate context, pair it with the [ceramic CNC machining buyer guide](/posts/feasibility-process-choice/ceramic-machining-guide/).
 
-### Start With the Job the Part Must Do
+## Start With the Job the Part Must Do
 
 Before tolerance review, clarify why the part uses ceramic instead of metal or plastic. The reason usually controls the machining route.
 
@@ -34,7 +34,7 @@ Before tolerance review, clarify why the part uses ceramic instead of metal or p
 
 If the application driver is missing, the supplier has to guess which dimensions are critical. That creates quote variance and late clarification.
 
-### Minimum RFQ Package
+## Minimum RFQ Package
 
 A practical ceramic CNC RFQ should include:
 
@@ -51,7 +51,7 @@ A practical ceramic CNC RFQ should include:
 
 For a simple spacer, this may be short. For a semiconductor, vacuum, wear, or micro-hole part, this information can be the difference between a useful quote and a chain of follow-up questions.
 
-### Mark Functional Precision, Not Global Precision
+## Mark Functional Precision, Not Global Precision
 
 One common RFQ problem is applying tight tolerances to every face because the part is important. That usually makes the ceramic route more expensive without improving function.
 
@@ -68,7 +68,7 @@ Better RFQ language:
 
 Use the [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) to separate functional precision from general geometry.
 
-### Define Material and Blank State
+## Define Material and Blank State
 
 Ceramic material names are not enough. "Alumina" can mean different purity, density, blank quality, and finishability. "Zirconia" can mean different stabilization systems and toughness behavior. "SiC" can vary widely by route and supplier.
 
@@ -85,7 +85,7 @@ If the exact ceramic grade is unknown, send the operating environment instead: t
 
 Use the [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) when the grade, blank state, or substitution options are still open.
 
-### Specify Surface Finish by Face
+## Specify Surface Finish by Face
 
 Surface finish in ceramics should be tied to function. A single Ra value across the full part can force unnecessary lapping, polishing, inspection, and handling risk.
 
@@ -98,7 +98,7 @@ Helpful RFQ examples:
 
 For more detail, use the [ceramic surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/).
 
-### Micro-Holes Need Extra Detail
+## Micro-Holes Need Extra Detail
 
 Micro-holes and small orifices are high-risk features in brittle materials. A diameter callout alone is not enough.
 
@@ -115,7 +115,7 @@ Include:
 
 If micro-hole performance controls flow, dosing, vacuum, or spray behavior, state whether dimensional inspection alone is sufficient or whether functional testing is part of customer acceptance.
 
-### Inspection Evidence Should Match Risk
+## Inspection Evidence Should Match Risk
 
 Do not request a full report package by default. Request evidence that proves the features that matter.
 
@@ -130,7 +130,7 @@ Do not request a full report package by default. Request evidence that proves th
 
 The inspection method must be physically possible for the feature. If the feature cannot be measured repeatably, it should not become the only acceptance basis.
 
-### Red Flags That Slow a Ceramic Quote
+## Red Flags That Slow a Ceramic Quote
 
 The RFQ usually needs clarification when:
 
@@ -145,7 +145,7 @@ The RFQ usually needs clarification when:
 
 These are not reasons to reject a project automatically. They are reasons to review the drawing before quoting.
 
-### Practical RFQ Email Template
+## Practical RFQ Email Template
 
 Use this structure when sending a custom ceramic CNC machining RFQ:
 
@@ -168,7 +168,7 @@ Notes or previous supplier route:
 
 You can also use the [RFQ checklist page](/rfq/) when preparing files for review.
 
-### FAQ
+## FAQ
 
 **Can I send only a STEP file first?**  
 Yes, for an initial geometry discussion. A formal quote usually needs a drawing, material requirement, quantity, and acceptance criteria.

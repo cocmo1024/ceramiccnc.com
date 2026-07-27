@@ -19,7 +19,7 @@ For engineers and sourcing teams, the goal is not to make every ceramic drawing 
 
 This guide focuses on design rules that make advanced ceramic parts more practical to review for machining and RFQ. Final feasibility, price, and lead time still depend on material grade, blank state, drawing revision, tolerance map, surface finish, quantity, and inspection requirements.
 
-### Rule 1: Design Around The Ceramic State
+## Rule 1: Design Around The Ceramic State
 
 The first design question is not only material name. It is material state.
 
@@ -36,7 +36,7 @@ Advanced ceramic parts may be shaped before sintering, machined after firing, gr
 
 Designs become easier to quote when the drawing separates near-net geometry from final functional geometry. If a surface can remain as-sintered or standard-ground, say so. If a bore, face, or datum must be finished after sintering, identify it clearly.
 
-### Rule 2: Put Tight Tolerance Only Where It Works
+## Rule 2: Put Tight Tolerance Only Where It Works
 
 Tight tolerance is not bad. Unfocused tight tolerance is expensive and risky.
 
@@ -53,7 +53,7 @@ For example, a ceramic spacer may need parallel end faces and controlled thickne
 
 Before sending an RFQ, mark the features that actually create function. The supplier can then review whether CNC machining, diamond grinding, lapping, or a combined route is appropriate. See the related [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) for a feature-by-feature way to think about tolerance ranges.
 
-### Rule 3: Replace Sharp Internal Corners With Radii
+## Rule 3: Replace Sharp Internal Corners With Radii
 
 Sharp internal corners are common in metal drawings. They are often a poor fit for advanced ceramics.
 
@@ -70,7 +70,7 @@ Use radii for:
 
 If a sharp corner is truly functional, call it out as a review item instead of assuming it is a normal CNC feature. The supplier may need to propose a relief, split feature, secondary operation, or inspection limit.
 
-### Rule 4: Define Edge Breaks Instead Of Leaving Edge Quality Implied
+## Rule 4: Define Edge Breaks Instead Of Leaving Edge Quality Implied
 
 Edge condition is a real design feature in ceramic CNC machining. Unspecified edges create uncertainty because the buyer may expect a crisp profile while the supplier needs to prevent chips.
 
@@ -86,7 +86,7 @@ This matters for alumina insulators, zirconia wear pins, silicon nitride guide p
 
 For broader DFM guidance, the existing [ceramic DFM design rules](/posts/design-rules-dfm/ceramic-dfm-design-rules/) page covers go/no-go features such as sharpness, thin walls, slots, and inspection access. This article extends that logic specifically into ceramic CNC machining and RFQ review.
 
-### Rule 5: Treat Holes As Machining And Inspection Features
+## Rule 5: Treat Holes As Machining And Inspection Features
 
 Holes in ceramic parts are not just diameter notes. They are edge, depth, access, taper, breakout, and inspection features.
 
@@ -107,7 +107,7 @@ Micro-holes, gas distribution plates, vacuum features, nozzle bores, and high-vo
 
 For small-hole RFQs, the [ceramic micro-hole machining guide](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/) gives a more focused checklist.
 
-### Rule 6: Keep Thin Walls Supported And Functional
+## Rule 6: Keep Thin Walls Supported And Functional
 
 Thin ceramic walls can be necessary for insulation, flow control, weight reduction, thermal response, or space constraints. They also increase breakage risk.
 
@@ -124,7 +124,7 @@ Review these points:
 
 Ceramic thin walls can be practical when the material, route, and support conditions are reviewed together. Unsupported long walls, sharp slot roots, deep pockets beside thin ribs, and tight tolerance on both sides of a fragile wall deserve focused review before quoting.
 
-### Rule 7: Make Slots, Pockets, And Grooves Tool-Friendly
+## Rule 7: Make Slots, Pockets, And Grooves Tool-Friendly
 
 Slots and pockets are common in ceramic fixtures, electrical parts, wafer-adjacent components, and wear guides. They are also common sources of quote variance.
 
@@ -140,7 +140,7 @@ Design rules for ceramic CNC machining include:
 
 If the design needs a slot for flow, alignment, insulation spacing, or mechanical clearance, describe that function. The supplier can then review whether width, depth, radius, and edge quality are reasonable for the chosen material and route.
 
-### Rule 8: Build Datums Around Real Contact Surfaces
+## Rule 8: Build Datums Around Real Contact Surfaces
 
 Datums should reflect how the ceramic part is machined, inspected, and used. A datum placed on an inaccessible, rough, or non-functional surface creates confusion.
 
@@ -156,7 +156,7 @@ Avoid using decorative or clearance surfaces as primary datums. Also avoid stack
 
 A clear datum plan lets the supplier evaluate fixtures, process route, CMM access, and whether the tolerance scheme can be accepted with practical measurement evidence.
 
-### Rule 9: Specify Surface Finish By Function, Not Habit
+## Rule 9: Specify Surface Finish By Function, Not Habit
 
 Surface finish is one of the strongest cost drivers in precision ceramic parts. A blanket low-Ra requirement can move a part from standard machining into grinding, lapping, polishing, or extended inspection without improving the assembly.
 
@@ -174,7 +174,7 @@ Other faces may use standard ground, as-fired, or non-critical finish depending 
 
 The [surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/) explains how surface requirements affect cost and acceptance risk.
 
-### Rule 10: Design For Measurement Before Sending The RFQ
+## Rule 10: Design For Measurement Before Sending The RFQ
 
 A ceramic part is not quote-ready just because the CAD model is complete. It must also be measurable.
 
@@ -194,7 +194,7 @@ For small holes, optical methods may be more useful than pin gauges. For flatnes
 
 Inspection should not be added after the quote as an afterthought. It should be part of the RFQ because it affects route, cost, schedule, and acceptance evidence.
 
-### Rule 11: Match Material Choice To Feature Risk
+## Rule 11: Match Material Choice To Feature Risk
 
 Advanced ceramics are not interchangeable.
 
@@ -204,7 +204,7 @@ Feature risk changes by material. A radius, bore, thin wall, slot, or lapped sur
 
 The [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) can help align material choice with machining and application risk.
 
-### Rule 12: Use The RFQ To Expose Design Assumptions
+## Rule 12: Use The RFQ To Expose Design Assumptions
 
 A good ceramic CNC machining RFQ does more than ask for price. It gives the supplier enough information to challenge risky assumptions before manufacturing starts.
 
@@ -226,7 +226,7 @@ If you are not sure which tolerance is realistic, mark the functional need inste
 
 Use the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) to prepare the drawing package before requesting a formal quote.
 
-### Practical Design Checklist
+## Practical Design Checklist
 
 Before releasing an advanced ceramic part for CNC machining review, ask:
 
@@ -243,7 +243,7 @@ Before releasing an advanced ceramic part for CNC machining review, ask:
 | Is inspection method clear?                               | Makes acceptance auditable                   |
 | Is the material matched to the environment?               | Prevents false assumptions from catalog data |
 
-### Takeaway
+## Takeaway
 
 Ceramic CNC machining design rules are not a list of restrictions. They are a way to make advanced ceramic parts more manufacturable, inspectable, and quote-ready.
 

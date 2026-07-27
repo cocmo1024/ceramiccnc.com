@@ -25,7 +25,7 @@ The better question is:
 
 That question should be answered before price, lead time, tolerance feasibility, or production route are confirmed.
 
-### Why Ceramics Are Used For Wear-Resistant Components
+## Why Ceramics Are Used For Wear-Resistant Components
 
 Technical ceramics can offer high hardness, low density, thermal stability, electrical insulation, corrosion resistance, and low wear under specific contact conditions. In the right design, a machined ceramic component can reduce scoring, galling, abrasive wear, chemical attack, or dimensional drift.
 
@@ -42,7 +42,7 @@ But wear resistance is not a single property. It depends on the complete system:
 
 A ceramic material can be excellent in one wear condition and unsuitable in another. That is why industrial ceramic machining RFQs should describe the wear mechanism, not only the part name.
 
-### Common Wear-Resistant Ceramic Materials
+## Common Wear-Resistant Ceramic Materials
 
 Material selection affects machinability, edge strength, surface finish, cost, and risk. Fired high-performance ceramics often require diamond grinding or abrasive finishing for tight features. Machinable ceramics can be useful for prototypes and special insulation roles, but they are not universal wear substitutes.
 
@@ -58,7 +58,7 @@ Material selection affects machinability, edge strength, surface finish, cost, a
 
 If the material is not fixed, send the operating environment and failure mode. A supplier can then review whether alumina, zirconia, silicon nitride, silicon carbide, or another grade is a better fit for machining and service.
 
-### Match The Ceramic To The Wear Mode
+## Match The Ceramic To The Wear Mode
 
 Different wear modes create different design priorities.
 
@@ -74,7 +74,7 @@ Different wear modes create different design priorities.
 
 The same material may need different machining controls depending on which wear mode dominates.
 
-### Wear Components Need Functional Geometry, Not Tight Tolerance Everywhere
+## Wear Components Need Functional Geometry, Not Tight Tolerance Everywhere
 
 Many wear-resistant ceramic RFQs become expensive because the drawing applies tight tolerance and low surface roughness to every face. That usually does not improve service life.
 
@@ -93,7 +93,7 @@ For a ceramic bushing, the ID, OD, roundness, concentricity, and edge condition 
 
 Use tight requirements where function needs them. Relax non-contact geometry where possible.
 
-### Ceramic Bushings, Sleeves, And Shafts
+## Ceramic Bushings, Sleeves, And Shafts
 
 Ceramic bushings and sleeves are often used where metal parts suffer adhesive wear, corrosion, insulation failure, or abrasive scoring. The main risks are not only material hardness. They are bore quality, wall thickness, edge chips, and fit.
 
@@ -110,7 +110,7 @@ Important drawing inputs include:
 
 Thin-wall sleeves need additional review because grinding, measuring, and assembly can create fracture risk. If the sleeve is very thin, define which surfaces must be finished and which surfaces may be less critical. The related [thin-wall ceramic sleeve RFQ guide](/posts/thin-wall-sleeves/ceramic-thin-wall-sleeve-bore-concentricity-rfq/) covers this geometry in more detail.
 
-### Ceramic Liners, Wear Plates, And Guide Rails
+## Ceramic Liners, Wear Plates, And Guide Rails
 
 Liners and wear plates are common in abrasive material handling, automation tracks, packaging systems, pump hardware, and chemical equipment. They look simple, but the quote depends on surface zones, hole edges, flatness, and mounting strategy.
 
@@ -126,7 +126,7 @@ Review these features:
 
 Avoid sharp exposed edges where abrasive flow or installation can chip the component. If countersunk holes or screw seats are required, define edge condition and load path. Ceramics do not tolerate point loading the same way ductile metals do.
 
-### Seal Faces, Valve Seats, And Pump Components
+## Seal Faces, Valve Seats, And Pump Components
 
 Silicon carbide, alumina, zirconia, and other ceramics may be used for seal faces, valve seats, pump plungers, metering pistons, and fluid-control components. These parts often require more than CNC shaping. They may need diamond grinding, lapping, controlled surface finish, and careful cleaning.
 
@@ -143,7 +143,7 @@ For seal and valve parts, specify:
 
 Do not apply a low Ra requirement to every surface unless every surface is functional. A local lapped band is often more practical than an entire part treated as a seal face. The [ceramic lapped seal faces guide](/posts/lapped-seal-faces/ceramic-lapped-seal-faces-rfq/) explains how flatness, Ra, edge condition, and leak risk should be reviewed together.
 
-### Nozzles, Orifices, And Flow Wear Parts
+## Nozzles, Orifices, And Flow Wear Parts
 
 Ceramic nozzles and orifice inserts are used where flow carries abrasive particles, corrosive fluid, heat, or high velocity. In these components, the bore is not just a hole. It controls wear rate, flow behavior, and replacement life.
 
@@ -160,7 +160,7 @@ The RFQ should define:
 
 If the nozzle has a complex internal path, send both 3D CAD and a controlled drawing. Some internal features may require route review before feasibility is confirmed.
 
-### Surface Finish And Edge Quality Control Wear Life
+## Surface Finish And Edge Quality Control Wear Life
 
 Wear-resistant ceramic parts often fail early because the functional surface or edge was not specified clearly. Surface finish affects friction, sealing, particle retention, heat generation, and counterface wear. Edge quality affects chip initiation and crack risk.
 
@@ -177,7 +177,7 @@ Also define whether edges are sharp, chamfered, radiused, or chip-controlled. A 
 
 For high-value surfaces, inspection may include profilometer measurement, optical review, CMM, roundness measurement, flatness evidence, or visual chip criteria. The [surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/) gives a deeper framework for specifying Ra and surface integrity without overpricing the whole part.
 
-### Design Rules For Wear-Resistant Ceramic Parts
+## Design Rules For Wear-Resistant Ceramic Parts
 
 Wear-resistant ceramic designs should reduce avoidable stress and point loading.
 
@@ -196,7 +196,7 @@ Useful rules include:
 
 The [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) page covers these manufacturability controls in more detail.
 
-### Inspection For Wear-Resistant Ceramic Components
+## Inspection For Wear-Resistant Ceramic Components
 
 Inspection should match the part function. A wear-resistant ceramic component may need dimensional inspection, surface finish inspection, or functional evidence depending on the application.
 
@@ -215,7 +215,7 @@ Common checks include:
 
 If acceptance evidence matters, include it in the RFQ before quotation. Inspection time can affect price and lead time as much as machining time.
 
-### RFQ Inputs That Prevent Quote Variance
+## RFQ Inputs That Prevent Quote Variance
 
 For industrial ceramic machining of wear-resistant components, send:
 
@@ -234,7 +234,7 @@ For industrial ceramic machining of wear-resistant components, send:
 
 If some requirements are unknown, state the application and failure problem. A useful review can often start from the operating condition and worn metal or polymer part history.
 
-### Supplier Review Questions
+## Supplier Review Questions
 
 Before releasing a wear-resistant ceramic component for production, clarify:
 
@@ -248,7 +248,7 @@ Before releasing a wear-resistant ceramic component for production, clarify:
 
 These questions reduce quote ambiguity and help prevent a hard ceramic material from being used in a weak mechanical design.
 
-### Practical Takeaway
+## Practical Takeaway
 
 Industrial ceramic machining can improve wear performance when material selection, contact geometry, surface finish, edge quality, and inspection are reviewed together.
 

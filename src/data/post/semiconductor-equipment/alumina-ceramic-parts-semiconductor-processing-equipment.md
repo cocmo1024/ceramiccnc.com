@@ -28,7 +28,7 @@ Alumina, or aluminum oxide Al2O3, is one of the most common technical ceramics u
 
 This guide focuses on precision machined alumina ceramic parts used in semiconductor processing equipment: insulating rings, chamber-adjacent spacers, feedthrough sleeves, standoffs, nozzles, orifice inserts, gas distribution plates, support pins, fixture plates, metrology parts, clean automation hardware, and high-purity packaging-sensitive components. It complements the broader [precision ceramic components for semiconductor equipment guide](/posts/semiconductor-equipment/precision-ceramic-components-semiconductor-equipment/) and the focused pages for [ceramic insulators in plasma etching and deposition equipment](/posts/semiconductor-equipment/ceramic-insulators-plasma-etching-deposition-equipment/), [precision ceramic rings for process chambers](/posts/semiconductor-equipment/precision-ceramic-rings-semiconductor-process-chambers/), and [precision ceramic nozzles for semiconductor and vacuum equipment](/posts/semiconductor-equipment/precision-ceramic-nozzles-semiconductor-vacuum-equipment/).
 
-### What This Guide Helps You Decide
+## What This Guide Helps You Decide
 
 Use this page when a semiconductor equipment RFQ includes an alumina part but the drawing does not yet make the manufacturing risk clear. The goal is to help engineering and sourcing teams decide:
 
@@ -40,7 +40,7 @@ Use this page when a semiconductor equipment RFQ includes an alumina part but th
 
 This decision path matches the way a real alumina component is sourced: material, functional surfaces, feature risk, acceptance evidence, and quotation assumptions are reviewed together.
 
-### Why Alumina Still Matters In Semiconductor Equipment
+## Why Alumina Still Matters In Semiconductor Equipment
 
 Semiconductor equipment places clean, stable, insulating, and precisely machined components near wafer handling, vacuum, gas flow, plasma, thermal, and electrical interfaces. That does not make every alumina part process-critical; it makes the exact tool location and failure mode necessary RFQ inputs.
 
@@ -48,7 +48,7 @@ The material choice is supported by mainstream ceramic suppliers. [Kyocera descr
 
 The useful engineering step is to translate an alumina semiconductor component into RFQ-ready machining details: grade, blank route, surface finish, bore quality, lapped faces, edge-chip criteria, cleaning, packaging, and inspection evidence.
 
-### RFQ Decision Map For Alumina Semiconductor Parts
+## RFQ Decision Map For Alumina Semiconductor Parts
 
 The most reviewable inquiries usually include one of four signals: semiconductor equipment location, precision feature, acceptance requirement, or supply-chain replacement need.
 
@@ -62,7 +62,7 @@ The most reviewable inquiries usually include one of four signals: semiconductor
 
 This is also why the page should link outward to feature-specific guides instead of trying to answer every ceramic machining issue in one article. A buyer with a micro-hole plate needs the [ceramic micro-hole machining RFQ guide](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/). A buyer with a precision spacer or sleeve needs the [thin-wall ceramic sleeve machining guide](/posts/thin-wall-sleeves/ceramic-thin-wall-sleeve-bore-concentricity-rfq/). A buyer with lapped contact bands needs the [ceramic lapped seal faces guide](/posts/lapped-seal-faces/ceramic-lapped-seal-faces-rfq/).
 
-### Common Alumina Component Families
+## Common Alumina Component Families
 
 Alumina ceramic components appear in semiconductor equipment where insulation, cleanliness, stable geometry, and wear resistance matter. The same material can serve different jobs, so the RFQ must explain the functional interface.
 
@@ -79,7 +79,7 @@ Alumina ceramic components appear in semiconductor equipment where insulation, c
 
 If the drawing only calls out "99.5% alumina" without explaining whether the part is an insulator, seal land, gas plate, spacer, fixture, or wafer-adjacent support, the supplier cannot reliably judge which surfaces deserve precision finishing.
 
-### When Alumina Is A Good Choice
+## When Alumina Is A Good Choice
 
 Alumina is usually a strong candidate when the part needs electrical insulation, moderate-to-high wear resistance, dimensional stability, practical cost control, and good availability. It is often considered for:
 
@@ -92,7 +92,7 @@ Alumina is usually a strong candidate when the part needs electrical insulation,
 
 Alumina is not automatically the best material for every semiconductor zone. Use [AlN ceramic parts for semiconductor thermal management](/posts/semiconductor-equipment/aluminum-nitride-ceramic-parts-semiconductor-thermal-management/) when thermal conductivity is the main driver. Use [silicon carbide wafer handling components](/posts/semiconductor-equipment/silicon-carbide-wafer-handling-components-semiconductor-manufacturing/) when stiffness, wear, and contact-edge behavior dominate. Use the [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) when the failure mode is still unclear.
 
-### When Alumina Should Be Challenged
+## When Alumina Should Be Challenged
 
 Alumina is popular, available, and often cost-effective, but a professional RFQ review should challenge it when the environment or function points elsewhere.
 
@@ -107,7 +107,7 @@ Alumina is popular, available, and often cost-effective, but a professional RFQ 
 
 The RFQ should state whether material substitution is allowed. If a drawing is already qualified in a semiconductor tool, the supplier should not quietly change grade, blank route, surface finish, cleaning, or packaging simply to reduce cost.
 
-### Alumina Grade And Purity Should Be Specified
+## Alumina Grade And Purity Should Be Specified
 
 "Alumina" is a material family, not a complete RFQ. Grade affects color, density, grain size, strength, finishability, dielectric behavior, corrosion resistance, wear resistance, cost, and availability. Semiconductor-adjacent parts often require higher-purity or application-specific grades, but over-specifying purity without defining function can raise cost without reducing the real risk.
 
@@ -123,7 +123,7 @@ The RFQ should state whether material substitution is allowed. If a drawing is a
 
 For a quotation, include the drawing revision, STEP file, target quantity, prototype or production stage, material grade, functional surfaces, cleaning expectation, and inspection method. The [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) is the best internal template when the buyer has not prepared a full package yet.
 
-### Machining Features That Drive Cost And Risk
+## Machining Features That Drive Cost And Risk
 
 Fired alumina is hard and brittle. Precision semiconductor parts usually require diamond grinding, lapping, polishing, or controlled abrasive finishing after sintering. Cost and risk rise when the drawing combines tight tolerances with difficult geometry, small features, and clean packaging requirements.
 
@@ -145,7 +145,7 @@ Inspection should follow the functional risk: lapped bands, bores, micro-holes, 
 
 If the part includes micro-holes, use the [ceramic micro-hole machining RFQ guide](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/). If the part is a sleeve, use the [thin-wall ceramic sleeve machining guide](/posts/thin-wall-sleeves/ceramic-thin-wall-sleeve-bore-concentricity-rfq/). If the part has a lapped seal or annular contact face, use the [ceramic lapped seal faces guide](/posts/lapped-seal-faces/ceramic-lapped-seal-faces-rfq/). For tolerance planning, use the [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/).
 
-### Cost Drivers That Buyers Should Not Hide
+## Cost Drivers That Buyers Should Not Hide
 
 For semiconductor equipment alumina parts, quote variance is usually caused by risk that is missing from the drawing. The most common cost drivers are:
 
@@ -160,7 +160,7 @@ For semiconductor equipment alumina parts, quote variance is usually caused by r
 
 This is why CERAMIC CNC's RFQ path asks for drawings, material grade, quantity, target timing, functional surfaces, cleaning expectations, and acceptance evidence before confirming feasibility, price, or schedule.
 
-### Cleaning And Packaging Are Part Of The Alumina RFQ
+## Cleaning And Packaging Are Part Of The Alumina RFQ
 
 Semiconductor processing equipment parts should not be treated like ordinary industrial ceramic blocks after machining. Alumina components may pass dimensional inspection but still create receiving problems if lapped faces touch each other, bore edges chip during shipment, micro-holes trap residue, or loose packaging creates particles.
 
@@ -178,7 +178,7 @@ Define:
 
 For broader high-purity handling requirements, use the [cleanroom and high-purity ceramic components guide](/posts/high-purity-cleanroom/precision-ceramic-components-cleanroom-high-purity-manufacturing-systems/). For plasma chamber-adjacent alumina insulation, use the [ceramic insulators for plasma etch and deposition guide](/posts/semiconductor-equipment/ceramic-insulators-plasma-etching-deposition-equipment/).
 
-### Inspection Evidence For Alumina Semiconductor Components
+## Inspection Evidence For Alumina Semiconductor Components
 
 Inspection should prove the functional risk, not just the easiest dimensions.
 
@@ -195,7 +195,7 @@ Inspection should prove the functional risk, not just the easiest dimensions.
 
 The inspection plan should be agreed before production. If the customer needs a specific report format, sampling plan, measurement method, or first article package, state that in the RFQ. A supplier can quote geometry and inspection evidence, but final process tool qualification usually depends on customer-side testing.
 
-### Supplier Capability Questions Before You Send A Production RFQ
+## Supplier Capability Questions Before You Send A Production RFQ
 
 Before placing a repeat or production RFQ for alumina semiconductor equipment parts, ask questions that reveal manufacturing discipline instead of generic catalog capability:
 
@@ -210,7 +210,7 @@ Before placing a repeat or production RFQ for alumina semiconductor equipment pa
 
 These questions filter out low-value replies and help the buyer receive a technical quotation instead of a simple price for "white ceramic parts."
 
-### Common RFQ Mistakes
+## Common RFQ Mistakes
 
 Avoid these mistakes when sourcing alumina ceramic parts for semiconductor processing equipment:
 
@@ -227,7 +227,7 @@ Avoid these mistakes when sourcing alumina ceramic parts for semiconductor proce
 
 The [ceramic CNC machining design rules guide](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) helps prevent these issues before the drawing is released.
 
-### Practical RFQ Package
+## Practical RFQ Package
 
 For alumina semiconductor processing equipment parts, send:
 
@@ -242,13 +242,13 @@ For alumina semiconductor processing equipment parts, send:
 
 If the buyer does not yet know how to classify the part, start from the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/), then use this alumina semiconductor page to refine grade, functional surfaces, and clean packaging. If the drawing is still early, use the [ceramic CNC machining design rules guide](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) before freezing tiny holes, thin walls, sharp internal corners, or over-tight tolerances.
 
-### Practical Takeaway
+## Practical Takeaway
 
 Alumina ceramic parts remain a high-value semiconductor equipment sourcing category because they combine insulation, wear resistance, chemical stability, availability, and practical precision machining routes. But the material name alone does not create a manufacturable RFQ.
 
 The best RFQ defines the alumina grade, fired blank route, functional surfaces, lapped or ground faces, small-feature requirements, edge-chip criteria, cleaning, packaging, inspection evidence, and customer qualification boundary. That allows the part to be reviewed as a semiconductor equipment component instead of a generic white ceramic shape, and it gives the buyer a better chance of receiving a useful technical response on the first inquiry.
 
-### FAQ
+## FAQ
 
 **Is alumina suitable for semiconductor processing equipment?**  
 Often yes, especially for insulating rings, spacers, sleeves, nozzles, fixture parts, and clean support hardware. Suitability still depends on the exact process environment, grade, surfaces, cleaning, and qualification requirements.

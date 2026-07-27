@@ -32,7 +32,7 @@ The better question is:
 
 That question should be answered before feasibility, price, lead time, tolerance scope, or production route is confirmed.
 
-### Why Engineers Choose Macor
+## Why Engineers Choose Macor
 
 Macor is attractive because it gives engineers a machinable ceramic option during the design and validation stage. A fully sintered alumina, zirconia, silicon nitride, silicon carbide, or aluminum nitride part usually requires diamond grinding, abrasive machining, lapping, or a near-net ceramic route after firing. That can be the correct path for production, but it may not be the fastest way to learn whether a mounting pattern, pocket geometry, electrical spacing, sensor location, or fixture interface is correct.
 
@@ -47,7 +47,7 @@ Macor is often reviewed when the project needs:
 
 The broader [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) is useful when comparing Macor with high-performance production ceramics. For many RFQs, Macor is the right early-stage answer, while a different technical ceramic is the better final service material.
 
-### Macor Is Different From Sintered Advanced Ceramics
+## Macor Is Different From Sintered Advanced Ceramics
 
 Buyers sometimes group all "ceramic parts" together. That creates sourcing problems. Macor is a machinable glass ceramic. Fired alumina, zirconia, silicon nitride, silicon carbide, and aluminum nitride are advanced ceramics with different machining behavior and service expectations.
 
@@ -65,7 +65,7 @@ The distinction matters because it changes the cost model, design rules, and qua
 
 If the part is only a development fixture or test adapter, Macor may reduce iteration time. If the part must survive abrasive slurry, high load, tight seal-face flatness, high thermal shock, plasma exposure, high-volume wear, or aggressive chemical service, the RFQ should review a production ceramic instead.
 
-### Common Macor Machined Parts
+## Common Macor Machined Parts
 
 Macor projects become clearer when the part is described by function rather than only by outside dimensions. A simple insulating washer, a threaded sensor mount, and a pocketed vacuum test fixture may all be Macor parts, but they create different design and inspection concerns.
 
@@ -82,7 +82,7 @@ Macor projects become clearer when the part is described by function rather than
 
 Macor RFQs should define which features prove the prototype and which surfaces are only clearance or handling geometry.
 
-### When Macor Is A Good Fit
+## When Macor Is A Good Fit
 
 Macor can be a practical choice when the job needs fast ceramic-like geometry, moderate precision, electrical insulation, dimensional stability, and custom machining flexibility. It is especially useful when the customer needs to test a design before committing to a sintered ceramic route.
 
@@ -98,7 +98,7 @@ Good-fit applications often include:
 
 Macor can also be useful when the drawing includes features that would be expensive to grind into a hard-fired ceramic during the first trial: deep pockets, threaded holes, several mounting patterns, adjustment slots, or geometry that may change after testing.
 
-### When Macor May Not Be The Final Material
+## When Macor May Not Be The Final Material
 
 Macor should be reviewed carefully when the part must handle high load, high wear, severe thermal cycling, high bending stress, abrasive media, impact, corrosive process chemistry, high-temperature continuous duty, or particle-sensitive production environments. In those cases, the final material may need to be a high-performance ceramic.
 
@@ -116,7 +116,7 @@ The safest approach is to state the actual service environment in the RFQ, not o
 
 Macor can shorten geometry validation, but production ceramics may need different allowances, radii, tolerances, and inspection planning.
 
-### Design Rules For Macor Machinable Ceramic Parts
+## Design Rules For Macor Machinable Ceramic Parts
 
 Macor is easier to machine than many fired advanced ceramics, but it is still a brittle glass ceramic. Metal-style designs can still create chips, broken threads, fragile corners, and cost problems.
 
@@ -135,7 +135,7 @@ Useful design rules include:
 
 The [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) explain why ceramic designs should separate functional surfaces from non-critical geometry. That rule still applies to Macor. Even if a feature is machinable, it should still have a reason.
 
-### Holes, Threads, Pockets, And Slots
+## Holes, Threads, Pockets, And Slots
 
 One reason engineers choose Macor is the ability to machine holes, pockets, and threads more directly than in many sintered ceramics. These features are useful in fixtures, sensor mounts, test adapters, and lab components. They also need practical limits.
 
@@ -169,7 +169,7 @@ For pockets and slots, define:
 
 Threads and thin features should be reviewed with more care than simple holes. Macor may be machinable, but local stress concentration can still break ceramic features during assembly.
 
-### Tolerance And Surface Finish Expectations
+## Tolerance And Surface Finish Expectations
 
 Macor can be machined to useful precision, but the tolerance discussion should still be feature-specific. A flat fixture face, a sensor bore, a threaded hole, and a clearance pocket should not all carry the same tolerance unless the assembly requires it.
 
@@ -195,7 +195,7 @@ Surface finish should be specified by function:
 | Threaded feature              | Local stress can break the ceramic during assembly                     | Define engagement length, fastener, torque, and assembly frequency     |
 | Non-critical clearance pocket | Usually does not need fine finish or tight tolerance                   | Mark as clearance when possible to reduce cost and review time         |
 
-### Macor In Electrical Insulation Parts
+## Macor In Electrical Insulation Parts
 
 Macor is often selected for electrical insulation trials, custom spacers, standoffs, fixture plates, and test hardware. The important point is that electrical performance depends on the geometry and surface condition of the real part, not only on a material name.
 
@@ -211,7 +211,7 @@ For electrical insulation RFQs, provide:
 
 If the design is high-voltage sensitive, the [ceramic high-voltage insulators RFQ guide](/posts/high-voltage-insulation/ceramic-high-voltage-insulators-rfq/) gives more detail on creepage geometry, edge quality, and incoming acceptance.
 
-### Macor In Vacuum And Laboratory Hardware
+## Macor In Vacuum And Laboratory Hardware
 
 Macor is also used in vacuum, analytical, optical-adjacent, and laboratory equipment. The advantage is the combination of machinable ceramic geometry and non-metallic behavior in custom trial parts. The risk is that vacuum and lab hardware often has cleanliness, sealing, and thermal requirements that are not obvious from a simple drawing.
 
@@ -229,7 +229,7 @@ For these projects, the RFQ should clarify:
 
 A Macor component for a laboratory fixture can be straightforward. A Macor component used near a seal, sensor, electrode, or vacuum interface needs a more careful review.
 
-### Prototype-To-Production Material Transition
+## Prototype-To-Production Material Transition
 
 Many successful Macor projects are not the end of the material decision. They are a step in a design path. A customer may use Macor to prove geometry, then switch to alumina, zirconia, silicon nitride, silicon carbide, aluminum nitride, or another ceramic for the final service environment.
 
@@ -248,7 +248,7 @@ Review points include:
 
 The RFQ should state if the Macor part is a prototype for a later ceramic. That context helps the supplier avoid optimizing the prototype in a way that cannot be reproduced economically in the final material.
 
-### Cost Drivers In Macor Machining
+## Cost Drivers In Macor Machining
 
 Macor can reduce iteration cost in some projects, but it is not priced only by material volume. Geometry, fixture time, tolerance scope, threads, thin walls, and inspection can dominate the quote.
 
@@ -263,7 +263,7 @@ Macor can reduce iteration cost in some projects, but it is not priced only by m
 
 The goal is not to remove useful precision. The goal is to place precision where it proves the design and supports the assembly.
 
-### Inspection Evidence For Macor Parts
+## Inspection Evidence For Macor Parts
 
 Inspection should match the purpose of the part. A prototype fixture may only need key dimensions, while a vacuum or electrical component may need face-specific checks and documented edge criteria.
 
@@ -278,7 +278,7 @@ Inspection should match the purpose of the part. A prototype fixture may only ne
 
 For custom ceramic projects, inspection should be agreed before production. A supplier should not guess whether the buyer needs a basic dimensional report, CMM report, flatness map, surface finish reading, visual edge standard, or special cleaning confirmation.
 
-### RFQ Inputs For Macor Machinable Glass Ceramic Parts
+## RFQ Inputs For Macor Machinable Glass Ceramic Parts
 
 The best Macor RFQ is clear about design purpose. Send enough information for the supplier to review the material, geometry, machining route, inspection, and risk.
 
@@ -298,7 +298,7 @@ Include:
 
 The [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) can be used as a starting point for drawings and acceptance requirements.
 
-### Practical Takeaway
+## Practical Takeaway
 
 Macor machinable glass ceramic is valuable when the buyer needs a fast, ceramic-like, custom machined prototype or low-volume technical part with practical holes, pockets, threads, insulation function, or laboratory geometry. It is especially useful when the engineering team is still learning the shape.
 

@@ -26,6 +26,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      - run: npm run check:seo
+      - run: npm run check:links
+      - run: npm run check:public-leaks
       # - run: npm test
 
   check:

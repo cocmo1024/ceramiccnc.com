@@ -31,7 +31,7 @@ This article is a precision industrial ceramic machining case guide for sensor a
 
 **How should engineers define ceramic sensor parts so the supplier can review machining route, functional surfaces, cleanliness, and inspection before confirming feasibility, price, or schedule?**
 
-### What A Real Sensor-Component RFQ Identifies
+## What A Real Sensor-Component RFQ Identifies
 
 Sensor projects usually arrive as a defined component problem: a pressure-sensor ceramic body, alumina insulator, zirconia sleeve, ceramic flow cell, sensor housing, measurement spacer, AlN thermal spacer, guide pin, or analytical-instrument part. Each name points to different functional surfaces and acceptance risks.
 
@@ -39,7 +39,7 @@ There is also a current demand signal. [SEMI describes the MEMS and sensor marke
 
 Technical ceramic suppliers also treat sensing as a defined ceramic application area. [CoorsTek lists ceramic sensor components for pressure, temperature, capacitive, proximity, fluid, and custom sensing applications](https://www.coorstek.com/en/industries/auto-and-transportation/automotive/automotive-sensors/). [CeramTec describes advanced ceramic components for measurement and sensor applications in harsh industrial environments](https://www.ceramtec-industrial.com/en/measurement-sensors). The engineering task is to translate the application into RFQ language: which faces are functional, which holes are risk-bearing, which material properties matter, and which inspection records should be requested.
 
-### What Counts As A Sensor Or Measurement Ceramic Component
+## What Counts As A Sensor Or Measurement Ceramic Component
 
 A sensor ceramic component is any ceramic part that helps isolate, support, expose, protect, align, seal, guide, or thermally manage a measurement function. The ceramic may not be the sensing element itself. It may be the stable interface that lets the sensing element work repeatedly.
 
@@ -60,7 +60,7 @@ The same part may be easy in a general fixture and difficult in a measurement de
 
 When the part locates a lens barrel, aperture, fiber, detector, or laser subassembly, use the [machined ceramic components for optical and laser equipment guide](/posts/optical-laser-equipment/machined-ceramic-components-optical-laser-equipment/) to define the optical-axis reference, mounting boundary, clean handling, and customer-owned optical qualification.
 
-### Case Pattern: Ceramic Parts Around A Measurement Module
+## Case Pattern: Ceramic Parts Around A Measurement Module
 
 A practical RFQ case is a small ceramic component set for a pressure, flow, analytical, or industrial measurement module:
 
@@ -73,7 +73,7 @@ A practical RFQ case is a small ceramic component set for a pressure, flow, anal
 
 That component-level map leads directly to the RFQ. Buyers need to know what drawings must define, which surfaces should not be over-specified, and which acceptance checks make sense before the assembly is qualified.
 
-### Material Selection For Sensor And Measurement Parts
+## Material Selection For Sensor And Measurement Parts
 
 Material choice should start from the measurement environment. The right ceramic for an insulating spacer may not be the right ceramic for a sliding sleeve, thermal plate, or fluid-exposed insert.
 
@@ -88,7 +88,7 @@ Material choice should start from the measurement environment. The right ceramic
 
 If the customer already has a material callout, send the exact grade and certificate requirement. If the material is open, send the measurement failure mode: drift, leakage, wear, electrical breakdown, heat flow, chemical exposure, vibration, optical misalignment, or contamination.
 
-### Feature Controls That Matter More Than General Tolerance
+## Feature Controls That Matter More Than General Tolerance
 
 Sensor and measurement-device parts often fail because the drawing controls the wrong features tightly and leaves functional interfaces vague. The supplier should know which dimensions affect measurement performance and which dimensions are only clearance or packaging geometry.
 
@@ -108,7 +108,7 @@ Define these zones clearly:
 
 The phrase "tight tolerance" is not enough. A strong RFQ says, for example, which bore is the functional guide bore, which face is the sensing datum, which edge is exposed to fluid, and which surfaces can remain standard-ground or as-sintered.
 
-### Micro-Bores And Flow Paths Need Their Own Acceptance Logic
+## Micro-Bores And Flow Paths Need Their Own Acceptance Logic
 
 Ceramic flow cells, orifice inserts, sampling blocks, and purge components can overlap with [ceramic micro-hole machining](/posts/micro-hole-machining/ceramic-micro-hole-machining-rfq/) and [precision ceramic nozzles](/posts/semiconductor-equipment/precision-ceramic-nozzles-semiconductor-vacuum-equipment/). The sensor version adds a different question: does the feature support stable measurement, not just flow? When the component is a sample-wetted flow cell, restrictor, or insert for an analyzer, use the [ceramic fluid-path components for analytical instruments guide](/posts/analytical-instruments/ceramic-fluid-path-components-analytical-instruments/) to define media exposure, dead-volume boundaries, cleaning, blockage evidence, and customer-owned method performance.
 
@@ -123,7 +123,7 @@ Useful RFQ inputs include:
 
 Do not assume that a ceramic supplier can prove flow performance from drawing inspection alone. If the assembly depends on calibrated flow, define whether the supplier only provides machined geometry or also participates in a customer-approved flow check.
 
-### Thin Sections, Diaphragms, And Rings Need Stress Review
+## Thin Sections, Diaphragms, And Rings Need Stress Review
 
 Thin alumina diaphragms, ring features, pockets, and sensor windows need a separate stress and handling review. Ceramics do not yield like metals. A thin feature may machine cleanly but chip during handling, assembly, press-fit, thermal cycling, or screw loading.
 
@@ -138,7 +138,7 @@ Review:
 
 For sleeve-like sensor parts, use the [thin-wall ceramic sleeve RFQ guide](/posts/thin-wall-sleeves/ceramic-thin-wall-sleeve-bore-concentricity-rfq/) to define wall thickness, roundness, concentricity, and bore acceptance.
 
-### Thermal And Electrical Interfaces Should Be Separated
+## Thermal And Electrical Interfaces Should Be Separated
 
 Many sensor modules need electrical insulation and stable heat transfer at the same time. That does not mean one generic "insulating ceramic" solves both. Alumina may be a strong default for insulation and robust machining. AlN may be valuable when thermal conductivity matters. Zirconia may be chosen for wear and toughness rather than thermal performance. Si3N4 may support mechanical load better in selected designs.
 
@@ -152,7 +152,7 @@ The drawing should separate:
 
 If one surface must do several jobs, say so. That is where flatness, Ra, parallelism, edge quality, and inspection evidence become worth paying for. Use the [ceramic surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/) to protect the real measurement surface without over-specifying the entire drawing.
 
-### Cleaning And Packaging Affect Measurement Reliability
+## Cleaning And Packaging Affect Measurement Reliability
 
 Sensor parts can pass dimensional inspection and still create problems if abrasive dust, oil, lapping residue, edge chips, or packaging contact damages the functional surface. For clean analytical, medical, semiconductor-adjacent, or laboratory equipment, cleaning and packaging should be part of the RFQ.
 
@@ -168,7 +168,7 @@ Discuss:
 
 Packaging is not a cosmetic request. It protects the inspection state that the buyer paid for.
 
-### Inspection Evidence To Ask For
+## Inspection Evidence To Ask For
 
 The right inspection plan depends on part size, material, and risk. A reasonable sensor ceramic RFQ may request:
 
@@ -185,7 +185,7 @@ The right inspection plan depends on part size, material, and risk. A reasonable
 
 Not every project needs every report. The point is to align evidence with the measurement function. Over-inspection wastes cost; under-inspection pushes risk into assembly.
 
-### RFQ Checklist For Sensor Ceramic Parts
+## RFQ Checklist For Sensor Ceramic Parts
 
 Send these items before asking for price and lead time:
 
@@ -202,7 +202,7 @@ Send these items before asking for price and lead time:
 
 For early-stage drawings, use the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) before locking tolerances. For feature feasibility, use the [ceramic CNC design rules guide](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) and the [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/).
 
-### Practical Takeaway
+## Practical Takeaway
 
 Precision ceramic components for sensors and measurement devices are not bought like ordinary ceramic washers or blocks. They are bought as measurement-supporting interfaces. The valuable RFQ work is to define material, functional surfaces, micro-features, thermal and electrical roles, cleanliness, packaging, and inspection evidence before quotation.
 

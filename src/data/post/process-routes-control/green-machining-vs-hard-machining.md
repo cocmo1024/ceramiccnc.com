@@ -13,7 +13,7 @@ metadata:
 
 > A major cost lever in ceramic machining is often not cycle time. It is whether geometry is created before sintering, after sintering, or in a hybrid route with selected post-sinter finishing. For RFQs, this must be tied to the available blank or preform route rather than assumed.
 
-### What Green Machining Buys
+## What Green Machining Buys
 
 Green machining means machining the ceramic body before final firing. The material is softer, removal is easier, and complex geometry can be shaped at lower tool cost, but the route depends on blank supplier capability, shrinkage data, and post-sinter finishing allowances.
 
@@ -26,7 +26,7 @@ It is usually reviewed when:
 
 ![Green machining vs hard machining route choice](../../../assets/images/ceramic/posts/green-machining-vs-hard-machining-1.webp)
 
-### What Hard Machining Buys
+## What Hard Machining Buys
 
 Hard machining means machining or grinding after the ceramic has been fired. This route is slower and more expensive, but it creates precision after the dimensions are stable.
 
@@ -39,7 +39,7 @@ It is usually needed for:
 - Low Ra functional surfaces.
 - Features that must assemble without stress.
 
-### Route Comparison
+## Route Comparison
 
 | Route                   | Strength                                       | Weakness                                   |
 | ----------------------- | ---------------------------------------------- | ------------------------------------------ |
@@ -50,7 +50,7 @@ It is usually needed for:
 
 ![Ceramic process route tradeoffs](../../../assets/images/ceramic/posts/green-machining-vs-hard-machining-2.webp)
 
-### Hybrid Routes Are Often Practical
+## Hybrid Routes Are Often Practical
 
 Many successful ceramic programs use a preform or green-machined route for bulk geometry and post-sinter grinding only where function demands precision. That might mean:
 
@@ -61,7 +61,7 @@ Many successful ceramic programs use a preform or green-machined route for bulk 
 
 This route prevents procurement from paying for hard grinding on every surface, but it should be quoted only after material source, fired state, and finishing scope are clear.
 
-### Where Projects Go Wrong
+## Where Projects Go Wrong
 
 Projects fail when the RFQ does not specify route assumptions. A supplier may quote as-sintered surfaces while the drawing expects final grinding, or quote full hard machining when only a few interfaces require it.
 
@@ -75,7 +75,7 @@ Common warning signs:
 
 ![Ceramic route planning and inspection gates](../../../assets/images/ceramic/posts/green-machining-vs-hard-machining-3.webp)
 
-### Buying Guidance
+## Buying Guidance
 
 Before asking for price, decide:
 
@@ -87,14 +87,14 @@ Before asking for price, decide:
 
 ![Ceramic grinding route readiness](../../../assets/images/ceramic/posts/green-machining-vs-hard-machining-4.webp)
 
-### Related Guides
+## Related Guides
 
 - Use the [precision ceramic machining overview](/posts/industrial-ceramic-machining/precision-ceramic-machining-high-performance-industrial-components/) when route choice affects material, grinding, lapping, and inspection together.
 - Use the [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) when grade, blank state, or substitution options are still open.
 - Use the [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) when final datums, flatness, position, or bore relationships decide the process route.
 - Use the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) before sending a route-dependent quote request.
 
-### FAQ
+## FAQ
 
 **Is green machining less accurate?**  
 It can shape complex features efficiently, but final accuracy is limited by shrinkage and warpage unless selected features are finished after sintering.

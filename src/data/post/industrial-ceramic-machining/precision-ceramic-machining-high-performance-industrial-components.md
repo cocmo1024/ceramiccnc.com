@@ -23,7 +23,7 @@ The better question is:
 
 That question should drive the RFQ before price, lead time, or tolerance feasibility is confirmed.
 
-### What Precision Ceramic Machining Actually Includes
+## What Precision Ceramic Machining Actually Includes
 
 Precision ceramic machining can include several routes:
 
@@ -37,7 +37,7 @@ Precision ceramic machining can include several routes:
 
 Most high-performance ceramics cannot be treated like ordinary metal parts. Fired alumina, zirconia, silicon nitride, silicon carbide, and aluminum nitride usually need abrasive finishing or diamond grinding for tight requirements. Machinable ceramics such as MACOR and some boron nitride grades can support faster prototype machining, but they are not universal substitutes for sintered structural ceramics.
 
-### Materials Used For Industrial Ceramic Components
+## Materials Used For Industrial Ceramic Components
 
 The ceramic grade is not a minor purchasing detail. Material choice affects machinability, strength, chipping risk, finishability, cost, delivery timing, and inspection.
 
@@ -53,7 +53,7 @@ The ceramic grade is not a minor purchasing detail. Material choice affects mach
 
 If the exact grade is not fixed, send the failure mode and environment: temperature, wear, load, voltage, vacuum, media chemistry, thermal cycling, cleanliness, and inspection needs. The material decision should be reviewed against the part's job, not only a catalog property.
 
-### High-Performance Does Not Mean Tight Tolerance Everywhere
+## High-Performance Does Not Mean Tight Tolerance Everywhere
 
 Many ceramic drawings become expensive because every face receives a tight tolerance or low Ra note. That usually does not improve function.
 
@@ -73,7 +73,7 @@ For example, a ceramic spacer may need excellent length control and parallel end
 
 The RFQ should tell the supplier where precision creates value.
 
-### Design Rules That Reduce Machining Risk
+## Design Rules That Reduce Machining Risk
 
 Ceramics are strong in compression but vulnerable to tensile stress, sharp transitions, local flaws, and edge damage. Design decisions should reduce avoidable fracture risk.
 
@@ -90,7 +90,7 @@ Important design controls include:
 
 Use the [ceramic DFM design rules](/posts/design-rules-dfm/ceramic-dfm-design-rules/) when the part has holes, slots, thin walls, pockets, internal radii, or chip-sensitive edges.
 
-### Process Route: Green Machining, Fired Machining, Grinding, Lapping
+## Process Route: Green Machining, Fired Machining, Grinding, Lapping
 
 The process route should be selected after reviewing material, feature geometry, quantity, and acceptance criteria.
 
@@ -104,7 +104,7 @@ Lapping is used for precision flats and seal faces when flatness, parallelism, o
 
 For a deeper route comparison, see [green machining vs hard machining](/posts/process-routes-control/green-machining-vs-hard-machining/).
 
-### Tolerances, GD&T, And Measurement Method
+## Tolerances, GD&T, And Measurement Method
 
 Tolerance feasibility is not universal. It depends on material, size, geometry, datum strategy, process route, and measurement method.
 
@@ -119,7 +119,7 @@ Before specifying tight values, clarify:
 
 A drawing that calls out tight tolerances without stable datums often creates quote variance. The supplier may be forced to assume fixturing and inspection logic. Use the [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) to align feature type, route, and acceptance.
 
-### Surface Finish And Edge Quality
+## Surface Finish And Edge Quality
 
 Surface finish should be reviewed by function. A low Ra value may matter on seal lands, sliding surfaces, thermal interfaces, optical-adjacent contact areas, and vacuum sealing faces. It may not matter on an outside surface that only provides clearance.
 
@@ -135,7 +135,7 @@ Edges need the same discipline. In ceramics, edge break is not cosmetic. It can 
 
 Avoid ambiguous notes such as "no chips" or "sharp edge." Instead define critical zones, allowable chip size, inspection magnification, and whether edge rounding is acceptable. The [surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/) explains why finish requirements should be assigned by face.
 
-### Industrial Applications Where Precision Ceramics Fit
+## Industrial Applications Where Precision Ceramics Fit
 
 Precision ceramic machining is strongest when the part needs one or more of these functions:
 
@@ -151,7 +151,7 @@ Precision ceramic machining is strongest when the part needs one or more of thes
 
 The same material can serve different applications, but the drawing and acceptance gate must change with the function.
 
-### RFQ Inputs That Prevent Quote Variance
+## RFQ Inputs That Prevent Quote Variance
 
 Send the following before expecting a reliable quotation:
 
@@ -168,7 +168,7 @@ Send the following before expecting a reliable quotation:
 
 If you are not sure which ceramic material fits the application, start with the [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/). If the part is ready for quotation, use the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/).
 
-### Supplier Review Questions
+## Supplier Review Questions
 
 A good ceramic machining review should answer:
 
@@ -185,7 +185,7 @@ For procurement teams comparing suppliers, the [ceramic CNC machining buyer guid
 
 If those questions are not answered, the RFQ may still produce a number, but the number will include hidden assumptions.
 
-### Practical Takeaway
+## Practical Takeaway
 
 Precision ceramic machining works best when engineering, procurement, and the supplier review the part as a performance system: material, geometry, process route, surface integrity, inspection, and packaging. A high-performance ceramic component is not high-performance because every dimension is tight. It is high-performance because the right features are controlled, the right ceramic grade is selected, and the acceptance evidence matches the failure mode.
 

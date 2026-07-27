@@ -25,7 +25,7 @@ metadata:
 
 This guide is for engineers sourcing custom ceramic plates, carriers, spacers, window blanks, support blocks, or fixture components used in RF and microwave assemblies. It focuses on precision machining and acceptance to print. It does not claim to design or certify an RF circuit, antenna, resonator, metallization system, or finished electronic module.
 
-### Parts Covered by This Machining Scope
+## Parts Covered by This Machining Scope
 
 | Component family                         | Mechanical function                                                  | RFQ features that commonly matter                                               |
 | ---------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
@@ -38,7 +38,7 @@ This guide is for engineers sourcing custom ceramic plates, carriers, spacers, w
 
 If the requirement is a fully metallized circuit substrate, co-fired package, filter, antenna, or qualified microwave window, state which operations are customer-controlled and which are included in the ceramic machining scope.
 
-### Material Must Come From the RF Design
+## Material Must Come From the RF Design
 
 Do not select a ceramic grade from a generic property table alone. Dielectric constant, loss, temperature behavior, thermal conductivity, coefficient of thermal expansion, purity, surface condition, and metallization compatibility can all matter. Use the exact approved grade and its lot or certificate requirements when the electrical design is already qualified.
 
@@ -54,7 +54,7 @@ Kyocera identifies high-purity 99.6% alumina as an option for microwave integrat
 
 Use the [ceramic material selection guide](/posts/materials-grade-selection/ceramic-material-selection-cnc-machining/) for an early mechanical screening, then return to grade-specific electrical data before release.
 
-### Separate RF Performance From Machining Acceptance
+## Separate RF Performance From Machining Acceptance
 
 The most important scope decision is who owns each result.
 
@@ -75,31 +75,31 @@ The most important scope decision is who owns each result.
 
 Keeping this boundary explicit prevents a dimensionally acceptable ceramic blank from being treated as proof of final RF performance.
 
-### Dimensions That Usually Matter Most
+## Dimensions That Usually Matter Most
 
-#### Thickness and parallelism
+### Thickness and parallelism
 
 Thickness may be part of the electromagnetic design, the mechanical stack, or both. Specify nominal thickness, local tolerance, whether a map is required, and the relationship between opposite faces. A single corner measurement may not prove a large plate.
 
-#### Flatness and support condition
+### Flatness and support condition
 
 Flatness can affect bonding, clamping, thermal contact, assembly gaps, and conductor processing. State whether the plate is measured free-state, on a reference surface, or in a customer fixture. Define the usable area and any excluded edge band.
 
-#### Hole, slot, and pocket position
+### Hole, slot, and pocket position
 
 Mounting holes, vias, feedthrough openings, device pockets, and tuning-access features should reference stable datums. State diameter, depth, taper, entry and exit condition, internal radius, hole-to-edge distance, and inspection method.
 
-#### Surface finish
+### Surface finish
 
 Tie finish to the operation that follows. A face prepared for thin-film processing, bonding, metallization, thermal contact, or sealing may need different control from a clearance surface. Do not specify "polish all over" unless the complete surface is functional.
 
-#### Edge condition
+### Edge condition
 
 RF plates are vulnerable at corners, hole exits, slots, and thin sections. Define a controlled edge break and zone-based chip criteria. An undefined sharp edge is both a handling risk and an unreliable inspection requirement.
 
 For feature-specific process planning, use the [ceramic tolerance capability map](/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process/) and [surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/).
 
-### Choosing the Machining Sequence
+## Choosing the Machining Sequence
 
 The sequence depends on blank state, geometry, quantity, and downstream processing.
 
@@ -113,7 +113,7 @@ The sequence depends on blank state, geometry, quantity, and downstream processi
 
 If metallization is already present, provide keep-out zones, allowable contact surfaces, masking, coolant restrictions, and cosmetic/functional damage criteria. If metallization is downstream, identify the surface preparation and packaging condition required by that process owner.
 
-### DFM Questions for Ceramic RF Plates
+## DFM Questions for Ceramic RF Plates
 
 Review these before releasing the drawing:
 
@@ -128,7 +128,7 @@ Review these before releasing the drawing:
 
 The [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-machining-design-rules-advanced-ceramic-parts/) cover corner radii, thin walls, holes, pockets, and edge distances in more detail.
 
-### Inspection Evidence to Request
+## Inspection Evidence to Request
 
 | Requirement                | Evidence to discuss                                                       |
 | -------------------------- | ------------------------------------------------------------------------- |
@@ -142,7 +142,7 @@ The [ceramic CNC machining design rules](/posts/design-rules-dfm/ceramic-cnc-mac
 
 Electrical characterization should be specified separately if it is required. Do not assume a standard dimensional report includes dielectric, RF, metallization, adhesion, leak, or thermal testing.
 
-### Quote-Ready RF and Microwave Ceramic Plate RFQ
+## Quote-Ready RF and Microwave Ceramic Plate RFQ
 
 Send:
 
@@ -158,7 +158,7 @@ Send:
 
 The [alumina electrical-insulator guide](/posts/electrical-insulation/alumina-ceramic-insulators-electrical-electronic-applications/) is useful for creepage, bore, and mounting geometry. For heat-spreading plates, use the [AlN machining guide](/posts/industrial-ceramic-machining/aluminum-nitride-ceramic-machining-thermal-management-components/) and [AlN heat-spreader guide](/posts/power-electronics/aluminum-nitride-heat-spreaders-power-electronics/). Submit a controlled drawing package through the [technical RFQ page](/rfq/).
 
-### Common Questions
+## Common Questions
 
 **Which ceramic is best for RF and microwave plates?**
 There is no universal best material. The electrical design must select an exact grade from dielectric, loss, thermal, mechanical, metallization, environment, availability, and qualification requirements.
@@ -175,7 +175,7 @@ Sometimes, but the sequence needs review. Existing metallization can be damaged 
 **What should be sent for a first review?**
 Send the drawing, CAD, exact material grade, blank or metallization status, quantity, functional faces, critical dimensions, surface and edge requirements, downstream process, and inspection needs.
 
-### Technical References
+## Technical References
 
 - [Kyocera: high-purity alumina microwave integrated-circuit substrates](https://global.kyocera.com/prdct/semicon/search_application/detail/mic_substrate.html)
 - [CoorsTek: thin-film and thick-film electronic ceramic substrates](https://www.coorstek.com/media/4297/electronic-substrates-overview-thin-film-thick-film-ceramic-substrates.pdf)

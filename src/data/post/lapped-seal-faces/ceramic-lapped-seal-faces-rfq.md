@@ -21,7 +21,7 @@ The useful first question is:
 
 If the answer is unclear, the quote may focus on cosmetic polish instead of functional flatness, edge quality, and surface integrity.
 
-### Seal Face RFQs Are Not Generic Surface Finish RFQs
+## Seal Face RFQs Are Not Generic Surface Finish RFQs
 
 Ceramic surface finish has already been covered at a broad level in the [surface finish and SSD guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/). Seal faces need a narrower RFQ logic because the cost and risk sit on a specific interface.
 
@@ -37,7 +37,7 @@ Seal faces may require:
 
 A drawing that only says "Ra 0.2 all over" does not tell the supplier which surface is actually responsible for sealing.
 
-### Define The Seal Type First
+## Define The Seal Type First
 
 Different sealing methods need different machining language.
 
@@ -52,7 +52,7 @@ Different sealing methods need different machining language.
 
 The same ceramic part can have several surface classes. Mark the seal face clearly.
 
-### RFQ Inputs That Change Cost
+## RFQ Inputs That Change Cost
 
 | Input                | Why it matters                                                                 |
 | -------------------- | ------------------------------------------------------------------------------ |
@@ -68,7 +68,7 @@ The same ceramic part can have several surface classes. Mark the seal face clear
 
 Send the mating requirement if possible. A ceramic land that seals against elastomer does not need the same specification as a ceramic valve seat or a vacuum metal gasket interface.
 
-### Flatness, Parallelism, And Surface Texture
+## Flatness, Parallelism, And Surface Texture
 
 Do not specify these as separate numbers without a function. A seal face may need:
 
@@ -81,7 +81,7 @@ Do not specify these as separate numbers without a function. A seal face may nee
 
 If the part is clamped, state the clamping method and load direction if known. If the seal is static, dynamic, vacuum, fluid, or gas, say so.
 
-### Edge Break Is Not A Cosmetic Detail
+## Edge Break Is Not A Cosmetic Detail
 
 Sharp ceramic edges can chip during handling or assembly. But too much chamfer near a seal line can reduce contact width or create a leak path.
 
@@ -95,7 +95,7 @@ Specify:
 
 This is especially important for valve seats, thin rings, O-ring lands, and vacuum gasket faces.
 
-### Inspection And Acceptance
+## Inspection And Acceptance
 
 Match evidence to function:
 
@@ -111,7 +111,7 @@ Match evidence to function:
 
 Do not request a leak test without defining pressure, medium, fixture, or acceptance. If the customer will test in its own assembly, state that and ask for machining and inspection evidence that supports the test.
 
-### Common RFQ Mistakes
+## Common RFQ Mistakes
 
 Avoid:
 
@@ -124,7 +124,7 @@ Avoid:
 - Asking for "no scratches" without defining the seal path and visual standard.
 - Treating MACOR prototype finish as equivalent to production alumina, SiC, or Si3N4 behavior.
 
-### Practical RFQ Checklist
+## Practical RFQ Checklist
 
 Send:
 

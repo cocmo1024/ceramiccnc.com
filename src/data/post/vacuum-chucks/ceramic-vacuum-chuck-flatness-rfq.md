@@ -23,7 +23,7 @@ The useful first question is:
 
 If that question is not answered, the supplier can machine a plate that matches the visible geometry but still fails the fixture.
 
-### Why This Needs A Dedicated RFQ
+## Why This Needs A Dedicated RFQ
 
 Existing ceramic articles cover semiconductor equipment and micro-holes, but vacuum chucks combine several risks in one part:
 
@@ -36,7 +36,7 @@ Existing ceramic articles cover semiconductor equipment and micro-holes, but vac
 
 That is why a vacuum chuck should not be quoted from a STEP file alone if the functional surface is critical.
 
-### RFQ Inputs That Matter
+## RFQ Inputs That Matter
 
 | RFQ input           | Why it matters                                                                      |
 | ------------------- | ----------------------------------------------------------------------------------- |
@@ -52,7 +52,7 @@ That is why a vacuum chuck should not be quoted from a STEP file alone if the fu
 
 If the chuck supports a wafer, disk, sensor, or fragile part, include the supported diameter and allowable contact marks. The machining quote should reflect how the surface will be judged.
 
-### Flatness Must Be Defined By Support Condition
+## Flatness Must Be Defined By Support Condition
 
 Flatness is often the controlling cost driver. But "flatness 0.005 mm" is incomplete if the support condition is not defined.
 
@@ -67,7 +67,7 @@ Clarify:
 
 A large ceramic surface can pass one measurement setup and fail another. The RFQ should state the acceptance method, not only the number.
 
-### Hole Fields, Grooves, And Porous Surfaces
+## Hole Fields, Grooves, And Porous Surfaces
 
 Vacuum chucks can use drilled holes, micro-hole arrays, grooves, channels, porous material, or a combination. These features change the route.
 
@@ -90,7 +90,7 @@ For porous ceramics, specify:
 
 Do not treat a porous chuck like a dense alumina plate with drilled holes. The acceptance logic is different.
 
-### Surface Finish And Edge Condition
+## Surface Finish And Edge Condition
 
 The working face may need lapping or controlled grinding, but not every face should receive the same finish. A useful drawing separates:
 
@@ -103,7 +103,7 @@ The working face may need lapping or controlled grinding, but not every face sho
 
 For the contact face, state Ra, flatness, chip limit, edge break, cleaning, and whether polishing is allowed. For vacuum grooves, state corner condition and acceptable breakout. For holes, state whether entry rounding is acceptable or whether sharp edges must be protected.
 
-### Inspection Options
+## Inspection Options
 
 Match inspection to the risk:
 
@@ -118,7 +118,7 @@ Match inspection to the risk:
 
 Full inspection of every hole may be unnecessary for some fixtures and essential for others. The RFQ should explain the failure mode.
 
-### Common RFQ Mistakes
+## Common RFQ Mistakes
 
 Avoid:
 
@@ -130,7 +130,7 @@ Avoid:
 - Applying a global Ra note to all faces.
 - Requesting a vacuum test without pressure target, fixture, or acceptance limit.
 
-### Practical RFQ Checklist
+## Practical RFQ Checklist
 
 Send:
 

@@ -18,7 +18,7 @@ Advanced ceramics are selected for insulation, wear resistance, thermal stabilit
 
 This guide helps engineering and procurement teams prepare better RFQs for ceramic CNC machining and diamond grinding. For the broader process context, pair it with the [precision ceramic machining overview](/posts/industrial-ceramic-machining/precision-ceramic-machining-high-performance-industrial-components/).
 
-### Select by Failure Mode First
+## Select by Failure Mode First
 
 Start by naming the problem the ceramic part must solve.
 
@@ -34,7 +34,7 @@ Start by naming the problem the ceramic part must solve.
 
 The correct material depends on geometry and acceptance. A thin-wall SiC part with sharp slots is a different RFQ from a simple SiC ring. A zirconia seal ring is different from a zirconia threaded part with high clamping load.
 
-### Material Families and RFQ Risk
+## Material Families and RFQ Risk
 
 Use this as a starting map, not as a final material decision.
 
@@ -51,7 +51,7 @@ Use this as a starting map, not as a final material decision.
 
 If the RFQ only says "ceramic," the quote cannot be precise. If it says "99.5% alumina, fired plate, finished faces A and B, Ra requirement on face A only," review becomes much clearer.
 
-### Blank State Can Matter as Much as Material
+## Blank State Can Matter as Much as Material
 
 Two parts with the same finished drawing can have different risks depending on the blank.
 
@@ -66,7 +66,7 @@ Common blank questions:
 
 For some drawings, a hybrid route is practical: rough features in green state, then post-sinter grinding or lapping on functional surfaces. For others, hard machining from fired stock is more predictable. The [green machining vs hard machining guide](/posts/process-routes-control/green-machining-vs-hard-machining/) explains this route choice in more detail.
 
-### Match Material to Feature Geometry
+## Match Material to Feature Geometry
 
 Material selection cannot be separated from features.
 
@@ -81,7 +81,7 @@ Material selection cannot be separated from features.
 
 A material may be correct for the environment but difficult for the geometry. That is why ceramic material review and DFM review should happen together. Use the [ceramic DFM design rules](/posts/design-rules-dfm/ceramic-dfm-design-rules/) before locking a material around sharp corners, thin walls, or dense micro-features.
 
-### Surface Finish and Tolerance Should Influence Material Choice
+## Surface Finish and Tolerance Should Influence Material Choice
 
 Low Ra, flatness, and tight tolerance requirements do not affect all ceramics equally. Harder materials may require more grinding time and wheel control. Tougher materials may reduce some chipping risk but still require careful finishing. Machinable ceramics can support rapid iteration but may not meet high wear, temperature, or strength requirements.
 
@@ -96,7 +96,7 @@ Before choosing a grade, ask:
 
 For surface-specific guidance, see the [surface finish and subsurface damage guide](/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price/).
 
-### Common Material Selection Mistakes
+## Common Material Selection Mistakes
 
 Avoid these patterns:
 
@@ -110,7 +110,7 @@ Avoid these patterns:
 
 Material substitution should be treated as an engineering change, not a purchasing shortcut.
 
-### What to Send When the Grade Is Unknown
+## What to Send When the Grade Is Unknown
 
 If the exact grade is not known, send application information:
 
@@ -125,7 +125,7 @@ If the exact grade is not known, send application information:
 
 This lets the supplier review possible material families before quoting. It does not replace customer qualification or final design responsibility, but it reduces blind assumptions.
 
-### RFQ Material Checklist
+## RFQ Material Checklist
 
 Use this material section in a ceramic machining RFQ:
 
@@ -145,7 +145,7 @@ Previous sample or existing supplier route:
 
 For complete RFQ preparation, combine this with the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/) and the [materials overview](/materials/). When material selection is controlled by dielectric and high-frequency performance, continue with the [RF and microwave ceramic plate guide](/posts/rf-microwave/machined-ceramic-plates-rf-microwave-applications/) and keep electrical validation separate from machining acceptance.
 
-### FAQ
+## FAQ
 
 **Is alumina always the safest first choice?**  
 No. Alumina is common and cost-effective, but the correct grade depends on purity, geometry, finish, wear mode, insulation need, and acceptance requirements.
