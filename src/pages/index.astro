@@ -1,331 +1,925 @@
 ---
+import { Icon } from 'astro-icon/components';
+
 import Layout from '~/layouts/PageLayout.astro';
+import Image from '~/components/common/Image.astro';
+import RfqForm from '~/components/forms/RfqForm.astro';
+import Button from '~/components/ui/Button.astro';
+import heroImage from '~/assets/images/ceramic/hero-ceramic-cnc.webp';
+import partsImage from '~/assets/images/ceramic/application-1.webp';
+import rodImage from '~/assets/images/ceramic/application-2.webp';
+import fluidControlImage from '~/assets/images/ceramic/application-3.webp';
+import semiconductorImage from '~/assets/images/ceramic/application-4.webp';
+import processImage from '~/assets/images/ceramic/application-5.webp';
+import aluminaImage from '~/assets/images/ceramic/application-6.webp';
+import zirconiaImage from '~/assets/images/ceramic/application-7.webp';
+import siliconNitrideImage from '~/assets/images/ceramic/application-8.webp';
+import formingImage from '~/assets/images/ceramic/application-9.webp';
+import grindingImage from '~/assets/images/ceramic/application-10.webp';
+import lappingImage from '~/assets/images/ceramic/application-11.webp';
+import inspectionImage from '~/assets/images/ceramic/application-12.webp';
+import packagingImage from '~/assets/images/ceramic/application-13.webp';
+import routeStudyImage from '~/assets/images/ceramic/application-14.webp';
+import featureStudyImage from '~/assets/images/ceramic/application-15.webp';
+import { ceramicProductCategoryCount } from '~/data/ceramic-catalog';
+import { createCeramicServiceSchema, createItemListSchema } from '~/utils/structured-data';
 
-import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Features3 from '~/components/widgets/Features3.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import SplitShowcase from '~/components/widgets/SplitShowcase.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
-import { ceramicApplications, ceramicCapabilities, ceramicFaqItems, rfqEmail, rfqEmailHref } from '~/data/ceramic';
-import { createCeramicServiceSchema, createFAQPageSchema, createItemListSchema } from '~/utils/structured-data';
-
-const sectionContainerClass = 'py-10 md:py-12 lg:py-14';
-
-const featuredApplications = ceramicApplications.slice(0, 6);
-const applicationShowcases = featuredApplications.map((item, index) => ({
-  imagePosition: index % 2 === 0 ? ('left' as const) : ('right' as const),
-  image: {
-    src: item.image,
-    alt: item.alt,
-  },
-  title: item.title,
-  description: item.description,
-  points: [
-    ...item.points,
-    {
-      title: 'RFQ next step',
-      description:
-        'Send drawing, STEP file, material grade, quantity, critical datums, surface finish, and inspection needs.',
-      callToAction: { text: 'Open application details', href: `/applications/#${item.id}` },
-    },
-  ],
-}));
-
-const requirementShowcases = [
-  {
-    imagePosition: 'left' as const,
-    image: {
-      src: '~/assets/images/ceramic/application-6.webp',
-      alt: 'Precision ceramic flatness, lapping, and inspection planning',
-    },
-    title: 'From drawing review to ceramic quotation',
-    description:
-      'Simple ceramic parts may need only a basic review before quotation. Precision parts need material grade, datums, surface requirements, and inspection evidence checked first.',
-    points: [
-      {
-        title: 'Material and grade',
-        description:
-          'Al2O3, ZrO2, Si3N4, SiC, MACOR, AlN, BN, fused silica, and selected technical ceramics are reviewed against the operating requirement.',
-      },
-      {
-        title: 'Feature and finishing limits',
-        description:
-          'Thin walls, slots, micro-holes, ground faces, lapping allowance, edge condition, and surface finish targets affect feasibility and cost.',
-      },
-      {
-        title: 'Inspection needs',
-        description:
-          'CMM, optical checks, profile, flatness mapping, Ra, material certificate availability, and key-dimension reports are considered when required.',
-      },
-      {
-        title: 'Clarification when needed',
-        description:
-          'If datums, grade, edge quality, or inspection expectations are unclear, we ask before quoting rather than assuming a risky ceramic route.',
-        callToAction: {
-          text: 'Ceramic RFQ checklist',
-          href: '/rfq/',
-        },
-      },
-    ],
-  },
-];
+const whatsappHref =
+  'https://wa.me/8615301541312?text=Hello%2C%20I%20would%20like%20to%20discuss%20a%20precision%20ceramic%20project.';
 
 const metadata = {
-  title: 'Custom Ceramic CNC Machining Service | Precision Ceramic Parts',
+  title: 'Precision Ceramic Manufacturing | Custom Ceramic Parts',
   ignoreTitleTemplate: true,
   description:
-    'Custom precision ceramic CNC machining, diamond grinding, lapping, micro-drilling, and inspection-aware RFQ review for alumina, zirconia, Si3N4, SiC, and Macor parts.',
+    'Custom precision ceramic manufacturing, CNC machining, diamond grinding, lapping, inspection planning, and secure CAD quotation for advanced ceramic parts.',
   openGraph: {
     images: [
       {
         url: '~/assets/images/ceramic/hero-ceramic-cnc.webp',
         width: 1200,
         height: 628,
+        alt: 'Precision machined advanced ceramic components',
       },
     ],
     type: 'website',
   },
   structuredData: [
     createCeramicServiceSchema(),
-    createItemListSchema(
-      'Selected engineering-critical ceramic machining application cases',
-      featuredApplications.map((item) => ({
-        name: item.title,
-        description: item.description,
-        url: `/applications/#${item.id}`,
-      }))
-    ),
-    createFAQPageSchema(ceramicFaqItems.slice(0, 10)),
+    createItemListSchema('Precision ceramic manufacturing service scope', [
+      {
+        name: 'Ceramic material and process-route review',
+        description:
+          'Material-grade review, forming-route selection, machining access, finishing, and acceptance planning.',
+        url: '/#process-route-support',
+      },
+      {
+        name: 'Custom ceramic product families',
+        description: 'Twenty-three product categories organized for engineering and procurement review.',
+        url: '/products/',
+      },
+      {
+        name: 'Ceramic CNC machining and finishing',
+        description: 'Diamond grinding, honing, lapping, polishing, microfeatures, and inspection-aware finishing.',
+        url: '/capabilities/',
+      },
+      {
+        name: 'Precision ceramic quotation',
+        description:
+          'Secure submission of CAD, material, quantity, critical features, finishing, and inspection scope.',
+        url: '/rfq/',
+      },
+    ]),
   ],
 };
+
+const serviceScope = [
+  {
+    title: 'Material and route review',
+    description:
+      'Review the ceramic family, grade, blank route, geometry, datums, critical features, and acceptance risk.',
+    icon: 'tabler:ruler-measure',
+  },
+  {
+    title: 'Forming and sintering',
+    description:
+      'Match pressing, injection molding, or sourced blanks to geometry, quantity, and material requirements.',
+    icon: 'tabler:hexagon',
+  },
+  {
+    title: 'Precision machining',
+    description: 'Plan CNC machining, diamond grinding, honing, lapping, polishing, slots, holes, and edge conditions.',
+    icon: 'tabler:tool',
+  },
+  {
+    title: 'Inspection and delivery',
+    description: 'Agree dimensional, surface, profile, interface, cleaning, packaging, and document requirements.',
+    icon: 'tabler:microscope',
+  },
+];
+
+const applicationCapabilities = [
+  {
+    title: 'Precision shapes',
+    description: 'Rods, tubes, rings, shafts, sleeves, plates, pins, gauges, plungers, and structural parts.',
+    icon: 'tabler:components',
+  },
+  {
+    title: 'Fluid control and dosing',
+    description: 'Pump, plunger, filling, dispensing-valve, seal, nozzle, and corrosive-fluid components.',
+    icon: 'tabler:droplet',
+  },
+  {
+    title: 'Semiconductor and vacuum',
+    description: 'Vacuum pickup, wafer-handling, laser, chamber, electrical-insulation, and fixture components.',
+    icon: 'tabler:cpu',
+  },
+  {
+    title: 'Automation and wear',
+    description: 'Locating, guiding, sliding, wear-resistant, insulating, and precision automation components.',
+    icon: 'tabler:settings',
+  },
+  {
+    title: 'Medical and food equipment',
+    description: 'Drawing-controlled ceramic parts reviewed for functional surfaces, cleaning, and packaging needs.',
+    icon: 'tabler:stethoscope',
+  },
+  {
+    title: 'Electrical and high-temperature',
+    description: 'Insulators, substrates, thermal parts, laser hardware, and structures for demanding environments.',
+    icon: 'tabler:flame',
+  },
+];
+
+const materialRoutes = [
+  {
+    name: 'Alumina and ZTA',
+    description: 'Broad structural, wear, electrical-insulation, fixture, and fluid-control applications by grade.',
+    image: aluminaImage,
+    alt: 'Precision alumina and zirconia-toughened alumina ceramic parts',
+  },
+  {
+    name: 'Zirconia systems',
+    description: 'Yttria-, ceria-, or magnesia-stabilized routes reviewed against strength, wear, and environment.',
+    image: zirconiaImage,
+    alt: 'Precision zirconia ceramic components',
+  },
+  {
+    name: 'Si3N4 and specialty ceramics',
+    description: 'Silicon nitride, SiC, AlN, BN, MACOR, and fused silica for requirement-specific applications.',
+    image: siliconNitrideImage,
+    alt: 'Silicon nitride and specialty technical ceramic parts',
+  },
+];
+
+const thermalDesignSteps = [
+  {
+    number: '01',
+    title: 'Define the function',
+    description:
+      'Map loads, wear, fluid, vacuum, electrical, thermal, temperature, cleanliness, and interface requirements.',
+  },
+  {
+    number: '02',
+    title: 'Compare material routes',
+    description:
+      'Assess ceramic family, grade, blank availability, forming route, machining state, and production volume.',
+  },
+  {
+    number: '03',
+    title: 'Review manufacturability',
+    description:
+      'Balance walls, bores, slots, edges, tolerance stack-up, grinding access, lapping stock, and handling risk.',
+  },
+  {
+    number: '04',
+    title: 'Lock acceptance',
+    description:
+      'Define the drawing revision, datums, CTQs, surface criteria, inspection evidence, cleaning, and packaging scope.',
+  },
+];
+
+const thermalDesignInputs = [
+  'Part function, operating environment, and failure mode',
+  'Material family, grade, or property priorities',
+  'Drawing, CAD, datums, GD&T, and critical surfaces',
+  'Starting blank, quantity, timing, and repeat-volume outlook',
+  'Inspection evidence, cleaning, packaging, and documentation',
+];
+
+const thermalDesignEvidence = [
+  {
+    image: routeStudyImage,
+    imageClass: 'object-cover',
+    alt: 'Ceramic product and process route review',
+    label: 'Route review | blank to finished part',
+    title: 'Screen the material and blank route',
+    description:
+      'A material name alone does not define the route. Grade, blank condition, shrinkage state, stock, geometry, and volume must be checked together.',
+  },
+  {
+    image: featureStudyImage,
+    imageClass: 'object-cover',
+    alt: 'Precision ceramic feature and datum review',
+    label: 'Feature review | datums and CTQs',
+    title: 'Protect the function-critical geometry',
+    description:
+      'Separate functional surfaces from general geometry so grinding access, edge protection, tolerance stack-up, and inspection effort go where they matter.',
+  },
+  {
+    image: inspectionImage,
+    imageClass: 'object-cover',
+    alt: 'Inspection planning for precision ceramic components',
+    label: 'Acceptance review | measurement evidence',
+    title: 'Plan evidence before production',
+    description:
+      'Match CMM, optical, profile, flatness, Ra, visual, and document requirements to the drawing before quotation and production release.',
+  },
+];
+
+const productionEnvelopes = [
+  {
+    label: 'Forming',
+    value: 'Pressing / injection / sourced blank',
+    image: formingImage,
+    alt: 'Ceramic forming and blank route planning',
+  },
+  {
+    label: 'Machining',
+    value: 'CNC / diamond grinding / cutting',
+    image: grindingImage,
+    alt: 'Precision ceramic CNC machining and diamond grinding',
+  },
+  {
+    label: 'Surface finishing',
+    value: 'Honing / lapping / polishing',
+    image: lappingImage,
+    alt: 'Ceramic honing, lapping, and polishing',
+  },
+  {
+    label: 'Inspection',
+    value: 'Dimensional / optical / profile / Ra',
+    image: inspectionImage,
+    alt: 'Precision ceramic component inspection',
+  },
+  {
+    label: 'Delivery control',
+    value: 'Cleaning / protection / packaging',
+    image: packagingImage,
+    alt: 'Clean and protective packaging for ceramic parts',
+  },
+];
+
+const processSteps = [
+  {
+    number: '01',
+    title: 'Define the requirement',
+    description:
+      'Send CAD or drawing, part function, material or property priorities, quantity, interfaces, and acceptance needs.',
+  },
+  {
+    number: '02',
+    title: 'Lock the route',
+    description:
+      'Review material grade, blank or forming route, machining sequence, CTQs, finishing, inspection, and handling risk.',
+  },
+  {
+    number: '03',
+    title: 'Form, machine, and finish',
+    description:
+      'The part moves through the agreed ceramic route, precision machining, grinding, lapping, polishing, or honing.',
+  },
+  {
+    number: '04',
+    title: 'Inspect and deliver',
+    description:
+      'Inspection evidence is produced against the agreed scope before cleaning, protective packaging, and delivery.',
+  },
+];
+
+const applicationExamples = [
+  {
+    image: rodImage,
+    alt: 'Precision ceramic rods, tubes, rings, shafts, sleeves, and pins',
+    title: 'Rods, tubes, rings, and sleeves',
+    description: 'Drawing-controlled cylindrical parts with bores, shoulders, fits, and functional surfaces.',
+    className: 'lg:col-span-7',
+  },
+  {
+    image: fluidControlImage,
+    alt: 'Ceramic pump, plunger, dosing, valve, seal, and nozzle components',
+    title: 'Fluid-control components',
+    description: 'Plungers, pump parts, dosing parts, valve components, seals, and nozzles.',
+    className: 'lg:col-span-5',
+  },
+  {
+    image: semiconductorImage,
+    alt: 'Ceramic vacuum, semiconductor, laser, and automation components',
+    title: 'Vacuum and semiconductor hardware',
+    description: 'Vacuum pickup, wafer handling, laser, chamber, fixture, and insulation components.',
+    className: 'lg:col-span-5',
+  },
+  {
+    image: partsImage,
+    alt: 'Custom precision ceramic structural parts',
+    title: 'Custom structural ceramic parts',
+    description: 'Plates, sheets, gauges, pins, injection-molded parts, and drawing-specific shapes.',
+    className: 'lg:col-span-7',
+  },
+];
 ---
 
 <Layout metadata={metadata}>
-  <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Email technical RFQ',
-        href: rfqEmailHref,
-        icon: 'tabler:mail',
-      },
-      { text: 'Browse Engineering Guide', href: '/category/engineering-guide/' },
-    ]}
-    image={{
-      src: '~/assets/images/ceramic/hero-ceramic-cnc.webp',
-      alt: 'Precision ceramic CNC machining, grinding, and micro-drilling parts',
-      class:
-        'mx-auto w-full drop-shadow-[0_18px_30px_rgba(15,23,42,0.14)] dark:drop-shadow-[0_22px_36px_rgba(148,163,184,0.12)]',
-    }}
-  >
-    <Fragment slot="title">
-      Custom ceramic CNC machining for <span class="text-accent dark:text-white"
-        >precision ceramic parts, measurable surfaces, and RFQ review</span
-      >
-    </Fragment>
+  <section class="relative overflow-hidden border-b border-page-border bg-surface">
+    <div
+      class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_72%_38%,rgba(47,143,168,0.18),transparent_34%),linear-gradient(to_bottom,transparent,rgba(0,0,0,0.08))]"
+      aria-hidden="true"
+    >
+    </div>
 
-    <Fragment slot="subtitle">
-      For engineering and procurement teams sourcing custom advanced ceramic parts. We review precision ceramic
-      machining constraints, critical datums, surface requirements, and inspection evidence before quotation.
-    </Fragment>
+    <div
+      class="relative mx-auto grid min-h-[650px] max-w-5xl items-center gap-12 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-[0.96fr_1.04fr] lg:gap-14"
+    >
+      <div class="max-w-[37rem]">
+        <p class="flex items-center gap-3 text-xs font-semibold text-accent sm:text-sm">
+          <span class="h-2 w-2 rounded-full bg-accent shadow-[0_0_18px_rgba(194,104,58,0.9)]"></span>
+          Precision ceramic manufacturing | Engineering review
+        </p>
+        <h1 class="mt-5 font-heading text-4xl font-bold leading-[1.08] tracking-[-0.025em] text-heading sm:text-5xl">
+          Precision ceramic parts built around function and acceptance
+        </h1>
+        <p class="mt-7 max-w-xl text-base leading-7 text-muted sm:text-lg">
+          We support custom advanced ceramic parts from material and process-route review through precision machining,
+          finishing, inspection, and protective delivery. Send the available drawing package for a scoped engineering
+          review.
+        </p>
 
-    <Fragment slot="content">
-      <p class="mt-4 text-sm text-muted dark:text-slate-300">
-        Send drawing + STEP + material grade + quantity to{' '}
-        <a class="font-semibold underline underline-offset-4" href={rfqEmailHref}>{rfqEmail}</a>.
-      </p>
-    </Fragment>
-  </Hero>
-
-  <Note
-    title="RFQ checklist:"
-    description="Include material grade, blank or sourcing requirement, drawing and STEP, datums, GD&T, quantity, target lead time, surface finish or flatness targets, critical edges, and required evidence such as CMM, profile, Ra, optical checks, or key-dimension reports."
-  />
-
-  <section class:list={['relative not-prose', sectionContainerClass]}>
-    <div class="mx-auto max-w-5xl px-4 sm:px-6">
-      <div class="grid gap-6 md:grid-cols-2">
-        <div class="surface-panel p-6">
-          <p class="text-xs font-semibold uppercase tracking-[0.12em] text-secondary">Good fit</p>
-          <h2 class="mt-3 text-2xl font-semibold tracking-tight dark:text-white">
-            Custom ceramic machining is worth reviewing when interfaces and acceptance are measurable.
-          </h2>
-          <ul class="mt-4 space-y-2 text-muted dark:text-slate-300">
-            <li>Seal faces, bores, datum pads, flatness, parallelism, edge quality, or Ra drive performance.</li>
-            <li>
-              The part uses advanced ceramics for wear, insulation, vacuum, thermal, chemical, or semiconductor service.
-            </li>
-            <li>Inspection evidence must align to drawing acceptance before procurement releases the order.</li>
-          </ul>
+        <div class="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <Button
+            variant="primary"
+            text="Send drawing or CAD"
+            href="#rfq-form"
+            icon="tabler:file-upload"
+            class="w-full justify-center px-5 py-3 sm:w-auto"
+            data-aw-cta-location="homepage_hero"
+          />
+          <Button
+            variant="secondary"
+            text="Discuss on WhatsApp"
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            icon="tabler:brand-whatsapp"
+            class="w-full justify-center px-5 py-3 sm:w-auto"
+            data-aw-instant-contact-link
+            data-aw-contact-channel="whatsapp"
+            data-aw-cta-location="homepage_hero"
+          />
         </div>
-        <div class="surface-panel p-6">
-          <p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500 dark:text-slate-400">
-            Usually not ready
-          </p>
-          <h2 class="mt-3 text-2xl font-semibold tracking-tight dark:text-white">
-            Undefined precision creates quote variance and scrap risk.
+        <p class="mt-3 text-sm leading-6 text-muted">
+          Prefer email?
+          <button
+            class="font-semibold text-link hover:underline"
+            type="button"
+            data-aw-copy-email="info@szcomo.com"
+            data-aw-cta-location="homepage_hero"
+          >
+            Copy info@szcomo.com
+          </button>
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm leading-6 text-muted">
+          <span class="inline-flex items-center gap-2">
+            <Icon name="tabler:check" class="h-4 w-4 text-accent" />
+            23 ceramic product categories
+          </span>
+          <span class="inline-flex items-center gap-2">
+            <Icon name="tabler:check" class="h-4 w-4 text-accent" />
+            Prototype and production
+          </span>
+          <span class="inline-flex items-center gap-2">
+            <Icon name="tabler:check" class="h-4 w-4 text-accent" />
+            Finished-part delivery
+          </span>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div
+          class="relative overflow-hidden rounded-xl border border-page-border bg-page/70 p-4 shadow-[0_28px_80px_rgba(0,0,0,0.28)] sm:p-7"
+        >
+          <div
+            class="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:32px_32px]"
+            aria-hidden="true"
+          >
+          </div>
+          <Image
+            src={heroImage}
+            alt="Precision machined advanced ceramic components"
+            class="relative h-auto w-full object-contain"
+            style="object-fit: contain;"
+            widths={[480, 640, 960, 1280]}
+            sizes="(max-width: 1023px) calc(100vw - 3rem), 480px"
+            width={2048}
+            height={1152}
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+
+        <div
+          class="relative -mt-6 ml-4 grid max-w-[92%] grid-cols-3 divide-x divide-page-border rounded-md border border-page-border bg-surface/95 shadow-panel backdrop-blur sm:ml-8"
+        >
+          <div class="px-3 py-4 sm:px-4">
+            <p class="text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-muted">Process</p>
+            <p class="mt-1 text-sm font-semibold leading-5 text-heading">Form · machine · finish</p>
+          </div>
+          <div class="px-3 py-4 sm:px-4">
+            <p class="text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-muted">Materials</p>
+            <p class="mt-1 text-sm font-semibold leading-5 text-heading">Al2O3 · ZrO2 · Si3N4</p>
+          </div>
+          <div class="px-3 py-4 sm:px-4">
+            <p class="text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-muted">Output</p>
+            <p class="mt-1 text-sm font-semibold leading-5 text-heading">Inspected parts</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-b border-page-border bg-page">
+    <div
+      class="mx-auto grid max-w-5xl divide-y divide-page-border px-4 sm:grid-cols-3 sm:divide-x sm:divide-y-0 sm:px-6"
+    >
+      <div class="py-6 sm:pr-8">
+        <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent">Service</p>
+        <p class="mt-2 font-semibold text-heading">Custom ceramic production</p>
+      </div>
+      <div class="py-6 sm:px-8">
+        <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent">Scope</p>
+        <p class="mt-2 font-semibold text-heading">Form · machine · inspect</p>
+      </div>
+      <div class="py-6 sm:pl-8">
+        <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent">Start</p>
+        <p class="mt-2 font-semibold text-heading">Drawing and requirement review</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-page py-16 sm:py-24" aria-labelledby="who-we-are">
+    <div class="mx-auto grid max-w-5xl gap-12 px-4 sm:px-6 lg:grid-cols-[0.82fr_1.18fr] lg:gap-16">
+      <div>
+        <p class="text-sm font-semibold text-accent">01 | Who we are</p>
+        <h2
+          id="who-we-are"
+          class="mt-3 scroll-mt-24 font-heading text-3xl font-bold leading-tight tracking-[-0.02em] text-heading sm:text-4xl"
+        >
+          A ceramic manufacturing service built around finished parts
+        </h2>
+        <p class="mt-6 text-base leading-7 text-muted">
+          CERAMIC CNC is the precision ceramic manufacturing service of Suzhou Como Precision Materials Co., Ltd. We
+          review the drawing, define the route, manufacture the part, complete finishing, and supply the agreed
+          evidence.
+        </p>
+        <p class="mt-4 text-base leading-7 text-muted">
+          The engineering discussion stays focused on the part: function, geometry, material state, downstream
+          operations, acceptance evidence, quantity, and timing.
+        </p>
+        <a class="mt-7 inline-flex items-center gap-2 font-semibold text-link hover:underline" href="#rfq-form">
+          Send your drawing
+          <Icon name="tabler:arrow-down" class="h-4 w-4" />
+        </a>
+      </div>
+
+      <div class="grid border-t border-page-border sm:grid-cols-2">
+        {
+          serviceScope.map((item) => (
+            <article class="border-b border-page-border py-7 sm:odd:pr-7 sm:even:border-l sm:even:pl-7">
+              <div class="flex h-10 w-10 items-center justify-center rounded-md border border-page-border bg-surface">
+                <Icon name={item.icon} class="h-5 w-5 text-accent" />
+              </div>
+              <h3 class="mt-5 font-heading text-lg font-semibold text-heading">{item.title}</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">{item.description}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="border-y border-page-border bg-surface py-16 sm:py-24" aria-labelledby="what-we-make">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6">
+      <div class="grid gap-7 lg:grid-cols-[0.82fr_1.18fr] lg:items-end lg:gap-16">
+        <div>
+          <p class="text-sm font-semibold text-accent">02 | What we make</p>
+          <h2
+            id="what-we-make"
+            class="mt-3 scroll-mt-24 font-heading text-3xl font-bold leading-tight tracking-[-0.02em] text-heading sm:text-4xl"
+          >
+            {ceramicProductCategoryCount} product categories for precision, fluid, vacuum, and automation systems
           </h2>
-          <ul class="mt-4 space-y-2 text-muted dark:text-slate-300">
-            <li>All faces are marked tight without identifying the function-critical surfaces.</li>
-            <li>Datums, edge condition, surface finish, and inspection method are missing or implied.</li>
-            <li>
-              The application needs metal-like ductility, impact tolerance, or uninspectable sharp internal geometry.
+        </div>
+        <p class="text-base leading-7 text-muted">
+          The catalogue covers drawing-specific shapes, cylindrical parts, pump and valve components, semiconductor and
+          vacuum hardware, wear parts, and material-led ceramic components.
+        </p>
+      </div>
+
+      <div
+        class="mt-12 grid gap-px overflow-hidden rounded-md border border-page-border bg-page-border sm:grid-cols-2 lg:grid-cols-3"
+      >
+        {
+          applicationCapabilities.map((item) => (
+            <article class="bg-page p-6 sm:p-8">
+              <span class="flex h-11 w-11 items-center justify-center rounded-md border border-page-border bg-surface">
+                <Icon name={item.icon} class="h-5 w-5 text-accent" />
+              </span>
+              <h3 class="mt-7 font-heading text-xl font-semibold text-heading">{item.title}</h3>
+              <p class="mt-3 max-w-md text-sm leading-6 text-muted">{item.description}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="border-b border-page-border bg-page py-16 sm:py-24" aria-labelledby="process-route-support">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6">
+      <div class="grid gap-7 lg:grid-cols-[0.82fr_1.18fr] lg:items-end lg:gap-16">
+        <div>
+          <p class="text-sm font-semibold text-accent">03 | Process-route support</p>
+          <h2
+            id="process-route-support"
+            class="mt-3 scroll-mt-24 font-heading text-3xl font-bold leading-tight tracking-[-0.02em] text-heading sm:text-4xl"
+          >
+            From functional requirements to a manufacturable ceramic route
+          </h2>
+        </div>
+        <div class="space-y-4 text-base leading-7 text-muted">
+          <p>
+            A project can start with finished CAD or with a drawing and functional requirements. We connect material
+            family, grade, blank or forming route, machining sequence, finishing, and acceptance evidence.
+          </p>
+          <p>
+            Tight tolerances are project-specific. Applying them everywhere can increase cost and fracture risk without
+            improving function, so CTQs and datum relationships are reviewed first.
+          </p>
+        </div>
+      </div>
+
+      <ol class="mt-12 grid border-y border-page-border sm:grid-cols-2 lg:grid-cols-4">
+        {
+          thermalDesignSteps.map((item) => (
+            <li class="border-b border-page-border py-7 sm:px-6 sm:odd:pl-0 sm:even:border-l lg:border-b-0 lg:border-l lg:px-6 lg:[&:nth-child(3)]:!pl-6 lg:first:border-l-0 lg:first:pl-0 lg:last:pr-0">
+              <span class="font-mono text-sm font-semibold text-accent">{item.number}</span>
+              <h3 class="mt-4 font-heading text-lg font-semibold text-heading">{item.title}</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">{item.description}</p>
             </li>
+          ))
+        }
+      </ol>
+
+      <div class="mt-12 border-t border-page-border pt-8">
+        <div class="max-w-3xl">
+          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent">
+            Route, feature control, and evidence
+          </p>
+          <h3 class="mt-3 font-heading text-2xl font-bold text-heading">
+            Three gates before the ceramic route is frozen
+          </h3>
+          <p class="mt-3 text-sm leading-6 text-muted">
+            Ceramic performance depends on the material state, feature geometry, surface condition, and acceptance
+            method. The route is valuable only when those variables are tied to the actual operating requirement.
+          </p>
+        </div>
+
+        <div class="mt-8 grid gap-7 lg:grid-cols-3">
+          {
+            thermalDesignEvidence.map((item) => (
+              <figure class="group border-t border-page-border pt-5">
+                <div class="overflow-hidden rounded-lg border border-page-border bg-surface">
+                  <Image
+                    src={item.image}
+                    alt={item.alt}
+                    class={`aspect-[16/10] w-full ${item.imageClass}`}
+                    widths={[480, 720, 960]}
+                    sizes="(max-width: 1023px) calc(100vw - 2rem), 320px"
+                    width={960}
+                    height={600}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <figcaption class="mt-5">
+                  <p class="text-xs font-semibold uppercase tracking-[0.12em] text-accent">{item.label}</p>
+                  <h4 class="mt-2 font-heading text-xl font-semibold text-heading">{item.title}</h4>
+                  <p class="mt-2 text-sm leading-6 text-muted">{item.description}</p>
+                </figcaption>
+              </figure>
+            ))
+          }
+        </div>
+      </div>
+
+      <div
+        class="mt-10 grid gap-8 rounded-md border border-page-border bg-surface p-6 sm:p-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-12"
+      >
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent">Two valid starting points</p>
+          <h3 class="mt-3 font-heading text-2xl font-bold text-heading">
+            Bring CAD or bring the functional requirements
+          </h3>
+          <p class="mt-3 text-sm leading-6 text-muted">
+            Existing CAD moves into ceramic DFM and production review. An early requirement brief starts with material,
+            blank, feature, and acceptance choices before the prototype route is agreed.
+          </p>
+          <Button
+            variant="primary"
+            text="Send requirements or CAD"
+            href="#rfq-form"
+            icon="tabler:arrow-down"
+            class="mt-6 justify-center px-5 py-3"
+          />
+        </div>
+
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Useful design inputs</p>
+          <ul class="mt-4 grid gap-3 sm:grid-cols-2">
+            {
+              thermalDesignInputs.map((item) => (
+                <li class="flex gap-3 text-sm leading-6 text-muted">
+                  <Icon name="tabler:check" class="mt-1 h-4 w-4 shrink-0 text-accent" />
+                  <span>{item}</span>
+                </li>
+              ))
+            }
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <Features3
-    title="What to send for review"
-    subtitle="A simple drawing may be enough to start review. Complex ceramic parts need clearer material, feature, and inspection requirements before price or schedule are confirmed."
-    columns={3}
-    classes={{
-      container: sectionContainerClass,
-      items: {
-        container: 'gap-x-12',
-        panel: 'max-w-none',
-      },
-    }}
-    items={[
-      {
-        title: 'Drawing package',
-        description:
-          'STEP, IGES, native CAD, or drawings with key dimensions, datum faces, bores, slots, holes, and critical surfaces.',
-        icon: 'tabler:search',
-      },
-      {
-        title: 'Quantity and timing',
-        description:
-          'Prototype quantity, batch size, target delivery date, material grade, and any purchasing or project constraints.',
-        icon: 'tabler:file-description',
-      },
-      {
-        title: 'Special requirements',
-        description:
-          'Surface finish, flatness, lapping, edge condition, micro-features, CMM, optical or Ra evidence, CoC, or material certificate when they matter and are available.',
-        icon: 'tabler:clipboard-check',
-      },
-    ]}
-  />
+  <section id="production-capability" class="scroll-mt-20 bg-page py-16 sm:py-24" aria-labelledby="how-we-make">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <p class="text-sm font-semibold text-accent">04 | Production capability</p>
+        <h2
+          id="how-we-make"
+          class="mt-3 scroll-mt-24 font-heading text-3xl font-bold leading-tight tracking-[-0.02em] text-heading sm:text-4xl"
+        >
+          Manufacturing and finishing matched to your drawing
+        </h2>
+        <p class="mt-5 text-base leading-7 text-muted">
+          The drawing determines the ceramic family, grade, blank route, machining sequence, critical surfaces, and
+          inspection method. The quotation records the scoped route selected for that part.
+        </p>
+      </div>
 
-  <SplitShowcase
-    id="applications"
-    tagline="Application hubs"
-    title="Selected engineering-critical ceramic machining use cases"
-    subtitle="A focused set of common RFQ patterns. The full applications page keeps the deeper review list for buyers who need more detail."
-    items={applicationShowcases}
-    classes={{ container: sectionContainerClass }}
-  />
+      <figure class="mt-12">
+        <div class="overflow-hidden rounded-xl border border-page-border bg-surface shadow-panel">
+          <Image
+            src={processImage}
+            alt="Precision ceramic manufacturing, machining, finishing, and inspection"
+            class="aspect-video w-full object-cover"
+            widths={[640, 960, 1280]}
+            sizes="(max-width: 1023px) calc(100vw - 2rem), 1024px"
+            width={1280}
+            height={720}
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <figcaption class="mt-4 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <span class="text-xs leading-5 text-muted">
+            Route selection, precision finishing, inspection planning, and finished-part delivery.
+          </span>
+          <Button
+            variant="primary"
+            text="Send your drawing for review"
+            href="#rfq-form"
+            icon="tabler:file-upload"
+            class="shrink-0 justify-center px-5 py-3"
+          />
+        </figcaption>
+      </figure>
 
-  <SplitShowcase
-    tagline="Feasibility first"
-    title="Review ceramic machining from the actual requirement"
-    items={requirementShowcases}
-    classes={{ container: sectionContainerClass }}
-  />
+      <div class="mt-8 grid gap-px overflow-hidden rounded-md border border-page-border bg-page-border sm:grid-cols-3">
+        <div class="bg-surface p-6">
+          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent">Product scope</p>
+          <p class="mt-2 font-heading text-2xl font-semibold text-heading">{ceramicProductCategoryCount} categories</p>
+          <p class="mt-2 text-sm leading-6 text-muted">
+            One catalogue covering precision, fluid, vacuum, and automation parts.
+          </p>
+        </div>
+        <div class="bg-surface p-6">
+          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent">Manufacturing routes</p>
+          <p class="mt-2 font-heading text-2xl font-semibold text-heading">Form to finish</p>
+          <p class="mt-2 text-sm leading-6 text-muted">
+            Blank selection, CNC, grinding, honing, lapping, and polishing.
+          </p>
+        </div>
+        <div class="bg-surface p-6">
+          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent">Acceptance</p>
+          <p class="mt-2 font-heading text-2xl font-semibold text-heading">Drawing-led review</p>
+          <p class="mt-2 text-sm leading-6 text-muted">
+            Final feasibility depends on grade, geometry, CTQs, and evidence.
+          </p>
+        </div>
+      </div>
 
-  <Steps
-    title="Simple RFQ flow"
-    subtitle="A ceramic RFQ can be evaluated properly when the drawing, material route, and acceptance gate are clear."
-    isReversed={true}
-    classes={{
-      container: sectionContainerClass,
-      items: {
-        title: 'text-lg font-semibold leading-6',
-        description: 'text-sm leading-6',
-        icon: 'h-9 w-9',
-      },
-    }}
-    items={[
-      {
-        title: 'Step 1: <span class="font-medium">Send geometry</span>',
-        description: 'Share drawing, STEP or IGES, revision, material grade, target quantity, and lead time.',
-        icon: 'tabler:file-3d',
-      },
-      {
-        title: 'Step 2: <span class="font-medium">Mark functional requirements</span>',
-        description: 'Identify datums, seal faces, bores, micro-holes, thin walls, edges, Ra, flatness, and CTQs.',
-        icon: 'tabler:gauge',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Select inspection evidence</span>',
-        description:
-          'State whether CMM, optical, profile, surface finish, flatness mapping, special inspection, or key-dimension reports are required.',
-        icon: 'tabler:clipboard-check',
-      },
-      {
-        title: 'Step 4: <span class="font-medium">Quote or clarify</span>',
-        description:
-          'After review, we respond with feasibility notes, route assumptions, quotation details, or focused clarification questions.',
-        icon: 'tabler:check',
-      },
-    ]}
-    image={{
-      src: '~/assets/images/ceramic/application-9.webp',
-      alt: 'Ceramic RFQ review and inspection planning workflow',
-    }}
-  />
+      <div class="mt-16 grid gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:gap-16">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent">Material families</p>
+          <h3 class="mt-3 font-heading text-2xl font-bold text-heading">
+            Materials selected for the finished-part requirement
+          </h3>
+          <p class="mt-4 text-sm leading-6 text-muted">
+            Strength, wear, temperature, electrical, thermal, chemical, purity, and acceptance priorities are reviewed
+            together. The named ceramic family is only one input to the finished-part route.
+          </p>
+          <a class="mt-6 inline-flex items-center gap-2 font-semibold text-link hover:underline" href="#rfq-form">
+            Check your material and part
+            <Icon name="tabler:arrow-down" class="h-4 w-4" />
+          </a>
+        </div>
 
-  <Features2
-    title="What we review before quoting"
-    subtitle="The review depth depends on material, feature risk, tolerance stack-up, and required evidence."
-    tagline="Engineering review"
-    classes={{ container: sectionContainerClass }}
-    items={ceramicCapabilities}
-  />
+        <div class="grid gap-5 sm:grid-cols-3">
+          {
+            materialRoutes.map((item) => (
+              <article class="grid grid-cols-[5.5rem_1fr] gap-4 border-t border-page-border pt-5 sm:block">
+                <div class="overflow-hidden rounded-md border border-page-border bg-surface">
+                  <Image
+                    src={item.image}
+                    alt={item.alt}
+                    class="aspect-square w-full object-cover sm:aspect-[4/3]"
+                    widths={[240, 360, 480]}
+                    sizes="(max-width: 639px) 88px, 210px"
+                    width={480}
+                    height={360}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-heading text-base font-semibold text-heading sm:mt-4">{item.name}</h4>
+                  <p class="mt-2 text-sm leading-6 text-muted">{item.description}</p>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </div>
 
-  <BlogLatestPosts
-    title="Engineering resources"
-    information="Use these notes to prepare RFQs for tolerance capability, surface finish, DFM rules, green versus hard machining, and diamond grinding procurement."
-    classes={{ container: sectionContainerClass }}
-  />
+      <div class="mt-16 border-t border-page-border pt-8">
+        <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent">Route coverage</p>
+            <h3 class="mt-2 font-heading text-2xl font-bold text-heading">
+              From blank selection to protected delivery
+            </h3>
+          </div>
+          <p class="max-w-lg text-sm leading-6 text-muted">
+            The final route is confirmed after material grade, blank state, geometry, quantity, CTQs, inspection, and
+            packaging requirements are reviewed.
+          </p>
+        </div>
 
-  <FAQs
-    title="Frequently asked questions"
-    subtitle="Common questions before quoting precision ceramic CNC machining and grinding projects."
-    tagline="FAQs"
-    classes={{ container: sectionContainerClass }}
-    items={ceramicFaqItems.slice(0, 10)}
-  />
+        <dl class="mt-8 grid border-y border-page-border sm:grid-cols-2 lg:grid-cols-5">
+          {
+            productionEnvelopes.map((item) => (
+              <div class="border-b border-page-border py-5 text-center sm:px-5 sm:even:border-l lg:border-b-0 lg:border-l lg:px-5 lg:first:border-l-0">
+                <div class="mb-5 aspect-[4/3] overflow-hidden rounded-md border border-page-border bg-white lg:mx-auto lg:w-full lg:max-w-[9.5rem]">
+                  <Image
+                    src={item.image}
+                    alt={item.alt}
+                    class="h-full w-full object-contain p-2"
+                    style="object-fit: contain;"
+                    widths={[240, 360, 480]}
+                    sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 1023px) 50vw, 200px"
+                    width={480}
+                    height={360}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <dt class="text-xs font-semibold uppercase tracking-[0.12em] text-muted">{item.label}</dt>
+                <dd class="mt-2 text-sm font-semibold leading-6 text-heading">{item.value}</dd>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+    </div>
+  </section>
 
-  <Stats
-    classes={{ container: sectionContainerClass }}
-    stats={[
-      { title: 'Application use cases', amount: '16' },
-      { title: 'Core ceramic families', amount: '6+' },
-      { title: 'Inspection methods', amount: 'CMM / optical / Ra' },
-      { title: 'RFQ principle', amount: 'Review first' },
-    ]}
-  />
+  <section class="border-y border-page-border bg-surface py-16 sm:py-24" aria-labelledby="how-we-work">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6">
+      <div class="grid gap-7 lg:grid-cols-[0.82fr_1.18fr] lg:items-end lg:gap-16">
+        <div>
+          <p class="text-sm font-semibold text-accent">05 | How we work</p>
+          <h2
+            id="how-we-work"
+            class="mt-3 scroll-mt-24 font-heading text-3xl font-bold leading-tight tracking-[-0.02em] text-heading sm:text-4xl"
+          >
+            One route from requirements to delivered part
+          </h2>
+        </div>
+        <p class="text-base leading-7 text-muted">
+          The process is locked around the agreed inputs, drawing, and acceptance criteria, so material, forming,
+          machining, finishing, inspection, and quotation describe the same deliverable.
+        </p>
+      </div>
 
-  <CallToAction
-    classes={{ container: sectionContainerClass }}
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Email info@szcomo.com',
-        href: rfqEmailHref,
-        icon: 'tabler:mail',
-      },
-      {
-        text: 'Prepare RFQ inputs',
-        href: '/rfq/',
-      },
-    ]}
+      <ol class="mt-12 grid border-y border-page-border sm:grid-cols-2 lg:grid-cols-4">
+        {
+          processSteps.map((item) => (
+            <li class="border-b border-page-border py-7 sm:px-6 sm:odd:pl-0 sm:even:border-l lg:border-b-0 lg:border-l lg:px-6 lg:[&:nth-child(3)]:!pl-6 lg:first:border-l-0 lg:first:pl-0 lg:last:pr-0">
+              <span class="font-mono text-sm font-semibold text-accent">{item.number}</span>
+              <h3 class="mt-4 font-heading text-lg font-semibold text-heading">{item.title}</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">{item.description}</p>
+            </li>
+          ))
+        }
+      </ol>
+
+      <div
+        class="mt-10 flex flex-col gap-6 rounded-md border border-page-border bg-page p-6 sm:p-8 lg:flex-row lg:items-center lg:justify-between"
+      >
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent">Engineering review</p>
+          <h3 class="mt-2 font-heading text-2xl font-bold text-heading">Start with CAD or a clear ceramic brief</h3>
+          <p class="mt-2 max-w-2xl text-sm leading-6 text-muted">
+            Add quantity, target timing, material or property priorities, operating conditions, and the requirements
+            that cannot be compromised.
+          </p>
+        </div>
+        <Button
+          variant="primary"
+          text="Send CAD or drawing"
+          href="#rfq-form"
+          icon="tabler:arrow-down"
+          class="shrink-0 justify-center px-5 py-3"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-page py-16 sm:py-24" aria-labelledby="applications-and-cases">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <p class="text-sm font-semibold text-accent">06 | Parts and applications</p>
+        <h2
+          id="applications-and-cases"
+          class="mt-3 scroll-mt-24 font-heading text-3xl font-bold leading-tight tracking-[-0.02em] text-heading sm:text-4xl"
+        >
+          Ceramic geometry organized around the job
+        </h2>
+        <p class="mt-5 text-base leading-7 text-muted">
+          These part forms summarize the most common RFQ patterns. The full catalogue organizes all
+          {ceramicProductCategoryCount} engineering product categories in one decision-focused view.
+        </p>
+      </div>
+
+      <div class="mt-12 grid gap-7 lg:grid-cols-12">
+        {
+          applicationExamples.map((item) => (
+            <figure class:list={[item.className, 'group border-t border-page-border pt-5']}>
+              <div class="overflow-hidden rounded-lg border border-page-border bg-surface">
+                <Image
+                  src={item.image}
+                  alt={item.alt}
+                  class="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-[1.015]"
+                  widths={[480, 720, 960, 1280]}
+                  sizes="(max-width: 1023px) calc(100vw - 2rem), 560px"
+                  width={960}
+                  height={600}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <figcaption class="mt-5">
+                <h3 class="font-heading text-xl font-semibold text-heading">{item.title}</h3>
+                <p class="mt-2 text-sm leading-6 text-muted">{item.description}</p>
+              </figcaption>
+            </figure>
+          ))
+        }
+      </div>
+
+      <div class="mt-12 border-t border-page-border pt-7">
+        <Button
+          variant="primary"
+          text="Have a similar part? Upload CAD for review"
+          href="#rfq-form"
+          icon="tabler:file-upload"
+          class="justify-center px-5 py-3"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section
+    id="quote-and-lead-time"
+    class="scroll-mt-20 border-t border-page-border bg-surface py-14 sm:py-18"
+    aria-labelledby="start-a-project"
   >
-    <Fragment slot="title">Send CAD for ceramic feasibility and quotation review.</Fragment>
+    <div class="mx-auto grid max-w-5xl gap-7 px-4 sm:px-6 lg:grid-cols-[0.82fr_1.18fr] lg:items-end lg:gap-16">
+      <div>
+        <p class="text-sm font-semibold text-accent">07 | Start a project</p>
+        <h2
+          id="start-a-project"
+          class="mt-3 font-heading text-3xl font-bold leading-tight tracking-[-0.02em] text-heading sm:text-4xl"
+        >
+          Send CAD or ceramic requirements for engineering review
+        </h2>
+      </div>
+      <p class="text-base leading-7 text-muted">
+        Submit what is already known. If CAD is not yet available, provide the part function, operating environment,
+        material or property priorities, available envelope, and interfaces. Quantity, inspection, packaging, and target
+        timing help us return a clear scope.
+      </p>
+    </div>
+  </section>
 
-    <Fragment slot="subtitle">
-      Include drawing + STEP + material grade + blank or sourcing requirement + quantity + target lead time + critical
-      dimensions, datums, surface finish or flatness targets, and inspection evidence required for acceptance. We review
-      these inputs before confirming feasibility, price, or schedule.
-    </Fragment>
-  </CallToAction>
+  <RfqForm />
 </Layout>

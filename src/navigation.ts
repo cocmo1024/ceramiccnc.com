@@ -1,148 +1,72 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
-import { rfqEmailHref } from './data/ceramic';
+import { getPermalink, getBlogPermalink } from './utils/permalinks';
 
+const rfqFormHref = '/rfq/#rfq-form';
+const rfqEmailHref = 'mailto:info@szcomo.com';
+const whatsappHref =
+  'https://wa.me/8615301541312?text=Hello%2C%20I%20would%20like%20to%20discuss%20a%20precision%20ceramic%20project.';
 const currentYear = new Date().getFullYear();
 
 export const headerData = {
   links: [
     {
+      text: 'Products',
+      href: getPermalink('/products'),
+    },
+    {
       text: 'Applications',
-      links: [
-        {
-          text: 'Applications overview',
-          href: getPermalink('/applications'),
-        },
-        {
-          text: 'Semiconductor ceramics',
-          href: getPermalink('/applications/semiconductor-ceramic-components'),
-        },
-        {
-          text: 'Electrical and thermal ceramics',
-          href: getPermalink('/applications/electrical-thermal-ceramic-components'),
-        },
-        {
-          text: 'Wear and fluid-control ceramics',
-          href: getPermalink('/applications/wear-fluid-control-ceramic-components'),
-        },
-        {
-          text: 'Automation and vacuum ceramics',
-          href: getPermalink('/applications/automation-vacuum-ceramic-components'),
-        },
-      ],
+      href: getPermalink('/applications'),
     },
     {
       text: 'Capabilities',
-      href: getPermalink('/capabilities'),
-    },
-    {
-      text: 'Materials',
-      href: getPermalink('/materials'),
-    },
-    {
-      text: 'Engineering',
       links: [
-        {
-          text: 'Engineering Guide',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Tolerance capability map',
-          href: getPermalink('/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process'),
-        },
-        {
-          text: 'DFM design rules',
-          href: getPermalink('/posts/design-rules-dfm/ceramic-dfm-design-rules'),
-        },
-        {
-          text: 'Material selection',
-          href: getPermalink('/posts/materials-grade-selection/ceramic-material-selection-cnc-machining'),
-        },
-        {
-          text: 'RFQ checklist',
-          href: getPermalink('/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist'),
-        },
+        { text: 'Ceramic manufacturing capabilities', href: getPermalink('/capabilities') },
+        { text: 'Ceramic materials', href: getPermalink('/materials') },
+        { text: 'Application review', href: getPermalink('/applications') },
+        { text: 'Quotation checklist', href: getPermalink('/rfq') },
       ],
     },
     {
-      text: 'RFQ',
-      href: getPermalink('/rfq'),
-    },
-    {
-      text: 'Contact',
-      href: getPermalink('/contact'),
+      text: 'Engineering Guides',
+      href: getBlogPermalink(),
     },
   ],
-  actions: [{ text: 'Email RFQ', href: rfqEmailHref, title: 'Email info@szcomo.com' }],
+  actions: [{ text: 'Submit RFQ', href: rfqFormHref, title: 'Submit CAD files and ceramic quotation requirements' }],
 };
 
 export const footerData = {
   links: [
     {
-      title: 'Applications',
+      title: 'Plan a project',
       links: [
-        { text: 'Applications overview', href: getPermalink('/applications') },
+        { text: 'Product catalogue', href: getPermalink('/products') },
+        { text: 'Application guide', href: getPermalink('/applications') },
+        { text: 'Manufacturing capabilities', href: getPermalink('/capabilities') },
+        { text: 'Ceramic materials', href: getPermalink('/materials') },
+        { text: 'Quotation checklist', href: getPermalink('/rfq') },
+      ],
+    },
+    {
+      title: 'Product families',
+      links: [
+        { text: 'Precision shapes', href: getPermalink('/products') + '#precision-shapes' },
+        { text: 'Fluid-control ceramics', href: getPermalink('/products') + '#fluid-control' },
+        { text: 'Automation and electronics', href: getPermalink('/products') + '#automation-electronics' },
+        { text: 'Material-led components', href: getPermalink('/products') + '#material-led' },
+        { text: 'Semiconductor ceramics', href: getPermalink('/applications/semiconductor-ceramic-components') },
         {
-          text: 'Semiconductor ceramics',
-          href: getPermalink('/applications/semiconductor-ceramic-components'),
-        },
-        {
-          text: 'Electrical and thermal ceramics',
-          href: getPermalink('/applications/electrical-thermal-ceramic-components'),
-        },
-        {
-          text: 'Wear and fluid-control ceramics',
+          text: 'Wear and fluid-control parts',
           href: getPermalink('/applications/wear-fluid-control-ceramic-components'),
         },
-        {
-          text: 'Automation and vacuum ceramics',
-          href: getPermalink('/applications/automation-vacuum-ceramic-components'),
-        },
       ],
     },
     {
-      title: 'Engineering',
+      title: 'Company & resources',
       links: [
-        { text: 'Capabilities', href: getPermalink('/capabilities') },
-        { text: 'Materials', href: getPermalink('/materials') },
-        { text: 'Engineering Guide', href: getBlogPermalink() },
-        {
-          text: 'Tolerance map',
-          href: getPermalink('/posts/tolerances-gdt/ceramic-tolerance-capability-map-by-feature-process'),
-        },
-        {
-          text: 'Surface finish and subsurface damage',
-          href: getPermalink('/posts/surface-finish-functional/ceramic-ssd-surface-finish-specify-control-price'),
-        },
-        {
-          text: 'DFM design rules',
-          href: getPermalink('/posts/design-rules-dfm/ceramic-dfm-design-rules'),
-        },
-        {
-          text: 'Material selection guide',
-          href: getPermalink('/posts/materials-grade-selection/ceramic-material-selection-cnc-machining'),
-        },
-        {
-          text: 'RFQ checklist',
-          href: getPermalink('/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist'),
-        },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: getPermalink('/about') },
+        { text: 'Engineering Guides', href: getBlogPermalink() },
+        { text: 'About CERAMIC CNC', href: getPermalink('/about') },
         { text: 'Contact', href: getPermalink('/contact') },
         { text: 'FAQ', href: getPermalink('/faq') },
-        { text: 'Privacy', href: getPermalink('/privacy') },
-        { text: 'Terms', href: getPermalink('/terms') },
-      ],
-    },
-    {
-      title: 'Related sites',
-      links: [
-        { text: 'Como Precision', href: 'https://szcomo.com/' },
-        { text: 'Copper 3D Printing', href: 'https://copper3dp.com/' },
-        { text: 'Titanium Alloy AM', href: 'https://titanium3dp.com/' },
+        { text: 'Como Precision', href: 'https://www.szcomo.com/' },
       ],
     },
   ],
@@ -152,9 +76,13 @@ export const footerData = {
   ],
   socialLinks: [
     { ariaLabel: 'Email', icon: 'tabler:mail', href: rfqEmailHref },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
+    {
+      ariaLabel: 'WhatsApp',
+      icon: 'tabler:brand-whatsapp',
+      href: whatsappHref,
+    },
   ],
   footNote: `
-    &copy; ${currentYear} CERAMIC CNC - Suzhou Como Precision Materials Co., Ltd. - All rights reserved.
+    &copy; ${currentYear} CERAMIC CNC &middot; Suzhou Como Precision Materials Co., Ltd.
   `,
 };

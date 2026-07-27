@@ -69,82 +69,134 @@ import { UI } from 'astrowind:config';
       }
     }
 
-    function readStoredAttribution() {
+    const attributionStorageKey = 'ceramiccnc_attribution';
+    const attributionTtlMs = 90 * 24 * 60 * 60 * 1000;
+
+    function getAvailableAttributionStorage() {
+      const storageCandidates = [];
       try {
-        return JSON.parse(sessionStorage.getItem('ceramiccnc_attribution') || '{}');
+        storageCandidates.push(localStorage);
       } catch {
-        return {};
+        // Browser privacy settings may block local storage.
       }
+      try {
+        storageCandidates.push(sessionStorage);
+      } catch {
+        // Browser privacy settings may block session storage.
+      }
+      return storageCandidates;
+    }
+
+    function readStoredAttribution() {
+      for (const storage of getAvailableAttributionStorage()) {
+        try {
+          const attribution = JSON.parse(storage.getItem(attributionStorageKey) || '{}');
+          if (attribution.expires_at && Number(attribution.expires_at) < Date.now()) {
+            storage.removeItem(attributionStorageKey);
+            continue;
+          }
+          if (Object.keys(attribution).length) return attribution;
+        } catch {
+          // Try the next storage option when browser privacy settings block one.
+        }
+      }
+
+      return {};
+    }
+
+    function persistAttribution(attribution) {
+      getAvailableAttributionStorage().forEach((storage) => {
+        try {
+          storage.setItem(attributionStorageKey, JSON.stringify(attribution));
+        } catch {
+          // Attribution must never block page use or RFQ submission.
+        }
+      });
     }
 
     function captureAttribution() {
       const params = new URLSearchParams(window.location.search);
       const keys = ['gclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
       const attribution = readStoredAttribution();
-      let changed = false;
 
       keys.forEach((key) => {
         const value = params.get(key);
         if (value && attribution[key] !== value) {
           attribution[key] = value;
-          changed = true;
         }
       });
 
-      if (changed || !attribution.landing_page) {
-        attribution.landing_page = attribution.landing_page || window.location.href;
-        attribution.updated_at = new Date().toISOString();
-        try {
-          sessionStorage.setItem('ceramiccnc_attribution', JSON.stringify(attribution));
-        } catch {
-          // Attribution improves reporting but should never block the page.
-        }
-      }
+      attribution.first_landing_page = attribution.first_landing_page || window.location.href;
+      attribution.last_landing_page = window.location.href;
+      attribution.captured_at = attribution.captured_at || new Date().toISOString();
+      attribution.updated_at = new Date().toISOString();
+      attribution.expires_at = Date.now() + attributionTtlMs;
+      persistAttribution(attribution);
 
       return attribution;
     }
 
     function getAttributionFields() {
-      const attribution = readStoredAttribution();
+      const attribution = captureAttribution();
       return Object.fromEntries(Object.entries(attribution).filter(([, value]) => Boolean(value)));
     }
 
-    function getTrackingPayload(elem, extra = {}) {
+    function getAnalyticsAttributionFields() {
       const attribution = getAttributionFields();
+      const analyticsKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+      return Object.fromEntries(
+        analyticsKeys.map((key) => [key, attribution[key]]).filter(([, value]) => Boolean(value))
+      );
+    }
+
+    function getTrackingPayload(elem, extra = {}) {
+      const attribution = getAnalyticsAttributionFields();
+      const section = elem?.closest?.('section, header, footer');
+      const ctaLocation =
+        elem?.getAttribute?.('data-aw-cta-location') ||
+        section?.id ||
+        section?.getAttribute?.('aria-labelledby') ||
+        'sitewide';
       return {
         page_location: window.location.href,
         page_path: window.location.pathname,
-        page_title: document.title,
         link_url: elem?.getAttribute?.('href') || '',
         link_text: elem?.textContent?.trim().replace(/\s+/g, ' ') || '',
+        cta_location: ctaLocation,
         ...attribution,
         ...extra,
       };
     }
 
-    function getPageType() {
-      const path = window.location.pathname;
-      if (path === '/') return 'home';
-      if (path.startsWith('/posts/')) return 'article';
-      if (path.startsWith('/category/') || path.startsWith('/tags/') || path.startsWith('/blog/tag/')) {
-        return 'resource_index';
+    const contactIntentStorageKey = 'ceramiccnc_contact_intent_id';
+    let fallbackContactIntentId = '';
+
+    function getContactIntentId() {
+      try {
+        const storedId = sessionStorage.getItem(contactIntentStorageKey);
+        if (storedId) return storedId;
+      } catch {
+        // In-memory attribution still works when session storage is unavailable.
       }
 
-      return path.split('/').filter(Boolean)[0] || 'page';
+      const contactIntentId =
+        typeof crypto?.randomUUID === 'function'
+          ? crypto.randomUUID()
+          : `contact_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`;
+      fallbackContactIntentId = fallbackContactIntentId || contactIntentId;
+
+      try {
+        sessionStorage.setItem(contactIntentStorageKey, fallbackContactIntentId);
+      } catch {
+        // The stable in-memory value is sufficient for this page view.
+      }
+
+      return fallbackContactIntentId;
     }
 
-    function getPageTrackingPayload(extra = {}) {
-      return {
-        page_location: window.location.href,
-        page_path: window.location.pathname,
-        page_title: document.title,
-        page_type: getPageType(),
-        ...getAttributionFields(),
-        ...extra,
-      };
-    }
+    const pendingConversionKeys = new Set();
 
-    function isDuplicateConversion(key) {
+    function reserveConversion(key) {
       if (!key) return false;
 
       try {
@@ -152,25 +204,43 @@ import { UI } from 'astrowind:config';
         if (sessionStorage.getItem(storageKey) === 'true') {
           return true;
         }
-        sessionStorage.setItem(storageKey, 'true');
       } catch {
-        return false;
+        // In-memory deduplication still works when session storage is unavailable.
       }
 
+      if (pendingConversionKeys.has(key)) return true;
+      pendingConversionKeys.add(key);
       return false;
+    }
+
+    function completeConversion(key) {
+      if (!key) return;
+      pendingConversionKeys.delete(key);
+
+      try {
+        sessionStorage.setItem(`ceramiccnc_conversion_${key}`, 'true');
+      } catch {
+        // A dispatched conversion must not block the user when storage is unavailable.
+      }
+    }
+
+    function releaseConversion(key) {
+      if (key) pendingConversionKeys.delete(key);
+    }
+
+    function getEnhancedConversionUserData(userData) {
+      const email = typeof userData?.email === 'string' ? userData.email.trim().toLowerCase() : '';
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return null;
+
+      return { email };
     }
 
     function sendGoogleAdsConversionPixel(sendTo) {
       const match = /^AW-(\d+)\/([^/?#]+)$/.exec(sendTo || '');
       if (!match) return;
 
-      const tracking = window.CERAMICCNC_TRACKING || {};
-      const conversionValue = Number(tracking.googleAdsConversionValue || 1.0) || 1.0;
-      const conversionCurrency = tracking.googleAdsConversionCurrency || 'CNY';
       const url = new URL(`https://www.googleadservices.com/pagead/conversion/${match[1]}/`);
       url.searchParams.set('label', match[2]);
-      url.searchParams.set('value', String(conversionValue));
-      url.searchParams.set('currency_code', conversionCurrency);
       url.searchParams.set('guid', 'ON');
       url.searchParams.set('script', '0');
       url.searchParams.set('random', String(Date.now()));
@@ -187,13 +257,8 @@ import { UI } from 'astrowind:config';
       const match = /^AW-(\d+)\/([^/?#]+)$/.exec(sendTo || '');
       if (!match) return;
 
-      const tracking = window.CERAMICCNC_TRACKING || {};
-      const conversionValue = Number(tracking.googleAdsConversionValue || 1.0) || 1.0;
-      const conversionCurrency = tracking.googleAdsConversionCurrency || 'CNY';
       window.google_conversion_id = Number(match[1]);
       window.google_conversion_label = match[2];
-      window.google_conversion_value = conversionValue;
-      window.google_conversion_currency = conversionCurrency;
       window.google_remarketing_only = false;
 
       const script = document.createElement('script');
@@ -205,13 +270,57 @@ import { UI } from 'astrowind:config';
       document.body.appendChild(script);
     }
 
+    function dispatchGoogleAdsConversion(sendTo, conversionPayload, enhancedConversionUserData, onDispatched) {
+      let settled = false;
+      const stateWait = { timeoutId: 0 };
+
+      const markDispatched = () => {
+        if (settled) return;
+        settled = true;
+        window.clearTimeout(stateWait.timeoutId);
+        window.removeEventListener('ceramiccnc:google-tag-state', settleFromCurrentState);
+        onDispatched();
+      };
+
+      const sendWithGoogleTag = () => {
+        if (typeof window.gtag !== 'function') return false;
+        if (enhancedConversionUserData) {
+          window.gtag('set', 'user_data', enhancedConversionUserData);
+        }
+        window.gtag('event', 'conversion', conversionPayload);
+        markDispatched();
+        return true;
+      };
+
+      const sendWithFallback = () => {
+        sendGoogleAdsConversionScript(sendTo);
+        markDispatched();
+      };
+
+      function settleFromCurrentState() {
+        const state = window.CERAMICCNC_TRACKING?.googleTagState || 'unknown';
+        if (state === 'loaded' && sendWithGoogleTag()) return;
+        sendWithFallback();
+      }
+
+      const state = window.CERAMICCNC_TRACKING?.googleTagState || 'unknown';
+      if (state === 'loaded' && sendWithGoogleTag()) return;
+      if (state === 'failed' || state === 'disabled') {
+        sendWithFallback();
+        return;
+      }
+
+      window.addEventListener('ceramiccnc:google-tag-state', settleFromCurrentState, { once: true });
+      stateWait.timeoutId = window.setTimeout(settleFromCurrentState, 1500);
+    }
+
     function trackCeramicEvent(eventName, payload = {}, options = {}) {
-      const isDuplicate = isDuplicateConversion(options.conversionKey);
-      const tracking = window.CERAMICCNC_TRACKING || {};
-      const sendTo = tracking.googleAdsLeadSendTo || tracking.googleAdsRfqSendTo;
-      const conversionValue = Number(tracking.googleAdsConversionValue || 1.0) || 1.0;
-      const conversionCurrency = tracking.googleAdsConversionCurrency || 'CNY';
-      const leadMethod = payload.method || options.method || 'rfq';
+      const sendTo =
+        options.adsConversion === 'rfq_submit'
+          ? window.CERAMICCNC_TRACKING?.googleAdsRfqSubmitSendTo
+          : window.CERAMICCNC_TRACKING?.googleAdsRfqSendTo;
+      const shouldDeduplicate = Boolean(options.generateLead || (options.adsConversion && sendTo));
+      const isDuplicate = shouldDeduplicate ? reserveConversion(options.conversionKey) : false;
 
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event: eventName, ...payload });
@@ -224,45 +333,45 @@ import { UI } from 'astrowind:config';
         window.gtag('event', eventName, { transport_type: 'beacon', ...payload });
 
         if (options.generateLead && !isDuplicate) {
-          window.gtag('event', 'generate_lead', { method: leadMethod, transport_type: 'beacon', ...payload });
-        }
-
-        if (options.adsConversion && sendTo && !isDuplicate) {
-          const conversionPayload = {
-            send_to: sendTo,
-            value: conversionValue,
-            currency: conversionCurrency,
+          window.gtag('event', 'generate_lead', {
+            method: payload.method || 'rfq',
             transport_type: 'beacon',
-            event_category: 'lead',
-            event_label: payload.link_text || 'RFQ email',
-          };
-
-          if (typeof options.eventCallback === 'function') {
-            conversionPayload.event_callback = options.eventCallback;
-            conversionPayload.event_timeout = options.eventTimeout || 1000;
-          }
-
-          window.gtag('event', 'conversion', conversionPayload);
+            ...payload,
+          });
         }
       }
 
       if (options.adsConversion && sendTo && !isDuplicate) {
-        sendGoogleAdsConversionScript(sendTo);
+        const conversionPayload = {
+          send_to: sendTo,
+          transport_type: 'beacon',
+          event_category: 'lead',
+          event_label: payload.application || payload.link_text || 'RFQ submission',
+        };
+
+        if (payload.submission_id) conversionPayload.transaction_id = payload.submission_id;
+
+        if (typeof options.eventCallback === 'function') {
+          conversionPayload.event_callback = options.eventCallback;
+          conversionPayload.event_timeout = options.eventTimeout || 1000;
+        }
+
+        const enhancedConversionUserData =
+          options.adsConversion === 'rfq_submit' ? getEnhancedConversionUserData(options.userData) : null;
+
+        dispatchGoogleAdsConversion(sendTo, conversionPayload, enhancedConversionUserData, () =>
+          completeConversion(options.conversionKey)
+        );
+      } else if (!isDuplicate && options.generateLead) {
+        completeConversion(options.conversionKey);
+      } else if (!isDuplicate && shouldDeduplicate) {
+        releaseConversion(options.conversionKey);
       }
     }
 
-    function trackPageViewContext() {
-      const currentUrl = window.location.href;
-      if (window.CERAMICCNC_LAST_TRACKED_PAGE_VIEW === currentUrl) return;
-
-      window.CERAMICCNC_LAST_TRACKED_PAGE_VIEW = currentUrl;
-      trackCeramicEvent(
-        'ceramic_page_view',
-        getPageTrackingPayload({
-          event_category: 'page',
-        })
-      );
-    }
+    window.CERAMICCNC_TRACK_EVENT = trackCeramicEvent;
+    window.CERAMICCNC_GET_ATTRIBUTION = getAttributionFields;
+    captureAttribution();
 
     function showEmailToast(message) {
       let toast = document.getElementById('email-copy-toast');
@@ -271,7 +380,7 @@ import { UI } from 'astrowind:config';
         toast.id = 'email-copy-toast';
         toast.setAttribute('role', 'status');
         toast.style.cssText =
-          'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:9999;background:#111418;color:#f2f4f3;border:1px solid rgba(126,200,227,.28);border-radius:8px;padding:10px 14px;font:600 14px/1.3 system-ui,-apple-system,Segoe UI,sans-serif;box-shadow:0 12px 30px rgba(5,6,7,.28);opacity:0;transition:opacity .18s ease;';
+          'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:9999;background:#0f172a;color:#fff;border:1px solid rgba(255,255,255,.22);border-radius:8px;padding:10px 14px;font:600 14px/1.3 system-ui,-apple-system,Segoe UI,sans-serif;box-shadow:0 12px 30px rgba(2,6,23,.25);opacity:0;transition:opacity .18s ease;';
         document.body.appendChild(toast);
       }
       toast.textContent = message;
@@ -290,21 +399,62 @@ import { UI } from 'astrowind:config';
 
       if (!email) return { href: originalHref, email: '' };
 
-      const href = `mailto:${email}`;
+      const href = originalHref;
       elem.setAttribute('href', href);
 
       return { href, email };
     }
 
+    async function copyTextToClipboard(value) {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(value);
+        return;
+      }
+
+      const temporaryInput = document.createElement('textarea');
+      temporaryInput.value = value;
+      temporaryInput.setAttribute('readonly', '');
+      temporaryInput.style.cssText = 'position:fixed;left:-9999px;top:0;';
+      document.body.appendChild(temporaryInput);
+      temporaryInput.select();
+      const copied = document.execCommand('copy');
+      temporaryInput.remove();
+      if (!copied) throw new Error('Clipboard unavailable');
+    }
+
     const onLoad = function () {
       captureAttribution();
-      trackPageViewContext();
 
       let lastKnownScrollPosition = window.scrollY;
       let ticking = true;
 
+      document.querySelectorAll('.dropdown').forEach((dropdown) => {
+        const button = dropdown.querySelector('button[aria-controls]');
+        if (!button || button.dataset.awAriaBound === 'true') return;
+
+        button.dataset.awAriaBound = 'true';
+        const desktopMenu = window.matchMedia('(min-width: 768px)');
+        const setExpanded = (expanded) => button.setAttribute('aria-expanded', String(expanded));
+        const syncExpanded = () => {
+          setExpanded(!desktopMenu.matches || dropdown.matches(':hover') || dropdown.contains(document.activeElement));
+        };
+
+        dropdown.addEventListener('mouseenter', syncExpanded);
+        dropdown.addEventListener('mouseleave', syncExpanded);
+        dropdown.addEventListener('focusin', syncExpanded);
+        dropdown.addEventListener('focusout', (event) => {
+          if (!dropdown.contains(event.relatedTarget) && !dropdown.matches(':hover')) {
+            setExpanded(!desktopMenu.matches);
+          }
+        });
+        desktopMenu.addEventListener('change', syncExpanded);
+        syncExpanded();
+      });
+
       attachEvent('#header nav', 'click', function () {
-        document.querySelector('[data-aw-toggle-menu]')?.classList.remove('expanded');
+        const menuToggle = document.querySelector('[data-aw-toggle-menu]');
+        menuToggle?.classList.remove('expanded');
+        menuToggle?.setAttribute('aria-expanded', 'false');
         document.body.classList.remove('overflow-hidden');
         document.getElementById('header')?.classList.remove('h-screen');
         document.getElementById('header')?.classList.remove('expanded');
@@ -314,7 +464,8 @@ import { UI } from 'astrowind:config';
       });
 
       attachEvent('[data-aw-toggle-menu]', 'click', function (_, elem) {
-        elem.classList.toggle('expanded');
+        const expanded = elem.classList.toggle('expanded');
+        elem.setAttribute('aria-expanded', String(expanded));
         document.body.classList.toggle('overflow-hidden');
         document.getElementById('header')?.classList.toggle('h-screen');
         document.getElementById('header')?.classList.toggle('expanded');
@@ -327,8 +478,6 @@ import { UI } from 'astrowind:config';
         if (defaultTheme.endsWith(':only')) {
           return;
         }
-
-        Observer.removeAnimationDelay();
 
         document.documentElement.classList.toggle('dark');
         setLocalTheme(document.documentElement.classList.contains('dark') ? 'dark' : 'light');
@@ -368,61 +517,54 @@ import { UI } from 'astrowind:config';
         newlink.click();
       });
 
-      document.querySelectorAll('a[href^="mailto:"]').forEach((elem) => {
+      document.querySelectorAll('a[href^="mailto:info@szcomo.com"]').forEach((elem) => {
         normalizeMailtoHref(elem);
-        if (elem.dataset.awEmailCopy === 'true') return;
-        elem.dataset.awEmailCopy = 'true';
+        if (elem.dataset.awEmailTrack === 'true') return;
+        elem.dataset.awEmailTrack = 'true';
 
         elem.addEventListener(
           'click',
-          function (event) {
-            const { href, email } = normalizeMailtoHref(elem);
+          function () {
+            const { email } = normalizeMailtoHref(elem);
             if (!email) return;
-
-            event.preventDefault();
-            let mailtoOpened = false;
-            const openMailto = function () {
-              if (mailtoOpened) return;
-              mailtoOpened = true;
-              window.location.href = href;
-            };
-            const mailtoTimer = window.setTimeout(openMailto, 900);
 
             trackCeramicEvent(
               'rfq_email_click',
               getTrackingPayload(elem, {
-                email,
-                method: 'email',
-                event_category: 'lead',
-              }),
-              {
-                generateLead: true,
-                adsConversion: true,
-                conversionKey: 'rfq_email',
-                eventCallback: function () {
-                  window.clearTimeout(mailtoTimer);
-                  openMailto();
-                },
-                eventTimeout: 900,
-              }
+                method: 'email_open',
+                event_category: 'contact_intent',
+                contact_intent_id: getContactIntentId(),
+              })
             );
+          },
+          false
+        );
+      });
 
-            if (navigator.clipboard?.writeText) {
-              navigator.clipboard
-                .writeText(email)
-                .then(() => {
-                  trackCeramicEvent(
-                    'rfq_email_copy',
-                    getTrackingPayload(elem, {
-                      email,
-                      method: 'email_copy',
-                      event_category: 'lead',
-                    })
-                  );
-                  showEmailToast(`Email copied: ${email}`);
-                })
-                .catch(() => showEmailToast(`Email: ${email}`));
-            } else {
+      document.querySelectorAll('[data-aw-copy-email]').forEach((elem) => {
+        if (elem.dataset.awEmailCopy === 'true') return;
+        elem.dataset.awEmailCopy = 'true';
+        elem.addEventListener(
+          'click',
+          async function () {
+            const email = elem.getAttribute('data-aw-copy-email')?.trim() || '';
+            if (!email) return;
+
+            const trackingPayload = getTrackingPayload(elem, {
+              method: 'email_copy',
+              event_category: 'contact_intent',
+              contact_intent_id: getContactIntentId(),
+            });
+
+            try {
+              await copyTextToClipboard(email);
+              trackCeramicEvent('rfq_email_copy_success', trackingPayload, {
+                adsConversion: 'rfq_intent',
+                conversionKey: 'rfq_email_copy',
+              });
+              showEmailToast(`Email copied: ${email}`);
+            } catch {
+              trackCeramicEvent('rfq_email_copy_failure', trackingPayload);
               showEmailToast(`Email: ${email}`);
             }
           },
@@ -441,11 +583,9 @@ import { UI } from 'astrowind:config';
               'instant_contact_click',
               getTrackingPayload(elem, {
                 method: channel,
-                event_category: 'lead',
+                event_category: 'contact_intent',
               }),
               {
-                generateLead: true,
-                adsConversion: true,
                 conversionKey: `instant_contact_${channel}`,
               }
             );
@@ -462,13 +602,12 @@ import { UI } from 'astrowind:config';
           function () {
             const targetId = elem.getAttribute('data-aw-copy-target');
             const template = targetId ? document.getElementById(targetId)?.textContent?.trim() : '';
-            if (!template || !navigator.clipboard?.writeText) {
+            if (!template) {
               showEmailToast(`Email: info@szcomo.com`);
               return;
             }
 
-            navigator.clipboard
-              .writeText(template)
+            copyTextToClipboard(template)
               .then(() => {
                 trackCeramicEvent(
                   'rfq_template_copy',
@@ -485,47 +624,27 @@ import { UI } from 'astrowind:config';
         );
       });
 
-      document.querySelectorAll('a[href="/rfq"], a[href="/rfq/"]').forEach((elem) => {
-        if (elem.dataset.awRfqTrack === 'true') return;
-        elem.dataset.awRfqTrack = 'true';
-        elem.addEventListener(
-          'click',
-          function () {
-            trackCeramicEvent('rfq_prepare_click', getTrackingPayload(elem, { event_category: 'engagement' }));
-          },
-          false
-        );
-      });
-
-      document.querySelectorAll('a[href^="http"]').forEach((elem) => {
-        let linkUrl;
-        try {
-          linkUrl = new URL(elem.href, window.location.href);
-        } catch {
-          return;
-        }
-
-        if (linkUrl.origin === window.location.origin || elem.dataset.awOutboundTrack === 'true') return;
-
-        elem.dataset.awOutboundTrack = 'true';
-        elem.addEventListener(
-          'click',
-          function () {
-            trackCeramicEvent(
-              'outbound_link_click',
-              getTrackingPayload(elem, {
-                event_category: 'engagement',
-                outbound_domain: linkUrl.hostname,
-              })
-            );
-          },
-          false
-        );
-      });
+      document
+        .querySelectorAll(
+          'a[href="#rfq-form"], a[href="/rfq"], a[href="/rfq/"], a[href^="/rfq/#"], a[href^="/rfq?"], a[href^="/rfq/?"]'
+        )
+        .forEach((elem) => {
+          if (elem.dataset.awRfqTrack === 'true') return;
+          elem.dataset.awRfqTrack = 'true';
+          elem.addEventListener(
+            'click',
+            function () {
+              trackCeramicEvent('rfq_prepare_click', getTrackingPayload(elem, { event_category: 'engagement' }));
+            },
+            false
+          );
+        });
 
       const screenSize = window.matchMedia('(max-width: 767px)');
       screenSize.addEventListener('change', function () {
-        document.querySelector('[data-aw-toggle-menu]')?.classList.remove('expanded');
+        const menuToggle = document.querySelector('[data-aw-toggle-menu]');
+        menuToggle?.classList.remove('expanded');
+        menuToggle?.setAttribute('aria-expanded', 'false');
         document.body.classList.remove('overflow-hidden');
         document.getElementById('header')?.classList.remove('h-screen');
         document.getElementById('header')?.classList.remove('expanded');
@@ -562,6 +681,7 @@ import { UI } from 'astrowind:config';
       const elem = document.querySelector('[data-aw-toggle-menu]');
       if (elem) {
         elem.classList.remove('expanded');
+        elem.setAttribute('aria-expanded', 'false');
       }
       document.body.classList.remove('overflow-hidden');
       document.getElementById('header')?.classList.remove('h-screen');
@@ -569,8 +689,8 @@ import { UI } from 'astrowind:config';
       document.querySelector('#header nav')?.classList.add('hidden');
     };
 
-    window.onload = onLoad;
-    window.onpageshow = onPageShow;
+    window.addEventListener('load', onLoad);
+    window.addEventListener('pageshow', onPageShow);
 
     document.addEventListener('astro:after-swap', () => {
       initTheme();
@@ -578,113 +698,4 @@ import { UI } from 'astrowind:config';
       onPageShow();
     });
   })();
-</script>
-
-<script is:inline>
-  /* Inspired by: https://github.com/heidkaemper/tailwindcss-intersect */
-  const Observer = {
-    observer: null,
-    delayBetweenAnimations: 100,
-    animationCounter: 0,
-    elements: null,
-
-    start() {
-      const selectors = [
-        '[class*=" intersect:"]',
-        '[class*=":intersect:"]',
-        '[class^="intersect:"]',
-        '[class="intersect"]',
-        '[class*=" intersect "]',
-        '[class^="intersect "]',
-        '[class$=" intersect"]',
-      ];
-
-      this.elements = Array.from(document.querySelectorAll(selectors.join(',')));
-
-      const getThreshold = (element) => {
-        if (element.classList.contains('intersect-full')) return 0.99;
-        if (element.classList.contains('intersect-half')) return 0.5;
-        if (element.classList.contains('intersect-quarter')) return 0.25;
-        return 0;
-      };
-
-      this.elements.forEach((el) => {
-        el.setAttribute('no-intersect', '');
-        el._intersectionThreshold = getThreshold(el);
-      });
-
-      const callback = (entries) => {
-        entries.forEach((entry) => {
-          requestAnimationFrame(() => {
-            const target = entry.target;
-            const intersectionRatio = entry.intersectionRatio;
-            const threshold = target._intersectionThreshold;
-
-            if (target.classList.contains('intersect-no-queue')) {
-              if (entry.isIntersecting) {
-                target.removeAttribute('no-intersect');
-                if (target.classList.contains('intersect-once')) {
-                  this.observer.unobserve(target);
-                }
-              } else {
-                target.setAttribute('no-intersect', '');
-              }
-              return;
-            }
-
-            if (intersectionRatio >= threshold) {
-              if (!target.hasAttribute('data-animated')) {
-                target.removeAttribute('no-intersect');
-                target.setAttribute('data-animated', 'true');
-
-                const delay = this.animationCounter * this.delayBetweenAnimations;
-                this.animationCounter++;
-
-                target.style.transitionDelay = `${delay}ms`;
-                target.style.animationDelay = `${delay}ms`;
-
-                if (target.classList.contains('intersect-once')) {
-                  this.observer.unobserve(target);
-                }
-              }
-            } else {
-              target.setAttribute('no-intersect', '');
-              target.removeAttribute('data-animated');
-              target.style.transitionDelay = '';
-              target.style.animationDelay = '';
-
-              this.animationCounter = 0;
-            }
-          });
-        });
-      };
-
-      this.observer = new IntersectionObserver(callback.bind(this), { threshold: [0, 0.25, 0.5, 0.99] });
-
-      this.elements.forEach((el) => {
-        this.observer.observe(el);
-      });
-    },
-
-    /* 
-      REF: #643;
-      We need to remove the delay to fix flickering/delay
-      when toggling the theme. Observer only removes them
-      after data-animated is gone (out of view).
-    */
-    removeAnimationDelay() {
-      this.elements.forEach((el) => {
-        if (el.getAttribute('data-animated') === 'true') {
-          el.style.transitionDelay = '';
-          el.style.animationDelay = '';
-        }
-      });
-    },
-  };
-
-  Observer.start();
-
-  document.addEventListener('astro:after-swap', () => {
-    Observer.start();
-  });
 </script>

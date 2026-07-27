@@ -36,12 +36,12 @@ const {
   <div aria-hidden="true" class="aspect-w-16 aspect-h-7">
     {
       image && (
-        <div class="media-frame mx-auto h-80 w-full object-cover">
+        <div class="mx-auto h-80 w-full rounded-md border border-page-border bg-surface-raised object-cover shadow-panel">
           {typeof image === 'string' ? (
             <Fragment set:html={image} />
           ) : (
             <Image
-              class="media-frame mx-auto h-80 w-full object-cover"
+              class="mx-auto h-80 w-full rounded-md bg-surface-raised object-cover"
               width="auto"
               height={320}
               widths={[400, 768]}

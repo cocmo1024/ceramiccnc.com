@@ -1,0 +1,444 @@
+---
+const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
+
+const fieldClass =
+  'mt-2 block w-full rounded-md border border-control-border bg-page px-3 py-2.5 text-default shadow-sm outline-none transition placeholder:text-muted/70 focus:border-primary focus:ring-2 focus:ring-focus';
+const labelClass = 'block text-sm font-semibold text-heading';
+---
+
+<section id="rfq-form" class="scroll-mt-24 border-y border-page-border bg-surface py-12 md:py-16">
+  <div class="mx-auto grid max-w-5xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
+    <div>
+      <p class="text-sm font-semibold text-accent">Secure RFQ submission</p>
+      <h2 class="mt-2 font-heading text-3xl font-bold text-heading">
+        Submit your drawing and ceramic requirements for engineering review
+      </h2>
+      <p class="mt-4 leading-7 text-muted">
+        Start with the part function, material or grade if known, quantity, and the critical requirements. A CAD model
+        or dimensioned drawing helps us review ceramic-specific risks, but an early-stage brief is enough to begin. A
+        confirmation appears only after the secure submission service accepts the request.
+      </p>
+      <ul class="mt-6 grid gap-3 text-sm leading-6 text-muted">
+        <li><strong class="text-heading">Useful files:</strong> STEP/STP, X_T/X_B, IGES, STL, or PDF drawings.</li>
+        <li><strong class="text-heading">Upload limit:</strong> up to 3 files, 5 MB each, 8 MB total.</li>
+        <li>
+          <strong class="text-heading">Sensitive projects:</strong> do not send export-controlled, classified, or restricted
+          data before an approved handling agreement is in place.
+        </li>
+      </ul>
+      <p class="mt-6 text-sm font-semibold text-heading">Prefer to use your own email?</p>
+      <div class="mt-3 flex flex-wrap gap-3">
+        <button
+          class="inline-flex min-h-10 items-center justify-center rounded-md border border-page-border bg-page px-4 py-2 text-sm font-semibold text-heading hover:bg-surface-raised"
+          type="button"
+          data-aw-copy-email="info@szcomo.com"
+          data-aw-cta-location="rfq_form_intro"
+        >
+          Copy email address
+        </button>
+        <a
+          class="inline-flex min-h-10 items-center justify-center rounded-md px-2 py-2 text-sm font-semibold text-link hover:underline"
+          href="mailto:info@szcomo.com?subject=Precision%20Ceramic%20RFQ"
+          data-aw-rfq-email
+          data-aw-cta-location="rfq_form_intro"
+        >
+          Open email
+        </a>
+      </div>
+      <p class="mt-2 text-xs leading-5 text-muted">RFQ email: info@szcomo.com</p>
+    </div>
+
+    <div class="rounded-md border border-page-border bg-page p-5 shadow-panel sm:p-7">
+      <form
+        action="/api/rfq"
+        method="post"
+        enctype="multipart/form-data"
+        data-rfq-form
+        data-turnstile-site-key={turnstileSiteKey}
+        novalidate
+      >
+        <div class="grid gap-5 sm:grid-cols-2">
+          <label class={labelClass}>
+            Your name <span class="text-accent" aria-hidden="true">*</span>
+            <input class={fieldClass} name="name" type="text" autocomplete="name" maxlength="80" required />
+          </label>
+
+          <label class={labelClass}>
+            Work email <span class="text-accent" aria-hidden="true">*</span>
+            <input class={fieldClass} name="email" type="email" autocomplete="email" maxlength="254" required />
+          </label>
+
+          <label class={labelClass}>
+            Company <span class="text-accent" aria-hidden="true">*</span>
+            <input class={fieldClass} name="company" type="text" autocomplete="organization" maxlength="120" required />
+          </label>
+
+          <label class={labelClass}>
+            Application <span class="text-accent" aria-hidden="true">*</span>
+            <!-- Keep every option value explicit: browser translation may rewrite labels, never submitted values. -->
+            <select class={fieldClass} name="application" required>
+              <option value="">Select the closest fit</option>
+              <option value="Precision ceramic structural part">Precision ceramic structural part</option>
+              <option value="Plunger, pump, or dosing component">Plunger, pump, or dosing component</option>
+              <option value="Dispensing valve or fluid-control part">Dispensing valve or fluid-control part</option>
+              <option value="Tube, ring, shaft, sleeve, rod, or pin">Tube, ring, shaft, sleeve, rod, or pin</option>
+              <option value="Plate, sheet, substrate, or fixture">Plate, sheet, substrate, or fixture</option>
+              <option value="Vacuum pickup or semiconductor component">Vacuum pickup or semiconductor component</option>
+              <option value="Electrical, thermal, laser, or insulating component">
+                Electrical, thermal, laser, or insulating component
+              </option>
+              <option value="Medical, food-equipment, or wear component"
+                >Medical, food-equipment, or wear component</option
+              >
+              <option value="Other ceramic part">Other ceramic part</option>
+            </select>
+          </label>
+
+          <label class={labelClass}>
+            Quantity or project stage <span class="text-accent" aria-hidden="true">*</span>
+            <input
+              class={fieldClass}
+              name="quantity"
+              type="text"
+              inputmode="text"
+              maxlength="80"
+              placeholder="Example: 2 prototypes; 50/year; feasibility stage"
+              required
+            />
+          </label>
+        </div>
+
+        <label class={`${labelClass} mt-5`}>
+          Short project brief <span class="text-accent" aria-hidden="true">*</span>
+          <textarea
+            class={fieldClass}
+            name="requirements"
+            rows="5"
+            minlength="30"
+            maxlength="4000"
+            placeholder="Include the part function, material or grade, starting blank if known, quantity, critical dimensions or GD&T, surface finish, inspection, cleaning, and packaging requirements."
+            required></textarea>
+        </label>
+
+        <label class={`${labelClass} mt-5`}>
+          CAD, drawings, or reference files
+          <input
+            class={`${fieldClass} file:mr-4 file:rounded file:border-0 file:bg-surface-raised file:px-3 file:py-2 file:text-sm file:font-semibold file:text-heading`}
+            name="attachments"
+            type="file"
+            accept=".pdf,.step,.stp,.stl,.iges,.igs,.x_t,.x_b,.jpg,.jpeg,.png"
+            multiple
+            data-rfq-files
+          />
+          <span class="mt-2 block text-xs font-normal leading-5 text-muted" data-rfq-file-help>
+            Optional. Large or controlled file packages should be arranged by email first.
+          </span>
+        </label>
+
+        <details class="mt-5 rounded-md border border-page-border bg-surface">
+          <summary class="cursor-pointer px-4 py-3 text-sm font-semibold text-heading">
+            Additional details — optional
+          </summary>
+          <div class="grid gap-5 border-t border-page-border p-4 sm:grid-cols-2">
+            <label class={labelClass}>
+              Material preference
+              <select class={fieldClass} name="material">
+                <option value="">Not provided</option>
+                <option value="Not decided">Not decided</option>
+                <option value="Alumina (Al2O3)">Alumina (Al2O3)</option>
+                <option value="Zirconia (ZrO2)">Zirconia (ZrO2)</option>
+                <option value="Zirconia-toughened alumina (ZTA)">Zirconia-toughened alumina (ZTA)</option>
+                <option value="Silicon nitride (Si3N4)">Silicon nitride (Si3N4)</option>
+                <option value="Silicon carbide (SiC)">Silicon carbide (SiC)</option>
+                <option value="Aluminum nitride (AlN)">Aluminum nitride (AlN)</option>
+                <option value="Boron nitride (BN)">Boron nitride (BN)</option>
+                <option value="MACOR / machinable glass ceramic">MACOR / machinable glass ceramic</option>
+                <option value="Other / grade to confirm">Other / grade to confirm</option>
+              </select>
+            </label>
+
+            <label class={labelClass}>
+              Target timing
+              <select class={fieldClass} name="timing">
+                <option value="">Not provided</option>
+                <option value="Exploring feasibility">Exploring feasibility</option>
+                <option value="Quote needed within 2 weeks">Quote needed within 2 weeks</option>
+                <option value="Prototype needed within 1–3 months">Prototype needed within 1–3 months</option>
+                <option value="Production planning">Production planning</option>
+              </select>
+            </label>
+
+            <label class={`${labelClass} sm:col-span-2`}>
+              Country or region
+              <input class={fieldClass} name="country" type="text" autocomplete="country-name" maxlength="80" />
+            </label>
+          </div>
+        </details>
+
+        <div class="absolute -left-[10000px] top-auto h-px w-px overflow-hidden" aria-hidden="true">
+          <label>
+            Website
+            <input name="website" type="text" tabindex="-1" autocomplete="off" />
+          </label>
+        </div>
+
+        <input name="started_at" type="hidden" value="" />
+        <input name="submission_id" type="hidden" value="" />
+        <input name="source_page" type="hidden" value="" />
+        <input name="attribution" type="hidden" value="" />
+
+        {
+          turnstileSiteKey ? (
+            <div class="mt-5">
+              <div
+                class="cf-turnstile"
+                data-sitekey={turnstileSiteKey}
+                data-theme="auto"
+                data-size="flexible"
+                data-action="rfq_submit"
+              />
+            </div>
+          ) : (
+            <p class="mt-5 rounded-md border border-amber-400/40 bg-amber-100/10 px-3 py-2 text-xs leading-5 text-muted">
+              Secure submission is awaiting its production security key. Email info@szcomo.com if the form is
+              unavailable.
+            </p>
+          )
+        }
+
+        <label class="mt-5 flex items-start gap-3 text-sm leading-6 text-muted">
+          <input
+            class="mt-1 h-4 w-4 shrink-0 rounded border-control-border text-primary focus:ring-focus"
+            name="consent"
+            type="checkbox"
+            value="accepted"
+            required
+          />
+          <span>
+            I confirm that this information may be used to evaluate and respond to my RFQ and, where permitted, to
+            measure advertising conversions under the
+            <a
+              class="font-semibold text-link hover:underline"
+              href="/privacy/"
+              target="_blank"
+              rel="noopener noreferrer">Privacy Policy</a
+            >.
+          </span>
+        </label>
+
+        <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <button
+            class="inline-flex min-h-11 items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-focus disabled:cursor-not-allowed disabled:opacity-60"
+            type="submit"
+            data-rfq-submit
+            disabled={!turnstileSiteKey}
+          >
+            Submit secure RFQ
+          </button>
+          <p class="text-sm leading-6 text-muted" aria-live="polite" data-rfq-status>
+            {turnstileSiteKey ? '' : 'Online submission is unavailable. Please email info@szcomo.com.'}
+          </p>
+        </div>
+      </form>
+
+      <div class="hidden rounded-md border border-emerald-500/40 bg-emerald-500/10 p-5" role="status" data-rfq-success>
+        <p class="text-sm font-semibold text-emerald-600 dark:text-emerald-400">RFQ submitted</p>
+        <h3 class="mt-2 font-heading text-2xl font-bold text-heading">Your project is ready for engineering review</h3>
+        <p class="mt-3 leading-7 text-muted">
+          A reference is shown below. Keep it for follow-up, and check your inbox for replies from info@szcomo.com.
+        </p>
+        <p class="mt-4 font-mono text-sm text-heading" data-rfq-reference></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{turnstileSiteKey ? <script is:inline async defer src="https://challenges.cloudflare.com/turnstile/v0/api.js" /> : null}
+
+<script is:inline>
+  (() => {
+    const form = document.querySelector('[data-rfq-form]');
+    if (!form || form.dataset.rfqBound === 'true') return;
+    form.dataset.rfqBound = 'true';
+
+    const submitButton = form.querySelector('[data-rfq-submit]');
+    const status = form.querySelector('[data-rfq-status]');
+    const fileInput = form.querySelector('[data-rfq-files]');
+    const fileHelp = form.querySelector('[data-rfq-file-help]');
+    const successPanel = form.parentElement?.querySelector('[data-rfq-success]');
+    const reference = successPanel?.querySelector('[data-rfq-reference]');
+    const applicationSelect = form.elements.namedItem('application');
+    const sourcePage = form.elements.namedItem('source_page');
+    const startedAt = form.elements.namedItem('started_at');
+    const submissionId = form.elements.namedItem('submission_id');
+    const attributionInput = form.elements.namedItem('attribution');
+    const defaultSubmitText = submitButton?.textContent?.trim() || 'Submit secure RFQ';
+    let formStarted = false;
+
+    const applicationHints = {
+      'ceramic plunger': 'Plunger, pump, or dosing component',
+      'ceramic pump': 'Plunger, pump, or dosing component',
+      'dosing component': 'Plunger, pump, or dosing component',
+      'dispensing valve': 'Dispensing valve or fluid-control part',
+      'fluid control': 'Dispensing valve or fluid-control part',
+      'ceramic tube': 'Tube, ring, shaft, sleeve, rod, or pin',
+      'ceramic ring': 'Tube, ring, shaft, sleeve, rod, or pin',
+      'ceramic shaft': 'Tube, ring, shaft, sleeve, rod, or pin',
+      'ceramic plate': 'Plate, sheet, substrate, or fixture',
+      substrate: 'Plate, sheet, substrate, or fixture',
+      vacuum: 'Vacuum pickup or semiconductor component',
+      semiconductor: 'Vacuum pickup or semiconductor component',
+      insulator: 'Electrical, thermal, laser, or insulating component',
+      'wear part': 'Medical, food-equipment, or wear component',
+    };
+
+    function setStatus(message, isError = false) {
+      if (!status) return;
+      status.textContent = message;
+      status.classList.toggle('text-red-600', isError);
+      status.classList.toggle('dark:text-red-400', isError);
+    }
+
+    function refreshContext(resetStartedAt = false) {
+      if (resetStartedAt && startedAt) startedAt.value = String(Date.now());
+      if (submissionId && !submissionId.value) submissionId.value = crypto.randomUUID();
+      if (sourcePage) sourcePage.value = window.location.href;
+
+      const attribution =
+        typeof window.CERAMICCNC_GET_ATTRIBUTION === 'function' ? window.CERAMICCNC_GET_ATTRIBUTION() : {};
+      if (attributionInput) attributionInput.value = JSON.stringify(attribution || {});
+
+      const hint = new URLSearchParams(window.location.search).get('project')?.toLowerCase() || '';
+      const match = Object.entries(applicationHints).find(([key]) => hint.includes(key));
+      if (match && applicationSelect) applicationSelect.value = match[1];
+    }
+
+    function validateFiles() {
+      const files = Array.from(fileInput?.files || []);
+      const totalSize = files.reduce((total, file) => total + file.size, 0);
+      const tooLarge = files.find((file) => file.size > 5 * 1024 * 1024);
+
+      if (files.length > 3) return 'Attach no more than 3 files.';
+      if (tooLarge) return `${tooLarge.name} is larger than 5 MB.`;
+      if (totalSize > 8 * 1024 * 1024) return 'Attachments must be 8 MB or less in total.';
+      return '';
+    }
+
+    fileInput?.addEventListener('change', () => {
+      const error = validateFiles();
+      fileInput.setCustomValidity(error);
+      if (fileHelp) fileHelp.textContent = error || 'Optional. Up to 3 files, 5 MB each, 8 MB total.';
+    });
+
+    form.addEventListener('input', () => {
+      if (formStarted || typeof window.CERAMICCNC_TRACK_EVENT !== 'function') return;
+      formStarted = true;
+      window.CERAMICCNC_TRACK_EVENT('rfq_form_start', {
+        method: 'secure_rfq_form',
+        event_category: 'rfq_funnel',
+        page_location: window.location.href,
+        page_path: window.location.pathname,
+      });
+    });
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      refreshContext();
+
+      if (typeof window.CERAMICCNC_TRACK_EVENT === 'function') {
+        window.CERAMICCNC_TRACK_EVENT('rfq_submit_attempt', {
+          method: 'secure_rfq_form',
+          event_category: 'rfq_funnel',
+          page_location: window.location.href,
+          page_path: window.location.pathname,
+        });
+      }
+
+      const fileError = validateFiles();
+      fileInput?.setCustomValidity(fileError);
+      if (!form.checkValidity()) {
+        const invalidFields = Array.from(form.elements)
+          .filter((field) => field?.name && field.validity && !field.validity.valid)
+          .map((field) => field.name)
+          .join(',');
+        if (typeof window.CERAMICCNC_TRACK_EVENT === 'function') {
+          window.CERAMICCNC_TRACK_EVENT('rfq_validation_error', {
+            method: 'secure_rfq_form',
+            event_category: 'rfq_funnel',
+            invalid_fields: invalidFields,
+            page_location: window.location.href,
+            page_path: window.location.pathname,
+          });
+        }
+        form.reportValidity();
+        setStatus(fileError || 'Please complete the required fields.', true);
+        return;
+      }
+
+      submitButton.disabled = true;
+      submitButton.textContent = 'Sending RFQ…';
+      setStatus('Securely sending your project…');
+
+      try {
+        const formData = new FormData(form);
+        const consentGiven = formData.get('consent') === 'accepted';
+        const submittedEmail = consentGiven ? formData.get('email') : '';
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: { Accept: 'application/json' },
+          credentials: 'same-origin',
+        });
+        const result = await response.json().catch(() => ({}));
+
+        if (!response.ok || result.accepted !== true || !result.submissionId) {
+          throw new Error(result.message || 'The RFQ could not be accepted. Please email info@szcomo.com.');
+        }
+
+        const trackingPayload = {
+          method: 'secure_rfq_form',
+          application: form.elements.namedItem('application')?.value || '',
+          material: form.elements.namedItem('material')?.value || 'not_provided',
+          timing: form.elements.namedItem('timing')?.value || 'not_provided',
+          has_attachments: Boolean(fileInput?.files?.length),
+          attachment_count: fileInput?.files?.length || 0,
+          submission_id: result.submissionId,
+          transaction_id: result.submissionId,
+          event_category: 'rfq_submission',
+          page_location: window.location.href,
+          page_path: window.location.pathname,
+        };
+
+        if (typeof window.CERAMICCNC_TRACK_EVENT === 'function') {
+          window.CERAMICCNC_TRACK_EVENT('rfq_form_submit_success', trackingPayload, {
+            generateLead: true,
+            adsConversion: 'rfq_submit',
+            conversionKey: `rfq_submit_${result.submissionId}`,
+            userData: consentGiven && typeof submittedEmail === 'string' ? { email: submittedEmail } : undefined,
+          });
+        }
+
+        form.classList.add('hidden');
+        successPanel?.classList.remove('hidden');
+        if (reference) reference.textContent = `Reference: ${result.submissionId}`;
+        successPanel?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } catch (error) {
+        if (typeof window.CERAMICCNC_TRACK_EVENT === 'function') {
+          window.CERAMICCNC_TRACK_EVENT('rfq_submit_failure', {
+            method: 'secure_rfq_form',
+            event_category: 'rfq_funnel',
+            failure_stage: 'submission',
+            page_location: window.location.href,
+            page_path: window.location.pathname,
+          });
+        }
+        setStatus(error instanceof Error ? error.message : 'The RFQ could not be accepted.', true);
+        if (window.turnstile && typeof window.turnstile.reset === 'function') window.turnstile.reset();
+        submitButton.disabled = false;
+        submitButton.textContent = defaultSubmitText;
+      }
+    });
+
+    refreshContext(true);
+  })();
+</script>

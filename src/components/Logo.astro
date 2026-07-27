@@ -3,7 +3,13 @@ import { SITE } from 'astrowind:config';
 ---
 
 <span
-  class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
+  class="grid h-12 w-12 flex-none place-items-center rounded-full border border-page-border bg-surface-raised text-base font-extrabold tracking-[-0.08em] text-accent shadow-panel md:h-9 md:w-9 md:text-xs min-[800px]:h-10 min-[800px]:w-10 min-[800px]:text-sm lg:h-14 lg:w-14 lg:text-lg"
+  aria-hidden="true"
+>
+  CNC
+</span>
+<span
+  class="self-center ml-3 text-2xl font-extrabold tracking-tight text-heading whitespace-nowrap md:ml-2 md:text-lg min-[800px]:text-xl lg:ml-3 lg:text-2xl rtl:ml-0 rtl:mr-3 md:rtl:mr-2 lg:rtl:mr-3"
 >
   {SITE?.name}
 </span>

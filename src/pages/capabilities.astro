@@ -6,6 +6,7 @@ import SplitShowcase from '~/components/widgets/SplitShowcase.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import { ceramicCapabilities, rfqEmailHref } from '~/data/ceramic';
+import { ceramicCapabilityRoutes } from '~/data/ceramic-catalog';
 import {
   createBreadcrumbSchema,
   createCeramicApplicationServiceSchema,
@@ -309,20 +310,20 @@ const metadata = {
   <Stats
     title="Review areas"
     stats={[
-      { title: 'Ceramic material families', amount: '6+' },
-      { title: 'Application use cases', amount: '16' },
-      { title: 'Precision routes', amount: 'CNC / grind / hone' },
+      { title: 'Ceramic material families', amount: '9' },
+      { title: 'Capability routes', amount: '10' },
+      { title: 'Precision routes', amount: 'CNC / grind / hone / lap' },
       { title: 'Evidence options', amount: 'CMM / optical / Ra' },
     ]}
   />
 
   <Features3
     id="process"
-    title="Core capabilities"
-    subtitle="Capability is feature-specific. The same ceramic grade can quote very differently depending on which faces must be finished and measured."
+    title="End-to-end capability routes"
+    subtitle="Capability is feature-specific. Forming, sintering, machining, finishing, inspection, and packaging are scoped around the drawing rather than advertised as generic limits."
     columns={3}
     isBeforeContent={true}
-    items={ceramicCapabilities}
+    items={ceramicCapabilityRoutes}
   />
 
   <SplitShowcase

@@ -1,0 +1,181 @@
+---
+import { Icon } from 'astro-icon/components';
+
+import Layout from '~/layouts/PageLayout.astro';
+import Button from '~/components/ui/Button.astro';
+import RfqForm from '~/components/forms/RfqForm.astro';
+import { ceramicMaterialFamilies, ceramicProductCategoryCount, ceramicProductGroups } from '~/data/ceramic-catalog';
+import { createItemListSchema } from '~/utils/structured-data';
+
+const productCategories = ceramicProductGroups.flatMap((group) => group.categories);
+
+const metadata = {
+  title: 'Custom Ceramic Products | 23 Precision Ceramic Part Categories',
+  ignoreTitleTemplate: true,
+  description:
+    'Explore 23 custom ceramic product categories covering rods, tubes, rings, plungers, pumps, valves, semiconductor, vacuum, automation, alumina, zirconia, and silicon nitride parts.',
+  structuredData: [
+    createItemListSchema(
+      'Custom precision ceramic product categories',
+      productCategories.map((category) => ({
+        name: category.title,
+        description: category.description,
+        url: '/products/',
+      }))
+    ),
+  ],
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="relative overflow-hidden border-b border-page-border bg-surface">
+    <div
+      class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_74%_34%,rgba(47,143,168,0.18),transparent_35%)]"
+      aria-hidden="true"
+    >
+    </div>
+    <div
+      class="relative mx-auto grid max-w-5xl gap-10 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-[0.82fr_1.18fr] lg:items-end"
+    >
+      <div>
+        <p class="text-sm font-semibold text-accent">Product catalogue</p>
+        <h1 class="mt-4 font-heading text-4xl font-bold leading-tight tracking-[-0.025em] text-heading sm:text-5xl">
+          {ceramicProductCategoryCount} ceramic product categories, organized for RFQ review
+        </h1>
+      </div>
+      <div>
+        <p class="text-base leading-7 text-muted sm:text-lg">
+          This catalogue covers the full product scope we can evaluate without turning each category into a thin,
+          repetitive page. Feasibility, material grade, tolerance, finish, inspection, price, and timing remain
+          drawing-specific.
+        </p>
+        <div class="mt-7 flex flex-col gap-3 sm:flex-row">
+          <Button
+            variant="primary"
+            text="Submit drawing for review"
+            href="#rfq-form"
+            icon="tabler:file-upload"
+            class="justify-center px-5 py-3"
+          />
+          <Button
+            variant="secondary"
+            text="Review capabilities"
+            href="/capabilities/"
+            icon="tabler:tool"
+            class="justify-center px-5 py-3"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-b border-page-border bg-page">
+    <div
+      class="mx-auto grid max-w-5xl divide-y divide-page-border px-4 sm:grid-cols-3 sm:divide-x sm:divide-y-0 sm:px-6"
+    >
+      <div class="py-6 sm:pr-8">
+        <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent">Scope</p>
+        <p class="mt-2 font-semibold text-heading">{ceramicProductCategoryCount} product categories covered</p>
+      </div>
+      <div class="py-6 sm:px-8">
+        <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent">Decision</p>
+        <p class="mt-2 font-semibold text-heading">One authoritative catalogue</p>
+      </div>
+      <div class="py-6 sm:pl-8">
+        <p class="text-xs font-semibold uppercase tracking-[0.14em] text-accent">Quotation</p>
+        <p class="mt-2 font-semibold text-heading">Drawing and CTQ review first</p>
+      </div>
+    </div>
+  </section>
+
+  {
+    ceramicProductGroups.map((group, groupIndex) => (
+      <section
+        id={group.id}
+        class:list={[
+          'scroll-mt-20 border-b border-page-border py-16 sm:py-24',
+          groupIndex % 2 === 0 ? 'bg-page' : 'bg-surface',
+        ]}
+        aria-labelledby={`${group.id}-title`}
+      >
+        <div class="mx-auto max-w-5xl px-4 sm:px-6">
+          <div class="grid gap-7 lg:grid-cols-[0.82fr_1.18fr] lg:items-end lg:gap-16">
+            <div>
+              <p class="text-sm font-semibold text-accent">{group.eyebrow}</p>
+              <h2
+                id={`${group.id}-title`}
+                class="mt-3 font-heading text-3xl font-bold leading-tight tracking-[-0.02em] text-heading sm:text-4xl"
+              >
+                {group.title}
+              </h2>
+            </div>
+            <p class="text-base leading-7 text-muted">{group.description}</p>
+          </div>
+
+          <div class="mt-12 grid gap-px overflow-hidden rounded-md border border-page-border bg-page-border md:grid-cols-2">
+            {group.categories.map((category) => (
+              <article class="bg-page p-6 sm:p-8">
+                <span class="flex h-11 w-11 items-center justify-center rounded-md border border-page-border bg-surface">
+                  <Icon name={category.icon} class="h-5 w-5 text-accent" />
+                </span>
+                <h3 class="mt-6 font-heading text-xl font-semibold text-heading">{category.title}</h3>
+                <p class="mt-3 text-sm leading-6 text-muted">{category.description}</p>
+                <div class="mt-5 border-t border-page-border pt-4">
+                  <p class="text-xs font-semibold uppercase tracking-[0.12em] text-accent">RFQ focus</p>
+                  <p class="mt-2 text-sm leading-6 text-muted">{category.rfqFocus}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    ))
+  }
+
+  <section class="border-b border-page-border bg-page py-16 sm:py-24" aria-labelledby="material-coverage">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <p class="text-sm font-semibold text-accent">Material coverage</p>
+        <h2
+          id="material-coverage"
+          class="mt-3 font-heading text-3xl font-bold leading-tight tracking-[-0.02em] text-heading sm:text-4xl"
+        >
+          Material families are reviewed by grade and requirement
+        </h2>
+        <p class="mt-5 text-base leading-7 text-muted">
+          A ceramic family name does not guarantee finished-part performance. Grade data, blank state, geometry,
+          operating environment, surface condition, and evidence must be reviewed together.
+        </p>
+      </div>
+
+      <div class="mt-10 grid gap-px overflow-hidden rounded-md border border-page-border bg-page-border md:grid-cols-3">
+        {
+          ceramicMaterialFamilies.map((material) => (
+            <article class="bg-surface p-6">
+              <h3 class="font-heading text-lg font-semibold text-heading">{material.name}</h3>
+              <p class="mt-3 text-sm font-semibold leading-6 text-accent">{material.grades}</p>
+              <p class="mt-3 text-sm leading-6 text-muted">{material.review}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="border-b border-page-border bg-surface py-14 sm:py-18">
+    <div class="mx-auto grid max-w-5xl gap-7 px-4 sm:px-6 lg:grid-cols-[0.82fr_1.18fr] lg:items-end lg:gap-16">
+      <div>
+        <p class="text-sm font-semibold text-accent">Start a product review</p>
+        <h2 class="mt-3 font-heading text-3xl font-bold leading-tight tracking-[-0.02em] text-heading sm:text-4xl">
+          Send the drawing, material requirement, quantity, and critical features
+        </h2>
+      </div>
+      <p class="text-base leading-7 text-muted">
+        If the product does not fit one label exactly, select the closest application in the form. Engineering review
+        follows the drawing and requirements, not the catalogue label.
+      </p>
+    </div>
+  </section>
+
+  <RfqForm />
+</Layout>

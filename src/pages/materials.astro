@@ -4,10 +4,16 @@ import Hero from '~/components/widgets/Hero.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import SplitShowcase from '~/components/widgets/SplitShowcase.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import { ceramicMaterials, rfqEmailHref } from '~/data/ceramic';
+import { rfqEmailHref } from '~/data/ceramic';
+import { ceramicMaterialFamilies } from '~/data/ceramic-catalog';
 import { createBreadcrumbSchema, createItemListSchema } from '~/utils/structured-data';
 
 const sectionContainerClass = 'py-10 md:py-12 lg:py-14';
+const materialFamilyCards = ceramicMaterialFamilies.map((material) => ({
+  title: material.name,
+  description: `${material.grades}. Review focus: ${material.review}`,
+  icon: 'tabler:hexagon',
+}));
 
 const materialShowcases = [
   {
@@ -153,9 +159,9 @@ const metadata = {
     ]),
     createItemListSchema(
       'Advanced ceramic materials for CNC machining',
-      ceramicMaterials.map((item) => ({
-        name: item.title,
-        description: item.description,
+      ceramicMaterialFamilies.map((item) => ({
+        name: item.name,
+        description: `${item.grades}. ${item.review}`,
         url: '/materials/',
       }))
     ),
@@ -187,7 +193,7 @@ const metadata = {
     title="Common material paths"
     subtitle="The right ceramic route is selected against the function of the part, not by material name alone."
     columns={3}
-    items={ceramicMaterials}
+    items={materialFamilyCards}
   />
 
   <SplitShowcase items={materialShowcases} classes={{ container: sectionContainerClass }} />

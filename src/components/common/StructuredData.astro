@@ -53,7 +53,7 @@ const graph: JsonLdNode[] = [
     legalName: 'Suzhou Como Precision Materials Co., Ltd.',
     url: `${siteUrl}/`,
     email: 'info@szcomo.com',
-    sameAs: ['https://szcomo.com/', 'https://copper3dp.com/', 'https://titanium3dp.com/'],
+    sameAs: ['https://www.szcomo.com/'],
     logo: {
       '@type': 'ImageObject',
       url: logoUrl,
@@ -69,10 +69,11 @@ const graph: JsonLdNode[] = [
       'Zirconia ZrO2 machining',
       'Silicon nitride Si3N4 machining',
       'Silicon carbide SiC grinding',
+      'Ceramic injection molding review',
       'Ceramic micro-drilling',
       'Ceramic lapping and polishing',
       'Ceramic edge chip control',
-      'CMM and surface finish inspection',
+      'Dimensional and surface finish inspection',
     ],
     contactPoint: [
       {
@@ -89,16 +90,6 @@ const graph: JsonLdNode[] = [
     url: `${siteUrl}/`,
     name: SITE.name,
     description: METADATA?.description,
-    publisher: { '@id': organizationId },
-    inLanguage: I18N?.language || 'en',
-  },
-  {
-    '@type': 'WebPage',
-    '@id': `${canonical}#webpage`,
-    url: canonical,
-    name: pageTitle,
-    ...(pageDescription ? { description: pageDescription } : {}),
-    isPartOf: { '@id': websiteId },
     about: { '@id': organizationId },
     inLanguage: I18N?.language || 'en',
     ...(pageStructuredData.some((item) => item['@type'] === 'BreadcrumbList')
@@ -114,6 +105,16 @@ const graph: JsonLdNode[] = [
           },
         }
       : {}),
+  },
+  {
+    '@type': 'WebPage',
+    '@id': `${canonical}#webpage`,
+    url: canonical,
+    name: pageTitle,
+    ...(pageDescription ? { description: pageDescription } : {}),
+    isPartOf: { '@id': websiteId },
+    publisher: { '@id': organizationId },
+    inLanguage: I18N?.language || 'en',
   },
   ...pageStructuredData,
 ];

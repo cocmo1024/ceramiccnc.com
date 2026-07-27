@@ -6,25 +6,22 @@ const configuredAnalyticsId = ANALYTICS?.vendors?.googleAnalytics?.id
   : '';
 const defaultGoogleAdsConversionId = '';
 const defaultGoogleAdsRfqConversionLabel = '';
-const defaultGoogleAdsConversionValue = '1.0';
-const defaultGoogleAdsConversionCurrency = 'CNY';
 const googleTagManagerId = import.meta.env.PUBLIC_GOOGLE_TAG_MANAGER_ID || import.meta.env.PUBLIC_GTM_ID || '';
 const rawGoogleAnalyticsId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID || configuredAnalyticsId;
 const googleAnalyticsId = rawGoogleAnalyticsId || '';
 const googleAdsConversionId = import.meta.env.PUBLIC_GOOGLE_ADS_CONVERSION_ID || defaultGoogleAdsConversionId;
 const googleTagId = import.meta.env.PUBLIC_GOOGLE_TAG_ID || googleAdsConversionId || googleAnalyticsId;
-const googleAdsLeadConversionLabel =
-  import.meta.env.PUBLIC_GOOGLE_ADS_LEAD_CONVERSION_LABEL ||
+const googleAdsRfqConversionLabel =
   import.meta.env.PUBLIC_GOOGLE_ADS_RFQ_CONVERSION_LABEL ||
   import.meta.env.PUBLIC_GOOGLE_ADS_CONVERSION_LABEL ||
   defaultGoogleAdsRfqConversionLabel;
-const googleAdsLeadSendTo =
-  googleAdsConversionId && googleAdsLeadConversionLabel
-    ? `${googleAdsConversionId}/${googleAdsLeadConversionLabel}`
+const googleAdsRfqSubmitConversionLabel = import.meta.env.PUBLIC_GOOGLE_ADS_RFQ_SUBMIT_CONVERSION_LABEL || '';
+const googleAdsRfqSendTo =
+  googleAdsConversionId && googleAdsRfqConversionLabel ? `${googleAdsConversionId}/${googleAdsRfqConversionLabel}` : '';
+const googleAdsRfqSubmitSendTo =
+  googleAdsConversionId && googleAdsRfqSubmitConversionLabel
+    ? `${googleAdsConversionId}/${googleAdsRfqSubmitConversionLabel}`
     : '';
-const googleAdsConversionValue = import.meta.env.PUBLIC_GOOGLE_ADS_CONVERSION_VALUE || defaultGoogleAdsConversionValue;
-const googleAdsConversionCurrency =
-  import.meta.env.PUBLIC_GOOGLE_ADS_CONVERSION_CURRENCY || defaultGoogleAdsConversionCurrency;
 const tagIds = Array.from(new Set([googleTagId, googleAnalyticsId, googleAdsConversionId].filter(Boolean)));
 const primaryTagId = tagIds[0];
 const googleTagSrc = primaryTagId ? `https://www.googletagmanager.com/gtag/js?id=${primaryTagId}` : '';
@@ -35,24 +32,22 @@ const googleTagManagerSrc = googleTagManagerId
 
 <script
   is:inline
-  data-google-ads-lead-send-to={googleAdsLeadSendTo}
-  data-google-ads-rfq-send-to={googleAdsLeadSendTo}
-  data-google-ads-conversion-value={googleAdsConversionValue}
-  data-google-ads-conversion-currency={googleAdsConversionCurrency}
+  data-google-ads-rfq-send-to={googleAdsRfqSendTo}
+  data-google-ads-rfq-submit-send-to={googleAdsRfqSubmitSendTo}
   data-google-analytics-id={googleAnalyticsId}
   data-google-ads-conversion-id={googleAdsConversionId}
   data-google-tag-manager-id={googleTagManagerId}
+  data-google-tag-state={primaryTagId ? 'loading' : 'disabled'}
 >
   const trackingConfig = document.currentScript?.dataset || {};
   window.dataLayer = window.dataLayer || [];
   window.CERAMICCNC_TRACKING = {
     googleAnalyticsId: trackingConfig.googleAnalyticsId || '',
     googleAdsConversionId: trackingConfig.googleAdsConversionId || '',
-    googleAdsLeadSendTo: trackingConfig.googleAdsLeadSendTo || trackingConfig.googleAdsRfqSendTo || '',
-    googleAdsRfqSendTo: trackingConfig.googleAdsRfqSendTo || trackingConfig.googleAdsLeadSendTo || '',
-    googleAdsConversionValue: Number(trackingConfig.googleAdsConversionValue || '1') || 1,
-    googleAdsConversionCurrency: trackingConfig.googleAdsConversionCurrency || 'CNY',
+    googleAdsRfqSendTo: trackingConfig.googleAdsRfqSendTo || '',
+    googleAdsRfqSubmitSendTo: trackingConfig.googleAdsRfqSubmitSendTo || '',
     googleTagManagerId: trackingConfig.googleTagManagerId || '',
+    googleTagState: trackingConfig.googleTagState || 'disabled',
   };
 </script>
 
@@ -71,7 +66,27 @@ const googleTagManagerSrc = googleTagManagerId
   }
 </script>
 
-{primaryTagId ? <script is:inline async src={googleTagSrc} /> : null}
+<script is:inline data-google-tag-src={googleTagSrc}>
+  const googleTagSrc = document.currentScript?.dataset.googleTagSrc || '';
+
+  function updateGoogleTagState(state) {
+    if (window.CERAMICCNC_TRACKING) {
+      window.CERAMICCNC_TRACKING.googleTagState = state;
+    }
+    window.dispatchEvent(new CustomEvent('ceramiccnc:google-tag-state', { detail: { state } }));
+  }
+
+  if (googleTagSrc) {
+    const googleTagScript = document.createElement('script');
+    googleTagScript.async = true;
+    googleTagScript.src = googleTagSrc;
+    googleTagScript.addEventListener('load', () => updateGoogleTagState('loaded'), { once: true });
+    googleTagScript.addEventListener('error', () => updateGoogleTagState('failed'), { once: true });
+    document.head.appendChild(googleTagScript);
+  } else {
+    updateGoogleTagState('disabled');
+  }
+</script>
 
 <script is:inline data-tag-ids={tagIds.join(',')} data-primary-tag-id={primaryTagId}>
   const googleTagConfig = document.currentScript?.dataset || {};

@@ -5,10 +5,13 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import SplitShowcase from '~/components/widgets/SplitShowcase.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import RfqForm from '~/components/forms/RfqForm.astro';
 import { ceramicFaqItems, rfqEmail, rfqEmailHref } from '~/data/ceramic';
 import { createBreadcrumbSchema, createFAQPageSchema, createItemListSchema } from '~/utils/structured-data';
 
 const sectionContainerClass = 'py-10 md:py-12 lg:py-14';
+const whatsappHref =
+  'https://wa.me/8615301541312?text=Hello%2C%20I%20would%20like%20to%20discuss%20a%20precision%20ceramic%20RFQ.';
 const rfqTemplate = `Subject: Precision Ceramic CNC RFQ - [material/grade] - [quantity] - [target date]
 
 Hello CERAMIC CNC,
@@ -244,7 +247,25 @@ const metadata = {
     tagline="RFQ inputs"
     title="Send enough information for a practical ceramic CNC quote"
     subtitle="A simple drawing and quantity may be enough to start review. For precision ceramic parts, include the requirements that affect blank source, material route, grinding allowance, surface finish, edge quality, and inspection."
+    callToAction={{
+      text: 'Submit secure RFQ',
+      href: '#rfq-form',
+      icon: 'tabler:file-upload',
+      'data-aw-cta-location': 'rfq_hero',
+    }}
+    callToAction2={{
+      text: 'Discuss on WhatsApp',
+      href: whatsappHref,
+      target: '_blank',
+      rel: 'noopener noreferrer',
+      icon: 'tabler:brand-whatsapp',
+      'data-aw-instant-contact-link': true,
+      'data-aw-contact-channel': 'whatsapp',
+      'data-aw-cta-location': 'rfq_hero',
+    }}
   />
+
+  <RfqForm />
 
   <section class="relative not-prose py-10 md:py-14">
     <div class="mx-auto max-w-5xl px-4 sm:px-6">

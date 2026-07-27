@@ -10,13 +10,25 @@ export default {
         primary: 'var(--aw-color-primary)',
         secondary: 'var(--aw-color-secondary)',
         accent: 'var(--aw-color-accent)',
+        link: 'var(--aw-color-link)',
+        focus: 'var(--aw-color-focus)',
+        heading: 'var(--aw-color-text-heading)',
+        page: 'var(--aw-color-text-page)',
         default: 'var(--aw-color-text-default)',
         muted: 'var(--aw-color-text-muted)',
+        surface: 'var(--aw-color-surface)',
+        'surface-raised': 'var(--aw-color-surface-raised)',
+        'page-border': 'var(--aw-color-border)',
+        'control-border': 'var(--aw-color-border-control)',
       },
       fontFamily: {
         sans: ['var(--aw-font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
         serif: ['var(--aw-font-serif, ui-serif)', ...defaultTheme.fontFamily.serif],
         heading: ['var(--aw-font-heading, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
+      },
+
+      boxShadow: {
+        panel: '0 1px 2px rgb(0 0 0 / 0.14), 0 12px 32px rgb(0 0 0 / 0.1)',
       },
 
       animation: {
