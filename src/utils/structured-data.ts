@@ -189,7 +189,7 @@ export const createArticleSchema = ({
     author: {
       '@type': 'Organization',
       name: post.author || SITE.name,
-      url: siteUrl,
+      url: toAbsoluteUrl('/about/#engineering-content-method'),
     },
     publisher: { '@id': organizationId },
     ...(post.category?.title ? { articleSection: post.category.title } : {}),

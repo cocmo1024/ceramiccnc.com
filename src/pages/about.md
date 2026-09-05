@@ -21,6 +21,27 @@ RFQs may involve alumina Al2O3, zirconia ZrO2, silicon nitride Si3N4, silicon ca
 
 We commonly review parts for semiconductor and vacuum equipment, electrical insulation, pump and dispensing hardware, sealing and valve components, wear components, nozzles, precision sleeves, ceramic plungers, precision plates, research fixtures, and industrial OEM assemblies.
 
+## Engineering Content Method
+
+Articles on this site are prepared and reviewed under **CERAMIC CNC Engineering**, the technical content identity used by Suzhou Como Precision Materials Co., Ltd. The intended readers are engineers, designers, quality teams, and procurement teams evaluating custom ceramic parts.
+
+The content starts from decisions that affect a real drawing review: material and grade, blank state, functional surfaces, datums, feature risk, machining and finishing route, cleaning, packaging, inspection, and acceptance evidence. It is written to help a buyer prepare a more reviewable RFQ, not to create a separate page for every keyword variation.
+
+Our review method follows four rules:
+
+- Separate general screening guidance from drawing-specific capability commitments.
+- State which material, geometry, surface, process, or inspection assumption changes the decision.
+- Link to the existing material, capability, application, or RFQ guide when it already answers the next question.
+- Use an updated date only when the visible technical or sourcing guidance has materially changed; dates are not changed only to make a page appear fresh.
+
+## Evidence and Limits
+
+Published tolerance ranges, material comparisons, process routes, and RFQ checklists are decision aids rather than blanket manufacturing guarantees. Final feasibility, grade properties, tolerances, surface condition, inspection scope, price, and lead time require review of the current drawing and requirements.
+
+External manufacturer, industry, or standards references may be used to establish application context. They do not replace the selected grade datasheet, an agreed inspection method, or part-level qualification. When a page discusses a broad application, it should direct the reader to the most specific existing guide rather than repeat the same answer in another article.
+
+For the main decision paths, use the [material selection guide](/materials/), [machining and inspection capabilities](/capabilities/), [application review paths](/applications/), or [RFQ preparation page](/rfq/).
+
 ## Send an RFQ
 
 Send drawings, CAD files, material or grade target, blank or sourcing requirement, quantity, target lead time, critical surfaces, edge requirements, and inspection expectations to:

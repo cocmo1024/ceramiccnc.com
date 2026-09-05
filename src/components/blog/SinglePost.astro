@@ -30,15 +30,29 @@ const categoryHref = post.category
       <div class="mx-auto mb-2 mt-0 flex max-w-5xl flex-col justify-between px-4 sm:flex-row sm:items-center md:px-6">
         <p>
           <Icon name="tabler:clock" class="w-4 h-4 inline-block -mt-0.5 dark:text-gray-400" />
+          Published{' '}
           <time datetime={post.publishDate.toISOString()} class="inline-block"
             >{getFormattedDate(post.publishDate)}</time
           >
           {
+            post.updateDate && (
+              <>
+                {' '}
+                · Updated{' '}
+                <time datetime={post.updateDate.toISOString()} class="inline-block">
+                  {getFormattedDate(post.updateDate)}
+                </time>
+              </>
+            )
+          }
+          {
             post.author && (
               <>
                 {' '}
-                - <Icon name="tabler:user" class="w-4 h-4 inline-block -mt-0.5 dark:text-gray-400" />
-                <span class="inline-block">{post.author}</span>
+                · <Icon name="tabler:user" class="w-4 h-4 inline-block -mt-0.5 dark:text-gray-400" />
+                <a class="inline-block hover:underline" href="/about/#engineering-content-method">
+                  {post.author}
+                </a>
               </>
             )
           }
@@ -46,7 +60,7 @@ const categoryHref = post.category
             post.category && (
               <>
                 {' '}
-                -{' '}
+                ·{' '}
                 <a class="hover:underline inline-block" href={categoryHref}>
                   {post.category.title}
                 </a>
@@ -56,7 +70,8 @@ const categoryHref = post.category
           {
             post.readingTime && (
               <>
-                &nbsp;- <span>{post.readingTime}</span> min read
+                {' '}
+                · <span>{post.readingTime}</span> min read
               </>
             )
           }
