@@ -1,7 +1,7 @@
 ---
-title: 'Alumina Ceramic Inspection Fixtures for SiC Power Module Assembly: A Machining Case Study'
+title: 'Alumina Ceramic Inspection Fixtures for SiC Power Modules: Design and RFQ'
 publishDate: 2026-06-06
-excerpt: 'Representative precision ceramic machining case guide for alumina inspection fixtures used around SiC power module assembly: datum pads, locating bores, insulation, thermal contact, edge quality, clean packaging, and inspection evidence.'
+excerpt: 'Illustrative RFQ guide for alumina inspection fixtures used around SiC power-module assembly: datum pads, locating bores, insulation, thermal contact, edge quality, and inspection evidence.'
 category: Engineering Guide
 tags:
   [
@@ -19,21 +19,21 @@ author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/alumina-ceramic-inspection-fixtures-sic-power-module-assembly-case-study.webp
 metadata:
   title: 'Alumina Ceramic Inspection Fixtures for SiC Power Module Assembly'
-  description: 'Case guide for alumina inspection fixtures used in SiC power-module assembly: datums, bores, support pads, insulation, edge quality, packaging, and RFQ inputs.'
+  description: 'Illustrative RFQ guide for alumina SiC power-module fixtures: datums, bores, support pads, insulation, edge quality, packaging, and inspection scope.'
   canonical: https://ceramiccnc.com/posts/power-electronics/alumina-ceramic-inspection-fixtures-sic-power-module-assembly-case-study/
 ---
 
 > An alumina ceramic inspection fixture for SiC power module assembly is not just a white insulating plate. It is a controlled reference system: datum pads, locating bores, module support lands, pin interfaces, creepage-aware edges, clean handling, and inspection evidence must work together before the fixture can repeat inside an assembly or test process.
 
-This is a representative precision ceramic machining case study, not a claim about a named customer program. It reflects a common RFQ pattern: a power electronics team is building or qualifying an inspection fixture for SiC modules, power substrates, gate-driver assemblies, or high-voltage test hardware. The drawing shows an alumina plate with pockets, bores, support pads, and ceramic locating pins. The purchasing term may be simple: **alumina ceramic fixture**. The engineering problem is not simple.
+This is an illustrative RFQ scenario, not a record of a delivered customer fixture or measured project results. Consider a power electronics team preparing an inspection fixture for SiC modules, power substrates, gate-driver assemblies, or high-voltage test hardware. The example drawing contains an alumina plate with pockets, bores, support pads, and ceramic locating pins. The purchasing term may be simple: **alumina ceramic fixture**. The engineering review still needs a defined acceptance scope.
 
 If the buyer sends only a STEP file and asks for a unit price, the quote may miss the real acceptance risk. A useful review asks:
 
 **Which surfaces locate the SiC module, which pads control height, which edges are high-voltage or particle-sensitive, and what inspection evidence proves the fixture is usable after cleaning and packaging?**
 
-For broader background, use the [AI data center power ceramic parts guide](/posts/power-electronics/ai-data-center-power-electronics-ceramic-machining/), the [precision ceramic fixture plate case study](/posts/automation-fixtures/precision-ceramic-fixture-plate-locating-pins-case-study/), and the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/). This page narrows the discussion to alumina inspection fixtures used around SiC power module assembly.
+For broader background, use the [AI data center power ceramic parts guide](/posts/power-electronics/ai-data-center-power-electronics-ceramic-machining/), the [ceramic locating-pin and fixture-plate RFQ guide](/posts/automation-fixtures/precision-ceramic-fixture-plate-locating-pins-case-study/), and the [custom ceramic CNC machining RFQ checklist](/posts/rfq-preparation/custom-ceramic-cnc-machining-rfq-checklist/). This page narrows the discussion to alumina inspection fixtures used around SiC power module assembly.
 
-## Why This Case Matters To Power-Module Tooling
+## Why These Fixtures Matter To Power-Module Tooling
 
 SiC power electronics support automotive electric powertrains, AI server power supplies, and industrial equipment such as data centers. On April 21, 2026, [ROHM described its 5th-generation SiC MOSFETs](https://www.rohm.com/news-detail?defaultGroupId=false&news-title=2026-04-21_news_sic-mosfet) for these applications and connected high power density, high-temperature operation, and lower-loss conversion to demand for SiC devices and modules.
 
@@ -43,7 +43,7 @@ Ceramics are already central to power module packaging. [Rogers curamik ceramic 
 
 ## The Representative Starting RFQ
 
-The initial request in this case pattern usually looks like this:
+The example request contains:
 
 - One alumina ceramic inspection fixture plate with a central module pocket.
 - Several lapped or ground support pads that contact a power module, substrate, or test coupon.
@@ -198,7 +198,7 @@ Common failures include:
 
 The RFQ should state whether parts need individual wrapping, separated tray pockets, face separators, pin-tip protection, double bagging, clean labels outside the bag, or customer final clean. For adjacent guidance, see the [cleanroom and high-purity ceramic components guide](/posts/high-purity-cleanroom/precision-ceramic-components-cleanroom-high-purity-manufacturing-systems/).
 
-## Cost Drivers In This Case
+## Cost Drivers In This Fixture RFQ
 
 The cost driver is usually not "alumina is expensive." The cost comes from machining and proving the features that matter.
 
@@ -217,7 +217,7 @@ Important cost drivers include:
 
 The best cost-control method is not to remove precision from the drawing. It is to rank precision. Tighten the support pads, locating bores, datum faces, pin interfaces, and critical high-voltage edges. Relax cosmetic faces, open pockets, and clearance holes where they do not affect the module assembly or test result.
 
-## When This Case Is A Good Fit
+## When This Fixture Review Is A Good Fit
 
 An alumina ceramic inspection fixture is worth reviewing when:
 

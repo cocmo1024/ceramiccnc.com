@@ -693,15 +693,15 @@ export const engineeringArticles = [
     image:
       '~/assets/images/ceramic/posts/alumina-ceramic-inspection-fixtures-sic-power-module-assembly-case-study.webp',
     description:
-      'Precision machining case guide for alumina ceramic inspection fixtures used around SiC power module assembly, including datum pads, locating bores, support lands, insulation, clean packaging, and inspection evidence.',
+      'Illustrative RFQ guide for alumina ceramic inspection fixtures used around SiC power module assembly, including datum pads, locating bores, support lands, insulation, clean packaging, and inspection evidence.',
   },
   {
-    title: 'Precision Ceramic Fixture Plate Case Study',
+    title: 'Ceramic Locating Pins and Fixture Plates: RFQ Guide',
     href: '/posts/automation-fixtures/precision-ceramic-fixture-plate-locating-pins-case-study/',
     date: '2026-06-06',
     image: '~/assets/images/ceramic/posts/precision-ceramic-fixture-plate-locating-pins-case-study.webp',
     description:
-      'Precision machining case guide for alumina ceramic fixture plates, zirconia and Si3N4 locating pins, datum pads, bore position, edge quality, clean packaging, and inspection evidence.',
+      'Design and RFQ guide for alumina ceramic fixture plates, zirconia and Si3N4 locating pins, datum pads, bore position, edge quality, clean packaging, and inspection evidence.',
   },
   {
     title: 'Ceramic Components for Sensors and Measurement',

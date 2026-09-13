@@ -16,8 +16,8 @@ tags:
 author: 'CERAMIC CNC Engineering'
 image: ~/assets/images/ceramic/posts/ceramic-fluid-path-components-analytical-instruments.webp
 metadata:
-  title: 'Ceramic Fluid-Path Components for Analytical Instruments'
-  description: 'RFQ guide for ceramic needles, plungers, valve parts, flow cells, and nozzles in analytical instruments: wetted surfaces, carryover, media, cleaning, and inspection.'
+  title: 'Ceramic Fluid-Path Components: Needles, Valves & RFQ'
+  description: 'RFQ guide for custom ceramic needles, plungers, valves and flow cells in analytical instruments. Define wetted surfaces, carryover, media and inspection.'
 ---
 
 > A ceramic fluid-path component should be quoted as part of the sample-contact system, not as a generic precision ceramic shape. The RFQ must identify every wetted surface, retained-volume risk, sealing interface, material grade, cleaning boundary, and customer system test before feasibility, price, tolerance, or timing can be confirmed.

@@ -25,7 +25,7 @@ We commonly review parts for semiconductor and vacuum equipment, electrical insu
 
 Articles on this site are prepared and reviewed under **CERAMIC CNC Engineering**, the technical content identity used by Suzhou Como Precision Materials Co., Ltd. The intended readers are engineers, designers, quality teams, and procurement teams evaluating custom ceramic parts.
 
-The content starts from decisions that affect a real drawing review: material and grade, blank state, functional surfaces, datums, feature risk, machining and finishing route, cleaning, packaging, inspection, and acceptance evidence. It is written to help a buyer prepare a more reviewable RFQ, not to create a separate page for every keyword variation.
+The content starts from decisions that affect a real drawing review: material and grade, blank state, functional surfaces, datums, feature risk, machining and finishing route, cleaning, packaging, inspection, and acceptance evidence. It is written to help a buyer identify unresolved requirements and prepare a more reviewable RFQ before feasibility and quotation are confirmed.
 
 Our review method follows four rules:
 

@@ -1,6 +1,28 @@
 ---
 import { Icon } from 'astro-icon/components';
-import { rfqEmail, rfqEmailHref } from '~/data/ceramic';
+import { rfqEmail } from '~/data/ceramic';
+
+export interface Props {
+  articleTitle: string;
+  articleUrl: string | URL;
+}
+
+const { articleTitle, articleUrl } = Astro.props;
+const emailBody = [
+  `Reference guide: ${articleTitle}`,
+  `Guide URL: ${String(articleUrl)}`,
+  '',
+  'Project / part function:',
+  'Material / grade and blank state (or service environment if unknown):',
+  'Quantity and target timing:',
+  'Functional faces, datums, fits, and critical tolerances:',
+  'Surface finish and edge / chip criteria:',
+  'Inspection, cleaning, and packaging requirements:',
+  'Drawing revision / CAD files to attach:',
+  '',
+  'Please identify feasibility questions and quote assumptions before confirmation.',
+].join('\r\n');
+const articleEmailHref = `mailto:${rfqEmail}?subject=${encodeURIComponent('Precision Ceramic RFQ — ' + articleTitle)}&body=${encodeURIComponent(emailBody)}`;
 
 const rfqLinks = [
   {
@@ -39,18 +61,25 @@ const rfqLinks = [
         <div class="mt-5 flex flex-col gap-3 sm:flex-row">
           <a
             href="/rfq/"
+            data-aw-cta-location="article_rfq_checklist"
             class="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/40 dark:bg-secondary dark:text-slate-950 dark:hover:bg-secondary/90"
           >
             Prepare an RFQ
             <Icon name="tabler:arrow-right" class="ml-2 h-4 w-4" />
           </a>
           <a
-            href={rfqEmailHref}
+            href={articleEmailHref}
+            data-aw-rfq-email
+            data-aw-cta-location="article_rfq_email"
             class="inline-flex items-center justify-center rounded-md border border-slate-300 px-4 py-2.5 text-sm font-semibold text-slate-900 transition hover:border-primary hover:text-primary dark:border-slate-700 dark:text-slate-100 dark:hover:border-secondary dark:hover:text-secondary"
           >
             Email {rfqEmail}
           </a>
         </div>
+        <p class="mt-3 text-xs leading-5 text-muted dark:text-slate-400">
+          The email link opens an editable checklist in your email app. Add the requirements and attach your drawing or
+          CAD before sending; opening the draft does not submit an RFQ.
+        </p>
       </div>
 
       <div class="border-t border-slate-200/80 p-5 sm:p-6 lg:border-l lg:border-t-0 lg:p-7 dark:border-slate-800">
